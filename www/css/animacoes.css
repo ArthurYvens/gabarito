@@ -17,12 +17,11 @@
 .hp-palpebras i:first-child { left: var(--ox1); }
 .hp-palpebras i:last-child { left: var(--ox2); }
 .helma-p[data-pose="frente"] .hp-palpebras { opacity: 1; }
-/* Sorriso: boca desenhada por cima e olhos levemente apertados; piscadinha fecha só um olho */
+/* Sorriso: boca desenhada por cima e olhos levemente apertados */
 .hp-sorriso { position: absolute; height: auto; opacity: 0; transition: opacity 120ms ease-out; pointer-events: none; }
 .helma-p[data-pose="frente"].sorrindo .hp-sorriso { opacity: 1; }
 .helma-p.sorrindo .hp-palpebras i { transform: translate(-50%, -50%) scaleY(.22); transition-duration: 160ms; }
 .helma-p.piscando .hp-palpebras i { transform: translate(-50%, -50%) scaleY(1); }
-.helma-p.piscadinha .hp-palpebras i:last-child { transform: translate(-50%, -50%) scaleY(1); transition-duration: 110ms; }
 /* Balão de fala */
 .hp-fala { position: relative; margin: 0; max-width: 240px; padding: 8px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--gold-line);
   font-size: 13.5px; line-height: 1.4; color: var(--ink-2); text-align: center; box-shadow: var(--shadow); }
@@ -47,7 +46,7 @@
 
 /* Lugares onde ela aparece */
 .hero .helma-p { align-self: end; margin-bottom: -27px; }
-.hero .hp-palco { background: #faf6ed; border-radius: 50% 50% 18px 18px; box-shadow: 0 0 0 6px rgba(196, 134, 40, .35); overflow: hidden; }
+.hero .helma-p { background: #faf6ed; border-radius: 50% 50% 18px 18px; box-shadow: 0 0 0 6px rgba(196, 134, 40, .35); overflow: hidden; }
 .verdict .helma-p { margin: -6px 0 -6px -4px; }
 .verdict.ok .hp-palco, .verdict.err .hp-palco { background: #faf6ed; border-radius: 50%; overflow: hidden; }
 .score .helma-p { margin-left: auto; }
@@ -105,3 +104,92 @@
 /* Tema escuro: o contorno índigo do cabelo some no fundo índigo; uma borda clara discreta separa a personagem. */
 :root[data-theme="dark"] .hp-pose:not(.hp-logo) { filter: drop-shadow(0 0 1.5px rgba(250, 246, 237, .6)); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hp-pose:not(.hp-logo) { filter: drop-shadow(0 0 1.5px rgba(250, 246, 237, .6)); } }
+
+/* ---------- Orgulho: direção em design/direcao-animacao-orgulho.md (2,4 s; % = linha do tempo da tabela) ---------- */
+.hp-sorriso-grande { position: absolute; height: auto; opacity: 0; pointer-events: none; transform-origin: 50% 25%; }
+.hp-alegria, .hp-rubor { position: absolute; inset: 0; pointer-events: none; }
+/* Olhos de alegria: pálpebra de baixo sobe em arco (sorriso de Duchenne) */
+.hp-alegria i { position: absolute; top: calc(var(--oy) + 1.6%); width: calc(var(--ow) * .92); height: 3.2%; transform: translateX(-50%) scaleY(0); transform-origin: bottom center;
+  background: #faf6ed; border-top: 2px solid #2a1d45; border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+.hp-alegria i:first-child { left: var(--ox1); }
+.hp-alegria i:last-child { left: var(--ox2); }
+.hp-rubor i { position: absolute; top: calc(var(--oy) + 11%); width: 13%; height: 5.5%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0;
+  background: radial-gradient(closest-side, rgba(226, 116, 100, .62), rgba(226, 116, 100, 0)); }
+.hp-rubor i:first-child { left: calc(var(--ox1) - 4.5%); }
+.hp-rubor i:last-child { left: calc(var(--ox2) + 4%); }
+/* Reflexo que atravessa a lente esquerda */
+.hp-reflexo { position: absolute; left: calc(var(--ox1) - 2%); top: calc(var(--oy) + 1%); width: 17%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; overflow: hidden; pointer-events: none; opacity: 0; }
+.hp-reflexo::before { content: ''; position: absolute; top: -30%; left: 0; width: 34%; height: 160%; transform: translateX(-130%) rotate(28deg);
+  background: linear-gradient(90deg, transparent 0 22%, rgba(214, 160, 70, .7) 22% 46%, transparent 46% 62%, rgba(214, 160, 70, .5) 62% 74%, transparent 74%); }
+/* Estrela da piscadela, no canto de fora do olho que pisca */
+.hp-estrela { position: absolute; left: calc(var(--ox2) + 12.5%); top: calc(var(--oy) - 8%); width: 14%; height: auto; opacity: 0; transform: translate(-50%, -50%) scale(0); pointer-events: none; overflow: visible; }
+
+.helma-p.orgulho .hp-palco { transform-origin: 50% 88%; animation: hpOrgCorpo 2.4s both; }
+.helma-p.orgulho .hp-sorriso-grande { animation: hpOrgBoca 2.4s both; }
+.helma-p.orgulho .hp-sorriso { animation: hpOrgSuave 2.4s both; }
+.helma-p.orgulho .hp-palpebras i:first-child { animation: hpOrgOlho 2.4s both; }
+.helma-p.orgulho .hp-palpebras i:last-child { animation: hpOrgPiscadela 2.4s both; }
+.helma-p.orgulho .hp-alegria i:first-child { animation: hpOrgAlegria 2.4s both; }
+.helma-p.orgulho .hp-alegria i:last-child { animation: hpOrgAlegriaPisca 2.4s both; }
+.helma-p.orgulho .hp-rubor i { animation: hpOrgRubor 2.4s both; }
+.helma-p.orgulho .hp-estrela { animation: hpOrgEstrela 2.4s both; }
+.helma-p.orgulho .hp-reflexo { opacity: 1; }
+.helma-p.orgulho .hp-reflexo::before { animation: hpOrgReflexo 2.4s both; }
+.helma-p.orgulho .hp-brilhos i { animation: hpBrilho .9s ease-out 1s both; }
+
+@keyframes hpOrgCorpo {
+  0% { transform: none; animation-timing-function: ease-in; }
+  7% { transform: translateY(2%) scale(1.01, .97); animation-timing-function: cubic-bezier(.2, 1.5, .4, 1); }
+  21%, 34% { transform: translateY(-5%) rotate(-5deg) scale(1.03); animation-timing-function: ease-out; }
+  38% { transform: translateY(-5.5%) rotate(-6deg) scale(1.03); }
+  46%, 67% { transform: translateY(-5%) rotate(-5deg) scale(1.03); }
+  75% { transform: translateY(-5.6%) rotate(-5deg) scale(1.035); }
+  83% { transform: translateY(-5%) rotate(-5deg) scale(1.03); animation-timing-function: ease-out; }
+  100% { transform: none; }
+}
+@keyframes hpOrgBoca {
+  0%, 8% { opacity: 0; transform: scale(.6); }
+  12% { opacity: 1; }
+  21% { transform: scale(1.06); }
+  27%, 83% { opacity: 1; transform: scale(1); }
+  93%, 100% { opacity: 0; transform: scale(.8); }
+}
+@keyframes hpOrgSuave { 0%, 86% { opacity: 0; } 95%, 100% { opacity: 1; } }
+@keyframes hpOrgOlho {
+  0%, 9% { transform: translate(-50%, -50%) scaleY(0); }
+  21%, 83% { transform: translate(-50%, -50%) scaleY(.36); }
+  100% { transform: translate(-50%, -50%) scaleY(.22); }
+}
+@keyframes hpOrgPiscadela {
+  0%, 9% { transform: translate(-50%, -50%) scaleY(0); }
+  21%, 34% { transform: translate(-50%, -50%) scaleY(.36); animation-timing-function: ease-out; }
+  37.5%, 57% { transform: translate(-50%, -50%) scaleY(1); animation-timing-function: ease-in-out; }
+  64%, 83% { transform: translate(-50%, -50%) scaleY(.36); }
+  100% { transform: translate(-50%, -50%) scaleY(.22); }
+}
+@keyframes hpOrgAlegria {
+  0%, 9% { transform: translateX(-50%) scaleY(0); }
+  21%, 83% { transform: translateX(-50%) scaleY(1); }
+  100% { transform: translateX(-50%) scaleY(0); }
+}
+@keyframes hpOrgAlegriaPisca {
+  0%, 9% { transform: translateX(-50%) scaleY(0); }
+  21%, 34% { transform: translateX(-50%) scaleY(1); }
+  37%, 58% { transform: translateX(-50%) scaleY(0); }
+  64%, 83% { transform: translateX(-50%) scaleY(1); }
+  100% { transform: translateX(-50%) scaleY(0); }
+}
+@keyframes hpOrgRubor { 0%, 10% { opacity: 0; } 26%, 83% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes hpOrgEstrela {
+  0%, 34% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(-45deg); }
+  36% { opacity: 1; }
+  41% { transform: translate(-50%, -50%) scale(1.2) rotate(0deg); }
+  46%, 55% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(8deg); }
+  62%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(30deg); }
+}
+@keyframes hpOrgReflexo { 0%, 42% { transform: translateX(-130%) rotate(28deg); } 56%, 100% { transform: translateX(430%) rotate(28deg); } }
+
+/* Movimento reduzido: o rosto orgulhoso parado, sem deslocamento, piscadela nem efeitos */
+.helma-p.orgulho-calmo .hp-sorriso-grande, .helma-p.orgulho-calmo .hp-rubor i { opacity: 1; }
+.helma-p.orgulho-calmo .hp-palpebras i { transform: translate(-50%, -50%) scaleY(.36); }
+.helma-p.orgulho-calmo .hp-alegria i { transform: translateX(-50%) scaleY(1); }
