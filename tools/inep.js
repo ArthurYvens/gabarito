@@ -1,6 +1,6 @@
 /* Converte mais provas oficiais do INEP em www/js/dados/inep-oficial.js:
    - ENEM 2025, aplicação de Belém (2º dia, texto DOSVOX);
-   - ENEM 2022 a 2024, reaplicação/PPL (cadernos ledor em PDF);
+   - ENEM 2020 a 2024, reaplicação/PPL, e ENEM 2018 a 2022 e 2026, aplicação regular (cadernos ledor em PDF ou texto);
    - ENCCEJA 2020 e 2022, Ensino Fundamental e Médio, aplicação regular e reaplicação/PPL (cadernos em PDF).
    node tools/inep.js <pasta-com-os-arquivos-do-inep> [--revisao <arquivo.json>]
 
@@ -27,6 +27,21 @@ for (const ano of [2024, 2023, 2022]) for (const dia of [1, 2]) {
     pdf: ano + '_PV_reaplicacao_PPL_D' + dia + '_CD' + (dia === 1 ? 9 : 11) + '_braile_e_ledor.pdf',
     gb: ano + '_GB_reaplicacao_PPL_D' + dia + '_CD' + (dia === 1 ? 9 : 11) + '_braile_e_ledor.pdf', base: ENEM_URL
   });
+}
+// Aplicação regular (caderno laranja, com descrição das imagens) de 2018 a 2022 e 2026; reaplicação/PPL de 2020 e 2021.
+const ANTIGO_URL = (ano) => 'https://download.inep.gov.br/educacao_basica/enem/provas/' + ano + '/';
+for (const dia of [1, 2]) {
+  const cd = dia === 1 ? 9 : 11;
+  PROVAS.push({ id: 'enem-2026', exame: 'ENEM', ano: 2026, dia, rotulo: 'aplicação regular', assunto: 'ENEM 2026',
+    txt: dia === 1 ? '2026_Dia_1_P1_LC_CH_Caderno_09_Marrom_DOSVOX.txt' : '2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt', gb: '2026_GB_impresso_D' + dia + '_CD' + cd + '.pdf', base: ENEM_URL });
+  for (const ano of [2022, 2021, 2020]) PROVAS.push({ id: 'enem-' + ano, exame: 'ENEM', ano, dia, rotulo: 'aplicação regular', assunto: 'ENEM ' + ano, ledor: true,
+    pdf: ano + '_PV_impresso_D' + dia + '_CD' + cd + '.pdf', gb: ano + '_GB_impresso_D' + dia + '_CD' + cd + '.pdf', base: ENEM_URL });
+  for (const ano of [2019, 2018]) PROVAS.push({ id: 'enem-' + ano, exame: 'ENEM', ano, dia, rotulo: 'aplicação regular', assunto: 'ENEM ' + ano, ledor: true,
+    pdf: ano + '_PV_impresso_D' + dia + '_CD' + cd + '.pdf', gb: ano + '_GB_D' + dia + '_CD' + cd + '.pdf', base: ANTIGO_URL(ano) });
+  PROVAS.push({ id: 'enem-2021-ppl', exame: 'ENEM', ano: 2021, dia, rotulo: 'reaplicação/PPL', assunto: 'ENEM 2021 (reaplicação)', ledor: true,
+    pdf: '2021_PV_reaplicacao_PPL_D' + dia + '_CD' + cd + '_braile_e_ledor.pdf', gb: '2021_GB_reaplicacao_PPL_D' + dia + '_CD' + cd + '_braile_e_ledor.pdf', base: ENEM_URL });
+  PROVAS.push({ id: 'enem-2020-ppl', exame: 'ENEM', ano: 2020, dia, rotulo: 'reaplicação/PPL', assunto: 'ENEM 2020 (reaplicação)', ledor: true,
+    pdf: '2020_PV_reaplicacao_PPL_D' + dia + '_CD' + cd + '.pdf', gb: '2020_GB_reaplicacao_PPL_D' + dia + '_CD' + cd + '.pdf', base: ENEM_URL });
 }
 const AREAS_ENCCEJA = [
   { nivel: 'EM', arq: 'ciencias_natureza', nome: 'Ciências da Natureza', materia: 'enem-natureza', sigla: 'cn' },
@@ -219,6 +234,8 @@ function motivo(q, prova, nAlts) {
   if (q.enunciado.split('\n').some((l) => TITULO.test(l.trim()) && l.trim().split(/\s+/).length <= 8)) return 'título ou autor citado';
   if (q.enunciado.length < 40) return 'enunciado curto demais';
   if (/[\u0000-\u0008\u000b\u000c\u000e-\u001f�]/.test(tudo)) return 'caractere ilegível (símbolo matemático)';
+  // Fonte do PDF sem mapa de caracteres: sai "%  #  X" no lugar do texto.
+  if (/[@#]|(?:^|\s)[%$'*>]\s+[%$'#*>A-Z](?:\s|$)|\s{3,}\S\s{2,}/m.test(tudo)) return 'texto corrompido (fonte do PDF)';
   if (/Cll|C ll|\bCI\b|TiCI/.test(tudo)) return 'símbolo químico corrompido';
   // Letra capitular solta ("N o Brasil"); A, E, O e É são palavras e ficam para a conferência humana.
   if (/(^|\n)[B-DF-NP-ZÇ] [a-zà-ú]{2,}/.test(q.enunciado)) return 'letra capitular separada da palavra';
@@ -264,7 +281,7 @@ function motivo(q, prova, nAlts) {
     }
   }
   if (process.argv.includes('--candidatas')) { fs.writeFileSync(process.argv[process.argv.indexOf('--candidatas') + 1], JSON.stringify(saida, null, 1)); }
-  const cab = '/* Mais questões oficiais do INEP: ENEM 2025 (Belém), ENEM 2022 a 2024 (reaplicação/PPL) e ENCCEJA 2020 e 2022.\n' +
+  const cab = '/* Mais questões oficiais do INEP: ENEM 2018 a 2026 (regular, reaplicação/PPL e Belém) e ENCCEJA 2020 e 2022.\n' +
     '   Fonte: INEP/MEC (download.inep.gov.br). Licença: Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0).\n' +
     '   Reproduzidas sem alteração e com crédito; só itens sem material de terceiros, conferidos um a um.\n' +
     '   Gerado por tools/inep.js; não edite à mão. */\n';

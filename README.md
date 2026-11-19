@@ -33,8 +33,8 @@ partir do mesmo código em `www/`. Não tem servidor nem conta: o progresso fica
   BY-ND 3.0 publicada pelo INEP, com crédito visível em cada questão. Só entram itens sem textos, imagens ou citações de
   terceiros (a licença do INEP não cobre esse material); as descrições de imagens são as do próprio INEP. Geradas por
   `node tools/enem.js <pasta>` a partir dos arquivos oficiais de download.inep.gov.br (versão em texto e gabaritos).
-- **298 questões oficiais a mais do INEP**, com as mesmas regras de licença: ENEM 2025 (aplicação de Belém), ENEM 2022 a
-  2024 (reaplicação/PPL) e ENCCEJA 2020 e 2022 (Ensino Fundamental e Médio, regular e reaplicação). Geradas por
+- **615 questões oficiais a mais do INEP**, com as mesmas regras de licença: ENEM 2018 a 2022 e 2026 (aplicação regular),
+  ENEM 2025 (aplicação de Belém), ENEM 2020 a 2024 (reaplicação/PPL) e ENCCEJA 2020 e 2022 (Ensino Fundamental e Médio, regular e reaplicação). Geradas por
   `node tools/inep.js <pasta>` a partir dos cadernos em PDF. Cada item foi resolvido de forma independente e comparado
   com o gabarito oficial; os que perderam dado, fórmula ou fração na extração ficaram de fora e estão listados, com o
   motivo, em `tools/inep-revisao.json`. O INEP é a única instituição encontrada com licença aberta (os sites do
