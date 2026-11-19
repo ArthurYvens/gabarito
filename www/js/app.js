@@ -32,7 +32,10 @@
 
   function pendentesHoje() { return Motor.pendentes(S().revisao, Motor.hoje()).filter(function (id) { return Banco.questao(id); }).length; }
 
-  function layout(navAtivo, conteudo) {
+  // A animação de entrada só toca quando a tela muda (outra página ou outro passo), nunca ao redesenhar a mesma tela.
+  var telaAnterior = null;
+  function entrada(tela) { var nova = tela !== telaAnterior; telaAnterior = tela; return nova ? ' fade-in' : ''; }
+  function layout(navAtivo, conteudo, classeEntrada) {
     var p = App.perfil(), n = pendentesHoje();
     var link = function (it) {
       return '<a href="' + it.href + '"' + (navAtivo === it.id ? ' aria-current="page"' : '') + '>' + ico(it.ico) + '<span>' + it.nome + '</span>' +
@@ -47,7 +50,7 @@
       '</aside>' +
       '<header class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
         '<button class="icon-btn" data-act="menu" aria-label="Abrir menu" aria-controls="side" aria-expanded="false">' + ico('menu') + '</button></header>' +
-      '<main class="main fade-in" id="main" tabindex="-1">' + conteudo + '</main>' +
+      '<main class="main' + (classeEntrada || '') + '" id="main" tabindex="-1">' + conteudo + '</main>' +
       '<nav class="tabbar" aria-label="Atalhos">' +
         [NAV[0], NAV[1], NAV[3], NAV[4]].map(function (it) {
           return '<a href="' + it.href + '"' + (navAtivo === it.id ? ' aria-current="page"' : '') + '>' + ico(it.ico) + it.nome.split(' ')[0] + '</a>';
@@ -74,7 +77,7 @@
         var r = App.rotas[i].view(m.slice(1).map(function (x) { try { return decodeURIComponent(x); } catch (e) { return x; } }), params);
         if (r === null) return; // a view redirecionou
         if (r.cheia) raiz.innerHTML = r.html;
-        else raiz.innerHTML = layout(App.rotas[i].nav, r.html);
+        else raiz.innerHTML = layout(App.rotas[i].nav, r.html, entrada(caminho));
         if (r.titulo) document.title = r.titulo + ' · Helma';
         if (r.montar) App.saida = r.montar() || null;
         var main = document.getElementById('main');
@@ -82,7 +85,7 @@
         return;
       }
     }
-    raiz.innerHTML = layout('', '<div class="empty">' + ico('alerta') + '<h3>Página não encontrada</h3><p><a href="#/">Voltar ao início</a></p></div>');
+    raiz.innerHTML = layout('', '<div class="empty">' + ico('alerta') + '<h3>Página não encontrada</h3><p><a href="#/">Voltar ao início</a></p></div>', entrada(caminho));
   }
 
   // ---------- Ações delegadas ----------
@@ -155,7 +158,7 @@
         '<label class="switch mt"><span><b>Explicação profunda</b><span>Depois de responder, mostra a resolução completa, o comentário de cada alternativa e onde estudar mais.</span></span><input type="checkbox" id="onb-prof"' + (onb.profunda ? ' checked' : '') + '></label>' +
         '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><button class="btn btn-primary btn-lg" data-act="onb-fim">Montar meu painel ' + ico('dir') + '</button></div>';
     }
-    return '<main class="onb"><div class="card onb-card fade-in"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">Helma</span></a>' + passos + corpo + '</div></main>';
+    return '<main class="onb"><div class="card onb-card' + entrada('onboarding-' + onb.passo) + '"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">Helma</span></a>' + passos + corpo + '</div></main>';
   }
   function montarOnboarding() {
     document.title = 'Boas-vindas · Helma';
@@ -175,6 +178,8 @@
     var o = Banco.objetivo(onb.objetivo);
     onb.materias = Object.keys(o.pesos).length ? Object.keys(o.pesos) : Banco.materias.map(function (m) { return m.id; });
     App.render();
+    // O foco continua no objetivo escolhido (quem navega pelo teclado não volta ao início da página).
+    var b = document.querySelector('[data-act="onb-obj"][data-id="' + onb.objetivo + '"]'); if (b) b.focus();
   });
   App.acao('onb-fim', function () {
     lerOnb();

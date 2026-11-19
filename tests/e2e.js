@@ -27,7 +27,13 @@ const ok = (cond, msg) => { if (!cond) throw new Error('[' + passo + '] ' + msg)
   await page.fill('#onb-nome', 'Arthur');
   await foto('01-onboarding');
   await page.click('text=Começar');
+  ok(await page.locator('.onb-card.fade-in').count() === 1, 'novo passo entra com animação');
+  // Escolher e trocar de objetivo não pode fazer o cartão piscar (a animação de entrada não repete).
+  await page.click('button.opt:has-text("ENEM")');
+  await page.click('button.opt:has-text("ENEM")');
   await page.click('button.opt:has-text("Carreiras policiais")');
+  ok(await page.locator('.onb-card.fade-in').count() === 0, 'cartão piscou ao escolher objetivo');
+  ok(await page.evaluate(() => document.activeElement.textContent.includes('Carreiras policiais')), 'foco fica no objetivo escolhido');
   await page.click('text=Continuar');
   ok(await page.locator('#onb-mats [aria-pressed="true"]').count() >= 5, 'matérias do objetivo deveriam vir marcadas');
   await page.click('text=Montar meu painel');
