@@ -19,7 +19,7 @@
     } else {
       palco = '<img class="hp-pose hp-logo" data-p="frente" src="marca/helma-retrato.svg" alt="" draggable="false">';
     }
-    return '<div class="helma-p" data-pose="' + (o.pose || 'frente') + '" data-humor="' + (o.humor || 'neutro') + '" style="--hp:' + t + 'px"' + (o.fala ? ' role="img" aria-label="Helma: ' + UI.esc(o.fala) + '"' : ' aria-hidden="true"') + '>' +
+    return '<div class="helma-p" data-pose="' + (o.pose || 'frente') + '" data-humor="' + (o.humor || 'neutro') + '" style="--hp:' + t + 'px' + (temPoses && root.HELMA_POSES.proporcao ? ';--hr:' + root.HELMA_POSES.proporcao : '') + '"' + (o.fala ? ' role="img" aria-label="Helma: ' + UI.esc(o.fala) + '"' : ' aria-hidden="true"') + '>' +
       '<div class="hp-palco">' + palco + '<span class="hp-brilhos" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>' +
       (o.fala ? '<p class="hp-fala">' + UI.esc(o.fala) + '</p>' : '') + '</div>';
   }
