@@ -26,7 +26,9 @@ partir do mesmo código em `www/`. Não tem servidor nem conta: o progresso fica
 
 ## Conteúdo e direitos
 
-- **146 questões inéditas** escritas para o app, no estilo das bancas, com explicação, e 21 aulas.
+- **314 questões inéditas** escritas para o app, no estilo das bancas (CEBRASPE, FGV, FCC, Cesgranrio, Vunesp, OAB/FGV e
+  ENEM), com explicação, e 21 aulas. Nenhuma copia questão real: as provas dessas bancas não têm licença aberta. As 168
+  dos arquivos `bancas-*.js` foram resolvidas por um conferente independente e conferidas com o texto vigente da lei.
 - **204 questões oficiais do ENEM 2023–2025** (INEP/MEC), reproduzidas **sem alteração** sob a licença Creative Commons
   BY-ND 3.0 publicada pelo INEP, com crédito visível em cada questão. Só entram itens sem textos, imagens ou citações de
   terceiros (a licença do INEP não cobre esse material); as descrições de imagens são as do próprio INEP. Geradas por
