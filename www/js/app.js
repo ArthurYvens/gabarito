@@ -21,6 +21,8 @@
     { href: '#/simulados', id: 'simulados', nome: 'Simulados', ico: 'simulado' },
     { href: '#/questoes', id: 'questoes', nome: 'Banco de questões', ico: 'questoes' },
     { href: '#/revisao', id: 'revisao', nome: 'Revisão', ico: 'revisao' },
+    { href: '#/cartoes', id: 'cartoes', nome: 'Cartões', ico: 'cartao' },
+    { href: '#/desempenho', id: 'desempenho', nome: 'Desempenho', ico: 'grafico' },
     { href: '#/minhas-questoes', id: 'minhas', nome: 'Minhas questões', ico: 'upload' },
     { href: '#/aulas', id: 'aulas', nome: 'Aulas', ico: 'aulas' },
     { href: '#/redacao', id: 'redacao', nome: 'Redação', ico: 'redacao' },
@@ -53,6 +55,21 @@
     '</div>';
   }
 
+  // Números grandes contam do zero até o valor (some com prefers-reduced-motion).
+  function contarNumeros(raiz) {
+    try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch (e) { return; }
+    Array.prototype.forEach.call(raiz.querySelectorAll('.ring b, .stat > b'), function (el) {
+      var m = /^(\d+)(.*)$/.exec(el.textContent.trim());
+      if (!m || el.children.length) return;
+      var alvo = Number(m[1]), resto = m[2], t0 = performance.now();
+      if (alvo < 2) return;
+      (function passo(t) {
+        var k = Math.min(1, (t - t0) / 800), v = Math.round(alvo * (1 - Math.pow(1 - k, 3)));
+        el.textContent = v + resto;
+        if (k < 1 && el.isConnected) requestAnimationFrame(passo);
+      })(t0);
+    });
+  }
   App.render = function () {
     try { desenhar(); } catch (e) {
       // Uma tela com defeito não pode deixar o app em branco: mostra o erro e uma saída.
@@ -75,6 +92,8 @@
         else raiz.innerHTML = layout(App.rotas[i].nav, r.html);
         if (r.titulo) document.title = r.titulo + ' · Helma';
         if (r.montar) App.saida = r.montar() || null;
+        Personagem.acordar(raiz);
+        contarNumeros(raiz);
         var main = document.getElementById('main');
         if (main && !r.manterScroll) { window.scrollTo(0, 0); }
         return;
@@ -131,7 +150,7 @@
     var passos = '<div class="onb-steps" aria-hidden="true">' + [0, 1, 2].map(function (i) { return '<i class="' + (i <= onb.passo ? 'on' : '') + '"></i>'; }).join('') + '</div>';
     var corpo;
     if (onb.passo === 0) {
-      corpo = '<div class="onb-marca"><img class="logo-claro" src="marca/helma-retrato.svg" alt=""><img class="logo-escuro" src="marca/helma-retrato-claro.svg" alt=""><div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
+      corpo = '<div class="onb-marca">' + Personagem.html({ tamanho: 96, humor: 'ola', pose: 'perfil-dir' }) + '<div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
         '<span class="eyebrow">Boas-vindas</span><h1>Seu estudo, montado para a sua prova.</h1>' +
         '<p class="muted mt" style="font-size:16.5px;max-width:56ch">Simulados que se ajustam ao seu objetivo, explicações que ensinam de verdade, aulas, redação corrigida por critérios e revisão no momento certo.</p>' +
         '<label class="field mt-lg"><span>Como podemos te chamar?</span><input class="input" id="onb-nome" maxlength="40" autocomplete="given-name" placeholder="Como quer ser chamado (opcional)" value="' + esc(onb.nome) + '"></label>' +
@@ -158,7 +177,7 @@
   function montarOnboarding() {
     document.title = 'Boas-vindas · Helma';
     var n = document.getElementById('onb-nome');
-    if (n) { n.focus(); n.addEventListener('keydown', function (e) { if (e.key === 'Enter') App.acoes['onb-prox'](); }); }
+    Personagem.acordar(document); if (n) { n.focus(); n.addEventListener('keydown', function (e) { if (e.key === 'Enter') App.acoes['onb-prox'](); }); }
   }
   function lerOnb() {
     var n = document.getElementById('onb-nome'); if (n) onb.nome = n.value.trim();
@@ -206,13 +225,15 @@
     var fracos = Motor.pontosFracos(Banco, st.respostas, 4);
     var falta = diasAte(p.dataProva);
 
+    var novato = !Object.keys(st.respostas).length;
     var cta = andamento
       ? '<a class="btn btn-primary btn-lg" href="#/simulado/' + andamento.id + '">' + ico('play') + ' Continuar simulado (' + Object.keys(andamento.respostas).length + '/' + andamento.questoes.length + ')</a>'
+      : novato ? '<button class="btn btn-primary btn-lg" data-act="diagnostico-iniciar">' + ico('alvo') + ' Fazer o diagnóstico inicial</button>'
       : '<button class="btn btn-primary btn-lg" data-act="sim-rapido">' + ico('play') + ' Simulado recomendado</button>';
-    var sheet = '<img class="hero-retrato" src="marca/helma-retrato-claro.svg" alt="" aria-hidden="true">';
+    var sheet = '<span class="hero-retrato-wrap">' + Personagem.html({ tamanho: 132, humor: feitas >= p.metaDiaria ? 'feliz' : 'ola', pose: 'perfil-dir' }) + '</span>';
     var hero = '<section class="hero"><div><span class="eyebrow" style="color:inherit;opacity:.7">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</span>' +
       '<h1>' + saudacao() + (p.nome ? ', ' + esc(p.nome.trim().split(/\s+/)[0]) : '') + '.</h1>' +
-      '<p>' + (pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
+      '<p>' + (pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : novato ? 'Comece pelo diagnóstico: cerca de ' + Math.max(4, Math.min(20, (p.materias || []).length * 2)) + ' questões das suas matérias, sem pressa, para o app saber de onde você parte em cada assunto.' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
       '<div class="row">' + cta + (pend ? '<button class="btn btn-ghost" data-act="rev-iniciar">' + ico('revisao') + ' Revisar ' + pend + '</button>' : '<a class="btn btn-ghost" href="#/simulados">Montar simulado</a>') + '</div></div>' + sheet + '</section>';
 
     // Semana de atividade
@@ -225,7 +246,11 @@
     }
     var meta = '<section class="card"><div class="goal"><div class="ring" style="--p:' + pct + '"><div><b class="mono">' + feitas + '</b><span>de ' + p.metaDiaria + ' hoje</span></div></div>' +
       '<div class="stack" style="flex:1;gap:10px"><div class="row" style="gap:8px">' + ico('chama') + '<b>' + UI.plural(seq, 'dia seguido', 'dias seguidos') + '</b></div>' +
-      '<div class="week" aria-label="Atividade dos últimos 7 dias">' + semana + '</div></div></div></section>';
+      '<div class="week" aria-label="Atividade dos últimos 7 dias">' + semana + '</div></div></div>' +
+      (function () {
+        var sem = Motor.semana(st.atividade, hoje), alvo = p.metaSemanal || p.metaDiaria * 5, pc = Math.min(100, Math.round(sem.total / alvo * 100));
+        return '<div class="meta-semana"><div class="nm"><span>Meta da semana</span><b class="mono">' + sem.total + ' de ' + alvo + '</b></div><div class="bar"><i style="width:' + pc + '%"></i></div></div>';
+      })() + '</section>';
 
     var mats = (p.materias || []).map(Banco.materia).filter(Boolean);
     var linhasMat = mats.map(function (m) {
@@ -258,13 +283,26 @@
       })[0];
     var aulaCard = aula ? '<section class="card"><span class="eyebrow">Aula sugerida</span><h3>' + esc(aula.titulo) + '</h3><p class="muted small mt" style="margin-top:6px">' + esc(Banco.materia(aula.materia).nome) + ' · ' + aula.duracaoMin + ' min</p><p class="small">' + esc(aula.resumo) + '</p><a class="btn btn-secondary btn-sm" href="#/aula/' + aula.id + '">Abrir aula</a></section>' : '';
 
+    var sug = Motor.sugestao(Banco, st, hoje);
+    var sugCard = novato || andamento || sug.tipo === 'simulado' ? '' : '<section class="card sugestao"><span class="eyebrow">Próximo treino sugerido</span><h2>' + esc(sug.titulo) + '</h2><p class="small" style="margin-top:6px">' + esc(sug.porque) + '</p><button class="btn btn-primary btn-sm" data-act="sugestao-iniciar">' + ico('play') + ' Começar</button></section>';
     return {
       titulo: 'Início',
-      html: hero + '<div class="grid g-main mt"><div class="stack">' + desempenhoCard + fracosCard + '</div><div class="stack">' + meta + planoHoje + aulaCard +
+      html: hero + '<div class="grid g-main mt"><div class="stack">' + sugCard + desempenhoCard + fracosCard + '</div><div class="stack">' + meta + planoHoje + aulaCard +
         '<section class="card card-flat"><span class="eyebrow">Redação</span><h3>Treine a escrita desta semana</h3><p class="small muted" style="margin-top:6px">Editor com folha pautada, contagem de linhas e checagem da proposta de intervenção.</p><a class="btn btn-secondary btn-sm" href="#/redacao/escrever">Escrever redação</a></section></div></div>'
     };
   }, 'inicio');
 
+  App.acao('diagnostico-iniciar', function () {
+    var p = S().perfil, ids = Motor.diagnostico(Banco, p.materias, Date.now());
+    if (!ids.length) { UI.toast('Escolha matérias com questões em Ajustes.'); return; }
+    App.criarSimulado({ ids: ids, modo: 'prova', origem: 'diagnostico' }, 'Diagnóstico inicial');
+  });
+  App.acao('sugestao-iniciar', function () {
+    var s = Motor.sugestao(Banco, S(), Motor.hoje());
+    if (s.tipo === 'diagnostico') return App.acoes['diagnostico-iniciar']();
+    if (s.tipo === 'revisao') return App.acoes['rev-iniciar']();
+    App.criarSimulado(s.cfg, s.titulo);
+  });
   App.acao('treinar', function (el) {
     var cfg = { materias: [el.getAttribute('data-mat')], quantidade: 10, modo: 'estudo' };
     if (el.getAttribute('data-assunto')) cfg.assuntos = [el.getAttribute('data-assunto')];
@@ -289,7 +327,11 @@
     var grade = '';
     if (pl) {
       var hojeDia = new Date().getDay();
-      grade = '<section class="mt-lg"><div class="row-between" style="margin-bottom:14px"><h2>Sua semana</h2><span class="muted small">Blocos de 50 min · ' + UI.plural(Object.values(pl.semana).reduce(function (s, b) { return s + b.length; }, 0), 'bloco', 'blocos') + '</span></div><div class="plan">' +
+      var blocosHoje = (pl.semana[hojeDia] || []).length, feitasHoje = S().sessoes[Motor.hoje()] || 0;
+      // Sessões do dia: o aluno marca cada bloco cumprido; o plano mostra o andamento real, não só o previsto.
+      var sessoesHtml = blocosHoje ? '<section class="card mt sessoes"><div class="row-between"><div><span class="eyebrow">Hoje</span><h3>' + Math.min(feitasHoje, blocosHoje) + ' de ' + UI.plural(blocosHoje, 'sessão', 'sessões') + ' cumprida' + (feitasHoje === 1 ? '' : 's') + '</h3></div>' +
+        (feitasHoje < blocosHoje ? '<button class="btn btn-primary btn-sm" data-act="sessao-feita">' + ico('check') + ' Concluí uma sessão</button>' : '<span class="tag tag-ok">' + ico('check') + ' Dia cumprido</span>') + '</div><div class="bar mt"><i style="width:' + Math.min(100, Math.round(feitasHoje / blocosHoje * 100)) + '%"></i></div></section>' : '';
+      grade = sessoesHtml + '<section class="mt-lg"><div class="row-between" style="margin-bottom:14px"><h2>Sua semana</h2><span class="muted small">Blocos de 50 min · ' + UI.plural(Object.values(pl.semana).reduce(function (s, b) { return s + b.length; }, 0), 'bloco', 'blocos') + '</span></div><div class="plan">' +
         [1, 2, 3, 4, 5, 6, 0].map(function (i) {
           var blocos = pl.semana[i];
           return '<div class="plan-day' + (blocos ? '' : ' off') + (i === hojeDia ? ' today' : '') + '"><h4>' + DIAS[i].slice(0, 3) + (i === hojeDia ? ' · hoje' : '') + '</h4>' +
@@ -299,6 +341,11 @@
     }
     return { titulo: 'Plano de estudos', html: '<div class="page-head"><div><span class="eyebrow">Organização</span><h1>Plano de estudos</h1><p>Um cronograma semanal feito a partir do seu objetivo, do seu tempo e do seu desempenho.</p></div></div>' + form + grade };
   }, 'plano');
+  App.acao('sessao-feita', function () {
+    var d = Motor.hoje();
+    S().sessoes[d] = Math.min(12, (S().sessoes[d] || 0) + 1);
+    Store.salvar(); App.render();
+  });
   App.acao('plano-gerar', function () {
     var dias = App.valores(document.getElementById('pl-dias'), 'data-d').map(Number);
     var horas = Number(App.valores(document.getElementById('pl-horas'), 'data-h')[0] || 2);
@@ -364,7 +411,8 @@
           '<div class="field mt"><span class="label">Matérias de foco</span><div class="chips" id="aj-mats">' + Banco.materias.map(function (m) {
             return '<button class="chip" data-toggle="multi" data-mat="' + m.id + '" aria-pressed="' + (p.materias.indexOf(m.id) >= 0) + '">' + ico('check', 'ck') + esc(m.nome) + '</button>';
           }).join('') + '</div></div>' +
-          '<label class="field mt" style="max-width:200px"><span>Meta diária de questões</span><input class="input" type="number" id="aj-meta" min="5" max="300" step="5" value="' + p.metaDiaria + '"></label>' +
+          '<div class="row mt" style="align-items:flex-end"><label class="field" style="max-width:200px"><span>Meta diária de questões</span><input class="input" type="number" id="aj-meta" min="5" max="300" step="5" value="' + p.metaDiaria + '"></label>' +
+          '<label class="field" style="max-width:200px"><span>Meta da semana</span><input class="input" type="number" id="aj-meta-semana" min="10" max="2000" step="10" value="' + (p.metaSemanal || p.metaDiaria * 5) + '"></label></div>' +
           '<p class="small muted mt" style="margin-bottom:0">As alterações são salvas automaticamente.</p></section>' +
         '<section class="card"><h2>Estudo e aparência</h2>' +
           '<label class="switch mt"><span><b>Explicação profunda</b><span>Resolução completa, comentário por alternativa e fontes logo após responder.</span></span><input type="checkbox" data-pref="explicacaoProfunda"' + (p.explicacaoProfunda ? ' checked' : '') + '></label>' +
@@ -384,7 +432,7 @@
         document.querySelectorAll('[data-pref]').forEach(function (inp) {
           inp.addEventListener('change', function () { S().perfil[inp.getAttribute('data-pref')] = inp.checked; Store.salvar(); UI.toast('Preferência salva.'); });
         });
-        ['aj-nome', 'aj-obj', 'aj-meta'].forEach(function (id) { document.getElementById(id).addEventListener('change', salvarPerfil); });
+        ['aj-nome', 'aj-obj', 'aj-meta', 'aj-meta-semana'].forEach(function (id) { document.getElementById(id).addEventListener('change', salvarPerfil); });
         document.getElementById('aj-mats').addEventListener('alternou', salvarPerfil);
         document.getElementById('aj-backup').addEventListener('change', restaurarBackup);
         Armazem.espaco().then(function (e) {
@@ -405,6 +453,8 @@
     p.objetivo = document.getElementById('aj-obj').value;
     p.materias = mats;
     p.metaDiaria = n;
+    var ms = Math.round(Number(document.getElementById('aj-meta-semana').value));
+    p.metaSemanal = ms >= 10 && ms <= 2000 ? ms : n * 5;
     Store.salvar(); UI.toast('Perfil salvo.');
   }
   App.acao('aj-tema', function (el) { S().perfil.tema = el.getAttribute('data-v'); Store.salvar(); App.aplicarTema(); App.render(); });

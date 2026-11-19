@@ -233,7 +233,51 @@
     return { blocosDia: blocosDia, semana: semana, cota: cota };
   }
 
+  /* Diagnóstico inicial: até 2 questões de assuntos diferentes por matéria do aluno (preferindo dificuldade
+     média), no máximo 20, para medir o ponto de partida de cada assunto. */
+  function diagnostico(banco, materias, seed) {
+    var rand = rng(seed || 1), ids = [];
+    (materias || []).forEach(function (m) {
+      var porAssunto = {};
+      banco.questoes.filter(function (q) { return q.materia === m; }).forEach(function (q) { (porAssunto[q.assunto] = porAssunto[q.assunto] || []).push(q); });
+      embaralhar(Object.keys(porAssunto), rand).slice(0, 2).forEach(function (a) {
+        var lista = porAssunto[a].slice().sort(function (x, y) { return Math.abs(x.dificuldade - 2) - Math.abs(y.dificuldade - 2) || rand() - 0.5; });
+        ids.push(lista[0].id);
+      });
+    });
+    return ids.slice(0, 20);
+  }
+
+  /* Sugestão do próximo treino, em ordem de prioridade. Devolve { tipo, titulo, porque, cfg }. */
+  function sugestao(banco, estado, hojeIso) {
+    var respostas = estado.respostas || {}, perfil = estado.perfil || {};
+    var pend = pendentes(estado.revisao || {}, hojeIso).filter(function (id) { return banco.questao(id); });
+    if (!Object.keys(respostas).length) return { tipo: 'diagnostico', titulo: 'Diagnóstico inicial', porque: 'Ainda não há respostas suas. Comece medindo seu ponto de partida em cada assunto.' };
+    if (pend.length >= 5) return { tipo: 'revisao', titulo: 'Revisão do dia (' + pend.length + ')', porque: 'São questões que você errou e que estão no ponto de serem esquecidas.' };
+    var perigosos = Object.keys(respostas).filter(function (id) { var u = ultima(respostas, id); return u && !u.certo && u.conf === 2 && banco.questao(id); });
+    if (perigosos.length >= 3) return { tipo: 'ids', titulo: 'Erros com certeza (' + perigosos.length + ')', porque: 'Você errou estas questões tendo certeza: é sinal de um conceito aprendido errado.', cfg: { ids: perigosos.slice(0, 20), modo: 'estudo' } };
+    var fracos = pontosFracos(banco, respostas, 1);
+    if (fracos.length) {
+      var f = fracos[0];
+      return { tipo: 'treino', titulo: 'Treinar ' + f.assunto, porque: 'Seu acerto neste assunto está em ' + Math.round(f.acertos / f.total * 100) + '% (' + f.acertos + ' de ' + f.total + ').', cfg: { materias: [f.materia], assuntos: [f.assunto], quantidade: 10, modo: 'estudo' } };
+    }
+    var d = desempenho(banco, respostas).porMateria;
+    var menos = (perfil.materias || []).filter(function (m) { return banco.questoes.some(function (q) { return q.materia === m; }); })
+      .sort(function (a, b) { return ((d[a] || {}).total || 0) - ((d[b] || {}).total || 0); })[0];
+    if (menos && !((d[menos] || {}).total)) return { tipo: 'treino', titulo: 'Começar uma matéria nova', porque: 'Você ainda não praticou esta matéria da sua prova.', cfg: { materias: [menos], quantidade: 10, modo: 'estudo' }, materia: menos };
+    return { tipo: 'simulado', titulo: 'Simulado recomendado', porque: 'Mistura as matérias da sua prova, priorizando o que você ainda não viu ou errou.', cfg: { materias: perfil.materias, quantidade: 10, modo: 'estudo' } };
+  }
+
+  /* Questões feitas na semana (de segunda a domingo) que contém hojeIso. */
+  function semana(atividade, hojeIso) {
+    var p = hojeIso.split('-').map(Number), dow = new Date(p[0], p[1] - 1, p[2]).getDay();
+    var seg = somarDias(hojeIso, -((dow + 6) % 7)), total = 0;
+    for (var i = 0; i < 7; i++) total += (atividade || {})[somarDias(seg, i)] || 0;
+    return { inicio: seg, total: total };
+  }
+
   var Motor = {
+    diagnostico: diagnostico, sugestao: sugestao, semana: semana,
     INTERVALOS: INTERVALOS, rng: rng, embaralhar: embaralhar, hoje: hoje, somarDias: somarDias,
     acertou: acertou, ultima: ultima, filtrar: filtrar, distribuir: distribuir, montarSimulado: montarSimulado,
     corrigir: corrigir, desempenho: desempenho, pontosFracos: pontosFracos, agendar: agendar,

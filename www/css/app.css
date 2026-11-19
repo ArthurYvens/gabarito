@@ -581,11 +581,12 @@ label.btn:focus-within { outline: 2.5px solid var(--pen); outline-offset: 2px; }
 
 /* Boas-vindas */
 .onb-marca { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
-.onb-marca img { width: 92px; height: auto; }
+.onb-marca > img { width: 92px; height: auto; }
+.hero-retrato-wrap { display: flex; align-self: end; }
 .onb-nome { display: block; font-family: var(--f-display); font-weight: 700; font-size: 46px; line-height: 1; color: var(--ink); }
 .onb-tag { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-family: var(--f-display); font-size: 17px; color: var(--ink-2); }
 .onb-tag::before, .onb-tag::after { content: ''; width: 26px; height: 1px; background: var(--gold); }
 .onb-card .brand { display: none; }
 .onb-steps i.on { background: var(--gold); }
 .opt[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
-@media (max-width: 880px) { .hero-retrato { display: none; } .onb-nome { font-size: 38px; } .onb-marca img { width: 72px; } }
+@media (max-width: 880px) { .hero-retrato, .hero-retrato-wrap { display: none; } .onb-nome { font-size: 38px; } .onb-marca > img { width: 72px; } }

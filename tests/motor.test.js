@@ -92,4 +92,20 @@ const prop = red.proposta;
 assert.ok(prop.agente && prop.acao && prop.meio && prop.finalidade);
 assert.ok(Analise.analisar('eu acho que tipo isso é ruim').alertas.length >= 2);
 
+
+// diagnóstico, sugestão e semana
+const diag = Motor.diagnostico(banco, ['portugues', 'matematica'], 3);
+assert.ok(diag.length === 4 && new Set(diag).size === 4, 'diagnóstico: 2 assuntos por matéria');
+assert.ok(diag.every((id) => /^(portugues|matematica)/.test(id)));
+const bancoSug = { ...banco, questao: (id) => questoes.find((q) => q.id === id) };
+assert.strictEqual(Motor.sugestao(bancoSug, { respostas: {}, revisao: {}, perfil: { materias: ['portugues'] } }, '2026-11-19').tipo, 'diagnostico');
+const revs = {}; questoes.slice(0, 6).forEach((q) => (revs[q.id] = { caixa: 0, proxima: '2026-11-18' }));
+assert.strictEqual(Motor.sugestao(bancoSug, { respostas: { 'portugues-1': [{ certo: false }] }, revisao: revs, perfil: {} }, '2026-11-19').tipo, 'revisao');
+const certeza = {}; ['portugues-1', 'portugues-2', 'portugues-4'].forEach((id) => (certeza[id] = [{ certo: false, conf: 2 }]));
+assert.strictEqual(Motor.sugestao(bancoSug, { respostas: certeza, revisao: {}, perfil: {} }, '2026-11-19').tipo, 'ids');
+const fraco = { 'matematica-1': [{ certo: false }], 'matematica-3': [{ certo: false }] };
+const sf = Motor.sugestao(bancoSug, { respostas: fraco, revisao: {}, perfil: {} }, '2026-11-19');
+assert.strictEqual(sf.tipo, 'treino'); assert.deepStrictEqual(sf.cfg.materias, ['matematica']);
+assert.deepStrictEqual(Motor.semana({ '2026-11-17': 3, '2026-11-19': 2, '2026-11-16': 9 }, '2026-11-19'), { inicio: '2026-11-16', total: 14 }, 'semana começa na segunda (16/11/2026)');
+
 console.log('motor e análise: todos os testes passaram');

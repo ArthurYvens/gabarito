@@ -93,7 +93,7 @@
     if (M.modo === 'texto' || M.modo === 'pdf') {
       painel = '<section class="card mt" id="mq-painel"><div class="card-head"><div><h2>' + (M.modo === 'pdf' ? 'Prova em PDF' : 'Colar texto da prova') + '</h2>' +
         '<p class="small">' + (M.modo === 'pdf' ? 'Escolha o PDF. O texto aparece abaixo para você conferir; depois o app separa as questões e as alternativas.' : 'Cole o texto copiado do PDF, do site ou da apostila. As questões precisam estar numeradas (1., 2) ou "Questão 3") e as alternativas marcadas com A) a E).') + '</p></div></div>' +
-        (M.modo === 'pdf' ? '<div class="row" style="margin-bottom:14px"><label class="btn btn-primary">' + ico('upload') + ' Escolher PDF<input type="file" accept=".pdf,application/pdf" id="mq-pdf" class="sr-only"></label><span class="muted small" id="mq-pdf-status" aria-live="polite">' + esc(M.lendoPdf) + '</span></div>' : '') +
+        (M.modo === 'pdf' ? '<div class="row" style="margin-bottom:14px"><label class="btn btn-primary">' + ico('upload') + ' Escolher PDF<input type="file" accept=".pdf,application/pdf" id="mq-pdf" class="sr-only"></label><span id="mq-helma"></span><span class="muted small" id="mq-pdf-status" aria-live="polite">' + esc(M.lendoPdf) + '</span></div>' : '') +
         '<label class="field"><span>Texto da prova</span><textarea class="input mono-text" id="mq-texto" rows="12" placeholder="1. Enunciado da primeira questão...&#10;A) primeira alternativa&#10;B) segunda alternativa&#10;...">' + esc(M.texto) + '</textarea></label>' +
         '<label class="field mt"><span>Gabarito <span class="muted small">(opcional; se não tiver, você marca as respostas na revisão)</span></span><textarea class="input" id="mq-gabarito" rows="2" placeholder="1-A 2-C 3-E ...  ou  01 B 02 D  ou  ACDBE  ou, em certo e errado, 1 C 2 E">' + esc(M.gabarito) + '</textarea></label>' +
         '<div class="row-between mt"><span class="muted small">Se o PDF for escaneado (foto da página), não há texto para ler: copie o texto de outra versão da prova.</span><button class="btn btn-primary" data-act="mq-reconhecer">' + ico('check') + ' Reconhecer questões</button></div></section>';
@@ -153,6 +153,8 @@
     if (f.size > 60 * 1024 * 1024) { UI.toast('PDF maior que 60 MB. Divida o arquivo.'); return; }
     var aviso = function (t) { M.lendoPdf = t; var s = document.getElementById('mq-pdf-status'); if (s) s.textContent = t; };
     aviso('Lendo ' + f.name + '...');
+    var lugar = document.getElementById('mq-helma');
+    if (lugar) { lugar.innerHTML = Personagem.html({ tamanho: 46, humor: 'pensando' }); Personagem.acordar(lugar); }
     f.arrayBuffer().then(function (buf) {
       return textoDoPdf(buf, function (n, total) { aviso('Lendo página ' + n + ' de ' + total + '...'); });
     }).then(function (r) {

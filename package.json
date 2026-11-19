@@ -8,8 +8,8 @@
   "scripts": {
     "start": "electron .",
     "build:web": "node tools/fontes.js && node tools/pwa.js",
-    "test": "node tools/validar.js && node tests/motor.test.js && node tests/importador.test.js",
-    "test:navegador": "node tests/e2e.js http://localhost:5321/ && node tests/seguranca.js http://localhost:5321/ && node tests/minhas.js http://localhost:5321/",
+    "test": "node tools/validar.js && node tests/motor.test.js && node tests/importador.test.js && node tests/cartoes.test.js && node tests/desempenho.test.js",
+    "test:navegador": "node tests/e2e.js http://localhost:5321/ && node tests/seguranca.js http://localhost:5321/ && node tests/minhas.js http://localhost:5321/ && node tests/recursos.js http://localhost:5321/",
     "dist:win": "npm run build:web && electron-builder --win nsis",
     "android:sync": "npm run build:web && cap sync android",
     "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug"

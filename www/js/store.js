@@ -17,6 +17,8 @@
       plano: null,
       notas: Object.create(null), // id da questão -> anotação do aluno
       motivos: Object.create(null), // id da questão -> por que o aluno errou (Store.MOTIVOS)
+      cartoes: Object.create(null), // id -> cartão de memorização { frente, verso, qid, caixa, proxima, criadoEm }
+      sessoes: Object.create(null), // 'AAAA-MM-DD' -> quantos blocos do plano o aluno marcou como feitos
       importados: [] // só para migrar: os bancos agora ficam no IndexedDB (armazem.js)
     };
   }
@@ -45,6 +47,7 @@
       objetivo: root.Banco && Banco.objetivo(p.objetivo) ? p.objetivo : 'livre',
       materias: lista(p.materias).filter(function (m) { return !root.Banco || Banco.materia(m); }),
       metaDiaria: Math.round(num(p.metaDiaria, 5, 300, 20)),
+      metaSemanal: Math.round(num(p.metaSemanal, 10, 2000, Math.round(num(p.metaDiaria, 5, 300, 20) * 5))),
       explicacaoProfunda: p.explicacaoProfunda !== false,
       tema: ['auto', 'light', 'dark'].indexOf(p.tema) >= 0 ? p.tema : 'auto',
       penalidadeCE: p.penalidadeCE !== false,
@@ -53,18 +56,27 @@
     if (out.perfil && !out.perfil.materias.length && root.Banco) out.perfil.materias = Banco.materias.map(function (m) { return m.id; });
     out.respostas = mapa(e.respostas, function (h) {
       var l = lista(h).filter(function (x) { return x && typeof x === 'object'; }).slice(-MAX_HIST)
-        .map(function (x) { return { t: num(x.t, 0, 9e15, 0), certo: x.certo === true, r: resp(x.r) }; });
+        .map(function (x) {
+          var o = { t: num(x.t, 0, 9e15, 0), certo: x.certo === true, r: resp(x.r) };
+          if (isFinite(Number(x.ms)) && Number(x.ms) > 0) o.ms = Math.round(num(x.ms, 0, 3600000, 0));
+          if ([0, 1, 2].indexOf(x.conf) >= 0) o.conf = x.conf;
+          if (Number.isInteger(x.dicas) && x.dicas > 0) o.dicas = Math.min(3, x.dicas);
+          return o;
+        });
       return l.length ? l : undefined;
     });
     out.simulados = lista(e.simulados).filter(function (s) { return s && id(s.id); }).slice(-150).map(function (s) {
       var qs = lista(s.questoes).filter(function (q) { return typeof q === 'string'; }).slice(0, 500);
       return {
         id: s.id, titulo: txt(s.titulo, 120) || 'Simulado', criadoEm: num(s.criadoEm, 0, 9e15, Date.now()), concluidoEm: num(s.concluidoEm, 0, 9e15, 0),
-        modo: s.modo === 'prova' ? 'prova' : 'estudo', origem: ['simulado', 'revisao'].indexOf(s.origem) >= 0 ? s.origem : 'simulado',
+        modo: s.modo === 'prova' ? 'prova' : 'estudo', origem: ['simulado', 'revisao', 'diagnostico'].indexOf(s.origem) >= 0 ? s.origem : 'simulado',
         questoes: qs, respostas: mapa(s.respostas, resp), confirmadas: mapa(s.confirmadas, function (v) { return v === true || undefined; }),
         marcadas: mapa(s.marcadas, function (v) { return v === true || undefined; }),
         riscadas: mapa(s.riscadas, function (v) { return lista(v).filter(function (i) { return Number.isInteger(i) && i >= 0 && i < 5; }); }),
         atual: Math.round(num(s.atual, 0, Math.max(0, qs.length - 1), 0)),
+        tempos: mapa(s.tempos, function (v) { return isFinite(Number(v)) && Number(v) >= 0 ? Math.min(Math.round(Number(v)), 86400) : undefined; }),
+        confianca: mapa(s.confianca, function (v) { return [0, 1, 2].indexOf(v) >= 0 ? v : undefined; }),
+        dicas: mapa(s.dicas, function (v) { return Number.isInteger(v) && v > 0 ? Math.min(3, v) : undefined; }),
         tempoLimiteSeg: Math.round(num(s.tempoLimiteSeg, 0, 86400, 0)), decorridoSeg: Math.round(num(s.decorridoSeg, 0, 864000, 0)),
         status: s.status === 'concluido' ? 'concluido' : 'andamento'
       };
@@ -91,6 +103,14 @@
     var r = e.rascunho;
     out.rascunho = r && typeof r === 'object' ? { tema: Math.round(num(r.tema, 0, 99, 0)), texto: txt(r.texto, 20000), segundos: Math.round(num(r.segundos, 0, 864000, 0)),
       avaliando: r.avaliando === true, notas: lista(r.notas).slice(0, 5).map(function (n) { return Math.round(num(n, 0, 200, 0)); }) } : null;
+    out.cartoes = mapa(e.cartoes, function (c) {
+      if (!c || typeof c !== 'object' || typeof c.frente !== 'string' || typeof c.verso !== 'string' || !c.frente.trim()) return undefined;
+      return { frente: c.frente.slice(0, 4000), verso: c.verso.slice(0, 4000), qid: typeof c.qid === 'string' ? c.qid.slice(0, 80) : '',
+        caixa: Math.round(num(c.caixa, 0, 5, 0)), proxima: iso(c.proxima) || Motor.hoje(), criadoEm: num(c.criadoEm, 0, 9e15, Date.now()) };
+    });
+    Object.keys(out.cartoes).forEach(function (k) { if (!/^[a-z0-9-]{1,60}$/.test(k)) delete out.cartoes[k]; });
+    out.sessoes = mapa(e.sessoes, function (v) { return Number.isInteger(v) && v > 0 ? Math.min(v, 12) : undefined; });
+    Object.keys(out.sessoes).forEach(function (k) { if (!iso(k)) delete out.sessoes[k]; });
     out.motivos = mapa(e.motivos, function (v) { return Store.MOTIVOS.indexOf(v) >= 0 ? v : undefined; });
     out.notas = mapa(e.notas, function (v) { return typeof v === 'string' && v.trim() ? v.slice(0, 5000) : undefined; });
     out.importados = lista(e.importados).filter(function (b) { return b && Array.isArray(b.questoes); })
@@ -138,10 +158,15 @@
     },
     apagarTudo: function () { estado = vazio(); try { root.localStorage.removeItem(CHAVE); } catch (e) { /* sem armazenamento */ } },
 
-    registrarResposta: function (q, resposta, origem) {
+    /* extra (opcional): { ms: tempo gasto, conf: 0|1|2, dicas: quantas dicas usou } */
+    registrarResposta: function (q, resposta, origem, extra) {
       var certo = resposta === q.resposta;
       var h = (estado.respostas[q.id] = estado.respostas[q.id] || []);
-      h.push({ t: Date.now(), certo: certo, r: resposta });
+      var entrada = { t: Date.now(), certo: certo, r: resposta };
+      if (extra && extra.ms > 0) entrada.ms = Math.min(Math.round(extra.ms), 3600000);
+      if (extra && [0, 1, 2].indexOf(extra.conf) >= 0) entrada.conf = extra.conf;
+      if (extra && extra.dicas > 0) entrada.dicas = Math.min(3, extra.dicas);
+      h.push(entrada);
       if (h.length > MAX_HIST) h.splice(0, h.length - MAX_HIST);
       var dia = Motor.hoje();
       estado.atividade[dia] = (estado.atividade[dia] || 0) + 1;

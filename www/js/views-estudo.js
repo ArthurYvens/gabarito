@@ -13,7 +13,39 @@
   }
 
   // ---------- Componente de questão ----------
-  /* o: { numero, resposta, confirmada, riscadas[], profunda, expandida, travada } */
+  /* Dicas graduais: 1 = tema e aula; 2 e 3 = eliminam alternativas erradas (sempre as mesmas para a questão). */
+  function eliminadas(q, n) {
+    if (q.tipo !== 'multipla' || n < 2) return [];
+    var erradas = q.alternativas.map(function (_, i) { return i; }).filter(function (i) { return i !== q.resposta; });
+    var h = 0;
+    for (var k = 0; k < q.id.length; k++) h = (h * 31 + q.id.charCodeAt(k)) >>> 0;
+    return Motor.embaralhar(erradas, Motor.rng(h)).slice(0, n - 1);
+  }
+  function maxDicas(q) { return q.tipo === 'multipla' ? 3 : 1; }
+  function dicasHtml(q, n) {
+    if (!n) return '';
+    var m = Banco.materia(q.materia);
+    var aula = Banco.aulas.filter(function (a) { return a.materia === q.materia && a.assunto === q.assunto; })[0];
+    var itens = ['<li><b>Dica 1:</b> o tema é <b>' + esc(q.assunto) + '</b> (' + esc(m ? m.nome : '') + '). Lembre a regra central antes de olhar as alternativas.' +
+      (aula ? ' <a href="#/aula/' + aula.id + '">Rever a aula</a>' : '') + '</li>'];
+    eliminadas(q, n).forEach(function (i, k) { itens.push('<li><b>Dica ' + (k + 2) + ':</b> a alternativa ' + LETRAS[i] + ' está errada.</li>'); });
+    return '<div class="dicas" role="status"><ol>' + itens.join('') + '</ol></div>';
+  }
+  var CONFIANCA = [[2, 'Tenho certeza'], [1, 'Acho que sei'], [0, 'Chutei']];
+  function ferramentasHtml(q, o) {
+    var n = o.dicas || 0;
+    return '<div class="q-ferramentas"><div class="conf" role="group" aria-label="Quão seguro você está?"><span class="small muted">Quão seguro você está?</span>' +
+      CONFIANCA.map(function (c) { return '<button class="chip chip-sm" data-act="confianca" data-v="' + c[0] + '" aria-pressed="' + (o.conf === c[0]) + '">' + c[1] + '</button>'; }).join('') + '</div>' +
+      (n < maxDicas(q) ? '<button class="btn btn-ghost btn-sm" data-act="dica">' + ico('ideia') + (n ? ' Mais uma dica (' + n + '/' + maxDicas(q) + ')' : ' Pedir uma dica') + '</button>' : '<span class="small muted">Todas as dicas usadas</span>') + '</div>';
+  }
+  function retornoConfianca(ok, conf) {
+    if (conf === 2 && !ok) return '<p class="conf-retorno err">Você tinha certeza e errou: este é o tipo de erro mais importante de revisar.</p>';
+    if (conf === 0 && ok) return '<p class="conf-retorno">Acertou no chute. Vale revisar para transformar sorte em domínio.</p>';
+    if (conf === 2 && ok) return '<p class="conf-retorno ok">Certeza confirmada. Isso é domínio.</p>';
+    return '';
+  }
+
+  /* o: { numero, resposta, confirmada, riscadas[], profunda, expandida, travada, conf, dicas } */
   function questao(q, o) {
     var m = Banco.materia(q.materia);
     var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(String(q.prova.orgao || '').replace(/^ENEM, /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
@@ -34,7 +66,7 @@
       }).join('') + '</div>';
     } else {
       alts = '<ol class="alts" aria-label="Alternativas">' + q.alternativas.map(function (a, i) {
-        var risc = (o.riscadas || []).indexOf(i) >= 0;
+        var risc = (o.riscadas || []).indexOf(i) >= 0 || (!o.confirmada && eliminadas(q, o.dicas || 0).indexOf(i) >= 0);
         var cls = (risc ? ' struck' : '') + (mostrar ? (i === q.resposta ? ' is-right' : (o.resposta === i ? ' is-wrong' : '')) : '');
         return '<li><div class="alt-wrap"><button class="alt' + cls + '" data-act="alt" data-i="' + i + '" aria-pressed="' + (o.resposta === i) + '"' + (o.travada ? ' disabled' : '') + '>' +
           '<span class="bubble">' + LETRAS[i] + '</span><span class="alt-txt">' + esc(a) + '</span></button>' +
@@ -45,10 +77,10 @@
     var fim = '';
     if (mostrar) {
       var ok = o.resposta === q.resposta, branco = o.resposta === undefined || o.resposta === null;
-      fim = '<div class="verdict ' + (ok ? 'ok' : 'err') + '" role="status">' + ico(ok ? 'check' : 'x') + '<div>' + (ok ? 'Resposta certa' : branco ? 'Não respondida' : 'Resposta errada') +
+      fim = '<div class="verdict ' + (ok ? 'ok' : 'err') + ' anim-veredito" role="status">' + (o.reacao && !branco ? Personagem.html({ tamanho: 52, humor: ok ? 'feliz' : 'apoio' }) : ico(ok ? 'check' : 'x')) + '<div>' + (ok ? 'Resposta certa' : branco ? 'Não respondida' : 'Resposta errada') +
         ' <span>· Gabarito: ' + nomeResposta(q, q.resposta) + (ok || branco ? '' : ' · Você marcou ' + nomeResposta(q, o.resposta)) + '</span></div></div>' +
-        (ok ? '' : motivoHtml(q)) + explicacao(q, o);
-    }
+        retornoConfianca(ok, o.conf) + (ok ? '' : motivoHtml(q)) + explicacao(q, o);
+    } else if (!o.travada) fim = dicasHtml(q, o.dicas || 0) + ferramentasHtml(q, o);
     return '<article class="q" aria-label="Questão">' + meta + corpo + alts + fim + '</article>';
   }
 
@@ -74,7 +106,8 @@
     var nota = (S().notas || {})[q.id] || '';
     h += '<details class="nota" open><summary>' + ico('redacao') + ' Minhas anotações <span class="muted small">(só você vê; ficam salvas nesta questão)</span></summary>' +
       '<label class="sr-only" for="nota-' + esc(q.id) + '">Minhas anotações sobre esta questão</label>' +
-      '<textarea class="input" id="nota-' + esc(q.id) + '" data-nota="' + esc(q.id) + '" rows="3" maxlength="5000" placeholder="Seu resumo, o macete que funcionou, onde você errou...">' + esc(nota) + '</textarea></details>';
+      '<textarea class="input" id="nota-' + esc(q.id) + '" data-nota="' + esc(q.id) + '" rows="3" maxlength="5000" placeholder="Seu resumo, o macete que funcionou, onde você errou...">' + esc(nota) + '</textarea></details>' +
+      '<button class="btn btn-ghost btn-sm mt" data-act="cartao-da-questao" data-q="' + esc(q.id) + '">' + ico('cartao') + ' Criar cartão de memorização</button>';
     return h + '</section>';
   }
 
@@ -119,7 +152,7 @@
     if (!ids.length) { UI.toast('Nenhuma questão encontrada com esses filtros.'); return null; }
     var sim = {
       id: novoId(), titulo: titulo || 'Simulado', criadoEm: Date.now(), modo: cfg.modo || 'estudo', origem: cfg.origem || 'simulado',
-      questoes: ids, respostas: {}, confirmadas: {}, marcadas: {}, riscadas: {}, atual: 0,
+      questoes: ids, respostas: {}, confirmadas: {}, marcadas: {}, riscadas: {}, tempos: {}, confianca: {}, dicas: {}, atual: 0,
       tempoLimiteSeg: cfg.tempoMin ? Math.round(cfg.tempoMin * 60) : 0, decorridoSeg: 0, status: 'andamento'
     };
     var lista = S().simulados;
@@ -258,7 +291,8 @@
       sim.questoes = existentes; sim.atual = Math.min(sim.atual, existentes.length - 1); Store.salvar();
       UI.toast('Questões de um banco removido saíram deste simulado.');
     }
-    R = { sim: sim, expandidas: {} };
+    ['tempos', 'confianca', 'dicas'].forEach(function (k) { if (!sim[k]) sim[k] = {}; }); // simulados de versões anteriores
+    R = { sim: sim, expandidas: {}, qAtual: null, marco: 0 };
     return {
       titulo: sim.titulo, cheia: true,
       html: '<main class="main" style="margin:0 auto" id="main"><h1 class="sr-only">' + esc(sim.titulo) + '</h1>' +
@@ -286,9 +320,10 @@
     if (sim.modo === 'prova') principal = ultima ? '<button class="btn btn-primary" data-act="r-finalizar">Finalizar simulado</button>' : '<button class="btn btn-primary" data-act="r-prox">Próxima ' + ico('dir') + '</button>';
     else if (!conf) principal = '<button class="btn btn-primary" data-act="r-responder">Responder</button>';
     else principal = ultima ? '<button class="btn btn-primary" data-act="r-finalizar">Ver resultado</button>' : '<button class="btn btn-primary" data-act="r-prox">Próxima ' + ico('dir') + '</button>';
+    if (R.qAtual !== id) { acumular(); R.qAtual = id; R.marco = Date.now(); }
     area.innerHTML = questao(q, {
       numero: (sim.atual + 1) + '/' + sim.questoes.length, resposta: sim.respostas[id], confirmada: conf, riscadas: sim.riscadas[id],
-      profunda: profunda(), expandida: R.expandidas[id], travada: conf
+      profunda: profunda(), expandida: R.expandidas[id], travada: conf, conf: sim.confianca[id], dicas: sim.dicas[id], reacao: true
     }) + '<div class="run-nav"><button class="btn btn-ghost" data-act="r-ant"' + (sim.atual ? '' : ' disabled') + '>' + ico('esq') + ' Anterior</button>' +
       '<button class="btn btn-ghost btn-sm flag-btn" data-act="r-marcar" aria-pressed="' + !!sim.marcadas[id] + '" title="Marque para voltar a ela antes de entregar">' + ico('flag') + ' Revisar depois</button>' + principal + '</div>';
     var respondidas = Object.keys(sim.respostas).length;
@@ -304,7 +339,17 @@
       return '<button class="' + cls.join(' ') + '" data-act="r-ir" data-i="' + i + '" aria-label="Questão ' + (i + 1) + '"' + (i === sim.atual ? ' aria-current="step"' : '') + '>' + (i + 1) + '</button>';
     }).join('');
     if (rolar) window.scrollTo({ top: 0 });
+    Personagem.acordar(area);
   }
+
+  // Tempo por questão: soma o tempo em que a questão ficou na tela até ser respondida.
+  function acumular() {
+    if (!R || !R.qAtual || !R.marco) return;
+    var s = R.sim, id = R.qAtual, agora = Date.now();
+    if (!s.confirmadas[id]) s.tempos[id] = Math.min(86400, (s.tempos[id] || 0) + (agora - R.marco) / 1000);
+    R.marco = agora;
+  }
+  function extra(s, id) { return { ms: (s.tempos[id] || 0) * 1000, conf: s.confianca[id], dicas: s.dicas[id] }; }
 
   function relogio() {
     var sim = R.sim, el = document.querySelector('#r-timer span');
@@ -347,7 +392,7 @@
       }
     };
     document.addEventListener('keydown', tecla);
-    return function () { clearInterval(timer); document.removeEventListener('keydown', tecla); Store.salvar(); };
+    return function () { acumular(); clearInterval(timer); document.removeEventListener('keydown', tecla); Store.salvar(); };
   }
 
   function escolher(v) {
@@ -358,6 +403,28 @@
     if (sim.riscadas[id] && typeof v === 'number') sim.riscadas[id] = sim.riscadas[id].filter(function (x) { return x !== v; });
     Store.salvar(); desenhar();
   }
+  function noSimulado() { return R && document.getElementById('r-area'); }
+  App.acao('confianca', function (el) {
+    var v = Number(el.getAttribute('data-v'));
+    if (noSimulado()) { var s = R.sim, id = s.questoes[s.atual]; if (s.confirmadas[id]) return; s.confianca[id] = s.confianca[id] === v ? undefined : v; if (s.confianca[id] === undefined) delete s.confianca[id]; Store.salvar(); desenhar(); }
+    else if (QV && !QV.confirmada) { QV.conf = QV.conf === v ? undefined : v; App.render(); }
+  });
+  App.acao('dica', function () {
+    if (noSimulado()) {
+      var s = R.sim, id = s.questoes[s.atual], q = Banco.questao(id);
+      if (!q || s.confirmadas[id] || (s.dicas[id] || 0) >= maxDicas(q)) return;
+      s.dicas[id] = (s.dicas[id] || 0) + 1;
+      // Alternativa eliminada por dica não pode continuar marcada.
+      if (eliminadas(q, s.dicas[id]).indexOf(s.respostas[id]) >= 0) delete s.respostas[id];
+      Store.salvar(); desenhar();
+    } else if (QV && !QV.confirmada) {
+      var qq = Banco.questao(QV.id);
+      if ((QV.dicas || 0) >= maxDicas(qq)) return;
+      QV.dicas = (QV.dicas || 0) + 1;
+      if (eliminadas(qq, QV.dicas).indexOf(QV.resposta) >= 0) QV.resposta = undefined;
+      App.render();
+    }
+  });
   App.acao('alt', function (el) {
     if (!R || !document.getElementById('r-area')) return QV && QV.escolher(el);
     escolher(el.hasAttribute('data-v') ? el.getAttribute('data-v') === 'true' : Number(el.getAttribute('data-i')));
@@ -378,8 +445,9 @@
   App.acao('r-responder', function () {
     var sim = R.sim, id = sim.questoes[sim.atual], q = Banco.questao(id);
     if (sim.respostas[id] === undefined) { UI.toast('Escolha uma alternativa antes de responder.'); return; }
+    acumular();
     sim.confirmadas[id] = true;
-    Store.registrarResposta(q, sim.respostas[id], sim.origem);
+    Store.registrarResposta(q, sim.respostas[id], sim.origem, extra(sim, id));
     desenhar();
     var v = document.querySelector('.verdict'); if (v) v.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   });
@@ -397,10 +465,11 @@
       .then(function (ok) { if (ok) finalizar(); });
   });
   function finalizar() {
+    acumular();
     var sim = R.sim;
     sim.questoes.forEach(function (id) {
       var q = Banco.questao(id);
-      if (q && sim.respostas[id] !== undefined && !sim.confirmadas[id]) { sim.confirmadas[id] = true; Store.registrarResposta(q, sim.respostas[id], sim.origem); }
+      if (q && sim.respostas[id] !== undefined && !sim.confirmadas[id]) { sim.confirmadas[id] = true; Store.registrarResposta(q, sim.respostas[id], sim.origem, extra(sim, id)); }
     });
     sim.status = 'concluido'; sim.concluidoEm = Date.now();
     Store.salvar();
@@ -413,7 +482,7 @@
     if (!sim) { App.ir('#/simulados', true); return null; }
     var r = Motor.corrigir(Banco, sim), p = S().perfil;
     var cor = r.percentual >= 70 ? 'var(--ok)' : r.percentual >= 50 ? 'var(--warn)' : 'var(--err)';
-    var frase = r.percentual >= 85 ? 'Desempenho de aprovação. Mantenha o ritmo com revisões.' : r.percentual >= 70 ? 'Bom resultado. Revise as erradas para fixar.' : r.percentual >= 50 ? 'No caminho. As explicações das erradas vão te dar os próximos pontos.' : 'Bom ponto de partida: as aulas abaixo cobrem o que você errou.';
+    var frase = sim.origem === 'diagnostico' ? 'Seu ponto de partida está mapeado.' : r.percentual >= 85 ? 'Desempenho de aprovação. Mantenha o ritmo com revisões.' : r.percentual >= 70 ? 'Bom resultado. Revise as erradas para fixar.' : r.percentual >= 50 ? 'No caminho. As explicações das erradas vão te dar os próximos pontos.' : 'Bom ponto de partida: as aulas abaixo cobrem o que você errou.';
     var mats = Object.keys(r.porMateria).map(function (id) {
       var x = r.porMateria[id], mm = Banco.materia(id), pc = Math.round(x.certas / x.total * 100);
       return '<div class="mat-row"><span class="sigla sigla-sm">' + mm.sigla + '</span><div><div class="nm"><span>' + esc(mm.nome) + '</span><span class="muted small">' + x.certas + '/' + x.total + '</span></div><div class="bar ' + (pc >= 70 ? 'ok' : pc >= 50 ? 'warn' : 'err') + '"><i style="width:' + pc + '%"></i></div></div><b class="mono" style="text-align:right">' + pc + '%</b></div>';
@@ -432,12 +501,12 @@
     return {
       titulo: 'Resultado',
       html: '<div class="page-head"><div><span class="eyebrow">Resultado · ' + esc(sim.titulo) + '</span><h1>' + esc(frase) + '</h1></div><a class="btn btn-ghost" href="#/simulados">' + ico('voltar') + ' Simulados</a></div>' +
-        '<section class="card"><div class="score"><div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
+        '<section class="card"><div class="score">' + '<div class="score-helma">' + Personagem.html({ tamanho: 104, humor: r.percentual >= 70 ? 'feliz' : 'apoio', fala: sim.origem === 'diagnostico' ? 'Agora sei de onde você parte.' : r.percentual >= 85 ? 'Mandou muito bem!' : r.percentual >= 70 ? 'Bom resultado!' : r.percentual >= 50 ? 'Estamos no caminho.' : 'Vamos juntas, um assunto por vez.' }) + '</div>' + '<div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
         '<div class="score-stats"><div class="stat"><b style="color:var(--ok)">' + r.certas + '</b><span>certas</span></div><div class="stat"><b style="color:var(--err)">' + r.erradas + '</b><span>erradas</span></div><div class="stat"><b>' + r.brancos + '</b><span>em branco</span></div>' +
         '<div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(sim.decorridoSeg) + '</b><span>tempo total</span></div><div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(tempoMedio) + '</b><span>por questão</span></div>' +
         (r.liquida !== null && p.penalidadeCE ? '<div class="stat"><b class="mono" style="font-size:22px">' + r.liquida + '/' + r.ceTotal + '</b><span title="Nas provas de certo ou errado, cada item errado anula um certo; em branco não conta.">nota líquida (certo ou errado: cada erro anula um acerto)</span></div>' : '') + '</div></div>' +
         '<div class="row mt-lg">' + (erradas.length ? '<button class="btn btn-primary" data-act="refazer" data-sim="' + sim.id + '">' + ico('revisao') + ' Refazer as ' + erradas.length + ' que errei ou pulei</button>' : '') +
-        '<a class="btn btn-secondary" href="#/simulados">Novo simulado</a>' + (erradas.length ? '<a class="btn btn-ghost" href="#/revisao">Erradas foram para a revisão</a>' : '') + '</div></section>' +
+        (sim.origem === 'diagnostico' ? '<a class="btn btn-primary" href="#/plano">' + ico('plano') + ' Montar meu plano de estudos</a><a class="btn btn-secondary" href="#/desempenho">Ver desempenho por assunto</a>' : '<a class="btn btn-secondary" href="#/simulados">Novo simulado</a>') + (erradas.length ? '<a class="btn btn-ghost" href="#/revisao">Erradas foram para a revisão</a>' : '') + '</div></section>' +
         '<div class="grid g-main mt"><section class="card"><div class="card-head"><h2>Correção comentada</h2><span class="muted small">Toque para ver a explicação</span></div>' + lista + '</section>' +
         '<div class="stack"><section class="card"><h2 style="margin-bottom:10px">Por matéria</h2>' + mats + '</section>' +
         (Object.keys(aulas).length ? '<section class="card"><h2 style="margin-bottom:6px">Aulas para revisar</h2><div class="list">' + Object.keys(aulas).map(function (k) {
@@ -522,7 +591,7 @@
   App.rota('/questao/([^/]+)', function (m) {
     var q = Banco.questao(m[0]);
     if (!q) { App.ir('#/questoes', true); return null; }
-    if (!QV || QV.id !== q.id) QV = { id: q.id, resposta: undefined, confirmada: false, expandida: false, riscadas: {} };
+    if (!QV || QV.id !== q.id) QV = { id: q.id, resposta: undefined, confirmada: false, expandida: false, riscadas: {}, inicio: Date.now(), conf: undefined, dicas: 0 };
     QV.escolher = function (el) {
       if (QV.confirmada) return;
       QV.resposta = el.hasAttribute('data-v') ? el.getAttribute('data-v') === 'true' : Number(el.getAttribute('data-i'));
@@ -535,7 +604,7 @@
       titulo: 'Questão', manterScroll: true,
       html: '<div class="page-head"><a class="btn btn-ghost" href="#/questoes">' + ico('voltar') + ' Banco de questões</a>' +
         (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? '✓' : '✗'; }).join(' ') + '</span>' : '') + '</div>' +
-        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada }) +
+        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas, reacao: true }) +
         '<div class="run-nav">' + (pos > 0 ? '<a class="btn btn-ghost" href="#/questao/' + encodeURIComponent(lista[pos - 1]) + '">' + ico('esq') + ' Anterior</a>' : '<span></span>') +
         (QV.confirmada ? '' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +
         (pos >= 0 && pos < lista.length - 1 ? '<a class="btn ' + (QV.confirmada ? 'btn-primary' : 'btn-ghost') + '" href="#/questao/' + encodeURIComponent(lista[pos + 1]) + '">Próxima ' + ico('dir') + '</a>' : '<span></span>') + '</div></div>',
@@ -557,7 +626,7 @@
     var q = Banco.questao(QV.id);
     if (QV.resposta === undefined) { UI.toast('Escolha uma alternativa antes de responder.'); return; }
     QV.confirmada = true;
-    Store.registrarResposta(q, QV.resposta, 'avulsa');
+    Store.registrarResposta(q, QV.resposta, 'avulsa', { ms: Date.now() - QV.inicio, conf: QV.conf, dicas: QV.dicas });
     App.render();
   });
 
@@ -605,7 +674,7 @@
           return '<h3 class="mt" style="margin-bottom:4px">' + esc(mm.nome) + ' <span class="muted small">' + porMat[mid].length + '</span></h3><div class="list">' + porMat[mid].map(function (q) {
             return '<a class="list-item" href="#/questao/' + encodeURIComponent(q.id) + '"><span class="mark err">' + ico('x') + '</span><div class="grow"><div class="clamp2">' + esc(q.enunciado) + '</div><div class="sub">' + esc(q.assunto) + '</div></div>' + ico('dir') + '</a>';
           }).join('') + '</div>';
-        }).join('') : '<div class="empty">' + ico('check') + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
+        }).join('') : '<div class="empty vazio-helma">' + Personagem.html({ tamanho: 88, humor: 'neutro' }) + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
     };
   }, 'revisao');
   App.acao('rev-iniciar', function () {

@@ -36,7 +36,9 @@ const ok = (cond, msg) => { if (!cond) throw new Error('[' + passo + '] ' + msg)
   await foto('02-inicio-vazio');
 
   passo = 'simulado rápido (modo estudo)';
-  await page.click('[data-act="sim-rapido"]');
+  ok(await page.locator('[data-act="diagnostico-iniciar"]').count() === 1, 'aluno novo vê o convite para o diagnóstico');
+  await page.goto(URL + '#/simulados');
+  await page.click('[data-act="p-rapido"]');
   await page.waitForSelector('#r-area .q');
   const total = await page.locator('#r-map button').count();
   ok(total > 0 && total <= 10, 'simulado rápido com até 10 questões, veio ' + total);
