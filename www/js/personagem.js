@@ -36,7 +36,7 @@
       palco = POSES.map(function (p) { return '<img class="hp-pose" data-p="' + p + '" src="marca/personagem/' + p + '.svg" alt="" draggable="false">'; }).join('') +
         '<span class="hp-rubor"><i></i><i></i></span><span class="hp-palpebras"><i></i><i></i></span><span class="hp-alegria"><i></i><i></i></span>' +
         (b ? boca('hp-sorriso', b, SORRISO) + boca('hp-sorriso-grande', b, SORRISO_GRANDE) : '') +
-        '<span class="hp-reflexo"></span><svg class="hp-estrela" viewBox="-12 -12 24 24" aria-hidden="true" focusable="false">' + ESTRELA + '</svg>';
+        '<span class="hp-reflexo"><i></i></span><svg class="hp-estrela" viewBox="-12 -12 24 24" aria-hidden="true" focusable="false">' + ESTRELA + '</svg>';
     } else {
       palco = '<img class="hp-pose hp-logo" data-p="frente" src="marca/helma-retrato.svg" alt="" draggable="false">';
     }
@@ -45,7 +45,15 @@
       (o.fala ? '<p class="hp-fala">' + UI.esc(o.fala) + '</p>' : '') + '</div>';
   }
 
-  function pose(el, p) { if (el && el.isConnected) el.setAttribute('data-pose', p); }
+  function pose(el, p) {
+    if (!el || !el.isConnected) return;
+    var antes = el.getAttribute('data-pose');
+    if (antes === p) return;
+    // A pose que sai fica inteira por baixo enquanto a nova aparece: troca suave, sem o fundo vazar.
+    var velha = el.querySelector('.hp-pose[data-p="' + antes + '"]');
+    if (velha) { velha.classList.add('saindo'); clearTimeout(velha._saida); velha._saida = setTimeout(function () { velha.classList.remove('saindo'); }, 110); }
+    el.setAttribute('data-pose', p);
+  }
   function sequencia(el, poses, intervalo) {
     return new Promise(function (ok) {
       var i = 0;
@@ -66,36 +74,118 @@
     setTimeout(function () { el.classList.remove(c); }, ms);
   }
   function sorrir(el, ms) { if (el && el.isConnected && el.getAttribute('data-pose') === 'frente') classeTemporaria(el, 'sorrindo', ms || 1600); }
-  var ORGULHO_MS = 3200; // igual à duração das animações .orgulho em animacoes.css
+
+  /* ---------- Orgulho: animação gerada quadro a quadro (60 por segundo) ----------
+     Cada canal é uma lista de batidas [segundo, valor] da direção; entre elas, uma curva suave
+     (Hermite monotônica: não passa do valor entre duas batidas; todo exagero é uma batida explícita). */
+  function curva(pts) {
+    var n = pts.length, m = [], d = [], i;
+    for (i = 0; i < n - 1; i++) d.push((pts[i + 1][1] - pts[i][1]) / (pts[i + 1][0] - pts[i][0]));
+    m[0] = 0; m[n - 1] = 0; // começa e termina parado
+    for (i = 1; i < n - 1; i++) m[i] = d[i - 1] * d[i] <= 0 ? 0 : (d[i - 1] + d[i]) / 2;
+    for (i = 0; i < n - 1; i++) {
+      if (d[i] === 0) { m[i] = 0; m[i + 1] = 0; continue; }
+      var a = m[i] / d[i], b = m[i + 1] / d[i], h = a * a + b * b;
+      if (h > 9) { var k = 3 / Math.sqrt(h); m[i] = k * a * d[i]; m[i + 1] = k * b * d[i]; }
+    }
+    return function (t) {
+      if (t <= pts[0][0]) return pts[0][1];
+      if (t >= pts[n - 1][0]) return pts[n - 1][1];
+      var j = 0; while (t > pts[j + 1][0]) j++;
+      var x = pts[j + 1][0] - pts[j][0], s = (t - pts[j][0]) / x, s2 = s * s, s3 = s2 * s;
+      return (2 * s3 - 3 * s2 + 1) * pts[j][1] + (s3 - 2 * s2 + s) * x * m[j] + (3 * s2 - 2 * s3) * pts[j + 1][1] + (s3 - s2) * x * m[j + 1];
+    };
+  }
+  var CENA_S = 5.1, FPS = 60; // 3,4 s de cena + sorriso suave até 5,1 s (termina no estado de repouso)
+  var BATIDAS = {
+    // corpo (palco): olha o trabalho, vira, antecipa, ergue o queixo, aceno na piscadela, risada, respira, assenta como mola
+    ty: [[0, 0], [0.1, 0.6], [0.16, 0.4], [0.34, 2], [0.6, -5.6], [0.75, -5], [1, -5.1], [1.1, -4.5], [1.24, -5.2], [1.34, -5], [1.62, -5], [1.85, -6.3], [1.98, -4.8], [2.1, -5.9], [2.22, -5], [2.6, -5.4], [2.85, -5], [3.15, 0.9], [3.3, -0.2], [3.4, 0]],
+    rot: [[0, 0], [0.1, 1.5], [0.16, 1.2], [0.34, 0.5], [0.6, -5.6], [0.75, -5], [1, -5], [1.1, -6.6], [1.24, -5], [1.34, -5.3], [1.45, -5], [1.85, -4.4], [1.98, -5.1], [2.1, -4.6], [2.22, -5], [2.85, -5], [3.15, 0.6], [3.3, -0.15], [3.4, 0]],
+    sx: [[0.16, 1], [0.34, 1.01], [0.6, 1.035], [0.75, 1.03], [1.85, 1.036], [1.98, 1.03], [2.1, 1.034], [2.22, 1.03], [2.6, 1.033], [2.85, 1.03], [3.15, 0.995], [3.4, 1]],
+    sy: [[0.16, 1], [0.34, 0.97], [0.6, 1.035], [0.75, 1.03], [1.85, 1.036], [1.98, 1.03], [2.1, 1.034], [2.22, 1.03], [2.6, 1.033], [2.85, 1.03], [3.15, 0.995], [3.4, 1]],
+    // sorriso aberto: cresce passando do ponto, assenta, pulsa na risada, fecha sólido e some num corte
+    bocaOp: [[0.3, 0], [0.38, 1], [2.95, 1], [2.97, 0]],
+    bocaX: [[0.3, 0.6], [0.38, 0.75], [0.62, 1.07], [0.78, 0.98], [0.9, 1], [1.85, 1], [1.92, 1.05], [1.98, 1], [2.1, 1.04], [2.17, 1], [2.8, 1], [2.95, 0.82]],
+    bocaY: [[0.3, 0.6], [0.38, 0.75], [0.62, 1.07], [0.78, 0.98], [0.9, 1], [1.85, 1], [1.92, 1.05], [1.98, 1], [2.1, 1.04], [2.17, 1], [2.8, 1], [2.95, 0.6]],
+    suave: [[2.85, 0], [2.92, 1], [4.9, 1], [5.1, 0]],
+    // pálpebras de cima (0 = aberto, 1 = fechado): o olho esquerdo dela pisca; o direito aperta junto e brilha
+    pisca: [[0.34, 0], [0.66, 0.36], [1, 0.36], [1.06, 0.62], [1.12, 1], [1.62, 1], [1.72, 0.6], [1.84, 0.36], [2.42, 0.36], [2.47, 1], [2.53, 1], [2.6, 0.36], [2.92, 0.36], [3.4, 0.22], [4.9, 0.22], [5.1, 0]],
+    aberto: [[0.34, 0], [0.66, 0.36], [1, 0.36], [1.12, 0.45], [1.62, 0.45], [1.84, 0.36], [2.42, 0.36], [2.47, 1], [2.53, 1], [2.6, 0.36], [2.92, 0.36], [3.4, 0.22], [4.9, 0.22], [5.1, 0]],
+    // pálpebras de baixo (olhos de alegria); a do olho que pisca sai enquanto ele está fechado
+    alegriaPisca: [[0.34, 0], [0.66, 1], [1, 1], [1.08, 0], [1.66, 0], [1.84, 1], [2.92, 1], [3.4, 0]],
+    alegria: [[0.34, 0], [0.66, 1], [2.92, 1], [3.4, 0]],
+    ruborOp: [[0.34, 0], [0.8, 1], [2.92, 1], [3.4, 0]],
+    ruborS: [[0.34, 0.9], [0.8, 1], [1.85, 1], [1.95, 1.14], [2.1, 1], [3.4, 1]],
+    // estrela no olho direito dela: nasce girando, passa do tamanho, assenta, cintila de novo e some
+    estOp: [[1.04, 0], [1.08, 1], [1.86, 1], [1.94, 0]],
+    estS: [[1.04, 0], [1.2, 1.25], [1.33, 0.95], [1.47, 1], [1.64, 1], [1.72, 1.18], [1.8, 0.9], [1.94, 0]],
+    estR: [[1.04, -45], [1.2, 0], [1.33, 6], [1.47, 9], [1.64, 10], [1.72, 20], [1.8, 26], [1.94, 40]],
+    reflexo: [[1.15, -130], [1.5, 430]]
+  };
+  var CENA = null;
+  function cena() {
+    if (!CENA) { CENA = {}; Object.keys(BATIDAS).forEach(function (k) { CENA[k] = curva(BATIDAS[k]); }); }
+    return CENA;
+  }
+  function tocar(alvo, props) {
+    if (!alvo || !alvo.animate) return null;
+    var n = Math.ceil(CENA_S * FPS), quadros = [];
+    for (var i = 0; i <= n; i++) {
+      var t = i / n * CENA_S, q = { offset: i / n };
+      for (var k in props) q[k] = props[k](t);
+      quadros.push(q);
+    }
+    return alvo.animate(quadros, { duration: CENA_S * 1000, easing: 'linear', fill: 'forwards' });
+  }
   function orgulho(el) {
+    var c = cena(), f = function (v, d) { return v.toFixed(d || 3); };
+    var um = function (s) { return el.querySelector(s); }, todos = function (s) { return el.querySelectorAll(s); };
+    (el._cena || []).forEach(function (a) { a.cancel(); });
+    clearTimeout(el._orgulho); clearTimeout(el._vira);
+    el.classList.remove('sorrindo', 'orgulho'); void el.offsetWidth; el.classList.add('orgulho');
     // Primeiro olha o trabalho (três-quartos), depois vira para o aluno: os dois quadros desenhados abrem a cena.
     pose(el, 'tres-quartos-dir');
-    setTimeout(function () { pose(el, 'frente'); }, 120);
-    clearTimeout(el._orgulho);
-    el.classList.remove('sorrindo', 'orgulho'); void el.offsetWidth; el.classList.add('orgulho');
-    // Ao fim, o sorriso aberto já virou o suave: segura o suave e volta ao ocioso.
-    el._orgulho = setTimeout(function () { el.classList.remove('orgulho'); sorrir(el, 1500); }, ORGULHO_MS);
+    el._vira = setTimeout(function () { pose(el, 'frente'); }, 140);
+    var tampa = function (curv) { return { transform: function (t) { return 'translate(-50%,-50%) scaleY(' + f(curv(t)) + ')'; } }; };
+    var baixo = function (curv) { return { transform: function (t) { return 'translateX(-50%) scaleY(' + f(curv(t)) + ')'; } }; };
+    var bochecha = { opacity: function (t) { return f(c.ruborOp(t)); }, transform: function (t) { return 'translate(-50%,-50%) scale(' + f(c.ruborS(t)) + ')'; } };
+    var p = todos('.hp-palpebras i'), a = todos('.hp-alegria i'), r = todos('.hp-rubor i');
+    el._cena = [
+      tocar(um('.hp-palco'), { transform: function (t) { return 'translateY(' + f(c.ty(t)) + '%) rotate(' + f(c.rot(t)) + 'deg) scale(' + f(c.sx(t), 4) + ',' + f(c.sy(t), 4) + ')'; } }),
+      tocar(um('.hp-sorriso-grande'), { opacity: function (t) { return f(c.bocaOp(t)); }, transform: function (t) { return 'scale(' + f(c.bocaX(t)) + ',' + f(c.bocaY(t)) + ')'; } }),
+      tocar(um('.hp-sorriso'), { opacity: function (t) { return f(c.suave(t)); } }),
+      tocar(p[0], tampa(c.aberto)), // olho direito dela (à esquerda da tela): aberto, com estrela e reflexo
+      tocar(p[1], tampa(c.pisca)),  // olho esquerdo dela (à direita da tela): a piscadela
+      tocar(a[0], baixo(c.alegria)),
+      tocar(a[1], baixo(c.alegriaPisca)),
+      tocar(r[0], bochecha), tocar(r[1], bochecha),
+      tocar(um('.hp-estrela'), { opacity: function (t) { return f(c.estOp(t)); }, transform: function (t) { return 'translate(-50%,-50%) scale(' + f(c.estS(t)) + ') rotate(' + f(c.estR(t), 1) + 'deg)'; } }),
+      tocar(um('.hp-reflexo i'), { transform: function (t) { return 'translateX(' + f(c.reflexo(t), 1) + '%) rotate(28deg)'; } })
+    ].filter(Boolean);
+    // O último quadro é o estado de repouso: cancelar no fim não dá salto.
+    el._orgulho = setTimeout(function () { el.classList.remove('orgulho'); (el._cena || []).forEach(function (x) { x.cancel(); }); el._cena = null; }, CENA_S * 1000);
   }
 
   var Personagem = {
     html: html,
     piscar: piscar,
     sorrir: sorrir,
+    _curva: curva, _cena: cena, _duracao: CENA_S, // para os testes
     /* acao: 'ola' (vira de perfil para a frente, pisca e sorri), 'feliz' (pulo, brilho dourado e sorriso),
-       'orgulho' (ergue o queixo, sorriso aberto, piscadela com estrela e brilhos), 'apoio' (inclina e volta),
-       'pensando' (olha de um lado para o outro até ser parada), 'ocioso' (pisca e sorri de vez em quando). */
+       'orgulho' (olha o trabalho, vira, sorriso aberto, piscadela com estrela, reflexo e brilhos, risada),
+       'apoio' (inclina e volta), 'pensando' (olha de um lado para o outro até ser parada), 'ocioso' (pisca e sorri de vez em quando). */
     animar: function (el, acao) {
       if (!el || !el.isConnected) return;
       if (calmo() || !temPoses) {
         // Sem movimento: só a pose final; sem poses, só o efeito sobre o retrato da logo.
-        pose(el, 'frente');
+        el.setAttribute('data-pose', 'frente');
         if (!calmo() && (acao === 'feliz' || acao === 'apoio' || acao === 'ola' || acao === 'orgulho')) classeTemporaria(el, 'hp-' + (acao === 'orgulho' ? 'feliz' : acao), 900);
         // Expressão não é movimento: o rosto orgulhoso e o sorriso ficam mesmo com movimento reduzido.
         if (temPoses && acao === 'orgulho') classeTemporaria(el, 'orgulho-calmo', 1800);
         else if (acao === 'feliz') sorrir(el, 1600);
         return;
       }
-      if (acao === 'ola') sequencia(el, ['perfil-dir', 'tres-quartos-dir', 'frente'], 110).then(function () { setTimeout(function () { piscar(el); setTimeout(function () { sorrir(el, 1700); }, 350); }, 250); Personagem.animar(el, 'ocioso'); });
+      if (acao === 'ola') sequencia(el, ['perfil-dir', 'tres-quartos-dir', 'frente'], 130).then(function () { setTimeout(function () { piscar(el); setTimeout(function () { sorrir(el, 1700); }, 350); }, 250); Personagem.animar(el, 'ocioso'); });
       else if (acao === 'feliz') { pose(el, 'frente'); classeTemporaria(el, 'hp-feliz', 900); sorrir(el, 1700); }
       else if (acao === 'orgulho') orgulho(el);
       else if (acao === 'apoio') sequencia(el, ['tres-quartos-esq', 'tres-quartos-esq', 'frente'], 260).then(function () { classeTemporaria(el, 'hp-apoio', 700); piscar(el); });

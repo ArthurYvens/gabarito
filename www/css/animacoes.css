@@ -8,7 +8,11 @@
 .helma-p[data-pose="tres-quartos-esq"] .hp-pose[data-p="tres-quartos-esq"],
 .helma-p[data-pose="frente"] .hp-pose[data-p="frente"],
 .helma-p[data-pose="tres-quartos-dir"] .hp-pose[data-p="tres-quartos-dir"],
-.helma-p[data-pose="perfil-dir"] .hp-pose[data-p="perfil-dir"] { opacity: 1; }
+.helma-p[data-pose="perfil-dir"] .hp-pose[data-p="perfil-dir"] { opacity: 1; z-index: 2; animation: hpPoseEntra 70ms linear; }
+/* Troca de pose suave: a nova aparece por cima da antiga, que continua inteira por baixo até a nova cobrir */
+.hp-pose.saindo { opacity: 1; z-index: 1; }
+.hp-palco > :not(.hp-pose) { z-index: 3; }
+@keyframes hpPoseEntra { from { opacity: 0; transform: scaleX(.965); } to { opacity: 1; transform: none; } }
 .hp-pose.hp-logo { opacity: 1; }
 /* Pálpebras: cobrem os olhos da pose de frente por um instante. */
 .hp-palpebras { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
@@ -90,7 +94,7 @@
 .sugestao { border-left: 4px solid var(--gold); }
 
 @media (prefers-reduced-motion: reduce) {
-  .hp-pose { transition: none; }
+  .hp-pose { transition: none; animation: none !important; }
   .ring, .bar > i, .main > .grid > * > *, .main > .grid > .card, .main > section, .anim-veredito, .alt.is-wrong, .alt.is-right { animation: none !important; }
 }
 
@@ -119,103 +123,16 @@
 .hp-rubor i:last-child { left: calc(var(--ox2) + 4%); }
 /* Reflexo que atravessa a lente do olho que pisca */
 .hp-reflexo { position: absolute; left: calc(var(--ox1) - 2%); top: calc(var(--oy) + 1%); width: 17%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; overflow: hidden; pointer-events: none; opacity: 0; }
-.hp-reflexo::before { content: ''; position: absolute; top: -30%; left: 0; width: 34%; height: 160%; transform: translateX(-130%) rotate(28deg);
+.hp-reflexo i { position: absolute; top: -30%; left: 0; width: 34%; height: 160%; transform: translateX(-130%) rotate(28deg);
   background: linear-gradient(90deg, transparent 0 22%, rgba(214, 160, 70, .7) 22% 46%, transparent 46% 62%, rgba(214, 160, 70, .5) 62% 74%, transparent 74%); }
 /* Estrela da piscadela, no canto de fora do olho que pisca */
 .hp-estrela { position: absolute; left: calc(var(--ox1) - 12.5%); top: calc(var(--oy) - 8%); width: 14%; height: auto; opacity: 0; transform: translate(-50%, -50%) scale(0); pointer-events: none; overflow: visible; }
 
-.helma-p.orgulho .hp-palco { transform-origin: 50% 88%; animation: hpOrgCorpo 3.2s both; }
-.helma-p.orgulho .hp-sorriso-grande { animation: hpOrgBoca 3.2s both; }
-.helma-p.orgulho .hp-sorriso { animation: hpOrgSuave 3.2s both; }
-/* A piscadela é no olho direito dela (o da esquerda de quem olha, --ox1); estrela e reflexo ficam nele também. */
-.helma-p.orgulho .hp-palpebras i:first-child { animation: hpOrgPiscadela 3.2s both; }
-.helma-p.orgulho .hp-palpebras i:last-child { animation: hpOrgOlho 3.2s both; }
-.helma-p.orgulho .hp-alegria i:first-child { animation: hpOrgAlegriaPisca 3.2s both; }
-.helma-p.orgulho .hp-alegria i:last-child { animation: hpOrgAlegria 3.2s both; }
-.helma-p.orgulho .hp-rubor i { animation: hpOrgRubor 3.2s both; }
-.helma-p.orgulho .hp-estrela { animation: hpOrgEstrela 3.2s both; }
+/* O movimento do orgulho é gerado quadro a quadro em js/personagem.js (60 por segundo); aqui só o que não se move. */
+.helma-p.orgulho .hp-palco { transform-origin: 50% 88%; will-change: transform; }
 .helma-p.orgulho .hp-reflexo { opacity: 1; }
-.helma-p.orgulho .hp-reflexo::before { animation: hpOrgReflexo 3.2s both; }
 /* Duas ondas de brilhos: na piscadela e na risada (a segunda sem preenchimento para trás, para não apagar a primeira) */
 .helma-p.orgulho .hp-brilhos i { animation: hpBrilho .9s ease-out 1.15s both, hpBrilho .8s ease-out 1.95s forwards; }
-
-/* 3,2 s. As poses (olhar o trabalho em três-quartos e virar de frente) são trocadas pelo motor em 0 e 0,12 s. */
-@keyframes hpOrgCorpo {
-  0%, 3.75% { transform: none; animation-timing-function: ease-in; }
-  9.4% { transform: translateY(2%) scale(1.01, .97); animation-timing-function: cubic-bezier(.2, 1.5, .4, 1); }
-  19.4%, 29.7% { transform: translateY(-5%) rotate(-5deg) scale(1.03); animation-timing-function: ease-in-out; }
-  32% { transform: translateY(-4.6%) rotate(-6.5deg) scale(1.03); }
-  36%, 48.4% { transform: translateY(-5.1%) rotate(-5deg) scale(1.03); }
-  57% { transform: translateY(-6.2%) rotate(-4.5deg) scale(1.035); }
-  61% { transform: translateY(-4.8%) rotate(-5deg) scale(1.03); }
-  65% { transform: translateY(-5.9%) rotate(-4.6deg) scale(1.034); }
-  69% { transform: translateY(-5%) rotate(-5deg) scale(1.03); }
-  80% { transform: translateY(-5.4%) rotate(-5deg) scale(1.033); }
-  85.9% { transform: translateY(-5%) rotate(-5deg) scale(1.03); animation-timing-function: ease-in-out; }
-  95% { transform: translateY(1%) rotate(.6deg) scale(.995); }
-  100% { transform: none; }
-}
-@keyframes hpOrgBoca {
-  0%, 8.5% { opacity: 0; transform: scale(.6); }
-  11% { opacity: 1; transform: scale(.75); }
-  19.4% { transform: scale(1.07); }
-  24% { transform: scale(.98); }
-  28%, 55% { transform: scale(1); }
-  58% { transform: scale(1.05); }
-  61% { transform: scale(1); }
-  65% { transform: scale(1.04); }
-  69%, 86% { opacity: 1; transform: scale(1); }
-  /* fecha sólida sobre o sorriso suave (que já está por baixo) e some num corte: sem boca "fantasma" */
-  92.5% { opacity: 1; transform: scale(.82, .6); }
-  93.5%, 100% { opacity: 0; transform: scale(.82, .6); }
-}
-@keyframes hpOrgSuave { 0%, 85% { opacity: 0; } 87%, 100% { opacity: 1; } }
-@keyframes hpOrgOlho {
-  0%, 10% { transform: translate(-50%, -50%) scaleY(0); }
-  19.4%, 71.9% { transform: translate(-50%, -50%) scaleY(.36); }
-  73.8% { transform: translate(-50%, -50%) scaleY(1); }
-  76.6%, 86% { transform: translate(-50%, -50%) scaleY(.36); }
-  100% { transform: translate(-50%, -50%) scaleY(.22); }
-}
-@keyframes hpOrgPiscadela {
-  0%, 10% { transform: translate(-50%, -50%) scaleY(0); }
-  19.4%, 29.7% { transform: translate(-50%, -50%) scaleY(.36); animation-timing-function: ease-out; }
-  33.5%, 48.4% { transform: translate(-50%, -50%) scaleY(1); animation-timing-function: ease-in-out; }
-  54.7%, 71.9% { transform: translate(-50%, -50%) scaleY(.36); }
-  73.8% { transform: translate(-50%, -50%) scaleY(1); }
-  76.6%, 86% { transform: translate(-50%, -50%) scaleY(.36); }
-  100% { transform: translate(-50%, -50%) scaleY(.22); }
-}
-@keyframes hpOrgAlegria {
-  0%, 10% { transform: translateX(-50%) scaleY(0); }
-  19.4%, 86% { transform: translateX(-50%) scaleY(1); }
-  100% { transform: translateX(-50%) scaleY(0); }
-}
-@keyframes hpOrgAlegriaPisca {
-  0%, 10% { transform: translateX(-50%) scaleY(0); }
-  19.4%, 29.7% { transform: translateX(-50%) scaleY(1); }
-  32%, 50% { transform: translateX(-50%) scaleY(0); }
-  54.7%, 86% { transform: translateX(-50%) scaleY(1); }
-  100% { transform: translateX(-50%) scaleY(0); }
-}
-@keyframes hpOrgRubor {
-  0%, 10% { opacity: 0; transform: translate(-50%, -50%) scale(.9); }
-  24%, 56% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  60% { transform: translate(-50%, -50%) scale(1.14); }
-  66%, 86% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
-}
-@keyframes hpOrgEstrela {
-  0%, 30.5% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(-45deg); }
-  32% { opacity: 1; }
-  36% { transform: translate(-50%, -50%) scale(1.25) rotate(0deg); }
-  40% { transform: translate(-50%, -50%) scale(.95) rotate(6deg); }
-  44%, 49% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(9deg); }
-  51% { transform: translate(-50%, -50%) scale(1.18) rotate(20deg); }
-  53.5% { opacity: 1; transform: translate(-50%, -50%) scale(.9) rotate(26deg); }
-  57.8%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(40deg); }
-}
-@keyframes hpOrgReflexo { 0%, 35.9% { transform: translateX(-130%) rotate(28deg); } 46.9%, 100% { transform: translateX(430%) rotate(28deg); } }
 
 /* Movimento reduzido: o rosto orgulhoso parado, sem deslocamento, piscadela nem efeitos */
 .helma-p.orgulho-calmo .hp-sorriso-grande, .helma-p.orgulho-calmo .hp-rubor i { opacity: 1; }
