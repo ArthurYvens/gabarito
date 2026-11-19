@@ -582,11 +582,26 @@ label.btn:focus-within { outline: 2.5px solid var(--pen); outline-offset: 2px; }
 /* Boas-vindas */
 .onb-marca { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
 .onb-marca > img { width: 92px; height: auto; }
-.hero-retrato-wrap { display: flex; align-self: end; }
 .onb-nome { display: block; font-family: var(--f-display); font-weight: 700; font-size: 46px; line-height: 1; color: var(--ink); }
 .onb-tag { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-family: var(--f-display); font-size: 17px; color: var(--ink-2); }
 .onb-tag::before, .onb-tag::after { content: ''; width: 26px; height: 1px; background: var(--gold); }
 .onb-card .brand { display: none; }
 .onb-steps i.on { background: var(--gold); }
 .opt[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
-@media (max-width: 880px) { .hero-retrato, .hero-retrato-wrap { display: none; } .onb-nome { font-size: 38px; } .onb-marca > img { width: 72px; } }
+@media (max-width: 880px) { .hero-retrato { display: none; } .onb-nome { font-size: 38px; } .onb-marca > img { width: 72px; } }
+
+/* ---------- Ferramentas da questão, meta da semana e sugestão ---------- */
+.q-ferramentas { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--gold-line); }
+.conf { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.conf .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.dicas { margin-top: 16px; padding: 12px 16px; border-radius: var(--r); background: var(--gold-soft); border: 1px solid var(--gold-line); color: var(--ink); font-size: 14.5px; }
+.dicas ol { margin: 0; padding-left: 1.1em; }
+.dicas li + li { margin-top: 6px; }
+.conf-retorno { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); }
+.conf-retorno.err { color: var(--err); font-weight: 600; }
+.conf-retorno.ok { color: var(--ok); font-weight: 600; }
+.meta-semana { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--gold-line); }
+.meta-semana .nm { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px; }
+.sugestao { border-left: 4px solid var(--gold); }
+/* Alvos de toque de 44 px no celular também para menu e botões comuns */
+@media (max-width: 880px) { .icon-btn { width: 44px; height: 44px; } .btn { min-height: 44px; } .seg button { min-width: 44px; } }

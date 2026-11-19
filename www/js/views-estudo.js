@@ -77,7 +77,7 @@
     var fim = '';
     if (mostrar) {
       var ok = o.resposta === q.resposta, branco = o.resposta === undefined || o.resposta === null;
-      fim = '<div class="verdict ' + (ok ? 'ok' : 'err') + ' anim-veredito" role="status">' + (o.reacao && !branco ? Personagem.html({ tamanho: 52, humor: ok ? 'feliz' : 'apoio' }) : ico(ok ? 'check' : 'x')) + '<div>' + (ok ? 'Resposta certa' : branco ? 'Não respondida' : 'Resposta errada') +
+      fim = '<div class="verdict ' + (ok ? 'ok' : 'err') + '" role="status">' + ico(ok ? 'check' : 'x') + '<div>' + (ok ? 'Resposta certa' : branco ? 'Não respondida' : 'Resposta errada') +
         ' <span>· Gabarito: ' + nomeResposta(q, q.resposta) + (ok || branco ? '' : ' · Você marcou ' + nomeResposta(q, o.resposta)) + '</span></div></div>' +
         retornoConfianca(ok, o.conf) + (ok ? '' : motivoHtml(q)) + explicacao(q, o);
     } else if (!o.travada) fim = dicasHtml(q, o.dicas || 0) + ferramentasHtml(q, o);
@@ -327,7 +327,7 @@
     if (R.qAtual !== id) { acumular(); R.qAtual = id; R.marco = Date.now(); }
     area.innerHTML = questao(q, {
       numero: (sim.atual + 1) + '/' + sim.questoes.length, resposta: sim.respostas[id], confirmada: conf, riscadas: sim.riscadas[id],
-      profunda: profunda(), expandida: R.expandidas[id], travada: conf, conf: sim.confianca[id], dicas: sim.dicas[id], reacao: true, semDica: sim.modo === 'prova'
+      profunda: profunda(), expandida: R.expandidas[id], travada: conf, conf: sim.confianca[id], dicas: sim.dicas[id], semDica: sim.modo === 'prova'
     }) + '<div class="run-nav"><button class="btn btn-ghost" data-act="r-ant"' + (sim.atual ? '' : ' disabled') + '>' + ico('esq') + ' Anterior</button>' +
       '<button class="btn btn-ghost btn-sm flag-btn" data-act="r-marcar" aria-pressed="' + !!sim.marcadas[id] + '" title="Marque para voltar a ela antes de entregar">' + ico('flag') + ' Revisar depois</button>' + principal + '</div>';
     var respondidas = Object.keys(sim.respostas).length;
@@ -343,7 +343,6 @@
       return '<button class="' + cls.join(' ') + '" data-act="r-ir" data-i="' + i + '" aria-label="Questão ' + (i + 1) + '"' + (i === sim.atual ? ' aria-current="step"' : '') + '>' + (i + 1) + '</button>';
     }).join('');
     if (rolar) window.scrollTo({ top: 0 });
-    Personagem.acordar(area);
   }
 
   // Tempo por questão: soma o tempo em que a questão ficou na tela até ser respondida.
@@ -514,7 +513,7 @@
     return {
       titulo: 'Resultado',
       html: '<div class="page-head"><div><span class="eyebrow">Resultado · ' + esc(sim.titulo) + '</span><h1>' + esc(frase) + '</h1></div><a class="btn btn-ghost" href="#/simulados">' + ico('voltar') + ' Simulados</a></div>' +
-        '<section class="card"><div class="score">' + '<div class="score-helma">' + Personagem.html({ tamanho: 104, humor: r.percentual >= 70 ? 'orgulho' : 'apoio', fala: sim.origem === 'diagnostico' ? 'Agora sei de onde você parte.' : r.percentual >= 85 ? 'Mandou muito bem!' : r.percentual >= 70 ? 'Bom resultado!' : r.percentual >= 50 ? 'Estamos no caminho.' : 'Vamos juntas, um assunto por vez.' }) + '</div>' + '<div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
+        '<section class="card"><div class="score"><div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
         '<div class="score-stats"><div class="stat"><b style="color:var(--ok)">' + r.certas + '</b><span>certas</span></div><div class="stat"><b style="color:var(--err)">' + r.erradas + '</b><span>erradas</span></div><div class="stat"><b>' + r.brancos + '</b><span>em branco</span></div>' +
         '<div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(sim.decorridoSeg) + '</b><span>tempo total</span></div><div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(tempoMedio) + '</b><span>por questão</span></div>' +
         (r.liquida !== null && p.penalidadeCE ? '<div class="stat"><b class="mono" style="font-size:22px">' + r.liquida + '/' + r.ceTotal + '</b><span title="Nas provas de certo ou errado, cada item errado anula um certo; em branco não conta.">nota líquida (certo ou errado: cada erro anula um acerto)</span></div>' : '') + '</div></div>' +
@@ -608,7 +607,7 @@
       var ult = (S().respostas[q.id] || []).slice(-1)[0];
       QV = novoQV(q.id);
       // Já respondida: mostra a correção da última tentativa, sem registrar nada de novo.
-      if (ult && ult.r !== undefined) Object.assign(QV, { resposta: ult.r, confirmada: true, revista: true, conf: ult.conf, dicas: ult.dicas || 0 });
+      if (ult && ult.r !== undefined) Object.assign(QV, { resposta: ult.r, confirmada: true, conf: ult.conf, dicas: ult.dicas || 0 });
     }
     QV.escolher = function (el) {
       if (QV.confirmada) return;
@@ -622,7 +621,7 @@
       titulo: 'Questão', manterScroll: true,
       html: '<div class="page-head"><a class="btn btn-ghost" href="#/questoes">' + ico('voltar') + ' Banco de questões</a>' +
         (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? '✓' : '✗'; }).join(' ') + '</span>' : '') + '</div>' +
-        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas, reacao: !QV.revista }) +
+        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas }) +
         '<div class="run-nav">' + (pos > 0 ? '<a class="btn btn-ghost" href="#/questao/' + encodeURIComponent(lista[pos - 1]) + '">' + ico('esq') + ' Anterior</a>' : '<span></span>') +
         (QV.confirmada ? '<button class="btn btn-ghost" data-act="qv-de-novo">' + ico('revisao') + ' Responder de novo</button>' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +
         (pos >= 0 && pos < lista.length - 1 ? '<a class="btn ' + (QV.confirmada ? 'btn-primary' : 'btn-ghost') + '" href="#/questao/' + encodeURIComponent(lista[pos + 1]) + '">Próxima ' + ico('dir') + '</a>' : '<span></span>') + '</div></div>',
@@ -695,7 +694,7 @@
           return '<h3 class="mt" style="margin-bottom:4px">' + esc(mm.nome) + ' <span class="muted small">' + porMat[mid].length + '</span></h3><div class="list">' + porMat[mid].map(function (q) {
             return '<a class="list-item" href="#/questao/' + encodeURIComponent(q.id) + '"><span class="mark err">' + ico('x') + '</span><div class="grow"><div class="clamp2">' + esc(q.enunciado) + '</div><div class="sub">' + esc(q.assunto) + '</div></div>' + ico('dir') + '</a>';
           }).join('') + '</div>';
-        }).join('') : '<div class="empty vazio-helma">' + Personagem.html({ tamanho: 88, humor: 'neutro' }) + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
+        }).join('') : '<div class="empty">' + ico('check') + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
     };
   }, 'revisao');
   App.acao('rev-iniciar', function () {

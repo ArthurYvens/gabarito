@@ -55,21 +55,6 @@
     '</div>';
   }
 
-  // Números grandes contam do zero até o valor (some com prefers-reduced-motion).
-  function contarNumeros(raiz) {
-    try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch (e) { return; }
-    Array.prototype.forEach.call(raiz.querySelectorAll('.ring b, .stat > b'), function (el) {
-      var m = /^(\d+)(.*)$/.exec(el.textContent.trim());
-      if (!m || el.children.length) return;
-      var alvo = Number(m[1]), resto = m[2], t0 = performance.now();
-      if (alvo < 2) return;
-      (function passo(t) {
-        var k = Math.min(1, (t - t0) / 800), v = Math.round(alvo * (1 - Math.pow(1 - k, 3)));
-        el.textContent = v + resto;
-        if (k < 1 && el.isConnected) requestAnimationFrame(passo);
-      })(t0);
-    });
-  }
   App.render = function () {
     try { desenhar(); } catch (e) {
       // Uma tela com defeito não pode deixar o app em branco: mostra o erro e uma saída.
@@ -92,8 +77,6 @@
         else raiz.innerHTML = layout(App.rotas[i].nav, r.html);
         if (r.titulo) document.title = r.titulo + ' · Helma';
         if (r.montar) App.saida = r.montar() || null;
-        Personagem.acordar(raiz);
-        contarNumeros(raiz);
         var main = document.getElementById('main');
         if (main && !r.manterScroll) { window.scrollTo(0, 0); }
         return;
@@ -150,7 +133,7 @@
     var passos = '<div class="onb-steps" aria-hidden="true">' + [0, 1, 2].map(function (i) { return '<i class="' + (i <= onb.passo ? 'on' : '') + '"></i>'; }).join('') + '</div>';
     var corpo;
     if (onb.passo === 0) {
-      corpo = '<div class="onb-marca">' + Personagem.html({ tamanho: 96, humor: 'ola', pose: 'perfil-dir' }) + '<div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
+      corpo = '<div class="onb-marca"><img class="logo-claro" src="marca/helma-retrato.svg" alt=""><img class="logo-escuro" src="marca/helma-retrato-claro.svg" alt=""><div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
         '<span class="eyebrow">Boas-vindas</span><h1>Seu estudo, montado para a sua prova.</h1>' +
         '<p class="muted mt" style="font-size:16.5px;max-width:56ch">Simulados que se ajustam ao seu objetivo, explicações que ensinam de verdade, aulas, redação corrigida por critérios e revisão no momento certo.</p>' +
         '<label class="field mt-lg"><span>Como podemos te chamar?</span><input class="input" id="onb-nome" maxlength="40" autocomplete="given-name" placeholder="Como quer ser chamado (opcional)" value="' + esc(onb.nome) + '"></label>' +
@@ -177,7 +160,7 @@
   function montarOnboarding() {
     document.title = 'Boas-vindas · Helma';
     var n = document.getElementById('onb-nome');
-    Personagem.acordar(document); if (n) { n.focus(); n.addEventListener('keydown', function (e) { if (e.key === 'Enter') App.acoes['onb-prox'](); }); }
+    if (n) { n.focus(); n.addEventListener('keydown', function (e) { if (e.key === 'Enter') App.acoes['onb-prox'](); }); }
   }
   function lerOnb() {
     var n = document.getElementById('onb-nome'); if (n) onb.nome = n.value.trim();
@@ -230,7 +213,7 @@
       ? '<a class="btn btn-primary btn-lg" href="#/simulado/' + andamento.id + '">' + ico('play') + ' Continuar simulado (' + Object.keys(andamento.respostas).length + '/' + andamento.questoes.length + ')</a>'
       : novato ? '<button class="btn btn-primary btn-lg" data-act="diagnostico-iniciar">' + ico('alvo') + ' Fazer o diagnóstico inicial</button>'
       : '<button class="btn btn-primary btn-lg" data-act="sim-rapido">' + ico('play') + ' Simulado recomendado</button>';
-    var sheet = '<span class="hero-retrato-wrap">' + Personagem.html({ tamanho: 132, humor: feitas >= p.metaDiaria ? 'orgulho' : 'ola', pose: 'perfil-dir' }) + '</span>';
+    var sheet = '<img class="hero-retrato" src="marca/helma-retrato-claro.svg" alt="" aria-hidden="true">';
     var hero = '<section class="hero"><div><span class="eyebrow" style="color:inherit;opacity:.7">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</span>' +
       '<h1>' + saudacao() + (p.nome ? ', ' + esc(p.nome.trim().split(/\s+/)[0]) : '') + '.</h1>' +
       '<p>' + (andamento ? 'Você parou no meio de <b>' + esc(andamento.titulo) + '</b>: ' + UI.plural(andamento.questoes.length - Object.keys(andamento.respostas).length, 'questão falta', 'questões faltam') + '. Continue de onde parou.' : pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : novato ? 'Comece pelo diagnóstico: ' + Motor.diagnostico(Banco, p.materias, 1, p.objetivo).length + ' questões das suas matérias, sem pressa, para o app saber de onde você parte em cada assunto.' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
