@@ -124,5 +124,9 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
 
-  root.UI = { esc: esc, md: md, ico: ico, marca: marca, toast: toast, confirmar: confirmar, tempo: tempo, dataCurta: dataCurta, plural: plural, dots: dots, fontes: fontes, dominio: dominio, baixar: baixar };
+  /* Helma ilustrada: pose 'frente', 'tres-quartos-esq' (olha para a esquerda) ou 'tres-quartos-dir'. Decorativa. */
+  function helma(pose, classe) {
+    return '<span class="helma-moldura' + (classe ? ' ' + classe : '') + '" aria-hidden="true"><img src="marca/personagem/' + (pose || 'frente') + '.svg" alt="" draggable="false"></span>';
+  }
+  root.UI = { esc: esc, md: md, ico: ico, marca: marca, helma: helma, toast: toast, confirmar: confirmar, tempo: tempo, dataCurta: dataCurta, plural: plural, dots: dots, fontes: fontes, dominio: dominio, baixar: baixar };
 })(this);

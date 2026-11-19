@@ -22,11 +22,11 @@
 .dsp-fraco { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
 
 /* Quadrantes de confiança */
-.dsp-quad { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.dsp-q { padding: 12px 14px; border-radius: var(--r); border: 1px solid var(--line); border-left-width: 4px; background: var(--surface-2); display: flex; flex-direction: column; gap: 4px; }
-.dsp-q-ok { border-left-color: var(--ok); background: var(--ok-soft); }
-.dsp-q-warn { border-left-color: var(--warn); background: var(--warn-soft); }
-.dsp-q-err { border-left-color: var(--err); background: var(--err-soft); }
+.dsp-quad { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; } /* 2 colunas quando cabem, 1 na coluna estreita */
+.dsp-q { padding: 12px 14px; border-radius: var(--r); border: 1px solid var(--line); background: var(--surface-2); display: flex; flex-direction: column; gap: 4px; }
+.dsp-q-ok { border-color: color-mix(in srgb, var(--ok) 40%, transparent); background: var(--ok-soft); }
+.dsp-q-warn { border-color: color-mix(in srgb, var(--warn) 40%, transparent); background: var(--warn-soft); }
+.dsp-q-err { border-color: color-mix(in srgb, var(--err) 40%, transparent); background: var(--err-soft); }
 .dsp-q-top { display: flex; align-items: center; gap: 8px; font-weight: 600; }
 .dsp-q-ok .ico { color: var(--ok); }
 .dsp-q-warn .ico { color: var(--warn); }

@@ -65,11 +65,18 @@
       if (window.console) console.error(e);
     }
   };
+  // Só em tela nova (que entrou com .fade-in) e só se nada dentro dela já recebeu o foco (ex.: o campo de nome).
+  function focarTela(raiz) {
+    var ativo = document.activeElement;
+    if (ativo && ativo !== document.body && raiz.contains(ativo)) return;
+    var h = raiz.querySelector('.fade-in h1');
+    if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  }
   function desenhar() {
     if (App.saida) { App.saida(); App.saida = null; }
     var hash = location.hash.replace(/^#/, '') || '/';
     var raiz = document.getElementById('app');
-    if (!App.perfil()) { raiz.innerHTML = onboarding(); montarOnboarding(); return; }
+    if (!App.perfil()) { raiz.innerHTML = onboarding(); montarOnboarding(); focarTela(raiz); return; }
     var caminho = hash.split('?')[0], params = new URLSearchParams(hash.split('?')[1] || '');
     for (var i = 0; i < App.rotas.length; i++) {
       var m = App.rotas[i].re.exec(caminho);
@@ -82,6 +89,7 @@
         if (r.montar) App.saida = r.montar() || null;
         var main = document.getElementById('main');
         if (main && !r.manterScroll) { window.scrollTo(0, 0); }
+        focarTela(raiz);
         return;
       }
     }
@@ -95,20 +103,37 @@
     var fn = App.acoes[el.getAttribute('data-act')];
     if (fn) { e.preventDefault(); fn(el, e); }
   });
-  App.acao('menu', function () {
+  var abriuMenu = null;
+  function fundoInerte(sim) {
+    document.querySelectorAll('.app > :not(#side)').forEach(function (el) { if (sim) el.setAttribute('inert', ''); else el.removeAttribute('inert'); });
+  }
+  App.acao('menu', function (el) {
     var side = document.getElementById('side');
     var aberto = side.classList.toggle('open');
     document.querySelectorAll('[data-act="menu"]').forEach(function (b) { b.setAttribute('aria-expanded', aberto); });
     var scrim = document.querySelector('.scrim');
+    fundoInerte(aberto);
     if (aberto && !scrim) {
+      abriuMenu = el && el.closest && el.closest('button') ? el.closest('button') : null;
       scrim = document.createElement('div'); scrim.className = 'scrim'; scrim.setAttribute('data-act', 'menu');
       document.body.appendChild(scrim);
       side.querySelector('a').focus();
-    } else if (!aberto && scrim) scrim.remove();
+    } else if (!aberto) {
+      if (scrim) scrim.remove();
+      if (abriuMenu && abriuMenu.isConnected) abriuMenu.focus();
+      abriuMenu = null;
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    var side = document.getElementById('side');
+    if (e.key === 'Escape' && side && side.classList.contains('open')) { e.preventDefault(); App.acoes.menu(); }
   });
   window.addEventListener('hashchange', function () {
     var s = document.querySelector('.scrim'); if (s) s.remove();
+    fundoInerte(false); abriuMenu = null;
     App.render();
+    var aba = document.querySelector('nav.seg [aria-current="page"]');
+    if (aba && aba.scrollIntoView) aba.scrollIntoView({ block: 'nearest', inline: 'center' });
   });
   // Botões de alternância (chips e segmentos) com data-toggle: sem lógica própria, só aria-pressed.
   document.addEventListener('click', function (e) {
@@ -137,18 +162,18 @@
     var corpo;
     if (onb.passo === 0) {
       corpo = '<div class="onb-marca"><img class="logo-claro" src="marca/helma-retrato.svg" alt=""><img class="logo-escuro" src="marca/helma-retrato-claro.svg" alt=""><div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
-        '<span class="eyebrow">Boas-vindas</span><h1>Seu estudo, montado para a sua prova.</h1>' +
+        '<h1>Seu estudo, montado para a sua prova.</h1>' +
         '<p class="muted mt" style="font-size:16.5px;max-width:56ch">Simulados que se ajustam ao seu objetivo, explicações que ensinam de verdade, aulas, redação corrigida por critérios e revisão no momento certo.</p>' +
-        '<label class="field mt-lg"><span>Como podemos te chamar?</span><input class="input" id="onb-nome" maxlength="40" autocomplete="given-name" placeholder="Como quer ser chamado (opcional)" value="' + esc(onb.nome) + '"></label>' +
+        '<label class="field mt-lg"><span>Como podemos te chamar? <span class="muted">(opcional)</span></span><input class="input" id="onb-nome" maxlength="40" autocomplete="given-name" placeholder="Seu nome ou apelido" value="' + esc(onb.nome) + '"></label>' +
         '<div class="row mt-lg"><button class="btn btn-primary btn-lg" data-act="onb-prox">Começar ' + ico('dir') + '</button></div>';
     } else if (onb.passo === 1) {
-      corpo = '<span class="eyebrow">Passo 2 de 3</span><h1>Qual é o seu objetivo?</h1><p class="muted mt">Isso define o peso de cada matéria nos simulados e o tipo de redação. Dá para mudar depois.</p>' +
+      corpo = '<h1><span class="sr-only">Passo 2 de 3: </span>Qual é o seu objetivo?</h1><p class="muted mt">Isso define o peso de cada matéria nos simulados e o tipo de redação. Dá para mudar depois.</p>' +
         '<div class="opt-grid mt" role="group" aria-label="Objetivos">' + Banco.objetivos.map(function (o) {
           return '<button class="opt" data-act="onb-obj" data-id="' + o.id + '" aria-pressed="' + (onb.objetivo === o.id) + '"><b>' + esc(o.nome) + '</b><span>' + esc(o.descricao) + '</span></button>';
         }).join('') + '</div>' +
         '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><div class="row">' + (onb.objetivo ? '' : '<span class="small muted">Escolha um objetivo para continuar</span>') + '<button class="btn btn-primary btn-lg" data-act="onb-prox"' + (onb.objetivo ? '' : ' disabled') + '>Continuar ' + ico('dir') + '</button></div></div>';
     } else {
-      corpo = '<span class="eyebrow">Passo 3 de 3</span><h1>Ajuste o seu foco</h1><p class="muted mt">Marcamos as matérias que caem na sua prova. Tire ou inclua o que quiser.</p>' +
+      corpo = '<h1><span class="sr-only">Passo 3 de 3: </span>Ajuste o seu foco</h1><p class="muted mt">Marcamos as matérias que caem na sua prova. Tire ou inclua o que quiser.</p>' +
         '<div class="chips mt" id="onb-mats" role="group" aria-label="Matérias">' + Banco.materias.map(function (m) {
           return '<button class="chip" data-toggle="multi" data-mat="' + m.id + '" aria-pressed="' + (onb.materias.indexOf(m.id) >= 0) + '">' + ico('check', 'ck') + esc(m.nome) + '</button>';
         }).join('') + '</div>' +
@@ -158,7 +183,9 @@
         '<label class="switch mt"><span><b>Explicação profunda</b><span>Depois de responder, mostra a resolução completa, o comentário de cada alternativa e onde estudar mais.</span></span><input type="checkbox" id="onb-prof"' + (onb.profunda ? ' checked' : '') + '></label>' +
         '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><button class="btn btn-primary btn-lg" data-act="onb-fim">Montar meu painel ' + ico('dir') + '</button></div>';
     }
-    return '<main class="onb"><div class="card onb-card' + entrada('onboarding-' + onb.passo) + '"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">Helma</span></a>' + passos + corpo + '</div></main>';
+    return '<main class="onb"><div class="onb-arte">' + UI.helma(onb.passo ? 'tres-quartos-dir' : 'frente', 'onb-helma') +
+      '<p class="onb-arte-txt">' + ['Eu sou a Helma. Vou montar seus simulados e acompanhar sua evolução.', 'Com o seu objetivo, sei o peso de cada matéria na sua prova.', 'Pronto: agora é só escolher o que entra no seu foco.'][onb.passo] + '</p></div>' +
+      '<div class="card onb-card' + entrada('onboarding-' + onb.passo) + '"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">Helma</span></a>' + passos + corpo + '</div></main>';
   }
   function montarOnboarding() {
     document.title = 'Boas-vindas · Helma';
@@ -171,8 +198,13 @@
     var meta = document.getElementById('onb-meta'); if (meta) onb.meta = Number(App.valores(meta, 'data-v')[0] || 20);
     var prof = document.getElementById('onb-prof'); if (prof) onb.profunda = prof.checked;
   }
-  App.acao('onb-prox', function () { lerOnb(); onb.passo++; App.render(); });
-  App.acao('onb-ant', function () { lerOnb(); onb.passo--; App.render(); });
+  // Cada passo vira uma entrada do histórico: o Voltar do navegador (e do celular) recua um passo em vez de sair do app.
+  App.acao('onb-prox', function () { lerOnb(); onb.passo++; try { history.pushState({ onbPasso: onb.passo }, ''); } catch (e) { /* file:// sem histórico */ } App.render(); });
+  App.acao('onb-ant', function () { lerOnb(); if (history.state && history.state.onbPasso) history.back(); else { onb.passo = Math.max(0, onb.passo - 1); App.render(); } });
+  window.addEventListener('popstate', function (e) {
+    if (App.perfil()) return;
+    lerOnb(); onb.passo = (e.state && e.state.onbPasso) || 0; App.render();
+  });
   App.acao('onb-obj', function (el) {
     onb.objetivo = el.getAttribute('data-id');
     var o = Banco.objetivo(onb.objetivo);
@@ -218,9 +250,10 @@
       ? '<a class="btn btn-primary btn-lg" href="#/simulado/' + andamento.id + '">' + ico('play') + ' Continuar simulado (' + Object.keys(andamento.respostas).length + '/' + andamento.questoes.length + ')</a>'
       : novato ? '<button class="btn btn-primary btn-lg" data-act="diagnostico-iniciar">' + ico('alvo') + ' Fazer o diagnóstico inicial</button>'
       : '<button class="btn btn-primary btn-lg" data-act="sim-rapido">' + ico('play') + ' Simulado recomendado</button>';
-    var sheet = '<img class="hero-retrato" src="marca/helma-retrato-claro.svg" alt="" aria-hidden="true">';
-    var hero = '<section class="hero"><div><span class="eyebrow" style="color:inherit;opacity:.7">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</span>' +
+    var sheet = UI.helma('tres-quartos-esq', 'hero-helma');
+    var hero = '<section class="hero"><div class="hero-texto">' +
       '<h1>' + saudacao() + (p.nome ? ', ' + esc(p.nome.trim().split(/\s+/)[0]) : '') + '.</h1>' +
+      '<p class="hero-meta">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</p>' +
       '<p>' + (andamento ? 'Você parou no meio de <b>' + esc(andamento.titulo) + '</b>: ' + UI.plural(andamento.questoes.length - Object.keys(andamento.respostas).length, 'questão falta', 'questões faltam') + '. Continue de onde parou.' : pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : novato ? 'Comece pelo diagnóstico: ' + Motor.diagnostico(Banco, p.materias, 1, p.objetivo).length + ' questões das suas matérias, sem pressa, para o app saber de onde você parte em cada assunto.' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
       '<div class="row">' + cta + (pend ? '<button class="btn btn-ghost" data-act="rev-iniciar">' + ico('revisao') + ' Revisar ' + pend + '</button>' : '<a class="btn btn-ghost" href="#/simulados">Montar simulado</a>') + '</div></div>' + sheet + '</section>';
 
@@ -269,14 +302,14 @@
         var fa = fracos.some(function (f) { return f.materia === a.materia; }) ? 0 : 1, fb = fracos.some(function (f) { return f.materia === b.materia; }) ? 0 : 1;
         return fa - fb;
       })[0];
-    var aulaCard = aula ? '<section class="card"><span class="eyebrow">Aula sugerida</span><h3>' + esc(aula.titulo) + '</h3><p class="muted small mt" style="margin-top:6px">' + esc(Banco.materia(aula.materia).nome) + ' · ' + aula.duracaoMin + ' min</p><p class="small">' + esc(aula.resumo) + '</p><a class="btn btn-secondary btn-sm" href="#/aula/' + aula.id + '">Abrir aula</a></section>' : '';
+    var aulaCard = aula ? '<section class="card"><h3>' + esc(aula.titulo) + '</h3><p class="muted small mt" style="margin-top:6px">Aula sugerida · ' + esc(Banco.materia(aula.materia).nome) + ' · ' + aula.duracaoMin + ' min</p><p class="small">' + esc(aula.resumo) + '</p><a class="btn btn-secondary btn-sm" href="#/aula/' + aula.id + '">Abrir aula</a></section>' : '';
 
     var sug = Motor.sugestao(Banco, st, hoje);
-    var sugCard = novato || andamento || sug.tipo === 'simulado' ? '' : '<section class="card sugestao"><span class="eyebrow">Próximo treino sugerido</span><h2>' + esc(sug.titulo) + '</h2><p class="small" style="margin-top:6px">' + esc(sug.porque) + '</p><button class="btn btn-primary btn-sm" data-act="sugestao-iniciar">' + ico('play') + ' Começar</button></section>';
+    var sugCard = novato || andamento || sug.tipo === 'simulado' ? '' : '<section class="card sugestao"><h2>Próximo treino: ' + esc(sug.titulo) + '</h2><p class="small" style="margin-top:6px">' + esc(sug.porque) + '</p><button class="btn btn-primary btn-sm" data-act="sugestao-iniciar">' + ico('play') + ' Começar</button></section>';
     return {
       titulo: 'Início',
       html: hero + '<div class="grid g-main mt"><div class="stack">' + sugCard + desempenhoCard + fracosCard + '</div><div class="stack">' + meta + planoHoje + aulaCard +
-        '<section class="card card-flat"><span class="eyebrow">Redação</span><h3>Treine a escrita desta semana</h3><p class="small muted" style="margin-top:6px">Editor com folha pautada, contagem de linhas e checagem da proposta de intervenção.</p><a class="btn btn-secondary btn-sm" href="#/redacao/escrever">Escrever redação</a></section></div></div>'
+        '<section class="card card-flat"><h3>Treine a escrita desta semana</h3><p class="small muted" style="margin-top:6px">Editor com folha pautada, contagem de linhas e checagem da proposta de intervenção.</p><a class="btn btn-secondary btn-sm" href="#/redacao/escrever">Escrever redação</a></section></div></div>'
     };
   }, 'inicio');
 
@@ -317,7 +350,7 @@
       var hojeDia = new Date().getDay();
       var blocosHoje = (pl.semana[hojeDia] || []).length, feitasHoje = S().sessoes[Motor.hoje()] || 0;
       // Sessões do dia: o aluno marca cada bloco cumprido; o plano mostra o andamento real, não só o previsto.
-      var sessoesHtml = blocosHoje ? '<section class="card mt sessoes"><div class="row-between"><div><span class="eyebrow">Hoje</span><h3>' + Math.min(feitasHoje, blocosHoje) + ' de ' + UI.plural(blocosHoje, 'sessão', 'sessões') + ' cumprida' + (feitasHoje === 1 ? '' : 's') + '</h3></div>' +
+      var sessoesHtml = blocosHoje ? '<section class="card mt sessoes"><div class="row-between"><div><h3>Hoje: ' + Math.min(feitasHoje, blocosHoje) + ' de ' + UI.plural(blocosHoje, 'sessão', 'sessões') + ' cumprida' + (feitasHoje === 1 ? '' : 's') + '</h3></div>' +
         (feitasHoje < blocosHoje ? '<button class="btn btn-primary btn-sm" data-act="sessao-feita">' + ico('check') + ' Concluí uma sessão</button>' : '<span class="tag tag-ok">' + ico('check') + ' Dia cumprido</span>') + '</div><div class="bar mt"><i style="width:' + Math.min(100, Math.round(feitasHoje / blocosHoje * 100)) + '%"></i></div></section>' : '';
       grade = sessoesHtml + '<section class="mt-lg"><div class="row-between" style="margin-bottom:14px"><h2>Sua semana</h2><span class="muted small">Blocos de 50 min + 10 de pausa · ' + UI.plural(Object.values(pl.semana).reduce(function (s, b) { return s + b.length; }, 0), 'bloco', 'blocos') + '</span></div><div class="plan">' +
         [1, 2, 3, 4, 5, 6, 0].map(function (i) {
@@ -327,7 +360,7 @@
         }).join('') + '</div>' +
         '<div class="callout callout-pen mt">' + ico('ideia') + '<div><b>Como usar cada bloco:</b> 15 min de aula ou leitura do assunto, 25 min de questões no modo estudo e 10 min lendo as explicações do que errou. A revisão espaçada entra antes do primeiro bloco do dia.</div></div></section>';
     }
-    return { titulo: 'Plano de estudos', html: '<div class="page-head"><div><span class="eyebrow">Organização</span><h1>Plano de estudos</h1><p>Um cronograma semanal feito a partir do seu objetivo, do seu tempo e do seu desempenho.</p></div></div>' + form + grade };
+    return { titulo: 'Plano de estudos', html: '<div class="page-head"><div><h1>Plano de estudos</h1><p>Um cronograma semanal feito a partir do seu objetivo, do seu tempo e do seu desempenho.</p></div></div>' + form + grade };
   }, 'plano');
   App.acao('sessao-feita', function () {
     var d = Motor.hoje(), pl = S().plano, total = pl ? (pl.semana[new Date().getDay()] || []).length : 0;
@@ -375,7 +408,7 @@
     }).join('');
     return {
       titulo: 'Onde estudar',
-      html: '<div class="page-head"><div><span class="eyebrow">Biblioteca</span><h1>Onde estudar mais</h1><p>Fontes oficiais e confiáveis para aprofundar cada matéria, e os sites onde as bancas publicam as provas anteriores.</p></div></div>' +
+      html: '<div class="page-head"><div><h1>Onde estudar mais</h1><p>Fontes oficiais e confiáveis para aprofundar cada matéria, e os sites onde as bancas publicam as provas anteriores.</p></div></div>' +
         '<section class="card"><div class="card-head"><div><h2>Provas anteriores oficiais</h2><p class="small">As bancas publicam provas e gabaritos nos próprios sites. Baixe a prova em PDF e envie em Minhas questões: o app separa as questões para você treinar aqui, com estatística e revisão, para seu estudo pessoal.</p></div><a class="btn btn-secondary btn-sm" href="#/minhas-questoes">' + ico('upload') + ' Trazer uma prova</a></div>' +
         '<div class="list">' + PROVAS.map(function (p) {
           return '<a class="list-item" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"><span class="sigla sigla-sm">' + ico('link') + '</span><div class="grow"><div class="title">' + esc(p.titulo) + '</div><div class="sub">' + esc(p.desc) + '</div></div>' + ico('externo') + '</a>';
@@ -393,7 +426,7 @@
     var imp = App.bancos;
     return {
       titulo: 'Ajustes',
-      html: '<div class="page-head"><div><span class="eyebrow">Conta</span><h1>Ajustes</h1><p>Seu progresso fica salvo neste navegador. Exporte um backup para levar a outro aparelho.</p></div></div>' +
+      html: '<div class="page-head"><div><h1>Ajustes</h1><p>Seu progresso fica salvo neste navegador. Exporte um backup para levar a outro aparelho.</p></div></div>' +
         '<div class="grid g2">' +
         '<section class="card"><h2>Perfil e objetivo</h2>' +
           '<label class="field mt"><span>Nome</span><input class="input" id="aj-nome" maxlength="40" value="' + esc(p.nome) + '"></label>' +

@@ -112,14 +112,14 @@
         '<div class="row"><button class="btn btn-secondary btn-sm" data-act="mq-praticar" data-id="' + esc(b.id) + '">' + ico('play') + ' Praticar</button>' +
         '<button class="icon-btn" data-act="mq-exportar" data-id="' + esc(b.id) + '" title="Exportar este banco" aria-label="Exportar ' + esc(b.nome) + '">' + ico('download') + '</button>' +
         '<button class="icon-btn" data-act="mq-excluir" data-id="' + esc(b.id) + '" title="Excluir este banco" aria-label="Excluir ' + esc(b.nome) + '">' + ico('lixo') + '</button></div></div>';
-    }).join('') + '</div>' : '<div class="empty" style="padding:28px">' + ico('questoes') + '<h3>Nenhuma questão sua ainda</h3><p>Escolha uma das formas acima para começar. Suas questões entram nos simulados, no banco de questões e na revisão como as do app.</p></div>';
+    }).join('') + '</div>' : '<div class="empty" style="padding:28px">' + UI.helma('frente') + '<h3>Nenhuma questão sua ainda</h3><p>Escolha uma das formas acima para começar. Suas questões entram nos simulados, no banco de questões e na revisão como as do app.</p></div>';
 
     return {
       titulo: 'Minhas questões', manterScroll: true,
-      html: '<div class="page-head"><div><span class="eyebrow">Seu banco</span><h1>Minhas questões</h1><p>Transforme provas anteriores, apostilas e anotações em questões para treinar aqui, com correção, estatística e revisão. Tudo fica guardado só neste aparelho.</p></div>' +
+      html: '<div class="page-head"><div><h1>Minhas questões</h1><p>Transforme provas anteriores, apostilas e anotações em questões para treinar aqui, com correção, estatística e revisão. Tudo fica guardado só neste aparelho.</p></div>' +
         (total ? '<span class="tag tag-pen">' + UI.plural(total, 'questão sua', 'questões suas') + '</span>' : '') + '</div>' +
         (M.rascunhos ? '<div class="callout callout-pen" style="margin-bottom:18px;align-items:center;flex-wrap:wrap">' + ico('alerta') + '<div class="grow"><b>' + UI.plural(M.rascunhos.length, 'questão aguardando', 'questões aguardando') + ' sua revisão.</b> Elas ainda não foram salvas.</div><a class="btn btn-primary btn-sm" href="#/minhas-questoes/revisao">Continuar revisão</a><button class="btn btn-ghost btn-sm" data-act="rv-cancelar">Descartar</button></div>' : '') +
-        '<div class="grid g4">' + fonte('pdf', 'livro', 'Enviar PDF', 'Prova ou apostila com texto selecionável. O app separa as questões sozinho.') +
+        '<div class="grid g4 tiles">' + fonte('pdf', 'livro', 'Enviar PDF', 'Prova ou apostila com texto selecionável. O app separa as questões sozinho.') +
         fonte('texto', 'questoes', 'Colar texto', 'Copiou a prova de um site ou PDF? Cole aqui com o gabarito.') +
         fonte('planilha', 'plano', 'Planilha', 'Muitas questões de uma vez, do Excel ou do Google Planilhas.') +
         '<button class="card lesson-card fonte-card" data-act="mq-escrever"><span class="sigla sigla-sm">' + ico('redacao') + '</span><h3>Escrever questão</h3><p>Digite uma questão do seu caderno ou da aula, com seu comentário.</p></button></div>' +
@@ -276,7 +276,7 @@
     var mats = Banco.materias.map(function (m) { return '<option value="' + esc(m.id) + '"' + (meta.materia === m.id ? ' selected' : '') + '>' + esc(m.nome) + '</option>'; }).join('');
     return {
       titulo: 'Revisar questões', manterScroll: true,
-      html: '<div class="page-head"><div><span class="eyebrow">Minhas questões · revisão</span><h1>Confira antes de salvar</h1><p>' + UI.plural(r.length, 'questão reconhecida', 'questões reconhecidas') + '. Corrija o que o app separou errado, marque a resposta certa e desmarque o que não quiser guardar.</p></div>' +
+      html: '<div class="page-head"><div><h1>Confira antes de salvar</h1><p>' + UI.plural(r.length, 'questão reconhecida', 'questões reconhecidas') + '. Corrija o que o app separou errado, marque a resposta certa e desmarque o que não quiser guardar.</p></div>' +
         '<button class="btn btn-ghost" data-act="rv-cancelar">' + ico('x') + ' Descartar</button></div>' +
         '<section class="card"><h2>Sobre este material</h2><div class="grid g2 mt">' +
         '<label class="field"><span>Nome do banco</span><input class="input" id="rv-nome" maxlength="80" value="' + esc(M.nome) + '"></label>' +

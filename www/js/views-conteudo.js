@@ -20,7 +20,7 @@
     var feitas = Object.keys(st.aulas).length, total = Banco.aulas.length + Redacao.aulas.length;
     return {
       titulo: 'Aulas', manterScroll: true,
-      html: '<div class="page-head"><div><span class="eyebrow">Aprender</span><h1>Aulas</h1><p>Teoria direta ao ponto, com exemplos, pegadinhas de banca e um botão para praticar o assunto logo depois.</p></div><span class="tag tag-pen">' + feitas + ' de ' + total + ' concluídas</span></div>' +
+      html: '<div class="page-head"><div><h1>Aulas</h1><p>Teoria direta ao ponto, com exemplos, pegadinhas de banca e um botão para praticar o assunto logo depois.</p></div><span class="tag tag-pen">' + feitas + ' de ' + total + ' concluídas</span></div>' +
         '<div class="chips" style="margin-bottom:22px" role="group" aria-label="Filtrar por matéria"><button class="chip" data-act="aula-filtro" data-m="" aria-pressed="' + !filtroAula + '">Todas</button>' +
         mats.map(function (m) { return '<button class="chip" data-act="aula-filtro" data-m="' + m.id + '" aria-pressed="' + (filtroAula === m.id) + '">' + esc(m.nome) + '</button>'; }).join('') +
         '<button class="chip" data-act="aula-filtro" data-m="redacao" aria-pressed="' + (filtroAula === 'redacao') + '">Redação</button></div>' +
@@ -34,7 +34,7 @@
     var slug = function (i) { return 'sec-' + i; };
     return '<div class="page-head"><a class="btn btn-ghost" href="' + o.voltar + '">' + ico('voltar') + ' ' + o.voltarNome + '</a></div>' +
       '<div class="lesson"><nav class="toc" aria-label="Nesta aula"><span class="eyebrow">Nesta aula</span>' + a.secoes.map(function (s, i) { return '<a href="#' + slug(i) + '" data-act="ancora" data-alvo="' + slug(i) + '">' + esc(s.titulo) + '</a>'; }).join('') + '<a href="#sec-pontos" data-act="ancora" data-alvo="sec-pontos">Pontos-chave</a></nav>' +
-      '<article class="lesson-body"><span class="eyebrow">' + esc(o.materia) + ' · ' + a.duracaoMin + ' min de leitura</span><h1>' + esc(a.titulo) + '</h1><p class="muted mt" style="font-size:17px">' + esc(a.resumo) + '</p>' +
+      '<article class="lesson-body"><h1>' + esc(a.titulo) + '</h1><p class="meta-linha">' + esc(o.materia) + ' · ' + a.duracaoMin + ' min de leitura</p><p class="muted mt" style="font-size:17px">' + esc(a.resumo) + '</p>' +
       a.secoes.map(function (s, i) { return '<h2 id="' + slug(i) + '">' + esc(s.titulo) + '</h2><div class="prose">' + UI.md(s.texto) + '</div>'; }).join('') +
       '<section class="keypoints mt-lg" id="sec-pontos"><h3>Pontos-chave para a prova</h3><ol>' + a.pontosChave.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ol></section>' +
       (a.fontes ? '<h2>Onde pesquisar mais</h2>' + UI.fontes(a.fontes) : '') +
@@ -59,7 +59,7 @@
   // ---------- Redação ----------
   var ABAS = [['', 'Visão geral'], ['escrever', 'Escrever'], ['repertorio', 'Repertório'], ['conectivos', 'Conectivos'], ['modelo', 'Modelo comentado'], ['temas', 'Temas'], ['historico', 'Minhas redações']];
   function cabecalho(aba, titulo, desc) {
-    return '<div class="page-head"><div><span class="eyebrow">Redação</span><h1>' + titulo + '</h1><p>' + desc + '</p></div></div>' +
+    return '<div class="page-head"><div><h1>' + titulo + '</h1><p>' + desc + '</p></div></div>' +
       '<nav class="seg" style="margin-bottom:24px" aria-label="Seções de redação">' + ABAS.map(function (a) {
         return '<a href="#/redacao' + (a[0] ? '/' + a[0] : '') + '" class="seg-link"' + (aba === a[0] ? ' aria-current="page"' : '') + '>' + a[1] + '</a>';
       }).join('') + '</nav>';
@@ -74,7 +74,7 @@
         Redacao.competencias.map(function (c) {
           return '<div class="comp"><span class="comp-n">' + c.n + '</span><div><h3>' + esc(c.titulo) + '</h3><dl><dt>O que avalia</dt><dd>' + esc(c.oQue) + '</dd><dt>Como pontuar</dt><dd>' + esc(c.como) + '</dd><dt>Atenção</dt><dd>' + esc(c.zera) + '</dd></dl></div></div>';
         }).join('') + '</section>' +
-        '<div class="stack"><section class="card"><span class="eyebrow">Comece por aqui</span><h3>Escreva uma redação agora</h3><p class="small muted" style="margin-top:6px">Folha pautada de 30 linhas, cronômetro e checagem automática de estrutura.</p><a class="btn btn-primary" href="#/redacao/escrever">' + ico('redacao') + ' Abrir editor</a>' +
+        '<div class="stack"><section class="card"><h3>Escreva uma redação agora</h3><p class="small muted" style="margin-top:6px">Folha pautada de 30 linhas, cronômetro e checagem automática de estrutura.</p><a class="btn btn-primary" href="#/redacao/escrever">' + ico('redacao') + ' Abrir editor</a>' +
         (st.redacoes.length ? '<p class="small muted mt">' + UI.plural(st.redacoes.length, 'redação escrita', 'redações escritas') + '. <a href="#/redacao/historico">Ver histórico</a></p>' : '') + '</section>' +
         '<section class="card"><h3 style="margin-bottom:10px">O que zera a redação</h3><ul class="prose small" style="font-family:var(--f-ui);font-size:14px;padding-left:1.1em;margin:0">' + Redacao.zeram.map(function (z) { return '<li>' + esc(z) + '</li>'; }).join('') + '</ul></section>' +
         '<section class="card"><h3 style="margin-bottom:6px">Aulas de redação</h3><div class="list">' + Redacao.aulas.map(function (a) {
@@ -119,7 +119,7 @@
     return {
       titulo: 'Modelo comentado',
       html: cabecalho('modelo', 'Modelo comentado', 'Uma redação completa, parágrafo por parágrafo, com o que cada trecho faz para pontuar.') +
-        '<section class="card"><span class="eyebrow">Tema</span><h2>' + esc(md.tema) + '</h2>' + md.paragrafos.map(function (p, i) {
+        '<section class="card"><h2>Tema: ' + esc(md.tema) + '</h2>' + md.paragrafos.map(function (p, i) {
           return '<div class="model-p"><p class="prose" style="margin:0">' + esc(p.texto) + '</p><div class="note"><b>' + ['Introdução', 'Desenvolvimento 1', 'Desenvolvimento 2', 'Conclusão'][i] + '.</b> ' + esc(p.nota) + '</div></div>';
         }).join('') + '</section>' +
         '<div class="row mt"><button class="btn btn-primary" data-act="red-tema" data-i="0">' + ico('redacao') + ' Escrever sobre este tema</button></div>'
@@ -262,7 +262,7 @@
         '<section class="card">' + (lista.length ? '<div class="list">' + lista.map(function (x) {
           var tot = x.notas.reduce(function (s, n) { return s + n; }, 0);
           return '<a class="list-item" href="#/redacao/historico/' + x.id + '"><span class="sigla sigla-sm">' + (x.tipo === 'enem' ? 'EN' : 'CO') + '</span><div class="grow"><div class="title">' + esc(x.tema) + '</div><div class="sub">' + UI.dataCurta(x.criadoEm) + ' · ' + UI.tempo(x.segundos) + '</div></div><b class="mono">' + tot + '/' + x.max + '</b></a>';
-        }).join('') + '</div>' : '<div class="empty">' + ico('redacao') + '<h3>Nenhuma redação salva</h3><p><a href="#/redacao/escrever">Escreva a primeira</a>.</p></div>') + '</section>'
+        }).join('') + '</div>' : '<div class="empty">' + UI.helma('frente') + '<h3>Nenhuma redação salva</h3><p><a href="#/redacao/escrever">Escreva a primeira</a>.</p></div>') + '</section>'
     };
   }, 'redacao');
 

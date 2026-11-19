@@ -38,11 +38,13 @@ const ok = (c, m) => { if (!c) throw new Error(m); };
   await page.click('text=Continuar');
   await page.click('text=Montar meu painel');
   await page.waitForSelector('.hero');
-  ok(await page.evaluate(() => document.fonts.check('700 20px "Bricolage Grotesque"')), 'fontes embutidas no APK');
+  ok(await page.evaluate(() => document.fonts.load('700 20px "Source Serif 4"').then((l) => l.length > 0)), 'fontes embutidas no APK');
   ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), 'sem rolagem horizontal no início');
   await device.screenshot({ path: path.join(OUT, 'android-inicio.png') });
 
-  await page.click('[data-act="sim-rapido"]');
+  // aluno novo vê o convite do diagnóstico; o simulado rápido fica em Simulados
+  await page.evaluate(() => { location.hash = '#/simulados'; });
+  await page.click('[data-act="p-rapido"]');
   await page.waitForSelector('#r-area .q');
   await page.click('#r-area .alt >> nth=0');
   await page.click('[data-act="r-responder"]');

@@ -34,6 +34,12 @@ const ok = (cond, msg) => { if (!cond) throw new Error('[' + passo + '] ' + msg)
   await page.click('button.opt:has-text("Carreiras policiais")');
   ok(await page.locator('.onb-card.fade-in').count() === 0, 'cartão piscou ao escolher objetivo');
   ok(await page.evaluate(() => document.activeElement.textContent.includes('Carreiras policiais')), 'foco fica no objetivo escolhido');
+  // Voltar do navegador recua um passo das boas-vindas, sem sair do app
+  await page.goBack();
+  await page.waitForSelector('#onb-nome');
+  ok(page.url().startsWith(URL), 'Voltar nas boas-vindas saiu do app');
+  await page.click('text=Começar');
+  await page.waitForSelector('button.opt[aria-pressed="true"]');
   await page.click('text=Continuar');
   ok(await page.locator('#onb-mats [aria-pressed="true"]').count() >= 5, 'matérias do objetivo deveriam vir marcadas');
   await page.click('text=Montar meu painel');

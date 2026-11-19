@@ -127,9 +127,9 @@
   App.rota('/desempenho', function () {
     var respostas = Store.estado.respostas;
     var a = Desempenho.porAssunto(Banco, respostas);
-    var cab = '<header class="page-head"><div><span class="eyebrow">Desempenho</span><h1>Como você está indo</h1><p>Onde você acerta, onde erra e onde perde tempo, para decidir o que estudar a seguir.</p></div></header>';
+    var cab = '<header class="page-head"><div><h1>Como você está indo</h1><p>Onde você acerta, onde erra e onde perde tempo, para decidir o que estudar a seguir.</p></div></header>';
     if (!a.total.questoes) {
-      return { titulo: 'Desempenho', html: cab + '<div class="card"><div class="empty">' + ico('grafico') + '<h2>Ainda não há respostas para analisar</h2><p>Resolva algumas questões e este painel mostra seu acerto por assunto, o tempo que cada uma levou e a evolução semana a semana.</p>' +
+      return { titulo: 'Desempenho', html: cab + '<div class="card"><div class="empty">' + UI.helma('frente') + '<h2>Ainda não há respostas para analisar</h2><p>Resolva algumas questões e este painel mostra seu acerto por assunto, o tempo que cada uma levou e a evolução semana a semana.</p>' +
         '<div class="row" style="justify-content:center"><a class="btn btn-primary" href="#/simulados">' + ico('play') + ' Montar um simulado</a><a class="btn btn-ghost" href="#/questoes">Ver o banco de questões</a></div></div></div>' };
     }
     var c = Desempenho.confiancaAcerto(Banco, respostas), t = Desempenho.tempoPorQuestao(Banco, respostas);

@@ -93,7 +93,7 @@
     var m = S().cartoes, hoje = Motor.hoje(), t = busca.trim().toLowerCase();
     var ids = Object.keys(m).filter(function (id) { return !t || (m[id].frente + ' ' + m[id].verso).toLowerCase().indexOf(t) >= 0; })
       .sort(function (a, b) { return m[b].criadoEm - m[a].criadoEm; });
-    if (!ids.length) return '<div class="empty">' + ico('cartao') + '<h3>' + (t ? 'Nenhum cartão encontrado' : 'Nenhum cartão ainda') + '</h3><p>' +
+    if (!ids.length) return '<div class="empty">' + (t ? ico('cartao') : UI.helma('frente')) + '<h3>' + (t ? 'Nenhum cartão encontrado' : 'Nenhum cartão ainda') + '</h3><p>' +
       (t ? 'Tente outra palavra.' : 'Crie um cartão ou gere cartões a partir das questões que você errou.') + '</p></div>';
     return '<div class="list">' + ids.slice(0, 150).map(function (id) {
       var c = m[id], vence = c.proxima <= hoje;
@@ -123,7 +123,7 @@
       : '<span class="muted">Você ainda não tem cartões.</span>';
     return {
       titulo: 'Cartões',
-      html: '<div class="page-head"><div><span class="eyebrow">Memória de longo prazo</span><h1>Cartões de memorização</h1><p>Leia a pergunta, tente lembrar e só então vire o cartão. Quanto mais fácil, mais tempo ele demora a voltar.</p></div></div>' +
+      html: '<div class="page-head"><div><h1>Cartões de memorização</h1><p>Leia a pergunta, tente lembrar e só então vire o cartão. Quanto mais fácil, mais tempo ele demora a voltar.</p></div></div>' +
         '<section class="card"><div class="cr-resumo">' + resumo + '</div><div class="row mt">' +
         (n ? '<button class="btn btn-primary btn-lg" data-act="cart-estudar">' + ico('play') + ' Estudar agora</button>' : '') +
         '<button class="btn btn-secondary" data-act="cart-novo">' + ico('cartao') + ' Novo cartão</button>' +
@@ -198,7 +198,7 @@
     if (!c) { // fim
       var k = sessao.cont, feitos = k.errei + k.dificil + k.facil, m = S().cartoes;
       var prox = Object.keys(m).map(function (id) { return m[id].proxima; }).sort()[0];
-      area.innerHTML = '<div class="card cs-fim"><span class="eyebrow">Sessão concluída</span><h2>' + (feitos ? UI.plural(feitos, 'cartão revisado', 'cartões revisados') : 'Nada para revisar') + '</h2>' +
+      area.innerHTML = '<div class="card cs-fim"><h2>' + (feitos ? UI.plural(feitos, 'cartão revisado', 'cartões revisados') : 'Nada para revisar') + '</h2>' +
         '<div class="cs-resumo"><div><b class="mono">' + k.facil + '</b><span>Fáceis</span></div><div><b class="mono">' + k.dificil + '</b><span>Difíceis</span></div><div><b class="mono">' + k.errei + '</b><span>Errei</span></div></div>' +
         (prox ? '<p class="muted">Próximo cartão ' + quando(prox, Motor.hoje()) + '.</p>' : '') +
         '<div class="row mt"><a class="btn btn-primary" href="#/cartoes" id="cs-fim-voltar">Voltar aos cartões</a></div></div>';

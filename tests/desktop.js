@@ -34,9 +34,11 @@ async function abrir() {
   await win.click('text=Continuar');
   await win.click('text=Montar meu painel');
   await win.waitForSelector('.hero');
-  const fonte = await win.evaluate(() => document.fonts.check('700 20px "Bricolage Grotesque"'));
+  const fonte = await win.evaluate(() => document.fonts.load('700 20px "Source Serif 4"').then((l) => l.length > 0));
   ok(fonte, 'fonte embutida carregada sem internet');
-  await win.click('[data-act="sim-rapido"]');
+  // aluno novo vê o convite do diagnóstico; o simulado rápido fica em Simulados
+  await win.evaluate(() => { location.hash = '#/simulados'; });
+  await win.click('[data-act="p-rapido"]');
   await win.waitForSelector('#r-area .q');
   await win.keyboard.press((await win.locator('#r-area .ce').count()) ? 'c' : 'a');
   await win.keyboard.press('Enter');

@@ -190,7 +190,7 @@
     var seg = function (id, pares, atual) {
       return '<div class="seg" id="' + id + '" role="group">' + pares.map(function (p) { return '<button data-toggle="one" data-v="' + esc(p[0]) + '" aria-pressed="' + (String(atual) === String(p[0])) + '">' + esc(p[1]) + '</button>'; }).join('') + '</div>';
     };
-    var presets = '<div class="grid g4">' + [
+    var presets = '<div class="grid g4 tiles">' + [
       ['p-rapido', 'Rápido', '10 questões das suas matérias, com correção na hora.', 'play'],
       ['p-completo', 'Completo cronometrado', '30 questões no ritmo da sua prova, gabarito no final.', 'relogio'],
       ['p-erradas', 'Só o que errei', 'Refaça as questões em que sua última resposta foi errada.', 'revisao'],
@@ -221,11 +221,11 @@
       return '<a class="list-item" href="#/' + (andamento ? 'simulado/' : 'resultado/') + s.id + '"><span class="mark ' + (andamento ? 'blank' : r.percentual >= 70 ? 'ok' : 'err') + '">' + ico(andamento ? 'play' : r.percentual >= 70 ? 'check' : 'alvo') + '</span>' +
         '<div class="grow"><div class="title">' + esc(s.titulo) + '</div><div class="sub">' + UI.dataCurta(s.criadoEm) + ' · ' + UI.plural(s.questoes.length, 'questão', 'questões') + ' · ' + (s.modo === 'prova' ? 'modo prova' : 'modo estudo') + '</div></div>' +
         (andamento ? '<span class="tag tag-warn">Em andamento</span>' : '<b class="mono">' + r.percentual + '%</b>') + '</a>';
-    }).join('') + '</div>' : '<div class="empty" style="padding:28px">' + ico('simulado') + '<h3>Nenhum simulado ainda</h3><p>Escolha um dos formatos acima para começar.</p></div>') + '</section>';
+    }).join('') + '</div>' : '<div class="empty" style="padding:28px">' + UI.helma('frente') + '<h3>Nenhum simulado ainda</h3><p>Escolha um dos formatos acima para começar.</p></div>') + '</section>';
 
     return {
       titulo: 'Simulados', manterScroll: true,
-      html: '<div class="page-head"><div><span class="eyebrow">Praticar</span><h1>Simulados</h1><p>Monte provas sob medida para o seu objetivo, no tempo real da banca ou com correção a cada questão.</p></div></div>' + presets + form + histHtml,
+      html: '<div class="page-head"><div><h1>Simulados</h1><p>Monte provas sob medida para o seu objetivo, no tempo real da banca ou com correção a cada questão.</p></div></div>' + presets + form + histHtml,
       montar: function () {
         var atualizar = function () { var n = disponiveis(); document.getElementById('m-disp').textContent = n ? UI.plural(n, 'questão disponível', 'questões disponíveis') + ' com esses filtros' + (n < B.quantidade ? ' (o simulado terá ' + n + ')' : '') : 'Nenhuma questão com esses filtros'; };
         var ler = function (e) {
@@ -299,7 +299,7 @@
     R = { sim: sim, expandidas: {}, qAtual: null, marco: 0 };
     return {
       titulo: sim.titulo, cheia: true,
-      html: '<main class="main" style="margin:0 auto" id="main"><h1 class="sr-only">' + esc(sim.titulo) + '</h1>' +
+      html: '<main class="main main-prova" id="main"><h1 class="sr-only">' + esc(sim.titulo) + '</h1>' +
         '<div class="run-top"><button class="btn btn-ghost btn-sm" data-act="r-sair" aria-label="Sair e salvar o simulado">' + ico('voltar') + ' Sair</button>' +
         '<div class="bar" aria-hidden="true"><i id="r-prog"></i></div><span class="mono small" id="r-cont"></span>' +
         '<span class="timer" id="r-timer" role="timer" aria-live="off">' + ico('relogio') + '<span></span></span>' +
@@ -512,10 +512,10 @@
     var tempoMedio = sim.questoes.length ? Math.round(sim.decorridoSeg / sim.questoes.length) : 0;
     return {
       titulo: 'Resultado',
-      html: '<div class="page-head"><div><span class="eyebrow">Resultado · ' + esc(sim.titulo) + '</span><h1>' + esc(frase) + '</h1></div><a class="btn btn-ghost" href="#/simulados">' + ico('voltar') + ' Simulados</a></div>' +
-        '<section class="card"><div class="score"><div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
+      html: '<div class="page-head"><div><h1>' + esc(frase) + '</h1><p>Resultado de <b>' + esc(sim.titulo) + '</b></p></div><a class="btn btn-ghost" href="#/simulados">' + ico('voltar') + ' Simulados</a></div>' +
+        '<section class="card"><div class="score">' + UI.helma('tres-quartos-esq', 'score-helma') + '<div class="ring" style="--p:' + r.percentual + ';--c:' + cor + '"><div><b class="mono">' + r.percentual + '%</b><span>de acerto</span></div></div>' +
         '<div class="score-stats"><div class="stat"><b style="color:var(--ok)">' + r.certas + '</b><span>certas</span></div><div class="stat"><b style="color:var(--err)">' + r.erradas + '</b><span>erradas</span></div><div class="stat"><b>' + r.brancos + '</b><span>em branco</span></div>' +
-        '<div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(sim.decorridoSeg) + '</b><span>tempo total</span></div><div class="stat"><b class="mono" style="font-size:22px">' + UI.tempo(tempoMedio) + '</b><span>por questão</span></div>' +
+        '<div class="stat"><b class="mono" style="font-size:22px">' + (sim.decorridoSeg ? UI.tempo(sim.decorridoSeg) : '—') + '</b><span>tempo total</span></div><div class="stat"><b class="mono" style="font-size:22px">' + (tempoMedio ? UI.tempo(tempoMedio) : '—') + '</b><span>por questão</span></div>' +
         (r.liquida !== null && p.penalidadeCE ? '<div class="stat"><b class="mono" style="font-size:22px">' + r.liquida + '/' + r.ceTotal + '</b><span title="Nas provas de certo ou errado, cada item errado anula um certo; em branco não conta.">nota líquida (certo ou errado: cada erro anula um acerto)</span></div>' : '') + '</div></div>' +
         '<div class="row mt-lg">' + (erradas.length ? '<button class="btn btn-primary" data-act="refazer" data-sim="' + sim.id + '">' + ico('revisao') + ' Refazer as ' + erradas.length + ' que errei ou pulei</button>' : '') +
         (sim.origem === 'diagnostico' ? '<a class="btn btn-primary" href="#/plano">' + ico('plano') + ' Montar meu plano de estudos</a><a class="btn btn-secondary" href="#/desempenho">Ver desempenho por assunto</a>' : '<a class="btn btn-secondary" href="#/simulados">Novo simulado</a>') + (erradas.length ? '<a class="btn btn-ghost" href="#/revisao">Erradas foram para a revisão</a>' : '') + '</div></section>' +
@@ -562,7 +562,7 @@
     }).join('');
     return {
       titulo: 'Banco de questões', manterScroll: true,
-      html: '<div class="page-head"><div><span class="eyebrow">Praticar</span><h1>Banco de questões</h1><p>' + UI.plural(Banco.questoes.length, 'questão comentada', 'questões comentadas') + ' para resolver uma a uma. São inéditas no estilo de cada banca, mais questões oficiais do ENEM; provas de outras bancas você traz em <a href="#/minhas-questoes">Minhas questões</a>.</p></div>' +
+      html: '<div class="page-head"><div><h1>Banco de questões</h1><p>' + UI.plural(Banco.questoes.length, 'questão comentada', 'questões comentadas') + ' para resolver uma a uma. São inéditas no estilo de cada banca, mais questões oficiais do ENEM; provas de outras bancas você traz em <a href="#/minhas-questoes">Minhas questões</a>.</p></div>' +
         '<button class="btn btn-secondary" data-act="q-simulado"' + (res.length ? '' : ' disabled') + '>' + ico('simulado') + ' Simulado com estes filtros</button></div>' +
         '<section class="card"><div class="search"><label class="sr-only" for="q-busca">Buscar</label>' + ico('busca') + '<input class="input" id="q-busca" type="search" placeholder="Buscar por palavra, assunto ou trecho do enunciado" value="' + esc(QF.busca) + '"></div>' +
         '<div class="chips mt" id="q-mats">' + Banco.materias.filter(function (m) { return Banco.questoes.some(function (q) { return q.materia === m.id; }); }).map(function (m) {
@@ -621,7 +621,7 @@
       titulo: 'Questão', manterScroll: true,
       html: '<div class="page-head"><a class="btn btn-ghost" href="#/questoes">' + ico('voltar') + ' Banco de questões</a>' +
         (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? '✓' : '✗'; }).join(' ') + '</span>' : '') + '</div>' +
-        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas }) +
+        '<div class="foco">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas }) +
         '<div class="run-nav">' + (pos > 0 ? '<a class="btn btn-ghost" href="#/questao/' + encodeURIComponent(lista[pos - 1]) + '">' + ico('esq') + ' Anterior</a>' : '<span></span>') +
         (QV.confirmada ? '<button class="btn btn-ghost" data-act="qv-de-novo">' + ico('revisao') + ' Responder de novo</button>' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +
         (pos >= 0 && pos < lista.length - 1 ? '<a class="btn ' + (QV.confirmada ? 'btn-primary' : 'btn-ghost') + '" href="#/questao/' + encodeURIComponent(lista[pos + 1]) + '">Próxima ' + ico('dir') + '</a>' : '<span></span>') + '</div></div>',
@@ -667,7 +667,7 @@
     erradas.forEach(function (q) { (porMat[q.materia] = porMat[q.materia] || []).push(q); });
     return {
       titulo: 'Revisão',
-      html: '<div class="page-head"><div><span class="eyebrow">Memória de longo prazo</span><h1>Revisão espaçada</h1><p>Cada questão que você erra volta no dia seguinte. Acertou, ela some por 3 dias, depois 7, 15, 30 e 60. Assim você revisa no momento em que estava para esquecer.</p></div></div>' +
+      html: '<div class="page-head"><div><h1>Revisão espaçada</h1><p>Cada questão que você erra volta no dia seguinte. Acertou, ela some por 3 dias, depois 7, 15, 30 e 60. Assim você revisa no momento em que estava para esquecer.</p></div></div>' +
         '<div class="grid g-main"><section class="card"><div class="row-between"><div class="stat"><b class="mono">' + pend.length + '</b><span>' + (pend.length === 1 ? 'questão para hoje' : 'questões para hoje') + '</span></div>' +
         (pend.length ? '<button class="btn btn-primary btn-lg" data-act="rev-iniciar">' + ico('play') + ' Revisar agora</button>' : '<span class="tag tag-ok">' + ico('check') + ' Tudo em dia</span>') + '</div>' +
         '<h3 class="mt-lg" style="margin-bottom:12px">Próximos 7 dias</h3><div class="week">' + prox.map(function (p) {
@@ -694,7 +694,7 @@
           return '<h3 class="mt" style="margin-bottom:4px">' + esc(mm.nome) + ' <span class="muted small">' + porMat[mid].length + '</span></h3><div class="list">' + porMat[mid].map(function (q) {
             return '<a class="list-item" href="#/questao/' + encodeURIComponent(q.id) + '"><span class="mark err">' + ico('x') + '</span><div class="grow"><div class="clamp2">' + esc(q.enunciado) + '</div><div class="sub">' + esc(q.assunto) + '</div></div>' + ico('dir') + '</a>';
           }).join('') + '</div>';
-        }).join('') : '<div class="empty">' + ico('check') + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
+        }).join('') : '<div class="empty">' + UI.helma('frente') + '<h3>Caderno vazio</h3><p>As questões que você errar aparecem aqui, agrupadas por matéria.</p></div>') + '</section>'
     };
   }, 'revisao');
   App.acao('rev-iniciar', function () {
