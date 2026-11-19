@@ -1,0 +1,28 @@
+# Testes a cada envio e pull request.
+name: Testes
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:web
+      - name: Conteúdo, motor e importador
+        run: npm test
+      - name: Navegador (Playwright)
+        run: |
+          npm install -g @playwright/cli@0.1.24
+          PW="$(npm root -g)/@playwright/cli/node_modules/playwright"
+          node "$PW/cli.js" install --with-deps chromium
+          python3 -m http.server 5321 -d www &
+          sleep 2
+          npm run test:navegador

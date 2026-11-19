@@ -1,0 +1,68 @@
+{
+  "name": "gabarito",
+  "productName": "Gabarito",
+  "version": "1.0.0",
+  "description": "Simulados, questões comentadas, aulas, redação e revisão espaçada para ENEM, concursos e OAB.",
+  "main": "desktop/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build:web": "node tools/fontes.js && node tools/pwa.js",
+    "test": "node tools/validar.js && node tests/motor.test.js && node tests/importador.test.js",
+    "test:navegador": "node tests/e2e.js http://localhost:5321/ && node tests/seguranca.js http://localhost:5321/ && node tests/minhas.js http://localhost:5321/",
+    "dist:win": "npm run build:web && electron-builder --win nsis",
+    "android:sync": "npm run build:web && cap sync android",
+    "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug"
+  },
+  "build": {
+    "appId": "br.com.gabarito.app",
+    "productName": "Gabarito",
+    "copyright": "Gabarito",
+    "directories": {
+      "output": "dist",
+      "buildResources": "desktop/recursos"
+    },
+    "files": [
+      "desktop/main.js",
+      "www/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "desktop/recursos/icone.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Gabarito",
+      "artifactName": "Gabarito-Instalador-${version}.exe",
+      "language": "1046"
+    },
+    "electronFuses": {
+      "runAsNode": false,
+      "enableCookieEncryption": true,
+      "enableNodeOptionsEnvironmentVariable": false,
+      "enableNodeCliInspectArguments": false,
+      "enableEmbeddedAsarIntegrityValidation": true,
+      "onlyLoadAppFromAsar": true
+    }
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/literata": "^5.3.0",
+    "electron": "^45.2.0",
+    "electron-builder": "^26.18.0",
+    "pdfjs-dist": "3.11.174"
+  },
+  "author": "Gabarito"
+}
