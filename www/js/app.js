@@ -331,7 +331,7 @@
       // Sessões do dia: o aluno marca cada bloco cumprido; o plano mostra o andamento real, não só o previsto.
       var sessoesHtml = blocosHoje ? '<section class="card mt sessoes"><div class="row-between"><div><span class="eyebrow">Hoje</span><h3>' + Math.min(feitasHoje, blocosHoje) + ' de ' + UI.plural(blocosHoje, 'sessão', 'sessões') + ' cumprida' + (feitasHoje === 1 ? '' : 's') + '</h3></div>' +
         (feitasHoje < blocosHoje ? '<button class="btn btn-primary btn-sm" data-act="sessao-feita">' + ico('check') + ' Concluí uma sessão</button>' : '<span class="tag tag-ok">' + ico('check') + ' Dia cumprido</span>') + '</div><div class="bar mt"><i style="width:' + Math.min(100, Math.round(feitasHoje / blocosHoje * 100)) + '%"></i></div></section>' : '';
-      grade = sessoesHtml + '<section class="mt-lg"><div class="row-between" style="margin-bottom:14px"><h2>Sua semana</h2><span class="muted small">Blocos de 50 min · ' + UI.plural(Object.values(pl.semana).reduce(function (s, b) { return s + b.length; }, 0), 'bloco', 'blocos') + '</span></div><div class="plan">' +
+      grade = sessoesHtml + '<section class="mt-lg"><div class="row-between" style="margin-bottom:14px"><h2>Sua semana</h2><span class="muted small">Blocos de 50 min + 10 de pausa · ' + UI.plural(Object.values(pl.semana).reduce(function (s, b) { return s + b.length; }, 0), 'bloco', 'blocos') + '</span></div><div class="plan">' +
         [1, 2, 3, 4, 5, 6, 0].map(function (i) {
           var blocos = pl.semana[i];
           return '<div class="plan-day' + (blocos ? '' : ' off') + (i === hojeDia ? ' today' : '') + '"><h4>' + DIAS[i].slice(0, 3) + (i === hojeDia ? ' · hoje' : '') + '</h4>' +
@@ -342,10 +342,10 @@
     return { titulo: 'Plano de estudos', html: '<div class="page-head"><div><span class="eyebrow">Organização</span><h1>Plano de estudos</h1><p>Um cronograma semanal feito a partir do seu objetivo, do seu tempo e do seu desempenho.</p></div></div>' + form + grade };
   }, 'plano');
   App.acao('sessao-feita', function () {
-    var d = Motor.hoje();
+    var d = Motor.hoje(), pl = S().plano, total = pl ? (pl.semana[new Date().getDay()] || []).length : 0;
+    if (total && (S().sessoes[d] || 0) >= total) return;
     S().sessoes[d] = Math.min(12, (S().sessoes[d] || 0) + 1);
     Store.salvar(); App.render();
-    var pl = S().plano, total = pl ? (pl.semana[new Date().getDay()] || []).length : 0;
     UI.toast('Sessão marcada como feita: ' + Math.min(S().sessoes[d], total || S().sessoes[d]) + ' de ' + (total || S().sessoes[d]) + ' hoje.');
   });
   App.acao('plano-gerar', function () {
@@ -451,12 +451,13 @@
     if (!mats.length) { UI.toast('Escolha ao menos uma matéria. A última não foi desmarcada.'); App.render(); return; }
     var meta = document.getElementById('aj-meta'), n = Math.round(Number(meta.value));
     if (!meta.value || !(n >= 5 && n <= 300)) { meta.value = p.metaDiaria; UI.toast('A meta diária precisa ficar entre 5 e 300 questões.'); return; }
+    var msEl = document.getElementById('aj-meta-semana'), ms = Math.round(Number(msEl.value));
+    if (!msEl.value || !(ms >= 10 && ms <= 2000)) { msEl.value = p.metaSemanal || p.metaDiaria * 5; UI.toast('A meta da semana precisa ficar entre 10 e 2000 questões.'); return; }
     p.nome = document.getElementById('aj-nome').value.trim().slice(0, 40);
     p.objetivo = document.getElementById('aj-obj').value;
     p.materias = mats;
     p.metaDiaria = n;
-    var ms = Math.round(Number(document.getElementById('aj-meta-semana').value));
-    p.metaSemanal = ms >= 10 && ms <= 2000 ? ms : n * 5;
+    p.metaSemanal = ms;
     Store.salvar(); UI.toast('Perfil salvo.');
   }
   App.acao('aj-tema', function (el) { S().perfil.tema = el.getAttribute('data-v'); Store.salvar(); App.aplicarTema(); App.render(); });
@@ -612,6 +613,7 @@
       var y = window.scrollY, ativo = document.activeElement, id = ativo && ativo.id;
       var sel = ativo && 'selectionStart' in ativo ? [ativo.selectionStart, ativo.selectionEnd] : null;
       Store.carregar();
+      if (ativo && (ativo.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(ativo.tagName)) && !document.getElementById('r-area')) return;
       App.render();
       window.scrollTo(0, y);
       var novo = id && document.getElementById(id);

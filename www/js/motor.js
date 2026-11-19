@@ -206,7 +206,7 @@
     return n;
   }
 
-  /* Plano semanal: blocos de 50 min distribuídos pelo peso do objetivo, reforçando matérias fracas
+  /* Plano semanal: blocos de 1 hora (50 min + 10 de pausa) distribuídos pelo peso do objetivo, reforçando matérias fracas
      e evitando repetir a mesma matéria no mesmo dia. dias = índices 0 (dom) a 6 (sáb). */
   function planoSemanal(banco, cfg, historico) {
     var objetivo = banco.objetivo(cfg.objetivo);
@@ -219,7 +219,7 @@
       if (x && x.total >= 3) p *= 1 + (1 - x.acertos / x.total) * 0.6;
       return { id: m, peso: p, disponivel: 999 };
     });
-    var blocosDia = Math.max(1, Math.round((cfg.horasPorDia || 2) * 60 / 50));
+    var blocosDia = Math.max(1, Math.round(cfg.horasPorDia || 2)); // 1 bloco = 50 min de estudo + 10 de pausa
     var total = blocosDia * cfg.dias.length;
     var cota = distribuir(total, pesos);
     // Blocos de cada matéria em sequência, preenchendo dia a dia em rodadas: uma matéria só repete
@@ -236,18 +236,19 @@
   /* Diagnóstico inicial: até 2 questões de assuntos diferentes por matéria do aluno (preferindo dificuldade
      média), no máximo 20, para medir o ponto de partida de cada assunto. */
   function diagnostico(banco, materias, seed, objetivo) {
-    var rand = rng(seed || 1), ids = [];
+    var rand = rng(seed || 1), porMateria = [];
     (materias || []).forEach(function (m) {
       var porAssunto = {};
       var daMateria = banco.questoes.filter(function (q) { return q.materia === m; });
       var doObjetivo = objetivo ? daMateria.filter(function (q) { return q.objetivos.indexOf(objetivo) >= 0; }) : [];
       (doObjetivo.length ? doObjetivo : daMateria).forEach(function (q) { (porAssunto[q.assunto] = porAssunto[q.assunto] || []).push(q); });
-      embaralhar(Object.keys(porAssunto), rand).slice(0, 2).forEach(function (a) {
-        var lista = porAssunto[a].slice().sort(function (x, y) { return Math.abs(x.dificuldade - 2) - Math.abs(y.dificuldade - 2) || rand() - 0.5; });
-        ids.push(lista[0].id);
-      });
+      porMateria.push(embaralhar(Object.keys(porAssunto), rand).slice(0, 2).map(function (a) {
+        return porAssunto[a].slice().sort(function (x, y) { return Math.abs(x.dificuldade - 2) - Math.abs(y.dificuldade - 2) || rand() - 0.5; })[0].id;
+      }));
     });
-    return ids.slice(0, 20);
+    var ids = [];
+    [0, 1].forEach(function (r) { porMateria.forEach(function (l) { if (l[r] && ids.length < 20) ids.push(l[r]); }); });
+    return ids;
   }
 
   /* Sugestão do próximo treino, em ordem de prioridade. Devolve { tipo, titulo, porque, cfg }. */

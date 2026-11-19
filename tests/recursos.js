@@ -67,6 +67,16 @@ const ok = (c, m) => { if (!c) throw new Error('[' + passo + '] ' + m); };
   await page.waitForSelector('.page-head');
   await foto('r5-cartoes');
 
+  passo = 'questão já respondida';
+  await page.goto(URL + '#/questoes');
+  await page.waitForSelector('.page-head');
+  await page.goto(URL + '#/questao/' + encodeURIComponent(qid));
+  await page.waitForSelector('[data-act="qv-de-novo"]');
+  ok(await page.locator('.verdict').count() === 1, 'reabre mostrando a correção');
+  ok(await page.evaluate((id) => Store.estado.respostas[id].length, qid) === 1, 'reabrir não registra tentativa nova');
+  await page.click('[data-act="qv-de-novo"]');
+  await page.waitForSelector('[data-act="qv-responder"]');
+
   passo = 'sugestão, meta da semana e sessões';
   await page.goto(URL + '#/');
   await page.waitForSelector('.hero');
@@ -80,6 +90,7 @@ const ok = (c, m) => { if (!c) throw new Error('[' + passo + '] ' + m); };
   if (temHoje) {
     await page.click('[data-act="sessao-feita"]');
     ok(await page.evaluate(() => Object.values(Store.estado.sessoes)[0]) === 1, 'sessão do dia registrada');
+    ok(await page.evaluate(() => { for (let i = 0; i < 20; i++) App.acoes['sessao-feita'](); return Object.values(Store.estado.sessoes)[0] === Store.estado.plano.semana[new Date().getDay()].length; }), 'cliques repetidos não passam do total do dia');
   }
   await foto('r7-plano');
 
@@ -88,7 +99,21 @@ const ok = (c, m) => { if (!c) throw new Error('[' + passo + '] ' + m); };
   await page.waitForSelector('.page-head');
   await foto('r8-desempenho');
 
+  passo = 'modo prova';
+  await page.evaluate((id) => App.criarSimulado({ ids: [id], modo: 'prova' }, 'Prova curta'), qid);
+  await page.waitForSelector('#r-area .q');
+  ok(await page.locator('[data-act="dica"]').count() === 0, 'sem dica no modo prova');
+  const sid = await page.evaluate(() => location.hash.split('/').pop());
+  await page.goto(URL + '#/');
+  await page.waitForSelector('.hero');
+  ok(await page.evaluate((s) => !!Store.estado.simulados.find((y) => y.id === s).pausadoEm, sid), 'sair da prova marca a pausa');
+  await page.evaluate((s) => { const x = Store.estado.simulados.find((y) => y.id === s); x.pausadoEm = Date.now() - 60000; x.decorridoSeg = 0; }, sid);
+  await page.goto(URL + '#/simulado/' + sid);
+  await page.waitForSelector('#r-area .q');
+  ok(await page.evaluate((s) => { const x = Store.estado.simulados.find((y) => y.id === s); return x.decorridoSeg >= 60 && !x.pausadoEm; }, sid), 'tempo fora da tela conta na prova');
+
   passo = 'persistência';
+  await page.goto(URL + '#/desempenho');
   await page.reload();
   await page.waitForSelector('.page-head');
   ok(await page.evaluate(() => Object.keys(Store.estado.cartoes).length === 1 && Store.estado.perfil.metaSemanal === 40), 'cartões e meta semanal persistem');

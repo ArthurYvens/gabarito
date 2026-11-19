@@ -36,7 +36,7 @@
     var n = o.dicas || 0;
     return '<div class="q-ferramentas"><div class="conf" role="group" aria-label="Quão seguro você está?"><span class="small muted">Quão seguro você está?</span>' +
       CONFIANCA.map(function (c) { return '<button class="chip chip-sm" data-act="confianca" data-v="' + c[0] + '" aria-pressed="' + (o.conf === c[0]) + '">' + c[1] + '</button>'; }).join('') + '</div>' +
-      (n < maxDicas(q) ? '<button class="btn btn-ghost btn-sm" data-act="dica">' + ico('ideia') + (n ? ' Mais uma dica (' + n + '/' + maxDicas(q) + ')' : ' Pedir uma dica') + '</button>' : '<span class="small muted">Todas as dicas usadas</span>') + '</div>';
+      (o.semDica ? '' : n < maxDicas(q) ? '<button class="btn btn-ghost btn-sm" data-act="dica">' + ico('ideia') + (n ? ' Mais uma dica (' + n + '/' + maxDicas(q) + ')' : ' Pedir uma dica') + '</button>' : '<span class="small muted">Todas as dicas usadas</span>') + '</div>';
   }
   function retornoConfianca(ok, conf) {
     if (conf === 2 && !ok) return '<p class="conf-retorno err">Você tinha certeza e errou: este é o tipo de erro mais importante de revisar.</p>';
@@ -292,6 +292,10 @@
       UI.toast('Questões de um banco removido saíram deste simulado.');
     }
     ['tempos', 'confianca', 'dicas'].forEach(function (k) { if (!sim[k]) sim[k] = {}; }); // simulados de versões anteriores
+    if (sim.pausadoEm) {
+      if (sim.modo === 'prova') sim.decorridoSeg = Math.min(sim.tempoLimiteSeg || 864000, sim.decorridoSeg + Math.max(0, Math.round((Date.now() - sim.pausadoEm) / 1000)));
+      delete sim.pausadoEm; Store.salvar();
+    }
     R = { sim: sim, expandidas: {}, qAtual: null, marco: 0 };
     return {
       titulo: sim.titulo, cheia: true,
@@ -323,7 +327,7 @@
     if (R.qAtual !== id) { acumular(); R.qAtual = id; R.marco = Date.now(); }
     area.innerHTML = questao(q, {
       numero: (sim.atual + 1) + '/' + sim.questoes.length, resposta: sim.respostas[id], confirmada: conf, riscadas: sim.riscadas[id],
-      profunda: profunda(), expandida: R.expandidas[id], travada: conf, conf: sim.confianca[id], dicas: sim.dicas[id], reacao: true
+      profunda: profunda(), expandida: R.expandidas[id], travada: conf, conf: sim.confianca[id], dicas: sim.dicas[id], reacao: true, semDica: sim.modo === 'prova'
     }) + '<div class="run-nav"><button class="btn btn-ghost" data-act="r-ant"' + (sim.atual ? '' : ' disabled') + '>' + ico('esq') + ' Anterior</button>' +
       '<button class="btn btn-ghost btn-sm flag-btn" data-act="r-marcar" aria-pressed="' + !!sim.marcadas[id] + '" title="Marque para voltar a ela antes de entregar">' + ico('flag') + ' Revisar depois</button>' + principal + '</div>';
     var respondidas = Object.keys(sim.respostas).length;
@@ -349,6 +353,16 @@
     if (!s.confirmadas[id]) s.tempos[id] = Math.min(86400, (s.tempos[id] || 0) + (agora - R.marco) / 1000);
     R.marco = agora;
   }
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { acumular(); if (R) R.marco = 0; if (QV && !QV.oculto) QV.oculto = Date.now(); }
+    else {
+      if (R && R.qAtual && noSimulado()) R.marco = Date.now();
+      if (QV && QV.oculto) { QV.inicio += Date.now() - QV.oculto; QV.oculto = 0; }
+    }
+  });
+  // Prova é tempo de relógio: saindo da tela (ou fechando o app), o tempo fora conta ao voltar.
+  function pausar(sim) { if (sim.modo === 'prova' && sim.status === 'andamento') sim.pausadoEm = Date.now(); }
+  window.addEventListener('pagehide', function () { if (R && noSimulado()) { acumular(); pausar(R.sim); Store.salvar(); } });
   function extra(s, id) { return { ms: (s.tempos[id] || 0) * 1000, conf: s.confianca[id], dicas: s.dicas[id] }; }
 
   function relogio() {
@@ -392,7 +406,7 @@
       }
     };
     document.addEventListener('keydown', tecla);
-    return function () { acumular(); clearInterval(timer); document.removeEventListener('keydown', tecla); Store.salvar(); };
+    return function () { acumular(); R.marco = 0; pausar(sim); clearInterval(timer); document.removeEventListener('keydown', tecla); Store.salvar(); };
   }
 
   function escolher(v) {
@@ -411,7 +425,7 @@
   App.acao('dica', function () {
     if (noSimulado()) {
       var s = R.sim, id = s.questoes[s.atual], q = Banco.questao(id);
-      if (!q || s.confirmadas[id] || (s.dicas[id] || 0) >= maxDicas(q)) return;
+      if (!q || s.modo === 'prova' || s.confirmadas[id] || (s.dicas[id] || 0) >= maxDicas(q)) return;
       s.dicas[id] = (s.dicas[id] || 0) + 1;
       // Alternativa eliminada por dica não pode continuar marcada.
       if (eliminadas(q, s.dicas[id]).indexOf(s.respostas[id]) >= 0) { UI.toast('A dica eliminou a alternativa ' + LETRAS[s.respostas[id]] + ', que você tinha marcado. Escolha outra.'); delete s.respostas[id]; }
@@ -590,7 +604,12 @@
   App.rota('/questao/([^/]+)', function (m) {
     var q = Banco.questao(m[0]);
     if (!q) { App.ir('#/questoes', true); return null; }
-    if (!QV || QV.id !== q.id) QV = { id: q.id, resposta: undefined, confirmada: false, expandida: false, riscadas: {}, inicio: Date.now(), conf: undefined, dicas: 0 };
+    if (!QV || QV.id !== q.id) {
+      var ult = (S().respostas[q.id] || []).slice(-1)[0];
+      QV = novoQV(q.id);
+      // Já respondida: mostra a correção da última tentativa, sem registrar nada de novo.
+      if (ult && ult.r !== undefined) Object.assign(QV, { resposta: ult.r, confirmada: true, revista: true, conf: ult.conf, dicas: ult.dicas || 0 });
+    }
     QV.escolher = function (el) {
       if (QV.confirmada) return;
       QV.resposta = el.hasAttribute('data-v') ? el.getAttribute('data-v') === 'true' : Number(el.getAttribute('data-i'));
@@ -603,9 +622,9 @@
       titulo: 'Questão', manterScroll: true,
       html: '<div class="page-head"><a class="btn btn-ghost" href="#/questoes">' + ico('voltar') + ' Banco de questões</a>' +
         (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? '✓' : '✗'; }).join(' ') + '</span>' : '') + '</div>' +
-        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas, reacao: true }) +
+        '<div style="max-width:860px">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas, reacao: !QV.revista }) +
         '<div class="run-nav">' + (pos > 0 ? '<a class="btn btn-ghost" href="#/questao/' + encodeURIComponent(lista[pos - 1]) + '">' + ico('esq') + ' Anterior</a>' : '<span></span>') +
-        (QV.confirmada ? '' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +
+        (QV.confirmada ? '<button class="btn btn-ghost" data-act="qv-de-novo">' + ico('revisao') + ' Responder de novo</button>' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +
         (pos >= 0 && pos < lista.length - 1 ? '<a class="btn ' + (QV.confirmada ? 'btn-primary' : 'btn-ghost') + '" href="#/questao/' + encodeURIComponent(lista[pos + 1]) + '">Próxima ' + ico('dir') + '</a>' : '<span></span>') + '</div></div>',
       montar: function () {
         var tecla = function (e) {
@@ -621,7 +640,10 @@
       }
     };
   }, 'questoes');
+  function novoQV(id) { return { id: id, resposta: undefined, confirmada: false, expandida: false, riscadas: {}, inicio: Date.now(), conf: undefined, dicas: 0 }; }
+  App.acao('qv-de-novo', function () { QV = novoQV(QV.id); App.render(); });
   App.acao('qv-responder', function () {
+    if (!QV || QV.confirmada) return;
     var q = Banco.questao(QV.id);
     if (QV.resposta === undefined) { UI.toast('Escolha uma alternativa antes de responder.'); return; }
     QV.confirmada = true;

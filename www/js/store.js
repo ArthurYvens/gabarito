@@ -78,6 +78,7 @@
         confianca: mapa(s.confianca, function (v) { return [0, 1, 2].indexOf(v) >= 0 ? v : undefined; }),
         dicas: mapa(s.dicas, function (v) { return Number.isInteger(v) && v > 0 ? Math.min(3, v) : undefined; }),
         tempoLimiteSeg: Math.round(num(s.tempoLimiteSeg, 0, 86400, 0)), decorridoSeg: Math.round(num(s.decorridoSeg, 0, 864000, 0)),
+        pausadoEm: num(s.pausadoEm, 0, 9e15, 0) || undefined,
         status: s.status === 'concluido' ? 'concluido' : 'andamento'
       };
     }).filter(function (s) { return s.questoes.length; });

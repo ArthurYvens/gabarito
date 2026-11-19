@@ -54,5 +54,6 @@ assert.ok(m.frente.startsWith('e'.repeat(500) + '…\n\nA) um\nB) dois\nC) três
 assert.strictEqual(m.verso, 'Resposta: C) três\n\nPorque sim.\n\nMinha anotação: lembrar disto');
 const ce = C.montarDaQuestao({ id: 'c1', tipo: 'certo-errado', enunciado: 'Item.', resposta: false }, '');
 assert.deepStrictEqual(ce, { frente: 'Item.', verso: 'Resposta: Errado' });
+assert.ok(C.montarDaQuestao({ id: 't1', tipo: 'certo-errado', textoBase: 'Texto de apoio.', enunciado: 'Item.', resposta: true }).frente.startsWith('Texto de apoio.\n\nItem.'), 'cartão leva o texto-base');
 
 console.log('cartoes.test.js ok');

@@ -74,6 +74,7 @@ assert.strictEqual(Motor.sequencia({ '2026-11-13': 1 }, '2026-11-16'), 0);
 const plano = Motor.planoSemanal({ ...banco, objetivo: () => ({ pesos: { a: 3, b: 2, c: 1, d: 1, e: 1 } }), materias: [] },
   { objetivo: 'x', dias: [1, 2, 3, 4, 5], horasPorDia: 2.5 }, {});
 assert.strictEqual(plano.blocosDia, 3);
+assert.strictEqual(Motor.planoSemanal({ ...banco, objetivo: () => null }, { objetivo: 'x', materias: ['a'], dias: [1], horasPorDia: 3 }, {}).blocosDia, 3, '3 horas = 3 blocos de 50 + 10');
 assert.strictEqual(Object.values(plano.cota).reduce((s, n) => s + n, 0), 15);
 Object.values(plano.semana).forEach((blocos) => {
   assert.strictEqual(blocos.length, 3);
@@ -97,6 +98,11 @@ assert.ok(Analise.analisar('eu acho que tipo isso é ruim').alertas.length >= 2)
 const diag = Motor.diagnostico(banco, ['portugues', 'matematica'], 3);
 assert.ok(diag.length === 4 && new Set(diag).size === 4, 'diagnóstico: 2 assuntos por matéria');
 assert.ok(diag.every((id) => /^(portugues|matematica)/.test(id)));
+const muitas = { questoes: [] };
+for (let i = 0; i < 15; i++) for (let a = 0; a < 2; a++) muitas.questoes.push({ id: 'm' + i + '-' + a, materia: 'm' + i, assunto: 'a' + a, dificuldade: 2, objetivos: [] });
+const dm = Motor.diagnostico(muitas, muitas.questoes.filter((q, k) => k % 2 === 0).map((q) => q.materia), 7);
+assert.strictEqual(dm.length, 20);
+assert.strictEqual(new Set(dm.map((id) => id.split('-')[0])).size, 15, 'diagnóstico cobre todas as matérias antes do 2º assunto');
 const so = { ...banco, questoes: banco.questoes.map((q, i) => ({ ...q, objetivos: i % 3 ? ['policial'] : ['enem'] })) };
 assert.ok(Motor.diagnostico(so, ['portugues'], 5, 'enem').every((id) => so.questoes.find((q) => q.id === id).objetivos[0] === 'enem'), 'diagnóstico prefere questões do objetivo');
 const bancoSug = { ...banco, questao: (id) => questoes.find((q) => q.id === id) };

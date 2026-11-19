@@ -35,7 +35,7 @@
 
   /* Frente e verso de um cartão a partir de uma questão e da anotação do aluno. */
   function montarDaQuestao(q, nota) {
-    var L = 'ABCDE', frente = cortar(q.enunciado, 500), verso;
+    var L = 'ABCDE', frente = (q.textoBase ? cortar(q.textoBase, 1200) + '\n\n' : '') + cortar(q.enunciado, 500), verso;
     if (q.tipo === 'multipla' && Array.isArray(q.alternativas)) {
       frente += '\n\n' + q.alternativas.map(function (a, i) { return L[i] + ') ' + a; }).join('\n');
       verso = 'Resposta: ' + L[q.resposta] + ') ' + q.alternativas[q.resposta];
