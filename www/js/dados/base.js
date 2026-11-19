@@ -15,16 +15,17 @@ Banco.registrar({
     { id: 'direito-administrativo', nome: 'Direito Administrativo', sigla: 'DAD', area: 'Direito' },
     { id: 'direito-penal', nome: 'Direito Penal', sigla: 'DPE', area: 'Direito' },
     { id: 'conhecimentos-bancarios', nome: 'Conhecimentos Bancários', sigla: 'CBA', area: 'Finanças' },
-    // Questões oficiais do ENEM vêm classificadas por área, como o INEP faz.
-    { id: 'enem-linguagens', nome: 'Linguagens (ENEM)', sigla: 'LC', area: 'ENEM oficial' },
-    { id: 'enem-natureza', nome: 'Ciências da Natureza (ENEM)', sigla: 'CN', area: 'ENEM oficial' }
+    // Questões oficiais do INEP (ENEM e ENCCEJA) vêm classificadas por área, como o INEP faz.
+    { id: 'enem-linguagens', nome: 'Linguagens (provas oficiais)', sigla: 'LC', area: 'Provas oficiais do INEP' },
+    { id: 'enem-natureza', nome: 'Ciências da Natureza (provas oficiais)', sigla: 'CN', area: 'Provas oficiais do INEP' },
+    { id: 'enem-humanas', nome: 'Ciências Humanas (provas oficiais)', sigla: 'CH', area: 'Provas oficiais do INEP' }
   ],
 
   objetivos: [
     {
       id: 'enem', nome: 'ENEM e vestibulares',
       descricao: 'Prova de 180 questões objetivas em quatro áreas, mais a redação dissertativo-argumentativa.',
-      pesos: { portugues: 3, ingles: 1, matematica: 3, fisica: 1.2, quimica: 1.2, biologia: 1.2, historia: 1.5, geografia: 1.5, 'enem-linguagens': 1, 'enem-natureza': 2 },
+      pesos: { portugues: 3, ingles: 1, matematica: 3, fisica: 1.2, quimica: 1.2, biologia: 1.2, historia: 1.5, geografia: 1.5, 'enem-linguagens': 1, 'enem-natureza': 2, 'enem-humanas': 1 },
       estilos: ['ENEM'], redacao: 'enem', minutosPorQuestao: 3
     },
     {

@@ -48,13 +48,13 @@
   /* o: { numero, resposta, confirmada, riscadas[], profunda, expandida, travada, conf, dicas } */
   function questao(q, o) {
     var m = Banco.materia(q.materia);
-    var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(String(q.prova.orgao || '').replace(/^ENEM, /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
+    var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(String(q.prova.orgao || '').replace(/^(ENEM|ENCCEJA),? /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
       : q.autoria === 'aluno' ? 'Sua questão' : 'Inédita · estilo ' + esc(q.estilo);
     var meta = '<div class="q-meta">' + (o.numero ? '<span class="q-num">' + o.numero + '</span>' : '') +
       '<span class="tag">' + esc(m ? m.nome : q.materia) + '</span><span>' + esc(q.assunto) + '</span><span aria-hidden="true">·</span><span>' + origem + '</span>' + UI.dots(q.dificuldade) + '</div>';
     var corpo = (q.textoBase ? '<div class="q-base">' + esc(q.textoBase) + '</div>' : '') + '<div class="q-text">' + esc(q.enunciado) + '</div>' +
       // Crédito exigido pela licença do INEP: visível desde antes de responder.
-      (q.prova && q.prova.banca === 'INEP' ? '<p class="credito">Questão oficial do ENEM ' + esc(q.prova.ano) + ', do INEP/MEC, reproduzida sem alterações sob licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR" target="_blank" rel="noopener noreferrer">Creative Commons BY-ND 3.0</a>.</p>' : '');
+      (q.prova && q.prova.banca === 'INEP' ? '<p class="credito">Questão oficial do ' + (/^ENCCEJA/.test(q.prova.orgao || '') ? 'ENCCEJA ' : 'ENEM ') + esc(q.prova.ano) + ', do INEP/MEC, reproduzida sem alterações sob licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR" target="_blank" rel="noopener noreferrer">Creative Commons BY-ND 3.0</a>.</p>' : '');
     var mostrar = o.confirmada;
     var notas = mostrar && (o.profunda || o.expandida) && q.explicacao && q.explicacao.alternativas;
     var alts;
@@ -209,7 +209,7 @@
       '<div class="field"><span class="label">Modo</span>' + seg('m-modo', [['estudo', 'Estudo: correção na hora'], ['prova', 'Prova: gabarito no final']], B.modo) + '<small>' + (B.modo === 'prova' ? 'Como no dia da prova: cronômetro correndo e resposta só depois de entregar.' : 'Você vê se acertou e a explicação logo depois de cada questão, sem cronômetro.') + '</small></div></div>' +
       '<div class="grid g2"><div class="field"><span class="label">Dificuldade</span><div class="chips" id="m-dif">' + [[1, 'Fácil'], [2, 'Média'], [3, 'Difícil']].map(function (d) { return chip('data-dif', d[0], d[1], B.dificuldades.indexOf(String(d[0])) >= 0); }).join('') + '</div><small>Nenhuma marcada = todas.</small></div>' +
       '<div class="field"><span class="label">Tipo de questão</span>' + seg('m-tipo', [['', 'Todas'], ['multipla', 'Múltipla escolha'], ['certo-errado', 'Certo ou errado']], B.tipo) + '</div></div>' +
-      '<div class="field"><span class="label">Estilo de banca</span><small>As questões do app são inéditas no estilo de cada banca, mais questões oficiais do ENEM. Provas de outras bancas você traz em Minhas questões.</small><div class="chips" id="m-estilos">' + Banco.ESTILOS.filter(function (e) { return Banco.questoes.some(function (q) { return q.estilo === e; }); }).map(function (e) { return chip('data-est', e, e, B.estilos.indexOf(e) >= 0); }).join('') + '</div></div>' +
+      '<div class="field"><span class="label">Estilo de banca</span><small>As questões do app são inéditas no estilo de cada banca, mais questões oficiais do ENEM e do ENCCEJA. Provas de outras bancas você traz em Minhas questões.</small><div class="chips" id="m-estilos">' + Banco.ESTILOS.filter(function (e) { return Banco.questoes.some(function (q) { return q.estilo === e; }); }).map(function (e) { return chip('data-est', e, e, B.estilos.indexOf(e) >= 0); }).join('') + '</div></div>' +
       '<div class="grid g2"><div class="field"><span class="label">Questões</span>' + seg('m-status', [['', 'Todas'], ['nao-resolvidas', 'Inéditas para mim'], ['erradas', 'Que errei']], B.status) + '</div>' +
       (B.modo === 'prova' ? '<div class="field"><span class="label">Tempo</span>' + seg('m-tempo', [['auto', 'Tempo da banca (' + Math.ceil(B.quantidade * o.minutosPorQuestao) + ' min)'], ['livre', 'Sem limite'], [String(B.quantidade * 2), B.quantidade * 2 + ' min']], B.tempo) + '</div>' : '<div></div>') + '</div>' +
       '</div><div class="row-between mt-lg"><span class="muted" id="m-disp" aria-live="polite"></span><button class="btn btn-primary btn-lg" data-act="m-criar">' + ico('play') + ' Começar simulado</button></div></section>';
@@ -562,7 +562,7 @@
     }).join('');
     return {
       titulo: 'Banco de questões', manterScroll: true,
-      html: '<div class="page-head"><div><h1>Banco de questões</h1><p>' + UI.plural(Banco.questoes.length, 'questão comentada', 'questões comentadas') + ' para resolver uma a uma. São inéditas no estilo de cada banca, mais questões oficiais do ENEM; provas de outras bancas você traz em <a href="#/minhas-questoes">Minhas questões</a>.</p></div>' +
+      html: '<div class="page-head"><div><h1>Banco de questões</h1><p>' + UI.plural(Banco.questoes.length, 'questão', 'questões') + ' para resolver uma a uma. São inéditas e comentadas, no estilo de cada banca, mais questões oficiais do ENEM e do ENCCEJA; provas de outras bancas você traz em <a href="#/minhas-questoes">Minhas questões</a>.</p></div>' +
         '<button class="btn btn-secondary" data-act="q-simulado"' + (res.length ? '' : ' disabled') + '>' + ico('simulado') + ' Simulado com estes filtros</button></div>' +
         '<section class="card"><div class="search"><label class="sr-only" for="q-busca">Buscar</label>' + ico('busca') + '<input class="input" id="q-busca" type="search" placeholder="Buscar por palavra, assunto ou trecho do enunciado" value="' + esc(QF.busca) + '"></div>' +
         '<div class="chips mt" id="q-mats">' + Banco.materias.filter(function (m) { return Banco.questoes.some(function (q) { return q.materia === m.id; }); }).map(function (m) {

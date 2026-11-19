@@ -101,7 +101,9 @@ function motivoExclusao(q) {
   return null;
 }
 
-(async () => {
+module.exports = { itens, TERCEIROS, ASPAS, TITULO, LICENCA };
+
+if (require.main === module) (async () => {
   const dir = process.argv[2];
   if (!dir) { console.error('uso: node tools/enem.js <pasta-com-os-arquivos-do-inep>'); process.exit(1); }
   const saida = [], motivos = {};

@@ -195,6 +195,8 @@ const ok = (cond, msg) => { if (!cond) throw new Error('[' + passo + '] ' + msg)
   ] }));
   await page.setInputFiles('#mq-json', banco);
   await page.waitForSelector('.toast.show');
+  // Um aviso anterior pode ainda estar na tela: espera o da importação.
+  await page.waitForFunction(() => /importad/.test(document.querySelector('#toast').textContent), null, { timeout: 8000 }).catch(() => {});
   ok((await page.textContent('#toast')).includes('1 questão importada'), 'importa a válida e recusa a com url javascript:');
   await page.goto(URL + '#/questoes');
   await page.fill('#q-busca', 'Item importado');
