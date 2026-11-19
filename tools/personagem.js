@@ -105,6 +105,6 @@ function tracar(png, cor) {
   // Posição dos olhos na pose de frente (em % da imagem), para a pálpebra do piscar.
   const [x1, x2, y, w] = process.argv.slice(3).map(Number);
   const olhos = { x1: x1 || 40, x2: x2 || 66.5, y: y || 38, w: w || 12 }; // medidos na folha design/personagem-poses.webp
-  fs.writeFileSync(path.join(SAIDA, 'poses.js'), '/* Gerado por tools/personagem.js. */\nwindow.HELMA_POSES = ' + JSON.stringify({ poses: POSES, olhos, proporcao: +(altura / largura).toFixed(4) }) + ';\n');
+  fs.writeFileSync(path.join(SAIDA, 'poses.js'), '/* Gerado por tools/personagem.js. */\nwindow.HELMA_POSES = ' + JSON.stringify({ poses: POSES, olhos, boca: { x: 41.5, y: 55.5, w: 22.5 }, proporcao: +(altura / largura).toFixed(4) }) + ';\n');
   console.log('5 poses geradas em www/marca/personagem (' + largura + 'x' + altura + ' px por pose); olhos', olhos);
 })().catch((e) => { console.error('FALHOU', e.message); process.exit(1); });
