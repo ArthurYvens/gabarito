@@ -66,9 +66,11 @@
     setTimeout(function () { el.classList.remove(c); }, ms);
   }
   function sorrir(el, ms) { if (el && el.isConnected && el.getAttribute('data-pose') === 'frente') classeTemporaria(el, 'sorrindo', ms || 1600); }
-  var ORGULHO_MS = 2400; // igual à duração das animações .orgulho em animacoes.css
+  var ORGULHO_MS = 3200; // igual à duração das animações .orgulho em animacoes.css
   function orgulho(el) {
-    pose(el, 'frente');
+    // Primeiro olha o trabalho (três-quartos), depois vira para o aluno: os dois quadros desenhados abrem a cena.
+    pose(el, 'tres-quartos-dir');
+    setTimeout(function () { pose(el, 'frente'); }, 120);
     clearTimeout(el._orgulho);
     el.classList.remove('sorrindo', 'orgulho'); void el.offsetWidth; el.classList.add('orgulho');
     // Ao fim, o sorriso aberto já virou o suave: segura o suave e volta ao ocioso.
