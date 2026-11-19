@@ -97,6 +97,8 @@ assert.ok(Analise.analisar('eu acho que tipo isso é ruim').alertas.length >= 2)
 const diag = Motor.diagnostico(banco, ['portugues', 'matematica'], 3);
 assert.ok(diag.length === 4 && new Set(diag).size === 4, 'diagnóstico: 2 assuntos por matéria');
 assert.ok(diag.every((id) => /^(portugues|matematica)/.test(id)));
+const so = { ...banco, questoes: banco.questoes.map((q, i) => ({ ...q, objetivos: i % 3 ? ['policial'] : ['enem'] })) };
+assert.ok(Motor.diagnostico(so, ['portugues'], 5, 'enem').every((id) => so.questoes.find((q) => q.id === id).objetivos[0] === 'enem'), 'diagnóstico prefere questões do objetivo');
 const bancoSug = { ...banco, questao: (id) => questoes.find((q) => q.id === id) };
 assert.strictEqual(Motor.sugestao(bancoSug, { respostas: {}, revisao: {}, perfil: { materias: ['portugues'] } }, '2026-11-19').tipo, 'diagnostico');
 const revs = {}; questoes.slice(0, 6).forEach((q) => (revs[q.id] = { caixa: 0, proxima: '2026-11-18' }));

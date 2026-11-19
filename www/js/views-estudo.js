@@ -398,8 +398,7 @@
   function escolher(v) {
     var sim = R.sim, id = sim.questoes[sim.atual];
     if (sim.confirmadas[id]) return;
-    if (sim.respostas[id] === v && sim.modo === 'prova') delete sim.respostas[id]; // clicar de novo desmarca
-    else sim.respostas[id] = v;
+    sim.respostas[id] = v;
     if (sim.riscadas[id] && typeof v === 'number') sim.riscadas[id] = sim.riscadas[id].filter(function (x) { return x !== v; });
     Store.salvar(); desenhar();
   }
@@ -415,13 +414,13 @@
       if (!q || s.confirmadas[id] || (s.dicas[id] || 0) >= maxDicas(q)) return;
       s.dicas[id] = (s.dicas[id] || 0) + 1;
       // Alternativa eliminada por dica não pode continuar marcada.
-      if (eliminadas(q, s.dicas[id]).indexOf(s.respostas[id]) >= 0) delete s.respostas[id];
+      if (eliminadas(q, s.dicas[id]).indexOf(s.respostas[id]) >= 0) { UI.toast('A dica eliminou a alternativa ' + LETRAS[s.respostas[id]] + ', que você tinha marcado. Escolha outra.'); delete s.respostas[id]; }
       Store.salvar(); desenhar();
     } else if (QV && !QV.confirmada) {
       var qq = Banco.questao(QV.id);
       if ((QV.dicas || 0) >= maxDicas(qq)) return;
       QV.dicas = (QV.dicas || 0) + 1;
-      if (eliminadas(qq, QV.dicas).indexOf(QV.resposta) >= 0) QV.resposta = undefined;
+      if (eliminadas(qq, QV.dicas).indexOf(QV.resposta) >= 0) { UI.toast('A dica eliminou a alternativa ' + LETRAS[QV.resposta] + ', que você tinha marcado. Escolha outra.'); QV.resposta = undefined; }
       App.render();
     }
   });

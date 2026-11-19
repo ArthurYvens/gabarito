@@ -45,8 +45,8 @@
         '<nav class="nav">' + NAV.map(link).join('') + '<div class="nav-sep"></div>' + link({ href: '#/ajustes', id: 'ajustes', nome: 'Ajustes', ico: 'ajustes' }) + '</nav>' +
         '<div class="side-foot"><strong>' + esc(App.objetivo().nome) + '</strong><br>Hoje: <span class="mono">' + hoje + '/' + (p ? p.metaDiaria : 20) + '</span> questões</div>' +
       '</aside>' +
-      '<div class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
-        '<button class="icon-btn" data-act="menu" aria-label="Abrir menu" aria-controls="side" aria-expanded="false">' + ico('menu') + '</button></div>' +
+      '<header class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
+        '<button class="icon-btn" data-act="menu" aria-label="Abrir menu" aria-controls="side" aria-expanded="false">' + ico('menu') + '</button></header>' +
       '<main class="main fade-in" id="main" tabindex="-1">' + conteudo + '</main>' +
       '<nav class="tabbar" aria-label="Atalhos">' +
         [NAV[0], NAV[1], NAV[3], NAV[4]].map(function (it) {
@@ -160,14 +160,14 @@
         '<div class="opt-grid mt" role="group" aria-label="Objetivos">' + Banco.objetivos.map(function (o) {
           return '<button class="opt" data-act="onb-obj" data-id="' + o.id + '" aria-pressed="' + (onb.objetivo === o.id) + '"><b>' + esc(o.nome) + '</b><span>' + esc(o.descricao) + '</span></button>';
         }).join('') + '</div>' +
-        '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><button class="btn btn-primary btn-lg" data-act="onb-prox"' + (onb.objetivo ? '' : ' disabled') + '>Continuar ' + ico('dir') + '</button></div>';
+        '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><div class="row">' + (onb.objetivo ? '' : '<span class="small muted">Escolha um objetivo para continuar</span>') + '<button class="btn btn-primary btn-lg" data-act="onb-prox"' + (onb.objetivo ? '' : ' disabled') + '>Continuar ' + ico('dir') + '</button></div></div>';
     } else {
       corpo = '<span class="eyebrow">Passo 3 de 3</span><h1>Ajuste o seu foco</h1><p class="muted mt">Marcamos as matérias que caem na sua prova. Tire ou inclua o que quiser.</p>' +
         '<div class="chips mt" id="onb-mats" role="group" aria-label="Matérias">' + Banco.materias.map(function (m) {
           return '<button class="chip" data-toggle="multi" data-mat="' + m.id + '" aria-pressed="' + (onb.materias.indexOf(m.id) >= 0) + '">' + ico('check', 'ck') + esc(m.nome) + '</button>';
         }).join('') + '</div>' +
-        '<div class="field mt-lg"><span class="label">Meta diária de questões</span><div class="seg" id="onb-meta" role="group" aria-label="Meta diária">' + [10, 20, 40, 60].map(function (n) {
-          return '<button data-toggle="one" data-v="' + n + '" aria-pressed="' + (onb.meta === n) + '">' + n + '</button>';
+        '<div class="field mt-lg"><span class="label">Quantas questões por dia?</span><div class="seg" id="onb-meta" role="group" aria-label="Meta de questões por dia">' + [10, 20, 40, 60].map(function (n) {
+          return '<button data-toggle="one" data-v="' + n + '" aria-pressed="' + (onb.meta === n) + '">' + n + ' por dia</button>';
         }).join('') + '</div></div>' +
         '<label class="switch mt"><span><b>Explicação profunda</b><span>Depois de responder, mostra a resolução completa, o comentário de cada alternativa e onde estudar mais.</span></span><input type="checkbox" id="onb-prof"' + (onb.profunda ? ' checked' : '') + '></label>' +
         '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><button class="btn btn-primary btn-lg" data-act="onb-fim">Montar meu painel ' + ico('dir') + '</button></div>';
@@ -233,7 +233,7 @@
     var sheet = '<span class="hero-retrato-wrap">' + Personagem.html({ tamanho: 132, humor: feitas >= p.metaDiaria ? 'feliz' : 'ola', pose: 'perfil-dir' }) + '</span>';
     var hero = '<section class="hero"><div><span class="eyebrow" style="color:inherit;opacity:.7">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</span>' +
       '<h1>' + saudacao() + (p.nome ? ', ' + esc(p.nome.trim().split(/\s+/)[0]) : '') + '.</h1>' +
-      '<p>' + (pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : novato ? 'Comece pelo diagnóstico: cerca de ' + Math.max(4, Math.min(20, (p.materias || []).length * 2)) + ' questões das suas matérias, sem pressa, para o app saber de onde você parte em cada assunto.' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
+      '<p>' + (andamento ? 'Você parou no meio de <b>' + esc(andamento.titulo) + '</b>: ' + UI.plural(andamento.questoes.length - Object.keys(andamento.respostas).length, 'questão falta', 'questões faltam') + '. Continue de onde parou.' : pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : novato ? 'Comece pelo diagnóstico: ' + Motor.diagnostico(Banco, p.materias, 1, p.objetivo).length + ' questões das suas matérias, sem pressa, para o app saber de onde você parte em cada assunto.' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
       '<div class="row">' + cta + (pend ? '<button class="btn btn-ghost" data-act="rev-iniciar">' + ico('revisao') + ' Revisar ' + pend + '</button>' : '<a class="btn btn-ghost" href="#/simulados">Montar simulado</a>') + '</div></div>' + sheet + '</section>';
 
     // Semana de atividade
@@ -293,7 +293,7 @@
   }, 'inicio');
 
   App.acao('diagnostico-iniciar', function () {
-    var p = S().perfil, ids = Motor.diagnostico(Banco, p.materias, Date.now());
+    var p = S().perfil, ids = Motor.diagnostico(Banco, p.materias, Date.now(), p.objetivo);
     if (!ids.length) { UI.toast('Escolha matérias com questões em Ajustes.'); return; }
     App.criarSimulado({ ids: ids, modo: 'prova', origem: 'diagnostico' }, 'Diagnóstico inicial');
   });
@@ -345,6 +345,8 @@
     var d = Motor.hoje();
     S().sessoes[d] = Math.min(12, (S().sessoes[d] || 0) + 1);
     Store.salvar(); App.render();
+    var pl = S().plano, total = pl ? (pl.semana[new Date().getDay()] || []).length : 0;
+    UI.toast('Sessão marcada como feita: ' + Math.min(S().sessoes[d], total || S().sessoes[d]) + ' de ' + (total || S().sessoes[d]) + ' hoje.');
   });
   App.acao('plano-gerar', function () {
     var dias = App.valores(document.getElementById('pl-dias'), 'data-d').map(Number);

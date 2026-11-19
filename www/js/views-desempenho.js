@@ -92,8 +92,10 @@
   function dia(t) { return new Date(t).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }); }
 
   function evolucaoCard(sem) {
-    var cabeca = '<div class="card-head"><div><h2>Evolução semanal</h2><p class="small">Percentual de acerto em cada uma das últimas 8 semanas.</p></div></div>';
+    var cabeca = '<div class="card-head"><div><h2>Evolução semanal</h2><p class="small">Percentual de acerto por semana, desde a sua primeira semana de respostas (até 8 semanas).</p></div></div>';
     var com = sem.filter(function (s) { return s.taxa != null; });
+    // Começa na primeira semana com respostas: semanas antes disso não são "0%", só não existiam.
+    if (com.length) sem = sem.slice(sem.indexOf(com[0]));
     if (!com.length) return '<section class="card">' + cabeca + '<p class="muted">O gráfico aparece quando houver respostas nas últimas 8 semanas.</p></section>';
 
     var W = 320, H = 170, L = 34, R = 12, T = 18, B = 30, w = W - L - R, h = H - T - B;
@@ -127,7 +129,7 @@
     var a = Desempenho.porAssunto(Banco, respostas);
     var cab = '<header class="page-head"><div><span class="eyebrow">Desempenho</span><h1>Como você está indo</h1><p>Onde você acerta, onde erra e onde perde tempo, para decidir o que estudar a seguir.</p></div></header>';
     if (!a.total.questoes) {
-      return { titulo: 'Desempenho', html: cab + '<div class="card"><div class="empty">' + ico('grafico') + '<h3>Ainda não há respostas para analisar</h3><p>Resolva algumas questões e este painel mostra seu acerto por assunto, o tempo que cada uma levou e a evolução semana a semana.</p>' +
+      return { titulo: 'Desempenho', html: cab + '<div class="card"><div class="empty">' + ico('grafico') + '<h2>Ainda não há respostas para analisar</h2><p>Resolva algumas questões e este painel mostra seu acerto por assunto, o tempo que cada uma levou e a evolução semana a semana.</p>' +
         '<div class="row" style="justify-content:center"><a class="btn btn-primary" href="#/simulados">' + ico('play') + ' Montar um simulado</a><a class="btn btn-ghost" href="#/questoes">Ver o banco de questões</a></div></div></div>' };
     }
     var c = Desempenho.confiancaAcerto(Banco, respostas), t = Desempenho.tempoPorQuestao(Banco, respostas);

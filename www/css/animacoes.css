@@ -93,3 +93,6 @@
 .score-helma { order: 3; margin-left: auto; }
 @media (max-width: 880px) { .score-helma { margin: 0 auto; order: 0; } }
 #mq-helma:empty { display: none; }
+
+/* Alvos de toque de 44 px no celular também para menu e botões comuns */
+@media (max-width: 880px) { .icon-btn { width: 44px; height: 44px; } .btn { min-height: 44px; } .seg button { min-width: 44px; } }

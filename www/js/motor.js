@@ -235,11 +235,13 @@
 
   /* Diagnóstico inicial: até 2 questões de assuntos diferentes por matéria do aluno (preferindo dificuldade
      média), no máximo 20, para medir o ponto de partida de cada assunto. */
-  function diagnostico(banco, materias, seed) {
+  function diagnostico(banco, materias, seed, objetivo) {
     var rand = rng(seed || 1), ids = [];
     (materias || []).forEach(function (m) {
       var porAssunto = {};
-      banco.questoes.filter(function (q) { return q.materia === m; }).forEach(function (q) { (porAssunto[q.assunto] = porAssunto[q.assunto] || []).push(q); });
+      var daMateria = banco.questoes.filter(function (q) { return q.materia === m; });
+      var doObjetivo = objetivo ? daMateria.filter(function (q) { return q.objetivos.indexOf(objetivo) >= 0; }) : [];
+      (doObjetivo.length ? doObjetivo : daMateria).forEach(function (q) { (porAssunto[q.assunto] = porAssunto[q.assunto] || []).push(q); });
       embaralhar(Object.keys(porAssunto), rand).slice(0, 2).forEach(function (a) {
         var lista = porAssunto[a].slice().sort(function (x, y) { return Math.abs(x.dificuldade - 2) - Math.abs(y.dificuldade - 2) || rand() - 0.5; });
         ids.push(lista[0].id);
