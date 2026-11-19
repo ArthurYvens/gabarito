@@ -1,54 +1,62 @@
-/* Gabarito — sistema visual: caneta azul, marca-texto e cartão-resposta. */
+/* Helma — identidade: índigo #211735, dourado #C48628, marfim #FAF6ED, grafite #302D35. */
 :root {
-  --bg: #f2f4f7;
-  --surface: #ffffff;
-  --surface-2: #f7f8fa;
-  --surface-3: #eef0f4;
-  --ink: #121722;
-  --ink-2: #464e5f;
-  --ink-3: #636b7d;
-  --line: #e1e4ea;
-  --line-input: #858c9c;
-  --pen: #1e47c8;
-  --pen-ink: #ffffff;
-  --pen-hover: #1838a3;
-  --pen-soft: #e8eeff;
-  --marker: #ffe45c;
-  --marker-ink: #2b2300;
-  --ok: #11774f;
-  --ok-soft: #e1f4ea;
-  --err: #c0302d;
-  --err-soft: #fde8e7;
-  --warn: #8f5200;
-  --warn-soft: #fff1d6;
-  --shadow: 0 1px 2px rgba(18, 23, 34, .06), 0 4px 16px rgba(18, 23, 34, .05);
-  --shadow-lg: 0 12px 40px rgba(18, 23, 34, .16);
+  --bg: #faf6ed;            /* marfim: fundo das telas de leitura */
+  --surface: #fffdf8;
+  --surface-2: #f5efe2;
+  --surface-3: #ede5d4;
+  --ink: #211735;           /* índigo: títulos */
+  --ink-2: #302d35;         /* grafite: enunciados, alternativas e explicações */
+  --ink-3: #69636f;
+  --line: #e9dfca;
+  --line-input: #8e8574;
+  --pen: #211735;           /* índigo: botões principais e links */
+  --pen-ink: #faf6ed;
+  --pen-hover: #352654;
+  --pen-soft: #ece6f3;
+  --gold: #c48628;          /* dourado: chama, alternativa selecionada e progresso */
+  --gold-ink: #211735;      /* texto sobre o dourado (5,5:1) */
+  --gold-soft: #f6e9cd;
+  --gold-line: #e3cfa6;     /* fio dourado dos cartões */
+  --marker: #f0d59a;
+  --marker-ink: #211735;
+  --ok: #2b7a52;
+  --ok-soft: #e3f2e8;
+  --err: #b0362c;
+  --err-soft: #fbe7e4;
+  --warn: #8a5a00;
+  --warn-soft: #fbefd5;
+  --shadow: 0 1px 2px rgba(33, 23, 53, .05), 0 6px 18px rgba(33, 23, 53, .05);
+  --shadow-lg: 0 14px 44px rgba(33, 23, 53, .18);
   --r-sm: 8px;
   --r: 12px;
   --r-lg: 18px;
-  --f-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
-  --f-ui: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
-  --f-read: 'Literata', Georgia, 'Times New Roman', serif;
-  --f-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --f-display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --f-ui: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --f-read: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --f-mono: 'Inter', 'Segoe UI', system-ui, sans-serif; /* números com algarismos tabulares (.mono) */
   --side: 252px;
+  --logo-claro: block;
+  --logo-escuro: none;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d1016; --surface: #151922; --surface-2: #1a1f29; --surface-3: #222834; --ink: #e8ebf1; --ink-2: #b3bac7;
-    --ink-3: #8f97a7; --line: #262c38; --line-input: #687083; --pen: #7d9bff; --pen-ink: #0b1230; --pen-hover: #9db4ff;
-    --pen-soft: #1b2546; --marker: #e6c73a; --marker-ink: #1d1700; --ok: #4cc38a; --ok-soft: #12291f; --err: #ff7470;
-    --err-soft: #3a1817; --warn: #f0b252; --warn-soft: #33250c; --shadow: 0 1px 2px rgba(0, 0, 0, .3);
-    --shadow-lg: 0 16px 48px rgba(0, 0, 0, .5); color-scheme: dark;
+    --bg: #120c1e; --surface: #1a1229; --surface-2: #211835; --surface-3: #2a2040; --ink: #f3ecdc; --ink-2: #ddd5e6;
+    --ink-3: #a9a0b8; --line: #33284a; --line-input: #776c8e; --pen: #e0a748; --pen-ink: #1b1229; --pen-hover: #ecbb66;
+    --pen-soft: #2c2146; --gold: #e0a748; --gold-ink: #1b1229; --gold-soft: #3a2b15; --gold-line: #4a3a24;
+    --marker: #e0a748; --marker-ink: #1b1229; --ok: #5cc48e; --ok-soft: #13291f; --err: #ff8378;
+    --err-soft: #3b1a1a; --warn: #f0b252; --warn-soft: #33250c; --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, .55); --logo-claro: none; --logo-escuro: block; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0d1016; --surface: #151922; --surface-2: #1a1f29; --surface-3: #222834; --ink: #e8ebf1; --ink-2: #b3bac7;
-  --ink-3: #8f97a7; --line: #262c38; --line-input: #687083; --pen: #7d9bff; --pen-ink: #0b1230; --pen-hover: #9db4ff;
-  --pen-soft: #1b2546; --marker: #e6c73a; --marker-ink: #1d1700; --ok: #4cc38a; --ok-soft: #12291f; --err: #ff7470;
-  --err-soft: #3a1817; --warn: #f0b252; --warn-soft: #33250c; --shadow: 0 1px 2px rgba(0, 0, 0, .3);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, .5); color-scheme: dark;
+  --bg: #120c1e; --surface: #1a1229; --surface-2: #211835; --surface-3: #2a2040; --ink: #f3ecdc; --ink-2: #ddd5e6;
+  --ink-3: #a9a0b8; --line: #33284a; --line-input: #776c8e; --pen: #e0a748; --pen-ink: #1b1229; --pen-hover: #ecbb66;
+  --pen-soft: #2c2146; --gold: #e0a748; --gold-ink: #1b1229; --gold-soft: #3a2b15; --gold-line: #4a3a24;
+  --marker: #e0a748; --marker-ink: #1b1229; --ok: #5cc48e; --ok-soft: #13291f; --err: #ff8378;
+  --err-soft: #3b1a1a; --warn: #f0b252; --warn-soft: #33250c; --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, .55); --logo-claro: none; --logo-escuro: block; color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -57,7 +65,7 @@ body {
   margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--f-ui);
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
-h1, h2, h3, h4 { font-family: var(--f-display); line-height: 1.15; margin: 0; letter-spacing: -0.015em; font-weight: 700; }
+h1, h2, h3, h4 { font-family: var(--f-display); line-height: 1.18; margin: 0; letter-spacing: -0.005em; font-weight: 700; color: var(--ink); }
 h1 { font-size: clamp(26px, 3.2vw, 34px); }
 h2 { font-size: 21px; }
 h3 { font-size: 17px; }
@@ -69,7 +77,7 @@ button { cursor: pointer; }
 ::selection { background: var(--marker); color: var(--marker-ink); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .ico { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
-.mono { font-family: var(--f-mono); font-feature-settings: 'tnum'; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
 .muted { color: var(--ink-3); }
 .small { font-size: 13px; }
 .hl { background: linear-gradient(transparent 55%, var(--marker) 55%, var(--marker) 92%, transparent 92%); padding: 0 2px; color: inherit; }
@@ -519,3 +527,65 @@ label.btn:focus-within { outline: 2.5px solid var(--pen); outline-offset: 2px; }
 .credito { font-size: 12.5px; color: var(--ink-3); margin: -8px 0 18px; }
 .credito a { color: inherit; }
 @media (max-width: 880px) { .toast { bottom: 150px; } }
+
+/* ================= Identidade Helma ================= */
+.logo-claro { display: var(--logo-claro); }
+.logo-escuro { display: var(--logo-escuro); }
+.brand { gap: 12px; }
+.brand-mark { width: 34px; height: 40px; object-fit: contain; }
+.brand-name { font-family: var(--f-display); font-weight: 700; font-size: 26px; letter-spacing: -0.01em; color: var(--ink); }
+.eyebrow { color: var(--gold); letter-spacing: .1em; }
+:root:not([data-theme="dark"]) .eyebrow { color: #8a5d14; } /* dourado escurecido: texto pequeno legível no marfim */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .eyebrow { color: var(--gold); } }
+
+/* Cartões com fio dourado e títulos com régua, como na referência */
+.card { border-color: var(--gold-line); box-shadow: var(--shadow); }
+.card-head { padding-bottom: 12px; border-bottom: 1px solid var(--gold-line); }
+.page-head h1 { font-size: clamp(28px, 3vw, 36px); }
+.stat > b, .ring > div > b, .score .ring > div > b { font-family: var(--f-display); font-variant-numeric: lining-nums tabular-nums; font-weight: 700; }
+
+/* Botões: índigo, cantos de 10 px */
+.btn { border-radius: 10px; letter-spacing: .005em; }
+.btn-primary { box-shadow: 0 1px 0 rgba(0, 0, 0, .06); }
+.btn-secondary { border-color: var(--gold-line); }
+.btn-secondary:hover { border-color: var(--gold); }
+
+/* Progresso e resultado em dourado */
+.bar > i { background: var(--gold); }
+.ring { --c: var(--gold); }
+
+/* Navegação */
+.side { background: var(--surface); border-right-color: var(--gold-line); }
+.nav a[aria-current="page"] { background: var(--pen-soft); color: var(--ink); }
+.nav a[aria-current="page"] .ico { color: var(--gold); }
+.side-foot { background: var(--surface-2); border: 1px solid var(--gold-line); }
+
+/* Alternativa selecionada: dourado (letra em índigo para manter contraste) */
+.alt[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
+.alt[aria-pressed="true"] .bubble { background: var(--gold); border-color: var(--gold); color: var(--gold-ink); }
+.map-grid button.ans { background: var(--gold-soft); color: var(--ink); }
+.timer .ico { color: var(--gold); }
+.q { border-color: var(--gold-line); }
+.q-text { color: var(--ink-2); }
+.verdict.ok, .verdict.err { border: 1px solid transparent; }
+
+/* Faixa de destaque do início: sempre índigo, com o retrato em marfim */
+.hero { background: #211735; color: #faf6ed; border: 1px solid #3a2c58; padding-right: 20px; }
+.hero h1 { color: #faf6ed; }
+.hero .eyebrow { color: #e0a748 !important; opacity: 1 !important; }
+.hero p { color: rgba(250, 246, 237, .78); }
+.hero .btn-primary { background: #c48628; color: #211735; }
+.hero .btn-primary:hover { background: #d3973a; }
+.hero .btn-ghost { color: rgba(250, 246, 237, .85); }
+.hero-retrato { width: 150px; height: auto; align-self: end; margin-bottom: -27px; filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .25)); }
+
+/* Boas-vindas */
+.onb-marca { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+.onb-marca img { width: 92px; height: auto; }
+.onb-nome { display: block; font-family: var(--f-display); font-weight: 700; font-size: 46px; line-height: 1; color: var(--ink); }
+.onb-tag { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-family: var(--f-display); font-size: 17px; color: var(--ink-2); }
+.onb-tag::before, .onb-tag::after { content: ''; width: 26px; height: 1px; background: var(--gold); }
+.onb-card .brand { display: none; }
+.onb-steps i.on { background: var(--gold); }
+.opt[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
+@media (max-width: 880px) { .hero-retrato { display: none; } .onb-nome { font-size: 38px; } .onb-marca img { width: 72px; } }

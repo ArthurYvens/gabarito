@@ -101,7 +101,7 @@
       painel = '<section class="card mt"><h2>Planilha (CSV)</h2><p class="small">Monte a planilha no Excel ou no Google Planilhas com as colunas do modelo: <b>enunciado, a, b, c, d, e, resposta, materia, assunto, banca, ano, explicacao</b>. Para certo ou errado, deixe as colunas a–e vazias e escreva C ou E em resposta. Depois salve no formato CSV: no Excel, Arquivo, Salvar como, tipo "CSV UTF-8"; no Google Planilhas, Arquivo, Fazer download, "Valores separados por vírgula".</p>' +
         '<div class="row mt"><label class="btn btn-primary">' + ico('upload') + ' Escolher planilha .csv<input type="file" accept=".csv,text/csv" id="mq-csv" class="sr-only"></label><button class="btn btn-ghost" data-act="mq-modelo-csv">' + ico('download') + ' Baixar modelo de planilha</button></div></section>';
     } else if (M.modo === 'json') {
-      painel = '<section class="card mt"><h2>Banco exportado do Gabarito</h2><p class="small">Para bancos já no formato do app: exportados de outro aparelho, compartilhados por um colega ou gerados por um professor.</p>' +
+      painel = '<section class="card mt"><h2>Banco exportado da Helma</h2><p class="small">Para bancos já no formato do app: exportados de outro aparelho, compartilhados por um colega ou gerados por um professor.</p>' +
         '<div class="row mt"><label class="btn btn-primary">' + ico('upload') + ' Escolher arquivo .json<input type="file" accept=".json,application/json" id="mq-json" class="sr-only"></label><button class="btn btn-ghost" data-act="aj-modelo">' + ico('download') + ' Baixar modelo</button></div></section>';
     }
     var lista = bancos.length ? '<div class="list">' + bancos.map(function (b) {
@@ -123,7 +123,7 @@
         fonte('texto', 'questoes', 'Colar texto', 'Copiou a prova de um site ou PDF? Cole aqui com o gabarito.') +
         fonte('planilha', 'plano', 'Planilha', 'Muitas questões de uma vez, do Excel ou do Google Planilhas.') +
         '<button class="card lesson-card fonte-card" data-act="mq-escrever"><span class="sigla sigla-sm">' + ico('redacao') + '</span><h3>Escrever questão</h3><p>Digite uma questão do seu caderno ou da aula, com seu comentário.</p></button></div>' +
-        '<p class="small mt"><button class="link-btn" data-act="mq-modo" data-modo="json">Já tenho um banco exportado do Gabarito (de outro aparelho ou de um colega)</button></p>' +
+        '<p class="small mt"><button class="link-btn" data-act="mq-modo" data-modo="json">Já tenho um banco exportado da Helma (de outro aparelho ou de um colega)</button></p>' +
         painel +
         '<section class="card mt-lg"><div class="card-head"><h2>Seus bancos</h2><a class="small" href="#/biblioteca">Onde baixar provas oficiais</a></div>' + lista + '</section>',
       montar: function () {
@@ -144,7 +144,7 @@
   }, 'minhas');
 
   App.acao('mq-modo', function (el) { var m = el.getAttribute('data-modo'); M.modo = M.modo === m ? '' : m; guardar(); App.render(); });
-  App.acao('mq-modelo-csv', function () { UI.baixar('modelo-planilha-gabarito.csv', Importador.MODELO_CSV, 'text/csv'); });
+  App.acao('mq-modelo-csv', function () { UI.baixar('modelo-planilha-helma.csv', Importador.MODELO_CSV, 'text/csv'); });
 
   function lerPdf(e) {
     var f = e.target.files && e.target.files[0];

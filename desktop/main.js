@@ -1,4 +1,4 @@
-/* Gabarito para Windows: janela própria que carrega o app de www/. A página roda isolada (sem Node). */
+/* Helma para Windows: janela própria que carrega o app de www/. A página roda isolada (sem Node). */
 'use strict';
 const { app, BrowserWindow, Menu, shell, nativeTheme } = require('electron');
 const path = require('path');
@@ -30,8 +30,8 @@ function menu() {
 function criarJanela() {
   janela = new BrowserWindow({
     width: 1360, height: 880, minWidth: 380, minHeight: 560,
-    title: 'Gabarito', show: false, autoHideMenuBar: true,
-    backgroundColor: nativeTheme.shouldUseDarkColors ? '#0d1016' : '#f2f4f7',
+    title: 'Helma', show: false, autoHideMenuBar: true,
+    backgroundColor: nativeTheme.shouldUseDarkColors ? '#120c1e' : '#faf6ed',
     icon: path.join(__dirname, 'recursos', 'icone.png'),
     webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true, spellcheck: true }
   });

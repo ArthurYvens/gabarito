@@ -1,8 +1,8 @@
 {
   "name": "gabarito",
-  "productName": "Gabarito",
+  "productName": "Helma",
   "version": "1.0.0",
-  "description": "Simulados, questões comentadas, aulas, redação e revisão espaçada para ENEM, concursos e OAB.",
+  "description": "Helma, plataforma de simulados: questões comentadas, aulas, redação e revisão espaçada para ENEM, concursos e OAB.",
   "main": "desktop/main.js",
   "private": true,
   "scripts": {
@@ -16,8 +16,8 @@
   },
   "build": {
     "appId": "br.com.gabarito.app",
-    "productName": "Gabarito",
-    "copyright": "Gabarito",
+    "productName": "Helma",
+    "copyright": "Helma",
     "directories": {
       "output": "dist",
       "buildResources": "desktop/recursos"
@@ -36,8 +36,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Gabarito",
-      "artifactName": "Gabarito-Instalador-${version}.exe",
+      "shortcutName": "Helma",
+      "artifactName": "Helma-Instalador-${version}.exe",
       "language": "1046"
     },
     "electronFuses": {
@@ -56,13 +56,13 @@
     "@capacitor/core": "^8.6.2",
     "@capacitor/filesystem": "^8.1.5",
     "@capacitor/share": "^8.0.3",
-    "@fontsource/bricolage-grotesque": "^5.3.0",
-    "@fontsource/ibm-plex-mono": "^5.3.0",
-    "@fontsource/ibm-plex-sans": "^5.3.0",
-    "@fontsource/literata": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.1",
     "electron": "^45.2.0",
     "electron-builder": "^26.18.0",
-    "pdfjs-dist": "3.11.174"
+    "pdfjs-dist": "3.11.174",
+    "potrace": "^2.1.8",
+    "sharp": "^0.35.5"
   },
-  "author": "Gabarito"
+  "author": "Helma"
 }

@@ -16,7 +16,7 @@
   /* o: { numero, resposta, confirmada, riscadas[], profunda, expandida, travada } */
   function questao(q, o) {
     var m = Banco.materia(q.materia);
-    var origem = q.prova ? esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : '')) + (q.autoria === 'aluno' ? ' · sua questão' : '')
+    var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(String(q.prova.orgao || '').replace(/^ENEM, /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
       : q.autoria === 'aluno' ? 'Sua questão' : 'Inédita · estilo ' + esc(q.estilo);
     var meta = '<div class="q-meta">' + (o.numero ? '<span class="q-num">' + o.numero + '</span>' : '') +
       '<span class="tag">' + esc(m ? m.nome : q.materia) + '</span><span>' + esc(q.assunto) + '</span><span aria-hidden="true">·</span><span>' + origem + '</span>' + UI.dots(q.dificuldade) + '</div>';
@@ -268,7 +268,7 @@
         (sim.modo !== 'prova' ? '<button class="btn btn-ghost btn-sm prof-btn" data-act="r-prof" id="r-prof" aria-label="Mostrar a explicação completa depois de responder" title="Mostrar a explicação completa depois de responder">' + ico('livro') + '<span class="hide-sm">Explicação completa</span></button>' : '') +
         '<button class="btn btn-primary btn-sm" data-act="r-finalizar">Finalizar</button></div>' +
         '<div class="run"><div id="r-area"></div><aside class="map"><div class="card"><div class="row-between" style="margin-bottom:12px"><h3>' + esc(sim.titulo) + '</h3></div>' +
-        '<div class="map-grid" id="r-map"></div><div class="legend"><span><i style="background:var(--pen-soft)"></i>Respondida</span>' +
+        '<div class="map-grid" id="r-map"></div><div class="legend"><span><i style="background:var(--gold-soft)"></i>Respondida</span>' +
         (sim.modo === 'prova' ? '' : '<span><i style="background:var(--ok-soft)"></i>Certa</span><span><i style="background:var(--err-soft)"></i>Errada</span>') +
         '<span><i style="background:var(--warn)"></i>Revisar depois</span></div>' +
         '<div class="shortcuts"><span class="kbd">A–E</span>escolher<span class="kbd">C / E</span>certo ou errado<span class="kbd">←→</span>navegar<span class="kbd">Enter</span>' + (sim.modo === 'prova' ? 'próxima' : 'responder / próxima') + '<span class="kbd">M</span>marcar para revisar</div></div></aside></div></main>',

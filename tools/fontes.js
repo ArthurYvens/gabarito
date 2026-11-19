@@ -5,13 +5,13 @@ const fs = require('fs');
 const path = require('path');
 
 const raiz = path.join(__dirname, '..');
+// Identidade Helma: Source Serif 4 em títulos, destaques e números; Inter em textos e interface.
 const FONTES = {
-  'Bricolage Grotesque': ['bricolage-grotesque', [600, 700, 800]],
-  'IBM Plex Sans': ['ibm-plex-sans', [400, 500, 600, 700]],
-  'IBM Plex Mono': ['ibm-plex-mono', [500, 600, 700]],
-  'Literata': ['literata', [400, 700]]
+  'Source Serif 4': ['source-serif-4', [400, 600, 700]],
+  'Inter': ['inter', [400, 500, 600, 700]]
 };
 const destino = path.join(raiz, 'www', 'fonts');
+fs.rmSync(destino, { recursive: true, force: true }); // tira as fontes da identidade anterior
 fs.mkdirSync(destino, { recursive: true });
 
 let css = '/* Gerado por tools/fontes.js. Fontes sob a SIL Open Font License. */\n';

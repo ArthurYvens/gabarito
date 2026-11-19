@@ -1,38 +1,33 @@
-/* Gera os ícones do Windows e do Android a partir da marca (bolhas de cartão-resposta).
-   node tools/icones.js  (usa o Playwright global para desenhar o SVG em PNG) */
+/* Gera os ícones (Windows, Android e site instalável) a partir do símbolo da Helma: o arco dourado com a chama
+   sobre o índigo (www/marca/helma-icone.svg, criado por tools/logo.js).  node tools/icones.js */
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
-const { chromium } = require(path.join(execSync('npm root -g').toString().trim(), '@playwright', 'cli', 'node_modules', 'playwright'));
+const sharp = require('sharp');
 
 const raiz = path.join(__dirname, '..');
-const TINTA = '#121722', MARCA = '#ffe45c';
-const bolhas = '<circle cx="236" cy="512" r="96" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="36"/>' +
-  `<circle cx="512" cy="512" r="126" fill="${MARCA}"/>` +
-  '<circle cx="788" cy="512" r="96" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="36"/>';
+const INDIGO = '#211735';
+const icone = fs.readFileSync(path.join(raiz, 'www', 'marca', 'helma-icone.svg'), 'utf8');
+const chama = icone.slice(icone.indexOf('<g '), icone.lastIndexOf('</g>') + 4); // o arco com a chama, já posicionado em 1024x1024
+const centro = (escala) => `<g transform="translate(512 512) scale(${escala}) translate(-512 -512)">${chama}</g>`;
 const svg = {
-  completo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="230" fill="${TINTA}"/>${bolhas}</svg>`,
-  redondo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="${TINTA}"/><g transform="translate(512 512) scale(.86) translate(-512 -512)">${bolhas}</g></svg>`,
-  // Ícone adaptativo do Android: só o desenho, dentro da zona segura (66 de 108 dp).
-  maskable: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="${TINTA}"/><g transform="translate(512 512) scale(.72) translate(-512 -512)">${bolhas}</g></svg>`,
-  frente: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g transform="translate(512 512) scale(.6) translate(-512 -512)">${bolhas}</g></svg>`
+  completo: icone,
+  redondo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="${INDIGO}"/>${centro(0.9)}</svg>`,
+  maskable: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="${INDIGO}"/>${centro(0.78)}</svg>`,
+  // Ícone adaptativo do Android: só o símbolo, dentro da zona segura (66 de 108 dp).
+  frente: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">${centro(0.62)}</svg>`
 };
 
+async function desenhar(tipo, px, destino) {
+  fs.mkdirSync(path.dirname(destino), { recursive: true });
+  await sharp(Buffer.from(svg[tipo]), { density: 300 }).resize(px, px).png().toFile(destino);
+}
+
 (async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  const desenhar = async (tipo, px, destino) => {
-    await page.setViewportSize({ width: px, height: px });
-    await page.setContent(`<html><body style="margin:0;background:transparent">${svg[tipo].replace('<svg ', `<svg width="${px}" height="${px}" `)}</body></html>`);
-    fs.mkdirSync(path.dirname(destino), { recursive: true });
-    await page.screenshot({ path: destino, omitBackground: true, clip: { x: 0, y: 0, width: px, height: px } });
-  };
   await desenhar('completo', 512, path.join(raiz, 'desktop', 'recursos', 'icone.png'));
   await desenhar('completo', 192, path.join(raiz, 'www', 'icone-192.png'));
   await desenhar('completo', 512, path.join(raiz, 'www', 'icone-512.png'));
   await desenhar('maskable', 512, path.join(raiz, 'www', 'icone-maskable-512.png'));
-
   const res = path.join(raiz, 'android', 'app', 'src', 'main', 'res');
   if (fs.existsSync(res)) {
     const dens = { mdpi: 1, hdpi: 1.5, xhdpi: 2, xxhdpi: 3, xxxhdpi: 4 };
@@ -41,9 +36,7 @@ const svg = {
       await desenhar('redondo', Math.round(48 * f), path.join(res, 'mipmap-' + d, 'ic_launcher_round.png'));
       await desenhar('frente', Math.round(108 * f), path.join(res, 'mipmap-' + d, 'ic_launcher_foreground.png'));
     }
-    const cor = path.join(res, 'values', 'ic_launcher_background.xml');
-    fs.writeFileSync(cor, `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">${TINTA}</color>\n</resources>\n`);
+    fs.writeFileSync(path.join(res, 'values', 'ic_launcher_background.xml'), `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">${INDIGO}</color>\n</resources>\n`);
   }
-  await browser.close();
-  console.log('ícones gerados' + (fs.existsSync(res) ? ' (Windows e Android)' : ' (Windows)'));
-})();
+  console.log('ícones da Helma gerados (Windows, site e Android)');
+})().catch((e) => { console.error(e); process.exit(1); });

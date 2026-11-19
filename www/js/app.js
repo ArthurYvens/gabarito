@@ -39,11 +39,11 @@
     var hoje = S().atividade[Motor.hoje()] || 0;
     return '<div class="app">' +
       '<aside class="side" id="side" aria-label="Navegação principal">' +
-        '<a class="brand" href="#/">' + UI.marca + '<span class="brand-name">gabarito</span></a>' +
+        '<a class="brand" href="#/">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
         '<nav class="nav">' + NAV.map(link).join('') + '<div class="nav-sep"></div>' + link({ href: '#/ajustes', id: 'ajustes', nome: 'Ajustes', ico: 'ajustes' }) + '</nav>' +
         '<div class="side-foot"><strong>' + esc(App.objetivo().nome) + '</strong><br>Hoje: <span class="mono">' + hoje + '/' + (p ? p.metaDiaria : 20) + '</span> questões</div>' +
       '</aside>' +
-      '<div class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">gabarito</span></a>' +
+      '<div class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
         '<button class="icon-btn" data-act="menu" aria-label="Abrir menu" aria-controls="side" aria-expanded="false">' + ico('menu') + '</button></div>' +
       '<main class="main fade-in" id="main" tabindex="-1">' + conteudo + '</main>' +
       '<nav class="tabbar" aria-label="Atalhos">' +
@@ -73,7 +73,7 @@
         if (r === null) return; // a view redirecionou
         if (r.cheia) raiz.innerHTML = r.html;
         else raiz.innerHTML = layout(App.rotas[i].nav, r.html);
-        if (r.titulo) document.title = r.titulo + ' · Gabarito';
+        if (r.titulo) document.title = r.titulo + ' · Helma';
         if (r.montar) App.saida = r.montar() || null;
         var main = document.getElementById('main');
         if (main && !r.manterScroll) { window.scrollTo(0, 0); }
@@ -131,7 +131,8 @@
     var passos = '<div class="onb-steps" aria-hidden="true">' + [0, 1, 2].map(function (i) { return '<i class="' + (i <= onb.passo ? 'on' : '') + '"></i>'; }).join('') + '</div>';
     var corpo;
     if (onb.passo === 0) {
-      corpo = '<span class="eyebrow">Boas-vindas</span><h1>Seu estudo, montado para a sua prova.</h1>' +
+      corpo = '<div class="onb-marca"><img class="logo-claro" src="marca/helma-retrato.svg" alt=""><img class="logo-escuro" src="marca/helma-retrato-claro.svg" alt=""><div><span class="onb-nome">Helma</span><span class="onb-tag">Plataforma de simulados</span></div></div>' +
+        '<span class="eyebrow">Boas-vindas</span><h1>Seu estudo, montado para a sua prova.</h1>' +
         '<p class="muted mt" style="font-size:16.5px;max-width:56ch">Simulados que se ajustam ao seu objetivo, explicações que ensinam de verdade, aulas, redação corrigida por critérios e revisão no momento certo.</p>' +
         '<label class="field mt-lg"><span>Como podemos te chamar?</span><input class="input" id="onb-nome" maxlength="40" autocomplete="given-name" placeholder="Como quer ser chamado (opcional)" value="' + esc(onb.nome) + '"></label>' +
         '<div class="row mt-lg"><button class="btn btn-primary btn-lg" data-act="onb-prox">Começar ' + ico('dir') + '</button></div>';
@@ -152,10 +153,10 @@
         '<label class="switch mt"><span><b>Explicação profunda</b><span>Depois de responder, mostra a resolução completa, o comentário de cada alternativa e onde estudar mais.</span></span><input type="checkbox" id="onb-prof"' + (onb.profunda ? ' checked' : '') + '></label>' +
         '<div class="row-between mt-lg"><button class="btn btn-ghost" data-act="onb-ant">' + ico('esq') + ' Voltar</button><button class="btn btn-primary btn-lg" data-act="onb-fim">Montar meu painel ' + ico('dir') + '</button></div>';
     }
-    return '<main class="onb"><div class="card onb-card fade-in"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">gabarito</span></a>' + passos + corpo + '</div></main>';
+    return '<main class="onb"><div class="card onb-card fade-in"><a class="brand" style="padding:0 0 24px">' + UI.marca + '<span class="brand-name">Helma</span></a>' + passos + corpo + '</div></main>';
   }
   function montarOnboarding() {
-    document.title = 'Bem-vindo · Gabarito';
+    document.title = 'Boas-vindas · Helma';
     var n = document.getElementById('onb-nome');
     if (n) { n.focus(); n.addEventListener('keydown', function (e) { if (e.key === 'Enter') App.acoes['onb-prox'](); }); }
   }
@@ -208,7 +209,7 @@
     var cta = andamento
       ? '<a class="btn btn-primary btn-lg" href="#/simulado/' + andamento.id + '">' + ico('play') + ' Continuar simulado (' + Object.keys(andamento.respostas).length + '/' + andamento.questoes.length + ')</a>'
       : '<button class="btn btn-primary btn-lg" data-act="sim-rapido">' + ico('play') + ' Simulado recomendado</button>';
-    var sheet = '<div class="hero-sheet" aria-hidden="true">' + Array.from({ length: 25 }, function (_, i) { return '<i class="' + ([1, 8, 12, 15, 23].indexOf(i) >= 0 ? 'f' : '') + '"></i>'; }).join('') + '</div>';
+    var sheet = '<img class="hero-retrato" src="marca/helma-retrato-claro.svg" alt="" aria-hidden="true">';
     var hero = '<section class="hero"><div><span class="eyebrow" style="color:inherit;opacity:.7">' + esc(obj.nome) + (falta !== null && falta >= 0 ? ' · faltam ' + UI.plural(falta, 'dia', 'dias') : '') + '</span>' +
       '<h1>' + saudacao() + (p.nome ? ', ' + esc(p.nome.trim().split(/\s+/)[0]) : '') + '.</h1>' +
       '<p>' + (pend ? 'Você tem <b>' + UI.plural(pend, 'questão', 'questões') + '</b> para revisar hoje, no ponto em que a memória começa a falhar.' : feitas >= p.metaDiaria ? 'Meta de hoje cumprida. Que tal uma aula ou uma redação?' : 'Seu simulado recomendado mistura as matérias da sua prova e prioriza o que você ainda não viu ou errou.') + '</p>' +
@@ -408,14 +409,14 @@
   }
   App.acao('aj-tema', function (el) { S().perfil.tema = el.getAttribute('data-v'); Store.salvar(); App.aplicarTema(); App.render(); });
   App.acao('aj-exportar', function () {
-    UI.baixar('gabarito-backup-' + Motor.hoje() + '.json', JSON.stringify(Object.assign({}, S(), { importados: App.bancos }), null, 1));
+    UI.baixar('helma-backup-' + Motor.hoje() + '.json', JSON.stringify(Object.assign({}, S(), { importados: App.bancos }), null, 1));
   });
   App.acao('aj-apagar', function () {
     UI.confirmar('Apagar todo o progresso?', 'Respostas, simulados, redações, plano e bancos importados serão removidos deste navegador. Não dá para desfazer; exporte um backup antes se quiser guardar.', 'Apagar tudo', { perigo: true })
       .then(function (ok) { if (ok) { Store.apagarTudo(); location.hash = '#/'; location.reload(); } });
   });
   App.acao('aj-modelo', function () {
-    UI.baixar('modelo-banco-gabarito.json', JSON.stringify({
+    UI.baixar('modelo-banco-helma.json', JSON.stringify({
       nome: 'Minha prova — Banca, ano',
       questoes: [{
         id: 'minha-prova-001', materia: 'portugues', assunto: 'Crase', tipo: 'multipla', estilo: 'FGV', dificuldade: 2, objetivos: ['concursos-gerais'],
@@ -512,7 +513,7 @@
     var r = new FileReader();
     r.onload = function () {
       var dados;
-      try { dados = JSON.parse(r.result); } catch (e) { UI.toast(/\.json$/i.test(f.name) ? 'Este .json tem um erro de formatação.' : 'Escolha o arquivo .json de backup exportado pelo Gabarito.'); return; }
+      try { dados = JSON.parse(r.result); } catch (e) { UI.toast(/\.json$/i.test(f.name) ? 'Este .json tem um erro de formatação.' : 'Escolha o arquivo .json de backup exportado pela Helma.'); return; }
       fn(dados, f.name);
     };
     r.readAsText(f);
@@ -522,7 +523,7 @@
   function restaurarBackup(e) {
     lerArquivo(e.target, function (dados) {
       var ok = dados && typeof dados === 'object' && dados.perfil && typeof dados.respostas === 'object' && Array.isArray(dados.simulados);
-      if (!ok) { UI.toast('Este arquivo não parece um backup do Gabarito.'); return; }
+      if (!ok) { UI.toast('Este arquivo não parece um backup da Helma.'); return; }
       UI.confirmar('Restaurar backup?', 'O progresso e os bancos de questões deste aparelho serão substituídos pelos do arquivo.', 'Restaurar').then(function (sim) {
         if (!sim) return;
         desregistrar(App.bancos); // os ids do backup coincidem com os atuais; a página recarrega em seguida

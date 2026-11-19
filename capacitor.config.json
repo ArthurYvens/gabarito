@@ -1,6 +1,6 @@
 {
   "appId": "br.com.gabarito.app",
-  "appName": "Gabarito",
+  "appName": "Helma",
   "webDir": "www",
   "android": { "allowMixedContent": false },
   "plugins": { "SystemBars": { "insetsHandling": "native" } }

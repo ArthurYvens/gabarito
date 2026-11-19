@@ -66,10 +66,7 @@
     return '<svg class="ico ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[nome] || '') + '</svg>';
   }
 
-  var marca = '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--ink)"/>' +
-    '<circle cx="9.5" cy="16" r="4" fill="none" stroke="var(--surface)" stroke-width="1.6" opacity=".55"/>' +
-    '<circle cx="16" cy="16" r="4.6" fill="var(--marker)"/>' +
-    '<circle cx="22.5" cy="16" r="4" fill="none" stroke="var(--surface)" stroke-width="1.6" opacity=".55"/></svg>';
+  var marca = '<img class="brand-mark logo-claro" src="marca/helma-retrato.svg" alt="" width="34" height="40"><img class="brand-mark logo-escuro" src="marca/helma-retrato-claro.svg" alt="" width="34" height="40">';
 
   var toastTimer;
   function toast(msg) {

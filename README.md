@@ -1,4 +1,4 @@
-# Gabarito
+# Helma
 
 Plataforma de estudos para ENEM, vestibulares, concursos (administrativos, tribunais, policiais, bancários, estatais) e OAB.
 Roda como **site** (instalável no celular e funciona sem internet), **programa para Windows** e **app Android**, todos a
@@ -6,8 +6,8 @@ partir do mesmo código em `www/`. Não tem servidor nem conta: o progresso fica
 
 ## Como usar
 
-- **Windows:** `dist/Gabarito-Instalador-1.0.0.exe`.
-- **Android:** `dist/Gabarito-Android-1.0.0.apk` (instalar com "fontes desconhecidas" permitidas).
+- **Windows:** `dist/Helma-Instalador-1.0.0.exe`.
+- **Android:** `dist/Helma-Android-1.0.0.apk` (instalar com "fontes desconhecidas" permitidas).
 - **Navegador:** abra `www/index.html`, ou sirva a pasta: `python -m http.server 5321 -d www`.
 
 ## O que tem

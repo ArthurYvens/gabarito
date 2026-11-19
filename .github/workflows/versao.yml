@@ -34,7 +34,7 @@ jobs:
       - run: npm ci
       - run: npm run build:web && npx cap sync android
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
-      - run: cp android/app/build/outputs/apk/debug/app-debug.apk "Gabarito-Android-${GITHUB_REF_NAME}.apk"
+      - run: cp android/app/build/outputs/apk/debug/app-debug.apk "Helma-Android-${GITHUB_REF_NAME}.apk"
       - uses: softprops/action-gh-release@v2
         with:
-          files: Gabarito-Android-*.apk
+          files: Helma-Android-*.apk

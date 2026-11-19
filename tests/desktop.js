@@ -25,7 +25,7 @@ async function abrir() {
 
 (async () => {
   let { app, win, erros } = await abrir();
-  ok((await win.title()).includes('Gabarito'), 'título da janela');
+  ok((await win.title()).includes('Helma'), 'título da janela');
   const seguro = await win.evaluate(() => typeof require === 'undefined' && typeof process === 'undefined');
   ok(seguro, 'a página não pode ter acesso ao Node');
   await win.fill('#onb-nome', 'Desktop');
