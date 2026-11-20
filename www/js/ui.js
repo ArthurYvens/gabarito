@@ -86,8 +86,8 @@
     return new Promise(function (resolve) {
       var d = document.getElementById('dlg');
       d.innerHTML = '<form method="dialog" class="dlg"><h2>' + esc(titulo) + '</h2><p>' + esc(texto) + '</p>' +
-        '<div class="dlg-actions"><button class="btn btn-ghost" value="nao">' + esc(opts.cancelar || 'Cancelar') + '</button>' +
-        '<button class="btn ' + (opts.perigo ? 'btn-danger' : 'btn-primary') + '" value="sim" autofocus>' + esc(ok || 'Confirmar') + '</button></div></form>';
+        '<div class="dlg-actions"><button class="btn btn-ghost" value="nao"' + (opts.perigo ? ' autofocus' : '') + '>' + esc(opts.cancelar || 'Cancelar') + '</button>' + // ação que apaga: o foco começa em Cancelar, Enter não destrói
+        '<button class="btn ' + (opts.perigo ? 'btn-danger' : 'btn-primary') + '" value="sim"' + (opts.perigo ? '' : ' autofocus') + '>' + esc(ok || 'Confirmar') + '</button></div></form>';
       d.onclose = function () { resolve(d.returnValue === 'sim'); };
       d.returnValue = '';
       d.showModal();

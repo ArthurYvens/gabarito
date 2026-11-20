@@ -48,7 +48,7 @@
       '<aside class="side" id="side" aria-label="Navegação principal">' +
         '<a class="brand" href="#/">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
         '<nav class="nav">' + NAV.map(link).join('') + '<div class="nav-sep"></div>' + link({ href: '#/ajustes', id: 'ajustes', nome: 'Ajustes', ico: 'ajustes' }) + '</nav>' +
-        '<div class="side-foot"><strong>' + esc(App.objetivo().nome) + '</strong><br>Hoje: <span class="mono">' + hoje + '/' + (p ? p.metaDiaria : 20) + '</span> questões</div>' +
+        '<div class="side-foot"><strong>' + esc(App.objetivo().nome) + '</strong><br>' + (hoje >= (p ? p.metaDiaria : 20) ? 'Meta de hoje cumprida: <span class="mono">' + hoje + '</span> questões' : 'Hoje: <span class="mono">' + hoje + '/' + (p ? p.metaDiaria : 20) + '</span> questões') + '</div>' +
       '</aside>' +
       '<header class="mobile-bar"><a class="brand" href="#/" style="padding:0">' + UI.marca + '<span class="brand-name">Helma</span></a>' +
         '<button class="icon-btn" data-act="menu" aria-label="Abrir menu" aria-controls="side" aria-expanded="false">' + ico('menu') + '</button></header>' +
@@ -218,7 +218,7 @@
   App.acao('onb-fim', function () {
     lerOnb();
     if (!onb.materias.length) { UI.toast('Escolha ao menos uma matéria.'); return; }
-    S().perfil = { nome: onb.nome, objetivo: onb.objetivo, materias: onb.materias, metaDiaria: onb.meta, explicacaoProfunda: onb.profunda, tema: 'auto', penalidadeCE: true, dataProva: '' };
+    S().perfil = { nome: onb.nome, objetivo: onb.objetivo, materias: onb.materias, metaDiaria: onb.meta, explicacaoProfunda: onb.profunda, tema: 'auto', penalidadeCE: true, backupAprendizado: false, aprendizadoOk: true, dataProva: '' };
     Store.salvar();
     location.hash = '#/';
     App.render();
@@ -267,7 +267,7 @@
       var p2 = dia.split('-').map(Number);
       semana += '<div><i class="' + nivel + (i === 0 ? ' today' : '') + '" title="' + n + ' questões"></i>' + ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'][new Date(p2[0], p2[1] - 1, p2[2]).getDay()] + '</div>';
     }
-    var meta = '<section class="card"><div class="goal"><div class="ring" style="--p:' + pct + '"><div><b class="mono">' + feitas + '</b><span>de ' + p.metaDiaria + ' hoje</span></div></div>' +
+    var meta = '<section class="card"><div class="goal"><div class="ring" style="--p:' + pct + '"><div><b class="mono">' + feitas + '</b><span>' + (feitas >= p.metaDiaria ? 'meta cumprida' : 'de ' + p.metaDiaria + ' hoje') + '</span></div></div>' +
       '<div class="stack" style="flex:1;gap:10px"><div class="row" style="gap:8px">' + ico('chama') + '<b>' + UI.plural(seq, 'dia seguido', 'dias seguidos') + '</b></div>' +
       '<div class="week" aria-label="Atividade dos últimos 7 dias">' + semana + '</div></div></div>' +
       (function () {
@@ -307,7 +307,7 @@
     var aulaCard = aula ? '<section class="card"><h3>' + esc(aula.titulo) + '</h3><p class="muted small mt" style="margin-top:6px">Aula sugerida · ' + esc(Banco.materia(aula.materia).nome) + ' · ' + aula.duracaoMin + ' min</p><p class="small">' + esc(aula.resumo) + '</p><a class="btn btn-secondary btn-sm" href="#/aula/' + aula.id + '">Abrir aula</a></section>' : '';
 
     var sug = Motor.sugestao(Banco, st, hoje);
-    var sugCard = novato || andamento || sug.tipo === 'simulado' ? '' : '<section class="card sugestao"><h2>Próximo treino: ' + esc(sug.titulo) + '</h2><p class="small" style="margin-top:6px">' + esc(sug.porque) + '</p><button class="btn btn-primary btn-sm" data-act="sugestao-iniciar">' + ico('play') + ' Começar</button></section>';
+    var sugCard = novato || andamento || sug.tipo === 'simulado' ? '' : '<section class="card sugestao"><h2>Sugestão do dia: ' + esc(sug.titulo) + '</h2><p class="small" style="margin-top:6px">' + esc(sug.porque) + '</p><button class="btn btn-secondary btn-sm" data-act="sugestao-iniciar">' + ico('play') + ' Começar</button></section>';
     return {
       titulo: 'Início',
       html: hero + '<div class="grid g-main mt"><div class="stack">' + sugCard + desempenhoCard + fracosCard + '</div><div class="stack">' + meta + planoHoje + aulaCard +
@@ -324,6 +324,7 @@
     var s = Motor.sugestao(Banco, S(), Motor.hoje());
     if (s.tipo === 'diagnostico') return App.acoes['diagnostico-iniciar']();
     if (s.tipo === 'revisao') return App.acoes['rev-iniciar']();
+    if (s.tipo === 'aula') return App.ir('#/aula/' + s.aula);
     App.criarSimulado(s.cfg, s.titulo);
   });
   App.acao('treinar', function (el) {
@@ -448,7 +449,12 @@
         '<section class="card"><h2>Minhas questões</h2><p>Provas em PDF, texto colado, planilhas e questões que você escreve ficam em <a href="#/minhas-questoes">Minhas questões</a>.</p>' +
           '<p class="small muted" id="aj-espaco">' + UI.plural(imp.length, 'banco seu', 'bancos seus') + ' neste aparelho.</p>' +
           '<a class="btn btn-secondary mt" href="#/minhas-questoes">' + ico('upload') + ' Abrir Minhas questões</a></section>' +
-        '<section class="card"><h2>Seus dados</h2><p>Backup com respostas, simulados, redações, revisão e plano. Os livros e textos da estante ficam só neste aparelho e não entram no backup.</p>' +
+        '<section class="card" id="aj-aprendeu"><h2>O que o app aprendeu com você</h2><p>O app observa como você estuda para ajudar melhor: em quais assuntos você vai bem ou mal, quais questões são difíceis para você e quais perguntas criadas de textos você aprova ou joga fora. Isso fica só neste aparelho e não é enviado nem compartilhado com ninguém.</p>' +
+          '<p class="small" id="aj-aprendeu-n" role="status" aria-live="polite">Contando...</p>' +
+          '<label class="switch mt"><span><b>Guardar isso no backup</b><span>Backup é a cópia do seu progresso num arquivo, para levar a outro aparelho. Desligado (o normal): o backup leva só o seu progresso. Ligado: leva também o que o app aprendeu, inclusive as palavras dos seus textos, o que pode revelar o conteúdo dos seus livros.</span></span><input type="checkbox" data-pref="backupAprendizado"' + (p.backupAprendizado ? ' checked' : '') + '></label>' +
+          '<p class="small muted">Remover um texto da lista não faz o app esquecer o que aprendeu dele. Para isso, use o botão abaixo.</p>' +
+          '<div class="row mt"><button class="btn btn-secondary" data-act="aj-aprendizado-zerar">' + ico('lixo') + ' Zerar o que o app aprendeu</button></div></section>' +
+        '<section class="card"><h2>Seus dados</h2><p>O backup guarda respostas, simulados, redações, revisão e plano. Os livros e textos da estante ficam só neste aparelho e não entram. O que o app aprendeu com você só entra se você ligar a opção em "O que o app aprendeu com você".</p>' +
           '<div class="row mt"><button class="btn btn-secondary" data-act="aj-exportar">' + ico('download') + ' Exportar backup</button>' +
           '<label class="btn btn-secondary">' + ico('upload') + ' Restaurar backup<input type="file" accept=".json,application/json" id="aj-backup" class="sr-only"></label></div>' +
           '<div class="row mt-lg"><button class="btn btn-danger" data-act="aj-apagar">' + ico('lixo') + ' Apagar todo o progresso</button></div></section>' +
@@ -460,6 +466,11 @@
         ['aj-nome', 'aj-obj', 'aj-meta', 'aj-meta-semana'].forEach(function (id) { document.getElementById(id).addEventListener('change', salvarPerfil); });
         document.getElementById('aj-mats').addEventListener('alternou', salvarPerfil);
         document.getElementById('aj-backup').addEventListener('change', restaurarBackup);
+        Aprende.resumo().then(function (r) {
+          var el = document.getElementById('aj-aprendeu-n');
+          if (el) el.textContent = 'Perguntas criadas de textos que você aprovou, editou ou descartou: ' + r.exemplos + '. Textos que o app leu: ' + r.documentos + '. Assuntos que o app acompanha: ' + r.assuntos + '. ' +
+            (r.classificador ? 'O app já usa suas aprovações e descartes para escolher melhor as perguntas.' : 'A partir de ' + r.minimo + ' perguntas aprovadas ou descartadas, o app passa a escolher melhor as perguntas que cria.');
+        }, function () { var el = document.getElementById('aj-aprendeu-n'); if (el) el.textContent = 'Não foi possível ler o que o app aprendeu neste navegador.'; });
         Armazem.espaco().then(function (e) {
           var el = document.getElementById('aj-espaco');
           if (el && e && e.quota) el.textContent += ' Espaço usado pelo app: ' + (e.usage / 1048576).toFixed(1) + ' MB de ' + Math.round(e.quota / 1048576) + ' MB disponíveis.';
@@ -485,7 +496,24 @@
   }
   App.acao('aj-tema', function (el) { S().perfil.tema = el.getAttribute('data-v'); Store.salvar(); App.aplicarTema(); App.render(); });
   App.acao('aj-exportar', function () {
-    UI.baixar('helma-backup-' + Motor.hoje() + '.json', JSON.stringify(Object.assign({}, S(), { importados: App.bancos }), null, 1));
+    var dados = Object.assign({}, S(), { importados: App.bancos }), incluir = S().perfil.backupAprendizado === true;
+    if (!incluir) { // o backup normal leva só o progresso: nada do que o app aprendeu, nem as falhas marcadas na revisão
+      delete dados.dominio; delete dados.dificuldades;
+      dados.perfil = Object.assign({}, S().perfil, { aprendizadoOk: false }); // quem restaurar refaz o domínio a partir das respostas
+      dados.revisao = {};
+      Object.keys(S().revisao).forEach(function (id) { dados.revisao[id] = { caixa: S().revisao[id].caixa, proxima: S().revisao[id].proxima }; });
+    }
+    (incluir ? Aprende.exportar() : Promise.resolve(null)).catch(function () { return null; }).then(function (ap) {
+      if (ap) dados.aprendizadoLocal = ap;
+      UI.baixar('helma-backup-' + Motor.hoje() + '.json', JSON.stringify(dados, null, 1));
+    });
+  });
+  App.acao('aj-aprendizado-zerar', function () {
+    UI.confirmar('Zerar o que o app aprendeu?', 'O app esquece o que aprendeu com você: seu nível em cada assunto, quais questões são difíceis para você, os avisos de erro repetido e o que aprendeu dos seus textos e das perguntas que você aprovou ou descartou. Suas respostas, questões, textos e anotações continuam. Não dá para desfazer.', 'Zerar', { perigo: true })
+      .then(function (ok) {
+        if (!ok) return;
+        Aprende.zerar().then(function () { UI.toast('Pronto: o app recomeça a aprender com você.'); App.render(); });
+      });
   });
   App.acao('aj-apagar', function () {
     UI.confirmar('Apagar todo o progresso?', 'Respostas, simulados, redações, plano, bancos importados, livros e textos guardados serão removidos deste aparelho. Não dá para desfazer; exporte um backup antes se quiser guardar.', 'Apagar tudo', { perigo: true })
@@ -608,17 +636,21 @@
     lerArquivo(e.target, function (dados) {
       var ok = dados && typeof dados === 'object' && dados.perfil && typeof dados.respostas === 'object' && Array.isArray(dados.simulados);
       if (!ok) { UI.toast('Este arquivo não parece um backup da Helma.'); return; }
-      UI.confirmar('Restaurar backup?', 'O progresso e os bancos de questões deste aparelho serão substituídos pelos do arquivo.', 'Restaurar').then(function (sim) {
+      UI.confirmar('Restaurar backup?', 'O progresso, os bancos de questões e o que o app aprendeu neste aparelho serão substituídos pelo que está no arquivo (se o arquivo não tiver o que o app aprendeu, isso é apagado). Não dá para desfazer.', 'Restaurar', { perigo: true }).then(function (sim) {
         if (!sim) return;
         desregistrar(App.bancos); // os ids do backup coincidem com os atuais; a página recarrega em seguida
         var bancos = (Array.isArray(dados.importados) ? dados.importados : []).map(prepararBanco).filter(function (b) { return b && b.questoes.length; });
         var estado = Object.assign({}, dados, { importados: [] });
         var anteriores = App.bancos;
         App.bancos = bancos;
-        App.salvarBancos().then(function () {
+        var antes = null; // o que o app aprendeu neste aparelho, para voltar se a restauração falhar
+        Aprende.exportar().catch(function () { return null; }).then(function (a) { antes = a; return App.salvarBancos(); }).then(function () {
+          return Aprende.importar(dados.aprendizadoLocal); // sem aprendizado no backup, o do aparelho é apagado: nada de perfil misto
+        }).then(function () {
           if (!Store.substituir(estado)) throw new Error('cheio');
           location.hash = '#/'; location.reload();
         }).catch(function () {
+          if (antes) Aprende.importar(antes).catch(function () {});
           App.bancos = anteriores; App.salvarBancos().catch(function () {});
           anteriores.forEach(function (b) { Banco.registrar({ questoes: b.questoes }); });
           UI.confirmar('Backup não restaurado', 'Não houve espaço para gravar os dados neste aparelho. Seu progresso atual foi mantido.', 'Entendi', { cancelar: 'Fechar' });
@@ -661,6 +693,12 @@
     }
     App.carregarBancos().catch(function (e) { if (window.console) console.error(e); }).then(function () {
       Store.carregar(); // de novo: matérias próprias do aluno só existem depois dos bancos
+      // Quem já tinha respostas antes de o app aprender ganha o domínio por assunto refeito do histórico (uma vez só; "Zerar" não refaz).
+      var st = S();
+      if (st.perfil && !st.perfil.aprendizadoOk) {
+        if (!Object.keys(st.dominio).length && Object.keys(st.respostas).length) Object.assign(st, Aprendizado.reconstruir(Banco, st.respostas));
+        st.perfil.aprendizadoOk = true; Store.salvar();
+      }
       App.render();
       if (Store.corrompido) UI.confirmar('Seu progresso salvo estava danificado', 'Não foi possível ler os dados guardados neste navegador, então o app recomeçou do zero. Uma cópia do conteúdo danificado foi guardada; se você tem um backup exportado, restaure em Ajustes.', 'Entendi', { cancelar: 'Fechar' });
     });

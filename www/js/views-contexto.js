@@ -62,6 +62,8 @@
         .catch(function (e) { return Armazem.remover('ctx:' + id).then(function () { throw e; }); });
     }).then(function () {
       C.cache[id] = ext.secoes; C.sel[id] = { de: 0, ate: ext.secoes.length - 1 }; guardarSel();
+      // O app aprende com o texto em segundo plano (contagens de palavras só desta pessoa); se falhar, o texto continua guardado.
+      Aprende.contarDocumento(id, ext.secoes).catch(function () { /* sem aprendizado deste texto */ });
       return id;
     });
   }
@@ -80,6 +82,8 @@
           return f.arrayBuffer().then(function (buf) {
             return App.extrairArquivo(f.name, buf, function (n, total) { C.status = 'Lendo ' + f.name + ': página ' + n + ' de ' + total + '...'; aviso(); });
           }).then(function (ext) {
+            var nome = f.name.replace(/\.[^.]+$/, '');
+            if (C.indice.some(function (d) { return d.titulo === nome.slice(0, 200) && d.caracteres === ext.caracteres; })) { C.avisos.push(f.name + ': este arquivo já está na lista. Não foi adicionado de novo.'); return; }
             return guardarDoc(f.name.replace(/\.[^.]+$/, ''), t, ext).then(function () {
               feitos++;
               if (ext.cortado) C.avisos.push(f.name + ': o texto era grande demais e foi guardado só até onde coube (o final ficou de fora).');
@@ -172,10 +176,15 @@
           '<label class="field"><span>Assunto <span class="muted small">(opcional)</span></span><input class="input" id="cx-assunto" maxlength="80" placeholder="Ex.: Revolução Industrial" value="' + esc(C.assunto) + '"></label>' +
           '<label class="field"><span>Estilo da prova <span class="muted small">(banca)</span></span><select class="input" id="cx-estilo">' + Banco.ESTILOS.map(function (e) { return '<option' + (C.estilo === e ? ' selected' : '') + '>' + esc(e) + '</option>'; }).join('') + '</select></label>' +
           '<label class="field"><span>Dificuldade</span><select class="input" id="cx-dif">' + [[1, 'Fácil'], [2, 'Média'], [3, 'Difícil']].map(function (d) { return '<option value="' + d[0] + '"' + (C.dif === d[0] ? ' selected' : '') + '>' + d[1] + '</option>'; }).join('') + '</select></label>') +
-        '</div><div class="row mt"><button class="btn btn-primary btn-lg" data-act="cx-gerar">' + ico('play') + ' ' + (cartoes ? 'Criar cartões' : 'Criar questões') + '</button></div></section>' +
+        '</div><p class="small muted mt" id="cx-aprende" role="status"></p><div class="row mt"><button class="btn btn-primary btn-lg" data-act="cx-gerar">' + ico('play') + ' ' + (cartoes ? 'Criar cartões' : 'Criar questões') + '</button></div></section>' +
         previaHtml(),
       montar: function () {
         if (C.toast) { UI.toast(UI.plural(C.toast, 'texto adicionado', 'textos adicionados') + '.'); C.toast = 0; }
+        Aprende.resumo().then(function (r) {
+          var el = document.getElementById('cx-aprende');
+          if (el && C.tipo !== 'cartoes') el.textContent = r.classificador ? 'O app já aprendeu com as ' + r.exemplos + ' perguntas que você aprovou ou descartou e usa isso para escolher as melhores. Cada criação traz frases novas do texto.'
+            : 'O app ainda está aprendendo o que você aprova: foram ' + r.exemplos + ' perguntas aprovadas ou descartadas. A partir de ' + r.minimo + ', ele passa a escolher melhor; até lá, as perguntas podem não agradar tanto. Cada criação traz frases novas do texto.';
+        });
         Armazem.disponivel().then(function (ok) {
           var a = document.getElementById('cx-sem-banco');
           if (a && !ok) a.innerHTML = '<div class="callout callout-marker" role="alert" style="margin-bottom:18px">' + ico('alerta') + '<div><b>Este navegador não deixa o Helma guardar textos agora.</b> Isso acontece em janelas anônimas e em alguns modos de privacidade. Abra o Helma numa janela normal.</div></div>';
@@ -242,12 +251,18 @@
     if (!cartoes && C.materia === '__nova' && !C.nova) { UI.toast('Escreva o nome da nova matéria.'); document.getElementById('cx-nova').focus(); return; }
     var trechos = [];
     escolhidos.forEach(function (d) {
-      C.cache[d.id].slice(C.sel[d.id].de, C.sel[d.id].ate + 1).forEach(function (s) { trechos.push({ titulo: d.titulo, local: s.titulo, texto: s.texto }); });
+      C.cache[d.id].slice(C.sel[d.id].de, C.sel[d.id].ate + 1).forEach(function (s) { trechos.push({ titulo: d.titulo, local: /^texto$/i.test(s.titulo) ? '' : s.titulo, texto: s.texto }); });
     });
-    C.status = 'Criando...'; aviso();
+    if (C.gerando) return; // clique repetido enquanto cria
+    C.gerando = true; C.status = 'Criando...'; aviso();
+    // O modelo reúne o que o app já sabia com o que aprendeu dos textos desta pessoa e das revisões dela.
     // Deixa o aviso aparecer antes do trabalho (textos grandes levam alguns segundos).
-    setTimeout(function () {
-      var res = Gerador.gerar(trechos, { tipo: C.tipo, quantidade: qtd, semente: Date.now() });
+    // Frases que já viraram pergunta ficam de fora, e a geração cede a vez à tela a cada ~30 ms (texto grande não trava).
+    (cartoes ? Promise.resolve([null, null]) : Promise.all([Aprende.preparar(escolhidos.map(function (d) { return { id: d.id, secoes: C.cache[d.id] }; })), Aprende.usadas()])).then(function (pre) {
+      return Gerador.gerarAsync(trechos, { tipo: C.tipo, quantidade: qtd, semente: Date.now(), modelo: pre[0], evitar: pre[1] });
+    }).then(function (res) {
+      C.gerando = false;
+      if (res.usadas && res.usadas.length) Aprende.marcarUsadas(res.usadas);
       C.status = '';
       if (!res.itens.length) { C.avisos = res.avisos; C.previa = null; App.render(); window.scrollTo(0, 0); return; }
       C.avisos = [];
@@ -269,7 +284,8 @@
         if (q.alternativas) cand.alternativas = q.alternativas;
         if (Banco.validarQuestao(cand).length) { descartadas++; return; }
         rascunhos.push({ numero: rascunhos.length + 1, enunciado: q.enunciado, alternativas: q.alternativas || [], tipo: q.tipo, resposta: q.resposta, incluir: true, comentario: q.explicacao.resumo, explicacao: q.explicacao,
-          avisos: ['Criada automaticamente a partir de "' + q.local + '". Confira o enunciado, as alternativas e a resposta.'] });
+          avisos: ['Criada automaticamente a partir de "' + q.local + '". Confira o enunciado, as alternativas e a resposta.'],
+          ml: q.ml ? { x: q.ml.x, ori: Aprende.assinatura(q) } : undefined }); // o que a revisão ensina ao app (Aprende.exemplosDe)
       });
       if (descartadas) res.avisos.push(descartadas + ' pergunta(s) não passaram na validação e foram descartadas.');
       if (!rascunhos.length) { C.avisos = res.avisos; App.render(); return; }
@@ -277,7 +293,7 @@
       res.avisos.forEach(function (a) { rascunhos[0].avisos.push(a); });
       App.revisar(rascunhos, escolhidos.map(function (d) { return d.titulo; }).join(' + '), 'contexto',
         { materia: C.materia, novaMateria: C.nova, assunto: C.assunto, estilo: C.estilo, dificuldade: C.dif }, '#/contexto');
-    }, 30);
+    }).catch(function () { C.gerando = false; C.status = ''; aviso(); UI.toast('Não foi possível criar as perguntas deste texto. Tente uma parte menor.'); });
   });
 
   App.acao('cx-cartoes-salvar', function () {

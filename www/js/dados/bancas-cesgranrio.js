@@ -471,7 +471,7 @@ Banco.registrar({ questoes: [
 
   /* ======================= INGLÊS ======================= */
   {
-    id: 'ing-401', materia: 'ingles', assunto: 'Reading comprehension', tipo: 'multipla', estilo: 'Cesgranrio', dificuldade: 2,
+    id: 'ing-401', materia: 'ingles', assunto: 'Compreensão de texto em inglês', tipo: 'multipla', estilo: 'Cesgranrio', dificuldade: 2,
     objetivos: ['bancarios', 'estatais', 'concursos-gerais'],
     textoBase: 'Many banks now offer instant payments around the clock. Customers can send money in a few seconds, even at night or on weekends. However, experts warn that this speed also helps fraudsters, who pressure victims to act before they have time to think. For this reason, banks advise people to check the name of the recipient carefully and never to share passwords or confirmation codes.',
     enunciado: 'According to the text, experts are concerned because',
@@ -498,7 +498,7 @@ Banco.registrar({ questoes: [
     fontes: [{ titulo: 'Cambridge Dictionary', url: 'https://dictionary.cambridge.org/' }]
   },
   {
-    id: 'ing-402', materia: 'ingles', assunto: 'Vocabulary', tipo: 'multipla', estilo: 'Cesgranrio', dificuldade: 2,
+    id: 'ing-402', materia: 'ingles', assunto: 'Vocabulário em inglês', tipo: 'multipla', estilo: 'Cesgranrio', dificuldade: 2,
     objetivos: ['bancarios', 'estatais', 'concursos-gerais'],
     textoBase: 'Late fees apply when customers fail to settle the invoice by the due date. In addition, interest accrues daily on the outstanding balance until the debt is fully paid.',
     enunciado: 'In the text, the word "outstanding" in "outstanding balance" is closest in meaning to',

@@ -553,7 +553,7 @@ Banco.registrar({
     {
       id: 'ing-001',
       materia: 'ingles',
-      assunto: 'Reading comprehension',
+      assunto: 'Compreensão de texto em inglês',
       tipo: 'multipla',
       estilo: 'ENEM',
       dificuldade: 1,
@@ -588,7 +588,7 @@ Banco.registrar({
     {
       id: 'ing-002',
       materia: 'ingles',
-      assunto: 'Reading comprehension',
+      assunto: 'Compreensão de texto em inglês',
       tipo: 'multipla',
       estilo: 'ENEM',
       dificuldade: 2,
@@ -623,7 +623,7 @@ Banco.registrar({
     {
       id: 'ing-003',
       materia: 'ingles',
-      assunto: 'Reading comprehension',
+      assunto: 'Compreensão de texto em inglês',
       tipo: 'multipla',
       estilo: 'Cesgranrio',
       dificuldade: 3,
@@ -658,7 +658,7 @@ Banco.registrar({
     {
       id: 'ing-004',
       materia: 'ingles',
-      assunto: 'Grammar',
+      assunto: 'Gramática do inglês',
       tipo: 'multipla',
       estilo: 'Cesgranrio',
       dificuldade: 2,
@@ -692,7 +692,7 @@ Banco.registrar({
     {
       id: 'ing-005',
       materia: 'ingles',
-      assunto: 'Grammar',
+      assunto: 'Gramática do inglês',
       tipo: 'certo-errado',
       estilo: 'CEBRASPE',
       dificuldade: 2,
@@ -713,7 +713,7 @@ Banco.registrar({
     {
       id: 'ing-006',
       materia: 'ingles',
-      assunto: 'Vocabulary',
+      assunto: 'Vocabulário em inglês',
       tipo: 'multipla',
       estilo: 'Cesgranrio',
       dificuldade: 1,
@@ -748,7 +748,7 @@ Banco.registrar({
     {
       id: 'ing-007',
       materia: 'ingles',
-      assunto: 'Vocabulary',
+      assunto: 'Vocabulário em inglês',
       tipo: 'certo-errado',
       estilo: 'CEBRASPE',
       dificuldade: 2,
@@ -768,7 +768,7 @@ Banco.registrar({
     {
       id: 'ing-008',
       materia: 'ingles',
-      assunto: 'Grammar',
+      assunto: 'Gramática do inglês',
       tipo: 'multipla',
       estilo: 'FGV',
       dificuldade: 3,
@@ -935,7 +935,7 @@ Banco.registrar({
     {
       id: 'aula-ing-reading',
       materia: 'ingles',
-      assunto: 'Reading comprehension',
+      assunto: 'Compreensão de texto em inglês',
       titulo: 'Reading comprehension: como ler em inglês na prova',
       duracaoMin: 16,
       resumo: 'Estratégias de leitura para entender textos em inglês mesmo sem conhecer todas as palavras: skimming, scanning, cognatos, falsos cognatos e marcadores do discurso.',

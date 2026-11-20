@@ -3,6 +3,7 @@
 (function (root) {
   'use strict';
 
+  var A = typeof module !== 'undefined' && module.exports ? require('./aprendizado.js') : root.Aprendizado;
   var DIA = 86400000;
   // Intervalos da revisão espaçada (caixas de Leitner), em dias.
   var INTERVALOS = [1, 3, 7, 15, 30, 60];
@@ -97,8 +98,10 @@
   }
 
   /* Monta um simulado: reparte as vagas entre matérias pelo peso do objetivo e, dentro de cada matéria,
-     prioriza questões nunca vistas, depois as erradas, depois as dos assuntos em que o aluno vai pior. */
-  function montarSimulado(banco, cfg, historico) {
+     prioriza questões nunca vistas, depois as erradas, depois as dos assuntos em que o aluno vai pior.
+     ap (opcional, o estado do aluno): { dominio, dificuldades } do Elo; os assuntos de domínio baixo sobem na fila e,
+     neles, as questões de dificuldade perto do nível do aluno (nem fáceis demais, nem impossíveis). */
+  function montarSimulado(banco, cfg, historico, ap) {
     var rand = rng(cfg.seed || Date.now());
     var candidatas = filtrar(banco.questoes, cfg, historico);
     var objetivo = cfg.objetivo ? banco.objetivo(cfg.objetivo) : null;
@@ -125,8 +128,11 @@
         if (!u) s += 2;
         else if (!u.certo) s += 1.2;
         if (cfg.objetivo && q.objetivos.indexOf(cfg.objetivo) >= 0) s += 0.5;
-        var pa = pesosAssunto[q.materia + '|' + q.assunto];
-        if (pa && pa.total >= 2) s += (1 - pa.acertos / pa.total) * 0.8;
+        var k = q.materia + '|' + q.assunto, pa = pesosAssunto[k], dm = ap && ap.dominio && ap.dominio[k];
+        if (dm) {
+          var dq = ap.dificuldades && ap.dificuldades[q.id];
+          s += (1 - A.nivelDominio(dm).p) * 0.8 + A.proximidade(dq ? dq.b : A.dificuldadeInicial(q), dm.t) * 0.7;
+        } else if (pa && pa.total >= 2) s += (1 - pa.acertos / pa.total) * 0.8;
         return { q: q, s: s };
       });
       pontuadas.sort(function (a, b) { return b.s - a.s; });
@@ -186,13 +192,21 @@
   }
 
   /* Revisão espaçada: erro volta para a caixa 0 (amanhã); acerto sobe uma caixa. Acerto fora da revisão
-     não cria cartão: só entra na revisão o que o aluno já errou. */
-  function agendar(revisao, id, certo, dataIso) {
+     não cria cartão: só entra na revisão o que o aluno já errou. O intervalo da caixa se ajusta (Aprendizado.intervaloRevisao):
+     alonga ao acertar com certeza; encurta ao acertar no chute, se a questão já foi errada de novo (falhas, que cada acerto
+     perdoa um) ou se o assunto está fraco. extra: { conf 0|1|2, dominio 0 a 1 do assunto }. */
+  function agendar(revisao, id, certo, dataIso, extra) {
     var c = revisao[id];
-    if (!certo) { revisao[id] = { caixa: 0, proxima: somarDias(dataIso, INTERVALOS[0]) }; return revisao[id]; }
+    if (!certo) {
+      revisao[id] = { caixa: 0, proxima: somarDias(dataIso, INTERVALOS[0]) };
+      if (c) revisao[id].falhas = Math.min(9, (c.falhas || 0) + 1);
+      return revisao[id];
+    }
     if (!c) return null;
     var caixa = Math.min(c.caixa + 1, INTERVALOS.length - 1);
-    revisao[id] = { caixa: caixa, proxima: somarDias(dataIso, INTERVALOS[caixa]) };
+    var dias = A.intervaloRevisao(INTERVALOS[caixa], { conf: extra && extra.conf, falhas: c.falhas, dominio: extra && extra.dominio });
+    revisao[id] = { caixa: caixa, proxima: somarDias(dataIso, dias) };
+    if (c.falhas > 1) revisao[id].falhas = c.falhas - 1;
     return revisao[id];
   }
   function pendentes(revisao, dataIso) {
@@ -258,8 +272,18 @@
     if (!Object.keys(respostas).length) return { tipo: 'diagnostico', titulo: 'Diagnóstico inicial', porque: 'Ainda não há respostas suas. Comece medindo seu ponto de partida em cada assunto.' };
     if (pend.length >= 5) return { tipo: 'revisao', titulo: 'Revisão do dia (' + pend.length + ')', porque: 'São questões que você errou e que estão no ponto de serem esquecidas.' };
     var perigosos = Object.keys(respostas).filter(function (id) { var u = ultima(respostas, id); return u && !u.certo && u.conf === 2 && banco.questao(id); });
-    if (perigosos.length >= 3) return { tipo: 'ids', titulo: 'Erros com certeza (' + perigosos.length + ')', porque: 'Você errou estas questões tendo certeza: é sinal de um conceito aprendido errado.', cfg: { ids: perigosos.slice(0, 20), modo: 'estudo' } };
-    var fracos = pontosFracos(banco, respostas, 1);
+    if (perigosos.length >= 3) return { tipo: 'ids', titulo: 'Refazer o que você errou tendo certeza (' + perigosos.length + ')', porque: 'Você errou estas questões tendo certeza: é sinal de um conceito aprendido errado.', cfg: { ids: perigosos.slice(0, 20), modo: 'estudo' } };
+    // Erros repetidos no mesmo assunto: antes de treinar mais, vale rever a aula dele.
+    var aulas = banco.aulas || [], concluidas = estado.aulas || {};
+    var precisa = A.padroesDeErro(banco, respostas).assuntos.map(function (a) {
+      var aula = aulas.filter(function (x) { return x.materia === a.materia && x.assunto === a.assunto && !concluidas[x.id]; })[0];
+      return aula && { a: a, aula: aula };
+    }).filter(Boolean)[0];
+    if (precisa) return { tipo: 'aula', titulo: 'Rever a aula de ' + precisa.a.assunto, porque: 'Você errou ' + precisa.a.erros + ' de ' + precisa.a.total + ' questões de ' + precisa.a.assunto + '. A aula explica a base do assunto antes de treinar de novo.', aula: precisa.aula.id };
+    // O mais fraco pelo domínio estimado (Elo); sem estimativa, pelo percentual de acerto.
+    var dom = estado.dominio || {};
+    var nivel = function (a) { var d = dom[a.materia + '|' + a.assunto]; return d ? A.nivelDominio(d).p : a.acertos / a.total; };
+    var fracos = pontosFracos(banco, respostas, 50).sort(function (a, b) { return nivel(a) - nivel(b); }).slice(0, 1);
     if (fracos.length) {
       var f = fracos[0];
       return { tipo: 'treino', titulo: 'Treinar ' + f.assunto, porque: 'Seu acerto neste assunto está em ' + Math.round(f.acertos / f.total * 100) + '% (' + f.acertos + ' de ' + f.total + ').', cfg: { materias: [f.materia], assuntos: [f.assunto], quantidade: 10, modo: 'estudo' } };

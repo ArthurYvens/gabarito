@@ -39,12 +39,51 @@
     return '<section class="card"><div class="card-head"><div><h2>Por matéria e assunto</h2><p class="small">Conta a última resposta de cada questão. Toque numa matéria para ver os assuntos.</p></div></div>' + linhas + '</section>';
   }
 
+  // ---------- Domínio por assunto (o app aprende com cada resposta; ver Aprendizado.elo) ----------
+  var COR_NIVEL = { 'começando': 'err', aprendendo: 'warn', bom: 'ok', domina: 'ok' };
+  function dominioCard(dom) {
+    var cabeca = '<div class="card-head"><div><h2>Seu domínio por assunto</h2><p class="small">O app acompanha cada resposta sua e estima o quanto você domina cada assunto. Com poucas respostas a estimativa é cautelosa e costuma ficar em "começando".</p></div></div>';
+    var lista = Object.keys(dom).map(function (k) {
+      var i = k.indexOf('|'), m = Banco.materia(k.slice(0, i));
+      return m && { materia: m.nome, assunto: k.slice(i + 1), n: dom[k].n, nivel: Aprendizado.nivelDominio(dom[k]) };
+    }).filter(Boolean).sort(function (a, b) { return a.nivel.p - b.nivel.p || a.assunto.localeCompare(b.assunto); });
+    if (!lista.length) return '<section class="card" id="dsp-dominio">' + cabeca + '<p class="muted">Responda algumas questões e o domínio de cada assunto aparece aqui.</p></section>';
+    return '<section class="card" id="dsp-dominio">' + cabeca + '<div class="stack">' + lista.slice(0, 12).map(function (a) {
+      return '<div class="dsp-ass"><div class="dsp-ass-top"><span class="dsp-ass-nome">' + esc(a.assunto) + ' <span class="small muted">' + esc(a.materia) + '</span></span><b>' + a.nivel.rotulo + '</b></div>' +
+        '<div class="bar ' + COR_NIVEL[a.nivel.rotulo] + '" aria-hidden="true"><i style="width:' + a.nivel.pct + '%"></i></div>' +
+        '<div class="dsp-ass-sub"><span class="small muted">' + resumo(a.n, ['resposta', 'respostas']) + (a.n < 5 ? ' · faltam ' + (5 - a.n) + ' para o app estimar com mais segurança' : '') + '</span></div></div>';
+    }).join('') + '</div>' + (lista.length > 12 ? '<p class="small muted mt">Mostrando os 12 mais fracos, de ' + lista.length + ' assuntos acompanhados.</p>' : '') + '</section>';
+  }
+
+  // ---------- Padrões nos erros ----------
+  function padroesCard(p) {
+    var itens = [];
+    p.assuntos.slice(0, 3).forEach(function (a) {
+      var aula = Banco.aulas.filter(function (x) { return x.materia === a.materia && x.assunto === a.assunto; })[0];
+      itens.push('<div class="callout callout-marker">' + ico('alerta') + '<div class="grow">Você errou <b>' + a.erros + ' de ' + resumo(a.total, ['questão', 'questões']) + '</b> de ' + esc(a.assunto) + '. ' +
+        (aula ? 'A aula explica a base do assunto.' : 'Treine este assunto em questões de dificuldade menor.') + '<div class="mt">' +
+        (aula ? '<a class="btn btn-secondary btn-sm" href="#/aula/' + esc(aula.id) + '">Estudar a aula</a>'
+          : '<button class="btn btn-secondary btn-sm" data-act="treinar" data-mat="' + esc(a.materia) + '" data-assunto="' + esc(a.assunto) + '">Treinar este assunto</button>') + '</div></div></div>');
+    });
+    p.pegadinhas.slice(0, 3).forEach(function (g) {
+      var q = Banco.questao(g.id), nota = q && q.explicacao && q.explicacao.alternativas && q.explicacao.alternativas[g.r];
+      if (!q) return;
+      itens.push('<div class="callout callout-marker">' + ico('alerta') + '<div class="grow">Você costuma cair nesta pegadinha: marcou a alternativa <b>' + 'ABCDE'[g.r] + '</b> ' + g.vezes + ' vezes em "' + esc(String(q.enunciado).slice(0, 80)) + '…".' +
+        (nota ? '<br><span class="small">' + 'ABCDE'[g.r] + ': ' + esc(nota) + '</span>' : '') + '<div class="mt"><a class="btn btn-secondary btn-sm" href="#/questao/' + encodeURIComponent(q.id) + '">Ver a questão</a></div></div></div>');
+    });
+    p.tipos.forEach(function (t) {
+      itens.push('<div class="callout callout-marker">' + ico('ideia') + '<div class="grow">Em ' + t.vezes + ' erros, você marcou ' + esc(t.texto) + '. Releia as alternativas sem esse atalho.</div></div>');
+    });
+    if (!itens.length) return '';
+    return '<section class="card" id="dsp-padroes"><div class="card-head"><div><h2>Padrões nos seus erros</h2><p class="small">Erro que se repete pede outra estratégia, não só mais questões.</p></div></div><div class="stack">' + itens.join('') + '</div></section>';
+  }
+
   // ---------- Confiança x acerto ----------
   var QUADRANTES = [
-    { k: 'dominio', ico: 'check', cls: 'ok', nome: 'Domínio', quando: 'Certa, com certeza', dica: 'Você sabe. Deixe a revisão espaçada cuidar de manter.' },
-    { k: 'incerto', ico: 'ideia', cls: 'warn', nome: 'Acerto incerto', quando: 'Certa, sem ter certeza', dica: 'Acertou, mas na dúvida. Releia a explicação para virar domínio.' },
-    { k: 'perigoso', ico: 'alerta', cls: 'err', nome: 'Erro perigoso', quando: 'Errada, com certeza', dica: 'Você tinha certeza e errou. Revise a teoria: há uma ideia errada fixada.' },
-    { k: 'lacuna', ico: 'x', cls: 'warn', nome: 'Lacuna', quando: 'Errada, sem certeza', dica: 'Você sabia que não sabia. Estude o assunto e treine de novo.' }
+    { k: 'dominio', ico: 'check', cls: 'ok', nome: 'Acertou com certeza', quando: 'Resposta certa, e você tinha certeza', dica: 'Você sabe. Deixe a revisão espaçada cuidar de manter.' },
+    { k: 'incerto', ico: 'ideia', cls: 'warn', nome: 'Acertou na dúvida', quando: 'Resposta certa, mas sem certeza', dica: 'Acertou, mas na dúvida. Releia a explicação para virar domínio.' },
+    { k: 'perigoso', ico: 'alerta', cls: 'err', nome: 'Errou com certeza', quando: 'Resposta errada, e você tinha certeza', dica: 'Você tinha certeza e errou. Revise a teoria: há uma ideia errada fixada.' },
+    { k: 'lacuna', ico: 'x', cls: 'warn', nome: 'Errou sem certeza', quando: 'Resposta errada, e você sabia que não sabia', dica: 'Você sabia que não sabia. Estude o assunto e treine de novo.' }
   ];
 
   function confiancaCard(c) {
@@ -56,12 +95,12 @@
     }
     var cels = QUADRANTES.map(function (d) {
       var x = c[d.k];
-      return '<div class="dsp-q dsp-q-' + d.cls + '"><div class="dsp-q-top">' + ico(d.ico) + '<span class="dsp-q-nome">' + d.nome + '</span></div>' +
+      return '<div class="dsp-q dsp-q-' + d.cls + '" role="group" aria-label="' + d.nome + ': ' + resumo(x.n, ['questão', 'questões']) + (x.pct == null ? '' : ', ' + x.pct + '%') + '"><div class="dsp-q-top">' + ico(d.ico) + '<span class="dsp-q-nome">' + d.nome + '</span></div>' +
         '<div class="dsp-q-num"><b>' + x.n + '</b><span>' + fmtPct(x.pct) + '</span></div>' +
         '<div class="small muted">' + d.quando + '</div><p class="small">' + d.dica + '</p></div>';
     }).join('');
     var nota = c.semConf ? '<p class="small muted mt">' + resumo(c.semConf, ['resposta antiga ficou', 'respostas antigas ficaram']) + ' de fora por não ter confiança registrada.</p>' : '';
-    var alerta = c.perigoso.n ? '<div class="callout mt">' + ico('alerta') + '<div>Atenção ao <b>erro perigoso</b>: ' + resumo(c.perigoso.n, ['questão em que', 'questões em que']) + ' você tinha certeza e errou. Esses erros se repetem na prova se ninguém os corrige.</div></div>' : '';
+    var alerta = c.perigoso.n ? '<div class="callout mt">' + ico('alerta') + '<div>Atenção aos <b>erros com certeza</b>: ' + resumo(c.perigoso.n, ['questão em que', 'questões em que']) + ' você tinha certeza e errou. Esses erros se repetem na prova se ninguém os corrige.</div></div>' : '';
     return '<section class="card">' + cabeca + '<div class="dsp-quad">' + cels + '</div>' + alerta + nota + '</section>';
   }
 
@@ -140,7 +179,7 @@
       ? '<div class="callout mt">' + ico('info') + '<div>Parte das suas respostas é de antes de o app guardar tempo e confiança. Elas entram na conta de acerto, mas não nos quadros de tempo e confiança.</div></div>' : '';
     return {
       titulo: 'Desempenho',
-      html: cab + gerais + aviso + '<div class="grid g-main mt"><div class="stack">' + materiasCard(a) + evolucaoCard(Desempenho.evolucao(respostas, 8)) + '</div><div class="stack">' + confiancaCard(c) + tempoCard(t) + '</div></div>'
+      html: cab + gerais + aviso + '<div class="grid g-main mt"><div class="stack">' + dominioCard(Store.estado.dominio) + materiasCard(a) + evolucaoCard(Desempenho.evolucao(respostas, 8)) + '</div><div class="stack">' + padroesCard(Aprendizado.padroesDeErro(Banco, respostas)) + confiancaCard(c) + tempoCard(t) + '</div></div>'
     };
   }, 'desempenho');
 })();

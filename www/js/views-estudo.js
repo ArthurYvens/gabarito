@@ -79,7 +79,7 @@
       var ok = o.resposta === q.resposta, branco = o.resposta === undefined || o.resposta === null;
       fim = '<div class="verdict ' + (ok ? 'ok' : 'err') + '" role="status">' + ico(ok ? 'check' : 'x') + '<div>' + (ok ? 'Resposta certa' : branco ? 'Não respondida' : 'Resposta errada') +
         ' <span>· Gabarito: ' + nomeResposta(q, q.resposta) + (ok || branco ? '' : ' · Você marcou ' + nomeResposta(q, o.resposta)) + '</span></div></div>' +
-        retornoConfianca(ok, o.conf) + (ok ? '' : motivoHtml(q)) + explicacao(q, o);
+        retornoConfianca(ok, o.conf) + (ok || branco ? '' : pegadinhaHtml(q, o.resposta)) + (ok ? '' : motivoHtml(q)) + explicacao(q, o);
     } else if (!o.travada) fim = dicasHtml(q, o.dicas || 0) + ferramentasHtml(q, o);
     return '<article class="q" aria-label="Questão">' + meta + corpo + alts + fim + '</article>';
   }
@@ -109,6 +109,17 @@
       '<textarea class="input" id="nota-' + esc(q.id) + '" data-nota="' + esc(q.id) + '" rows="3" maxlength="5000" placeholder="Seu resumo, o macete que funcionou, onde você errou...">' + esc(nota) + '</textarea></details>' +
       '<button class="btn btn-ghost btn-sm mt" data-act="cartao-da-questao" data-q="' + esc(q.id) + '">' + ico('cartao') + ' Criar cartão de memorização</button>';
     return h + '</section>';
+  }
+
+  // Marcou de novo a mesma alternativa errada desta questão: mostra o comentário dela, que é onde a pegadinha está explicada.
+  function pegadinhaHtml(q, r) {
+    var vezes = q.tipo === 'multipla' && Number.isInteger(r) ? Aprendizado.vezesPegadinha(S().respostas[q.id], r) : 0;
+    if (vezes < 2) return '';
+    var nota = q.explicacao && q.explicacao.alternativas && q.explicacao.alternativas[r];
+    var aula = Banco.aulas.filter(function (a) { return a.materia === q.materia && a.assunto === q.assunto; })[0];
+    return '<div class="callout callout-marker mt" data-pegadinha>' + ico('alerta') + '<div><b>Você costuma cair nesta pegadinha.</b> Esta é a ' + vezes + 'ª vez que você marca a alternativa ' + LETRAS[r] + ' nesta questão.' +
+      (nota ? '<br>Veja por que ela está errada: ' + esc(nota) : '<br>Releia as alternativas com calma antes de marcar.') +
+      (aula ? '<div class="mt"><a class="btn btn-secondary btn-sm" href="#/aula/' + esc(aula.id) + '">' + ico('aulas') + ' Rever a aula: ' + esc(aula.titulo) + '</a></div>' : '') + '</div></div>';
   }
 
   // "Por que errei?": classificar o erro mostra ao aluno o tipo de falha em que ele mais cai.
@@ -148,7 +159,7 @@
   App.criarSimulado = function (cfg, titulo) {
     var p = S().perfil;
     var ids = cfg.ids ? cfg.ids.filter(function (id) { return Banco.questao(id); })
-      : Motor.montarSimulado(Banco, Object.assign({ objetivo: p.objetivo, seed: Date.now() }, cfg), S().respostas);
+      : Motor.montarSimulado(Banco, Object.assign({ objetivo: p.objetivo, seed: Date.now() }, cfg), S().respostas, S());
     if (!ids.length) { UI.toast('Nenhuma questão encontrada com esses filtros.'); return null; }
     var sim = {
       id: novoId(), titulo: titulo || 'Simulado', criadoEm: Date.now(), modo: cfg.modo || 'estudo', origem: cfg.origem || 'simulado',
@@ -620,7 +631,7 @@
     return {
       titulo: 'Questão', manterScroll: true,
       html: '<div class="page-head"><a class="btn btn-ghost" href="#/questoes">' + ico('voltar') + ' Banco de questões</a>' +
-        (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? '✓' : '✗'; }).join(' ') + '</span>' : '') + '</div>' +
+        (hist.length ? '<span class="muted small">Você já respondeu ' + UI.plural(hist.length, 'vez', 'vezes') + ': ' + hist.slice(-5).map(function (h) { return h.certo ? 'acertou' : 'errou'; }).join(', ') + '</span>' : '') + '</div>' +
         '<div class="foco">' + questao(q, { resposta: QV.resposta, confirmada: QV.confirmada, riscadas: QV.riscadas[q.id], profunda: profunda(), expandida: QV.expandida, travada: QV.confirmada, conf: QV.conf, dicas: QV.dicas }) +
         '<div class="run-nav">' + (pos > 0 ? '<a class="btn btn-ghost" href="#/questao/' + encodeURIComponent(lista[pos - 1]) + '">' + ico('esq') + ' Anterior</a>' : '<span></span>') +
         (QV.confirmada ? '<button class="btn btn-ghost" data-act="qv-de-novo">' + ico('revisao') + ' Responder de novo</button>' : '<button class="btn btn-primary" data-act="qv-responder">Responder</button>') +

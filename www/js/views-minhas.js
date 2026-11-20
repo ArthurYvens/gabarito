@@ -292,7 +292,7 @@
       html: '<div class="page-head"><div><h1>Confira antes de salvar</h1><p>' + (M.origem === 'contexto' ? UI.plural(r.length, 'pergunta criada', 'perguntas criadas') + ' a partir do seu texto. Confira cada uma: corrija o que estiver errado, veja se a resposta marcada é a certa e desmarque o que não quiser guardar.' : UI.plural(r.length, 'questão reconhecida', 'questões reconhecidas') + '. Corrija o que o app separou errado, marque a resposta certa e desmarque o que não quiser guardar.') + '</p></div>' +
         '<div class="row">' + (M.origem === 'contexto' ? '<a class="btn btn-ghost" href="#/contexto">' + ico('voltar') + ' Voltar</a>' : '') + '<button class="btn btn-ghost" data-act="rv-cancelar">' + ico('x') + ' Descartar</button></div></div>' +
         '<section class="card"><h2>Sobre este material</h2><div class="grid g2 mt">' +
-        '<label class="field"><span>Nome do banco</span><input class="input" id="rv-nome" maxlength="80" value="' + esc(M.nome) + '"></label>' +
+        '<label class="field"><span>Nome deste conjunto de questões</span><input class="input" id="rv-nome" maxlength="80" value="' + esc(M.nome) + '"></label>' +
         (porLinha ? '<div class="field"><span class="label">Matéria</span><small>Cada questão usa a matéria da sua linha na planilha. Matérias que não existem no app são criadas como suas.</small><input type="hidden" id="rv-materia" value="' + esc(meta.materia) + '"></div>'
           : '<label class="field"><span>Matéria</span><select class="input" id="rv-materia">' + mats + '<option value="__nova"' + (meta.materia === '__nova' ? ' selected' : '') + '>+ Outra matéria (criar)</option></select></label>') +
         '<label class="field"><span>Nova matéria <span class="muted small">(só se escolheu "Outra")</span></span><input class="input" id="rv-nova" maxlength="60" placeholder="Ex.: Contabilidade, Atualidades, Legislação do órgão" value="' + esc(meta.novaMateria) + '"></label>' +
@@ -304,7 +304,7 @@
         '</div></section>' +
         '<div class="stack mt">' + r.map(cartao).join('') + '</div>' +
         '<div class="rv-barra"><span>' + UI.plural(r.filter(function (q) { return q.incluir; }).length, 'questão marcada', 'questões marcadas') + (semResp ? ' · <b style="color:var(--warn)">' + semResp + ' sem resposta</b>' : '') + '</span>' +
-        '<div class="row">' + (M.origem === 'manual' ? '<button class="btn btn-secondary" data-act="rv-mais">+ Outra questão</button>' : '') + '<button class="btn btn-primary" data-act="rv-salvar">' + ico('check') + ' Salvar no meu banco</button></div></div>',
+        '<div class="row">' + (M.origem === 'manual' ? '<button class="btn btn-secondary" data-act="rv-mais">+ Outra questão</button>' : '') + '<button class="btn btn-primary" data-act="rv-salvar">' + ico('check') + ' Salvar em Minhas questões</button></div></div>',
       montar: function () {
         // Cada digitação vai para o rascunho guardado (recarregar a página não perde a revisão).
         var td;
@@ -334,9 +334,10 @@
     if (ult) { ult.scrollIntoView({ block: 'center' }); ult.focus(); }
   });
   App.acao('rv-cancelar', function () {
-    UI.confirmar('Descartar a revisão?', 'As questões reconhecidas não serão salvas.', 'Descartar', { perigo: true }).then(function (ok) {
+    UI.confirmar('Descartar a revisão?', 'As questões desta tela não serão salvas.', 'Descartar', { perigo: true }).then(function (ok) {
       if (!ok) return;
       var volta = M.origem === 'contexto' ? '#/contexto' : '#/minhas-questoes';
+      Aprende.registrar(Aprende.exemplosDe(M.rascunhos, true)); // perguntas criadas pelo app e descartadas: exemplo ruim
       esquecer(); App.ir(volta, true); App.render();
     });
   });
@@ -402,12 +403,14 @@
       return out;
     });
     salvando = true;
+    var exemplos = Aprende.exemplosDe(M.rascunhos); // aprovada sem mudança = bom (1), editada = médio (0.5), desmarcada = ruim (0)
     App.adicionarBanco({ nome: M.nome, origem: M.origem || 'manual', materias: criadas, questoes: questoes }).then(function (res) {
       salvando = false;
       if (!res.banco) { UI.confirmar('Não foi possível salvar', res.recusadas.slice(0, 4).join(' · '), 'Entendi', { cancelar: 'Fechar' }); return; }
+      Aprende.registrar(exemplos);
       esquecer();
       App.ir('#/minhas-questoes', true);
-      UI.confirmar('Questões salvas', UI.plural(res.banco.questoes.length, 'questão foi guardada', 'questões foram guardadas') + ' no seu banco.' + (res.recusadas.length ? ' ' + res.recusadas.length + ' recusada(s).' : '') + ' Quer treinar com elas agora?', 'Praticar agora', { cancelar: 'Depois' })
+      UI.confirmar('Questões salvas', UI.plural(res.banco.questoes.length, 'questão foi guardada', 'questões foram guardadas') + ' em Minhas questões.' + (res.recusadas.length ? ' ' + res.recusadas.length + ' recusada(s).' : '') + ' Quer treinar com elas agora?', 'Praticar agora', { cancelar: 'Depois' })
         .then(function (ok) { if (ok) praticar(res.banco); else App.render(); });
     }, function () { salvando = false; UI.toast('Não houve espaço para salvar neste aparelho.'); });
   });

@@ -63,6 +63,12 @@ Motor.agendar(rev, 'x', true, '2026-11-17');
 assert.deepStrictEqual(rev.x, { caixa: 1, proxima: '2026-11-20' });
 assert.deepStrictEqual(Motor.pendentes(rev, '2026-11-19'), []);
 assert.deepStrictEqual(Motor.pendentes(rev, '2026-11-20'), ['x']);
+// o intervalo se ajusta: certeza alonga, chute e assunto fraco encurtam, erro repetido guarda a falha (detalhes em aprendizado.test.js)
+const rev2 = { y: { caixa: 1, proxima: '2026-11-17' }, z: { caixa: 1, proxima: '2026-11-17' }, w: { caixa: 1, proxima: '2026-11-17' } };
+assert.strictEqual(Motor.agendar(rev2, 'y', true, '2026-11-17', { conf: 2 }).proxima, '2026-11-28');
+assert.strictEqual(Motor.agendar(rev2, 'z', true, '2026-11-17', { conf: 0 }).proxima, '2026-11-22');
+assert.strictEqual(Motor.agendar(rev2, 'w', true, '2026-11-17', { dominio: 0.2 }).proxima, '2026-11-22');
+assert.strictEqual(Motor.agendar(rev2, 'w', false, '2026-11-17').falhas, 1);
 assert.strictEqual(Motor.somarDias('2026-12-31', 1), '2027-01-01');
 assert.strictEqual(Motor.somarDias('2026-03-01', -1), '2026-02-28');
 

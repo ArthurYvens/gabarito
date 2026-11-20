@@ -65,7 +65,7 @@
     // Outra aba mudou esta chave: fn(chave).
     aoMudar: function (fn) { ouvintes.push(fn); },
     // Apaga tudo o que o app guardou no IndexedDB (livros, documentos, bancos). Sem IndexedDB, não há o que apagar.
-    limparTudo: function () { return transacao('readwrite', function (s) { return s.clear(); }).catch(function () { /* sem IndexedDB */ }); },
+    limparTudo: function () { return transacao('readwrite', function (s) { return s.clear(); }).then(function () { avisar('*'); }, function () { /* sem IndexedDB */ }); }, // '*': todas as chaves mudaram, as outras abas devem reler
     remover: function (chave) {
       return transacao('readwrite', function (s) { return s.delete(chave); }).then(function () { avisar(chave); }, function () { /* nada a remover */ });
     },

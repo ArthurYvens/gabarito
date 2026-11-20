@@ -115,7 +115,7 @@ A Alemanha unificada em 1871 desenvolveu indústrias químicas e siderúrgicas d
   ok(await page.locator('[data-doc]:checked').count() === 1, 'documento já marcado');
 
   passo = 'contexto: enviar arquivo e gerar questões';
-  await page.setInputFiles('#cx-arquivos', [txt, mobi]);
+  await page.setInputFiles('#cx-arquivos', [f('Revolução Industrial 2.txt', TXT), mobi]); // nome diferente: o mesmo arquivo duas vezes é recusado
   await page.waitForFunction(() => document.querySelectorAll('[data-doc]').length === 2, null, { timeout: 15000 });
   ok(/MOBI/.test(await page.textContent('[role="alert"]')), 'MOBI recusado no Contexto');
   ok(/PDF ou EPUB/.test(await page.textContent('[role="alert"]')), 'o aviso diz o que fazer em vez de só citar um programa');

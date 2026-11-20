@@ -3,14 +3,17 @@
   'use strict';
   var CHAVE = 'gabarito.v1';
   var MAX_HIST = 12; // respostas guardadas por questão
+  var MAX_DOMINIO = 3000, MAX_DIFICULDADES = 8000; // assuntos e questões acompanhados pelo Elo
 
   function vazio() {
     return {
       versao: 1,
-      perfil: null, // { nome, objetivo, materias[], metaDiaria, explicacaoProfunda, tema, penalidadeCE, dataProva }
+      perfil: null, // { nome, objetivo, materias[], metaDiaria, explicacaoProfunda, tema, penalidadeCE, dataProva, backupAprendizado }
       respostas: Object.create(null), // id -> [{ t, certo, r }]
       simulados: [],
-      revisao: Object.create(null), // id -> { caixa, proxima }
+      revisao: Object.create(null), // id -> { caixa, proxima, falhas? }
+      dominio: Object.create(null), // 'materia|assunto' -> { t: habilidade (Elo), n: respostas, ac: acertos }
+      dificuldades: Object.create(null), // id da questão -> { b: dificuldade para esta pessoa (Elo), n: respostas }
       aulas: Object.create(null), // aulaId -> data de conclusão
       redacoes: [],
       atividade: Object.create(null), // 'AAAA-MM-DD' -> questões respondidas
@@ -51,6 +54,8 @@
       explicacaoProfunda: p.explicacaoProfunda !== false,
       tema: ['auto', 'light', 'dark'].indexOf(p.tema) >= 0 ? p.tema : 'auto',
       penalidadeCE: p.penalidadeCE !== false,
+      backupAprendizado: p.backupAprendizado === true, // opt-in: o backup normal não leva o que o app aprendeu
+      aprendizadoOk: p.aprendizadoOk === true,
       dataProva: iso(p.dataProva)
     } : null;
     if (out.perfil && !out.perfil.materias.length && root.Banco) out.perfil.materias = Banco.materias.map(function (m) { return m.id; });
@@ -83,7 +88,25 @@
       };
     }).filter(function (s) { return s.questoes.length; });
     out.revisao = mapa(e.revisao, function (c) {
-      return c && iso(c.proxima) ? { caixa: Math.round(num(c.caixa, 0, 5, 0)), proxima: c.proxima } : undefined;
+      if (!c || !iso(c.proxima)) return undefined;
+      var r = { caixa: Math.round(num(c.caixa, 0, 5, 0)), proxima: c.proxima }, f = Math.round(num(c.falhas, 0, 9, 0));
+      if (f) r.falhas = f;
+      return r;
+    });
+    // Aprendizado da pessoa (Elo): números limitados; chaves que não parecem 'matéria|assunto' ou id de questão ficam de fora.
+    // Só entram as chaves válidas, e o limite conta só as válidas (chave lixo não gasta a cota).
+    var limitado = function (o, valida, max) {
+      var r = Object.create(null);
+      if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).filter(valida).slice(0, max).forEach(function (k) { r[k] = o[k]; });
+      return r;
+    };
+    out.dominio = mapa(limitado(e.dominio, function (k) { return k.length <= 170 && /^[a-z0-9-]{1,60}\|/.test(k); }, MAX_DOMINIO), function (d) {
+      if (!d || typeof d !== 'object') return undefined;
+      var n = Math.round(num(d.n, 0, 1e6, 0));
+      return { t: num(d.t, -5, 5, 0), n: n, ac: Math.round(num(d.ac, 0, n, 0)) };
+    });
+    out.dificuldades = mapa(limitado(e.dificuldades, function (k) { return !!id(k); }, MAX_DIFICULDADES), function (d) {
+      return d && typeof d === 'object' ? { b: num(d.b, -4, 4, 0), n: Math.round(num(d.n, 0, 1e6, 0)) } : undefined;
     });
     out.aulas = mapa(e.aulas, function (v) { return isFinite(Number(v)) ? Number(v) : undefined; });
     out.atividade = mapa(e.atividade, function (v) { return isFinite(Number(v)) && Number(v) > 0 ? Math.round(Number(v)) : undefined; });
@@ -171,10 +194,15 @@
       if (h.length > MAX_HIST) h.splice(0, h.length - MAX_HIST);
       var dia = Motor.hoje();
       estado.atividade[dia] = (estado.atividade[dia] || 0) + 1;
+      // Elo: o domínio do assunto e a dificuldade da questão para esta pessoa se ajustam a cada resposta.
+      var chave = q.materia + '|' + q.assunto, passo = Aprendizado.elo(estado.dominio[chave], estado.dificuldades[q.id], q, certo, entrada);
+      estado.dominio[chave] = passo.dom; estado.dificuldades[q.id] = passo.dif;
       // Erro sempre agenda. Acerto promove o cartão na revisão ou quando ele já vence hoje
       // (acertar uma questão pendente em qualquer lugar conta como revisão feita).
       var cartao = estado.revisao[q.id];
-      if (!certo || origem === 'revisao' || (cartao && cartao.proxima <= dia)) Motor.agendar(estado.revisao, q.id, certo, dia);
+      if (!certo || origem === 'revisao' || (cartao && cartao.proxima <= dia)) {
+        Motor.agendar(estado.revisao, q.id, certo, dia, { conf: entrada.conf, dominio: passo.dom.n >= 3 ? Aprendizado.nivelDominio(passo.dom).p : undefined });
+      }
       Store.salvar();
       return certo;
     }
