@@ -93,6 +93,7 @@ npm test                 conteúdo, motor, importador, extração e gerador
 npm run test:navegador   e2e, segurança, Minhas questões, recursos e Livros/Contexto (servidor na 5321 e Playwright)
 node tests/desktop.js    programa Windows (Electron do projeto)
 node tests/android.js    app Android num emulador ou celular conectado por adb
+node tests/android-livros.js [pdf]  Livros e Criar questões no Android (depois do android.js)
 npm run dist:win         instalador do Windows em dist/
 npm run android:apk      APK de teste do Android
 ```
