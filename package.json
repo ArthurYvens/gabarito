@@ -1,7 +1,7 @@
 {
   "name": "gabarito",
   "productName": "Helma",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Helma, plataforma de simulados: questões comentadas, aulas, redação e revisão espaçada para ENEM, concursos e OAB.",
   "main": "desktop/main.js",
   "private": true,
@@ -12,7 +12,7 @@
     "test:navegador": "node tests/e2e.js http://localhost:5321/ && node tests/seguranca.js http://localhost:5321/ && node tests/minhas.js http://localhost:5321/ && node tests/recursos.js http://localhost:5321/ && node tests/livros.js http://localhost:5321/ && node tests/livros-abas.js http://localhost:5321/ && node tests/aprendizado.js http://localhost:5321/",
     "dist:win": "npm run build:web && electron-builder --win nsis",
     "android:sync": "npm run build:web && cap sync android",
-    "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug"
+    "android:apk": "npm run android:sync && cd android && .\\gradlew.bat assembleDebug"
   },
   "build": {
     "appId": "br.com.gabarito.app",

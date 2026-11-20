@@ -63,6 +63,11 @@ A Alemanha unificada em 1871 desenvolveu indústrias químicas e siderúrgicas d
   const avisos = await page.textContent('[role="alert"]');
   ok(/converta para EPUB/.test(avisos) && /programa\.exe/.test(avisos), 'MOBI e formato desconhecido recusados com aviso: ' + avisos);
   ok(/restam .* no aparelho/.test(await page.textContent('#lv-corpo')), 'mostra o espaço restante');
+  // O livro guardado é uma cópia dos bytes (não o File, que no Android perde a permissão de leitura) e não fica vazio
+  // depois que o pdf.js confere o PDF (ele transfere o ArrayBuffer para o worker).
+  const copias = await page.evaluate(() => Armazem.ler('livros').then((l) => Promise.all(l.map((x) =>
+    Armazem.ler('livro:' + x.id).then((b) => !(b instanceof File) && b.size === x.tamanho && b.size > 0)))));
+  ok(copias.length === 3 && copias.every(Boolean), 'cópias completas dos livros guardadas (PDF inclusive): ' + copias);
   await page.screenshot({ path: path.join(OUT, 'l1-estante.png'), fullPage: true });
   await page.fill('#lv-busca', 'apostila');
   ok(await page.locator('#lv-lista .list-item').count() === 1, 'busca por título');

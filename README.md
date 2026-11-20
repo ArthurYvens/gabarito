@@ -8,8 +8,8 @@ partir do mesmo código em `www/`. Não tem servidor, conta, anúncio nem IA: tu
 
 ## Como usar
 
-- **Windows:** `dist/Helma-Instalador-1.0.0.exe`.
-- **Android:** `dist/Helma-Android-1.0.0.apk` (instalar com "fontes desconhecidas" permitidas).
+- **Windows:** `dist/Helma-Instalador-1.1.0.exe`.
+- **Android:** `dist/Helma-Android-1.1.0.apk` (instalar com "fontes desconhecidas" permitidas).
 - **Site:** https://arthuryvens.github.io/gabarito/ (no celular, use "Adicionar à tela inicial" para instalar e usar sem internet).
 - **Navegador, localmente:** sirva a pasta: `python -m http.server 5321 -d www`.
 

@@ -79,9 +79,13 @@
           if (L.indice.some(function (l) { return l.titulo === titulo && l.tamanho === f.size && l.formato === t; })) { L.avisos.push(f.name + ': este livro já está na sua estante, então não foi adicionado de novo.'); return; }
           status('Conferindo ' + f.name + '...');
           var id = 'l-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-          return f.arrayBuffer().then(function (buf) { return conferir(t, f, buf); }).then(function () {
+          var bytes;
+          // A cópia vem antes de conferir: o pdf.js transfere o ArrayBuffer para o worker e o deixa vazio.
+          return f.arrayBuffer().then(function (buf) { bytes = buf.slice(0); return conferir(t, f, buf); }).then(function () {
             if (!L.indice.length) Armazem.persistir(); // pede ao navegador para não apagar a estante quando faltar espaço
-            return Armazem.gravar('livro:' + id, f.slice(0, f.size, f.type), true);
+            // Guarda uma cópia dos bytes, não o File: no Android o File aponta para o arquivo escolhido, cuja permissão de
+            // leitura expira, e o livro deixaria de abrir ("NotReadableError").
+            return Armazem.gravar('livro:' + id, new Blob([bytes], { type: f.type }), true);
           }).then(function () {
             return mudar(function (l) { return l.concat([{ id: id, titulo: titulo, formato: t, tamanho: f.size, criadoEm: Date.now(), abertoEm: 0, pos: { pagina: 1, secao: 0, y: 0 } }]); })
               .catch(function (e) { return Armazem.remover('livro:' + id).then(function () { throw e; }); });

@@ -469,7 +469,7 @@ dialog::backdrop { background: rgba(10, 13, 20, .55); backdrop-filter: blur(2px)
   .plan { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (max-width: 880px) {
-  .app { grid-template-columns: 1fr; }
+  .app { grid-template-columns: 1fr; align-content: start; } /* página curta: a barra não estica para preencher a tela */
   .side { display: none; }
   .side.open { display: flex; position: fixed; inset: 0 auto 0 0; width: min(300px, 86vw); z-index: 40; box-shadow: var(--shadow-lg); }
   .scrim { position: fixed; inset: 0; background: rgba(10, 13, 20, .5); z-index: 39; }
