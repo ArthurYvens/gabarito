@@ -40,25 +40,35 @@ partir do mesmo código em `www/`. Não tem servidor, conta, anúncio nem IA: tu
 
 ## Conteúdo e direitos
 
-- **1.363 questões** no total, todas com explicação, e 28 aulas.
+- **1.206 questões** no total, todas com explicação, e 28 aulas.
 - **Química, com foco em orgânica** (`quimica-*.js`): 7 aulas de química orgânica (funções, nomenclatura, isomeria,
   reações, polímeros, petróleo e combustíveis, bioquímica) e 110 questões inéditas (70 de orgânica e 40 de química
   geral). Cada questão foi resolvida às cegas por um conferente que só via enunciado e alternativas, e as explicações,
   fórmulas, nomes IUPAC e contas foram revisados à parte (PubChem para fórmulas e nomes). Os nomes seguem a IUPAC; nas
   questões só entram compostos em que a regra de 2013 e a tradicional dão o mesmo nome.
+- **30 questões de olimpíada** (`quimica-icho-2024.js`), adaptadas e traduzidas dos problemas preparatórios da 56ª
+  Olimpíada Internacional de Química (Riade, 2024), que têm licença Creative Commons BY-NC-SA 4.0. As adaptações seguem
+  a mesma licença, e cada questão mostra o crédito. As respostas vêm da solução oficial; foram resolvidas às cegas
+  (30 de 30) e revisadas contra o PDF. Nenhuma outra olimpíada pesquisada (OBQ, estaduais, Ibero-americana, IChO de
+  outros anos, olimpíadas nacionais de vários países) tem licença aberta.
+- **Figuras** (`img/q/`, `figuras-oficiais.js`): nas questões oficiais em que a figura ajuda (estrutura química,
+  esquema, gráfico), o app mostra o recorte do caderno impresso, sem alteração, além da descrição do INEP.
 - **Questões oficiais de Ciências da Natureza** do INEP ficam em Química, Física e Biologia, por assunto
-  (`classificacao-oficial.js`), sem mudar o texto oficial: 92 de química, 90 de física e 153 de biologia.
+  (`classificacao-oficial.js`), sem mudar o texto oficial: 67 de química, 94 de física e 122 de biologia.
 - **120 questões inéditas de informática** (`livros-*.js`): Linux, segurança da informação, redes e IPv6, hardware e
   informática para concursos. Os temas seguem os livros de estudo do usuário, mas nenhum texto deles foi usado: as
   questões são escritas do zero e citam só documentação aberta (man pages, RFCs, NIST, CERT.br, Microsoft).
 - **314 questões inéditas** escritas para o app, no estilo das bancas (CEBRASPE, FGV, FCC, Cesgranrio, Vunesp, OAB/FGV e
   ENEM), com explicação, e 21 aulas. Nenhuma copia questão real: as provas dessas bancas não têm licença aberta. As 168
   dos arquivos `bancas-*.js` foram resolvidas por um conferente independente e conferidas com o texto vigente da lei.
-- **204 questões oficiais do ENEM 2023–2025** (INEP/MEC), reproduzidas **sem alteração** sob a licença Creative Commons
+- **115 questões oficiais do ENEM 2023–2025** (INEP/MEC), reproduzidas **sem alteração** sob a licença Creative Commons
   BY-ND 3.0 publicada pelo INEP, com crédito visível em cada questão. Só entram itens sem textos, imagens ou citações de
-  terceiros (a licença do INEP não cobre esse material); as descrições de imagens são as do próprio INEP. Geradas por
+  terceiros (a licença do INEP não cobre esse material); as descrições de imagens são as do próprio INEP. Os cadernos
+  em texto e ledor omitem a linha de fonte dos textos, então cada questão é conferida também no caderno impresso
+  (`tools/caderno.js`): a que cita fonte de terceiros lá, ou que não é encontrada, fica de fora. Geradas por
   `node tools/enem.js <pasta>` a partir dos arquivos oficiais de download.inep.gov.br (versão em texto e gabaritos).
-- **615 questões oficiais a mais do INEP**, com as mesmas regras de licença: ENEM 2018 a 2022 e 2026 (aplicação regular),
+- **517 questões oficiais a mais do INEP**, com as mesmas regras de licença: ENEM 2018 a 2022 e 2026 (aplicação regular),
+  Ciências da Natureza do ENEM 2011, 2012, 2013 (reaplicação), 2015 (reaplicação) e 2016,
   ENEM 2025 (aplicação de Belém), ENEM 2020 a 2024 (reaplicação/PPL) e ENCCEJA 2020 e 2022 (Ensino Fundamental e Médio, regular e reaplicação). Geradas por
   `node tools/inep.js <pasta>` a partir dos cadernos em PDF. Cada item foi resolvido de forma independente e comparado
   com o gabarito oficial; os que perderam dado, fórmula ou fração na extração ficaram de fora e estão listados, com o

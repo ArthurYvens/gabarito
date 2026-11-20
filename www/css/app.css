@@ -280,6 +280,9 @@ button.list-item { width: 100%; border: 0; border-bottom: 1px solid var(--line);
 .q-num { font: 700 13px/1 var(--f-mono); color: var(--ink); background: var(--surface-3); padding: 6px 9px; border-radius: 7px; }
 .q-base { font: 16px/1.75 var(--f-read); padding: 18px 20px; border: 1px solid var(--line); background: var(--surface-2); border-radius: var(--r); margin-bottom: 18px; color: var(--ink); white-space: pre-line; }
 .q-text { font: 17px/1.7 var(--f-read); margin-bottom: 20px; white-space: pre-line; }
+/* Figura da prova: traço preto sobre branco, então fica num cartão branco também no tema escuro. */
+.q-fig { margin: -4px 0 20px; }
+.q-fig img { display: block; max-width: 100%; height: auto; background: #fff; padding: 10px; border: 1px solid var(--line); border-radius: var(--r); }
 .alts { display: flex; flex-direction: column; gap: 8px; list-style: none; margin: 0; padding: 0; }
 .alt {
   width: 100%; display: flex; align-items: flex-start; gap: 14px; padding: 12px 14px; border-radius: var(--r);

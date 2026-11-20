@@ -1,152 +1,9 @@
-/* Mais questões oficiais do INEP: ENEM 2018 a 2026 (regular, reaplicação/PPL e Belém) e ENCCEJA 2020 e 2022.
+/* Mais questões oficiais do INEP: ENEM 2018 a 2026 (regular, reaplicação/PPL e Belém), Ciências da Natureza do
+   ENEM 2011 a 2016 e ENCCEJA 2020 e 2022.
    Fonte: INEP/MEC (download.inep.gov.br). Licença: Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0).
    Reproduzidas sem alteração e com crédito; só itens sem material de terceiros, conferidos um a um.
    Gerado por tools/inep.js; não edite à mão. */
 Banco.registrar({ questoes: [
- {
-  "id": "enem-2025-belem-92",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 92"
-  },
-  "enunciado": "A febre maculosa brasileira é uma doença infecciosa febril aguda e com elevada taxa de letalidade. A transmissão se dá pela picada do carrapato do gênero Amblyomma infectado pela bactéria Rickettsia rickettsii. As capivaras e os cavalos assumem grande importância na cadeia epidemiológica da doença, pois são os principais reservatórios dos carrapatos transmissores.\n\nQue medida preventiva é importante para prevenir a transmissão dessa doença?",
-  "alternativas": [
-   "Tratar os doentes.",
-   "Utilizar telas em portas domiciliares.",
-   "Retirar sobras de alimento dos quintais.",
-   "Fazer o controle biológico do vetor.",
-   "Manter fechados os reservatórios de água."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-94",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 94"
-  },
-  "enunciado": "A leptospirose é uma zoonose causada por uma bactéria do gênero Leptospira. A transmissão ocorre através da penetração ativa da bactéria na pele e mucosas, quando em contato com água, alimentos ou solo contendo urina de animais infectados. Os roedores sinantrópicos comensais, como as ratazanas, desempenham o papel de principais reservatórios da doença em áreas urbanas.\n\nQuais medidas são recomendadas para prevenir essa doença em áreas urbanas?",
-  "alternativas": [
-   "Utilizar máscara para proteger a boca e evitar acúmulo de objetos nos quintais.",
-   "Lavar as mãos antes das refeições e manter os terrenos baldios limpos e capinados.",
-   "Evitar o contato com água de esgotos ou de enchentes e dar destino adequado ao lixo doméstico.",
-   "Consumir água tratada e manter os alimentos em recipientes fechados e em locais elevados do solo.",
-   "Aplicar repelentes corporais e retirar as sobras de alimento de animais domésticos antes do anoitecer."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-102",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 102"
-  },
-  "enunciado": "A industrialização, o crescimento populacional e a demanda por mais alimentos, bem como o aumento da frota veicular, entre outros, geram resíduos poluentes classificados como primários ou secundários. Os primários são aqueles lançados diretamente no ar, e muitos deles reagem com alguns componentes existentes na atmosfera (oxigênio, vapor de água, entre outros) originando os poluentes secundários.\n\nQual poluente primário, em contato com o ar, origina um poluente secundário altamente corrosivo?",
-  "alternativas": [
-   "Metano.",
-   "Clorofluorcarbono.",
-   "Dióxido de enxofre.",
-   "Dióxido de carbono.",
-   "Monóxido de carbono."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-104",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 104"
-  },
-  "enunciado": "Em 2006, o Prêmio Nobel de medicina ou fisiologia foi dado pela descrição do mecanismo de interferência de RNA, ou simplesmente RNAi. O mecanismo RNAi é um processo biológico no qual pequenas moléculas de RNA interferem na expressão gênica, tipicamente pela destruição do RNA mensageiro de um gene específico no citoplasma.\n\nNesse mecanismo, a regulação da expressão gênica ocorre pela inibição da",
-  "alternativas": [
-   "síntese do RNA mensageiro.",
-   "saída do RNA mensageiro do núcleo.",
-   "tradução do RNA mensageiro em proteína.",
-   "síntese do ribossomo pelo RNA mensageiro.",
-   "captura de aminoácidos pelo RNA mensageiro."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
  {
   "id": "enem-2025-belem-105",
   "materia": "enem-natureza",
@@ -256,150 +113,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-belem-109",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 109"
-  },
-  "enunciado": "O estudo da relação entre a estrutura e a atividade biológica de substâncias é de fundamental importância no desenvolvimento de drogas para o combate a doenças. Pesquisadores avaliaram o potencial antiviral de algumas moléculas frente ao vírus SARS-CoV-2, considerando a capacidade de inibição das enzimas responsáveis pela síntese de proteínas no vírus. A interação entre o composto e o sítio ativo da enzima depende de fatores eletrônicos e estéricos, permitindo estabelecer uma relação entre a estrutura e a atividade antiviral. A maior atividade foi correlacionada a substituintes pouco volumosos e moderadamente eletronegativos presentes no anel aromático da molécula do antiviral. Nesse estudo, foram modelados os cinco compostos hipotéticos apresentados a seguir.\n\nDescrição das estruturas: São apresentadas estruturas de cinco compostos hipotéticos variando somente as substituições em seus anéis aromáticos. O composto 1 apresenta o anel aromático com o grupo substituinte F na posição 4. O composto 2 apresenta o anel aromático com o grupo substituinte Br na posição 4. O composto 3 apresenta o anel aromático com os grupos substituintes CF3 na posição 3 e Cl na posição 4. O composto 4 apresenta o anel aromático com os grupos substituintes CF3 na posição 3 e I na posição 4. O composto 5 apresenta o anel aromático com os grupos substituintes Cl nas posições 3 e 5 e CF3 na posição 4. (Fim da descrição)\n\nDentre os compostos modelados, qual deve apresentar a maior atividade antiviral?",
-  "alternativas": [
-   "1",
-   "2",
-   "3",
-   "4",
-   "5"
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-110",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 110"
-  },
-  "enunciado": "Os aldeídos fazem parte de importantes famílias olfativas encontradas em muitos alimentos. O 3-metil-butanal, por exemplo, está presente na mistura de compostos voláteis liberados na etapa de torrefação do café.\n\nUma das formas de se obter essa substância em laboratório é oxidar a molécula de",
-  "alternativas": [
-   "ácido 3-metil-butanoico.",
-   "3-metil-but-2-en-2-ol.",
-   "3-metil-butan-1-ol.",
-   "3-metil-butan-2-ol.",
-   "3-metil-butanona."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-111",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 111"
-  },
-  "enunciado": "No Rio Grande do Norte, já se produz a flor de sal, cobiçado tempero que há algum tempo aparece nos cardápios de restaurantes de alto gabarito. O processo de sua produção é artesanal, em que a água do mar é levada a tanques escavados e vai passando de um tanque para outro, ficando cada vez mais concentrada. Em determinado nível de saturação da água, o sal comum começa a se cristalizar e se precipitar no fundo. E com o sol intenso, clima seco e vento constante, a flor de sal se forma como uma fina rede cristalina na superfície da solução concentrada.\n\nO método utilizado para a obtenção desse tempero é a",
-  "alternativas": [
-   "filtração.",
-   "destilação.",
-   "decantação.",
-   "evaporação.",
-   "sublimação."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-113",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 113"
-  },
-  "enunciado": "Em um reservatório industrial contendo 5000 litros de água, foi constatada a presença de íons cromo(3) dissolvidos. Para remover esses íons da água, inicialmente foi realizada a quantificação em uma alíquota de 1,0 litro, por meio de alcalinização, para provocar a total precipitação do cromo(3) na forma de hidróxido insolúvel, que foi separado por filtração, seco e aquecido até a formação de 3,8 gramas de Cr2O3.\nDados: massas molares (grama por mol): Cr2O3 igual a 152; Cr igual a 52.\n\nA quantidade, em quilograma, de íons cromo(3) contida nesse reservatório é mais próxima de",
-  "alternativas": [
-   "6,5.",
-   "9,0.",
-   "13,0.",
-   "19,0.",
-   "38,0."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-belem-115",
   "materia": "enem-natureza",
   "assunto": "ENEM 2025 (Belém)",
@@ -424,78 +137,6 @@ Banco.registrar({ questoes: [
    "11,4."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 116"
-  },
-  "enunciado": "A absorção de grandes quantidades de gás carbônico da atmosfera é conhecida como sequestro de carbono. As florestas desempenham um papel importante, já que cada hectare de floresta em desenvolvimento absorve cerca de 150 a 200 toneladas de carbono, auxiliando na diminuição desse gás na atmosfera.\n\nA maior parte do carbono resultante desse processo encontra-se",
-  "alternativas": [
-   "nas flores, como antocianinas.",
-   "nos frutos, como taninos e pectinas.",
-   "nas sementes, como substâncias de reserva na forma de lipídios.",
-   "nas folhas, nas membranas plasmáticas das células parenquimáticas.",
-   "no caule, nas paredes celulares dos elementos do xilema secundário."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-117",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 117"
-  },
-  "enunciado": "As mulheres tendem a sofrer alterações periódicas nos níveis de hormônios sexuais. Uma exceção é o período da gravidez, época em que ocorrem menores variações hormonais.\n\nIsso se deve à manutenção de níveis elevados do hormônio placentário:",
-  "alternativas": [
-   "Progesterona, que reduz os níveis dos hormônios ovarianos.",
-   "Estrógeno, que estimula a produção dos hormônios hipofisários.",
-   "Luteinizante, que diminui os níveis das gonadotrofinas hipofisárias.",
-   "Gonadotrofina coriônica, que diminui os níveis dos hormônios hipofisários.",
-   "Folículo estimulante, que aumenta a concentração dos hormônios ovarianos."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
@@ -652,78 +293,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-belem-133",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 133"
-  },
-  "enunciado": "Por suas belezas naturais, a região de Bonito, no Mato Grosso do Sul, é um dos destinos ecoturísticos mais procurados do Brasil. Muitas das atrações ecoturísticas que movimentam a economia local estão situadas dentro de fazendas. Por isso, diversos donos dessas propriedades decidiram criar Reservas Particulares do Patrimônio Natural (RPPNs). Nesses locais, estão recompondo aos poucos as matas ciliares e adotando outras medidas pontuais, como a instalação de ninhos artificiais para as araras nativas.\n\nNesse contexto, as RPPNs foram criadas porque",
-  "alternativas": [
-   "evitam a entrada de turistas.",
-   "reduzem as espécies endêmicas.",
-   "favorecem o desenvolvimento sustentável.",
-   "possibilitam a introdução de espécies exóticas.",
-   "aumentam as áreas para extração de madeira."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-134",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 134"
-  },
-  "enunciado": "A primeira calça jeans foi feita por Levi Strauss e Jacob Davis para mineradores da Califórnia em 1873. Um brim mais maleável, stone-washed (lavado com pedra), foi introduzido em 1980, seguido por acid-washed (lavado com ácido). Técnicas de amaciamento envolvendo procedimentos de natureza físico-química vêm sendo substituídas por métodos biotecnológicos. Um exemplo é a utilização de celulases, produzidas por fungos do gênero Trichoderma, para digestão enzimática de parte da celulose do algodão.\n\nEsse método biotecnológico é considerado ambientalmente seguro porque",
-  "alternativas": [
-   "utiliza catalisador inorgânico.",
-   "torna a celulose mais resistente.",
-   "ocorre em diferentes temperaturas.",
-   "é usado em diferentes valores de pH.",
-   "minimiza a produção de resíduos tóxicos."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-belem-137",
   "materia": "matematica",
   "assunto": "ENEM 2025 (Belém)",
@@ -796,42 +365,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-belem-142",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 142"
-  },
-  "enunciado": "De acordo com pesquisas realizadas pela Inserção de Imigrantes no Mercado de Trabalho Brasileiro (IIMTB), o número de estrangeiros trabalhando com carteira assinada no Brasil cresceu entre os anos de 2011 e 2012, passando de 80000 para 96000, e também cresceu entre os anos de 2012 e 2013, quando passou de 96000 para 120000.\nÀ época, os pesquisadores da IIMTB estimaram que o aumento percentual desse número, tanto de 2013 para 2014 quanto de 2014 para 2015, seria igual à média dos percentuais anuais de aumento observados nos períodos de 2011 a 2012 e de 2012 a 2013. Considere que essa estimativa tenha se concretizado.\n\nA quantidade de estrangeiros trabalhando com carteira assinada no Brasil em 2015 foi de",
-  "alternativas": [
-   "147000.",
-   "174000.",
-   "180000.",
-   "180075.",
-   "228000."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-belem-149",
   "materia": "matematica",
   "assunto": "ENEM 2025 (Belém)",
@@ -892,42 +425,6 @@ Banco.registrar({ questoes: [
    "240."
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-153",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 153"
-  },
-  "enunciado": "Na produção de uma unidade de um produto, uma empresa gastava 40 reais na compra de matéria-prima e mais 40 reais em custos diversos. Essa empresa vendia esse produto por 120 reais a unidade.\nEm decorrência de mudanças no mercado consumidor, os custos diversos aumentaram em 50 por cento, embora o custo com matéria-prima tenha permanecido o mesmo. Assim, a empresa reajustará o preço de venda desse produto de forma que, ao conceder um desconto de 20 por cento, o lucro, em real, por unidade vendida permaneça o mesmo.\n\nDe quanto será o reajuste, em real, no preço de venda desse produto?",
-  "alternativas": [
-   "16",
-   "20",
-   "25",
-   "50",
-   "55"
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
@@ -1156,114 +653,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-belem-164",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 164"
-  },
-  "enunciado": "Em 2011, um tsunami atingiu os reatores da usina nuclear de Fukushima, no Japão, liberando radiação para o meio ambiente e provocando um dos maiores acidentes radioativos da história. Inicialmente, foi delimitada uma área de isolamento correspondente a um círculo com raio de 30 quilômetros, centrado no local do acidente radioativo.\nConsidere que, para aumentar a margem de segurança, o raio do círculo da área de isolamento foi ampliado para 40 quilômetros, mantendo-se o mesmo centro.\nUse 3 como valor aproximado para pi.\n\nO aumento da medida da área de isolamento, em quilômetro quadrado, foi de",
-  "alternativas": [
-   "300.",
-   "2100.",
-   "4800.",
-   "7500.",
-   "14700."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-166",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 166"
-  },
-  "enunciado": "Na área da computação, bit é a unidade de medida básica que deu origem ao byte, formado por 8 bits. Essas unidades deram origem a outras duas unidades de medida de taxa de transferência de informações, sendo estas o megabit por segundo (Mbps) e o megabyte por segundo (MB/s), em que 1 megabyte por segundo representa 8 megabits por segundo. Um consumidor, sabendo que as empresas de acesso à internet divulgam seus serviços usando essas taxas, pretende contratar a empresa com maior taxa de transferência de informações ao custo mais baixo, encontrando na sua pesquisa dois anúncios:\n- Empresa X: internet de 50 megabits por segundo por apenas 50 reais;\n- Empresa Y: internet de 50 megabytes por segundo por apenas 100 reais.\n\nPara o consumidor obter o que pretende, deve escolher a empresa",
-  "alternativas": [
-   "X, pois a taxa de transferência de informações é 8 vezes a da empresa Y, e o custo por megabyte por segundo é um dezesseis avos do custo da concorrente.",
-   "X, pois a taxa de transferência de informações é 8 vezes a da empresa Y, e o custo por megabyte por segundo é a metade do custo da concorrente.",
-   "X, pois as taxas de transferência de informações são iguais e esta empresa é a que apresenta o menor custo por megabits por segundo.",
-   "Y, pois a taxa de transferência de informações é 8 vezes a da empresa X, e o custo por megabits por segundo é um quarto do custo da concorrente.",
-   "Y, pois a taxa de transferência de informações é 8 vezes a da empresa X, e o custo por megabits por segundo é um oitavo do custo da concorrente."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-belem-167",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 167"
-  },
-  "enunciado": "A escassez de água em todo o planeta indica que a preservação desse recurso deve ser praticada e disseminada em todos os países, independentemente da reserva que possuem.\nPensando nisso, uma empresa fornecedora de água potável elaborou uma nova fórmula de cobrança visando um consumo mais consciente. Residências com consumo mensal de até 5 metros cúbicos de água pagarão uma taxa mínima de 40 reais por mês, e aquelas cujo consumo mensal exceder a 5 metros cúbicos pagarão, além dos 40 reais, mais 12 reais por metro cúbico de água que exceder a 5 metros cúbicos.\n\nA representação algébrica que fornece o valor mensal V, em real, cobrado pelo consumo de x metros cúbicos de água, quando x supera 5 metros cúbicos, é",
-  "alternativas": [
-   "V é igual a 12x menos 20",
-   "V é igual a 12x menos 40",
-   "V é igual a 12x menos 60",
-   "V é igual a 12x",
-   "V é igual a 52x"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-belem-169",
   "materia": "matematica",
   "assunto": "ENEM 2025 (Belém)",
@@ -1444,42 +833,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-belem-177",
-  "materia": "matematica",
-  "assunto": "ENEM 2025 (Belém)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, aplicação de Belém, 2º dia, questão 177"
-  },
-  "enunciado": "Nos Estados Unidos, os velocímetros dos automóveis, em geral, marcam a velocidade em milha por hora, o que pode causar algum transtorno a turistas desatentos, provenientes de países onde a unidade utilizada é dada em quilômetro por hora, ao alugarem carros para seus passeios. Suponha que um turista nessas condições alugue um carro para deslocar-se da cidade de Miami para a cidade de Orlando, e que a velocidade limite na rodovia que irá utilizar seja equivalente a 120 quilômetros por hora. Considere uma milha como equivalente a 1610 metros.\n\nQual o valor mais próximo do limite de velocidade que deverá ser observado pelo motorista no velocímetro do carro alugado, de forma a respeitar a velocidade máxima estipulada?",
-  "alternativas": [
-   "74,5",
-   "89,4",
-   "120,0",
-   "161,0",
-   "193,2"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, aplicação de Belém, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P2_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-belem-180",
   "materia": "matematica",
   "assunto": "ENEM 2025 (Belém)",
@@ -1538,150 +891,6 @@ Banco.registrar({ questoes: [
    "dissimulação praticada em nome da convivência.",
    "dificuldade de relacionamento entre as gerações.",
    "postura de desdém pela memória da tia morta."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-41",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 41"
-  },
-  "enunciado": "O podcast é um arquivo digital de áudio que pode ser inserido em várias plataformas on-line. Os conteúdos desse formato são diversos, existem tanto os programas que abordam questões políticas nacionais, quanto os que desenvolvem temas voltados para a ciência. Enfim, os podcasts abrangem um leque diversificado de opções para os ouvintes. Esse arquivo digital de áudio tem marcas do formato radiofônico, como as entrevistas pingue-pongue — perguntas e respostas —, os debates em formato de mesa-redonda, as reportagens, os documentários em áudios e os boletins. Contudo, não possui uma estrutura fixa, como os outros formatos, considerados tradicionais. Cada episódio pode ser contado de diferentes maneiras. Vale ressaltar que outro benefício de produzir conteúdos nesse formato é o aprofundamento da temática. O podcast é considerado um produto híbrido, diferente do rádio e das demais mídias tradicionais e, sobretudo, é flexível.\n\nEm comparação a outras mídias, o podcast tem como diferencial",
-  "alternativas": [
-   "a versatilidade na produção e no acesso a diferentes conteúdos.",
-   "o resgate de modelos tradicionais de programas radiofônicos.",
-   "a abordagem pormenorizada de temas políticos e científicos.",
-   "o alcance de um público amplo e diversificado.",
-   "a predominância de linguagem coloquial."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-50",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 50"
-  },
-  "enunciado": "Primeiro de dezembro de 1955. Rosa Parks, uma costureira negra norte-americana se recusa a ceder o lugar a um homem branco nos Estados Unidos. Foi durante uma viagem de ônibus no estado do Alabama, região sudeste do país. Ela acabou presa. As primeiras filas de assentos nos ônibus eram reservadas para os passageiros brancos. Por lei, os negros tinham que ocupar os lugares de trás nos transportes coletivos.\n\nEsse ato individual ganhou repercussão nacional e colaborou decisivamente para",
-  "alternativas": [
-   "reacender a disputa militar entre estados da união.",
-   "estimular o ativismo político entre grupos oprimidos.",
-   "aprofundar o fosso econômico entre as classes sociais.",
-   "demonstrar o resultado insatisfatório de táticas pacifistas.",
-   "promover a emigração forçada de contingentes populacionais."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-67",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 67"
-  },
-  "enunciado": "Para provar que os índios se encontram no estado de barbárie, Sepúlveda vai utilizar a Historia general y natural de las índias, na qual o índio americano era um ser um tanto infra-humano. Para provar o contrário, Las Casas escreve um novo tratado: La apologética historia, em que contraria os vários argumentos de Sepúlveda para justificar a guerra contra os índios. Aí, o índio é um homem como os outros do universo, superior até em muitos aspectos.\n\nNo contexto da colonização americana, as narrativas conflitantes de Sepúlveda e Las Casas expressam o seguinte aspecto:",
-  "alternativas": [
-   "Aceitação da diversidade.",
-   "Reconhecimento da alteridade.",
-   "Reprodução do etnocentrismo.",
-   "Compartilhamento do bem comum.",
-   "Convergência das crenças religiosas."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-75",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 75"
-  },
-  "enunciado": "Descrição do mapa: Mapa intitulado 232 terras indígenas tiveram pelo menos um evento de desmatamento em 2021. O mapa apresenta a distribuição espacial das terras indígenas no Brasil e a classificação dessas de acordo com o nível de desmatamento. As áreas desmatadas variam de 0 a mais de 500 hectares, e os maiores índices de desmatamento estão concentrados na Região Norte. Essa região concentra as terras indígenas no Brasil com maior extensão territorial.\n\nO mapa aponta a necessidade de iniciativas governamentais voltadas para",
-  "alternativas": [
-   "projetos de exploração mineral.",
-   "ampliação de subsídios industriais.",
-   "políticas de fiscalização ambiental.",
-   "valorização de cultivos modernos.",
-   "atividades de integração regional."
   ],
   "resposta": 2,
   "fontes": [
@@ -1804,114 +1013,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-ppl-100",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 100"
-  },
-  "enunciado": "O bioma Pampa corresponde a quase dois terços do Rio Grande do Sul e pouco mais de 2 por cento do Brasil, contendo cerca de 3 mil espécies de plantas. Dentre essas, aproximadamente 400 são gramíneas, que são ervas comumente chamadas de grama ou capim e apresentam polinização pelo vento (anemocoria). Esse tipo de polinização é pouco eficiente, pois o encontro entre os grãos de pólen e o estigma ocorre ao acaso.\n\nUma adaptação que também favoreceu o sucesso reprodutivo nessas plantas é o fato de elas possuírem flores com",
-  "alternativas": [
-   "pétalas atrativas.",
-   "néctar açucarado.",
-   "odor desagradável.",
-   "tamanho pronunciado.",
-   "grãos de pólen numerosos."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-105",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 105"
-  },
-  "enunciado": "Pesquisadores anunciaram o nascimento de suínos com genes modificados. O fato é importante porque abre a possibilidade de se usar órgãos desses animais no homem, técnica denominada de xenotransplante. A técnica consiste em desativar genes durante o desenvolvimento embrionário do animal, permitindo que os porcos possam fornecer células e tecidos para o tratamento de doenças humanas, como diabetes e cegueira da córnea.\n\nA técnica descrita visa reduzir o(a)",
-  "alternativas": [
-   "falha na expressão dos genes.",
-   "rejeição pelo organismo humano.",
-   "produção de imunossupressores.",
-   "tamanho dos órgãos transplantados.",
-   "desativação dos mesmos genes em humanos."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-115",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 115"
-  },
-  "enunciado": "Atualmente, temos um número considerável de alternativas de fontes primárias de energia: geotérmica, maremotriz, biomassa, nuclear e eólica. Essas são usadas para obtenção de energias secundárias, como a energia elétrica.\n\nQual fonte primária permite obter essa energia secundária por processos químicos?",
-  "alternativas": [
-   "Eólica.",
-   "Nuclear.",
-   "Biomassa.",
-   "Maremotriz.",
-   "Geotérmica."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-ppl-119",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024 (reaplicação)",
@@ -1948,42 +1049,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-ppl-127",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 127"
-  },
-  "enunciado": "A figura ilustra diferentes etapas de um experimento realizado por Frederick Griffith em 1928 com camundongos e pneumococos.\n\nDescrição da figura: Foram utilizados para o experimento camundongos que receberam a injeção de diferentes bactérias e apresentaram os seguintes resultados:\n• injeção de bactérias não virulentas vivas: os camundongos permaneceram vivos.\n• injeção de bactérias virulentas vivas: os camundongos morreram.\n• injeção de bactérias virulentas mortas por ação do calor: os camundongos permaneceram vivos.\n• injeção de bactérias não virulentas vivas mais bactérias virulentas mortas por ação do calor: os camundongos morreram.\n\nA hipótese testada com a realização desse experimento é que",
-  "alternativas": [
-   "os seres vivos sofrem mutações pelo calor.",
-   "o calor é eficaz para matar microrganismos.",
-   "as bactérias virulentas não são alteradas pelo calor.",
-   "a virulência de uma bactéria pode ser transferida para outra.",
-   "a sobrevivência dos camundongos depende da quantidade de bactérias injetadas."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-ppl-128",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024 (reaplicação)",
@@ -2006,42 +1071,6 @@ Banco.registrar({ questoes: [
    "IgM negativo e IgG positivo, independentemente da avidez.",
    "IgM positivo e IgG positivo, independentemente da avidez.",
    "IgM positivo e IgG negativo, independentemente da avidez."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-131",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 131"
-  },
-  "enunciado": "Dicas para começar e melhorar sua produção A abelha mamangava (Xylocopa sp.) é a mais eficiente polinizadora do maracujazeiro, por causa do seu tamanho. A abelha europeia (Apis mellifera) não é uma polinizadora eficiente do maracujazeiro, pois coleta o pólen sem realizar a fecundação e seu tamanho pequeno não permite que alcance o estigma da flor, por causa da distância da base de pouso.\n\nA relação ecológica entre os insetos mencionados é de",
-  "alternativas": [
-   "predação.",
-   "mutualismo.",
-   "competição.",
-   "inquilinismo.",
-   "comensalismo."
   ],
   "resposta": 2,
   "fontes": [
@@ -2116,42 +1145,6 @@ Banco.registrar({ questoes: [
    "Três décimos vezes raiz cúbica de, abre parêntese, t sobre 2, fecha parêntese"
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-145",
-  "materia": "matematica",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 145"
-  },
-  "enunciado": "A capacidade de refrigeração de um condicionador de ar é medida na unidade BTU vezes hora. O cálculo de quantos BTU vezes hora são necessários para a refrigeração adequada de um ambiente depende de vários fatores. Em um ambiente fechado de altura padrão, com uma única pessoa, cada metro quadrado de área do piso demanda 600 BTU vezes hora de capacidade do condicionador de ar e, para cada pessoa a mais nesse ambiente, exige-se mais 600 BTU vezes hora. Além disso, cada aparelho eletrônico ligado (excluindo-se o condicionador de ar) demanda mais 600 BTU vezes hora. Em uma sala retangular fechada de 6 metros de comprimento, 4 metros de largura e altura padrão, 5 pessoas trabalham simultaneamente em 5 computadores ligados, e há um condicionador de ar de 24600 BTU vezes hora. Um projeto prevê a contratação de novos funcionários e a instalação de novos computadores. Cada funcionário terá acesso a um único computador, e cada computador só poderá ser utilizado por um único funcionário. Serão mantidos os computadores, os funcionários e o condicionador de ar atuais, devendo este ser suficiente para a refrigeração adequada da sala após a implementação do projeto. Não haverá outros aparelhos eletrônicos no local.\n\nQual é a quantidade máxima de novos funcionários que pode ser contratada de forma que se atenda à implementação do projeto?",
-  "alternativas": [
-   "3",
-   "4",
-   "6",
-   "7",
-   "8"
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -2452,42 +1445,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-ppl-171",
-  "materia": "matematica",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 171"
-  },
-  "enunciado": "Os preços da gasolina e do etanol no Brasil são frequentemente noticiados nos telejornais. Após pesquisa realizada pelo Índice de Preços Ticket Car (IPTC), os preços desses combustíveis, em real por litro, em quatro estados e no Distrito Federal, foram divulgados pelo telejornal, conforme o quadro.\n\nDescrição do quadro: Quadro apresenta, na parte superior, a figura estilizada de uma bomba de combustível e o título Estados do Brasil e o Distrito Federal e os preços dos combustíveis, em real; e na parte inferior, apresenta os valores do etanol e da gasolina, em real por litro, em alguns estados e no Distrito Federal: Distrito Federal: etanol a 2,28; gasolina a 3,18; Goiás: etanol a 1,95; gasolina a 2,93; Mato Grosso: etanol a 2,17; gasolina a 3,17; Rio de Janeiro: etanol a 2,35; gasolina a 3,14; São Paulo: etanol a 1,90; gasolina a 2,70.\n\nDentre os locais divulgados pelo telejornal, o que apresenta a maior razão entre os preços, em real por litro, da gasolina e do etanol é",
-  "alternativas": [
-   "Distrito Federal.",
-   "Goiás.",
-   "Mato Grosso.",
-   "Rio de Janeiro.",
-   "São Paulo."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-ppl-172",
   "materia": "matematica",
   "assunto": "ENEM 2024 (reaplicação)",
@@ -2588,114 +1545,6 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-ppl-176",
-  "materia": "matematica",
-  "assunto": "ENEM 2024 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 176"
-  },
-  "enunciado": "Uma unidade do corpo de bombeiros de uma cidade tem como prática nunca permitir que seu reservatório de água, de capacidade C litros, fique com menos de 80 por cento de sua capacidade plena. Com o objetivo de automatizar o processo, um sensor interno será instalado e programado para detectar essa situação crítica e acionar o abastecimento do reservatório a uma taxa de v litros por minuto, durante T minutos. Quando passar esse tempo T, o reservatório deverá estar cheio e o sensor deverá interromper o abastecimento do reservatório.\n\nPara a programação do sensor, o tempo T, em minuto, deverá ser igual a",
-  "alternativas": [
-   "Fração, numerador 0,2 vezes C, denominador V",
-   "Fração, numerador 0,8 vezes C, denominador V",
-   "Fração, numerador C, denominador V",
-   "Fração, numerador V, denominador, abre parêntese, 0,2 vezes C, fecha parêntese",
-   "Fração, numerador V, denominador, abre parêntese, 0,8 vezes C, fecha parêntese"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-ppl-8",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 8"
-  },
-  "enunciado": "As práticas corporais representam uma possibilidade de promoção da educação, do lazer e da saúde. A identificação das preferências das práticas corporais pode ser um incentivo para a adesão dos usuários aos serviços de saúde mental. Desse modo, a interação social por meio delas contribui para o desenvolvimento da identidade dos usuários, uma vez que essas atividades permeiam as dimensões cognitiva, emocional, social e comportamental. Nesse contexto, realizar atividades físicas, com um viés lúdico, converte-se numa maneira de cuidado com o corpo, gerando avaliações positivas dos usuários. As práticas corporais realizadas em serviços de saúde mental estimulam o(a)",
-  "alternativas": [
-   "aprimoramento cognitivo na realização de tarefas.",
-   "aquisição da linguagem para a interação social.",
-   "inserção no mercado de trabalho.",
-   "fortalecimento da identidade.",
-   "expansão da expressão corporal."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-ppl-46",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 46"
-  },
-  "enunciado": "As propostas dele não devem ser levadas a sério, pois foi visto bêbado num restaurante. A afirmação, eficaz como mecanismo de persuasão de eleitores em contextos políticos, constitui-se como uma falácia porque",
-  "alternativas": [
-   "recorre à circularidade e afirma as suas teses.",
-   "ataca a pessoa e desconsidera as suas ideias.",
-   "aceita a conclusão e refuta as suas premissas.",
-   "evoca a maioria e apresenta os seus argumentos.",
-   "apela à autoridade e investiga os seus fundamentos."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
@@ -2848,42 +1697,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-ppl-103",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 103"
-  },
-  "enunciado": "Hoje em dia, não é raro encontrar sacolas plásticas preenchidas com apenas um ou dois produtos. E não só no supermercado: da padaria à farmácia, o consumidor está sempre diante de uma sacola, mesmo que ela não seja tão necessária assim. A cada mês, cerca de 1,5 bilhão de sacolas são consumidas no Brasil. Isso significa 50 milhões por dia e 18 bilhões ao ano. Não é à toa, portanto, que o uso indiscriminado de sacolas virou um dos alvos preferidos dos ambientalistas. Os ambientalistas consideram o uso excessivo de sacolas plásticas um risco ambiental, pois",
-  "alternativas": [
-   "o uso de materiais descartáveis incrementa o consumo.",
-   "o plástico é derivado do petróleo, recurso natural escasso.",
-   "as sacolas se transformam em lixo de difícil decomposição.",
-   "o risco de contaminação do solo e subsolo por gases tóxicos aumenta.",
-   "o consumo de produtos industrializados é estimulado em detrimento dos artesanais."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-ppl-108",
   "materia": "enem-natureza",
   "assunto": "ENEM 2023 (reaplicação)",
@@ -2908,42 +1721,6 @@ Banco.registrar({ questoes: [
    "ausência de resposta imune dos indivíduos após a primeira infecção pelo vírus."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-ppl-110",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 110"
-  },
-  "enunciado": "Caatinga, muito prazer A Caatinga está em risco: estudo revela que 59 por cento da vegetação natural desse bioma já sofreram algum tipo de modificação por atividades humanas. Um problema que esse bioma enfrenta é o fenômeno da desertificação. Segundo cientistas, à medida que a agricultura avança na região, esse fenômeno ganha maiores proporções. Para os cientistas, essa constatação evidencia a grande necessidade de medidas urgentes para a preservação da Caatinga, que hoje só tem 1 por cento de sua área inclusa em unidades de conservação. A Caatinga pode ser considerada um ambiente frágil, onde a desertificação",
-  "alternativas": [
-   "ocorre devido à presença de solos ricos em nutrientes, porém rasos.",
-   "ocorre devido à presença de um lençol freático extenso, porém raso.",
-   "deverá regredir nos próximos anos devido ao regime de chuvas da região.",
-   "é um problema de pouca importância, pois atinge poucas regiões do bioma.",
-   "pode ser evitada mantendo-se a vegetação nativa, que impede esse fenômeno."
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -3014,42 +1791,6 @@ Banco.registrar({ questoes: [
    "ter alimento durante o seu desenvolvimento.",
    "estar protegida contra o ataque de parasitas.",
    "desenvolver-se em ambiente com temperatura constante."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-ppl-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 116"
-  },
-  "enunciado": "A determinação da densidade do leite, feita com um aparelho denominado termolactodensímetro, fornece informações sobre sua qualidade. Densidades acima do normal indicam desnatamento e densidades abaixo do normal indicam adição de água. Tais conclusões a respeito da qualidade do leite são possíveis porque sua densidade é",
-  "alternativas": [
-   "maior que a da água e menor que a da gordura.",
-   "menor que a da água e maior que a da gordura.",
-   "maior que a da água e maior que a da gordura.",
-   "igual à da água e menor que a da gordura.",
-   "menor que a da água e igual à da gordura."
   ],
   "resposta": 2,
   "fontes": [
@@ -3196,42 +1937,6 @@ Banco.registrar({ questoes: [
    "Apenas um à noite."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-ppl-149",
-  "materia": "matematica",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 149"
-  },
-  "enunciado": "Estudantes de psicologia experimental estão analisando um modelo matemático que foi desenvolvido a partir de um experimento com pombos. Nesse experimento, um alimento considerado como uma recompensa reforçadora era fornecido em quantidades (Q) para as aves, com a possibilidade de atraso no tempo de entrega. O modelo matemático que relaciona os valores reforçadores V índice 1 e V índice 2 de duas recompensas em função de suas respectivas quantidades Q índice 1 e Q índice 2 e de seus respectivos tempos de atraso T índice 1 e T índice 2 na disponibilização de cada uma delas é Fração de numerador V índice 1 e denominador V índice 2 é igual a fração de numerador Q índice 1 e denominador Q índice 2 vezes a fração de numerador T índice 2 e denominador T índice 1. Ao analisarem o caso em que a quantidade Q índice 1é o dobro da quantidade Q índice 2, cinco estudantes fizeram as seguintes afirmações sobre em que condição o valor V índice 1 será maior que o valor V índice 2:\n• estudante 1: sempre, pois Q índice 1 é o dobro de Q índice 2;\n• estudante 2: apenas quando a razão entre T índice 2 e T índice 1 for maior que 0,5;\n• estudante 3: apenas quando a razão entre T índice 2 e T índice 1 for menor que 0,5;\n• estudante 4: apenas quando T índice 1 for igual a T índice 2;\n• estudante 5: apenas quando a razão entre T índice 2 e T índice 1 for maior que 0,5 e menor que 1. Qual estudante fez a afirmação correta?",
-  "alternativas": [
-   "1",
-   "2",
-   "3",
-   "4",
-   "5"
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -3460,42 +2165,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-ppl-173",
-  "materia": "matematica",
-  "assunto": "ENEM 2023 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 173"
-  },
-  "enunciado": "O aglomerado globular estelar, denominado Messier 107, é formado por bilhões de estrelas e está localizado na constelação de Ophiuchus ou Serpentário da Via Láctea, a 20 mil anos-luz do Sistema Solar. Um ano-luz corresponde à distância percorrida pela luz, cuja velocidade é 300 000 quilômetros por segundo, no período de um ano. Considere que um ano tenha 365 dias. De acordo com esses dados, a distância do aglomerado Messier 107 ao Sistema Solar, em metro, é",
-  "alternativas": [
-   "6 vezes 10 elevado a 9.",
-   "5 184 vezes 10 elevado a 11.",
-   "5 184 vezes 10 elevado a 14.",
-   "189 216 vezes 10 elevado a 12.",
-   "189 216 vezes 10 elevado a 15."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-ppl-175",
   "materia": "matematica",
   "assunto": "ENEM 2023 (reaplicação)",
@@ -3604,114 +2273,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-6",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 6"
-  },
-  "enunciado": "A anorexia é um transtorno alimentar caracterizado por grande perda de peso, ausência de menstruação e distúrbio na vivência do peso ou da forma corporal. Fatores familiares, psicológicos, socioculturais e fisiológicos interagem entre si, predispondo, precipitando e/ou mantendo o transtorno. Anoréxicos têm medo doentio de engordar e experienciam uma grande necessidade de controle sobre o peso e a forma do corpo. Dietas exíguas, uso de laxantes, diuréticos e indução de vômito são estratégias para manter o peso e a forma corporal. O exercício também é uma estratégia para perder e controlar o peso, sendo praticado de maneira ritualizada e excessiva. O objetivo é alcançar um corpo ideal condizente com os padrões de beleza, eliminando as poucas calorias que o sujeito se permite ingerir. Uma causa determinante que contribui para a anorexia, vinculada ao exercício físico, é o(a)",
-  "alternativas": [
-   "busca por um modelo de corpo e beleza estereotipado socialmente.",
-   "conjunto de fatores familiares, psicológicos e socioculturais.",
-   "utilização de medicamentos e dietas restritivas.",
-   "recorrência da provocação do vômito.",
-   "medo exagerado de ganhar peso."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-20",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 20"
-  },
-  "enunciado": "Preconceito: do latim prae, antes, e conceptus, conceito, esse termo pode ser definido como o conjunto de crenças e valores aprendidos, que levam um indivíduo ou um grupo a nutrir opiniões a favor ou contra os membros de determinados grupos, antes de uma efetiva experiência com eles. Tecnicamente, portanto, existe um preconceito positivo e um negativo, embora, nas relações raciais e étnicas, o termo costume se referir ao aspecto negativo de um grupo herdar ou gerar visões hostis a respeito de um outro, distinguível com base em generalizações. Essas generalizações derivam invariavelmente da informação incorreta ou incompleta a respeito do outro grupo. Nesse verbete de dicionário, a apropriação adequada do uso padrão da língua auxilia no estabelecimento",
-  "alternativas": [
-   "da precisão das informações veiculadas.",
-   "da linguagem conotativa característica desse gênero.",
-   "das marcas do interlocutor como uma exigência para a validade das ideias.",
-   "das sequências narrativas como recurso de progressão textual.",
-   "do processo de contraposição argumentativa para conseguir a adesão do leitor."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-28",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 28"
-  },
-  "enunciado": "Claude Monet, influenciado por Turner, passou a pintar temas que apresentassem fluidez. Para isso, ele fragmentou a imagem com pinceladas de cor pura, passando a retratar a impressão captada diante do modelo. Monet inspirava-se, por exemplo, no pôr do sol, na luminosidade do feno ou num jardim florido. Suas obras contêm a característica de dissociação das cores e gradação dos tons complementares. As tintas não eram misturadas na palheta, dessa forma, a luz emanada das manchas e das pinceladas coloridas impressionava a retina, formando novas cores. Diante dessa nova concepção artística, a cor é",
-  "alternativas": [
-   "composta por uma substância química que, sob a incidência de raios luminosos, absorve-os, refletindo para os nossos olhos os raios de tons vermelhos.",
-   "formada pelo equilíbrio óptico causado pela impressão simultânea de cores como magenta, ciano e amarelo, consideradas cores primárias.",
-   "imaterial e só se pode senti-la, passando a ser uma sensação provocada pela ação dos raios de luz sobre os nossos olhos.",
-   "resultante da mistura óptica de duas outras que estão presentes em sua composição de origem, causando um equilíbrio entre elas.",
-   "física, presente nos raios solares e na luz branca, sendo impossível perceber sua existência pela decomposição da luz solar."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-41",
   "materia": "enem-linguagens",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -3748,186 +2309,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-52",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 52"
-  },
-  "enunciado": "O dólar fechou esta sexta-feira (15/10/21) cotado a 5,45 reais, em queda de 1,11 por cento. Após uma semana turbulenta, quando atingiu 5,57 reais na quarta-feira (13) e forçou o Banco Central a vender 1 bilhão de dólares por instrumentos de mercado, a moeda norte-americana teve sua maior queda em duas semanas, mas dá sinais de que vai seguir valorizado ante o real nos próximos meses. Pesam nesse cenário de alta fatores políticos; o Risco País; alta dos juros pressionando menos investimentos e as expectativas pessimistas do mercado para o futuro.\n\nPara o Brasil, uma consequência gerada pelo cenário econômico exposto é o(a):",
-  "alternativas": [
-   "Melhora na arrecadação de impostos do comércio.",
-   "Crescimento da entrada de capital estrangeiro.",
-   "Diminuição no poder de compra da população.",
-   "Aumento nas importações de manufaturados.",
-   "Redução no fluxo de entrada de turistas."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-54",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 54"
-  },
-  "enunciado": "A abertura dos portos brasileiros em 1808 inaugurou a possibilidade, para viajantes europeus de diversas nacionalidades, de percorrer áreas até então dificilmente acessíveis à sua curiosidade. Os relatos de inúmeras expedições, a maioria de caráter científico, foram publicados na Europa, para leitores ávidos de notícias sobre um Brasil até então desconhecido, terra cujos segredos haviam sido velados por uma Coroa portuguesa ciumenta e possessiva. Os relatos de viagens ao Brasil, publicados na Europa, contribuíram para a construção da identidade europeia na medida em que",
-  "alternativas": [
-   "destacaram a exuberância da natureza tropical, elaborando uma visão heroica da conquista.",
-   "defenderam a legitimidade da escravidão africana, aprovando-a como fator de humanização.",
-   "enfatizaram o exotismo da sociedade colonial, contrapondo-a à ideia iluminista de civilização.",
-   "analisaram a miscigenação dos grupos raciais, atribuindo um caráter positivo a esse processo.",
-   "descreveram a diversidade das etnias indígenas, contribuindo para a preservação de suas culturas."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-59",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 59"
-  },
-  "enunciado": "Quando as elites de cada região do país procuraram estabelecer sua autonomia em relação ao governo central, elas se confrontaram com o espectro de uma anarquia social. Em uma sociedade escravocrata, a possibilidade de tal desordem ameaçava tudo. Líderes locais apoderaram-se da legitimidade que a Monarquia oferecia como uma tábua de salvação, e o Estado monárquico central que eles construíram os trouxe à terra firme. Os vínculos que se seguiram entre as várias regiões levaram a um sentimento de solidariedade. O Estado, portanto, fomentou a emergência de uma nação única: o Brasil. A aliança entre as elites regionais e o Estado monárquico resultou na",
-  "alternativas": [
-   "predominância do Partido Conservador.",
-   "consolidação dos ideais republicanos.",
-   "promoção da identidade brasileira.",
-   "elaboração das leis abolicionistas.",
-   "eclosão de revoltas regenciais."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-62",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 62"
-  },
-  "enunciado": "Descrição da imagem: Representação do globo terrestre em projeção cônica (plana equidistante), a partir do Hemisfério Norte. Há cinco círculos concêntricos que demarcam os paralelos principais. Ao redor do globo, há dois ramos de oliveira, que se iniciam na parte inferior da imagem e estão dispostos um à direita e outro à esquerda.\n\nA intencionalidade geopolítica agregada ao símbolo da Organização das Nações Unidas ocorre porque a imagem",
-  "alternativas": [
-   "inverte a localização dos países no globo.",
-   "centraliza a posição dos países do norte.",
-   "reduz a escala no traçado dos países periféricos.",
-   "ignora a existência de continentes meridionais.",
-   "apresenta uma continuidade entre as porções continentais."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-63",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 63"
-  },
-  "enunciado": "Apesar de derrotado na Batalha do Jenipapo, o exército de sertanejos libertou três províncias nordestinas. Esse confronto foi dos mais violentos, embora tenha ocorrido em um único dia — 13 de março de 1823. A batalha foi o resultado de embates entre o poder português e a população sertaneja piauiense, cearense e maranhense de todas as classes sociais, que formaram uma multidão de voluntários armados de instrumentos como facões, enxadas, foices, machados. No processo de construção do Estado nacional, esse conflito oferece um contraponto à narrativa focada em D. Pedro ao evidenciar o(a)",
-  "alternativas": [
-   "vigor do legado patrimonialista.",
-   "imposição da solução republicana.",
-   "deficiência das tropas metropolitanas.",
-   "protagonismo da resistência autônoma.",
-   "continuidade das contradições políticas."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D1_CD9_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-92",
   "materia": "enem-natureza",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -3952,78 +2333,6 @@ Banco.registrar({ questoes: [
    "da queima da grande quantidade de trinitrotolueno presente no meteorito."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-94",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 94"
-  },
-  "enunciado": "Uma intervenção no meio ambiente tem inquietado muitos pesquisadores que consideram um risco reviver uma espécie extinta. Os envolvidos são os mamutes, paquidermes peludos extintos há milhares de anos. Em cadáveres de mamutes recuperados de locais como a Sibéria, estão sendo conduzidas buscas por células somáticas com núcleos viáveis para, posteriormente, ser tentada a sua inserção em zigotos anucleados de elefantes. O método citado é denominado clonagem embrionária porque",
-  "alternativas": [
-   "permite a criação de híbridos.",
-   "depende da reprodução assistida.",
-   "leva à formação de uma nova espécie.",
-   "gera embriões cromossomicamente idênticos ao parental.",
-   "está associado com transferência de genes entre espécies."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-96",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 96"
-  },
-  "enunciado": "Os fabricantes de bebidas só podem chamar de suco de frutas os produtos que tiverem cerca de 50 por cento de polpa, a parte comestível da fruta. Já o néctar de frutas, que tem adição de açúcar, possui entre 20 por cento e 30 por cento de polpa de frutas. O número de calorias dessas bebidas é equivalente, o que muda são a quantidade e a qualidade do açúcar. A qualidade e a quantidade de açúcares presentes nessas bebidas, de uma mesma fruta, diferem, pois",
-  "alternativas": [
-   "há maior quantidade de frutose no suco e maior quantidade de sacarose no néctar.",
-   "há maior quantidade de frutose no néctar e maior quantidade de sacarose no suco.",
-   "há maior quantidade de sacarose no suco e quantidades iguais de frutose nos dois produtos.",
-   "há maior quantidade de frutose no suco e quantidades iguais de sacarose nos dois produtos.",
-   "há maior quantidade de frutose no néctar e quantidades iguais de sacarose nos dois produtos."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -4216,78 +2525,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-115",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 115"
-  },
-  "enunciado": "O palmito juçara (Euterpe edulis) é uma planta que ocorre em áreas florestadas e produz frutos com tamanhos variados. Entretanto, pesquisadores perceberam que, em áreas nas quais as aves de maior porte foram extintas, as novas plantas produzem apenas frutos pequenos. Essa mudança apresentada pelas plantas é uma adaptação vantajosa porque os frutos",
-  "alternativas": [
-   "atraem aves de pequeno porte, garantindo a ingestão dos frutos.",
-   "são transportados pelo vento, aumentando a dispersão de sementes.",
-   "facilitam a desidratação das sementes, prolongando sua durabilidade no solo.",
-   "aceleram a germinação das sementes, favorecendo a colonização de outras áreas.",
-   "armazenam menor quantidade de fotoassimilados, mantendo as reservas da planta."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 130"
-  },
-  "enunciado": "Três inseticidas mortais para as abelhas serão proibidos na União Europeia (UE) durante dois anos, a partir de julho, anunciou a Comissão Europeia em 2013. A medida foi adotada por causa da morte de milhares de abelhas, insetos vitais para o nosso ecossistema, uma vez que desempenham um importante papel na agricultura e, portanto, na produção de alimentos para a humanidade. O impacto dos inseticidas mencionados na produção de alimentos agrícolas é causado pelo(a)",
-  "alternativas": [
-   "redução da produção de mel.",
-   "decréscimo da taxa de polinização.",
-   "contaminação do solo com abelhas mortas.",
-   "aumento de resíduos tóxicos nos alimentos.",
-   "alteração da cadeia alimentar no ecossistema."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-134",
   "materia": "enem-natureza",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -4468,42 +2705,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-142",
-  "materia": "matematica",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 142"
-  },
-  "enunciado": "Um engenheiro fará um projeto de uma casa cujo terreno tem o formato de um retângulo de 36 metros de comprimento por 9 metros de largura. Para isso, ele fará um desenho de um retângulo de 24 centímetros de comprimento por 6 centímetros de largura. Qual deve ser a escala utilizada pelo engenheiro?",
-  "alternativas": [
-   "150 para 1",
-   "225 para 1",
-   "600 para 1",
-   "2,25 para 1",
-   "1,5 para 1"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-149",
   "materia": "matematica",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -4612,42 +2813,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-155",
-  "materia": "matematica",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 155"
-  },
-  "enunciado": "As hemácias são células sanguíneas responsáveis pelo transporte de uma substância chamada hemoglobina, a qual tem a função de levar oxigênio dos pulmões para os tecidos. Hemácias normais têm diâmetro médio de 7,8 vezes, abre parêntese, 10 elevado a menos 6, fecha parêntese, metros. O diâmetro médio dessas hemácias, em metros, é representado pela razão fração de numerador 78 e denominador d, em que d é igual a",
-  "alternativas": [
-   "10 000.",
-   "100 000.",
-   "1 000 000.",
-   "10 000 000.",
-   "100 000 000."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-156",
   "materia": "matematica",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -4670,42 +2835,6 @@ Banco.registrar({ questoes: [
    "58",
    "71",
    "83"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-ppl-157",
-  "materia": "matematica",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 157"
-  },
-  "enunciado": "Um mapa, que ocupa completamente uma folha em forma de quadrado com lado medindo 0,2 metro, detalha 64 hectares de um território. Considere que 1 hectare é igual a 10 000 metros quadrados. O mapa foi elaborado na escala",
-  "alternativas": [
-   "1 para 40.",
-   "1 para 50.",
-   "1 para 4 000.",
-   "1 para 3 200 000.",
-   "1 para 16 000 000."
   ],
   "resposta": 2,
   "fontes": [
@@ -5008,42 +3137,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-ppl-176",
-  "materia": "matematica",
-  "assunto": "ENEM 2022 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 176"
-  },
-  "enunciado": "Uma indústria planeja produzir caixa-d’água, em formato cilíndrico, com 1 metro de altura, capaz de armazenar 0,4 metro cúbico de água. A medida do raio da base dessa caixa-d’água, em metro, deve ser",
-  "alternativas": [
-   "Fração de numerador 0,2 e denominador pi",
-   "Fração de numerador 0,4 e denominador pi",
-   "Raiz quadrada da fração de numerador 0,2 e denominador pi",
-   "Raiz quadrada da fração de numerador 0,4 e denominador pi",
-   "Raiz quadrada da fração de numerador 1,2 e denominador pi"
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-ppl-177",
   "materia": "matematica",
   "assunto": "ENEM 2022 (reaplicação)",
@@ -5108,186 +3201,6 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2022, reaplicação/PPL, 2º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-29",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 29"
-  },
-  "enunciado": "A atleta de salto com vara Fabiana Murer pretendia chegar aos Jogos Olímpicos de Londres com uma marca próxima dos 5 metros. Para isso, ela precisaria melhorar em 15 centímetros seu recorde. Seus treinadores avaliaram que a técnica de seus saltos estava correta, mas que ela precisaria aumentar a velocidade máxima da corrida antes da decolagem.\n\nEntre as capacidades físicas importantes para um bom desempenho no salto com vara, a que tem maior relação com a necessidade dessa atleta é o(a)",
-  "alternativas": [
-   "coordenação motora.",
-   "resistência aeróbia.",
-   "flexibilidade.",
-   "equilíbrio.",
-   "força."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_1_P1_LC_CH_Caderno_09_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-71",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 71"
-  },
-  "enunciado": "Para ampliar a produção frutífera, os produtores do Vale do São Francisco precisaram modificar a forma de irrigação. Um pesquisador da Embrapa explicou que, na região, a irrigação pela técnica de gotejamento permitiu aplicar a água na quantidade exata, evitando desperdícios e problemas para o solo, atendendo à exigência em cada fase do ciclo da cultura e no momento exato em que a planta necessita de água. Os sistemas de irrigação por aspersão e sulco utilizam muita água, o que pode provocar degradação, contaminação ambiental e assoreamento. Então, quando se utiliza a irrigação por gotejamento, é possível diminuir o excesso de água, gerando, consequentemente, eficiência e reduzindo os impactos ambientais.\n\nNo contexto apresentado, a técnica utilizada evita qual impacto ambiental no solo?",
-  "alternativas": [
-   "Savanização.",
-   "Arenização.",
-   "Salinização.",
-   "Compactação.",
-   "Impermeabilização."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_1_P1_LC_CH_Caderno_09_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-8",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 8"
-  },
-  "enunciado": "Seis em cada dez pessoas com 15 anos ou mais não praticam esporte ou atividade física. São mais de 100 milhões de sedentários. Esses são dados do estudo Práticas de esporte e atividade física, da Pnad 2015, realizado pelo IBGE. A falta de tempo e de interesse são os principais motivos apontados para o sedentarismo. Paralelamente, 73,3 por cento das pessoas de 15 anos ou mais afirmaram que o poder público deveria investir em esporte ou atividades físicas. Observou-se uma relação direta entre escolaridade e renda na realização de esportes ou atividades físicas. Enquanto 17,3 por cento das pessoas que não tinham instrução realizavam diversas práticas corporais, esse percentual chegava a 56,7 por cento das pessoas com superior completo. Entre as pessoas que têm Práticas de Esporte e Atividade Física regulares, o percentual de praticantes ia de 31,1 por cento, na classe sem rendimento, a 65,2 por cento, na classe de cinco salários mínimos ou mais. A falta de tempo foi mais declarada pela população adulta, com destaque entre as pessoas de 25 a 39 anos. Entre os adolescentes de 15 a 17 anos, o principal motivo foi não gostarem ou não quererem. Já o principal motivo para praticar esporte, declarado por 11,2 milhões de pessoas, foi relaxar ou se divertir, seguido de melhorar a qualidade de vida ou o bem-estar. A falta de instalação esportiva acessível ou nas proximidades foram motivos pouco citados, demonstrando que a não prática estaria menos associada à infraestrutura disponível.\n\nCom base na pesquisa e em uma visão ampliada de saúde, para a prática regular de exercícios ter influência significativa na saúde dos brasileiros, é necessário o desenvolvimento de estratégias que",
-  "alternativas": [
-   "promovam a melhoria da aptidão física da população, dedicando-se mais tempo aos esportes.",
-   "combatam o sedentarismo presente em parcela significativa da população no território nacional.",
-   "facilitem a adoção da prática de exercícios, com ações relacionadas à educação e à distribuição de renda.",
-   "auxiliem na construção de mais instalações esportivas e espaços adequados para a prática de atividades físicas e esportes.",
-   "estimulem o incentivo fiscal para a iniciativa privada destinar verbas aos programas nacionais de promoção da saúde pelo esporte."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-9",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 9"
-  },
-  "enunciado": "Criado há cerca de 20 anos na Califórnia, o mountainboard é um esporte de aventura que utiliza uma espécie de skate off-road para realizar manobras similares às das modalidades de snowboard, surf e do próprio skate. A atividade chegou ao Brasil em 1997 e hoje possui centenas de praticantes, um circuito nacional respeitável e mais de uma dezena de pistas espalhadas pelo país. Segundo consta na história oficial, o mountainboard foi criado por praticantes de snowboard que sentiam falta de praticar o esporte nos períodos sem neve. Para isso, eles desenvolveram um equipamento bem simples: uma prancha semelhante ao modelo utilizado na neve (menor e um pouco menos flexível), com dois eixos bem resistentes, alças para encaixar os pés e quatro pneus com câmaras de ar para regular a velocidade que pode ser alcançada em diferentes condições. Com essa configuração, o esporte se mostrou possível em diversos tipos de terreno: grama, terra, pedras, asfalto e areia. Além desses pisos, também é possível procurar pelas próprias trilhas para treinar as manobras. A história da prática do mountainboard representa uma das principais marcas das atividades de aventura, caracterizada pela",
-  "alternativas": [
-   "competitividade entre seus praticantes.",
-   "atividade com padrões técnicos definidos.",
-   "modalidade com regras predeterminadas.",
-   "criatividade para adaptações a novos espaços.",
-   "necessidade de espaços definidos para a sua realização."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-41",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 41"
-  },
-  "enunciado": "São vários os fatores, internos e externos, que influenciam os hábitos das pessoas no acesso à internet, assim como nas práticas culturais realizadas na rede. A utilização das tecnologias de informação e comunicação está diretamente relacionada aos aspectos como: conhecimento de seu uso, acesso à linguagem letrada, nível de instrução, escolaridade, letramento digital etc. Os que detêm tais recursos (os mais escolarizados) são os que mais acessam a rede e também os que possuem maior índice de acumulatividade das práticas. A análise dos dados nos possibilita dizer que a falta de acesso à rede repete as mesmas adversidades e exclusões já verificadas na sociedade brasileira no que se refere a analfabetos, menos escolarizados, negros, população indígena e desempregados. Isso significa dizer que a internet, se não produz diretamente a exclusão, certamente a reproduz, tendo em vista que os que mais a acessam são justamente os mais jovens, escolarizados, remunerados, trabalhadores qualificados, homens e brancos. Ao analisarem a correlação entre os hábitos e o perfil socioeconômico dos usuários da internet no Brasil, os pesquisadores",
-  "alternativas": [
-   "apontam o desenvolvimento econômico como solução para ampliar o uso da rede.",
-   "questionam a crença de que o acesso à informação é igualitário e democrático.",
-   "afirmam que o uso comercial da rede é a causa da exclusão de minorias.",
-   "refutam o vínculo entre níveis de escolaridade e dificuldade de acesso.",
-   "condicionam a expansão da rede à elaboração de políticas inclusivas."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
@@ -5368,114 +3281,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-61",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 61"
-  },
-  "enunciado": "Lá embaixo está o Açude Itans, com seu formigueiro a cavar a terra. É mesmo impressionante o esforço daquele formigar de homens ao sol, lavados em suor, que não param, em longas filas pacientes acompanhando centenas de burricos que sobem e descem, numa ciranda comovente e silenciosa, cada burrico com duas caixas de terra no lombo. É o labor organizado para a salvação da terra e do homem. Depois do semideserto que tanto nos acabrunhou o espírito por falta de chuvas, o esforço destes milhares de sertanejos, todos vestidos de brim mescla e calçando alpercatas, no combate consciente à esterilidade da natureza, com as famílias alojadas em pequeninas casas de taipa e telha — embrião de futura cidade — impressionava-nos profundamente. Na construção do empreendimento descrito, destaca-se a presença de",
-  "alternativas": [
-   "engenheiros na execução de canais fluviais.",
-   "coronéis na ampliação de antigas fazendas.",
-   "operários na distribuição dos recursos hídricos.",
-   "trabalhadores na formação de novos espaços.",
-   "negociantes na organização de redes comerciais."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-74",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 74"
-  },
-  "enunciado": "As forças tectônicas dentro da litosfera, controladas pelo calor interno das profundezas, geram terremotos, erupções e soerguimento de montanhas. As forças meteorológicas dentro da atmosfera e da hidrosfera, controladas pelo calor do Sol, produzem tempestades, inundações, geleiras e outros agentes de erosão. A interação dinâmica entre as forças naturais citadas favorece a ocupação do espaço geográfico, na medida em que provoca a formação de",
-  "alternativas": [
-   "solos vulcânicos.",
-   "dorsais oceânicas.",
-   "relevos escarpados.",
-   "superfícies lateríticas.",
-   "dobramentos modernos."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-78",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 78"
-  },
-  "enunciado": "Em 2003, teve início o Programa de Aquisição de Alimentos e, com ele, várias mudanças na perspectiva dos mercados institucionais. Trata-se do primeiro programa de compras públicas com uma orientação exclusiva para a agricultura familiar, articulando-a explicitamente com a segurança alimentar e nutricional. O Programa é destinado à aquisição de produtos agropecuários produzidos por agricultores enquadrados no Programa Nacional de Fortalecimento da Agricultura Familiar (Pronaf), incluídas aqui as categorias: assentados da reforma agrária, trabalhadores rurais sem terra, acampados, quilombolas, agroextrativistas, famílias atingidas por barragens e comunidades indígenas. A ação governamental descrita constitui-se uma importante conquista para os pequenos produtores em virtude da:",
-  "alternativas": [
-   "Inovação tecnológica.",
-   "Reestruturação fundiária.",
-   "Comercialização garantida.",
-   "Eliminação no custo do frete.",
-   "Negociação na bolsa de valores."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-87",
   "materia": "enem-humanas",
   "assunto": "ENEM 2022",
@@ -5504,114 +3309,6 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 1º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-24",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 24"
-  },
-  "enunciado": "Em 2000 tivemos a primeira experiência do futebol feminino em um jogo de videogame, o Mia Hamm Soccer. Doze anos depois, uma petição on-line pedia que a EA Sports incluísse o futebol feminino no Fifa 13. Contudo, só em 2015, com uma nova petição on-line, que arrecadou milhares de assinaturas, tivemos o futebol feminino incluído no Fifa 16. Vendo um nicho de mercado inexplorado, a EA Sports produziu o jogo com 12 seleções femininas e o apresentou como inovação. A empresa sabe que mais de 40 por cento dos praticantes de futebol nos EUA são meninas. Para elas, ver o futebol feminino representado em um jogo de videogame é extremamente importante. Ter o futebol feminino no Fifa 16 é um grande passo para a sua popularização na luta pela igualdade de gênero, num contexto machista, sexista, misógino e homofóbico.\n\nOs jogos eletrônicos presentes na cultura juvenil podem desempenhar uma relevante função na abordagem do futebol ao",
-  "alternativas": [
-   "disseminarem uma modalidade, promovendo a igualdade de gênero.",
-   "superarem jogos malsucedidos no mercado, lançados anteriormente.",
-   "inovarem a modalidade com novas ofertas de jogos ao mercado.",
-   "explorarem nichos de mercado antes ignorados, produzindo mais lucro.",
-   "reforçarem estereótipos de gênero masculino ou feminino nos esportes."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-31",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 31"
-  },
-  "enunciado": "Descrição da imagem: Uma mulher com a cabeça ligeiramente para cima olha várias imagens que circulam ao redor de sua cabeça. As imagens inseridas em telas representam ícones de distintas áreas do saber. Ao fundo de toda a imagem, aparece o céu coberto de nuvens.\n\nA realidade virtual é uma tecnologia de informação que, conforme sugere a imagem, tem como uma de suas principais funções",
-  "alternativas": [
-   "promover a manipulação eficiente de conhecimentos e informações de difícil compreensão no mundo físico.",
-   "conduzir escolhas profissionais da área de ciência da computação, oferecendo um leque de opções de atuação.",
-   "transferir conhecimento da inteligência artificial para as áreas tradicionais, como as das ciências exatas e naturais.",
-   "levar o ser humano a experimentar mentalmente outras realidades, para as quais é transportado sem sair de seu próprio lugar.",
-   "delimitar tecnologias exclusivas de jogos virtuais, a fim de oferecer maior emoção ao jogador por meio de outras realidades."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-46",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 46"
-  },
-  "enunciado": "A expansão das cidades e a formação das aglomerações urbanas no Brasil foram marcadas pela produção industrial e pela consolidação das metrópoles como locais de seu desenvolvimento. Na segunda metade do século XX, as metrópoles brasileiras estenderam-se por áreas de ocupação contínua, configurando densas regiões urbanizadas. O resultado do processo geográfico descrito foi o(a)",
-  "alternativas": [
-   "valorização da escala local.",
-   "crescimento das áreas periféricas.",
-   "densificação do transporte ferroviário.",
-   "predomínio do planejamento estadual.",
-   "inibição de consórcios intermunicipais."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
@@ -5656,114 +3353,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-48",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 48"
-  },
-  "enunciado": "A demanda mundial para a produção de alimentos aumenta progressivamente a taxas muito altas. Atualmente, na maioria dos países, continentes e regiões, a água consumida na agricultura é de cerca de 70 por cento da disponibilidade total. Para que haja a redução da pressão sobre o recurso natural mencionado, a expansão da agricultura demanda melhorias no(a)",
-  "alternativas": [
-   "fertilização química do solo.",
-   "escoamento hídrico do terreno.",
-   "manutenção de poços artesianos.",
-   "eficiência das técnicas de irrigação.",
-   "velocidade das máquinas colheitadeiras."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-56",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 56"
-  },
-  "enunciado": "O toyotismo, a partir dos anos 1970, teve grande impacto no mundo ocidental, quando se mostrou para os países avançados como uma opção possível para a superação de uma crise de acumulação. A característica organizacional do modelo em questão, requerida no contexto de crise, foi o(a)",
-  "alternativas": [
-   "expansão dos grandes estoques.",
-   "incremento da fabricação em massa.",
-   "adequação da produção à demanda.",
-   "aumento da mecanização do trabalho.",
-   "centralização das etapas de planejamento."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-58",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 58"
-  },
-  "enunciado": "Descrição da imagem: Representação cartográfica mostrando o Vale da Grande Fenda, que se estende ao longo da imagem, abrangendo partes da Ásia e da África, com a indicação de vulcões ao longo desse vale.\n\nOs aspectos físicos apresentados originam-se da atuação da força natural de",
-  "alternativas": [
-   "colisão de placas tectônicas.",
-   "rifteamento da crosta terrestre.",
-   "subducção da plataforma oceânica.",
-   "formação de cadeias montanhosas.",
-   "metamorfismo de bordas continentais."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-60",
   "materia": "enem-humanas",
   "assunto": "ENEM 2020",
@@ -5786,114 +3375,6 @@ Banco.registrar({ questoes: [
    "posicionamento crítico do socialismo.",
    "legitimidade do absolutismo monárquico.",
    "entendimento do contratualismo moderno."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-76",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 76"
-  },
-  "enunciado": "A colisão entre uma placa continental e uma oceânica provocará a subducção desta última sob a placa continental, que, a exemplo dos arcos e ilhas, produzirá um arco magmático na borda do continente, composto por rochas vulcânicas acompanhado de deformações e metamorfismo tanto de rochas preexistentes como de parte das rochas formadas no processo. Qual feição fisiográfica é gerada pelo processo tectônico apresentado?",
-  "alternativas": [
-   "Planícies abissais.",
-   "Planaltos cristalinos.",
-   "Depressões absolutas.",
-   "Bacias sedimentares.",
-   "Dobramentos modernos."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-83",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 83"
-  },
-  "enunciado": "Desde o mundo antigo e sua filosofia, que o trabalho tem sido compreendido como expressão de vida e degradação, criação e infelicidade, atividade vital e escravidão, felicidade social e servidão. Trabalho e fadiga. Na Modernidade, sob o comando do mundo da mercadoria e do dinheiro, a prevalência do negócio abre parêntese negar o ócio fecha parêntese veio sepultar o império do repouso, da folga e da preguiça, criando uma ética positiva do trabalho. O processo de ressignificação do trabalho nas sociedades modernas teve início a partir do surgimento de uma nova mentalidade, influenciada pela",
-  "alternativas": [
-   "reforma higienista, que combateu o caráter excessivo e insalubre do trabalho fabril.",
-   "Reforma Protestante, que expressou a importância das atividades laborais no mundo secularizado.",
-   "força do sindicalismo, que emergiu no esteio do anarquismo reivindicando direitos trabalhistas.",
-   "participação das mulheres em movimentos sociais, defendendo o direito ao trabalho.",
-   "visão do catolicismo, que, desde a Idade Média, defendia a dignidade do trabalho e do lucro."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-84",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 84"
-  },
-  "enunciado": "É difícil imaginar que nos anos 1990, num país com setores da população na pobreza absoluta e sem uma rede de benefícios sociais em que se apoiar, um governo possa abandonar o papel de promotor de programas de geração de emprego, de assistência social, de desenvolvimento da infraestrutura e de promoção de regiões excluídas, na expectativa de que o mercado venha algum dia a dar uma resposta adequada a tudo isso. Nesse contexto, a criticada postura dos governos frente à situação social do país coincidiu com a priorização de que medidas?",
-  "alternativas": [
-   "Expansão dos investimentos nas empresas públicas e nos bancos estatais.",
-   "Democratização do crédito habitacional e da aquisição de moradias populares.",
-   "Enxugamento da carga fiscal individual e da contribuição tributária empresarial.",
-   "Reformulação do acesso ao ensino superior e do financiamento científico nacional.",
-   "Reforma das políticas macroeconômicas e dos mecanismos de controle inflacionário."
   ],
   "resposta": 4,
   "fontes": [
@@ -5980,78 +3461,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2019-48",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 48"
-  },
-  "enunciado": "O processamento da mandioca era uma atividade já realizada pelos nativos que viviam no Brasil antes da chegada de portugueses e africanos. Entretanto, ao longo do processo de colonização portuguesa, a produção de farinha foi aperfeiçoada e ampliada, tornando-se lugar-comum em todo o território da colônia portuguesa na América. Com a consolidação do comércio atlântico em suas diferentes conexões, a farinha atravessou os mares e chegou aos mercados africanos.\n\nConsiderando a formação do espaço atlântico, esse produto exemplifica historicamente a",
-  "alternativas": [
-   "difusão de hábitos alimentares.",
-   "disseminação de rituais festivos.",
-   "ampliação dos saberes autóctones.",
-   "apropriação de costumes guerreiros.",
-   "diversificação de oferendas religiosas."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-54",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 54"
-  },
-  "enunciado": "Descrição da imagem: Globo terrestre no qual todos os países e continentes foram agrupados em um único bloco, formando, assim, um supercontinente cercado por água.\n\nA divisão política do mundo como apresentada na imagem seria possível caso o planeta fosse marcado pela estabilidade do(a)",
-  "alternativas": [
-   "ciclo hidrológico.",
-   "processo erosivo.",
-   "estrutura geológica.",
-   "índice pluviométrico.",
-   "pressão atmosférica."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2019-62",
   "materia": "enem-humanas",
   "assunto": "ENEM 2019",
@@ -6080,294 +3489,6 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-65",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 65"
-  },
-  "enunciado": "Localizado a 160 km da cidade de Porto Velho (capital do estado de Rondônia), nos limites da Reserva Extrativista Jaci-Paraná e Terra Indígena Karipunas, o povoado de União Bandeirantes surgiu em 2000 a partir de movimentos de camponeses, madeireiros, pecuaristas e grileiros que, à revelia do ordenamento territorial e diante da passividade governamental, demarcaram e invadiram terras na área rural fundando a vila. Atualmente, constitui-se na região de maior produção agrícola e leiteira do município de Porto Velho, fornecendo, inclusive, alimentos para a Hidrelétrica de Jirau. A dinâmica de ocupação territorial descrita foi decorrente da",
-  "alternativas": [
-   "mecanização do processo produtivo.",
-   "adoção da colonização dirigida.",
-   "realização de reforma agrária.",
-   "ampliação de franjas urbanas.",
-   "expansão de frentes pioneiras."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-72",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 72"
-  },
-  "enunciado": "A Revolta da Vacina (1904) mostrou claramente o aspecto defensivo, desorganizado, fragmentado da ação popular. Não se negava o Estado, não se reivindicava participação nas decisões políticas; defendiam-se valores e direitos considerados acima da intervenção do Estado.\n\nA mobilização analisada representou um alerta, na medida em que a ação popular questionava",
-  "alternativas": [
-   "a alta de preços.",
-   "a política clientelista.",
-   "as reformas urbanas.",
-   "o arbítrio governamental.",
-   "as práticas eleitorais."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-80",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 80"
-  },
-  "enunciado": "Descrição da imagem: Ilustração de uma paisagem composta por edifícios, rodovia, pastagens, rio, floresta, o Sol e um satélite em órbita na atmosfera. A energia solar incidente é representada por setas provenientes do Sol, que apontam para os edifícios, a rodovia, as pastagens, o rio e a floresta. A energia solar refletida é representada por setas provenientes dos edifícios, da rodovia, das pastagens, do rio e da floresta, que apontam para o satélite em órbita na atmosfera.\n\nA geração de imagens por meio da tecnologia ilustrada depende da variação do(a):",
-  "alternativas": [
-   "Albedo dos corpos físicos.",
-   "Profundidade do lençol freático.",
-   "Campo de magnetismo terrestre.",
-   "Qualidade dos recursos minerais.",
-   "Movimento de translação planetária."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-82",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 82"
-  },
-  "enunciado": "O Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (Ibama) está investigando o extermínio de abelhas por intoxicação por agrotóxicos em colmeias de São Paulo e Minas Gerais. Os estudos com inseticidas do tipo neonicotinoides devem estar concluídos no primeiro semestre de 2015. Trata-se de um problema de escala mundial, presente, inclusive, em países do chamado primeiro mundo, e que traz, como consequência, grave ameaça aos seres vivos do planeta, inclusive ao homem. Qual solução para o problema apresentado garante a produtividade da agricultura moderna?",
-  "alternativas": [
-   "Preservação da área de mata ciliar.",
-   "Adoção da prática de adubação química.",
-   "Utilização da técnica de controle biológico.",
-   "Ampliação do modelo de monocultura tropical.",
-   "Intensificação da drenagem do solo de várzea."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-26",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 26"
-  },
-  "enunciado": "Tanto os Jogos Olímpicos quanto os Paralímpicos são mais que uma corrida por recordes, medalhas e busca da excelência. Por trás deles está a filosofia do barão Pierre de Coubertin, fundador do Movimento Olímpico. Como educador, ele viu nos Jogos a oportunidade para que os povos desenvolvessem valores, que poderiam ser aplicados não somente ao esporte, mas à educação e à sociedade. Existem atualmente sete valores associados aos Jogos. Os valores olímpicos são: a amizade, a excelência e o respeito, enquanto os valores paralímpicos são: a determinação, a coragem, a igualdade e a inspiração.\n\nNo contexto das aulas de Educação Física escolar, os valores olímpicos e paralímpicos podem ser identificados quando o colega",
-  "alternativas": [
-   "procura entender o próximo, assumindo atitudes positivas como simpatia, empatia, honestidade, compaixão, confiança e solidariedade, o que caracteriza o valor da igualdade.",
-   "faz com que todos possam ser iguais e receber o mesmo tratamento, assegurando imparcialidade, oportunidades e tratamentos iguais para todos, o que caracteriza o valor da amizade.",
-   "dá o melhor de si na vivência das diversas atividades relacionadas ao esporte ou aos jogos, participando e progredindo de acordo com seus objetivos, o que caracteriza o valor da coragem.",
-   "manifesta a habilidade de enfrentar a dor, o sofrimento, o medo, a incerteza e a intimidação nas atividades, agindo corretamente contra a vergonha, a desonra e o desânimo, o que caracteriza o valor da determinação.",
-   "inclui em suas ações o fair play (jogo limpo), a honestidade, o sentimento positivo de consideração por outra pessoa, o conhecimento dos seus limites, a valorização de sua própria saúde e o combate ao doping, o que caracteriza o valor do respeito."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-63",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 63"
-  },
-  "enunciado": "Descrição de imagem: Mapa-múndi intitulado Trajetória de ciclones tropicais indicando maior concentração de ciclones na zona tropical sobre os oceanos Pacífico, Índico e Atlântico Norte.\n\nQual característica do meio físico é condição necessária para a distribuição espacial do fenômeno representado?",
-  "alternativas": [
-   "Cobertura vegetal com porte arbóreo.",
-   "Barreiras orográficas com altitudes elevadas.",
-   "Pressão atmosférica com diferença acentuada.",
-   "Superfície continental com refletividade intensa.",
-   "Correntes marinhas com direções convergentes."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-75",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 75"
-  },
-  "enunciado": "Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos. Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de",
-  "alternativas": [
-   "estabilização da pirâmide etária.",
-   "conclusão da transição demográfica.",
-   "contenção da entrada de imigrantes.",
-   "elevação do crescimento vegetativo.",
-   "formação de espaços superpovoados."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-88",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 1º dia, questão 88"
-  },
-  "enunciado": "Descrição de imagem: Gráfico intitulado Participação percentual do extrativismo vegetal e da silvicultura no valor da produção primária florestal – Brasil – 1996-2014. O eixo vertical corresponde à porcentagem e o eixo horizontal corresponde ao ano. Uma linha correspondente ao Extrativismo vegetal indica 60 por cento em 1996, descendo para menos de 50 por cento em 1998, permanecendo oscilante nesse patamar até 2002, descendo a menos de 40 por cento em 2003, seguindo nessa tendência até chegar a um pouco mais de 20 por cento em 2014, em valores aproximados. A linha correspondente à Silvicultura indica 40 por cento em 1996, subindo para um pouco mais de 50 por cento em 1998, permanecendo oscilante nesse patamar até 2002, subindo a um pouco mais de 60 por cento em 2003, seguindo nessa tendência até chegar a quase 80 por cento em 2014, em valores aproximados. Visualmente, as linhas partem do eixo vertical separadas, oscilando próximas entre 1997 e 2002, depois seguem em uma tendência de afastamento até 2014, tendo invertido suas posições iniciais. As linhas se opõem simetricamente ao longo do período registrado.\n\nConsiderando as diferenças entre extrativismo vegetal e silvicultura, a variação das curvas do gráfico foi influenciada pela tendência de",
-  "alternativas": [
-   "conservação do bioma nativo.",
-   "estagnação do setor primário.",
-   "utilização de madeira de reflorestamento.",
-   "redução da produção de móveis.",
-   "retração da indústria alimentícia."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD9.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
@@ -6412,186 +3533,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-53",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 53"
-  },
-  "enunciado": "A ampliação das áreas urbanizadas, devido à construção de áreas impermeabilizadas, repercute na capacidade de infiltração das águas no solo, favorecendo o escoamento superficial, a concentração das enxurradas e a ocorrência de ondas de cheia. A urbanização afeta o funcionamento do ciclo hidrológico, pois interfere no rearranjo dos armazenamentos e na trajetória das águas. Considerando esse contexto, que fator contribui para a diminuição das enchentes em áreas urbanas?",
-  "alternativas": [
-   "Pavimentação das vias.",
-   "Criação de espaços verdes.",
-   "Verticalização das moradias.",
-   "Adensamento das construções.",
-   "Assoreamento dos canais de drenagem."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-56",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 56"
-  },
-  "enunciado": "Doze mil quilômetros separam Acra, a capital de Gana, do Vale do Silício, Califórnia, Estados Unidos, centro da revolução tecnológica do século XXI. Há, no entanto, outra distância maior do que a geográfica. Acra e o Vale do Silício estão no extremo de um ciclo de vida. Computadores, tablets e celulares nascem da cabeça de nerds sob o sol californiano e morrem e são descompostos no distrito de Agbogbloshie, periferia africana. A situação descrita é um exemplo de um modelo de desenvolvimento tecnológico que revela um processo de",
-  "alternativas": [
-   "diminuição de empregos formais na área de reciclagem.",
-   "redução do consumo consciente entre as nações envolvidas.",
-   "negligenciamento da logística reversa por esse setor industrial.",
-   "desmantelamento das propostas de tratamento dos resíduos sólidos.",
-   "desestruturação dos serviços de assistência técnica em países emergentes."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-58",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 58"
-  },
-  "enunciado": "No fim da década de 1950, a agricultura intensiva começou a ser disseminada nos países em desenvolvimento. Esse fato marcou o início da Revolução Verde — um período de 30 anos de grandes colheitas que permitiram a muitos países pobres tornarem-se autossuficientes em alimentos. Com esse incrível aumento na produção, observado especialmente nos países da América Latina, veio uma crescente dependência dos produtos químicos agrícolas — e também problemas ecológicos em escala global. No Brasil, os resultados dessa revolução são visíveis e colocaram o país entre os mais importantes da agropecuária mundial. A expansão da capacidade produtiva brasileira, no contexto indicado, também resultou em",
-  "alternativas": [
-   "queda nos níveis de contaminação do solo.",
-   "retomada das técnicas tradicionais de plantio.",
-   "desvalorização financeira das propriedades rurais.",
-   "inibição do fluxo migratório campo-cidade.",
-   "crescimento da demanda por trabalhadores qualificados."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-72",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 72"
-  },
-  "enunciado": "Descrição da imagem: Mapa da Alemanha em 1945 apresenta o país dividido entre as seguintes nações: a Inglaterra, a França, os Estados Unidos (EUA) e a União das Repúblicas Socialistas Soviéticas (URSS). Na porção territorial pertencente à URSS está situada a cidade de Berlim, que também está dividida entre esses quatro países.\n\nA divisão representada do território alemão refletia um contexto geoestratégico de busca por",
-  "alternativas": [
-   "espólio de guerra.",
-   "áreas de influência.",
-   "rotas de navegação.",
-   "controle do petróleo.",
-   "monopólio do comércio."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-74",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 74"
-  },
-  "enunciado": "A originalidade do Absolutismo português talvez esteja no fato de ter sido o regime político europeu que melhor sintetizou a ideia do patrimonialismo estatal: os recursos materiais da nação se confundindo com os bens pessoais do monarca. Na colonização do Brasil, o patrimonialismo da Coroa portuguesa ficou evidente",
-  "alternativas": [
-   "nas capitanias hereditárias.",
-   "na catequização indígena.",
-   "no sistema de plantation.",
-   "nas reduções jesuítas.",
-   "no tráfico de escravos."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-75",
   "materia": "enem-humanas",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -6616,114 +3557,6 @@ Banco.registrar({ questoes: [
    "identidade dos grupos sociais."
   ],
   "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-77",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 77"
-  },
-  "enunciado": "Tal fenômeno não pode ser reduzido a alguns núcleos urbanos no topo da hierarquia. É um processo que conecta serviços avançados, centros produtores e mercados em rede com intensidade diferente e em diferente escala, dependendo da relativa importância das atividades localizadas em cada área face à rede mundial. A estrutura descrita depende da ocorrência da seguinte característica espacial:",
-  "alternativas": [
-   "Extensão da malha ferroviária.",
-   "Presença de centros de pesquisa.",
-   "Geração de energias renováveis.",
-   "Automação das unidades produtivas.",
-   "Qualidade do sistema de telecomunicações."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-80",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 80"
-  },
-  "enunciado": "O horário brasileiro de verão consiste em adiantar em uma hora a hora legal (oficial) de determinados estados. Ele é adotado por iniciativa do Poder Executivo com vistas a limitar a máxima carga a que o sistema fica sujeito no período do ano de maior consumo, aumentando, assim, sua confiabilidade, constituída pelas linhas de transmissão e pelas usinas que atendem as regiões Sul, Sudeste, Centro-Oeste e parte da Região Norte. A ação governamental descrita é possibilitada por meio da seguinte estratégia:",
-  "alternativas": [
-   "Redução do valor das contas de luz.",
-   "Estímulo à geração de energia limpa.",
-   "Diminuição de produção da matriz hidrelétrica.",
-   "Distribuição da eletricidade de modo equitativo.",
-   "Aproveitamento do fotoperíodo de forma estendida."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D1_CD9.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-83",
-  "materia": "enem-humanas",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 83"
-  },
-  "enunciado": "Na Mesopotâmia, os frutos da civilização foram partilhados entre diversas cidades-estados e, no interior delas, entre vários grupos sociais, se bem que desigualmente. No Egito dos faraós, os frutos em questão concentraram-se quase somente na Corte real e, secundariamente, nos centros regionais de poder. Se na Mesopotâmia o comércio cedo começou a servir também à acumulação de riquezas privadas, no Egito as trocas importantes permaneceram por mais tempo sob controle do Estado. Um fator sociopolítico que caracterizava a organização estatal egípcia no contexto mencionado está indicado no(a)",
-  "alternativas": [
-   "atrofiamento da casta militar.",
-   "instituição de assembleias locais.",
-   "eleição dos conselhos provinciais.",
-   "fortalecimento do aparato burocrático.",
-   "esgotamento do fundamento teocrático."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 1º dia (caderno oficial)",
@@ -6916,42 +3749,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-107",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 107"
-  },
-  "enunciado": "Em um reator de fusão nuclear, é necessário produzir plasma a um milhão de graus centígrados para desencadear reações de fusão nuclear controladas. O plasma é formado por um gás ionizado que contém inicialmente deutério D com carga positiva e trítio T com carga positiva (isótopos do hidrogênio, com um e dois nêutrons, respectivamente). Nesse plasma, a energia térmica é suficientemente alta para desencadear uma reação de fusão nuclear na qual o núcleo do deutério, partícula D com carga positiva, e o núcleo de trítio, partícula T com carga positiva, colidem para formar uma partícula alfa e um nêutron n. A representação dessa reação de fusão é D com carga positiva mais T com carga positiva resulta em alfa mais nêutron.\nA partícula alfa é formada por dois prótons e dois nêutrons. A energia liberada pela fusão é dividida na forma de energia cinética entre a partícula alfa e o nêutron n. Considere as massas do próton e do nêutron iguais, que o momento linear total das partículas reagentes é nulo e também que a energia cinética dos produtos é de 20 megaelétrons-volts.\n\nNessa reação de fusão, a energia cinética do nêutron, em megaelétron-volt, é",
-  "alternativas": [
-   "4,0 megaelétrons-volts.",
-   "10 megaelétrons-volts.",
-   "13 megaelétrons-volts.",
-   "15 megaelétrons-volts.",
-   "16 megaelétrons-volts."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-110",
   "materia": "enem-natureza",
   "assunto": "ENEM 2026",
@@ -7012,78 +3809,6 @@ Banco.registrar({ questoes: [
    "monozigóticos, do mesmo sexo ou de sexos diferentes."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 116"
-  },
-  "enunciado": "Para sintetizar A T P, as células musculares podem utilizar a glicose, proveniente do sangue, ou o glicogênio. Em ambos os processos, é produzido piruvato, que, na respiração anaeróbica, é convertido em lactato e, na respiração aeróbica, é transportado para as mitocôndrias. Essas diferentes vias de obtenção de energia pelas células podem afetar o rendimento de atletas profissionais. Frequentemente, corredores de maratona realizam seus treinamentos em locais de maior altitude, onde o ar rarefeito condiciona o organismo a uma menor disponibilidade de oxigênio para sua atividade física. Esse condicionamento auxilia as células musculares a obterem a maior parte de sua energia durante o esforço físico pelo processo de respiração aeróbica, cujo rendimento energético é maior em relação à respiração anaeróbica.\n\nO sucesso desse condicionamento pode ser avaliado com o monitoramento de parâmetros sanguíneos em um teste de esforço físico. Nesse caso, a análise das amostras de sangue devem indicar",
-  "alternativas": [
-   "aumento da taxa de glicemia.",
-   "redução no teor de proteínas.",
-   "redução nos níveis de lactato.",
-   "redução no número de hemácias.",
-   "aumento da concentração de piruvato."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-121",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 121"
-  },
-  "enunciado": "Para recuperar o cromo nos resíduos de um laboratório, realizou-se a reação de 5,2 gramas de C r com carga mais três do efluente com hidróxido de sódio, obtendo hidróxido de cromo(três) como precipitado, o qual foi separado e calcinado até óxido de cromo(três). O processo teve rendimento de 90 por cento. As equações químicas relativas ao processo são apresentadas a seguir:\n\nDescrição das equações químicas:\nPrimeira equação: C r com carga mais três (aquoso) reage com 3 N a O H (aquoso), produzindo C r, abre parêntese, O H, fecha parêntese, 3 (sólido) e 3 N a com carga positiva (aquoso).\nSegunda equação: 2 C r, abre parêntese, O H, fecha parêntese, 3 (sólido), produzindo C r2O3 (sólido) e 3 H2O (gasoso).\n(Fim da descrição)\n\nDados: massas molares (grama por mol): C r igual a 52; O igual a 16.\n\nA massa, em grama, do composto C r2O3 obtida nessa reação é mais próxima de",
-  "alternativas": [
-   "3,2 gramas.",
-   "6,8 gramas.",
-   "7,6 gramas.",
-   "8,4 gramas.",
-   "13,7 gramas."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
@@ -7204,42 +3929,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 130"
-  },
-  "enunciado": "A produção de um clone, por clonagem reprodutiva animal, envolveu três ovelhas e seguiu três etapas:\n1. retirada do núcleo do gameta da ovelha A;\n2. transferência do núcleo diploide de uma célula somática da ovelha B para o gameta anucleado da ovelha A;\n3. implantação do, abre aspas, zigoto, fecha aspas, formado no útero da ovelha C.\n\nCaso esse clone apresentasse uma característica indesejada, resultante da homozigose de alelos recessivos, esses alelos seriam oriundos do(s) organismo(s)",
-  "alternativas": [
-   "A.",
-   "B.",
-   "C.",
-   "A e C.",
-   "A ou B."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-133",
   "materia": "enem-natureza",
   "assunto": "ENEM 2026",
@@ -7264,78 +3953,6 @@ Banco.registrar({ questoes: [
    "favorecer a emigração das espécies silvestres."
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-134",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 134"
-  },
-  "enunciado": "Em 2012, durante várias campanhas de combate à dengue, uma das ações de prevenção foi a eliminação de espécimes de plantas epífitas conhecidas como bromélias, por facilitarem o acúmulo de água parada em suas folhas sobrepostas.\n\nA eliminação dessas plantas foi justificada para o combate à dengue porque",
-  "alternativas": [
-   "os mosquitos adultos das espécies vetoras se abrigam entre as suas folhas sobrepostas.",
-   "a disposição de suas folhas propicia o ambiente ideal para o acasalamento do Aedes aegypti.",
-   "o tipo de ambiente que se forma com a água acumulada é favorável ao desenvolvimento das larvas do Aedes aegypti.",
-   "os mosquitos transmissores da doença se alimentam dos nutrientes solubilizados na água acumulada em suas folhas.",
-   "a água acumulada é o ambiente propício para que o vírus da dengue se espalhe entre os mosquitos transmissores da doença."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-139",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 139"
-  },
-  "enunciado": "Um adolescente, tendo em vista uma alimentação saudável, consome diariamente 7,5 decilitros de leite durante 1 mês (30 dias). Sabe-se que o preço de um litro de leite é 1 real e 98 centavos.\n\nNessas condições, o custo mensal com o consumo de leite desse adolescente é de",
-  "alternativas": [
-   "14 reais e 85 centavos.",
-   "22 reais e 50 centavos.",
-   "44 reais e 55 centavos.",
-   "148 reais e 50 centavos.",
-   "445 reais e 50 centavos."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
@@ -7456,78 +4073,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-149",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 149"
-  },
-  "enunciado": "O preço de venda V de um produto, em real, é dado pela expressão V é igual a, abre parêntese, M mais F, fecha parêntese, vezes, abre parêntese, 1 mais L, fecha parêntese, em que M e F são, respectivamente, os custos dos insumos utilizados e os custos de fabricação, cuja soma representa o custo total do produto, em real, e L é o percentual de lucro sobre o custo total com a venda desse produto.\nDurante o último ano, M foi 50 por cento superior a F. Para o ano atual, M teve uma redução de 30 por cento e F, um acréscimo de 45 por cento, ambos em relação ao último ano.\n\nPara que o preço de venda V permaneça inalterado, o percentual de lucro no ano atual, em relação ao do último ano, deverá",
-  "alternativas": [
-   "aumentar 15 por cento.",
-   "aumentar 7,5 por cento.",
-   "diminuir 7,5 por cento.",
-   "diminuir 15 por cento.",
-   "manter-se inalterado."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-151",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 151"
-  },
-  "enunciado": "Uma cafeteria vende cápsulas de café nas intensidades tradicional, suave, forte e extraforte. Ela comercializa essas cápsulas em kits com 12 unidades, contendo:\n- pelo menos duas cápsulas de café na intensidade tradicional e pelo menos uma cápsula de cada uma das demais intensidades;\n- quantidades iguais de cápsulas de café nas intensidades suave e forte.\n\nQuantos kits diferentes podem ser formados?",
-  "alternativas": [
-   "20",
-   "25",
-   "36",
-   "286",
-   "455"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-153",
   "materia": "matematica",
   "assunto": "ENEM 2026",
@@ -7600,42 +4145,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-156",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 156"
-  },
-  "enunciado": "Para visitar um amigo que mora a 150 quilômetros de sua casa, João dispunha de duas possibilidades de transporte: ônibus e carro. A ida de ônibus custa 90 reais, e a volta, 80 reais. Já seu carro consome, em média, um litro de gasolina a cada 12 quilômetros percorridos. Após pesquisar o preço da gasolina, decidiu viajar de carro. Com isso, considerando apenas o gasto com gasolina, economizou 20 reais no custo de ida e volta em relação ao que gastaria se viajasse de ônibus.\n\nO preço, em real, que João pagou pelo litro de gasolina foi",
-  "alternativas": [
-   "5,20.",
-   "5,60.",
-   "6,00.",
-   "6,80.",
-   "7,20."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-158",
   "materia": "matematica",
   "assunto": "ENEM 2026",
@@ -7660,78 +4169,6 @@ Banco.registrar({ questoes: [
    "V é igual a 80000 vezes 0,12 elevado a t."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-159",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 159"
-  },
-  "enunciado": "Um estudante de biologia aprendeu que o diâmetro médio da mitocôndria, organela responsável pela respiração celular, mede 0,75 micrômetro (1 micrômetro equivale à milionésima parte de um metro).\nPara ter uma ideia do quão pequena é a mitocôndria, o estudante converteu a medida desse diâmetro para a unidade milímetro.\n\nA medida do diâmetro médio da mitocôndria, em milímetro, é",
-  "alternativas": [
-   "7,5 vezes 10 elevado a menos 1.",
-   "7,5 vezes 10 elevado a menos 2.",
-   "7,5 vezes 10 elevado a menos 4.",
-   "7,5 vezes 10 elevado a menos 5.",
-   "7,5 vezes 10 elevado a menos 7."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-160",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 160"
-  },
-  "enunciado": "No momento do Big Bang, o Universo passou por um crescimento enorme que durou menos de um trilionésimo de segundo. Para se ter uma ideia desse tempo, um trilionésimo é um número que pode ser representado por uma fração em que o numerador é 1 e o denominador é um número inteiro iniciado por 1 seguido apenas de zeros.\n\nRepresentando um trilionésimo por uma fração, quantos zeros após o 1 do denominador existem nessa fração?",
-  "alternativas": [
-   "9",
-   "11",
-   "12",
-   "14",
-   "15"
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
@@ -7780,78 +4217,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-165",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 165"
-  },
-  "enunciado": "Marcos possui recursos em uma aplicação que rende 1 por cento ao mês a juros compostos. Quando o saldo dessa aplicação alcançar 90000 reais, ele comprará um carro, cujas duas opções de pagamento são:\n- 89000 reais, à vista, no ato da compra;\n- 3 parcelas mensais iguais, no valor de 30000 reais cada, sendo a primeira paga no ato da compra.\n\nO pagamento por esse carro será feito utilizando somente recursos provenientes dessa aplicação, que serão resgatados nos momentos apropriados e nas quantias necessárias. Ele escolherá a opção de pagamento na qual, 2 meses após a compra do carro, o saldo de sua aplicação seja o maior.\n\nAo final desses 2 meses, o saldo, em real, da aplicação de Marcos será",
-  "alternativas": [
-   "1000,00.",
-   "1010,00.",
-   "1020,10.",
-   "1509,00.",
-   "1824,09."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-167",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 167"
-  },
-  "enunciado": "De acordo com dados do Ibope, órgão que mede a audiência das emissoras de televisão no Brasil, entre 2004 e 2014 observou-se que a soma das audiências das maiores emissoras de TV aberta brasileiras caiu de 34,3 pontos para 24,3 pontos.\n\nA queda percentual de audiência das maiores emissoras de TV aberta brasileiras, entre os anos de 2004 e 2014, foi de",
-  "alternativas": [
-   "abre parêntese, fração de numerador 10 e denominador 24,3, fecha parêntese, por cento.",
-   "abre parêntese, fração de numerador 10 e denominador 34,3, fecha parêntese, por cento.",
-   "abre parêntese, fração de numerador 1000 e denominador 24,3, fecha parêntese, por cento.",
-   "abre parêntese, fração de numerador 1000 e denominador 34,3, fecha parêntese, por cento.",
-   "abre parêntese, fração de numerador 2430 e denominador 34,3, fecha parêntese, por cento."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-169",
   "materia": "matematica",
   "assunto": "ENEM 2026",
@@ -7876,42 +4241,6 @@ Banco.registrar({ questoes: [
    "5833"
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2026-170",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 170"
-  },
-  "enunciado": "O tratamento de água é um conjunto de procedimentos físicos e químicos que tornam a água apta para o consumo humano. Uma fábrica que realiza seu próprio tratamento de água possui duas estações de tratamento diferentes: 1 e 2. Trabalhando sozinha, a estação 1 leva 6 horas para tratar toda a água contaminada em um dia de trabalho dessa fábrica, enquanto a estação 2 leva 9 horas para realizar essa mesma tarefa.\nEssa fábrica decidiu acionar as duas estações de tratamento simultaneamente.\n\nQuantas horas as duas estações levarão para tratar toda a água contaminada em um dia de trabalho dessa fábrica?",
-  "alternativas": [
-   "7,50",
-   "7,20",
-   "4,50",
-   "4,00",
-   "3,60"
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
@@ -7960,42 +4289,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2026-175",
-  "materia": "matematica",
-  "assunto": "ENEM 2026",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2026,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 175"
-  },
-  "enunciado": "O volume de água armazenado em um reservatório é dado pela soma do volume útil com o volume de reserva técnica. O volume de reserva técnica só pode ser utilizado após a água do volume útil acabar.\nEm determinado momento, o reservatório de uma cidade conta com um volume útil de 480 milhões de metros cúbicos e um volume de reserva técnica de 30 milhões de metros cúbicos. Ao se calcular o consumo médio diário de água, concluiu-se que, em um cenário em que o reservatório não seja reabastecido, todo o volume de água armazenado no reservatório seria utilizado em um período de 30 dias. Considerando-se esse cenário, estabeleceu-se a necessidade de redução do volume médio diário de água fornecida atualmente de modo que, ao final desse período de 30 dias, ainda restasse 25 por cento do volume útil no reservatório, além do volume de reserva técnica.\n\nQual deve ser a redução do volume médio diário de água fornecida, em milhão de metros cúbicos, para atender ao que foi estabelecido?",
-  "alternativas": [
-   "5,25",
-   "5,00",
-   "4,25",
-   "4,00",
-   "3,00"
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2026-176",
   "materia": "matematica",
   "assunto": "ENEM 2026",
@@ -8024,42 +4317,6 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2026, aplicação regular, 2º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2026_Dia_2_P1_CN_MT_Caderno_11_Marrom_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 91"
-  },
-  "enunciado": "O protozoário Trypanosoma cruzi, causador da doença de Chagas, pode ser a nova arma da medicina contra o câncer. Pesquisadores brasileiros conseguiram criar uma vacina contra a doença usando uma variação do protozoário incapaz de desencadear a patologia (não patogênico). Para isso, realizaram uma modificação genética criando um T. cruzi capaz de produzir também moléculas fabricadas pelas células tumorais. Quando o organismo inicia o combate ao protozoário, entra em contato também com a molécula tumoral, que passa a ser vista também pelo sistema imune como um indicador de células do protozoário. Depois de induzidas as defesas, estas passam a destruir todas as células com a molécula tumoral, como se lutassem apenas contra o protozoário. Qual o mecanismo utilizado no experimento para enganar as células de defesa, fazendo com que ataquem o tumor?",
-  "alternativas": [
-   "Autoimunidade.",
-   "Hipersensibilidade.",
-   "Ativação da resposta inata.",
-   "Apresentação de antígeno específico.",
-   "Desencadeamento de processo anti-inflamatório."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
@@ -8248,42 +4505,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 116"
-  },
-  "enunciado": "Desde a proposição da teoria de seleção natural por Darwin, os seres vivos nunca mais foram olhados da mesma forma. No que diz respeito à reprodução de anfíbios anuros, os cientistas já descreveram diferentes padrões reprodutivos, como os exemplificados a seguir: Espécie 1 – As fêmeas produzem cerca de 5 000 gametas, que são fecundados na água, em lagoas temporárias de estação chuvosa. Todo o desenvolvimento embrionário, do ovo à metamorfose, ocorre, nesse ambiente, independente dos pais. Espécie 2 – As fêmeas produzem aproximadamente 200 gametas, que são depositados em poças próximas a corpos-d’água. Os embriões são vigiados pelos machos durante boa parte do seu desenvolvimento. Espécie 3 – As fêmeas produzem por volta de 20 gametas, que são fecundados sobre a superfície das folhas de plantas cujos galhos estão dispostos acima da superfície de corpos-d’água e aí se desenvolvem até a eclosão. Espécie 4 – As fêmeas produzem poucos gametas que, quando fecundados, são, abre aspas, abocanhados, fecha aspas, pelos machos. Os embriões se desenvolvem no interior do saco vocal do macho até a metamorfose, quando saem através da boca do pai. Os padrões descritos evidenciam que",
-  "alternativas": [
-   "as fêmeas influenciam o comportamento dos machos.",
-   "o cuidado parental é necessário para o desenvolvimento.",
-   "o grau de evolução determina o comportamento reprodutivo.",
-   "o sucesso reprodutivo pode ser garantido por estratégias diferentes.",
-   "o ambiente induz modificação na produção do número de gametas femininos."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-120",
   "materia": "enem-natureza",
   "assunto": "ENEM 2022",
@@ -8306,42 +4527,6 @@ Banco.registrar({ questoes: [
    "massa muscular do indivíduo.",
    "atividade anaeróbica da musculatura.",
    "taxa de transporte de oxigênio pelo sangue."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 130"
-  },
-  "enunciado": "A Agência Nacional de Vigilância Sanitária (Anvisa) aprovou um produto de terapia gênica no país, indicado para o tratamento da distrofia hereditária da retina. O procedimento é recomendado para crianças acima de 12 meses e adultos com perda de visão causada pela mutação do gene humano RPE65. O produto, elaborado por engenharia genética, é composto por um vírus, no qual foi inserida uma cópia do gene normal humano RPE65 para corrigir o funcionamento das células da retina. O sucesso dessa terapia advém do fato de que o produto favorecerá a",
-  "alternativas": [
-   "correção do código genético para a tradução da proteína.",
-   "alteração do RNA ribossômico ligado à síntese da proteína.",
-   "produção de mutações benéficas para a correção do problema.",
-   "liberação imediata da proteína normal na região ocular humana.",
-   "expressão do gene responsável pela produção da enzima normal."
   ],
   "resposta": 4,
   "fontes": [
@@ -8572,42 +4757,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-152",
-  "materia": "matematica",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 152"
-  },
-  "enunciado": "Quarenta mudas de flores devem ser plantadas no contorno de um canteiro circular de 2,2 metros de diâmetro, com um espaçamento padrão de 12 centímetros entre mudas. Fazendo-se os cálculos, chegou-se à conclusão de que não havia mudas suficientes e optou-se, então, por alterar o espaçamento padrão. Use 3 como aproximação para pi. Em quantos centímetros deve ser aumentado o espaçamento padrão entre as mudas?",
-  "alternativas": [
-   "4,50",
-   "6,15",
-   "9,07",
-   "21,00",
-   "24,30"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-153",
   "materia": "matematica",
   "assunto": "ENEM 2022",
@@ -8644,42 +4793,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-160",
-  "materia": "matematica",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 160"
-  },
-  "enunciado": "No ano de 2015 o Brasil enfrentou uma grave crise hídrica. O diretor da empresa de abastecimento de água e saneamento do estado de São Paulo afirmou, no dia 27 de janeiro de 2015, que não estava descartado um possível racionamento em toda a capital. Segundo o diretor, para ampliar a economia de água praticada durante esse período, em uma semana seria necessário escolher dois dias não consecutivos para fornecimento de água e nos demais cinco dias seria interrompido o fornecimento. De quantas maneiras diferentes podem ser escolhidos os dias para fornecimento e para interrupção de água nessa semana?",
-  "alternativas": [
-   "6",
-   "12",
-   "15",
-   "21",
-   "42"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-161",
   "materia": "matematica",
   "assunto": "ENEM 2022",
@@ -8702,42 +4815,6 @@ Banco.registrar({ questoes: [
    "3,60.",
    "6,48.",
    "7,20."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2022-162",
-  "materia": "matematica",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 162"
-  },
-  "enunciado": "Em janeiro de 2013, foram declaradas 1 794 272 admissões e 1 765 372 desligamentos no Brasil, ou seja, foram criadas 28 900 vagas de emprego, segundo dados do Cadastro Geral de Empregados e Desempregados (Caged), divulgados pelo Ministério do Trabalho e Emprego (MTE). Segundo o Caged, o número de vagas criadas em janeiro de 2013 sofreu uma queda de 75 por cento, quando comparado com o mesmo período de 2012. De acordo com as informações dadas, o número de vagas criadas em janeiro de 2012 foi",
-  "alternativas": [
-   "16 514.",
-   "86 700.",
-   "115 600.",
-   "441 343.",
-   "448 568."
   ],
   "resposta": 2,
   "fontes": [
@@ -8896,42 +4973,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2022-173",
-  "materia": "matematica",
-  "assunto": "ENEM 2022",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2022,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 173"
-  },
-  "enunciado": "Um casal deseja recarregar seu cartão bancário pré-pago, para realizar uma viagem ao exterior. Eles recarregarão esse cartão com 3 000 dólares, em uma única transação. A unidade monetária do país onde reside o casal é o zed e a taxa cambial é de 2,20 zeds por dólar. É cobrado um imposto de 3 por cento sobre o valor pago, em zed, pela recarga, além de uma quantia fixa de 40 zeds pela transação bancária. Qual o valor mínimo, em zed, que esse casal deve possuir para recarregar o cartão?",
-  "alternativas": [
-   "6 640,00",
-   "6 690,00",
-   "6 730,00",
-   "6 838,00",
-   "6 886,00"
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2022, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2022-175",
   "materia": "matematica",
   "assunto": "ENEM 2022",
@@ -9040,78 +5081,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2021-169",
-  "materia": "matematica",
-  "assunto": "ENEM 2021",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2021,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 169"
-  },
-  "enunciado": "O quadro apresenta o número de terremotos de magnitude maior ou igual a 7, na escala Richter, ocorridos em nosso planeta nos anos de 2000 a 2011.\n\nDescrição da imagem: O quadro apresenta o número de terremotos nos anos de 2000 a 2011. Em 2000, ocorreram 15 terremotos. Em 2001, ocorreram 16 terremotos. Em 2002, ocorreram 13 terremotos. Em 2003, ocorreram 15 terremotos. Em 2004, ocorreram 16 terremotos. Em 2005, ocorreram 11 terremotos. Em 2006, ocorreram 11 terremotos. Em 2007, ocorreram 18 terremotos. Em 2008, ocorreram 12 terremotos. Em 2009, ocorreram 17 terremotos. Em 2010, ocorreram 24 terremotos. Em 2011, ocorreram 20 terremotos.\n\nUm pesquisador acredita que a mediana representa bem o número anual típico de terremotos em um período. Segundo esse pesquisador, o número anual típico de terremotos de magnitude maior ou igual a 7 é",
-  "alternativas": [
-   "11.",
-   "15.",
-   "15,5.",
-   "15,7.",
-   "17,5."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2021, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 91"
-  },
-  "enunciado": "Megaespetáculos com queima de grande quantidade de fogos de artifício em festas de final de ano são muito comuns no Brasil. Após a queima, grande quantidade de material particulado permanece suspensa no ar. Entre os resíduos, encontram-se compostos de sódio, potássio, bário, cálcio, chumbo, antimônio, cromo, além de percloratos e gases, como os dióxidos de nitrogênio e enxofre.\n\nEsses espetáculos promovem riscos ambientais, porque",
-  "alternativas": [
-   "as substâncias resultantes da queima de fogos de artifício são inflamáveis.",
-   "os resíduos produzidos na queima de fogos de artifício ainda são explosivos.",
-   "o sódio e o potássio são os principais responsáveis pela toxicidade do produto da queima.",
-   "os produtos da queima contêm metais pesados e gases tóxicos que resultam em poluição atmosférica.",
-   "o material particulado gerado se deposita na superfície das folhas das plantas impedindo os processos de respiração celular."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-95",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020",
@@ -9136,42 +5105,6 @@ Banco.registrar({ questoes: [
    "as correntes de convecção nas proximidades do condensador ocorrem com maior dificuldade."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-96",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 96"
-  },
-  "enunciado": "Durante a realização de uma partida de futebol, os jogadores perceberam que a bola estava murcha. Para calibrar a bola, um jogador utilizou uma bomba pneumática manual, composta por um êmbolo que desliza no interior de um cilindro feito de plástico. No processo de calibração da bola, o jogador percebeu que a parte final da bomba em contato com sua mão, e que fica mais próxima ao bico da bomba, ficou bem quente. O significativo aquecimento notado pelo jogador deve-se ao(à)",
-  "alternativas": [
-   "atrito sucessivo entre o êmbolo e as paredes internas da bomba.",
-   "transferência de calor por condução das mãos do jogador para a bomba.",
-   "aumento da energia interna do ar contido na bomba a cada compressão promovida.",
-   "turbilhonamento promovido nas porções de ar confinadas acima e abaixo do êmbolo.",
-   "expansão do ar na saída pela parte inferior da bomba a cada compressão promovida."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -9220,42 +5153,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-98",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 98"
-  },
-  "enunciado": "Um chuveiro elétrico foi instalado indevidamente, de forma que, quando é ligado com a chave seletora na posição inverno, a água fica com temperatura baixa. Verifica-se que o chuveiro está ligado a um disjuntor de 50 ampères e a corrente medida é de cerca de 30 ampères. A potência do chuveiro, como especificado, é de 4 400watts na tensão de 110 volts. Para aquecer a água até a temperatura máxima, pode-se",
-  "alternativas": [
-   "diminuir o comprimento da resistência elétrica do chuveiro.",
-   "substituir o fio que alimenta o chuveiro por outro de menor diâmetro.",
-   "instalar um resistor em série com a resistência do chuveiro.",
-   "ligar o chuveiro a um disjuntor de menor amperagem.",
-   "trocar sua resistência elétrica por outra de maior resistividade."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-99",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020",
@@ -9280,78 +5177,6 @@ Banco.registrar({ questoes: [
    "Os reagentes A mais 0,5 B formam o produto C. A reação ocorre com o uso de um catalisador contendo um metal não tóxico."
   ],
   "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-100",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 100"
-  },
-  "enunciado": "O diapasão de garfo é um instrumento metálico em forma de forquilha, que serve para afinar instrumentos musicais. Para isso, o diapasão é feito para vibrar e o som de determinada altura por ele emitido é comparado com o som emitido pelo instrumento. O ajuste ocorre até que o instrumento emita um som de mesma característica que a do diapasão.\n\nQual característica do som deve ser ajustada?",
-  "alternativas": [
-   "Amplitude.",
-   "Frequência.",
-   "Intensidade.",
-   "Timbre.",
-   "Velocidade de propagação."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-102",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 102"
-  },
-  "enunciado": "Caso um astronauta, no interior de uma estação espacial em órbita em torno da Terra, tente medir seu peso em uma balança convencional, essa não indicará nenhum valor.\n\nA interpretação científica para esse fato é que a aceleração gravitacional terrestre",
-  "alternativas": [
-   "tende a zero, devido à grande distância da Terra.",
-   "inexiste fora da atmosfera da Terra, devido à ausência de ar.",
-   "anula-se com a aceleração da gravidade lunar, devido à proximidade da Lua.",
-   "mantém o mesmo movimento orbital para o astronauta e a balança, devido à ação igual em ambos.",
-   "não atua em corpos que se encontram no vácuo, devido ao fato de tal meio não permitir a existência de forças."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -9400,42 +5225,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-107",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 107"
-  },
-  "enunciado": "A Síndrome Respiratória do Oriente Médio, abre parêntese, MERS, fecha parêntese, tem preocupado o mundo, em especial pelas semelhanças com a Síndrome Respiratória Aguda Grave, abre parêntese, SARS, fecha parêntese, e pela letalidade. As pessoas acometidas podem apresentar febre, tosse, dificuldade de respirar, náuseas e diarreia. Causada por um coronavírus, a doença espalha-se facilmente, pelo contato com indivíduos infectados.\n\nQual forma de prevenção pode, emergencialmente, auxiliar no controle da disseminação dessa epidemia?",
-  "alternativas": [
-   "Evitar o frio.",
-   "Utilizar antitérmicos.",
-   "Ter hábitos de vida saudáveis.",
-   "Melhorar o saneamento básico.",
-   "Usar máscaras de proteção facial."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-108",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020",
@@ -9460,42 +5249,6 @@ Banco.registrar({ questoes: [
    "Decaimento radioativo do carbono, provocado por partículas beta."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-109",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 109"
-  },
-  "enunciado": "Plantas pioneiras são as que iniciam o processo natural de cicatrização de uma área desprovida de vegetação. Em geral, têm pequeno porte e crescem muito rápido, desenvolvem-se a pleno sol e são pouco exigentes quanto às condições do solo. Produzem grande quantidade de sementes e possuem ciclo de vida curto.\n\nEssas plantas são importantes em um projeto de restauração ambiental, pois promovem, no solo,",
-  "alternativas": [
-   "aumento da incidência de luz solar.",
-   "diminuição da absorção de água.",
-   "estabilização da umidade.",
-   "elevação de temperatura.",
-   "liberação de oxigênio."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -9544,78 +5297,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-111",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 111"
-  },
-  "enunciado": "Uma mulher de 21 anos não tem filhos e apresenta um ciclo menstrual regular. Sua primeira menstruação do presente ano teve início no dia primeiro de janeiro. Ela teve uma única relação sexual naquele mês, abre parêntese, no dia 4 de janeiro, fecha parêntese, sendo que nenhum método contraceptivo foi utilizado. Como até o dia 29 de janeiro ela não havia menstruado novamente, resolveu fazer um teste de gravidez, já que ela e seu parceiro não apresentavam problemas de infertilidade. O resultado foi negativo e, no dia seguinte, abre parêntese, 30 de janeiro, fecha parêntese, ela menstruou normalmente.\n\nDe acordo com um ciclo menstrual regular, a mulher não ficou grávida porque a ovocitação, abre parêntese, abre aspas, ovulação, fecha aspas, fecha parêntese, ocorreu cerca de",
-  "alternativas": [
-   "1 a 2 dias após a relação sexual.",
-   "9 a 11 dias após a relação sexual.",
-   "24 a 25 dias após a relação sexual.",
-   "6 a 7 dias antes da relação sexual.",
-   "2 a 3 dias antes da relação sexual."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-112",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 112"
-  },
-  "enunciado": "O exame parasitológico de fezes é utilizado para detectar ovos de parasitos. Um dos métodos utilizados, denominado de centrífugo-flutuação, considera a densidade dos ovos em relação a uma solução de densidade 1,15 grama por mililitro. Assim, ovos que flutuam na superfície dessa solução são detectados. Os dados de densidade dos ovos de alguns parasitos estão apresentados na tabela.\n\nDescrição da tabela: A tabela apresenta duas colunas, uma com os nomes dos parasitos e outra com as densidades de seus ovos, da seguinte maneira: Ancylostoma: 1,06 grama por mililitro. Ascaris lumbricoides: 1,11 grama por mililitro. Ascaris suum: 1,13 grama por mililitro. Schistosoma mansoni: 1,18 grama por mililitro. Taenia saginata: 1,30 grama por mililitro.\n\nConsiderando-se a densidade dos ovos e da solução, ovos de quais parasitos podem ser detectados por esse método?",
-  "alternativas": [
-   "A. lumbricoides, A. suum e S. mansoni.",
-   "S. mansoni, T. saginata e Ancylostoma.",
-   "Ancylostoma, A. lumbricoides e A. suum.",
-   "T. saginata, S. mansoni e A. lumbricoides.",
-   "A. lumbricoides, A. suum e T. saginata."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-114",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020",
@@ -9638,42 +5319,6 @@ Banco.registrar({ questoes: [
    "dissolvem-se na água, causando a mortandade dos seres marinhos por ingestão da água contaminada.",
    "têm caráter hidrofóbico e baixa densidade, impedindo as trocas gasosas entre o meio aquático e a atmosfera.",
    "têm cadeia pequena e elevada volatilidade, contaminando a atmosfera local e regional em função dos ventos nas orlas marítimas."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-115",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 115"
-  },
-  "enunciado": "Durante uma coleta no Pantanal mato-grossense foram observadas algumas espécies de gramíneas, plantas que normalmente apresentam caule rastejante no solo, enrolando-se em outras plantas, dando a aparência de serem plantas trepadeiras. Levando em conta as características ambientais do Pantanal, a adaptação morfológica dessas gramíneas foi uma estratégia que possibilitou",
-  "alternativas": [
-   "captar mais luz.",
-   "captar mais oxigênio.",
-   "captar mais nutrientes.",
-   "escapar do excesso de água.",
-   "escapar da predação dos herbívoros."
   ],
   "resposta": 3,
   "fontes": [
@@ -9868,114 +5513,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-136",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 136"
-  },
-  "enunciado": "O sistema de numeração decimal é o mais utilizado no dia a dia. Nesse sistema, cada número natural é escrito como uma soma de potências de dez, cada uma multiplicada por um número de 0 a 9. Por exemplo, o número 3 256 é igual a 3 vezes abre parêntese 10 elevado a 3 fecha parêntese mais 2 vezes abre parêntese 10 elevado a 2 fecha parêntese mais 5 vezes 10 mais 6 vezes abre parêntese 10 elevado a 0 fecha parêntese. Os computadores, por sua vez, processam seus dados usando o sistema de numeração binário, que segue uma lógica similar à do decimal: cada natural é escrito como soma de potências de 2, em que cada uma delas é multiplicada por 0 ou por 1. A tabela mostra como são denotados os números naturais de 1 até 10 no sistema binário.\n\nDescrição da tabela: 1 é descrito como: um; 2 é descrito como: um zero; 3 é descrito como: um um; 4 é descrito como: um zero zero; 5 é descrito como: um zero um; 6 é descrito como: um um zero; 7 é descrito como: um um um; 8 é descrito como: um zero zero zero; 9 é descrito como: um zero zero um; 10 é descrito como: um zero um zero.\n\nUm usuário de computador, ao se conectar à rede de internet do seu trabalho, recebe um protocolo de conexão, dado pelo número binário um zero um zero um zero. Para fazer uma solicitação de manutenção na sua rede, a equipe competente pede que o número do protocolo seja informado no sistema decimal. O número do protocolo a ser informado pelo usuário é",
-  "alternativas": [
-   "18.",
-   "42.",
-   "84.",
-   "102.",
-   "222."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-137",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 137"
-  },
-  "enunciado": "Suponha que uma equipe de corrida de automóveis disponha de cinco tipos de pneu (1, 2, 3, 4, 5), em que o fator de eficiência climática EC (índice que fornece o comportamento do pneu em uso, dependendo do clima) é apresentado:\n• EC do pneu 1: com chuva 6, sem chuva 3;\n• EC do pneu 2: com chuva 7, sem chuva −4;\n• EC do pneu 3: com chuva −2, sem chuva 10;\n• EC do pneu 4: com chuva 2, sem chuva 8;\n• EC do pneu 5: com chuva −6, sem chuva 7. O coeficiente de rendimento climático (CRC) de um pneu é calculado como a soma dos produtos dos fatores de EC, com ou sem chuva, pelas correspondentes probabilidades de se ter tais condições climáticas: ele é utilizado para determinar qual pneu deve ser selecionado para uma dada corrida, escolhendo-se o pneu que apresentar o maior\n\nCRC naquele dia. No dia de certa corrida, a probabilidade de chover era de 70 por cento e o chefe da equipe calculou o CRC de cada um dos cinco tipos de pneu. O pneu escolhido foi",
-  "alternativas": [
-   "1.",
-   "2.",
-   "3.",
-   "4.",
-   "5."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-138",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 138"
-  },
-  "enunciado": "Um pé de eucalipto em idade adequada para o corte rende, em média, 20 mil folhas de papel A4. A densidade superficial do papel A4, medida pela razão da massa de uma folha desse papel por sua área, é de 75 gramas por metro quadrado, e a área de uma folha de A4 é 0,062 metro quadrado. Nessas condições, quantos quilogramas de papel rende, em média, um pé de eucalipto?",
-  "alternativas": [
-   "4 301",
-   "1 500",
-   "930",
-   "267",
-   "93"
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-140",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10000,42 +5537,6 @@ Banco.registrar({ questoes: [
    "2,08"
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-141",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 141"
-  },
-  "enunciado": "Uma pessoa pretende percorrer, a pé, uma distância de 1 800 metros em doze minutos. Para isso, contrata um preparador físico que estabelece o seguinte cronograma: correr 800 metros em doze minutos, por dia, durante a primeira semana e, a cada semana seguinte, correr 200 metros a mais do que o praticado diariamente na semana anterior, respeitando o mesmo tempo. A pessoa acata a sugestão e inicia seu treinamento na segunda-feira da próxima semana. Cumprido o cronograma adotado, a partir de qual semana essa pessoa estará correndo 1 800 metros diários?",
-  "alternativas": [
-   "Quinta.",
-   "Sexta.",
-   "Sétima.",
-   "Oitava.",
-   "Nona."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10084,42 +5585,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-144",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 144"
-  },
-  "enunciado": "A correta administração de medicamentos é de suma importância para o tratamento e melhora de um paciente. A quantidade de gotas por minuto a serem administradas em um paciente é diretamente proporcional ao volume, em mililitro, que se quer administrar e inversamente proporcional ao triplo do tempo, em hora, com constante de proporcionalidade igual a 1. Um paciente desidratado irá receber 500 mililitros de soro fisiológico em 12 horas. O número que mais se aproxima da quantidade de gotas por minuto que devem ser administradas é",
-  "alternativas": [
-   "2.",
-   "4.",
-   "14.",
-   "18.",
-   "42."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-146",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10144,42 +5609,6 @@ Banco.registrar({ questoes: [
    "21."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-149",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 149"
-  },
-  "enunciado": "Os funcionários de uma empresa planejaram-se para realizar uma coleta de 1 800 reais, todos contribuindo com a mesma quantia, em prol de uma instituição de caridade. Por razões diversas, dez funcionários não puderam contribuir. Com isso, cada um dos demais funcionários aumentou em 2 reais sua cota de contribuição, para alcançar o valor planejado da coleta. O valor, em real, com que cada funcionário participante da coleta contribuiu foi de",
-  "alternativas": [
-   "18.",
-   "20.",
-   "90.",
-   "100.",
-   "180."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10228,42 +5657,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-151",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 151"
-  },
-  "enunciado": "Um grupo sanguíneo, ou tipo sanguíneo, baseia-se na presença ou ausência de dois antígenos, A e B, na superfície das células vermelhas do sangue. Como dois antígenos estão envolvidos, os quatro tipos sanguíneos distintos são:\n• Tipo A: apenas o antígeno A está presente;\n• Tipo B: apenas o antígeno B está presente;\n• Tipo AB: ambos os antígenos estão presentes;\n• Tipo O: nenhum dos antígenos está presente. Foram coletadas amostras de sangue de 200 pessoas e, após análise laboratorial, foi identificado que em 100 amostras está presente o antígeno A, em 110 amostras há presença do antígeno B e em 20 amostras nenhum dos antígenos está presente. Dessas pessoas que foram submetidas à coleta de sangue, o número das que possuem o tipo sanguíneo A é igual a",
-  "alternativas": [
-   "30.",
-   "60.",
-   "70.",
-   "90.",
-   "100."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-152",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10288,42 +5681,6 @@ Banco.registrar({ questoes: [
    "Quatro terços."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-153",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 153"
-  },
-  "enunciado": "Uma fábrica produz e comercializa refrigerantes utilizando três tipos de embalagens com as seguintes capacidades: 2 000 mililitros, 1 600 mililitros e 400 mililitros. Sabe-se que as quantidades de embalagens produzidas mensalmente são, inicialmente, iguais para os três tipos. Essa fábrica aumentará o volume total de refrigerantes produzidos em 20 por cento. No entanto, esse objetivo deverá ser obtido apenas aumentando a produção de embalagens de 400 mililitros.\n\nPara que isso ocorra, em quantos por cento deverá aumentar a produção de refrigerantes em embalagens de 400 mililitros?",
-  "alternativas": [
-   "60",
-   "100",
-   "180",
-   "200",
-   "300"
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10372,42 +5729,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-155",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 155"
-  },
-  "enunciado": "Um cliente de um banco, acostumado a realizar a maioria das operações em sua conta-corrente pela internet, foi surpreendido com o bloqueio de sua senha de acesso. Chegando à sua agência, um funcionário lhe informou que esse bloqueio foi feito pelo sistema do banco como forma de proteção à conta-corrente do cliente, pois alguém tentou invadi-la virtualmente. Para resolver o problema, o funcionário cadastrará uma senha, diferente da anterior, que deve ser criada pelo cliente, seguindo as regras usuais estipuladas por esse banco: ela deve ter 8 dígitos, usando somente algarismos de 0 a 9, de modo que o primeiro dígito deve ser diferente de 0. A quantidade de maneiras distintas de criar uma nova senha para esse cliente é dada por",
-  "alternativas": [
-   "Abre parêntese,10 elevado a 8, fecha parêntese, menos 1.",
-   "Abre parêntese, fração de numerador 10 fatorial e denominador 2 fatorial, fecha parêntese, menos 1.",
-   "Abre parêntese, fração de numerador 10 fatorial e denominador abre parêntese 2 fatorial vezes 8 fatorial fecha parêntese, fecha parêntese, menos 1.",
-   "9 vezes, abre parêntese, fração de numerador 9 fatorial e denominador 2 fatorial, fecha parêntese, menos 1.",
-   "9 vezes, abre parêntese, 10 elevado a 7, fecha parêntese, menos 1."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-158",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10444,42 +5765,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-159",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 159"
-  },
-  "enunciado": "Os gráficos representam a produção de peças em uma indústria e as horas trabalhadas dos funcionários no período de cinco dias. Em cada dia, o gerente de produção aplica uma metodologia diferente de trabalho. Seu objetivo é avaliar a metodologia mais eficiente para utilizá-la como modelo nos próximos períodos. Sabe-se que, neste caso, quanto maior for a razão entre o número de peças produzidas e o número de horas trabalhadas, maior será a eficiência da metodologia.\n\nDescrição dos gráficos de colunas: Gráfico de peças produzidas em cada um dos cinco dias da semana. Dia 1: 800 peças; Dia 2: 1 000 peças; Dia 3: 1 100 peças; Dia 4: 1 800 peças; Dia 5: 1 400 peças. Gráfico de horas trabalhadas em cada um dos cinco dias da semana. Dia 1: 4 horas; Dia 2: 8 horas; Dia 3: 5 horas; Dia 4: 9 horas; Dia 5: 10 horas.\n\nEm qual dia foi aplicada a metodologia mais eficiente?",
-  "alternativas": [
-   "1",
-   "2",
-   "3",
-   "4",
-   "5"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-160",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10504,42 +5789,6 @@ Banco.registrar({ questoes: [
    "6 caixas do tipo B."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-162",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 162"
-  },
-  "enunciado": "Um aluno dobra uma folha de papel na forma do quadrado ABCD. Em seguida a desdobra e observa um vinco coincidente com a diagonal AC e faz uma nova dobradura, de modo que o lado BC se sobreponha à diagonal AC. Agora, ao desdobrar a folha, observa um novo vinco, que vai do vértice C até um ponto sobre o lado AB, que chama de E. Com relação ao triângulo ABC, o segmento CE representa",
-  "alternativas": [
-   "uma de suas alturas.",
-   "uma de suas bissetrizes.",
-   "uma de suas mediatrizes.",
-   "uma de suas medianas.",
-   "um de seus lados."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10612,42 +5861,6 @@ Banco.registrar({ questoes: [
    "60."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-168",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 168"
-  },
-  "enunciado": "Em uma cantina escolar são vendidos 3 tipos de barras de chocolate: amargo, branco e com castanhas. Em uma tarde, 20 alunos adentraram a cantina dispostos a consumir chocolates. Soube-se que 4 alunos compraram exatamente uma barra de cada tipo, 2 alunos compraram exatamente uma barra de chocolate branco e uma barra com castanhas, 2 outros alunos compraram exatamente uma barra de chocolate amargo e uma barra com castanhas e, finalmente, cada um dos demais alunos comprou, exatamente, uma única barra de chocolate. O proprietário da cantina, com o intuito de repor o estoque, detectou que as quantidades totais vendidas de barras de chocolate amargo e branco foram iguais; além disso, no total, foi vendido o dobro de barras com castanhas em relação às brancas. Nessas condições, quantas barras de chocolate com castanhas foram compradas por esses 20 alunos?",
-  "alternativas": [
-   "8",
-   "10",
-   "11",
-   "14",
-   "16"
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10768,42 +5981,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-173",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 173"
-  },
-  "enunciado": "No Brasil, o tempo necessário para um estudante realizar sua formação até a diplomação em um curso superior, considerando os 9 anos de ensino fundamental, os 3 anos do ensino médio e os 4 anos de graduação (tempo médio), é de 16 anos. No entanto, a realidade dos brasileiros mostra que o tempo médio de estudo de pessoas acima de 14 anos é ainda muito pequeno, conforme apresentado na tabela.\n\nDescrição da tabela: A tabela apresenta o tempo médio de estudo de pessoas acima de 14 anos de acordo com os seguintes anos em que a pesquisa foi realizada: 1995: 5,2 anos; 1999: 5,8 anos; 2003: 6,4 anos; 2007: 7,0 anos.\n\nConsidere que o incremento no tempo de estudo, a cada período, para essas pessoas, se mantenha constante até o ano 2050, e que se pretenda chegar ao patamar de 70 por cento do tempo necessário à obtenção do curso superior dado anteriormente. O ano em que o tempo médio de estudo de pessoas acima de 14 anos atingirá o percentual pretendido será",
-  "alternativas": [
-   "2018.",
-   "2023.",
-   "2031.",
-   "2035.",
-   "2043."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-174",
   "materia": "matematica",
   "assunto": "ENEM 2020",
@@ -10828,42 +6005,6 @@ Banco.registrar({ questoes: [
    "1 vezes 10 elevado a menos 3"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-175",
-  "materia": "matematica",
-  "assunto": "ENEM 2020",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 175"
-  },
-  "enunciado": "A Pesquisa Nacional por Amostra de Domicílios (Pnad) é uma pesquisa feita anualmente pelo IBGE, exceto nos anos em que há Censo. Em um ano, foram entrevistados 363 mil jovens para fazer um levantamento sobre suas atividades profissionais e/ou acadêmicas. Os resultados da pesquisa estão indicados no gráfico.\n\nDescrição do gráfico: Gráfico de barras de jovens em atividade entre 15 e 29 anos (em porcentagem) indicando: Somente estuda: 21,6 Trabalha e estuda: 13,6 Somente trabalha: 45,2 Não trabalha nem estuda: 19,6\n\nDe acordo com as informações dadas, o número de jovens entrevistados que trabalha é",
-  "alternativas": [
-   "114 708.",
-   "164 076.",
-   "213 444.",
-   "284 592.",
-   "291 582."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, aplicação regular, 2º dia (caderno oficial)",
@@ -10948,42 +6089,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2019-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 91"
-  },
-  "enunciado": "A maioria das pessoas fica com a visão embaçada ao abrir os olhos debaixo dʼágua. Mas há uma exceção: o povo moken, que habita a costa da Tailândia. Essa característica se deve principalmente à adaptabilidade do olho e à plasticidade do cérebro, o que significa que você também, com algum treinamento, poderia enxergar relativamente bem debaixo dʼágua. Estudos mostraram que as pupilas de olhos de indivíduos moken sofrem redução significativa debaixo dʼágua, o que faz com que os raios luminosos incidam quase paralelamente ao eixo óptico da pupila. A acuidade visual associada à redução das pupilas é fisicamente explicada pela diminuição",
-  "alternativas": [
-   "da intensidade luminosa incidente na retina.",
-   "da difração dos feixes luminosos que atravessam a pupila.",
-   "da intensidade dos feixes luminosos em uma direção por polarização.",
-   "do desvio dos feixes luminosos refratados no interior do olho.",
-   "das reflexões dos feixes luminosos no interior do olho."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2019-93",
   "materia": "enem-natureza",
   "assunto": "ENEM 2019",
@@ -11008,42 +6113,6 @@ Banco.registrar({ questoes: [
    "resistência ao escoamento do líquido."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-95",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 95"
-  },
-  "enunciado": "Um dos parâmetros de controle de qualidade de polpas de frutas destinadas ao consumo como bebida é a acidez total expressa em ácido cítrico, que corresponde à massa dessa substância em 100 gramas de polpa de fruta. O ácido cítrico é uma molécula orgânica que apresenta três hidrogênios ionizáveis (ácido triprótico) e massa molar 192 gramas por mol. O quadro indica o valor mínimo desse parâmetro de qualidade para polpas comerciais de algumas frutas.\n\nDescrição do quadro:\n\nQuadro com os tipos de polpa de fruta e seus respectivos valores mínimos da acidez total expressa em ácido cítrico, em grama por 100 gramas.\n\nAcerola: 0,8\n\nCaju: 0,3\n\nCupuaçu: 1,5\n\nGraviola: 0,6\n\nMaracujá: 2,5\n\nA acidez total expressa em ácido cítrico de uma amostra comercial de polpa de fruta foi determinada. No procedimento, adicionou-se água destilada a 2,2 gramas da amostra e, após a solubilização do ácido cítrico, o sólido remanescente foi filtrado. A solução obtida foi titulada com solução de hidróxido de sódio 0,01mol por litro, em que se consumiram 24 mililitros da solução básica (titulante). Entre as listadas, a amostra analisada pode ser de qual polpa de fruta?",
-  "alternativas": [
-   "Apenas caju.",
-   "Apenas maracujá.",
-   "Caju ou graviola.",
-   "Acerola ou cupuaçu.",
-   "Cupuaçu ou graviola."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
@@ -11128,42 +6197,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2019-99",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 99"
-  },
-  "enunciado": "Durante sua evolução, as plantas apresentaram grande diversidade de características, as quais permitiram sua sobrevivência em diferentes ambientes. Na imagem, cinco dessas características estão indicadas por números.\n\nDescrição da imagem:\n\nA imagem representa um cladograma a partir de uma alga verde ancestral, destacando cinco aquisições evolutivas.\n\nAquisição evolutiva 1 (embriões protegidos no gametófito, entre 500 e 450 milhões de anos): linha tracejada para Hepáticas, outra para Antóceros, outra para Musgos e uma linha contínua para aquisição evolutiva 2.\n\nAquisição evolutiva 2 (tecidos condutores verdadeiros, entre 450 e 400 milhões de anos): linha contínua para Licófitas (licopódios, Isoetes e Selaginella), linha contínua para Pteridófitas (samambaias, cavalinhas, Psilotum) e outra linha contínua para aquisição evolutiva 3.\n\nAquisição evolutiva 3 (formação de tubo polínico, próximo de 300 milhões de anos): linha contínua para aquisição evolutiva 4 (polinização pelo vento, próximo de 0 milhão de anos) — Gimnospermas; e para aquisição evolutiva 5 (produção de frutos, próximo de 0 milhão de anos) — Angiospermas.\n\nA aquisição evolutiva que permitiu a conquista definitiva do ambiente terrestre pelas plantas está indicada pelo número",
-  "alternativas": [
-   "1: Embriões protegidos no gametófito.",
-   "2: Tecidos condutores verdadeiros.",
-   "3: Formação de tubo polínico.",
-   "4: Polinização pelo vento.",
-   "5: Produção de frutos."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2019-101",
   "materia": "enem-natureza",
   "assunto": "ENEM 2019",
@@ -11188,42 +6221,6 @@ Banco.registrar({ questoes: [
    "absorve 2 800 quilojoules por mol de glicose."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-104",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 104"
-  },
-  "enunciado": "O 2,4-dinitrofenol (DNP) é conhecido como desacoplador da cadeia de elétrons na mitocôndria e apresenta um efeito emagrecedor. Contudo, por ser perigoso e pela ocorrência de casos letais, seu uso como medicamento é proibido em diversos países, inclusive no Brasil. Na mitocôndria, essa substância captura, no espaço intermembranas, prótons (H+) provenientes da atividade das proteínas da cadeia respiratória, retornando-os à matriz mitocondrial. Assim, esses prótons não passam pelo transporte enzimático na membrana interna. O efeito emagrecedor desse composto está relacionado ao(à)",
-  "alternativas": [
-   "obstrução da cadeia respiratória, resultando em maior consumo celular de ácidos graxos.",
-   "bloqueio das reações do ciclo de Krebs, resultando em maior gasto celular de energia.",
-   "diminuição da produção de acetil CoA, resultando em maior gasto celular de piruvato.",
-   "inibição da glicólise, resultando em maior absorção celular da glicose sanguínea.",
-   "redução da produção de ATP, resultando em maior gasto celular de nutrientes."
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
@@ -11296,114 +6293,6 @@ Banco.registrar({ questoes: [
    "pA maior que pB e mA maior que mB"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-110",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 110"
-  },
-  "enunciado": "As usinas termelétricas podem utilizar carvão, gás natural ou óleo, que são queimados na câmara de combustão para gerar energia elétrica pela formação de vapor de água. A água utilizada no processo é captada de fontes naturais e volta para o ambiente. Para minimizar os efeitos da poluição, existe um sistema que retém as cinzas e parte dos gases produzidos, como NOx e SOx. As cinzas, quando geradas, podem ser utilizadas em misturas de cimento. O impacto ambiental desse tipo de geração de energia está relacionado com a",
-  "alternativas": [
-   "emissão de gases poluentes na atmosfera.",
-   "área inundada para o reservatório de água.",
-   "contaminação da água utilizada no processo.",
-   "quantidade de água consumida para gerar vapor.",
-   "produção de resíduos sólidos lançados no ambiente."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-111",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 111"
-  },
-  "enunciado": "A eritropoetina (EPO) é um hormônio endógeno secretado pelos rins que influencia a maturação dos eritrócitos. Suas formas recombinantes, sintetizadas em laboratório, têm sido usadas por alguns atletas em esportes de resistência na busca por melhores resultados. No entanto, a administração da EPO recombinante no esporte foi proibida pelo Comitê Olímpico Internacional e seu uso considerado doping. Uma influência que esse doping poderá exercer na melhoria da capacidade física desses atletas está relacionada ao transporte de",
-  "alternativas": [
-   "lipídios, para aumento do gasto calórico.",
-   "ATP, para aumento da síntese hormonal.",
-   "oxigênio, para aumento da produção de ATP.",
-   "proteínas, para aumento da massa muscular.",
-   "vitamina C, para aumento da integridade dos vasos sanguíneos."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-113",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 113"
-  },
-  "enunciado": "Estudos mostram o desenvolvimento de biochips utilizados para auxiliar o diagnóstico de diabetes melito, doença evidenciada pelo excesso de glicose no organismo. O teste é simples e consiste em duas reações sequenciais na superfície do biochip, entre a amostra de soro sanguíneo do paciente, enzimas específicas e reagente (iodeto de potássio), conforme mostrado na imagem.\n\nDescrição da imagem:\n\nQuadro que contém duas figuras representando o biochip, o qual é constituído por um tubo com dois semicírculos nas pontas e um na parte central. Na primeira figura está o biochip antes da adição de soro, no qual o primeiro semicírculo da esquerda para a direita está vazio; o segundo contém as enzimas e o terceiro, o iodeto de potássio. Na segunda figura está o biochip após a adição de soro, no qual o primeiro semicírculo da esquerda para direita contém o soro que segue em fluxo para o semicírculo central e atinge o terceiro semicírculo, que se torna colorido.\n\nApós a adição de soro sanguíneo, o fluxo desloca-se espontaneamente da esquerda para a direita promovendo reações sequenciais, conforme as equações 1 e 2. Na primeira, há conversão de glicose do sangue em ácido glucônico, gerando peróxido de hidrogênio:\n\nDescrição da equação 1:\n\nOs reagentes C6H12O6 (aquoso) mais O2 (gasoso) mais H2O (líquido), na presença de enzimas, formam os produtos C6H12O7 (aquoso) mais H2O2 (aquoso).\n\nNa segunda, o peróxido de hidrogênio reage com íons iodeto gerando o íon tri-iodeto, água e oxigênio.\n\nDescrição da equação 2:\n\nOs reagentes 2 H2O2 (aquoso) mais 3 I de carga negativa (aquoso) formam I3 de carga negativa (aquoso) mais 2 H2O (líquido) mais O2 (gasoso).\n\nO tipo de reação que ocorre na superfície do biochip, nas duas reações do processo, é",
-  "alternativas": [
-   "análise.",
-   "síntese.",
-   "oxirredução.",
-   "complexação.",
-   "ácido-base."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
@@ -11920,78 +6809,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2019-149",
-  "materia": "matematica",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 149"
-  },
-  "enunciado": "Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o rendimento médio mensal dos trabalhadores brasileiros, no ano 2000, era de R$ 1 250,00. Já o Censo 2010 mostrou que, em 2010, esse valor teve um aumento de 7,2 por cento em relação a 2000. Esse mesmo instituto projeta que, em 2020, o rendimento médio mensal dos trabalhadores brasileiros poderá ser 10 por cento maior do que foi em 2010. Supondo que as projeções do IBGE se realizem, o rendimento médio mensal dos brasileiros em 2020 será de",
-  "alternativas": [
-   "R$ 1 340,00.",
-   "R$ 1 349,00.",
-   "R$ 1 375,00.",
-   "R$ 1 465,00.",
-   "R$ 1 474,00."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2019-150",
-  "materia": "matematica",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 150"
-  },
-  "enunciado": "Charles Richter e Beno Gutenberg desenvolveram a escala Richter, que mede a magnitude de um terremoto. Essa escala pode variar de 0 a 10, com possibilidades de valores maiores. O quadro mostra a escala de magnitude local (Ms) de um terremoto que é utilizada para descrevê-lo.\n\nDescrição do quadro: O quadro mostra a descrição de um terremoto de acordo com a escala de magnitude local (micrômetro vezes hertz). Pequeno: 0 é menor ou igual a magnitude local que é menor ou igual a 3,9. Ligeiro: 4 é menor ou igual a magnitude local que é menor ou igual a 4,9. Moderado: 5 é menor ou igual a magnitude local que é menor ou igual a 5,9. Grande: 6 é menor ou igual a magnitude local que é menor ou igual a 9,9. Extremo: A magnitude local é maior ou igual a 10,0\n\nPara se calcular a magnitude local, usa-se a fórmula magnitude local é igual a 3,30 mais log, abre parêntese, A vezes f, fecha parêntese, em que A representa a amplitude máxima da onda registrada por um sismógrafo em micrômetro e f representa a frequência da onda, em hertz. Ocorreu um terremoto com amplitude máxima de 2 000 micrômetros e frequência de 0,2 hertz. Utilize 0,3 como aproximação para log 2. De acordo com os dados fornecidos, o terremoto ocorrido pode ser descrito como",
-  "alternativas": [
-   "Pequeno.",
-   "Ligeiro.",
-   "Moderado.",
-   "Grande.",
-   "Extremo."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2019-155",
   "materia": "matematica",
   "assunto": "ENEM 2019",
@@ -12460,42 +7277,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2019-173",
-  "materia": "matematica",
-  "assunto": "ENEM 2019",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2019,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 173"
-  },
-  "enunciado": "Após o Fórum Nacional Contra a Pirataria (FNCP) incluir a linha de autopeças em campanha veiculada contra a falsificação, as agências fiscalizadoras divulgaram que os cinco principais produtos de autopeças falsificados são: rolamento, pastilha de freio, caixa de direção, catalisador e amortecedor. Após uma grande apreensão, as peças falsas foram cadastradas utilizando-se a codificação: 1: rolamento, 2: pastilha de freio, 3: caixa de direção, 4: catalisador e 5: amortecedor. Ao final obteve-se a sequência: 5, 4, 3, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 3, 4, ... que apresenta um padrão de formação que consiste na repetição de um bloco de números. Essa sequência descreve a ordem em que os produtos apreendidos foram cadastrados. O 2 015º item cadastrado foi um(a)",
-  "alternativas": [
-   "rolamento.",
-   "catalisador.",
-   "amortecedor.",
-   "pastilha de freio.",
-   "caixa de direção."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2019, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2019-174",
   "materia": "matematica",
   "assunto": "ENEM 2019",
@@ -12700,114 +7481,6 @@ Banco.registrar({ questoes: [
    "estimular o trânsito intestinal dos lipídios."
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-92",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 92"
-  },
-  "enunciado": "A tecnologia de comunicação da etiqueta RFID (chamada de etiqueta inteligente) é usada há anos para rastrear gado, vagões de trem, bagagem aérea e carros nos pedágios. Um modelo mais barato dessas etiquetas pode funcionar sem baterias e é constituído por três componentes: um microprocessador de silício; uma bobina de metal, feita de cobre ou de alumínio, que é enrolada em um padrão circular; e um encapsulador, que é um material de vidro ou polímero envolvendo o microprocessador e a bobina. Na presença de um campo de radiofrequência gerado pelo leitor, a etiqueta transmite sinais. A distância de leitura é determinada pelo tamanho da bobina e pela potência da onda de rádio emitida pelo leitor. A etiqueta funciona sem pilhas porque o campo",
-  "alternativas": [
-   "elétrico da onda de rádio agita elétrons da bobina.",
-   "elétrico da onda de rádio cria uma tensão na bobina.",
-   "magnético da onda de rádio induz corrente na bobina.",
-   "magnético da onda de rádio aquece os fios da bobina.",
-   "magnético da onda de rádio diminui a ressonância no interior da bobina."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-93",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 93"
-  },
-  "enunciado": "Corredores ecológicos visam mitigar os efeitos da fragmentação dos ecossistemas promovendo a ligação entre diferentes áreas, com o objetivo de proporcionar o deslocamento de animais, a dispersão de sementes e o aumento da cobertura vegetal. São instituídos com base em informações como estudos sobre o deslocamento de espécies, sua área de vida (área necessária para o suprimento de suas necessidades vitais e reprodutivas) e a distribuição de suas populações. Nessa estratégia, a recuperação da biodiversidade é efetiva porque",
-  "alternativas": [
-   "propicia o fluxo gênico.",
-   "intensifica o manejo de espécies.",
-   "amplia o processo de ocupação humana.",
-   "aumenta o número de indivíduos nas populações.",
-   "favorece a formação de ilhas de proteção integral."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-96",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 96"
-  },
-  "enunciado": "Estratificação aquática é o fenômeno de divisão dos lagos em camadas com diferentes temperaturas. No verão a água mais próxima à superfície é aquecida pelo sol, formando uma camada quente, e a camada inferior do lago se mantém mais fria. No inverno a camada superior esfria, ocorrendo um processo de troca de nutrientes e oxigênio entre as camadas. Esse processo ocorre devido ao(à)",
-  "alternativas": [
-   "diminuição da taxa de evaporação da água.",
-   "aproximação da temperatura entre as camadas.",
-   "diminuição da temperatura das camadas inferiores.",
-   "aumento da taxa de condensação da umidade do ar.",
-   "aumento da densidade da água da camada superior."
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
@@ -13036,42 +7709,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-107",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 107"
-  },
-  "enunciado": "Companhias que fabricam jeans usam cloro para o clareamento, seguido de lavagem. Algumas estão substituindo o cloro por substâncias ambientalmente mais seguras como peróxidos, que podem ser degradados por enzimas chamadas peroxidases. Pensando nisso, pesquisadores inseriram genes codificadores de peroxidases em leveduras cultivadas nas condições de clareamento e lavagem dos jeans e selecionaram as sobreviventes para produção dessas enzimas. Nesse caso, o uso dessas leveduras modificadas objetiva",
-  "alternativas": [
-   "reduzir a quantidade de resíduos tóxicos nos efluentes da lavagem.",
-   "eliminar a necessidade de tratamento da água consumida.",
-   "elevar a capacidade de clareamento dos jeans.",
-   "aumentar a resistência do jeans a peróxidos.",
-   "associar ação bactericida ao clareamento."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-112",
   "materia": "enem-natureza",
   "assunto": "ENEM 2018",
@@ -13144,78 +7781,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 116"
-  },
-  "enunciado": "O sulfeto de mercúrio(II) foi usado como pigmento vermelho para pinturas de quadros e murais. Esse pigmento, conhecido como vermilion, escurece com o passar dos anos, fenômeno cuja origem é alvo de pesquisas. Aventou-se a hipótese de que o vermilion seja decomposto sob a ação da luz, produzindo uma fina camada de mercúrio metálico na superfície. Essa reação seria catalisada por íon cloreto presente na umidade do ar. Segundo a hipótese proposta, o íon cloreto atua na decomposição fotoquímica do vermilion",
-  "alternativas": [
-   "reagindo como agente oxidante.",
-   "deslocando o equilíbrio químico.",
-   "diminuindo a energia de ativação.",
-   "precipitando cloreto de mercúrio.",
-   "absorvendo a energia da luz visível."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-117",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 117"
-  },
-  "enunciado": "O sonorizador é um dispositivo físico implantado sobre a superfície de uma rodovia de modo que provoque uma trepidação e ruído quando da passagem de um veículo sobre ele, alertando para uma situação atípica à frente, como obras, pedágios ou travessia de pedestres. Ao passar sobre os sonorizadores, a suspensão do veículo sofre vibrações que produzem ondas sonoras, resultando em um barulho peculiar. Considere um veículo que passe com velocidade constante igual a 108 quilômetros por hora sobre um sonorizador cujas faixas são separadas por uma distância de 8 centímetros. A frequência da vibração do automóvel percebida pelo condutor durante a passagem nesse sonorizador é mais próxima de",
-  "alternativas": [
-   "8,6 hertz.",
-   "13,5 hertz.",
-   "375 hertz.",
-   "1 350 hertz.",
-   "4 860 hertz."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-118",
   "materia": "enem-natureza",
   "assunto": "ENEM 2018",
@@ -13240,114 +7805,6 @@ Banco.registrar({ questoes: [
    "Abridor de garrafa."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-119",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 119"
-  },
-  "enunciado": "Na mitologia grega, Nióbia era a filha de Tântalo, dois personagens conhecidos pelo sofrimento. O elemento químico de número atômico (Z) igual a 41 tem propriedades químicas e físicas tão parecidas com as do elemento de número atômico 73 que chegaram a ser confundidos. Por isso, em homenagem a esses dois personagens da mitologia grega, foi conferido a esses elementos os nomes de nióbio (Z igual a 41) e tântalo (Z igual a 73). Esses dois elementos químicos adquiriram grande importância econômica na metalurgia, na produção de supercondutores e em outras aplicações na indústria de ponta, exatamente pelas propriedades químicas e físicas comuns aos dois. A importância econômica e tecnológica desses elementos, pela similaridade de suas propriedades químicas e físicas, deve-se a",
-  "alternativas": [
-   "terem elétrons no subnível f.",
-   "serem elementos de transição interna.",
-   "pertencerem ao mesmo grupo na tabela periódica.",
-   "terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.",
-   "estarem localizados na família dos alcalinos terrosos e alcalinos, respectivamente."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-120",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 120"
-  },
-  "enunciado": "A investigação de alterações morfológicas que ocorrem em macrófitas aquáticas presentes em lagoas indicou uma redução na cutícula desses vegetais associada à permanência em água doce. Qual é a função adaptativa dessa característica morfológica?",
-  "alternativas": [
-   "Ampliar a captação de luz solar.",
-   "Possibilitar a flutuação do vegetal.",
-   "Melhorar a captação de nutrientes.",
-   "Facilitar as trocas de gases respiratórios.",
-   "Aumentar a captação de seiva bruta pelo vegetal."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 130"
-  },
-  "enunciado": "A suinocultura é uma atividade importante para a economia brasileira, pois gera emprego e renda em 2 milhões de propriedades rurais. Porém, a preocupação com a poluição do ambiente é uma das maiores ameaças à sua sobrevivência e expansão, pois um suíno adulto produz em média 0,27 metro cúbico por mês de dejetos que constituem risco à saúde da população. Contudo, esses dejetos podem ser utilizados como substratos no processo de biodigestão. A utilização de biodigestores, na atividade mencionada, proporciona o(a)",
-  "alternativas": [
-   "redução do consumo de ração.",
-   "aumento da produção de suínos.",
-   "aumento da emissão de amônia em uma região.",
-   "diversificação das técnicas de manejo de suínos.",
-   "diversificação da matriz energética de uma região."
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
@@ -13396,42 +7853,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-139",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 139"
-  },
-  "enunciado": "O remo de assento deslizante é um esporte que faz uso de um barco e dois remos do mesmo tamanho. A figura mostra uma das posições de uma técnica chamada afastamento.\nDescrição da figura: Figura de um barco com uma pessoa no interior segurando, com as mãos juntas, dois remos de mesmo tamanho. Um ponto A indica o ponto de encontro das extremidades dos dois remos; um ponto B e um ponto C indicam as outras extremidades de cada remo.\n\nNessa posição, os dois remos se encontram no ponto A e suas outras extremidades estão indicadas pelos pontos B e C. Esses três pontos formam um triângulo ABC cujo ângulo BÂC tem medida de 170 graus. O tipo de triângulo com vértices nos pontos A, B e C, no momento em que o remador está nessa posição, é",
-  "alternativas": [
-   "retângulo escaleno.",
-   "acutângulo escaleno.",
-   "acutângulo isósceles.",
-   "obtusângulo escaleno.",
-   "obtusângulo isósceles."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-140",
   "materia": "matematica",
   "assunto": "ENEM 2018",
@@ -13456,42 +7877,6 @@ Banco.registrar({ questoes: [
    "fração de numerador 8 e denominador 21."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-141",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 141"
-  },
-  "enunciado": "Um mapa é a representação reduzida e simplificada de uma localidade. Essa redução, que é feita com o uso de uma escala, mantém a proporção do espaço representado em relação ao espaço real. Certo mapa tem escala 1 para 58 000 000. Considere que, nesse mapa, o segmento de reta que liga o navio à marca do tesouro meça 7,6 centímetros.\n\nA medida real, em quilômetro, desse segmento de reta é",
-  "alternativas": [
-   "4 408.",
-   "7 632.",
-   "44 080.",
-   "76 316.",
-   "440 800."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
@@ -13540,42 +7925,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-143",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 143"
-  },
-  "enunciado": "A raiva é uma doença viral e infecciosa, transmitida por mamíferos. A campanha nacional de vacinação antirrábica tem o objetivo de controlar a circulação do vírus da raiva canina e felina, prevenindo a raiva humana. O gráfico mostra a cobertura (porcentagem de vacinados) da campanha, em cães, nos anos de 2013, 2015 e 2017, no município de Belo Horizonte, em Minas Gerais. Os valores das coberturas dos anos de 2014 e 2016 não estão informados no gráfico e deseja-se estimá-los. Para tal, levou-se em consideração que a variação na cobertura de vacinação da campanha antirrábica, nos períodos de 2013 a 2015 e de 2015 a 2017, deu-se de forma linear.\n\nDescrição do gráfico: 2013: 67 por cento; um segmento de reta inclinado para baixo sai de 67 por cento e chega a 59 por cento. 2014: não representado. 2015: 59 por cento; um segmento de reta inclinado para cima sai de 59 por cento e chega a 61 por cento. 2016: não representado. 2017: 61 por cento.\n\nQual teria sido a cobertura dessa campanha no ano de 2014?",
-  "alternativas": [
-   "62,3 por cento.",
-   "63,0 por cento.",
-   "63,5 por cento.",
-   "64,0 por cento.",
-   "65,5 por cento."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-144",
   "materia": "matematica",
   "assunto": "ENEM 2018",
@@ -13600,42 +7949,6 @@ Banco.registrar({ questoes: [
    "2 250 menor que X menor que 3 000."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-146",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 146"
-  },
-  "enunciado": "Os compositores Pedro, Ricardo e Carlos gravaram um disco com 18 músicas inéditas. Pedro participou da composição de seis músicas, Ricardo participou da composição de oito músicas e Carlos compôs sozinho o restante das músicas. Além disso, Carlos foi parceiro em um terço das músicas compostas por Pedro e em metade das músicas compostas por Ricardo. O número racional que expressa a participação de Carlos na composição das músicas desse disco é",
-  "alternativas": [
-   "fração de numerador 5 e denominador 9.",
-   "fração de numerador 5 e denominador 7.",
-   "fração de numerador 1 e denominador 3.",
-   "fração de numerador 2 e denominador 7.",
-   "fração de numerador 2 e denominador 9."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
@@ -13756,42 +8069,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-155",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 155"
-  },
-  "enunciado": "A rosa dos ventos é uma figura que representa oito sentidos, que dividem o círculo em partes iguais.\n\nDescrição da figura: Figura formada por dois círculos concêntricos. No maior, estão traçados dois diâmetros perpendiculares, um na vertical e outro na horizontal. Na extremidade superior do diâmetro vertical está a letra N (Norte) e na extremidade inferior, a letra S (Sul). Na extremidade à esquerda do diâmetro horizontal está a letra O (Oeste) e na extremidade à direita, a letra L (Leste). No círculo menor estão traçados dois diâmetros inclinados e perpendiculares. Na extremidade superior do diâmetro inclinado à esquerda estão as letras NO (Noroeste) e na extremidade inferior à direita estão as letras SE (Sudeste). No outro diâmetro inclinado há, na extremidade superior à direita, as letras NE (Nordeste) e na extremidade inferior à esquerda estão as letras SO (Sudoeste).\n\nUma câmera de vigilância está fixada no teto de um shopping e sua lente pode ser direcionada remotamente, através de um controlador, para qualquer sentido. A lente da câmera está apontada inicialmente no sentido Oeste e o seu controlador efetua três mudanças consecutivas, a saber: Primeira mudança: 135 graus no sentido anti-horário; Segunda mudança: 60 graus no sentido horário; Terceira mudança: 45 graus no sentido anti-horário. Após a terceira mudança, ele é orientado a reposicionar a câmera, com a menor amplitude possível, no sentido Noroeste (NO) devido a um movimento suspeito de um cliente. Qual mudança de sentido o controlador deve efetuar para reposicionar a câmera?",
-  "alternativas": [
-   "75 graus no sentido horário.",
-   "105 graus no sentido anti-horário.",
-   "120 graus no sentido anti-horário.",
-   "135 graus no sentido anti-horário.",
-   "165 graus no sentido horário."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-157",
   "materia": "matematica",
   "assunto": "ENEM 2018",
@@ -13886,42 +8163,6 @@ Banco.registrar({ questoes: [
    "R$ 528 000,00.",
    "R$ 552 000,00.",
    "R$ 584 000,00."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2018-161",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 161"
-  },
-  "enunciado": "O Salão do Automóvel de São Paulo é um evento no qual vários fabricantes expõem seus modelos mais recentes de veículos, mostrando, principalmente, suas inovações em design e tecnologia. Uma montadora pretende participar desse evento com dois estandes, um na entrada e outro na região central do salão, expondo, em cada um deles, um carro compacto e uma caminhonete. Para compor os estandes, foram disponibilizados pela montadora quatro carros compactos, de modelos distintos, e seis caminhonetes de diferentes cores para serem escolhidos aqueles que serão expostos. A posição dos carros dentro de cada estande é irrelevante. Uma expressão que fornece a quantidade de maneiras diferentes que os estandes podem ser compostos é",
-  "alternativas": [
-   "arranjo de 10 elementos tomados 4 a 4.",
-   "combinação de 10 elementos tomados 4 a 4.",
-   "combinação de 4 elementos tomados 2 a 2 vezes combinação de 6 elementos tomados 2 a 2 vezes 2 vezes 2.",
-   "arranjo de 4 elementos tomados 2 a 2 vezes arranjo de 6 elementos tomados 2 a 2 vezes 2 vezes 2.",
-   "combinação de 4 elementos tomados 2 a 2 vezes combinação de 6 elementos tomados 2 a 2."
   ],
   "resposta": 2,
   "fontes": [
@@ -14116,42 +8357,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2018-171",
-  "materia": "matematica",
-  "assunto": "ENEM 2018",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2018,
-   "orgao": "ENEM, aplicação regular, 2º dia, questão 171"
-  },
-  "enunciado": "Com o avanço em ciência da computação, estamos próximos do momento em que o número de transistores no processador de um computador pessoal será da mesma ordem de grandeza que o número de neurônios em um cérebro humano, que é da ordem de 100 bilhões. Uma das grandezas determinantes para desempenho de um processador é a densidade de transistores, que é o número de transistores por centímetro quadrado. Em 1986, uma empresa fabricava um processador contendo 100 000 transistores distribuídos em 0,25 centímetro quadrado de área. Desde então, o número de transistores por centímetro quadrado que se pode colocar em um processador dobra a cada dois anos(Lei de Moore). Considere 0,30 como aproximação para logaritmo de 2 na base 10. Em que ano a empresa atingiu ou atingirá a densidade de 100 bilhões de transistores?",
-  "alternativas": [
-   "1999",
-   "2002",
-   "2022",
-   "2026",
-   "2146"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2018, aplicação regular, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2018-172",
   "materia": "matematica",
   "assunto": "ENEM 2018",
@@ -14296,78 +8501,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2021-ppl-141",
-  "materia": "matematica",
-  "assunto": "ENEM 2021 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2021,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 141"
-  },
-  "enunciado": "Três ciclistas A, B e C participaram de uma prova de resistência em uma pista circular. Eles partiram, simultaneamente, de uma marca determinada para a largada. Durante toda a prova, o ciclista A gastou 10 minutos para completar cada volta, o ciclista B, 15 minutos e o ciclista C, 20 minutos. Depois de iniciada a prova, os três ciclistas passaram juntos sobre a marca da largada. O número de voltas dadas pelo ciclista A, até o instante em que os três ciclistas passaram juntos sobre a marca da largada pela primeira vez, após o início da prova, foi",
-  "alternativas": [
-   "1.",
-   "2.",
-   "3.",
-   "6.",
-   "12."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2021, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_reaplicacao_PPL_D2_CD11_braile_e_ledor.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 91"
-  },
-  "enunciado": "Uma atividade que vem crescendo e tem se tornado uma fonte de renda para muitas pessoas é o recolhimento das embalagens feitas com alumínio. No Brasil, atualmente, mais de 95 por cento dessas embalagens são recicladas para fabricação de outras novas.\n\nO interesse das fábricas de embalagens no uso desse material reciclável ocorre porque o(a)",
-  "alternativas": [
-   "reciclagem resolve o problema de desemprego da população local.",
-   "produção de embalagens a partir de outras já usadas é mais fácil e rápida.",
-   "alumínio das embalagens feitas de material reciclado é de melhor qualidade.",
-   "compra de matéria-prima para confecção de embalagens de alumínio não será mais necessária.",
-   "custo com a compra de matéria-prima para a produção de embalagens de alumínio é reduzido."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-94",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -14390,42 +8523,6 @@ Banco.registrar({ questoes: [
    "233,3.",
    "330,0.",
    "366,7."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-96",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 96"
-  },
-  "enunciado": "Os bolos fazem parte do café da manhã de muitas famílias brasileiras. O seu preparo requer a utilização de ingredientes como ovos, óleo, leite, açúcar, farinha de trigo e fermento químico. Quando pronto, o bolo fica muito mais volumoso que antes de assar e, também, sensorialmente macio, gerando um aspecto fofo. Esse aspecto obtido é explicado pelo(a)",
-  "alternativas": [
-   "aumento do volume do fermento ao ser aquecido.",
-   "reação química que faz o bolo apresentar maior massa.",
-   "volatilização do fermento em contato com outros ingredientes.",
-   "transformação química ocorrida que leva à produção de gases.",
-   "ação da bactéria presente no fermento químico que faz o volume crescer."
   ],
   "resposta": 3,
   "fontes": [
@@ -14500,42 +8597,6 @@ Banco.registrar({ questoes: [
    "218."
   ],
   "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-100",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 100"
-  },
-  "enunciado": "Um agricultor deseja utilizar um motor para bombear água, abre parêntese, densidade da água é igual a 1 quilograma por litro, fecha parêntese, de um rio até um reservatório onde existe um desnível de 30 metros de altura acima do nível do rio. Ele necessita de uma vazão constante de 3 600 litros de água por hora. Considere a aceleração da gravidade igual a 10 metros por segundo ao quadrado.\n\nDescrição da imagem: A figura representa um esquema utilizado por um agricultor para bombear água de um rio para um reservatório, situado acima do nível do rio, utilizando um motor para bombear a água.\n\nConsiderando a situação apresentada e desprezando efeitos de perdas mecânicas e elétricas, qual deve ser a potência mínima do motor, em watt, para realizar a operação?",
-  "alternativas": [
-   "1,0 vezes 10 elevado a um.",
-   "5,0 vezes 10 elevado a um.",
-   "3,0 vezes 10 elevado a dois.",
-   "3,6 vezes 10 elevado a quatro.",
-   "1,1 vezes 10 elevado a seis."
-  ],
-  "resposta": 2,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -14728,78 +8789,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-108",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 108"
-  },
-  "enunciado": "A utilização da celulose para a fabricação de guardanapos e toalhas de papel se baseia no conhecimento do seu grande poder de absorção de água. Quimicamente, sabe-se que essa propriedade é explicada pelas interações entre as moléculas de água e a cadeia polimérica da celulose. Essa propriedade deve-se à formação de",
-  "alternativas": [
-   "ligações covalentes.",
-   "ligações glicosídicas.",
-   "interações íon-dipolo.",
-   "ligações de hidrogênio.",
-   "interações dipolo-dipolo induzido."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-109",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 109"
-  },
-  "enunciado": "O descarte de resíduos oleosos na rede de esgoto é combatido por legislação ambiental específica, abre parêntese, óleo para motores, fecha parêntese, ou por coleta seletiva para fabricação de biodiesel, abre parêntese, óleo de cozinha, fecha parêntese. Esses resíduos se caracterizam por formarem películas sobre a superfície da água. Que impacto ambiental esses resíduos provocam?",
-  "alternativas": [
-   "Vaporização do óleo para a atmosfera.",
-   "Elevação da luminosidade superficial das águas.",
-   "Formação de espuma na superfície dos corpos hídricos.",
-   "Proliferação de algas e outros microrganismos aquáticos.",
-   "Redução da concentração de oxigênio dissolvido nas águas."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-110",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -14872,114 +8861,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-114",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 114"
-  },
-  "enunciado": "Devido à sua ampla incidência e aos seus efeitos debilitantes, a malária é a doença que mais contribui para o sofrimento da população humana da Região Amazônica. Além de reduzir os esforços das pessoas para desenvolverem seus recursos econômicos, capacidade produtiva e melhorarem suas condições de vida, prejudica a saúde da população e o desenvolvimento socioeconômico da região. Essa doença constitui um sério problema socioeconômico para a região citada porque provoca",
-  "alternativas": [
-   "alterações neurológicas, que causam crises epilépticas, tornando o doente incapacitado para o trabalho.",
-   "diarreias agudas e explosivas, que fazem com que o doente fique vários dias impossibilitado de trabalhar.",
-   "febres constantes e intermitentes associadas à fadiga e dores de cabeça, que afastam o doente de suas atividades.",
-   "imunossupressão, que impossibilita o doente de entrar em contato com outras pessoas sem o uso de máscaras e luvas.",
-   "infecção viral contagiosa, que faz com que o doente precise de isolamento para evitar transmissão para outras pessoas."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-115",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 115"
-  },
-  "enunciado": "Gralha-do-cerrado, abre parêntese, Cyanocorax cristatellus, fecha parêntese, é uma espécie de ave que tem um característico topete frontal alongado, plumagem azul-escura, parte posterior do pescoço e garganta pretos, barriga e ponta da cauda brancas. Alcança até 35 centímetros de comprimento. A espécie é onívora e sua ampla dieta inclui frutos, insetos, sementes, pequenos répteis e ovos de outras espécies de aves.\n\nAlém das características morfológicas do animal, a descrição da gralha-do-cerrado diz respeito a seu",
-  "alternativas": [
-   "hábitat.",
-   "ecótopo.",
-   "nível trófico.",
-   "nicho ecológico.",
-   "ecossistema."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-116",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 116"
-  },
-  "enunciado": "A ararinha-azul, abre parêntese, Cyanopsitta spixii, fecha parêntese, desapareceu do seu hábitat, sendo considerada extinta em ambientes naturais desde o ano\n2000. A condição atual dessa espécie é crítica, pois sua população conta com aproximadamente 92 indivíduos, em cativeiros distribuídos em três países: Brasil, Alemanha e Catar. Felizmente, após catorze anos sem sucesso reprodutivo, um criadouro de aves silvestres teve êxito na reprodução natural da espécie, com cruzamento de aves de diferentes criadouros e com o nascimento de dois irmãos: uma fêmea e um macho.\n\nApesar do sucesso exposto, a espécie ainda está ameaçada em razão da",
-  "alternativas": [
-   "diminuição da taxa de mutação, que ocorrerá em ambientes de cativeiro.",
-   "redução da variabilidade, que acontecerá por cruzamentos endogâmicos.",
-   "miscigenação de animais de diferentes criadouros, que originará híbridos.",
-   "eliminação de genes, que prejudicará a capacidade adaptativa ao ambiente natural.",
-   "intensificação da seleção natural, que eliminará características adquiridas no cativeiro."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-117",
   "materia": "enem-natureza",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -15004,78 +8885,6 @@ Banco.registrar({ questoes: [
    "liberada na etapa 1."
   ],
   "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-118",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 118"
-  },
-  "enunciado": "Apesar de reconhecida a importância de se manter a qualidade da água para uso pelas comunidades aquáticas, na prática o que se verifica são inúmeras descargas industriais, urbanas e domésticas de efluentes potencialmente causadores de poluição nos cursos-d’água. Uma das consequências dessas descargas é o aparecimento do fenômeno da eutrofização.\n\nA consequência gerada no meio aquático pelo fenônemo citado é o(a)",
-  "alternativas": [
-   "aumento da quantidade de matéria orgânica nos corpos-d’água.",
-   "aumento da penetração da luz solar na coluna de água.",
-   "aumento da biodiversidade nos sistemas aquáticos.",
-   "diminuição da coloração da água.",
-   "diminuição da turbidez da água."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-119",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 119"
-  },
-  "enunciado": "Alguns modelos mais modernos de fones de ouvido têm um recurso, denominado, abre aspas, cancelador de ruídos ativo, fecha aspas, constituído de um circuito eletrônico que gera um sinal sonoro semelhante ao sinal externo, abre parêntese, ruído, fecha parêntese, exceto pela sua fase oposta. Qual fenômeno físico é responsável pela diminuição do ruído nesses fones de ouvido?",
-  "alternativas": [
-   "Difração.",
-   "Reflexão.",
-   "Refração.",
-   "Interferência.",
-   "Efeito Doppler."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -15148,78 +8957,6 @@ Banco.registrar({ questoes: [
    "ausência de proteínas e carboidratos nas unidades."
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-126",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 126"
-  },
-  "enunciado": "O eco é um fenômeno relacionado à reflexão da onda sonora, muito comum quando se grita no interior de uma caverna ou nas proximidades de um despenhadeiro. Uma pessoa se encontra dentro de uma gruta e se depara com dois caminhos distintos e opostos, A e B. Nesse momento, ela grita e percebe que o som emitido nos caminhos A e B retorna aos seus ouvidos após 1,2 e 1,5 segundos, respectivamente. Considere que o som refletiu em uma parede no fim de cada caminho e que a velocidade do som no ar é igual a 340 metros por segundo. O módulo da diferença entre os comprimentos, em metro, dos dois caminhos na gruta é mais próximo de",
-  "alternativas": [
-   "306.",
-   "153.",
-   "102.",
-   "56.",
-   "51."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-127",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 127"
-  },
-  "enunciado": "A eutrofização é um processo decorrente do aumento das taxas de nutrientes em corpos-d’água. Ações antrópicas podem acelerar esse processo, resultando em alterações nos ecossistemas aquáticos. Um dos nutrientes que causa esse fenômeno é o",
-  "alternativas": [
-   "fósforo, presente nos esgotos domésticos.",
-   "ferro, liberado nos processos de mineração.",
-   "sódio, liberado no processo de exploração de salinas.",
-   "cálcio, liberado a partir de restos da indústria pesqueira.",
-   "magnésio, presente nos restos vegetais oriundos de lavouras."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -15520,42 +9257,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-142",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 142"
-  },
-  "enunciado": "Um estudante, morador da cidade de Contagem, ouviu dizer que nessa cidade existem ruas que formam um hexágono regular. Ao pesquisar em um sítio de mapas, verificou que o fato é verídico. Ele observou que o mapa apresentado na tela do computador estava na escala 1 para 20 000. Nesse instante, mediu o comprimento de um dos segmentos que formam os lados desse hexágono, encontrando 5 centímetros. Se esse estudante resolver dar uma volta completa pelas ruas que formam esse hexágono, ele percorrerá, em quilômetro,",
-  "alternativas": [
-   "1.",
-   "4.",
-   "6.",
-   "20.",
-   "24."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-144",
   "materia": "matematica",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -15652,42 +9353,6 @@ Banco.registrar({ questoes: [
    "B, B, A, A"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-147",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 147"
-  },
-  "enunciado": "Usando um computador construído com peças avulsas, o japonês Shigeru Kondo calculou o valor da constante matemática pi com precisão de 5 trilhões de dígitos. Com isso, foi quebrado o recorde anterior, de dois trilhões de dígitos, estabelecido pelo francês Fabrice Bellard. A quantidade de zeros que segue o algarismo 5 na representação do número de dígitos de pi calculado pelo japonês é",
-  "alternativas": [
-   "3.",
-   "6.",
-   "9.",
-   "12.",
-   "15."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -15916,78 +9581,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-157",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 157"
-  },
-  "enunciado": "A Lei de Coulomb estabelece que a intensidade da força eletrostática F1 entre duas cargas elétricas Q1 e Q2 é diretamente proporcional ao produto dos módulos dessas cargas e inversamente proporcional ao quadrado da distância d que as separa, ou seja:\n\nF1 é igual a k vezes a fração de numerador módulo de Q1 vezes módulo de Q2 e denominador d ao quadrado.\n\nem que k é a constante eletrostática no vácuo, dada por k é igual a 9 vezes 10 elevado a 9 newton vezes metro ao quadrado por coulomb ao quadrado.\n\nOutra força F2 é criada quando são mantidas as cargas elétricas Q1 e Q2, mas a distância entre elas se torna igual ao triplo da anterior.\n\nA razão entre as forças F1 e F2 é",
-  "alternativas": [
-   "Fração de numerador 1 e denominador 9.",
-   "Fração de numerador 1 e denominador 3.",
-   "1",
-   "3",
-   "9"
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-158",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 158"
-  },
-  "enunciado": "O governador de um estado propõe a ampliação de investimentos em segurança no transporte realizado por meio de trens. Um estudo para um projeto de lei prevê que se tenha a presença de três agentes mulheres, distribuídas entre os 6 vagões de uma composição, de forma que duas dessas agentes não estejam em vagões adjacentes, garantindo assim maior segurança aos usuários. A expressão que representa a quantidade de maneiras distintas das três agentes serem distribuídas nos vagões é",
-  "alternativas": [
-   "Combinação de quatro, três a três, mais três fatorial.",
-   "Combinação de seis, três a três.",
-   "Combinação de quatro, três a três, vezes três fatorial.",
-   "Arranjo de seis, três a três.",
-   "Arranjo de quatro, três a três, vezes três fatorial."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-159",
   "materia": "matematica",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -16132,42 +9725,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-164",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 164"
-  },
-  "enunciado": "Um imposto é dito cumulativo se incide em duas ou mais etapas da circulação de mercadorias, sem que na etapa posterior possa ser abatido o montante pago na etapa anterior. PIS e Cofins são exemplos de impostos cumulativos e correspondem a um percentual total de 3,65%, que incide em cada etapa da comercialização de um produto. Considere um produto com preço inicial C. Suponha que ele é revendido para uma loja pelo preço inicial acrescido dos impostos descritos. Em seguida, o produto é revendido por essa loja ao consumidor pelo valor pago acrescido novamente dos mesmos impostos.\n\nQual a expressão algébrica que corresponde ao valor pago em impostos pelo consumidor?",
-  "alternativas": [
-   "C vezes 0,0365.",
-   "2C vezes 0,0365.",
-   "C vezes 1,0365 ao quadrado.",
-   "C vezes abre parêntese 1 mais 2 vezes 0,0365 fecha parêntese.",
-   "2C vezes 0,0365 mais C vezes 0,0365 ao quadrado."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-165",
   "materia": "matematica",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -16228,42 +9785,6 @@ Banco.registrar({ questoes: [
    "6,4"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2020-ppl-167",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 167"
-  },
-  "enunciado": "Um dos conceitos mais utilizados nos estudos sobre a dinâmica de populações é o de densidade demográfica. Esta grandeza, para um local, é a razão entre o seu número de habitantes e a medida da área do seu território. Quanto maior essa razão, expressa em habitante por quilometro quadrado, se diz que mais densamente povoado é o local. Querendo fazer uma visita de estudos ao local mais densamente povoado, entre um grupo de cinco escolhidos, um geógrafo coletou as informações sobre população e área territorial dos locais de seu interesse, obtendo os dados apresentados no quadro, referentes ao ano de 2014.\n\nDescrição do quadro: O quadro apresenta, a população, em número de habitantes, e a área, em quilômetro quadrado de cinco locais. Malta – População: 400 000; área: 300; Brasil – População: 200 000 000; área: 9 000 000; México – População: 120 000 000; área: 2 000 000; Namíbia – População: 2 000 000; área: 820 000; Ilha Norfolk – População: 1 841; área: 35.\n\nPara cumprir seu objetivo de visita, qual dos locais apresentados deverá ser o escolhido pelo geógrafo?",
-  "alternativas": [
-   "Malta.",
-   "Brasil.",
-   "México.",
-   "Namíbia.",
-   "Ilha Norfolk."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
@@ -16384,42 +9905,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2020-ppl-176",
-  "materia": "matematica",
-  "assunto": "ENEM 2020 (reaplicação)",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2020,
-   "orgao": "ENEM, reaplicação/PPL, 2º dia, questão 176"
-  },
-  "enunciado": "O dono de uma fábrica de doces deseja obter uma expressão que descreva o lucro obtido mensalmente com a venda dos doces produzidos (em que lucro é a diferença entre o valor obtido pela venda dos produtos e o total de custos, fixos e de produção). Ele sabe que o custo fixo da fábrica é de 2 000 reais por mês, e que o custo de produção de cada doce é de 0,50 real. Além disso, sabe que cada doce é vendido por 2 reais.\n\nA expressão do lucro L, em real, em função da quantidade X de doces produzidos pela fábrica a cada mês é",
-  "alternativas": [
-   "L de X é igual a 1,5X menos 2 000.",
-   "L de X é igual a menos 1,5X mais 2 000.",
-   "L de X é igual a 2X menos 1 000.",
-   "L de X é igual a 2X menos 2 000.",
-   "L de X é igual a 2,5X mais 2 000."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2020-ppl-177",
   "materia": "matematica",
   "assunto": "ENEM 2020 (reaplicação)",
@@ -16520,6 +10005,2166 @@ Banco.registrar({ questoes: [
    {
     "titulo": "INEP/MEC: ENEM 2020, reaplicação/PPL, 2º dia (caderno oficial)",
     "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_reaplicacao_PPL_D2_CD11.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2011-50",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2011",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2011,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 50"
+  },
+  "enunciado": "Para evitar o desmatamento da Mata Atlântica nos arredores da cidade de Amargosa, no Recôncavo da Bahia, o Ibama tem atuado no sentido de fiscalizar, entre outras, as pequenas propriedades rurais que dependem da lenha proveniente das matas para a produção da farinha de mandioca, produto típico da região. Com isso, pequenos produtores procuram alternativas como o gás de cozinha, o que encarece a farinha.\n\nUma alternativa viável, em curto prazo, para os produtores de farinha em Amargosa, que não cause danos à Mata Atlântica nem encareça o produto é a",
+  "alternativas": [
+   "construção, nas pequenas propriedades, de grandes fornos elétricos para torrar a mandioca.",
+   "plantação, em suas propriedades, de árvores para serem utilizadas na produção de lenha.",
+   "permissão, por parte do Ibama, da exploração da Mata Atlântica apenas pelos pequenos produtores.",
+   "construção de biodigestores, para a produção de gás combustível a partir de resíduos orgânicos da região.",
+   "coleta de carvão de regiões mais distantes, onde existe menor intensidade de fiscalização do Ibama."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2011, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2011-72",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2011",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2011,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 72"
+  },
+  "enunciado": "Os sintomas mais sérios da Gripe A, causada pelo vírus H1N1, foram apresentados por pessoas mais idosas e por gestantes. O motivo aparente é a menor imunidade desses grupos contra o vírus. Para aumentar a imunidade populacional relativa ao vírus da gripe A, o governo brasileiro distribuiu vacinas para os grupos mais suscetíveis.\n\nA vacina contra o H1N1, assim como qualquer outra vacina contra agentes causadores de doenças infecto-contagiosas, aumenta a imunidade das pessoas porque",
+  "alternativas": [
+   "possui anticorpos contra o agente causador da doença.",
+   "possui proteínas que eliminam o agente causador da doença.",
+   "estimula a produção de glóbulos vermelhos pela medula óssea.",
+   "possui linfócitos B e T que neutralizam o agente causador da doença.",
+   "estimula a produção de anticorpos contra o agente causador da doença."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2011, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2011-90",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2011",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2011,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 90"
+  },
+  "enunciado": "Durante as estações chuvosas, aumentam no Brasil as campanhas de prevenção à dengue, que têm como objetivo a redução da proliferação do mosquito Aedes aegypti, transmissor do vírus da dengue.\n\nQue proposta preventiva poderia ser efetivada para diminuir a reprodução desse mosquito?",
+  "alternativas": [
+   "Colocação de telas nas portas e janelas, pois o mosquito necessita de ambientes cobertos e fechados para a sua reprodução.",
+   "Substituição das casas de barro por casas de alvenaria, haja vista que o mosquito se reproduz na parede das casas de barro.",
+   "Remoção dos recipientes que possam acumular água, porque as larvas do mosquito se desenvolvem nesse meio.",
+   "Higienização adequada de alimentos, visto que as larvas do mosquito se desenvolvem nesse tipo de substrato.",
+   "Colocação de filtros de água nas casas, visto que a reprodução do mosquito acontece em águas contaminadas."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2011, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-46",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 46"
+  },
+  "enunciado": "Os carrinhos de brinquedo podem ser de vários tipos. Dentre eles, há os movidos a corda, em que uma mola em seu interior é comprimida quando a criança puxa o carrinho para trás. Ao ser solto, o carrinho entra em movimento enquanto a mola volta à sua forma inicial.\n\nO processo de conversão de energia que ocorre no carrinho descrito também é verificado em",
+  "alternativas": [
+   "um dínamo.",
+   "um freio de automóvel.",
+   "um motor a combustão.",
+   "uma usina hidroelétrica.",
+   "uma atiradeira (estilingue)."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-47",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 47"
+  },
+  "enunciado": "Pesticidas são contaminantes ambientais altamente tóxicos aos seres vivos e, geralmente, com grande persistência ambiental. A busca por novas formas de eliminação dos pesticidas tem aumentado nos últimos anos, uma vez que as técnicas atuais são economicamente dispendiosas e paliativas. A biorremediação de pesticidas utilizando microrganismos tem se mostrado uma técnica muito promissora para essa finalidade, por apresentar vantagens econômicas e ambientais.\n\nPara ser utilizado nesta técnica promissora, um microrganismo deve ser capaz de",
+  "alternativas": [
+   "transferir o contaminante do solo para a água.",
+   "absorver o contaminante sem alterá-lo quimicamente.",
+   "apresentar alta taxa de mutação ao longo das gerações.",
+   "estimular o sistema imunológico do homem contra o contaminante.",
+   "metabolizar o contaminante, liberando subprodutos menos tóxicos ou atóxicos."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-51",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 51"
+  },
+  "enunciado": "Um dos problemas ambientais vivenciados pela agricultura hoje em dia é a compactação do solo, devida ao intenso tráfego de máquinas cada vez mais pesadas, reduzindo a produtividade das culturas.\n\nUma das formas de prevenir o problema de compactação do solo é substituir os pneus dos tratores por pneus mais",
+  "alternativas": [
+   "largos, reduzindo a pressão sobre o solo.",
+   "estreitos, reduzindo a pressão sobre o solo.",
+   "largos, aumentando a pressão sobre o solo.",
+   "estreitos, aumentando a pressão sobre o solo.",
+   "altos, reduzindo a pressão sobre o solo."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-56",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 56"
+  },
+  "enunciado": "Há milhares de anos o homem faz uso da biotecnologia para a produção de alimentos como pães, cervejas e vinhos. Na fabricação de pães, por exemplo, são usados fungos unicelulares, chamados de leveduras, que são comercializados como fermento biológico. Eles são usados para promover o crescimento da massa, deixando-a leve e macia.\n\nO crescimento da massa do pão pelo processo citado é resultante da",
+  "alternativas": [
+   "liberação de gás carbônico.",
+   "formação de ácido lático.",
+   "formação de água.",
+   "produção de ATP.",
+   "liberação de calor."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-57",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 57"
+  },
+  "enunciado": "Alguns povos indígenas ainda preservam suas tradições realizando a pesca com lanças, demonstrando uma notável habilidade. Para fisgar um peixe em um lago com águas tranquilas o índio deve mirar abaixo da posição em que enxerga o peixe.\n\nEle deve proceder dessa forma porque os raios de luz",
+  "alternativas": [
+   "refletidos pelo peixe não descrevem uma trajetória retilínea no interior da água.",
+   "emitidos pelos olhos do índio desviam sua trajetória quando passam do ar para a água.",
+   "espalhados pelo peixe são refletidos pela superfície da água.",
+   "emitidos pelos olhos do índio são espalhados pela superfície da água.",
+   "refletidos pelo peixe desviam sua trajetória quando passam da água para o ar."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-58",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 58"
+  },
+  "enunciado": "Os vegetais biossintetizam determinadas substâncias (por exemplo, alcaloides e flavonoides), cuja estrutura química e concentração variam num mesmo organismo em diferentes épocas do ano e estágios de desenvolvimento. Muitas dessas substâncias são produzidas para a adaptação do organismo às variações ambientais (radiação UV, temperatura, parasitas, herbívoros, estímulo a polinizadores etc.) ou fisiológicas (crescimento, envelhecimento etc.).\n\nAs variações qualitativa e quantitativa na produção dessas substâncias durante um ano são possíveis porque o material genético do indivíduo",
+  "alternativas": [
+   "sofre constantes recombinações para adaptar-se.",
+   "muda ao longo do ano e em diferentes fases da vida.",
+   "cria novos genes para biossíntese de substâncias específicas.",
+   "altera a sequência de bases nitrogenadas para criar novas substâncias.",
+   "possui genes transcritos diferentemente de acordo com cada necessidade."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-60",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 60"
+  },
+  "enunciado": "Em um dia de chuva muito forte, constatou-se uma goteira sobre o centro de uma piscina coberta, formando um padrão de ondas circulares. Nessa situação, observou-se que caíam duas gotas a cada segundo. A distância entre duas cristas consecutivas era de 25 cm e cada uma delas se aproximava da borda da piscina com velocidade de 1,0 m/s. Após algum tempo a chuva diminuiu e a goteira passou a cair uma vez por segundo.\n\nCom a diminuição da chuva, a distância entre as cristas e a velocidade de propagação da onda se tornaram, respectivamemente,",
+  "alternativas": [
+   "maior que 25 cm e maior que 1,0 m/s.",
+   "maior que 25 cm e igual a 1,0 m/s.",
+   "menor que 25 cm e menor que 1,0 m/s.",
+   "menor que 25 cm e igual a 1,0 m/s.",
+   "igual a 25 cm e igual a 1,0 m/s."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-65",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 65"
+  },
+  "enunciado": "Em uma planície, ocorreu um acidente ambiental em decorrência do derramamento de grande quantidade de um hidrocarboneto que se apresenta na forma pastosa à temperatura ambiente. Um químico ambiental utilizou uma quantidade apropriada de uma solução de para-dodecil-benzenossulfonato de sódio, um agente tensoativo sintético, para diminuir os impactos desse acidente. Essa intervenção produz resultados positivos para o ambiente porque",
+  "alternativas": [
+   "promove uma reação de substituição no hidrocarboneto, tornando-o menos letal ao ambiente.",
+   "a hidrólise do para-dodecil-benzenossulfonato de sódio produz energia térmica suficiente para vaporizar o hidrocarboneto.",
+   "a mistura desses reagentes provoca a combustão do hidrocarboneto, o que diminui a quantidade dessa substância na natureza.",
+   "a solução de para-dodecil-benzenossulfonato possibilita a solubilização do hidrocarboneto.",
+   "o reagente adicionado provoca uma solidificação do hidrocarboneto, o que facilita sua retirada do ambiente."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-68",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 68"
+  },
+  "enunciado": "Muitas espécies de plantas lenhosas são encontradas no cerrado brasileiro. Para a sobrevivência nas condições de longos períodos de seca e queimadas periódicas, próprias desse ecossistema, essas plantas desenvolveram estruturas muito peculiares.\n\nAs estruturas adaptativas mais apropriadas para a sobrevivência desse grupo de plantas nas condições ambientais do referido ecossistema são:",
+  "alternativas": [
+   "Cascas finas e sem sulcos ou fendas.",
+   "Caules estreitos e retilíneos.",
+   "Folhas estreitas e membranosas.",
+   "Gemas apicais com densa pilosidade.",
+   "Raízes superficiais, em geral, aéreas."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-71",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 71"
+  },
+  "enunciado": "Suponha que você seja um consultor e foi contratado para assessorar a implantação de uma matriz energética em um pequeno país com as seguintes características: região plana, chuvosa e com ventos constantes, dispondo de poucos recursos hídricos e sem reservatórios de combustíveis fósseis.\n\nDe acordo com as características desse país, a matriz energética de menor impacto e risco ambientais é a baseada na energia",
+  "alternativas": [
+   "dos biocombustíveis, pois tem menor impacto ambiental e maior disponibilidade.",
+   "solar, pelo seu baixo custo e pelas características do país favoráveis à sua implantação.",
+   "nuclear, por ter menor risco ambiental e ser adequada a locais com menor extensão territorial.",
+   "hidráulica, devido ao relevo, à extensão territorial do país e aos recursos naturais disponíveis.",
+   "eólica, pelas características do país e por não gerar gases do efeito estufa nem resíduos de operação."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-74",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 74"
+  },
+  "enunciado": "A doença de Chagas afeta mais de oito milhões de brasileiros, sendo comum em áreas rurais. É uma doença causada pelo protozoário Trypanosoma cruzi e transmitida por insetos conhecidos como barbeiros ou chupanças.\n\nUma ação do homem sobre o meio ambiente que tem contribuído para o aumento dessa doença é",
+  "alternativas": [
+   "o consumo de carnes de animais silvestres que são hospedeiros do vetor da doença.",
+   "a utilização de adubos químicos na agricultura que aceleram o ciclo reprodutivo do barbeiro.",
+   "a ausência de saneamento básico que favorece a proliferação do protozoário em regiões habitadas por humanos.",
+   "a poluição dos rios e lagos com pesticidas que exterminam o predador das larvas do inseto transmissor da doença.",
+   "o desmatamento que provoca a migração ou o desaparecimento dos animais silvestres dos quais o barbeiro se alimenta."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-75",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 75"
+  },
+  "enunciado": "Nossa pele possui células que reagem à incidência de luz ultravioleta e produzem uma substância chamada melanina, responsável pela pigmentação da pele. Pensando em se bronzear, uma garota vestiu um biquíni, acendeu a luz de seu quarto e deitou-se exatamente abaixo da lâmpada incandescente. Após várias horas ela percebeu que não conseguiu resultado algum.\n\nO bronzeamente não ocorreu porque a luz emitida pela lâmpada incandescente é de",
+  "alternativas": [
+   "baixa intensidade.",
+   "baixa frequência.",
+   "um espectro contínuo.",
+   "amplitude inadequada.",
+   "curto comprimento de onda."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-79",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 79"
+  },
+  "enunciado": "Em certos locais, larvas de moscas, criadas em arroz cozido, são utilizadas como iscas para pesca. Alguns criadores, no entanto, acreditam que essas larvas surgem espontaneamente do arroz cozido, tal como preconizado pela teoria da geração espontânea.\n\nEssa teoria começou a ser refutada pelos cientistas ainda no século XVII, a partir dos estudos de Redi e Pasteur, que mostraram experimentalmente que",
+  "alternativas": [
+   "seres vivos podem ser criados em laboratório.",
+   "a vida se originou no planeta a partir de microrganismos.",
+   "o ser vivo é oriundo da reprodução de outro ser vivo pré-existente.",
+   "seres vermiformes e microrganismos são evolutivamente aparentados.",
+   "vermes e microrganismos são gerados pela matéria existente nos cadáveres e nos caldos nutritivos, respectivamente."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-80",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 80"
+  },
+  "enunciado": "Os tubos de PVC, material organoclorado sintético, são normalmente utilizados como encanamento na construção civil. Ao final da sua vida útil, uma das formas de descarte desses tubos pode ser a incineração. Nesse processo libera-se HCℓ (g), cloreto de hidrogênio, dentre outras substâncias. Assim, é necessário um tratamento para evitar o problema da emissão desse poluente.\n\nEntre as alternativas possíveis para o tratamento, é apropriado canalizar e borbulhar os gases provenientes da incineração em",
+  "alternativas": [
+   "água dura.",
+   "água de cal.",
+   "água salobra.",
+   "água destilada.",
+   "água desmineralizada."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2012-87",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2012",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2012,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 87"
+  },
+  "enunciado": "Paleontólogos estudam fósseis e esqueletos de dinossauros para tentar explicar o desaparecimento desses animais. Esses estudos permitem afirmar que esses animais foram extintos há cerca de 65 milhões de anos. Uma teoria aceita atualmente é a de que um asteroide colidiu com a Terra, formando uma densa nuvem de poeira na atmosfera.\n\nDe acordo com essa teoria, a extinção ocorreu em função de modificações no planeta que",
+  "alternativas": [
+   "desestabilizaram o relógio biológico dos animais, causando alterações no código genético.",
+   "reduziram a penetração da luz solar até a superfície da Terra, interferindo no fluxo energético das teias tróficas.",
+   "causaram uma série de intoxicações nos animais, provocando a bioacumulação de partículas de poeira nos organismos.",
+   "resultaram na sedimentação das partículas de poeira levantada com o impacto do meteoro, provocando o desaparecimento de rios e lagos.",
+   "evitaram a precipitação de água até a superfície da Terra, causando uma grande seca que impediu a retroalimentação do ciclo hidrológico."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2012, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-51",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 51"
+  },
+  "enunciado": "Um grupo de amigos foi passar o fim de semana em um acampamento rural, onde não há eletricidade. Uma pessoa levou um gerador a diesel e outra levou duas lâmpadas, diferentes fios e bocais. Perto do anoitecer, iniciaram a instalação e verificaram que as lâmpadas eram de 60 W – 110 V e o gerador produzia uma tensão de 220 V. Para que as duas lâmpadas possam funcionar de acordo com suas especificações e o circuito tenha menor perda possível, a estrutura do circuito elétrico deverá ser de dois bocais ligados em",
+  "alternativas": [
+   "série e usar fios de maior espessura.",
+   "série e usar fios de máximo comprimento.",
+   "paralelo e usar fios de menor espessura.",
+   "paralelo e usar fios de maior espessura.",
+   "paralelo e usar fios de máximo comprimento."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-52",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 52"
+  },
+  "enunciado": "Conta-se que um curioso incidente aconteceu durante a Primeira Guerra Mundial. Quando voava a uma altitude de dois mil metros, um piloto francês viu o que acreditava ser uma mosca parada perto de sua face. Apanhando-a rapidamente, ficou surpreso ao verificar que se tratava de um projétil alemão. O piloto consegue apanhar o projétil, pois",
+  "alternativas": [
+   "ele foi disparado em direção ao avião francês, freado pelo ar e parou justamente na frente do piloto.",
+   "o avião se movia no mesmo sentido que o dele, com velocidade visivelmente superior.",
+   "ele foi disparado para cima com velocidade constante, no instante em que o avião francês passou.",
+   "o avião se movia no sentido oposto ao dele, com velocidade de mesmo valor.",
+   "o avião se movia no mesmo sentido que o dele, com velocidade de mesmo valor."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-57",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 57"
+  },
+  "enunciado": "A banda larga brasileira é lenta. No Japão já existem redes de fibras ópticas, que permitem acessos à internet com velocidade de 1 gigabit por segundo (Gbps), o suficiente para baixar em um minuto, por exemplo, 80 filmes. No Brasil a maioria das conexões ainda é de 1 megabit por segundo (Mbps), ou seja, menos de um milésimo dos acessos mais rápidos do Japão. A fibra óptica é composta basicamente de um material dielétrico (sílica ou plástico), segundo uma estrutura cilíndrica, transparente e flexível. Ela é formada de uma região central envolta por uma camada, também de material dielétrico, com índice de refração diferente ao do núcleo. A transmissão em uma fibra óptica acontecerá de forma correta se o índice de refração do núcleo, em relação ao revestimento, for",
+  "alternativas": [
+   "superior e ocorrer difração.",
+   "superior e ocorrer reflexão interna total.",
+   "inferior e ocorrer reflexão interna parcial.",
+   "inferior e ocorrer interferência destrutiva.",
+   "inferior e ocorrer interferência construtiva."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-59",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 59"
+  },
+  "enunciado": "A mosca Drosophila, conhecida como mosca-das-frutas, é bastante estudada no meio acadêmico pelos geneticistas. Dois caracteres estão entre os mais estudados: tamanho da asa e cor do corpo, cada um condicionado por gene autossômico. Em se tratando do tamanho da asa, a característica asa vestigial é recessiva e a característica asa longa, dominante. Em relação à cor do indivíduo, a coloração cinza é recessiva e a cor preta, dominante. Em um experimento, foi realizado um cruzamento entre indivíduos heterozigotos para os dois caracteres, do qual foram geradas 288 moscas. Dessas, qual é a quantidade esperada de moscas que apresentam o mesmo fenótipo dos indivíduos parentais?",
+  "alternativas": [
+   "288",
+   "162",
+   "108",
+   "72",
+   "54"
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-60",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 60"
+  },
+  "enunciado": "Para a produção de etanol combustível, as usinas retiram água do leito de rios próximos, reutilizando-a nas suas instalações. A vinhaça, resíduo líquido gerado nesse processo, é diluída para ser adicionada ao solo, utilizando uma técnica chamada de fertirrigação. Por meio desse procedimento, o fósforo e o potássio, essenciais à produção de cana-de-açúcar, são devolvidos ao solo, reduzindo o uso de fertilizantes sintéticos. Essa intervenção humana no destino da vinhaça tem como resultado a diminuição do impacto ambiental referente à",
+  "alternativas": [
+   "erosão do solo.",
+   "produção de chuva ácida.",
+   "elevação da temperatura global.",
+   "eutrofização de lagos e represas.",
+   "contaminação de rios por pesticidas."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-62",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 62"
+  },
+  "enunciado": "Há processos industriais que envolvem reações químicas na obtenção de diversos produtos ou bens consumidos pelo homem. Determinadas etapas de obtenção desses produtos empregam catalisadores químicos tradicionais, que têm sido, na medida do possível, substituídos por enzimas. Em processos industriais, uma das vantagens de se substituírem os catalisadores químicos tradicionais por enzimas decorre do fato de estas serem",
+  "alternativas": [
+   "consumidas durante o processo.",
+   "compostos orgânicos e biodegradáveis.",
+   "inespecíficas para os substratos.",
+   "estáveis em variações de temperatura.",
+   "substratos nas reações químicas."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-63",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 63"
+  },
+  "enunciado": "O sistema somatossensorial nos informa o que ocorre tanto na superfície do corpo como em seu interior, e processa muitas classes de diferentes estímulos, como pressão, temperatura, toque, posição. Em uma experiência, após vendar os olhos do indivíduo, foram feitos toques com as duas pontas de um compasso em diversas partes do corpo e em diferentes distâncias, visando à identificação das regiões e distâncias onde eram sentidos um ou dois toques. Os locais do corpo, a quantidade de toques que foram sentidos e a distância entre as duas pontas do compasso estão apresentados na tabela:\n\nDescrição da imagem: A tabela é composta pela relação dos diferentes locais do corpo pressionados pelas pontas do compasso, a distância entre os dois pontos do corpo pressionados pelas pontas do compasso e a quantidade de toques que foram sentidos. Os locais testados foram costas, panturrilha, antebraço, polegar e indicador. As distâncias entre os dois pontos pressionados, em centímetros, foram: seis, cinco, três e meio, dois e meio, um, meio e menos de meio centímetro. Nas costas, o número de toques sentidos foi: dois toques a seis centímetros; dois toques a cinco centímetros e um toque para as demais distâncias. O número de toques sentidos na panturrilha foi: dois toques a seis centímetros e um toque para as demais distâncias. O número de toques sentidos no antebraço foi: dois toques a seis centímetros; dois toques a cinco centímetros e um toque para as demais distâncias. No polegar, o número de toques sentidos foi: dois toques para todas as distâncias. Enfim, o número de toques sentidos no indicador foi: dois toques para todas as distâncias.\n\nAs diferenças observadas entre as várias regiões do corpo refletem que a densidade dos receptores",
+  "alternativas": [
+   "não é a mesma em todos os pontos, existindo regiões com maior capacidade de discriminação e sensibilidade, como o indicador e o polegar.",
+   "apresenta pequena diferenciação entre os diversos pontos, existindo regiões com menor capacidade de discriminação e sensibilidade, como o indicador e a panturrilha.",
+   "apresenta pequena diferenciação entre os diversos pontos, diferenciando-se em regiões com maior capacidade de discriminação e sensibilidade, como as costas e o antebraço.",
+   "não é a mesma em todos os pontos, existindo regiões com maior capacidade de discriminação e sensibilidade, como o panturrilha e as costas.",
+   "se equivale, existindo pontos que manifestam uma maior sensibilidade e discriminação, como as costas e o antebraço."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-66",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 66"
+  },
+  "enunciado": "Retirar a roda de um carro é uma tarefa facilitada por algumas características da ferramenta utilizada, habitualmente denominada chave de roda. As figuras representam alguns modelos de chaves de roda:\n\nDescrição da imagem: A primeira figura apresenta o modelo 1 de chave de roda. Nesse modelo, a chave de roda é composta de duas barras iguais, retas, ortogonais e soldadas no ponto médio, com distância da solda até qualquer extremidade igual a 20 cm. Possui bocal para encaixe da porca em todas as extremidades. A segunda figura apresenta o modelo 2, em que a chave de roda tem a forma da letra L maiúscula, cujo lado de maior comprimento mede 30 cm. Esse modelo possui bocal para encaixe da porca na extremidade do lado de menor comprimento. A terceira figura apresenta o modelo 3 de chave de roda, que tem a forma da letra T maiúscula. Essa chave de roda é composta de uma barra que possui bocal para encaixe da porca em uma extremidade e um furo na outra extremidade, pelo qual passa uma barra móvel, de comprimento igual a 25 cm, que fica perpendicular à primeira.\n\nEm condições usuais, qual desses modelos permite a retirada da roda com mais facilidade?",
+  "alternativas": [
+   "1, em função de o momento da força ser menor.",
+   "1, em função da ação de um binário de forças.",
+   "2, em função de o braço da força aplicada ser maior.",
+   "3, em função de o braço da força aplicada poder variar.",
+   "3, em função de o momento da força produzida ser maior."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-67",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 67"
+  },
+  "enunciado": "A qualidade de óleos de cozinha, compostos principalmente por moléculas de ácidos graxos, pode ser medida pelo índice de iodo. Quanto maior o grau de insaturação da molécula, maior o índice de iodo determinado e melhor a qualidade do óleo. Na figura, são apresentados alguns compostos que podem estar presentes em diferentes óleos de cozinha:\n\nDescrição da imagem:\n• Ácido palmítico: molécula de ácido graxo com cadeia normal contendo 16 carbonos ligados somente por ligações simples entre carbonos;\n• Ácido esteárico: molécula de ácido graxo com cadeia normal contendo 18 carbonos ligados somente por ligações simples entre carbonos;\n• Ácido oleico: molécula de ácido graxo com cadeia normal contendo 18 carbonos e uma ligação dupla entre carbonos;\n• Ácido linoleico: molécula de ácido graxo com cadeia normal contendo 18 carbonos e duas ligações duplas entre carbonos;\n• Ácido linolênico: molécula de ácido graxo com cadeia normal contendo 18 carbonos e três ligações duplas entre carbonos.\n\nDentre os compostos apresentados, os dois que proporcionam melhor qualidade para os óleos de cozinha são os ácidos",
+  "alternativas": [
+   "esteárico e oleico.",
+   "linolênico e linoleico.",
+   "palmítico e esteárico.",
+   "palmítico e linolênico.",
+   "linolênico e esteárico."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-70",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 70"
+  },
+  "enunciado": "O mármore é um material empregado para revestimento de pisos e um de seus principais constituintes é o carbonato de cálcio. Na limpeza desses pisos com solução ácida, ocorre efervescência. Nessa efervescência o gás liberado é o",
+  "alternativas": [
+   "oxigênio.",
+   "hidrogênio.",
+   "cloro.",
+   "dióxido de carbono.",
+   "monóxido de carbono."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-72",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 72"
+  },
+  "enunciado": "Em um violão afinado, quando se toca a corda Lá com seu comprimento efetivo (harmônico fundamental), o som produzido tem frequência de 440 Hz.\n\nSe a mesma corda do violão é comprimida na metade do seu comprimento, a frequência do novo harmônico",
+  "alternativas": [
+   "se reduz à metade, porque o comprimento de onda dobrou.",
+   "dobra, porque o comprimento de onda foi reduzido à metade.",
+   "quadruplica, porque o comprimento de onda foi reduzido à metade.",
+   "quadruplica, porque o comprimento de onda foi reduzido à quarta parte.",
+   "não se modifica, porque é uma característica independente do comprimento da corda que vibra."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-73",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 73"
+  },
+  "enunciado": "Um enfeite para berço é constituído de um aro metálico com um ursinho pendurado, que gira com velocidade angular constante. O aro permanece orientado na horizontal, de forma que o movimento do ursinho seja projetado na parede pela sua sombra. Enquanto o ursinho gira, sua sombra descreve um movimento",
+  "alternativas": [
+   "circular uniforme.",
+   "retilíneo uniforme.",
+   "retilíneo harmônico simples.",
+   "circular uniformemente variado.",
+   "retilíneo uniformemente variado."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-78",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 78"
+  },
+  "enunciado": "Visando reduzir a poluição sonora de uma cidade, a Câmara de Vereadores aprovou uma lei que impõe o limite máximo de 40 dB (decibéis) para o nível sonoro permitido após as 22 horas. Ao aprovar a referida lei, os vereadores estão limitando qual característica da onda?",
+  "alternativas": [
+   "A altura da onda sonora.",
+   "A amplitude da onda sonora.",
+   "A frequência da onda sonora.",
+   "A velocidade da onda sonora.",
+   "O timbre da onda sonora."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-81",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 81"
+  },
+  "enunciado": "Em uma experiência didática, cinco esferas de metal foram presas em um barbante, de forma que a distância entre esferas consecutivas aumentava em progressão aritmética. O barbante foi suspenso e a primeira esfera ficou em contato com o chão. Olhando o barbante de baixo para cima, as distâncias entre as esferas ficavam cada vez maiores. Quando o barbante foi solto, o som das colisões entre duas esferas consecutivas e o solo foi gerado em intervalos de tempo exatamente iguais. A razão de os intervalos de tempo citados serem iguais é que a",
+  "alternativas": [
+   "velocidade de cada esfera é constante.",
+   "força resultante em cada esfera é constante.",
+   "aceleração de cada esfera aumenta com o tempo.",
+   "tensão aplicada em cada esfera aumenta com o tempo.",
+   "energia mecânica de cada esfera aumenta com o tempo."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-85",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 85"
+  },
+  "enunciado": "Antes das lombadas eletrônicas, eram pintadas faixas nas ruas para controle da velocidade dos automóveis. A velocidade era estimada com o uso de binóculos e cronômetros. O policial utilizava a relação entre a distância percorrida e o tempo gasto, para determinar a velocidade de um veículo. Cronometrava-se o tempo que um veículo levava para percorrer a distância entre duas faixas fixas, cuja distância era conhecida. A lombada eletrônica é um sistema muito preciso, porque a tecnologia elimina erros do operador. A distância entre os sensores é de 2 metros, e o tempo é medido por um circuito eletrônico. O tempo mínimo, em segundos, que o motorista deve gastar para passar pela lombada eletrônica, cujo limite é de 40 km/h, sem receber uma multa, é de",
+  "alternativas": [
+   "0,05.",
+   "11,1.",
+   "0,18.",
+   "22,2.",
+   "0,50."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-88",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 88"
+  },
+  "enunciado": "Em 1861 foi anunciada a existência de um fóssil denominado Arqueopterix, que revolucionou o debate acerca da evolução dos animais. Tratava-se de um dinossauro que possuía penas em seu corpo. A partir dessa descoberta, a árvore filogenética dos animais acabou sofrendo transformações quanto ao ancestral direto das aves. Nessa nova árvore filogenética, de qual grupo as aves se originaram?",
+  "alternativas": [
+   "Peixes ósseos.",
+   "Répteis.",
+   "Mamíferos.",
+   "Peixes cartilaginosos.",
+   "Anfíbios."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-89",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 89"
+  },
+  "enunciado": "Quando a luz branca incide em uma superfície metálica, são removidos elétrons desse material. Esse efeito é utilizado no acendimento automático das luzes nos postes de iluminação, na abertura automática das portas, no fotômetro fotográfico e em sistemas de alarme. Esse efeito pode ser usado para fazer a transformação de energia",
+  "alternativas": [
+   "nuclear para cinética.",
+   "elétrica para radiante.",
+   "térmica para química.",
+   "radiante para cinética.",
+   "potencial para cinética."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2013-ppl-90",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2013 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2013,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 90"
+  },
+  "enunciado": "Algumas estimativas apontam que, nos últimos cem anos, a concentração de gás carbônico na atmosfera aumentou em cerca de 40%, devido principalmente à utilização de combustíveis fósseis pela espécie humana. Alguns estudos demonstram que essa utilização em larga escala promove o aumento do efeito estufa. Outros fatores de origem antrópica que aumentam o efeito estufa são",
+  "alternativas": [
+   "chuva ácida e destruição da camada de ozônio.",
+   "alagamento e inversão térmica.",
+   "erosão e extinção das espécies.",
+   "poluição das águas e do solo.",
+   "queimada e desmatamento."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2013, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno3_branco_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-46",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 46"
+  },
+  "enunciado": "Na natureza a matéria é constantemente transformada por meio dos ciclos biogeoquímicos. Além do ciclo da água, existem os ciclos do carbono, do enxofre, do fósforo, do nitrogênio e do oxigênio. O elemento que está presente em todos os ciclos nomeados é o",
+  "alternativas": [
+   "fósforo.",
+   "enxofre.",
+   "carbono.",
+   "oxigênio.",
+   "nitrogênio."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-48",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 48"
+  },
+  "enunciado": "Durante uma aula experimental de física, os estudantes construíram um sistema ressonante com pêndulos simples. As características de cada pêndulo são apresentadas no quadro. Inicialmente, os estudantes colocaram apenas o pêndulo A para oscilar.\n\nDescrição da imagem: Quadro apresenta três colunas: na primeira coluna, estão representados os pêndulos a serem estudados. Na segunda coluna, suas respectivas massas. E na terceira coluna, os comprimentos do barbante.\n\nO pêndulo A tem massa M e comprimento L. O pêndulo 1 tem massa M e comprimento L. O pêndulo 2 tem massa M sobre 2 e comprimento 2 L. O pêndulo 3 tem massa 2 M e comprimento L sobre 2. O pêndulo 4 tem massa M sobre 2 e comprimento L sobre 2. O pêndulo 5 tem massa de 2 M e comprimento L.\n\nQuais pêndulos, além desse, passaram também a oscilar?",
+  "alternativas": [
+   "1, 2, 3, 4 e 5.",
+   "1, 2 e 3.",
+   "1 e 4.",
+   "1 e 5.",
+   "3 e 4."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-54",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 54"
+  },
+  "enunciado": "A reprodução vegetativa de plantas por meio de estacas é um processo natural. O homem, observando esse processo, desenvolveu uma técnica para propagar plantas em escala comercial. A base genética dessa técnica é semelhante àquela presente no(a)",
+  "alternativas": [
+   "transgenia.",
+   "clonagem.",
+   "hibridização.",
+   "controle biológico.",
+   "melhoramento genético."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-55",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 55"
+  },
+  "enunciado": "O acúmulo de plásticos na natureza pode levar a impactos ambientais negativos, tanto em ambientes terrestres quanto aquáticos. Uma das formas de minimizar esse problema é a reciclagem, para a qual é necessária a separação dos diferentes tipos de plásticos. Em um processo de separação foi proposto o seguinte procedimento:\nI. Coloque a mistura de plásticos picados em um tanque e acrescente água até a metade da sua capacidade.\nII. Mantenha essa mistura em repouso por cerca de 10 minutos.\nIII. Retire os pedaços que flutuaram e transfira-os para outro tanque com uma solução de álcool.\nIV. Coloque os pedaços sedimentados em outro tanque com solução de sal e agite bem. Qual propriedade da matéria possibilita a utilização do procedimento descrito?",
+  "alternativas": [
+   "Massa.",
+   "Volume.",
+   "Densidade.",
+   "Porosidade.",
+   "Maleabilidade."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-62",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 62"
+  },
+  "enunciado": "Um gel vaginal poderá ser um recurso para as mulheres na prevenção contra a aids. Esse produto tem como princípio ativo um composto que inibe a transcriptase reversa viral. Essa ação inibidora é importante, pois a referida enzima",
+  "alternativas": [
+   "corta a dupla hélice do DNA, produzindo um molde para o RNA viral.",
+   "produz moléculas de DNA viral que vão infectar células sadias.",
+   "polimeriza molécula de DNA, tendo como molde o RNA viral.",
+   "promove a entrada do vírus da aids nos linfócitos T.",
+   "sintetiza os nucleotídeos que compõem o DNA viral."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-66",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 66"
+  },
+  "enunciado": "Uma enzima foi retirada de um dos órgãos do sistema digestório de um cachorro e, após ser purificada, foi diluída em solução fisiológica e distribuída em três tubos de ensaio com os seguintes conteúdos:\n• Tubo 1: carne\n• Tubo 2: macarrão\n• Tubo 3: banha Em todos os tubos foi adicionado ácido clorídrico (HCl), e o pH da solução baixou para um valor próximo a 2. Além disso, os tubos foram mantidos por duas horas a uma temperatura de 37 graus Celsius. A digestão do alimento ocorreu somente no tubo 1. De qual órgão do cachorro a enzima foi retirada?",
+  "alternativas": [
+   "Fígado.",
+   "Pâncreas.",
+   "Estômago.",
+   "Vesícula biliar.",
+   "Intestino delgado."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-67",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 67"
+  },
+  "enunciado": "Observações astronômicas indicam que no centro de nossa galáxia, a Via Láctea, provavelmente exista um buraco negro cuja massa é igual a milhares de vezes a massa do Sol. Uma técnica simples para estimar a massa desse buraco negro consiste em observar algum objeto que orbite ao seu redor e medir o período de uma rotação completa, T, bem como o raio médio, R, da órbita do objeto, que supostamente se desloca, com boa aproximação, em movimento circular uniforme. Nessa situação, considere que a força resultante, devido ao movimento circular, é igual, em magnitude, à força gravitacional que o buraco negro exerce sobre o objeto. A partir do conhecimento do período de rotação, da distância média e da constante gravitacional, G, a massa do buraco negro é",
+  "alternativas": [
+   "Fração, cujo numerador é: 4 vezes, abre parêntese, Pi elevado ao quadrado, fecha parêntese, vezes, abre parêntese R elevado ao quadrado, fecha parêntese. O denominador é: G vezes, abre parêntese, T elevado ao quadrado, fecha parêntese.",
+   "Fração, cujo numerador é: Pi elevado ao quadrado vezes, abre parêntese, R elevado ao cubo, fecha parêntese. O denominador é: 2 vezes G vezes, abre parêntese, T elevado ao quadrado, fecha parêntese.",
+   "Fração, cujo numerador é: 2 vezes, abre parêntese, Pi elevado ao quadrado, fecha parêntese, vezes, abre parêntese, R elevado ao cubo, fecha parêntese. O denominador é: G vezes, abre parêntese, T elevado ao quadrado, fecha parêntese.",
+   "Fração, cujo numerador é: 4 vezes, abre parêntese, Pi elevado ao quadrado, fecha parêntese, vezes, abre parêntese R elevado ao cubo, fecha parêntese. O denominador é: G vezes, abre parêntese, T elevado ao quadrado, fecha parêntese.",
+   "Fração, cujo numerador é: Pi elevado ao quadrado vezes, abre parêntese, R elevado à quinta potência, fecha parêntese. O denominador é: G vezes, abre parêntese, T elevado ao quadrado, fecha parêntese."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-71",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 71"
+  },
+  "enunciado": "A fenilcetonúria é uma doença hereditária autossômica recessiva, associada à mutação do gene PAH, que limita a metabolização do aminoácido fenilalanina. Por isso, é obrigatório, por lei, que as embalagens de alimentos, como refrigerantes dietéticos, informem a presença de fenilalanina em sua composição. Uma mulher portadora de mutação para o gene PAH tem três filhos normais, com um homem normal, cujo pai sofria de fenilcetonúria, devido à mesma mutação no gene PAH encontrada em um dos alelos da mulher. Qual a probabilidade de a quarta criança gerada por esses pais apresentar fenilcetonúria?",
+  "alternativas": [
+   "0 por cento",
+   "12,5 por cento",
+   "25 por cento",
+   "50 por cento",
+   "75 por cento"
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-73",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 73"
+  },
+  "enunciado": "Cinco indústrias de ramos diferentes foram instaladas ao longo do curso de um rio. O descarte dos efluentes dessas indústrias acarreta impacto na qualidade de suas águas. O pH foi determinado em diferentes pontos desse rio, a 25 graus Celsius, e os resultados são apresentados no quadro.\n\nDescrição da imagem: Quadro com duas colunas: na primeira coluna, são apresentados os pontos de coleta. Na segunda coluna, seus respectivos valores de pH. Ponto de coleta antes da primeira indústria: valor de pH 5,5. Ponto de coleta entre a primeira e a segunda indústria: valor de pH 5,5. Ponto de coleta entre a segunda e a terceira indústria: valor de pH 7,5. Ponto de coleta entre a terceira e a quarta indústria: valor de pH 7,0. Ponto de coleta entre a quarta e a quinta indústria: valor de pH 7,0. Ponto de coleta após a quinta indústria: valor de pH 6,5.\n\nA indústria que descarta um efluente com características básicas é a",
+  "alternativas": [
+   "primeira.",
+   "segunda.",
+   "terceira.",
+   "quarta.",
+   "quinta."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-78",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 78"
+  },
+  "enunciado": "A rede elétrica de uma residência tem tensão de 110 volts e o morador compra, por engano, uma lâmpada incandescente com potência nominal de 100 watts e tensão nominal de 220 volts. Se essa lâmpada for ligada na rede de 110 volts, o que acontecerá?",
+  "alternativas": [
+   "A lâmpada brilhará normalmente, mas como a tensão é a metade da prevista, a corrente elétrica será o dobro da normal, pois a potência elétrica é o produto de tensão pela corrente.",
+   "A lâmpada não acenderá, pois ela é feita para trabalhar apenas com tensão de 220 volts, e não funciona com tensão abaixo desta.",
+   "A lâmpada irá acender dissipando uma potência de 50 watts, pois como a tensão é metade da esperada, a potência também será reduzida à metade.",
+   "A lâmpada irá brilhar fracamente, pois com a metade da tensão nominal, a corrente elétrica também será menor e a potência dissipada será menos da metade da nominal.",
+   "A lâmpada queimará, pois como a tensão é menor do que a esperada, a corrente será maior, ultrapassando a corrente para a qual o filamento foi projetado."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-80",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 80"
+  },
+  "enunciado": "Dentre outras características, uma determinada vegetação apresenta folhas durante três a quatro meses ao ano, com limbo reduzido, mecanismo rápido de abertura e fechamento dos estômatos e caule suculento. Essas são algumas características adaptativas das plantas ao bioma onde se encontram. Que fator ambiental é o responsável pela ocorrência dessas características adaptativas?",
+  "alternativas": [
+   "Escassez de nutrientes no solo.",
+   "Estratificação da vegetação.",
+   "Elevada insolação.",
+   "Baixo pH do solo.",
+   "Escassez de água."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-84",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 84"
+  },
+  "enunciado": "Sabe-se que nas proximidades dos polos do planeta Terra é comum a formação dos icebergs, que são grandes blocos de gelo, flutuando nas águas oceânicas. Estudos mostram que a parte de gelo que fica emersa durante a flutuação corresponde a aproximadamente 10 por cento do seu volume total. Um estudante resolveu simular essa situação introduzindo um bloquinho de gelo no interior de um recipiente contendo água, observando a variação de seu nível desde o instante de introdução até o completo derretimento do bloquinho.\n\nCom base nessa simulação, verifica-se que o nível da água no recipiente",
+  "alternativas": [
+   "subirá com a introdução do bloquinho de gelo e, após o derretimento total do gelo, esse nível subirá ainda mais.",
+   "subirá com a introdução do bloquinho de gelo e, após o derretimento total do gelo, esse nível descerá, voltando ao seu valor inicial.",
+   "subirá com a introdução do bloquinho de gelo e, após o derretimento total do gelo, esse nível permanecerá sem alteração.",
+   "não sofrerá alteração com a introdução do bloquinho de gelo, porém, após seu derretimento, o nível subirá devido a um aumento em torno de 10 por cento no volume de água.",
+   "subirá em torno de 90 por cento do seu valor inicial com a introdução do bloquinho de gelo e, após seu derretimento, o nível descerá apenas 10 por cento do valor inicial."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2015-ppl-88",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2015 (reaplicação)",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2015,
+   "orgao": "ENEM, reaplicação/PPL, 1º dia, questão 88"
+  },
+  "enunciado": "Em uma flauta, as notas musicais possuem frequências e comprimentos de onda (lambda) muito bem definidos. As figuras mostram esquematicamente um tubo de comprimento L, que representa de forma simplificada uma flauta, em que estão representados: em A o primeiro harmônico de uma nota musical (comprimento de onda lambda-A), em B seu segundo harmônico (comprimento de onda lambda-B) e em C o seu terceiro harmônico (comprimento de onda lambda-C), onde lambda-A é maior que lambda-B e lambda-B é maior que lambda-C.\n\nDescrição da imagem: Esquema que apresenta três tubos abertos em ambas as extremidades. Os tubos A, B e C apresentam o mesmo comprimento L. No tubo A, a onda estacionária criada apresenta apenas um nó. No tubo B, a onda estacionária criada apresenta dois nós. No tubo C, a onda estacionária criada apresenta três nós. Em função do comprimento do tubo, qual o comprimento de onda da oscilação que forma o próximo harmônico?",
+  "alternativas": [
+   "L sobre quatro",
+   "L sobre cinco",
+   "L sobre dois",
+   "L sobre 8",
+   "6L sobre 8"
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2015, reaplicação/PPL, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_reaplicacao_PPL_D1_CD11_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-47",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 47"
+  },
+  "enunciado": "A magnetohipertermia é um procedimento terapêutico que se baseia na elevação da temperatura das células de uma região específica do corpo que estejam afetadas por um tumor. Nesse tipo de tratamento, nanopartículas magnéticas são fagocitadas pelas células tumorais, e um campo magnético alternado externo é utilizado para promover a agitação das nanopartículas e consequente aquecimento da célula. A elevação de temperatura descrita ocorre porque",
+  "alternativas": [
+   "o campo magnético gerado pela oscilação das nanopartículas é absorvido pelo tumor.",
+   "o campo magnético alternado faz as nanopartículas girarem, transferindo calor por atrito.",
+   "as nanopartículas interagem magneticamente com as células do corpo, transferindo calor.",
+   "o campo magnético alternado fornece calor para as nanopartículas que o transfere às células do corpo.",
+   "as nanopartículas são aceleradas em um único sentido em razão da interação com o campo magnético, fazendo-as colidir com as células e transferir calor."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-49",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 49"
+  },
+  "enunciado": "Apesar da grande diversidade biológica, a hipótese de que a vida na Terra tenha tido uma única origem comum é aceita pela comunidade científica. Uma evidência que apoia essa hipótese é a observação de processos biológicos comuns a todos os seres vivos atualmente existentes. Um exemplo de tal processo é o(a)",
+  "alternativas": [
+   "desenvolvimento embrionário.",
+   "reprodução sexuada.",
+   "respiração aeróbica.",
+   "excreção urinária.",
+   "síntese proteica."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-55",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 55"
+  },
+  "enunciado": "Num experimento, um professor deixa duas bandejas de mesma massa, uma de plástico e outra de alumínio, sobre a mesa do laboratório. Após algumas horas, ele pede aos alunos que avaliem a temperatura das duas bandejas, usando para isso o tato. Seus alunos afirmam, categoricamente, que a bandeja de alumínio encontra-se numa temperatura mais baixa. Intrigado, ele propõe uma segunda atividade, em que coloca um cubo de gelo sobre cada uma das bandejas, que estão em equilíbrio térmico com o ambiente, e os questiona em qual delas a taxa de derretimento do gelo será maior. O aluno que responder corretamente ao questionamento do professor dirá que o derretimento ocorrerá",
+  "alternativas": [
+   "mais rapidamente na bandeja de alumínio, pois ela tem uma maior condutividade térmica que a de plástico.",
+   "mais rapidamente na bandeja de plástico, pois ela tem inicialmente uma temperatura mais alta que a de alumínio.",
+   "mais rapidamente na bandeja de plástico, pois ela tem uma maior capacidade térmica que a de alumínio.",
+   "mais rapidamente na bandeja de alumínio, pois ela tem um calor específico menor que a de plástico.",
+   "com a mesma rapidez nas duas bandejas, pois apresentarão a mesma variação de temperatura."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-58",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 58"
+  },
+  "enunciado": "O trilho de ar é um dispositivo utilizado em laboratórios de física para analisar movimentos em que corpos de prova (carrinhos) podem se mover com atrito desprezível. A figura ilustra um trilho horizontal com dois carrinhos (1 e 2) em que se realiza um experimento para obter a massa do carrinho 2. No instante em que o carrinho 1, de massa 150 gramas, passa a se mover com velocidade escalar constante, o carrinho 2 está em repouso. No momento em que o carrinho 1 se choca com o carrinho 2, ambos passam a se movimentar juntos com velocidade escalar constante. Os sensores eletrônicos distribuídos ao longo do trilho determinam as posições e registram os instantes associados à passagem de cada carrinho, gerando os dados do quadro.\n\nDescrição da figura:\n\nÉ apresentado um trilho de ar sobre o qual estão posicionados, em diferentes posições, quatro sensores: 1, 2, 3 e 4, a partir da extremidade esquerda do trilho. O carrinho 1 está à esquerda do sensor 1 e o carrinho 2 está entre os sensores 2 e 3.\n\nDescrição do quadro: O quadro apresenta duas colunas para cada carrinho (carrinhos 1 e 2). Na primeira coluna, estão as posições (em centímetros), e na segunda coluna, os respectivos instantes (em segundos). Para o carrinho 1, temos:\n\n• Posição 15 centímetros e instante 0 segundo.\n• Posição 30 centímetros e instante 1 segundo.\n• Posição 75 centímetros e instante 8 segundos.\n• Posição 90 centímetros e instante 11 segundos. Para o carrinho 2, temos:\n\n• Posição 45 centímetros e instante 0 segundo.\n• Posição 45 centímetros e instante 1 segundo.\n• Posição 75 centímetros e instante 8 segundos.\n• Posição 90 centímetros e instante 11 segundos.\n\nCom base nos dados experimentais, o valor da massa do carrinho 2 é igual a",
+  "alternativas": [
+   "50 gramas.",
+   "250 gramas.",
+   "300 gramas.",
+   "450 gramas.",
+   "600 gramas."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-65",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 65"
+  },
+  "enunciado": "Uma pessoa é responsável pela manutenção de uma sauna úmida. Todos os dias cumpre o mesmo ritual: colhe folhas de capim-cidreira e algumas folhas de eucalipto. Em seguida, coloca as folhas na saída do vapor da sauna, aromatizando-a, conforme representado na figura.\n\nDescrição da figura:\n\nÉ apresentado o sistema de aquecimento de uma sauna úmida. Nela, o gerador (externo à sauna) lança o vapor, por meio de uma tubulação que atravessa a parede da sauna, e o libera próximo ao chão, onde se encontram folhas de capim-cidreira e eucalipto.\n\nQual processo de separação é responsável pela aromatização promovida?",
+  "alternativas": [
+   "Filtração simples.",
+   "Destilação simples.",
+   "Extração por arraste.",
+   "Sublimação fracionada.",
+   "Decantação sólido-líquido."
+  ],
+  "resposta": 2,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-69",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 69"
+  },
+  "enunciado": "O carvão ativado é um material que possui elevado teor de carbono, sendo muito utilizado para a remoção de compostos orgânicos voláteis do meio, como o benzeno. Para a remoção desses compostos, utiliza-se a adsorção. Esse fenômeno ocorre por meio de interações do tipo intermoleculares entre a superfície do carvão (adsorvente) e o benzeno (adsorvato, substância adsorvida). No caso apresentado, entre o adsorvente e a substância adsorvida ocorre a formação de:",
+  "alternativas": [
+   "Ligações dissulfeto.",
+   "Ligações covalentes.",
+   "Ligações de hidrogênio.",
+   "Interações dipolo induzido – dipolo induzido.",
+   "Interações dipolo permanente – dipolo permanente."
+  ],
+  "resposta": 3,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-73",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 73"
+  },
+  "enunciado": "A formação de coágulos sanguíneos em veias e artérias é um dos fatores responsáveis pela ocorrência de doenças cardiovasculares, como varizes, infarto e acidentes vasculares cerebrais. A prevenção e o tratamento dessas doenças podem ser feitos com drogas anticoagulantes. A indústria farmacêutica estimula a pesquisa de toxinas animais com essa propriedade. Considerando as adaptações relacionadas aos hábitos alimentares, os animais adequados ao propósito dessas pesquisas são os(as)",
+  "alternativas": [
+   "moluscos fitófagos.",
+   "moscas saprófagas.",
+   "pássaros carnívoros.",
+   "morcegos frugívoros.",
+   "mosquitos hematófagos."
+  ],
+  "resposta": 4,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-74",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 74"
+  },
+  "enunciado": "A invenção e o acoplamento entre engrenagens revolucionaram a ciência na época e propiciaram a invenção de várias tecnologias, como os relógios. Ao construir um pequeno cronômetro, um relojoeiro usa o sistema de engrenagens descrito.\n\nDescrição da figura:\n\nÉ apresentado um motor que gira com frequência de 18 rotações por minuto, conectado a um eixo que possui uma engrenagem A com 24 dentes. A engrenagem A está acoplada perifericamente por contato a uma engrenagem B de 72 dentes. Presa ao mesmo eixo da engrenagem B encontra-se a engrenagem C, de 36 dentes, que está acoplada perifericamente por contato a uma engrenagem D, de 108 dentes, no eixo em que está preso o ponteiro indicador que gira com a mesma frequência deste último eixo.\n\nA frequência de giro do ponteiro, em rotações por minuto, é",
+  "alternativas": [
+   "1.",
+   "2.",
+   "4.",
+   "81.",
+   "162."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-76",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 76"
+  },
+  "enunciado": "Ao percorrer o trajeto de uma cadeia alimentar, o carbono, elemento essencial e majoritário da matéria orgânica que compõe os indivíduos, ora se encontra em sua forma inorgânica, ora se encontra em sua forma orgânica. Em uma cadeia alimentar composta por fitoplâncton, zooplâncton, moluscos, crustáceos e peixes ocorre a transição desse elemento da forma inorgânica para a orgânica. Em qual grupo de organismos ocorre essa transição?",
+  "alternativas": [
+   "Fitoplâncton.",
+   "Zooplâncton.",
+   "Moluscos.",
+   "Crustáceos.",
+   "Peixes."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-78",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 78"
+  },
+  "enunciado": "As proteínas de uma célula eucariótica possuem peptídeos sinais, que são sequências de aminoácidos responsáveis pelo seu endereçamento para as diferentes organelas, de acordo com suas funções. Um pesquisador desenvolveu uma nanopartícula capaz de carregar proteínas para dentro de tipos celulares específicos. Agora ele quer saber se uma nanopartícula carregada com uma proteína bloqueadora do ciclo de Krebs in vitro é capaz de exercer sua atividade em uma célula cancerosa, podendo cortar o aporte energético e destruir essas células.\n\nAo escolher essa proteína bloqueadora para carregar as nanopartículas, o pesquisador deve levar em conta um peptídeo sinal de endereçamento para qual organela?",
+  "alternativas": [
+   "Núcleo.",
+   "Mitocôndria.",
+   "Peroxissomo.",
+   "Complexo golgiense.",
+   "Retículo endoplasmático."
+  ],
+  "resposta": 1,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
+   },
+   {
+    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
+   }
+  ]
+ },
+ {
+  "id": "enem-2016-79",
+  "materia": "enem-natureza",
+  "assunto": "ENEM 2016",
+  "tipo": "multipla",
+  "estilo": "ENEM",
+  "dificuldade": 2,
+  "objetivos": [
+   "enem",
+   "livre"
+  ],
+  "prova": {
+   "banca": "INEP",
+   "ano": 2016,
+   "orgao": "ENEM, aplicação regular, 1º dia, questão 79"
+  },
+  "enunciado": "O morcego emite pulsos de curta duração de ondas ultrassônicas, os quais voltam na forma de ecos após atingirem objetos no ambiente, trazendo informações a respeito das suas dimensões, suas localizações e dos seus possíveis movimentos. Isso se dá em razão da sensibilidade do morcego em detectar o tempo gasto para os ecos voltarem, bem como das pequenas variações nas frequências e nas intensidades dos pulsos ultrassônicos. Essas características lhe permitem caçar pequenas presas mesmo quando estão em movimento em relação a si. Considere uma situação unidimensional em que uma mariposa se afasta, em movimento retilíneo e uniforme, de um morcego em repouso.\n\nA distância e velocidade da mariposa, na situação descrita, seriam detectadas pelo sistema de um morcego por quais alterações nas características dos pulsos ultrassônicos?",
+  "alternativas": [
+   "Intensidade diminuída, o tempo de retorno aumentado e a frequência percebida diminuída.",
+   "Intensidade aumentada, o tempo de retorno diminuído e a frequência percebida diminuída.",
+   "Intensidade diminuída, o tempo de retorno diminuído e a frequência percebida aumentada.",
+   "Intensidade diminuída, o tempo de retorno aumentado e a frequência percebida aumentada.",
+   "Intensidade aumentada, o tempo de retorno aumentado e a frequência percebida aumentada."
+  ],
+  "resposta": 0,
+  "fontes": [
+   {
+    "titulo": "INEP/MEC: ENEM 2016, aplicação regular, 1º dia (caderno oficial)",
+    "url": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD3_ledor.pdf"
    },
    {
     "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",

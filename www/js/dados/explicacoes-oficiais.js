@@ -9673,5 +9673,725 @@ Banco.registrar({ explicacoes: {
    "Correta. As 600 vagas atuais mais 6 x 250 = 1 500 vagas novas totalizam 2 100 vagas daqui a 6 meses."
   ],
   "dica": "Total = valor inicial + acréscimo por mês x número de meses; não esqueça as 600 vagas que já existem."
+ },
+ "enem-2011-50": {
+  "resumo": "Letra D. O biodigestor transforma resíduos orgânicos que o próprio produtor já tem (esterco, cascas de mandioca, restos de cultura) em biogás, um combustível barato que substitui a lenha sem tirar nada da mata.",
+  "detalhada": "A questão pede uma solução com três exigências ao mesmo tempo: **viável em curto prazo**, **sem dano à Mata Atlântica** e **sem encarecer a farinha**. A resposta precisa passar nos três filtros.\n\n**Biodigestor** é um tanque fechado onde bactérias anaeróbias decompõem matéria orgânica (esterco, restos de mandioca, folhas). Dessa decomposição sai o **biogás**, rico em metano (CH4), que pode ser queimado no forno de torrar a farinha. Sobra ainda o biofertilizante, que volta para a lavoura.\n\nPor que ele passa nos três filtros:\n- usa resíduos que já existem na região e hoje seriam descartados, então o custo do combustível é praticamente zero;\n- a construção é simples e rápida, possível em pequenas propriedades;\n- não corta nenhuma árvore.\n\nAs outras saídas falham em pelo menos um filtro: fornos elétricos grandes são caros (energia e instalação), plantar árvores para lenha demora anos, e explorar a mata ou buscar carvão longe da fiscalização continua destruindo vegetação nativa.\n\nPara questões parecidas: quando o ENEM pede alternativa energética \"local, barata e sustentável\" no meio rural, pense em **biodigestor/biogás** aproveitando resíduos orgânicos.",
+  "alternativas": [
+   "Errada. Fornos elétricos grandes exigem investimento alto e consomem muita energia elétrica, o que encareceria a farinha.",
+   "Errada. Plantar árvores para lenha é sustentável, mas não é de curto prazo: a madeira leva anos para ficar pronta para corte.",
+   "Errada. Permitir a exploração da Mata Atlântica, mesmo só por pequenos produtores, continua causando desmatamento.",
+   "Correta. O biodigestor produz biogás a partir de resíduos orgânicos locais: é barato, rápido de implantar e não usa madeira da mata.",
+   "Errada. O carvão vegetal vem da queima de madeira; buscá-lo onde há menos fiscalização só transfere o desmatamento para outro lugar."
+  ],
+  "dica": "Quando o enunciado exige \"curto prazo\" e \"sem encarecer\", descarte soluções que demoram anos (reflorestar) ou que exigem equipamento caro."
+ },
+ "enem-2011-72": {
+  "resumo": "Letra E. A vacina contém o agente (ou partes dele) atenuado ou inativado e estimula o próprio organismo a produzir anticorpos e células de memória: é imunização ativa.",
+  "detalhada": "O conceito cobrado é a diferença entre **imunização ativa** e **imunização passiva**.\n\n- **Vacina (imunização ativa):** contém antígenos, ou seja, o microrganismo morto, atenuado ou só pedaços dele (proteínas, RNA que codifica proteínas). O sistema imune reconhece esses antígenos, os linfócitos B produzem **anticorpos** e formam-se **células de memória**. Se a pessoa encontrar o vírus de verdade depois, a resposta é rápida e forte. A proteção demora alguns dias ou semanas para surgir, mas dura muito.\n- **Soro (imunização passiva):** já traz os **anticorpos prontos**, produzidos por outro organismo (ex.: soro antiofídico, feito em cavalos). A proteção é imediata, mas curta, porque não forma memória.\n\nNo caso da vacina contra o H1N1, o objetivo é preparar o organismo antes do contato com o vírus, então ela age **estimulando a produção de anticorpos**.\n\nPara acertar questões parecidas: \"possui anticorpos\" = soro; \"estimula a produção de anticorpos\" = vacina.",
+  "alternativas": [
+   "Errada. Quem possui anticorpos prontos é o soro (imunização passiva), não a vacina.",
+   "Errada. A vacina não traz proteínas que eliminam o agente; ela traz antígenos que treinam o sistema imune a eliminá-lo.",
+   "Errada. Glóbulos vermelhos transportam oxigênio e não participam da defesa imunológica; a defesa é feita pelos glóbulos brancos.",
+   "Errada. A vacina não contém linfócitos; os linfócitos B e T são do próprio organismo e são ativados pelos antígenos da vacina.",
+   "Correta. A vacina apresenta antígenos do agente e estimula o organismo a produzir anticorpos e células de memória contra ele."
+  ],
+  "dica": "Vacina previne e ensina o corpo a produzir anticorpos; soro trata e já traz o anticorpo pronto."
+ },
+ "enem-2011-90": {
+  "resumo": "Letra C. O Aedes aegypti põe ovos em água parada, onde as larvas se desenvolvem; eliminar recipientes que acumulam água interrompe o ciclo de reprodução.",
+  "detalhada": "O ciclo de vida do **Aedes aegypti** tem quatro fases: ovo, larva, pupa e adulto. A fêmea deposita os ovos nas paredes de recipientes com **água parada** (pneus, vasos de plantas, garrafas, calhas, caixas-d'água destampadas). Larva e pupa são **aquáticas**: sem água acumulada, o mosquito não completa o desenvolvimento.\n\nPor isso, a medida preventiva que reduz a **reprodução** do mosquito é eliminar os criadouros: esvaziar, tampar ou descartar recipientes que acumulam água.\n\nAtenção a dois detalhes que derrubam as outras alternativas:\n- o Aedes se reproduz em água **parada e relativamente limpa**, não em água contaminada ou em alimentos;\n- telas protegem contra a picada, mas não impedem a reprodução.\n\nNão confunda com o **barbeiro** (doença de Chagas), que vive nas frestas das casas de barro; essa associação aparece como distrator.",
+  "alternativas": [
+   "Errada. Telas reduzem a entrada do mosquito e as picadas, mas ele não precisa de ambiente fechado para se reproduzir; precisa de água parada.",
+   "Errada. Quem se esconde nas frestas de casas de barro é o barbeiro, transmissor da doença de Chagas, não o Aedes.",
+   "Correta. As larvas do Aedes são aquáticas e se desenvolvem em água parada; remover recipientes que acumulam água elimina os criadouros.",
+   "Errada. As larvas do Aedes não se desenvolvem em alimentos; isso confunde o mosquito com moscas comuns.",
+   "Errada. O Aedes prefere água parada e limpa; filtros de água não eliminam os criadouros."
+  ],
+  "dica": "Dengue (e zika, chikungunya): combater água parada; Chagas: casa de barro e barbeiro."
+ },
+ "enem-2012-46": {
+  "resumo": "Letra E. No carrinho, a energia potencial elástica da mola comprimida vira energia cinética; no estilingue, a energia elástica do elástico esticado vira energia cinética da pedra.",
+  "detalhada": "O primeiro passo é identificar a conversão de energia do carrinho:\n\n- ao puxar o carrinho para trás, a criança comprime a mola, armazenando **energia potencial elástica**;\n- ao soltar, a mola volta ao formato original e essa energia se transforma em **energia cinética** (movimento).\n\nConversão: **elástica → cinética**.\n\nAgora é só procurar o mesmo processo nas alternativas. No **estilingue**, o elástico esticado acumula energia potencial elástica que, ao ser liberada, vira energia cinética da pedra. É exatamente a mesma conversão.\n\nNos outros casos:\n- dínamo: cinética → elétrica;\n- freio: cinética → térmica (atrito);\n- motor a combustão: química → térmica → cinética;\n- usina hidrelétrica: potencial gravitacional → cinética → elétrica.\n\nPara questões parecidas: escreva a cadeia \"energia de entrada → energia de saída\" do caso dado e compare com a de cada alternativa.",
+  "alternativas": [
+   "Errada. O dínamo converte energia cinética (rotação) em energia elétrica.",
+   "Errada. O freio converte energia cinética em energia térmica por atrito; é o caminho de dissipação, não o de liberação de energia elástica.",
+   "Errada. O motor a combustão converte energia química do combustível em térmica e depois em cinética.",
+   "Errada. A hidrelétrica converte energia potencial gravitacional da água em cinética e depois em elétrica.",
+   "Correta. O estilingue armazena energia potencial elástica no elástico esticado e a converte em energia cinética do projétil, como a mola do carrinho."
+  ],
+  "dica": "Mola, elástico e arco de flecha armazenam energia potencial elástica; procure sempre a mesma cadeia de conversão."
+ },
+ "enem-2012-47": {
+  "resumo": "Letra E. Na biorremediação, o microrganismo usa o poluente no seu metabolismo e o degrada, transformando-o em substâncias menos tóxicas ou atóxicas (como CO2 e água).",
+  "detalhada": "**Biorremediação** é o uso de seres vivos, principalmente bactérias e fungos, para limpar ambientes contaminados. O princípio é simples: o microrganismo usa o contaminante como fonte de carbono ou de energia e, ao **metabolizá-lo**, quebra a molécula tóxica em compostos mais simples e menos perigosos (no caso ideal, CO2, água e sais).\n\nO que torna a técnica promissora é justamente essa **transformação química**: o pesticida deixa de existir, em vez de só mudar de lugar. Por isso ela é melhor que técnicas \"paliativas\", que apenas transferem ou acumulam o poluente.\n\nRepare como as alternativas erradas descrevem processos que não resolvem o problema:\n- transferir do solo para a água só muda o local da contaminação;\n- absorver sem alterar apenas acumula o poluente no microrganismo, que pode entrar na cadeia alimentar;\n- alta taxa de mutação é imprevisível e não garante degradação.\n\nPara questões de biorremediação: a palavra-chave é **degradar/metabolizar** o contaminante.",
+  "alternativas": [
+   "Errada. Transferir o contaminante do solo para a água apenas muda o local da poluição, podendo até espalhá-la.",
+   "Errada. Absorver sem alterar quimicamente só acumula o pesticida no microrganismo, que continua tóxico e pode passar adiante na cadeia alimentar.",
+   "Errada. Alta taxa de mutação não é requisito da técnica e torna o comportamento do microrganismo imprevisível.",
+   "Errada. Biorremediação atua no ambiente, não no corpo humano; estimular o sistema imune não elimina o pesticida do solo ou da água.",
+   "Correta. O microrganismo metaboliza o contaminante e libera subprodutos menos tóxicos ou atóxicos, eliminando o problema na origem."
+  ],
+  "dica": "Biorremediação de verdade transforma o poluente; se a alternativa só move ou acumula a substância, está errada."
+ },
+ "enem-2012-51": {
+  "resumo": "Letra A. Pressão é força dividida pela área (p = F / A); pneus mais largos aumentam a área de contato e, com o mesmo peso, reduzem a pressão sobre o solo.",
+  "detalhada": "O conceito cobrado é **pressão**:\n\np = F / A\n\nonde F é a força perpendicular (aqui, o peso do trator) e A é a área de contato com o solo.\n\nO peso do trator não muda ao trocar os pneus. Então, para reduzir a pressão, é preciso **aumentar a área de contato**, e isso se consegue com pneus **mais largos**.\n\nExemplo numérico: um trator de 40 000 N apoiado em 0,8 m² exerce p = 40 000 / 0,8 = 50 000 Pa. Se a área dobrar para 1,6 m², p = 40 000 / 1,6 = 25 000 Pa, metade da pressão. Menos pressão significa menos compactação.\n\nO mesmo raciocínio explica por que esquis não afundam na neve, por que tanques de guerra usam esteiras e por que uma faca afiada corta melhor (área pequena, pressão grande).\n\nCuidado com a coerência interna das alternativas: \"estreito\" e \"reduzindo a pressão\" não combinam, e \"largo\" e \"aumentando a pressão\" também não.",
+  "alternativas": [
+   "Correta. Pneus largos aumentam a área de contato; com o mesmo peso, a pressão p = F / A diminui e o solo compacta menos.",
+   "Errada. Pneus estreitos diminuem a área de contato e, portanto, aumentam a pressão; a alternativa é contraditória.",
+   "Errada. Pneus largos de fato são a escolha, mas eles reduzem a pressão, não a aumentam.",
+   "Errada. Pneus estreitos aumentam a pressão, o que agravaria a compactação, o oposto do desejado.",
+   "Errada. A altura do pneu não altera a área de contato com o solo; o que importa é a largura (e o comprimento da faixa de apoio)."
+  ],
+  "dica": "Mesma força, mais área, menos pressão: p = F / A."
+ },
+ "enem-2012-56": {
+  "resumo": "Letra A. As leveduras fazem fermentação alcoólica, que libera gás carbônico (CO2); as bolhas de gás ficam presas na massa e a fazem crescer.",
+  "detalhada": "As leveduras (como Saccharomyces cerevisiae) realizam **fermentação alcoólica** quando há pouco oxigênio dentro da massa:\n\nC6H12O6 → 2 C2H5OH + 2 CO2 + energia (2 ATP)\n\nGlicose vira etanol e **gás carbônico**. A rede de glúten da massa retém as bolhas de CO2, e é isso que faz o pão crescer e ficar aerado. O etanol evapora no forno.\n\nCompare os tipos de fermentação, que caem muito no ENEM:\n- **alcoólica** (leveduras): produz etanol + CO2. Usada em pão, cerveja, vinho;\n- **lática** (lactobacilos e músculo em esforço intenso): produz ácido lático, **sem gás**. Usada em iogurte e coalhada.\n\nO ATP e o calor também são produzidos, mas não fazem a massa crescer: o que \"estufa\" a massa é um gás.",
+  "alternativas": [
+   "Correta. A fermentação alcoólica das leveduras libera CO2, que fica retido na massa e a faz crescer.",
+   "Errada. Ácido lático é produto da fermentação lática (bactérias do iogurte, músculo), que não libera gás e não faz a massa crescer.",
+   "Errada. A fermentação não forma água como produto relevante; água é produto da respiração aeróbia.",
+   "Errada. O ATP é produzido e usado pela própria levedura como energia, mas não aumenta o volume da massa.",
+   "Errada. Algum calor é liberado, mas o crescimento da massa se deve ao gás formado, não ao aquecimento."
+  ],
+  "dica": "Massa que cresce precisa de gás: fermentação alcoólica = etanol + CO2; fermentação lática não produz gás."
+ },
+ "enem-2012-57": {
+  "resumo": "Letra E. A luz que sai do peixe sofre refração ao passar da água para o ar, se afastando da normal; o olho prolonga o raio em linha reta e vê uma imagem do peixe acima da posição real.",
+  "detalhada": "O fenômeno é a **refração da luz**: a mudança de direção (e de velocidade) da luz ao passar de um meio para outro.\n\nPasso a passo:\n- o peixe é iluminado e **reflete** luz em várias direções;\n- dentro da água a luz anda em linha reta; ao atravessar a superfície, passa da água (n ≈ 1,33) para o ar (n ≈ 1,00);\n- indo de um meio mais refringente para um menos refringente, o raio **se afasta da normal**;\n- o cérebro interpreta que a luz veio em linha reta e \"prolonga\" o raio refratado para trás, formando uma **imagem virtual mais rasa** que o peixe real.\n\nResultado: o índio enxerga o peixe mais alto do que ele está, e por isso precisa mirar **abaixo** da imagem. É o mesmo efeito que faz a piscina parecer mais rasa e um lápis parecer \"quebrado\" dentro de um copo d'água.\n\nUm erro clássico, explorado nas alternativas B e D, é achar que os olhos emitem luz. A visão funciona porque a luz **chega** aos olhos, vinda do objeto.",
+  "alternativas": [
+   "Errada. Dentro da água, num meio homogêneo, a luz anda em linha reta; o desvio acontece na superfície de separação entre água e ar.",
+   "Errada. Os olhos não emitem luz; eles recebem a luz que vem do objeto.",
+   "Errada. Parte da luz é refletida na superfície, mas a que chega ao índio é a refratada; a reflexão não explica a posição aparente do peixe.",
+   "Errada. Novamente supõe que os olhos emitem luz, ideia sem base na óptica atual.",
+   "Correta. A luz refletida pelo peixe refrata ao passar da água para o ar, se desvia, e a imagem vista fica acima da posição real."
+  ],
+  "dica": "Objeto dentro da água parece mais raso que realmente está; a luz vai do objeto para o olho, nunca o contrário."
+ },
+ "enem-2012-58": {
+  "resumo": "Letra E. O DNA da planta é o mesmo o ano todo; o que muda é quais genes estão sendo transcritos (expressão gênica diferencial), conforme as condições do ambiente e a fase da vida.",
+  "detalhada": "O conceito central é **regulação da expressão gênica**.\n\nTodas as células de um organismo têm praticamente o mesmo DNA, e esse DNA **não muda** ao longo do ano. O que muda é **quais genes são ativados (transcritos em RNA e traduzidos em proteínas) e em que quantidade**. Sinais do ambiente (luz UV, temperatura, ataque de herbívoros) e sinais internos (hormônios, idade) ligam ou desligam genes.\n\nAssim, se a planta precisa de mais flavonoides para se proteger da radiação UV no verão, os genes das enzimas que produzem flavonoides passam a ser mais transcritos. No inverno, a transcrição diminui. A **variação qualitativa** (quais substâncias) e **quantitativa** (quanto de cada) vem dessa regulação.\n\nAs alternativas erradas sugerem que o organismo \"muda o DNA de propósito\" para se adaptar. Isso é um erro conceitual frequente:\n- mutações são aleatórias e não ocorrem \"para\" adaptar o indivíduo;\n- recombinação acontece na meiose (reprodução), não no dia a dia das células;\n- um indivíduo não cria genes novos conforme a necessidade.",
+  "alternativas": [
+   "Errada. Recombinação genética ocorre na formação de gametas e não é um mecanismo de ajuste do indivíduo às estações do ano.",
+   "Errada. O material genético de um indivíduo é essencialmente o mesmo ao longo da vida; o que varia é a expressão dos genes.",
+   "Errada. O organismo não cria genes novos conforme a necessidade; ele usa genes que já possui.",
+   "Errada. Alterar a sequência de bases é mutação, que é aleatória e não ocorre \"para\" criar substâncias específicas.",
+   "Correta. Os genes já existem no DNA e são transcritos em maior ou menor grau conforme as condições ambientais e fisiológicas."
+  ],
+  "dica": "Mesmo DNA, expressão diferente: quando a característica varia com o ambiente ou a idade, pense em regulação gênica, não em mutação."
+ },
+ "enem-2012-60": {
+  "resumo": "Letra B. A velocidade da onda depende só do meio (a água da piscina), então continua 1,0 m/s; como a frequência caiu à metade, o comprimento de onda aumenta (v = λ · f), ficando maior que 25 cm.",
+  "detalhada": "Dois conceitos resolvem a questão:\n\n1. **A velocidade de propagação de uma onda depende do meio**, não da fonte. A água da piscina é a mesma, então a velocidade continua **1,0 m/s**.\n2. **A frequência da onda é imposta pela fonte.** Cada gota gera uma crista. Antes caíam 2 gotas por segundo (f = 2 Hz); depois, 1 gota por segundo (f = 1 Hz).\n\nPela equação fundamental da ondulatória:\n\nv = λ · f → λ = v / f\n\nCom v constante, λ é inversamente proporcional a f. Se a frequência cai à metade, o comprimento de onda **dobra**: as cristas ficam mais afastadas, ou seja, **maior que 25 cm**.\n\nObservação: os números do enunciado não fecham exatamente (0,25 m × 2 Hz = 0,5 m/s, e não 1,0 m/s). Isso não muda a resposta, porque a questão é qualitativa: frequência menor com velocidade constante sempre dá comprimento de onda maior. Usando v = 1,0 m/s, o novo comprimento seria λ = 1,0 / 1 = 1,0 m; mantendo a proporção dos dados, seria 2 × 25 = 50 cm. Em qualquer leitura, maior que 25 cm.\n\nPara questões parecidas: mudou a fonte → muda a frequência; mudou o meio → muda a velocidade (e a frequência se mantém).",
+  "alternativas": [
+   "Errada. O comprimento de onda aumenta, mas a velocidade não muda, porque depende só do meio (a água).",
+   "Correta. O meio é o mesmo, então v = 1,0 m/s; com a frequência caindo de 2 Hz para 1 Hz, λ = v / f aumenta.",
+   "Errada. Inverte a relação: com frequência menor e mesma velocidade, as cristas ficam mais distantes, não mais próximas; e a velocidade não diminui.",
+   "Errada. Acerta a velocidade, mas erra o comprimento de onda: menos gotas por segundo afastam as cristas.",
+   "Errada. Se a frequência mudou e a velocidade não, o comprimento de onda obrigatoriamente muda (v = λ · f)."
+  ],
+  "dica": "Velocidade da onda é do meio; frequência é da fonte. Com v fixo, λ e f são inversamente proporcionais."
+ },
+ "enem-2012-65": {
+  "resumo": "Letra D. O para-dodecil-benzenossulfonato de sódio é um detergente: tem cauda apolar que se liga ao hidrocarboneto e cabeça polar que interage com a água, formando micelas que dispersam o óleo na água.",
+  "detalhada": "O composto citado é um **tensoativo (surfactante)**, o princípio ativo de muitos detergentes. Sua estrutura tem duas partes:\n\n- uma **cauda apolar** e longa (o grupo dodecil, C12H25, ligado ao anel benzênico), que tem afinidade com substâncias apolares como hidrocarbonetos (\"semelhante dissolve semelhante\");\n- uma **cabeça polar e iônica** (o grupo sulfonato, -SO3⁻ Na⁺), que interage com a água.\n\nEm contato com o hidrocarboneto e a água, as moléculas do tensoativo se organizam em **micelas**: as caudas apolares envolvem o hidrocarboneto e as cabeças polares ficam voltadas para fora, em contato com a água. Assim, o hidrocarboneto, que sozinho não se mistura com a água, fica **disperso (solubilizado) na fase aquosa** e pode ser removido mais facilmente.\n\nO processo é **físico**: o detergente não reage com o hidrocarboneto, não o queima, não o solidifica e não o vaporiza.\n\nPara questões parecidas: sabão e detergente = molécula **anfifílica** (parte polar + parte apolar) que forma micelas e permite \"misturar\" óleo e água.",
+  "alternativas": [
+   "Errada. O tensoativo não reage com o hidrocarboneto; ele só o envolve em micelas, um processo físico.",
+   "Errada. O detergente não sofre hidrólise que libere calor suficiente para vaporizar o hidrocarboneto.",
+   "Errada. Não há combustão: misturar detergente e hidrocarboneto não provoca queima.",
+   "Correta. A cauda apolar do tensoativo interage com o hidrocarboneto e a cabeça polar com a água, formando micelas que solubilizam o poluente.",
+   "Errada. O tensoativo não solidifica o hidrocarboneto; ao contrário, ele o dispersa na água."
+  ],
+  "dica": "Detergente tem cabeça polar e cauda apolar: é a \"ponte\" que permite o óleo se dispersar na água."
+ },
+ "enem-2012-68": {
+  "resumo": "Letra D. No cerrado, as gemas apicais (pontos de crescimento) protegidas por pelos densos resistem melhor ao calor das queimadas e reduzem a perda de água, permitindo que a planta rebrote.",
+  "detalhada": "O cerrado tem dois fatores de estresse citados no enunciado: **seca prolongada** e **queimadas periódicas**. As plantas lenhosas do cerrado têm adaptações para os dois:\n\n- **cascas grossas e suberosas (cortiça)**, com sulcos e fendas, que isolam termicamente o caule durante o fogo;\n- **raízes profundas**, que alcançam a água do lençol freático mesmo na seca;\n- **caules tortuosos**, resultado de gemas que morrem com o fogo e brotam de novo em outras direções;\n- **folhas grossas e coriáceas** (duras, com cutícula espessa) e muitas vezes pilosas;\n- **gemas protegidas por densa pilosidade**: os pelos funcionam como isolante térmico e reduzem a transpiração. Como as gemas são os pontos de crescimento, protegê-las garante que a planta rebrote depois do fogo.\n\nAs alternativas erradas descrevem justamente o oposto de cada uma dessas adaptações. Uma boa estratégia é lembrar a imagem típica do cerrado: árvore baixa, de **tronco torto, casca grossa e folha dura**.",
+  "alternativas": [
+   "Errada. As plantas do cerrado têm cascas grossas e fendadas, que protegem o caule do fogo; casca fina deixaria o tecido vivo exposto ao calor.",
+   "Errada. Os caules típicos do cerrado são tortuosos, não retilíneos; a tortuosidade vem da morte e rebrota das gemas após queimadas.",
+   "Errada. As folhas do cerrado costumam ser grossas e coriáceas; folhas membranosas perderiam muita água na seca.",
+   "Correta. Gemas apicais com densa pilosidade ficam isoladas do calor do fogo e perdem menos água, garantindo a rebrota da planta.",
+   "Errada. No cerrado as raízes são profundas, para alcançar a água do subsolo na seca; raízes superficiais e aéreas não resolveriam a falta de água."
+  ],
+  "dica": "Cerrado = tronco torto, casca grossa, folha dura, raiz profunda e gemas protegidas."
+ },
+ "enem-2012-71": {
+  "resumo": "Letra E. Com região plana, ventos constantes e muita chuva (pouco sol), a melhor opção é a energia eólica, que não emite gases de efeito estufa nem gera resíduos durante a operação.",
+  "detalhada": "A questão pede que você cruze as **características do país** com os **requisitos de cada fonte de energia**:\n\n- **ventos constantes** → favorece a energia **eólica**;\n- **região plana** → ruim para hidrelétrica, que precisa de desnível para formar quedas d'água;\n- **poucos recursos hídricos** → também descarta a hidrelétrica;\n- **chuvoso** → muitos dias nublados, o que reduz a eficiência da energia **solar**;\n- **sem combustíveis fósseis** → descarta termelétricas a carvão, petróleo ou gás.\n\nA eólica combina com o país e tem baixo impacto: os aerogeradores não queimam combustível, então não emitem gases do efeito estufa nem deixam resíduos durante o funcionamento. Seus impactos (ruído, efeito visual, risco a aves) são pequenos quando comparados às outras opções.\n\nA nuclear, por sua vez, não emite CO2, mas tem **alto risco ambiental** (acidentes e lixo radioativo), o que contradiz o critério \"menor impacto e risco\".\n\nPara questões de matriz energética: leia cada característica geográfica do enunciado como uma pista que habilita ou descarta uma fonte.",
+  "alternativas": [
+   "Errada. Biocombustíveis exigem grandes áreas de cultivo e emitem CO2 na queima; nada no enunciado indica maior disponibilidade dessa fonte.",
+   "Errada. A alternativa ignora uma característica do país: ele é chuvoso e tem muitos dias nublados, o que reduz a radiação solar que chega aos painéis e torna a energia solar inadequada para essa matriz. Mesmo que o custo fosse baixo, isso não compensaria a baixa produção.",
+   "Errada. A energia nuclear tem alto risco ambiental (acidentes e rejeitos radioativos), o oposto do pedido.",
+   "Errada. A hidrelétrica precisa de rios caudalosos e desnível de relevo; o país é plano e tem poucos recursos hídricos.",
+   "Correta. Ventos constantes favorecem a eólica, que não emite gases do efeito estufa nem gera resíduos na operação."
+  ],
+  "dica": "Use cada dado geográfico como filtro: plano e com pouca água descarta hidrelétrica; chuvoso enfraquece a solar; vento constante aponta para eólica."
+ },
+ "enem-2012-74": {
+  "resumo": "Letra E. Com o desmatamento, os animais silvestres que servem de alimento ao barbeiro somem ou migram; o inseto, então, invade casas próximas e passa a se alimentar do sangue humano, transmitindo o Trypanosoma cruzi.",
+  "detalhada": "A doença de Chagas é causada pelo protozoário **Trypanosoma cruzi** e transmitida pelo **barbeiro** (triatomíneo), um inseto **hematófago** (que se alimenta de sangue).\n\nNo ambiente natural, o barbeiro se alimenta de animais silvestres como gambás, tatus e roedores, que também funcionam como reservatórios do protozoário. Quando o homem **desmata**:\n- esses animais morrem ou migram;\n- o barbeiro fica sem sua fonte habitual de sangue;\n- ele se desloca para as habitações humanas próximas (principalmente casas de pau a pique, cheias de frestas) e passa a picar pessoas e animais domésticos.\n\nAssim, uma alteração ambiental feita pelo homem aproxima o vetor das pessoas e aumenta a transmissão.\n\nLembre também como ocorre a transmissão: o barbeiro pica e **defeca** perto da picada; o protozoário está nas fezes e entra pela ferida quando a pessoa coça. Também há transmissão oral (açaí ou caldo de cana contaminados), por transfusão e congênita. Não há relação com saneamento básico, que é a pista falsa da alternativa C.",
+  "alternativas": [
+   "Errada. Comer carne de animais silvestres não é o mecanismo apontado para o aumento da doença: a transmissão de Chagas ocorre principalmente pelas fezes do barbeiro no local da picada, e o que aumenta os casos é a aproximação do vetor das casas quando o alimento natural dele some. Os animais silvestres são reservatórios do protozoário e fonte de sangue para o barbeiro, mas não são o vetor.",
+   "Errada. Não há relação conhecida entre adubos químicos e aceleração do ciclo reprodutivo do barbeiro.",
+   "Errada. A doença de Chagas não depende de saneamento básico; o protozoário vive no barbeiro e nos hospedeiros, não no esgoto.",
+   "Errada. O barbeiro não tem larvas aquáticas (é um inseto de desenvolvimento incompleto que vive em frestas e ninhos), então a poluição de rios não se relaciona com ele.",
+   "Correta. O desmatamento elimina ou afasta os animais silvestres de que o barbeiro se alimenta, e o inseto passa a buscar sangue humano nas casas."
+  ],
+  "dica": "Desmatamento tira o alimento natural do vetor e o empurra para perto das pessoas: vale para Chagas, leishmaniose e febre amarela."
+ },
+ "enem-2012-75": {
+  "resumo": "Letra B. A lâmpada incandescente emite principalmente luz visível e infravermelho, radiações de baixa frequência; quase não emite ultravioleta, que é a radiação de alta frequência que estimula a produção de melanina.",
+  "detalhada": "O conceito cobrado é o **espectro eletromagnético** e a relação entre frequência e energia.\n\nEm ordem crescente de frequência (e decrescente de comprimento de onda):\n\nondas de rádio → micro-ondas → **infravermelho** → **luz visível** → **ultravioleta** → raios X → raios gama\n\nA energia de cada fóton é E = h · f: quanto maior a frequência, maior a energia. A **radiação ultravioleta** tem frequência alta o bastante para estimular os melanócitos a produzir melanina.\n\nA lâmpada incandescente funciona aquecendo um filamento. Ela emite um espectro que se concentra no **infravermelho** (por isso esquenta tanto) e no **visível**, com praticamente nada de UV. Ou seja, a radiação que ela emite é de **baixa frequência** em relação ao UV.\n\nRepare na pegadinha da alternativa E: \"curto comprimento de onda\" significa alta frequência, que é justamente o que **falta** na lâmpada. E não adianta aumentar intensidade ou tempo: se a frequência é baixa, cada fóton não tem energia suficiente para provocar o efeito.",
+  "alternativas": [
+   "Errada. Mesmo com intensidade alta, a luz da lâmpada não teria a frequência do ultravioleta; o que importa é a frequência, não a intensidade.",
+   "Correta. A lâmpada incandescente emite principalmente infravermelho e visível, de frequências menores que a do ultravioleta necessário ao bronzeamento.",
+   "Errada. O espectro da lâmpada é de fato contínuo, mas isso não explica a falta de bronzeamento; o problema é a ausência das frequências do UV.",
+   "Errada. Amplitude está relacionada à intensidade, não ao tipo de radiação; o fator decisivo é a frequência.",
+   "Errada. Curto comprimento de onda corresponde a alta frequência, como o UV; a lâmpada emite justamente radiação de comprimento de onda longo."
+  ],
+  "dica": "Efeitos biológicos da radiação dependem da frequência (E = h · f), não da intensidade; comprimento de onda curto é frequência alta."
+ },
+ "enem-2012-79": {
+  "resumo": "Letra C. Os experimentos de Redi (frascos com carne cobertos e descobertos) e de Pasteur (frascos de pescoço de cisne) mostraram que seres vivos só surgem de outros seres vivos: é a biogênese.",
+  "detalhada": "A questão opõe duas ideias sobre a origem dos seres vivos no dia a dia:\n\n- **Abiogênese (geração espontânea):** seres vivos surgiriam da matéria sem vida, como larvas \"nascendo\" da carne podre ou do arroz cozido.\n- **Biogênese:** todo ser vivo se origina de outro ser vivo pré-existente, por reprodução.\n\nOs experimentos clássicos:\n- **Francesco Redi (século XVII):** colocou carne em frascos abertos e em frascos cobertos com gaze. Só apareceram larvas na carne dos frascos abertos, onde as moscas puderam pousar e pôr ovos. Conclusão: as larvas vêm de ovos de moscas.\n- **Louis Pasteur (século XIX):** ferveu caldo nutritivo em frascos com **pescoço de cisne**, que deixavam o ar entrar mas retinham os microrganismos na curva do gargalo. O caldo ficou estéril; só quando o pescoço era quebrado surgiam microrganismos. Isso derrubou de vez a geração espontânea também para micróbios.\n\nNo caso do enunciado, as larvas no arroz vêm de **ovos postos por moscas**. (Detalhe histórico: Redi é do século XVII, mas Pasteur fez seus experimentos no século XIX.)\n\nNão confunda com a **origem da vida** na Terra primitiva (Oparin, Haldane, Miller), que é outro tema.",
+  "alternativas": [
+   "Errada. Redi e Pasteur não criaram seres vivos em laboratório; mostraram justamente que a vida não surge da matéria inanimada.",
+   "Errada. Os experimentos não tratavam da origem da vida no planeta, e sim de como os seres vivos surgem no dia a dia.",
+   "Correta. Os experimentos mostraram que seres vivos surgem apenas da reprodução de outros seres vivos (biogênese).",
+   "Errada. Os experimentos não investigaram parentesco evolutivo entre vermes e microrganismos.",
+   "Errada. Essa é a própria ideia da geração espontânea, que os experimentos refutaram."
+  ],
+  "dica": "Redi = carne com e sem gaze; Pasteur = frasco pescoço de cisne; ambos sustentam a biogênese."
+ },
+ "enem-2012-80": {
+  "resumo": "Letra B. A água de cal é uma solução de hidróxido de cálcio, Ca(OH)2, uma base que neutraliza o HCl: 2 HCl + Ca(OH)2 → CaCl2 + 2 H2O.",
+  "detalhada": "O HCl é um **gás ácido**. Para evitar que ele seja lançado no ar, o tratamento mais eficiente é passá-lo por uma solução **básica**, que reage com ele numa **neutralização** e o converte em sal e água.\n\nA **água de cal** é a solução aquosa de **hidróxido de cálcio**, Ca(OH)2, uma base. A reação é:\n\n2 HCl + Ca(OH)2 → CaCl2 + 2 H2O\n\nO produto, cloreto de cálcio, é um sal solúvel e muito menos agressivo que o ácido. Esse é o princípio dos **lavadores de gases** usados em incineradores e chaminés industriais.\n\nAs outras \"águas\" das alternativas não têm caráter básico relevante:\n- **água dura**: tem íons Ca²⁺ e Mg²⁺ dissolvidos, mas não é uma base;\n- **água salobra**: tem NaCl e outros sais em quantidade intermediária, sem caráter básico;\n- **água destilada** e **desmineralizada**: praticamente pura. O HCl se dissolveria nela, mas formaria ácido clorídrico, ou seja, o problema só mudaria de lugar.\n\nPara questões parecidas: para reter um gás ácido (HCl, SO2, CO2), use uma solução **básica**; para reter um gás básico (NH3), use uma solução ácida.",
+  "alternativas": [
+   "Errada. A água dura contém íons cálcio e magnésio, mas não é uma solução básica capaz de neutralizar o HCl.",
+   "Correta. A água de cal contém Ca(OH)2, uma base que neutraliza o HCl formando cloreto de cálcio e água.",
+   "Errada. A água salobra contém sais como NaCl, que não reagem com o HCl.",
+   "Errada. Na água destilada o HCl apenas se dissolve, formando ácido clorídrico; não há neutralização.",
+   "Errada. A água desmineralizada, como a destilada, só dissolveria o HCl, gerando uma solução ácida."
+  ],
+  "dica": "Gás ácido se trata com base: água de cal é Ca(OH)2."
+ },
+ "enem-2012-87": {
+  "resumo": "Letra B. A nuvem de poeira bloqueou a luz do Sol, reduziu a fotossíntese dos produtores e, com isso, faltou energia para toda a cadeia alimentar, levando os dinossauros à extinção.",
+  "detalhada": "O raciocínio é de **fluxo de energia nos ecossistemas**.\n\n- A energia que sustenta quase todas as teias alimentares vem do **Sol**.\n- Os **produtores** (plantas e algas) captam essa energia pela **fotossíntese** e a transferem, na forma de matéria orgânica, aos consumidores.\n- A cada nível trófico, parte da energia se perde; por isso, consumidores de níveis altos e de grande porte, como muitos dinossauros, dependem de uma base produtora grande.\n\nCom o impacto do asteroide, uma **densa nuvem de poeira** ficou suspensa na atmosfera e **reduziu a luz solar** que chegava à superfície. Consequências:\n- a fotossíntese despencou e muitos produtores morreram;\n- os herbívoros ficaram sem alimento;\n- os carnívoros, sem presas.\n\nO colapso da base da teia alimentar se propagou para todos os níveis. A queda de temperatura (um \"inverno de impacto\") agravou a situação.\n\nPara questões parecidas: qualquer evento que bloqueie a luz (poeira vulcânica, fumaça, turbidez da água) afeta primeiro os produtores e, através deles, toda a teia trófica.",
+  "alternativas": [
+   "Errada. Alterações ambientais não mudam o código genético dos animais de forma dirigida; o efeito principal foi sobre a cadeia alimentar.",
+   "Correta. A poeira reduziu a luz solar, a fotossíntese caiu e a falta de energia na base da teia alimentar atingiu todos os níveis tróficos.",
+   "Errada. Poeira não é bioacumulada ao longo da cadeia alimentar como substâncias tóxicas (metais pesados, pesticidas).",
+   "Errada. A sedimentação da poeira não faria desaparecer rios e lagos em escala global.",
+   "Errada. A teoria não se baseia na ausência de chuvas; o ponto central é a redução da luz solar."
+  ],
+  "dica": "Bloqueou a luz do Sol? O efeito começa nos produtores (fotossíntese) e desce por toda a cadeia alimentar."
+ },
+ "enem-2013-ppl-51": {
+  "resumo": "Letra A. Duas lâmpadas iguais de 110 V em série dividem os 220 V do gerador (110 V para cada); fios mais grossos têm menor resistência e, portanto, menor perda de energia.",
+  "detalhada": "A questão tem duas partes: a **associação** das lâmpadas e o **tipo de fio**.\n\n**1. Série ou paralelo?**\n- Em **paralelo**, cada lâmpada recebe a tensão total da fonte: 220 V. Lâmpadas de 110 V queimariam. Calculando: R = U² / P = 110² / 60 ≈ 201,7 Ω; ligada em 220 V, a potência seria P = 220² / 201,7 ≈ 240 W, quatro vezes a nominal.\n- Em **série**, a tensão se divide entre as lâmpadas. Como elas são iguais, cada uma recebe 220 / 2 = **110 V**, exatamente sua especificação. A corrente é i = 220 / (2 × 201,7) ≈ 0,545 A, igual à corrente nominal i = P / U = 60 / 110 ≈ 0,545 A.\n\n**2. Que fio usar?**\nPela **segunda lei de Ohm**, R = ρ · L / A: a resistência do fio é maior quanto **mais longo** e **mais fino** ele for. A perda de energia no fio (efeito Joule) é P = R · i². Para perder menos, o fio deve ter **menor resistência**: maior espessura (área A maior) e menor comprimento.\n\nResposta: **série e fios de maior espessura**.\n\nPara questões parecidas: aparelho de tensão nominal menor que a da fonte → associação em série (com aparelhos iguais); menos perda → fio curto e grosso.",
+  "alternativas": [
+   "Correta. Em série, cada lâmpada recebe 110 V; fios grossos têm menor resistência (R = ρ · L / A) e reduzem a perda por efeito Joule.",
+   "Errada. A associação em série está certa, mas fios mais longos têm maior resistência e aumentam a perda de energia.",
+   "Errada. Em paralelo, cada lâmpada receberia 220 V e queimaria; e fios finos aumentariam a perda.",
+   "Errada. Fios grossos são a escolha certa, mas em paralelo cada lâmpada receberia 220 V, o dobro de sua tensão nominal.",
+   "Errada. Tem os dois erros: paralelo submete as lâmpadas a 220 V e fio longo aumenta a resistência e a perda."
+  ],
+  "dica": "Série divide a tensão, paralelo mantém a tensão; fio bom para conduzir é curto e grosso (R = ρ · L / A)."
+ },
+ "enem-2013-ppl-52": {
+  "resumo": "Letra E. Se o projétil e o avião se movem no mesmo sentido e com a mesma velocidade, a velocidade relativa entre eles é zero; para o piloto, o projétil parece parado e pode ser apanhado.",
+  "detalhada": "O conceito é **velocidade relativa**: o movimento depende do referencial.\n\nPara dois corpos que se movem na mesma direção:\n- **mesmo sentido:** v relativa = vA − vB;\n- **sentidos opostos:** v relativa = vA + vB.\n\nNo caso, o projétil e o avião seguiam **no mesmo sentido** e **com a mesma velocidade**. Então:\n\nv relativa = v − v = 0\n\nNo referencial do piloto, o projétil está **parado**, \"flutuando\" ao lado do rosto como uma mosca. Por isso ele consegue pegá-lo com a mão. Para um observador no solo, porém, os dois se movem rapidamente.\n\nÉ a mesma situação de dois carros lado a lado na estrada, à mesma velocidade: um passageiro consegue entregar um objeto ao outro.\n\nAs alternativas erradas imaginam o projétil parado em relação ao ar ou ao solo (ele cairia, por exemplo) ou com velocidades relativas grandes, que tornariam a captura perigosa ou impossível.",
+  "alternativas": [
+   "Errada. Um projétil parado em relação ao ar começaria a cair imediatamente; e se viesse em direção ao avião a velocidade relativa seria enorme.",
+   "Errada. Se o projétil tivesse velocidade visivelmente maior que a do avião, ele passaria pelo piloto, que não conseguiria apanhá-lo.",
+   "Errada. Disparado para cima, o projétil só tem velocidade vertical, enquanto o avião se move na horizontal. Como as direções são diferentes, a velocidade relativa não é nula: o projétil não parece parado para o piloto, sobe e sai rapidamente do alcance de sua mão.",
+   "Errada. Em sentidos opostos as velocidades se somam, e a velocidade relativa seria o dobro, tornando a captura impossível.",
+   "Correta. Mesmo sentido e mesma velocidade dão velocidade relativa nula: para o piloto, o projétil está parado."
+  ],
+  "dica": "Mesmo sentido: subtraia as velocidades; sentidos opostos: some. Velocidade relativa zero = parado para quem observa."
+ },
+ "enem-2013-ppl-57": {
+  "resumo": "Letra B. O núcleo da fibra óptica precisa ter índice de refração maior que o revestimento para que a luz sofra reflexão interna total e fique confinada no núcleo.",
+  "detalhada": "A fibra óptica funciona por **reflexão interna total**. Para ela acontecer, duas condições são necessárias:\n\n1. A luz deve ir de um meio **mais refringente** (índice de refração maior) para um **menos refringente** (índice menor).\n2. O ângulo de incidência deve ser **maior que o ângulo limite**, dado por sen L = n menor / n maior.\n\nPor isso, o **núcleo** da fibra tem índice de refração **maior** que o do **revestimento** (casca). A luz que entra no núcleo atinge a fronteira com a casca em ângulos grandes, é totalmente refletida e segue \"ricocheteando\" ao longo da fibra, praticamente sem perdas, mesmo em curvas.\n\nExemplo: com núcleo de n = 1,48 e casca de n = 1,46, sen L = 1,46 / 1,48 ≈ 0,986, então L ≈ 80,6°. Raios que incidem com mais de 80,6° em relação à normal ficam presos no núcleo.\n\nSe o núcleo tivesse índice menor, a luz passaria para a casca (refração) e escaparia, e não haveria transmissão.\n\nDifração e interferência são fenômenos ondulatórios reais, mas não são o mecanismo que guia a luz na fibra.",
+  "alternativas": [
+   "Errada. O índice do núcleo deve mesmo ser maior, mas o fenômeno que guia a luz é a reflexão interna total, não a difração.",
+   "Correta. Com índice maior no núcleo, a luz que incide acima do ângulo limite sofre reflexão interna total e fica confinada.",
+   "Errada. Com índice menor no núcleo não há reflexão total; a reflexão parcial deixaria parte da luz escapar a cada reflexão.",
+   "Errada. Com núcleo de índice menor a luz escaparia; e interferência destrutiva apagaria o sinal, não o transmitiria.",
+   "Errada. O núcleo precisa ter índice maior, e interferência não é o mecanismo de guia da luz na fibra."
+  ],
+  "dica": "Reflexão total só acontece do meio mais refringente para o menos refringente e acima do ângulo limite."
+ },
+ "enem-2013-ppl-59": {
+  "resumo": "Letra B. Os pais heterozigotos (AaBb) têm asa longa e corpo preto; no cruzamento AaBb × AaBb, a proporção com os dois fenótipos dominantes é 9/16, e 9/16 × 288 = 162.",
+  "detalhada": "É uma questão de **segunda lei de Mendel** (segregação independente), com dois genes autossômicos.\n\n**1. Defina as letras.**\n- Asa: **A** (longa, dominante) e **a** (vestigial, recessiva).\n- Cor: **P** (preta, dominante) e **p** (cinza, recessiva).\n\n**2. Fenótipo dos pais.** Os pais são duplo-heterozigotos, AaPp. Como têm um alelo dominante de cada gene, seu fenótipo é **asa longa e corpo preto**. Atenção a essa pegadinha: aqui a cor dominante é a **preta**, ao contrário do que muita gente memoriza para a Drosophila.\n\n**3. Cruzamento AaPp × AaPp.** Cada gene, separadamente, dá 3/4 dominante e 1/4 recessivo. Combinando (regra do \"e\" = multiplicação):\n- longa e preta: 3/4 × 3/4 = **9/16**\n- longa e cinza: 3/4 × 1/4 = 3/16\n- vestigial e preta: 1/4 × 3/4 = 3/16\n- vestigial e cinza: 1/4 × 1/4 = 1/16\n\n**4. Aplique ao total.**\n\n9/16 × 288 = 162 moscas\n\nPara conferir: 3/16 × 288 = 54 e 1/16 × 288 = 18; 162 + 54 + 54 + 18 = 288.\n\nPara questões parecidas: diferencie **mesmo fenótipo** (9/16, todos com pelo menos um dominante de cada gene) de **mesmo genótipo** (AaPp = 1/2 × 1/2 = 4/16).",
+  "alternativas": [
+   "Errada. 288 é o total de moscas; nem todos os descendentes têm o fenótipo dos pais, porque os recessivos podem se combinar.",
+   "Correta. A proporção de moscas com asa longa e corpo preto (fenótipo dos pais) é 9/16, e 9/16 × 288 = 162.",
+   "Errada. 108 corresponde a 6/16 de 288, a soma das duas classes com um caráter dominante e outro recessivo (3/16 + 3/16), e não ao fenótipo parental.",
+   "Errada. 72 é 4/16 de 288, a proporção de descendentes com o mesmo genótipo dos pais (AaPp), não o mesmo fenótipo.",
+   "Errada. 54 é 3/16 de 288, a quantidade de só uma das classes com um caráter recessivo (por exemplo, asa longa e corpo cinza)."
+  ],
+  "dica": "Diíbrido heterozigoto × diíbrido heterozigoto dá 9:3:3:1; \"mesmo fenótipo dos pais\" é a classe 9/16, \"mesmo genótipo\" é 4/16."
+ },
+ "enem-2013-ppl-60": {
+  "resumo": "Letra D. Lançada nos rios, a vinhaça, rica em nutrientes e matéria orgânica, provocaria eutrofização; usá-la como fertilizante no solo evita esse destino e reduz esse impacto.",
+  "detalhada": "A **vinhaça** é o resíduo líquido da destilação do etanol. Ela é rica em **matéria orgânica** e em nutrientes como **potássio** e **fósforo**.\n\nSe fosse despejada em rios, lagos e represas, causaria **eutrofização**:\n- o excesso de nutrientes (principalmente fósforo e nitrogênio) provoca a proliferação explosiva de algas e cianobactérias na superfície;\n- a camada de algas bloqueia a luz, e as algas do fundo morrem;\n- a decomposição dessa matéria orgânica por bactérias aeróbias consome o **oxigênio dissolvido**;\n- peixes e outros organismos aquáticos morrem por falta de oxigênio.\n\nNa **fertirrigação**, a vinhaça diluída é aplicada na lavoura de cana: os nutrientes voltam para o solo e são aproveitados pelas plantas, em vez de ir parar nos corpos d'água. Isso reduz a eutrofização e ainda diminui o uso de adubos sintéticos.\n\nAs demais alternativas citam problemas reais, mas sem ligação com a vinhaça: chuva ácida vem de óxidos de enxofre e nitrogênio; aquecimento global, de gases como CO2 e metano; pesticidas são outra classe de contaminantes.",
+  "alternativas": [
+   "Errada. A fertirrigação não tem como objetivo controlar a erosão; o foco é dar destino adequado aos nutrientes da vinhaça.",
+   "Errada. Chuva ácida é causada por óxidos de enxofre e de nitrogênio lançados no ar, não pela vinhaça.",
+   "Errada. A elevação da temperatura global está ligada a gases do efeito estufa, e o destino da vinhaça não é o fator citado.",
+   "Correta. Com a vinhaça indo para o solo e não para os corpos d'água, evita-se o excesso de nutrientes que causa a eutrofização.",
+   "Errada. A vinhaça não é pesticida; seu problema ambiental é o excesso de matéria orgânica e nutrientes."
+  ],
+  "dica": "Excesso de nutrientes (fósforo, nitrogênio, matéria orgânica) em água parada = eutrofização."
+ },
+ "enem-2013-ppl-62": {
+  "resumo": "Letra B. Enzimas são proteínas, ou seja, compostos orgânicos biodegradáveis, o que reduz o impacto ambiental em comparação com muitos catalisadores químicos tradicionais (como metais pesados).",
+  "detalhada": "**Enzimas** são catalisadores biológicos, quase sempre **proteínas**. Como todo catalisador, elas aceleram reações diminuindo a energia de ativação, **sem serem consumidas**.\n\nCaracterísticas importantes das enzimas:\n- são **orgânicas e biodegradáveis**: ao fim da vida útil, são decompostas por microrganismos sem deixar resíduos tóxicos. Muitos catalisadores tradicionais usam metais pesados ou compostos persistentes;\n- são **específicas**: cada enzima atua sobre um substrato (modelo chave-fechadura), o que gera menos subprodutos indesejados;\n- funcionam em condições **brandas** de temperatura e pH, economizando energia;\n- são **sensíveis**: temperatura alta ou pH inadequado causam **desnaturação** (perda da forma e da função).\n\nEntre as alternativas, a única vantagem verdadeira é ser composto orgânico biodegradável. As demais descrevem características falsas ou desvantagens: enzimas não são consumidas, não são inespecíficas, não são estáveis a variações de temperatura e não são substrato.\n\nPara questões de enzimas: lembre o trio **específicas, reutilizáveis (não consumidas) e sensíveis a temperatura e pH**.",
+  "alternativas": [
+   "Errada. Enzimas, como qualquer catalisador, não são consumidas na reação; e, se fossem, isso seria desvantagem.",
+   "Correta. Enzimas são proteínas, compostos orgânicos biodegradáveis, que não deixam resíduos tóxicos persistentes como muitos catalisadores químicos.",
+   "Errada. Enzimas são altamente específicas para seus substratos; essa especificidade é, inclusive, uma vantagem.",
+   "Errada. Enzimas são sensíveis à temperatura e se desnaturam em temperaturas elevadas.",
+   "Errada. Enzimas atuam sobre o substrato; elas não são o substrato da reação."
+  ],
+  "dica": "Enzima: proteína, específica, não consumida, sensível a temperatura e pH, biodegradável."
+ },
+ "enem-2013-ppl-63": {
+  "resumo": "Letra A. No polegar e no indicador dois toques foram percebidos mesmo com as pontas a menos de meio centímetro, o que indica maior densidade de receptores e maior capacidade de discriminação nesses locais.",
+  "detalhada": "A questão é de **leitura de tabela** associada ao conceito de **densidade de receptores táteis**.\n\nO teste do compasso mede a **discriminação entre dois pontos**: a menor distância em que a pessoa ainda percebe dois toques distintos. Quanto **menor** essa distância, **mais receptores** existem na região e maior a sensibilidade.\n\nLendo os dados:\n- **costas e antebraço:** dois toques só a 6 cm e 5 cm; abaixo disso, um toque;\n- **panturrilha:** dois toques só a 6 cm;\n- **polegar e indicador:** dois toques em **todas** as distâncias, inclusive menos de 0,5 cm.\n\nConclusão: a densidade de receptores **não é a mesma** no corpo todo. As pontas dos dedos têm muito mais receptores (e uma área maior no córtex somatossensorial) que as costas e a panturrilha. Faz sentido funcional: os dedos são usados para manipular objetos e explorar texturas.\n\nPara analisar as alternativas, cheque duas coisas: se dizem que a densidade **varia** (correto) e se apontam os locais **certos** como mais sensíveis (indicador e polegar).",
+  "alternativas": [
+   "Correta. A densidade varia pelo corpo, e o indicador e o polegar, que distinguem dois toques a menos de 0,5 cm, são as regiões de maior discriminação.",
+   "Errada. A diferença entre as regiões é grande, não pequena; e o indicador é das regiões mais sensíveis, não das menos.",
+   "Errada. A diferença é grande, e costas e antebraço estão entre as regiões de menor capacidade de discriminação.",
+   "Errada. Acerta que a densidade varia, mas aponta panturrilha e costas, que só distinguem dois toques a grandes distâncias, como as mais sensíveis.",
+   "Errada. A tabela mostra que a densidade não se equivale, e costas e antebraço são regiões pouco sensíveis."
+  ],
+  "dica": "Quanto menor a distância em que se sentem dois toques, maior a densidade de receptores: pontas dos dedos ganham das costas."
+ },
+ "enem-2013-ppl-66": {
+  "resumo": "Letra B. No modelo 1 (em cruz), as duas mãos aplicam forças opostas em extremidades opostas, formando um binário: o momento total é F · 0,4 m, maior que nos outros modelos, e não há força empurrando a porca para os lados.",
+  "detalhada": "Para soltar a porca é preciso produzir um **momento (torque)** grande. O momento de uma força é:\n\nM = F · d\n\nonde d é o **braço**, a distância perpendicular do eixo de rotação (a porca) até a linha de ação da força.\n\nComparando os modelos com a mesma força F em cada mão:\n- **Modelo 1 (cruz, 20 cm do centro a cada ponta):** com as duas mãos em pontas opostas, empurrando em sentidos contrários, forma-se um **binário**. Momento total = F · 0,20 + F · 0,20 = **F · 0,40 m**.\n- **Modelo 2 (L, braço de 30 cm):** em geral se aplica força numa só ponta: M = **F · 0,30 m**.\n- **Modelo 3 (T com barra móvel de 25 cm):** com a barra centralizada e as duas mãos, o binário tem distância total de 25 cm: M = **F · 0,25 m**. Mesmo deslizando a barra para um lado, o braço máximo é 25 cm.\n\nO modelo 1 dá o maior momento. Além disso, o **binário** tem uma vantagem: as duas forças são iguais e opostas, então a força resultante sobre a porca é **zero**. Há só rotação, sem empurrar a chave para fora do encaixe nem forçar o eixo da roda.\n\nPara questões parecidas: o que facilita a rotação é o **momento**; aumente a força ou o braço, e lembre que duas mãos em pontas opostas (binário) somam seus momentos.",
+  "alternativas": [
+   "Errada. Se o momento fosse menor, seria mais difícil girar a porca; o modelo 1 é o melhor justamente por produzir momento maior.",
+   "Correta. No modelo 1, as duas mãos formam um binário de forças com braço total de 40 cm, gerando o maior momento e só rotação, sem força resultante sobre a porca.",
+   "Errada. O braço de 30 cm do modelo 2 é maior que cada braço de 20 cm do modelo 1, mas, usado com uma mão só, dá momento menor que o binário do modelo 1 (0,30 F contra 0,40 F).",
+   "Errada. A barra móvel do modelo 3 permite variar o braço, mas ele nunca passa de 25 cm, o que dá momento menor que o do modelo 1.",
+   "Errada. O momento máximo do modelo 3 (cerca de F · 0,25 m) é menor que o do binário do modelo 1 (F · 0,40 m)."
+  ],
+  "dica": "Momento = força × braço; num binário, os momentos das duas forças se somam e a força resultante é nula."
+ },
+ "enem-2013-ppl-72": {
+  "resumo": "A frequência dobra (880 Hz): numa corda, a fundamental tem comprimento de onda igual ao dobro do comprimento vibrante, e a velocidade da onda na corda não muda; com metade do comprimento, o comprimento de onda cai à metade e a frequência dobra.",
+  "detalhada": "**Conceito: ondas estacionárias em cordas.** Uma corda presa nas duas pontas vibra no harmônico fundamental com um nó em cada extremidade e um ventre no meio. Isso corresponde a meio comprimento de onda: L = λ / 2, ou seja, λ = 2L.\n\n**Raciocínio passo a passo:**\n- A velocidade da onda na corda depende só da tração e da densidade linear da corda (v = raiz de T / μ). Pressionar a corda num traste não muda nenhuma das duas, então v é a mesma.\n- Pela equação fundamental da onda: f = v / λ = v / (2L).\n- Se L passa a L / 2, o novo comprimento de onda é λ' = 2 · (L / 2) = L, metade do anterior.\n- Logo f' = v / (L) = 2 · v / (2L) = 2 · 440 = 880 Hz.\n\n**Para questões parecidas:** na corda, f é inversamente proporcional ao comprimento vibrante (f = v / 2L). Encurtar a corda deixa o som mais agudo; é exatamente o que o violonista faz ao pressionar a corda nos trastes. O som de 880 Hz é a mesma nota Lá, uma oitava acima.",
+  "alternativas": [
+   "Errada. O comprimento de onda não dobra; ele cai à metade, porque é proporcional ao comprimento vibrante da corda. E frequência menor significaria corda mais longa.",
+   "Correta. Com metade do comprimento vibrante, λ = 2L cai à metade; como v é constante, f = v / λ dobra (de 440 Hz para 880 Hz).",
+   "Errada. A relação entre f e λ é inversamente proporcional simples (f = v / λ), não quadrática. Reduzir λ à metade dobra f, não quadruplica.",
+   "Errada. O comprimento de onda é proporcional a L (λ = 2L), então cai à metade, não à quarta parte. Quem pensa em relação quadrática confunde com outras grandezas (como a tração, que entra sob raiz).",
+   "Errada. A frequência de vibração da corda depende do comprimento vibrante: f = v / (2L). É por isso que os trastes do violão produzem notas diferentes."
+  ],
+  "dica": "Em corda vibrante, f = v / 2L: metade do comprimento, dobro da frequência (uma oitava acima)."
+ },
+ "enem-2013-ppl-73": {
+  "resumo": "A sombra faz um movimento retilíneo harmônico simples: a projeção de um movimento circular uniforme sobre uma reta (a parede vista de lado) é um MHS.",
+  "detalhada": "**Conceito: MHS como projeção do MCU.** Um ponto que gira em movimento circular uniforme, quando projetado sobre um diâmetro (ou sobre uma parede paralela ao plano de visão), vai e volta entre dois extremos. A posição da projeção é x = R · cos(ωt), que é exatamente a equação do movimento harmônico simples.\n\n**Aplicando ao enfeite:**\n- O aro está na horizontal e o ursinho gira com velocidade angular constante: é um MCU num plano horizontal.\n- A luz projeta essa circunferência na parede vertical; a circunferência inteira vira um segmento de reta horizontal (vista de perfil).\n- A sombra, então, se move só sobre essa reta: é **retilínea**.\n- Ela é mais rápida no meio do segmento (quando o ursinho se move paralelo à parede) e para nos extremos (quando o ursinho se move perpendicular à parede). Velocidade variando assim, com aceleração proporcional ao afastamento do centro, caracteriza o **MHS**.\n\n**Para questões parecidas:** sempre que um MCU for \"visto de lado\" ou projetado numa reta, o resultado é um MHS com a mesma frequência angular ω e amplitude igual ao raio.",
+  "alternativas": [
+   "Errada. A sombra não pode descrever um círculo, pois a parede recebe a projeção da circunferência vista de perfil, que é um segmento de reta.",
+   "Errada. A trajetória é retilínea, mas a velocidade não é constante: a sombra para nos extremos e é mais rápida no centro.",
+   "Correta. A projeção de um MCU sobre uma reta é um MHS: x = R · cos(ωt), com vai e vem entre dois extremos.",
+   "Errada. A trajetória da sombra não é circular, e o ursinho tem velocidade angular constante, sem aceleração angular.",
+   "Errada. No MRUV a aceleração é constante; no movimento da sombra a aceleração muda de valor e de sentido conforme a posição (é proporcional ao afastamento do centro)."
+  ],
+  "dica": "Projeção de movimento circular uniforme numa reta é sempre MHS."
+ },
+ "enem-2013-ppl-78": {
+  "resumo": "O decibel mede o nível de intensidade sonora, que está ligado à energia transportada pela onda e, portanto, à sua amplitude. Limitar 40 dB é limitar a amplitude.",
+  "detalhada": "**Conceito: qualidades fisiológicas do som.**\n- **Intensidade (volume, \"som forte ou fraco\")**: depende da energia transportada pela onda, ligada à **amplitude**. Medida em decibéis (nível sonoro).\n- **Altura (som grave ou agudo)**: depende da **frequência**.\n- **Timbre**: depende da **forma da onda** (composição de harmônicos); é o que diferencia um violão de um piano tocando a mesma nota.\n\n**Raciocínio:** a lei fala em decibéis, a unidade do nível de intensidade sonora: β = 10 · log(I / I0). A intensidade I é proporcional ao quadrado da amplitude. Então, ao impor 40 dB como teto, os vereadores limitam o quão \"forte\" pode ser o som, ou seja, a amplitude da onda.\n\n**Pegadinha clássica:** na linguagem do dia a dia, \"som alto\" significa som forte. Na Física, \"alto\" quer dizer agudo (altura = frequência). O controle de volume mexe na intensidade, não na altura.",
+  "alternativas": [
+   "Errada. Altura, na Física, é a qualidade que distingue grave de agudo e depende da frequência. É a pegadinha do \"som alto\" do cotidiano.",
+   "Correta. O nível sonoro em dB mede a intensidade, que depende da energia da onda e, portanto, da amplitude.",
+   "Errada. A frequência define se o som é grave ou agudo, e não é medida em decibéis, mas em hertz.",
+   "Errada. A velocidade do som depende do meio (ar, temperatura), não da fonte, e não é o que o decibel mede.",
+   "Errada. O timbre depende da forma da onda (harmônicos) e permite distinguir instrumentos; não tem relação com o limite de dB."
+  ],
+  "dica": "Decibel = intensidade = amplitude; \"som alto\" na Física é agudo (frequência), não forte."
+ },
+ "enem-2013-ppl-81": {
+  "resumo": "Todas as esferas caem em queda livre com a mesma aceleração g, ou seja, com força resultante constante (o peso). Num MUV a partir do repouso, as distâncias percorridas crescem com t², o que permite ajustar os espaçamentos para que os choques ocorram a intervalos iguais.",
+  "detalhada": "**Conceito: queda livre é um movimento uniformemente variado.** Ao soltar o barbante, a tensão some e cada esfera fica sujeita apenas ao próprio peso (desprezando o ar). A força resultante é P = m · g, constante, e a aceleração é g, também constante.\n\n**Por que os sons ficam igualmente espaçados?**\n- Partindo do repouso, a distância percorrida é d = g · t² / 2.\n- Para chegar ao chão nos instantes t, 2t, 3t, 4t..., as alturas precisam ser proporcionais a 1, 4, 9, 16...\n- As distâncias entre esferas consecutivas ficam proporcionais a 1, 3, 5, 7..., uma progressão aritmética (regra de Galileu dos números ímpares). É exatamente a montagem descrita.\n- Isso só funciona porque a aceleração é a mesma e constante para todas as esferas, ou seja, porque a força resultante em cada uma é constante.\n\n**Para questões parecidas:** no MUV a partir do repouso, as distâncias em intervalos de tempo iguais e sucessivos seguem a razão 1 : 3 : 5 : 7 (números ímpares).",
+  "alternativas": [
+   "Errada. Em queda livre a velocidade aumenta continuamente (v = g · t); se fosse constante, os espaçamentos deveriam ser iguais, não crescentes.",
+   "Correta. Após soltar o barbante, cada esfera sofre só o peso: força resultante constante, aceleração constante (g), MUV. Daí as distâncias em PA garantirem intervalos iguais.",
+   "Errada. A aceleração de queda livre é constante (g), não aumenta com o tempo.",
+   "Errada. Ao soltar o barbante, todas as esferas caem juntas e o fio fica frouxo: a tensão praticamente se anula, não aumenta.",
+   "Errada. Sem atrito com o ar, a energia mecânica se conserva: a potencial vira cinética, mas a soma não aumenta."
+  ],
+  "dica": "Queda livre: força resultante = peso, constante; distâncias em tempos iguais seguem 1, 3, 5, 7..."
+ },
+ "enem-2013-ppl-85": {
+  "resumo": "Convertendo 40 km/h para m/s (40 / 3,6 ≈ 11,1 m/s), o tempo mínimo para percorrer 2 m é t = 2 / 11,1 ≈ 0,18 s.",
+  "detalhada": "**Conceito: velocidade média.** v = d / t, com cuidado nas unidades.\n\n**Passo a passo:**\n- Converter o limite: 40 km/h ÷ 3,6 = 11,1 m/s (aproximadamente).\n- A distância entre os sensores é 2 m.\n- Para não ultrapassar o limite, a velocidade média precisa ser no máximo 11,1 m/s, então o tempo precisa ser no mínimo:\n- t = d / v = 2 / 11,1 ≈ 0,18 s.\n\nQuanto mais rápido o carro, menor o tempo entre os sensores; por isso o enunciado pede o tempo **mínimo**: passar em menos de 0,18 s significa estar acima de 40 km/h.\n\n**Para questões parecidas:** para passar de km/h para m/s, divida por 3,6; de m/s para km/h, multiplique por 3,6. Sempre confira se distância e velocidade estão na mesma unidade antes de dividir.",
+  "alternativas": [
+   "Errada. 0,05 s corresponderia a 2 / 0,05 = 40 m/s, que é 144 km/h: o aluno usou 40 como se fosse m/s.",
+   "Errada. 11,1 é a velocidade em m/s (40 / 3,6), não o tempo. O aluno parou no meio da conta.",
+   "Correta. t = 2 m / (40 / 3,6 m/s) = 2 / 11,1 ≈ 0,18 s.",
+   "Errada. 22,2 vem de multiplicar 11,1 por 2 (d · v) em vez de dividir a distância pela velocidade.",
+   "Errada. 0,50 s vem de inverter a razão ou errar a conversão (por exemplo, 2 / 4); corresponderia a 4 m/s, cerca de 14 km/h."
+  ],
+  "dica": "km/h para m/s: divida por 3,6 antes de usar t = d / v."
+ },
+ "enem-2013-ppl-88": {
+  "resumo": "As aves se originaram dos répteis (mais precisamente de dinossauros terópodes). O Arqueopterix, um réptil com penas, é um fóssil de transição entre esses grupos.",
+  "detalhada": "**Conceito: fósseis de transição e filogenia dos vertebrados.** Fósseis que reúnem características de dois grupos ajudam a mostrar o parentesco entre eles. O Arqueopterix tinha penas e asas (características de ave), mas também dentes, garras nas asas e uma longa cauda óssea (características de réptil/dinossauro).\n\n**Raciocínio:** se um dinossauro tinha penas, a característica \"pena\" surgiu dentro do grupo dos répteis. Logo, as aves descendem de répteis, mais especificamente de dinossauros terópodes (o mesmo grupo do velocirraptor). Hoje muitos cladistas consideram as aves como dinossauros vivos.\n\n**Sequência geral dos vertebrados:** peixes → anfíbios → répteis → (aves e, por outra linhagem, mamíferos). Aves e mamíferos surgiram de linhagens distintas de amniotas, e as aves estão próximas dos dinossauros e crocodilos.",
+  "alternativas": [
+   "Errada. Os peixes ósseos são ancestrais remotos de todos os tetrápodes, mas não o ancestral direto das aves; entre eles há anfíbios e répteis.",
+   "Correta. O Arqueopterix é um dinossauro (réptil) com penas, o que indica que as aves descendem de répteis.",
+   "Errada. Mamíferos e aves são linhagens separadas; as aves não descendem de mamíferos. Ser endotérmico em ambos é convergência, não ancestralidade.",
+   "Errada. Peixes cartilaginosos (tubarões, raias) formam uma linhagem bem distante, sem relação direta com as aves.",
+   "Errada. Os anfíbios deram origem aos répteis, que depois originaram as aves; não são o ancestral direto delas."
+  ],
+  "dica": "Fóssil com mistura de características (dinossauro com penas) aponta o grupo ancestral: aves vêm de répteis."
+ },
+ "enem-2013-ppl-89": {
+  "resumo": "No efeito fotoelétrico, a energia da luz (radiante) arranca elétrons do metal, dando-lhes energia cinética. Logo, a transformação é de energia radiante em cinética.",
+  "detalhada": "**Conceito: efeito fotoelétrico.** A luz é formada por fótons, cada um com energia E = h · f. Quando um fóton com energia suficiente atinge o metal, ele cede sua energia a um elétron. Parte dessa energia é gasta para arrancar o elétron (função trabalho) e o resto vira energia cinética do elétron: Ec = h · f − W.\n\n**Raciocínio:** a energia que entra é a da luz (energia **radiante**, ou luminosa); o que sai é o movimento dos elétrons ejetados (energia **cinética**). Esses elétrons em movimento formam uma corrente elétrica que aciona os dispositivos citados (postes, portas automáticas, fotômetros, alarmes).\n\n**Para questões parecidas:** identifique a forma de energia de entrada e a de saída. Fotocélula: luz → movimento de elétrons (corrente). O caminho inverso, elétrica → radiante, é o de uma lâmpada ou LED.",
+  "alternativas": [
+   "Errada. Não há reação nuclear envolvida; a energia de entrada é a da luz, não a do núcleo atômico.",
+   "Errada. Este é o sentido inverso (o que ocorre numa lâmpada ou LED). No efeito fotoelétrico, a luz é a entrada.",
+   "Errada. Nem calor é a fonte, nem há reação química sendo produzida; é a luz que arranca elétrons.",
+   "Correta. A energia radiante dos fótons é transferida aos elétrons, que saem do metal com energia cinética.",
+   "Errada. A energia de entrada não é potencial (gravitacional ou elástica), e sim a energia da radiação luminosa."
+  ],
+  "dica": "Efeito fotoelétrico: luz entra, elétron sai em movimento (radiante → cinética)."
+ },
+ "enem-2013-ppl-90": {
+  "resumo": "Queimadas liberam CO2 diretamente e o desmatamento reduz a vegetação que absorveria CO2 pela fotossíntese; ambos intensificam o efeito estufa.",
+  "detalhada": "**Conceito: efeito estufa e ciclo do carbono.** O efeito estufa é natural e necessário, mas se intensifica quando aumenta a concentração de gases como CO2 e CH4 na atmosfera.\n\n**Raciocínio:**\n- **Queimada**: a combustão da biomassa libera para a atmosfera o carbono que estava estocado na matéria orgânica, na forma de CO2.\n- **Desmatamento**: remove plantas que retiravam CO2 do ar pela fotossíntese, diminuindo o sequestro de carbono; além disso, a madeira e o solo expostos se decompõem e liberam mais CO2.\n\nOs dois fatores, portanto, aumentam a quantidade de CO2 no ar, assim como a queima de combustíveis fósseis citada no texto.\n\n**Pegadinha:** não confunda efeito estufa com camada de ozônio, chuva ácida ou inversão térmica. São problemas ambientais diferentes, com causas e efeitos diferentes.",
+  "alternativas": [
+   "Errada. Chuva ácida (causada por óxidos de enxofre e nitrogênio) e destruição da camada de ozônio (causada por CFCs) são problemas distintos do efeito estufa; não são fatores que o aumentam.",
+   "Errada. Alagamento é consequência de chuvas e impermeabilização; inversão térmica é um fenômeno meteorológico local que retém poluentes, não algo que aumente o efeito estufa global.",
+   "Errada. Erosão e extinção de espécies são impactos ambientais, mas não liberam CO2 de forma significativa nem aumentam o efeito estufa.",
+   "Errada. Poluição de águas e solo afeta ecossistemas e saúde, mas não é o mecanismo de aumento dos gases estufa na atmosfera.",
+   "Correta. Queimadas liberam CO2 e o desmatamento reduz a absorção de CO2 pela fotossíntese, intensificando o efeito estufa."
+  ],
+  "dica": "Efeito estufa: procure o que joga CO2 no ar ou tira quem o absorve (queimada e desmatamento)."
+ },
+ "enem-2015-ppl-46": {
+  "resumo": "O oxigênio participa de todos os ciclos citados: está na água (H2O), no CO2, nos sulfatos (SO4), nos fosfatos (PO4) e nos nitratos (NO3), além de ter seu próprio ciclo.",
+  "detalhada": "**Conceito: ciclos biogeoquímicos e as formas químicas de cada elemento.** Para responder, basta lembrar em que compostos cada elemento circula:\n- Ciclo da água: H2O (tem O).\n- Ciclo do carbono: CO2 na atmosfera, carbonatos (CO3) nas rochas, matéria orgânica (tem O).\n- Ciclo do enxofre: SO2 e sulfatos SO4 (tem O).\n- Ciclo do fósforo: fosfatos PO4 (tem O).\n- Ciclo do nitrogênio: nitritos NO2 e nitratos NO3, absorvidos pelas plantas (tem O).\n- Ciclo do oxigênio: O2 e O3.\n\n**Conclusão:** o único elemento presente em todas essas formas é o oxigênio. O carbono, por exemplo, não aparece na água, nos sulfatos, nos fosfatos nem nos nitratos.\n\n**Para questões parecidas:** escreva as fórmulas das principais formas de cada ciclo e procure o elemento em comum.",
+  "alternativas": [
+   "Errada. O fósforo não está na água, no CO2, nos sulfatos nem nos nitratos; seu ciclo é sedimentar e restrito aos fosfatos.",
+   "Errada. O enxofre aparece nos sulfatos e em algumas moléculas orgânicas, mas não está na água, nos fosfatos nem nos nitratos.",
+   "Errada. O carbono é essencial à matéria orgânica, mas não faz parte da água, dos sulfatos, dos fosfatos nem dos nitratos. É a escolha de quem pensa em \"elemento da vida\" sem conferir as fórmulas.",
+   "Correta. O oxigênio está em H2O, CO2, SO4, PO4, NO3 e no O2: presente em todos os ciclos citados.",
+   "Errada. O nitrogênio não aparece na água, no CO2, nos sulfatos nem nos fosfatos."
+  ],
+  "dica": "Escreva as fórmulas: H2O, CO2, SO4, PO4, NO3. O elemento comum é o O."
+ },
+ "enem-2015-ppl-48": {
+  "resumo": "Por ressonância, oscilam os pêndulos com a mesma frequência natural de A. Como a frequência do pêndulo simples depende só do comprimento (não da massa), oscilam os de comprimento L: o 1 e o 5.",
+  "detalhada": "**Conceito: ressonância e período do pêndulo simples.** Um sistema entra em ressonância quando recebe energia periódica na mesma frequência da sua frequência natural. O pêndulo A, oscilando, transmite pequenos impulsos aos outros pela estrutura que os sustenta; só os que têm a mesma frequência natural acumulam energia e passam a oscilar com amplitude visível.\n\n**Período do pêndulo simples (pequenas oscilações):** T = 2π · raiz(L / g). Ele depende do comprimento L e da gravidade g, mas **não depende da massa**.\n\n**Aplicando ao quadro:**\n- A: comprimento L (referência).\n- 1: comprimento L → mesma frequência. Oscila.\n- 2: comprimento 2L → período maior. Não entra em ressonância.\n- 3: comprimento L/2 → período menor. Não.\n- 4: comprimento L/2 → período menor. Não.\n- 5: comprimento L (massa 2M, mas massa não importa) → mesma frequência. Oscila.\n\n**Para questões parecidas:** no pêndulo simples, ignore a massa; olhe só o comprimento. Já no sistema massa-mola é o contrário: T = 2π · raiz(m / k) depende da massa.",
+  "alternativas": [
+   "Errada. Só entram em ressonância os pêndulos com a mesma frequência natural de A; os de comprimento 2L e L/2 têm frequências diferentes.",
+   "Errada. Os pêndulos 2 (2L) e 3 (L/2) têm comprimentos diferentes de L, logo frequências diferentes; e o 5, que tem comprimento L, ficou de fora.",
+   "Errada. O pêndulo 4 tem comprimento L/2, frequência diferente da de A. Essa escolha considera a massa ou proporções, que não definem o período.",
+   "Correta. Os pêndulos 1 e 5 têm comprimento L, igual ao de A; como o período não depende da massa, eles têm a mesma frequência natural e entram em ressonância.",
+   "Errada. Os pêndulos 3 e 4 têm comprimento L/2, logo oscilam naturalmente mais rápido que A e não ressoam com ele."
+  ],
+  "dica": "Pêndulo simples: T = 2π raiz(L/g), a massa não importa; ressoa quem tem o mesmo comprimento."
+ },
+ "enem-2015-ppl-54": {
+  "resumo": "A propagação por estacas é reprodução assexuada: as novas plantas são geneticamente idênticas à planta-mãe, como na clonagem.",
+  "detalhada": "**Conceito: reprodução assexuada e clones.** Na reprodução vegetativa, um pedaço da planta (caule, ramo, folha) origina um indivíduo completo por mitose. Não há fusão de gametas nem recombinação genética, então o descendente tem o mesmo DNA da planta original: é um **clone**.\n\n**Raciocínio:** a estaquia é usada comercialmente justamente para manter as características de uma planta de interesse (por exemplo, uma variedade de cana, mandioca ou roseira). A base genética é a mesma da clonagem: cópia fiel do genótipo.\n\n**Diferencie bem:**\n- Transgenia: inserção de gene de outra espécie.\n- Hibridização: cruzamento de linhagens ou espécies diferentes.\n- Melhoramento genético: seleção e cruzamentos ao longo de gerações.\n- Controle biológico: uso de um ser vivo para controlar pragas (não é técnica de reprodução).",
+  "alternativas": [
+   "Errada. Transgenia envolve a introdução de um gene de outra espécie no genoma; na estaquia não há alteração do DNA.",
+   "Correta. A estaquia produz indivíduos geneticamente idênticos à planta-mãe, assim como a clonagem.",
+   "Errada. Hibridização é o cruzamento entre indivíduos geneticamente diferentes, com reprodução sexuada e mistura de genes.",
+   "Errada. Controle biológico é o uso de inimigos naturais contra pragas; não tem relação com a base genética da reprodução.",
+   "Errada. Melhoramento genético usa seleção e cruzamentos para gerar variedades novas; a estaquia apenas copia uma planta já existente."
+  ],
+  "dica": "Reprodução vegetativa (estaca, muda, broto) = assexuada = clones."
+ },
+ "enem-2015-ppl-55": {
+  "resumo": "O procedimento separa os plásticos pelo fato de afundarem ou flutuarem em líquidos de densidades diferentes (água, álcool, salmoura): a propriedade usada é a densidade.",
+  "detalhada": "**Conceito: separação por densidade (flotação/decantação).** Um sólido flutua num líquido se for menos denso que ele e afunda se for mais denso. Usando líquidos de densidades diferentes, é possível separar materiais em faixas de densidade.\n\n**Raciocínio passo a passo:**\n- Na água (densidade cerca de 1 g/cm³), os plásticos menos densos que 1 flutuam e os mais densos afundam.\n- Os que flutuaram vão para uma solução de álcool, que é menos densa que a água: alguns continuam flutuando, outros afundam, separando um novo grupo.\n- Os que afundaram vão para uma solução salina, mais densa que a água: alguns passam a flutuar, outros continuam no fundo.\n\nEm todas as etapas, o critério é sempre comparar a densidade do plástico com a do líquido.\n\n**Pegadinha:** massa e volume isolados não decidem se algo flutua; um navio de aço muito pesado flutua. O que importa é a razão d = m / V comparada com a do líquido.",
+  "alternativas": [
+   "Errada. A massa sozinha não determina se o pedaço flutua ou afunda; pedaços leves de um plástico denso afundam e pedaços pesados de um plástico pouco denso flutuam.",
+   "Errada. O volume sozinho também não decide; os plásticos foram picados, e pedaços de tamanhos diferentes do mesmo material se comportam igual.",
+   "Correta. Flutuar ou afundar em água, álcool e salmoura depende da densidade do plástico em relação à de cada líquido.",
+   "Errada. Porosidade não é o critério do procedimento; a separação é feita pelo comportamento de flutuação em líquidos de densidades diferentes.",
+   "Errada. Maleabilidade é a capacidade de ser deformado em lâminas, propriedade típica de metais, e não interfere em flutuar ou afundar."
+  ],
+  "dica": "Flutua ou afunda em líquidos diferentes? A propriedade é densidade (d = m / V), não massa nem volume."
+ },
+ "enem-2015-ppl-62": {
+  "resumo": "A transcriptase reversa sintetiza (polimeriza) DNA usando o RNA do vírus como molde; inibi-la impede que o HIV converta seu genoma em DNA e se integre à célula.",
+  "detalhada": "**Conceito: retrovírus e transcriptase reversa.** O HIV é um retrovírus: seu material genético é RNA. Ao infectar um linfócito T, ele precisa transformar esse RNA em DNA para que o material viral seja integrado ao DNA da célula (pela enzima integrase) e, a partir daí, produzir novos vírus.\n\n**O papel da enzima:** a transcriptase reversa faz o caminho \"ao contrário\" do dogma central (RNA → DNA). Ela lê o RNA viral e monta, nucleotídeo por nucleotídeo, uma fita de DNA complementar, ou seja, **polimeriza DNA usando RNA como molde**.\n\n**Por que o gel ajuda:** sem essa enzima funcionando, o vírus não consegue gerar o DNA viral, não se integra ao genoma da célula e o ciclo de infecção é interrompido. Vários antirretrovirais (como o AZT e o tenofovir) agem exatamente aí.\n\n**Para questões parecidas:** lembre-se das enzimas do HIV: transcriptase reversa (RNA → DNA), integrase (insere o DNA viral no da célula) e protease (corta proteínas virais para montar novos vírus).",
+  "alternativas": [
+   "Errada. A transcriptase reversa não corta DNA da célula nem produz molde para RNA; ela faz o contrário, usa o RNA como molde para fabricar DNA.",
+   "Errada. O DNA viral não sai para infectar outras células; ele é integrado ao genoma da célula hospedeira. Quem infecta células sadias são as novas partículas virais, com RNA.",
+   "Correta. A enzima polimeriza DNA a partir do molde de RNA viral; inibi-la bloqueia a replicação do HIV.",
+   "Errada. A entrada do vírus no linfócito depende de proteínas do envelope viral (como a gp120) ligando-se ao receptor CD4, não da transcriptase reversa.",
+   "Errada. A enzima não sintetiza os nucleotídeos; ela os usa (vindos da célula) para montar a fita de DNA. Confundir polimerizar com fabricar os monômeros leva a esse erro."
+  ],
+  "dica": "Transcriptase reversa = RNA vira DNA (o \"contrário\" da transcrição)."
+ },
+ "enem-2015-ppl-66": {
+  "resumo": "A enzima digeriu só a carne (proteína) em pH próximo de 2 e a 37 graus: é a pepsina, produzida no estômago.",
+  "detalhada": "**Conceito: enzimas digestivas e seu pH ótimo.** Cada enzima age sobre um tipo de substrato e funciona melhor numa faixa de pH.\n\n**Analisando o experimento:**\n- Tubo 1 (carne): proteína → foi digerida.\n- Tubo 2 (macarrão): amido (carboidrato) → não foi digerido.\n- Tubo 3 (banha): lipídio → não foi digerido.\n- Meio com HCl, pH perto de 2: ambiente muito ácido, como o do suco gástrico.\n\nUma enzima que digere proteína e trabalha em pH ácido é a **pepsina**, liberada pelas glândulas do **estômago** (na forma de pepsinogênio, ativado pelo HCl).\n\n**Por que não os outros órgãos:** as enzimas do pâncreas e do intestino delgado (tripsina, amilase pancreática, lipase) trabalham em pH levemente básico, por causa do bicarbonato. Fígado e vesícula biliar produzem e armazenam bile, que emulsiona gorduras e não contém enzimas digestivas.",
+  "alternativas": [
+   "Errada. O fígado produz a bile, que emulsiona gorduras mas não é enzima; além disso, o resultado mostraria efeito sobre a banha, não sobre a carne.",
+   "Errada. O pâncreas produz enzimas para proteínas, amido e lipídios, mas elas agem em pH básico (cerca de 8), não em pH 2.",
+   "Correta. A pepsina do estômago digere proteínas e tem pH ótimo ácido, por volta de 2, como no experimento.",
+   "Errada. A vesícula biliar apenas armazena a bile; não produz enzimas digestivas.",
+   "Errada. As enzimas do intestino delgado atuam em meio levemente básico; em pH 2 elas ficariam inativas."
+  ],
+  "dica": "Proteína + pH ácido (cerca de 2) = pepsina = estômago."
+ },
+ "enem-2015-ppl-71": {
+  "resumo": "A mulher é portadora (Aa) e o homem, normal mas filho de afetado (aa), também é obrigatoriamente Aa. Aa x Aa dá 1/4 de aa: 25%, independentemente dos três filhos anteriores.",
+  "detalhada": "**Conceito: herança autossômica recessiva.** O afetado é aa; normais podem ser AA ou Aa (portadores).\n\n**Passo a passo:**\n- Mulher: o enunciado diz que é portadora da mutação → **Aa**.\n- Homem: é normal (tem pelo menos um A), mas o pai dele era afetado (aa) e só pode ter passado o alelo a. Logo o homem é **Aa**.\n- Cruzamento Aa x Aa: AA (1/4), Aa (2/4), aa (1/4).\n- Probabilidade de a criança ter fenilcetonúria (aa): 1/2 · 1/2 = 1/4 = **25%**.\n\n**E os três filhos normais?** Cada gestação é um evento independente; os resultados anteriores não mudam a probabilidade do próximo. Como os genótipos dos pais já são conhecidos com certeza, a resposta continua 25%.\n\n**Para questões parecidas:** quando um dos pais normais tem um genitor afetado por doença recessiva, ele é com certeza heterozigoto. Não caia na \"lei das compensações\": filhos anteriores não alteram a chance do próximo.",
+  "alternativas": [
+   "Errada. Haveria 0% só se um dos pais fosse AA; mas ambos são Aa, então há chance de nascer aa.",
+   "Errada. 12,5% (1/8) aparece quando se multiplica, sem necessidade, por mais um fator 1/2, como se o sexo da criança importasse ou se o pai tivesse só 1/2 de chance de ser portador.",
+   "Correta. Mulher Aa x homem Aa (filho de pai aa) → 1/4 de aa = 25%; filhos anteriores não alteram essa probabilidade.",
+   "Errada. 50% seria o resultado de um cruzamento Aa x aa; o homem é normal, então não é aa.",
+   "Errada. 75% é a probabilidade de a criança ser normal (AA ou Aa), não de ser afetada."
+  ],
+  "dica": "Normal com pai afetado por doença recessiva é Aa com certeza; Aa x Aa = 25% de aa."
+ },
+ "enem-2015-ppl-73": {
+  "resumo": "O pH sobe de 5,5 para 7,5 no trecho logo depois da segunda indústria; foi ela que lançou um efluente básico, elevando o pH da água.",
+  "detalhada": "**Conceito: escala de pH.** A 25 graus Celsius, pH < 7 é ácido, pH = 7 é neutro e pH > 7 é básico. Um efluente básico lançado no rio tende a **aumentar** o pH da água a jusante (rio abaixo).\n\n**Lendo o quadro na ordem do rio:**\n- Antes da 1ª: 5,5.\n- Entre 1ª e 2ª: 5,5 → a primeira não mudou o pH (efluente sem efeito ácido/básico perceptível).\n- Entre 2ª e 3ª: 7,5 → o pH **subiu** depois da segunda indústria: efluente básico.\n- Entre 3ª e 4ª: 7,0 → caiu: a terceira lançou efluente ácido (ou que neutraliza).\n- Entre 4ª e 5ª: 7,0 → a quarta não alterou.\n- Após a 5ª: 6,5 → caiu: a quinta lançou efluente ácido.\n\n**Para questões parecidas:** compare o pH antes e depois de cada fonte. Aumento de pH indica descarga básica; diminuição indica descarga ácida. Não basta olhar o valor absoluto do ponto; importa a variação.",
+  "alternativas": [
+   "Errada. O pH antes e depois da primeira indústria é o mesmo (5,5); ela não alterou a acidez do rio.",
+   "Correta. Depois da segunda indústria o pH sobe de 5,5 para 7,5: o efluente dela é básico.",
+   "Errada. Depois da terceira indústria o pH cai de 7,5 para 7,0; isso indica efluente ácido. Quem escolhe esta alternativa olha o valor 7,5 sem perceber que ele já estava antes da terceira.",
+   "Errada. Antes e depois da quarta o pH é 7,0; ela não alterou o pH.",
+   "Errada. Após a quinta o pH cai de 7,0 para 6,5: efluente ácido, não básico."
+  ],
+  "dica": "Olhe a variação: pH que sobe depois da indústria = efluente básico."
+ },
+ "enem-2015-ppl-80": {
+  "resumo": "Folhas por poucos meses, limbo reduzido, estômatos de resposta rápida e caule suculento são adaptações para economizar e armazenar água: o fator é a escassez de água, típica da Caatinga.",
+  "detalhada": "**Conceito: adaptações de plantas xerófitas.** Plantas de ambientes secos desenvolvem estratégias para perder menos água e armazenar a pouca que conseguem.\n\n**Interpretando cada característica:**\n- **Folhas só 3 a 4 meses por ano** (caducifolia): a planta perde as folhas na estação seca para reduzir a transpiração.\n- **Limbo reduzido**: menos superfície foliar exposta, menos perda de água.\n- **Abertura e fechamento rápido dos estômatos**: a planta controla com precisão a troca gasosa, fechando os estômatos para evitar transpiração.\n- **Caule suculento**: armazena água (como nos cactos, mandacaru e xique-xique).\n\nTodas apontam para o mesmo fator ambiental: **falta de água**. É o retrato da vegetação da **Caatinga**, com chuvas escassas e irregulares.\n\n**Para questões parecidas:** quando várias adaptações têm em comum \"reduzir perda de água\" ou \"armazenar água\", o fator é a escassez hídrica. Cuidado com a insolação: ela agrava a perda de água, mas não explica sozinha o caule suculento nem a queda das folhas.",
+  "alternativas": [
+   "Errada. Solo pobre em nutrientes (como no Cerrado) leva a outras adaptações, como raízes profundas e escleromorfismo; não explica caule suculento e queda sazonal das folhas.",
+   "Errada. Estratificação é a organização da vegetação em estratos (comum em florestas); não é um fator ambiental que gera adaptações contra a perda de água.",
+   "Errada. A insolação forte contribui para a perda de água, mas as características descritas respondem diretamente à falta de água, não à luz.",
+   "Errada. A acidez do solo influencia a absorção de nutrientes, mas não explica suculência, folhas reduzidas e controle rápido dos estômatos.",
+   "Correta. Todas as características descritas servem para economizar ou armazenar água, adaptações a um ambiente seco como a Caatinga."
+  ],
+  "dica": "Caule suculento + perda de folhas + controle de estômatos = adaptação à falta de água (Caatinga)."
+ },
+ "enem-2016-47": {
+  "resumo": "O campo magnético alternado faz as nanopartículas magnéticas girarem para se alinhar a ele a cada inversão; esse movimento, com atrito no meio celular, converte energia em calor.",
+  "detalhada": "**Conceito: ímãs em campo magnético e dissipação de energia.** Nanopartículas magnéticas se comportam como pequenos ímãs, que tendem a se alinhar ao campo magnético externo, como a agulha de uma bússola.\n\n**Raciocínio:**\n- O campo externo é **alternado**: seu sentido se inverte muitas vezes por segundo.\n- A cada inversão, as nanopartículas giram para se realinhar. O resultado é uma agitação rotacional contínua.\n- Ao girar dentro do meio viscoso da célula, as partículas sofrem atrito; a energia cedida pelo campo é dissipada como **calor**, que aquece e pode destruir as células tumorais.\n\n**Por que as outras não servem:** campo magnético não é \"calor\" que se transfira diretamente, e um campo alternado não acelera as partículas num único sentido; ele as faz oscilar e girar. Também não há uma interação magnética especial com células comuns do corpo, que não são magnéticas.\n\n**Para questões parecidas:** campo alternado → movimento oscilatório (giro de vai e vem); atrito → energia mecânica vira térmica.",
+  "alternativas": [
+   "Errada. O aquecimento não vem de um campo gerado pelas nanopartículas que seja \"absorvido\" pelo tumor; vem do movimento delas, dissipado por atrito.",
+   "Correta. O campo alternado faz as nanopartículas girarem repetidamente para se alinhar a ele; o atrito com o meio transforma essa energia em calor.",
+   "Errada. As células do corpo não são magnéticas; não há interação magnética entre elas e as partículas que explique o aquecimento.",
+   "Errada. Campo magnético não \"fornece calor\" diretamente; ele exerce torque nas partículas, e o calor surge do atrito do movimento delas.",
+   "Errada. Um campo alternado inverte o sentido constantemente; ele não acelera as partículas num único sentido para colidirem com as células."
+  ],
+  "dica": "Campo alternado faz o ímã girar de um lado para o outro; giro com atrito vira calor."
+ },
+ "enem-2016-49": {
+  "resumo": "A síntese proteica, com o mesmo código genético e ribossomos, ocorre em todos os seres vivos, de bactérias a humanos, o que apoia a hipótese de uma origem comum.",
+  "detalhada": "**Conceito: evidências moleculares da origem comum da vida.** Para indicar ancestralidade comum de **todos** os seres vivos, o processo precisa ser **universal**, presente em bactérias, arqueas, protistas, fungos, plantas e animais.\n\n**Por que a síntese proteica:** todos os organismos celulares usam DNA como material genético, transcrevem para RNA e traduzem em proteínas nos ribossomos, usando praticamente o **mesmo código genético** (as mesmas trincas de bases codificam os mesmos aminoácidos). É improvável que um sistema tão específico tenha surgido várias vezes de forma independente; ele foi herdado de um ancestral comum.\n\n**Por que as outras não são universais:**\n- Desenvolvimento embrionário: só em organismos multicelulares com embrião.\n- Reprodução sexuada: muitos seres se reproduzem apenas assexuadamente (bactérias, por exemplo).\n- Respiração aeróbica: há organismos anaeróbicos (fermentadores, muitas bactérias e arqueas).\n- Excreção urinária: só em animais com sistema excretor.\n\n**Para questões parecidas:** procure o processo que vale \"para todos, sem exceção\": código genético, síntese de proteínas, membrana plasmática, uso de ATP.",
+  "alternativas": [
+   "Errada. Desenvolvimento embrionário só ocorre em plantas e animais multicelulares; seres unicelulares como bactérias não têm embrião.",
+   "Errada. Muitos organismos se reproduzem apenas de forma assexuada, como as bactérias; a reprodução sexuada não é universal.",
+   "Errada. Existem seres anaeróbicos que não usam oxigênio, então a respiração aeróbica não é comum a todos.",
+   "Errada. Excreção urinária é exclusiva de animais com sistema excretor; plantas e microrganismos não produzem urina.",
+   "Correta. Todos os seres vivos fazem síntese proteica com ribossomos e praticamente o mesmo código genético, evidência de uma origem comum."
+  ],
+  "dica": "Origem comum de todos: procure o que é universal, como o código genético e a síntese de proteínas."
+ },
+ "enem-2016-55": {
+  "resumo": "As duas bandejas estão à mesma temperatura (ambiente), mas o alumínio é melhor condutor térmico: entrega calor ao gelo mais depressa, então o gelo derrete mais rápido nele.",
+  "detalhada": "**Conceito: temperatura x condutividade térmica.** Depois de horas sobre a mesa, as duas bandejas estão em equilíbrio térmico com o ambiente, ou seja, **na mesma temperatura**. A sensação de que o alumínio \"está mais frio\" é enganosa: o tato percebe a rapidez com que o calor sai da mão, não a temperatura do objeto.\n\n**Raciocínio:**\n- O alumínio tem condutividade térmica muito maior que a do plástico.\n- Ao tocar o alumínio, ele retira calor da mão rapidamente; por isso parece mais frio.\n- Pelo mesmo motivo, ao receber o gelo, o alumínio conduz calor do ambiente e da própria bandeja até o gelo muito mais depressa.\n- Taxa de fluxo de calor maior → derretimento mais rápido na bandeja de alumínio.\n\n**Lei de Fourier:** o fluxo de calor por condução é proporcional à condutividade (k), à área e à diferença de temperatura, e inversamente proporcional à espessura. Com o mesmo ΔT, quem tem k maior conduz mais calor por segundo.\n\n**Pegadinha:** não confunda condutividade térmica (rapidez de transmissão) com calor específico ou capacidade térmica (quanto calor é preciso para variar a temperatura).",
+  "alternativas": [
+   "Correta. Com as bandejas à mesma temperatura, o alumínio, por ter condutividade térmica maior, transfere calor ao gelo mais rapidamente.",
+   "Errada. As duas bandejas estão à mesma temperatura (equilíbrio com o ambiente); a impressão de que o plástico está mais quente vem do tato, que avalia a condutividade, não a temperatura.",
+   "Errada. A rapidez do derretimento depende da condutividade, não da capacidade térmica; e o plástico é que conduz mal o calor ao gelo.",
+   "Errada. A conclusão (alumínio) está certa, mas o motivo não: o calor específico diz quanto calor o material precisa para mudar de temperatura, não com que rapidez conduz calor.",
+   "Errada. Mesmo com a mesma temperatura inicial, a taxa de transferência de calor é diferente porque as condutividades são diferentes."
+  ],
+  "dica": "Metal \"parece\" mais frio por conduzir melhor o calor, não por estar mais frio; e é por isso que derrete o gelo mais rápido."
+ },
+ "enem-2016-69": {
+  "resumo": "O benzeno é apolar e o carvão ativado também; entre moléculas apolares a interação intermolecular é do tipo dipolo induzido – dipolo induzido (forças de London).",
+  "detalhada": "**Conceito: forças intermoleculares e polaridade.** O tipo de interação entre duas espécies depende de suas polaridades:\n- Polar com polar: dipolo permanente – dipolo permanente.\n- H ligado a F, O ou N interagindo com F, O ou N: ligação de hidrogênio.\n- Apolar com apolar: dipolo induzido – dipolo induzido (forças de London ou de dispersão).\n\n**Raciocínio:**\n- O benzeno (C6H6) é um hidrocarboneto aromático simétrico: molécula **apolar**, sem dipolo permanente e sem H ligado a F, O ou N.\n- A superfície do carvão ativado é formada essencialmente por carbono, também **apolar**.\n- A adsorção é física, por forças intermoleculares (o enunciado diz isso); logo, entre duas espécies apolares, só restam as interações **dipolo induzido – dipolo induzido**.\n\n**Pegadinha:** ligações covalentes e dissulfeto são ligações químicas (intramoleculares, com compartilhamento de elétrons), não interações intermoleculares. O enunciado já descarta essas opções ao dizer que a adsorção ocorre por interações intermoleculares.",
+  "alternativas": [
+   "Errada. Ligações dissulfeto (S–S) são ligações covalentes entre átomos de enxofre, típicas de proteínas; não há enxofre no benzeno nem é interação intermolecular.",
+   "Errada. Ligação covalente é intramolecular (forte); o enunciado diz que a adsorção ocorre por interações intermoleculares.",
+   "Errada. Ligação de hidrogênio exige H ligado a F, O ou N; no benzeno o H está ligado a carbono.",
+   "Correta. Benzeno e superfície de carbono são apolares; a interação entre eles é dipolo induzido – dipolo induzido (London).",
+   "Errada. Dipolo permanente exige moléculas polares; o benzeno é apolar por sua simetria."
+  ],
+  "dica": "Apolar com apolar = dipolo induzido – dipolo induzido (London)."
+ },
+ "enem-2016-73": {
+  "resumo": "Mosquitos hematófagos se alimentam de sangue e precisam que ele não coagule durante a picada; por isso sua saliva tem substâncias anticoagulantes, úteis para pesquisa de fármacos.",
+  "detalhada": "**Conceito: adaptações ligadas ao hábito alimentar.** Animais que se alimentam de sangue (hematófagos) desenvolveram, ao longo da evolução, substâncias que impedem a coagulação no local da picada. Sem isso, o sangue coagularia rapidamente e bloquearia a alimentação.\n\n**Raciocínio:** o enunciado pede animais cujas toxinas tenham ação anticoagulante. O hábito alimentar que exige exatamente essa propriedade é a **hematofagia**. Mosquitos, carrapatos, sanguessugas e morcegos-vampiros produzem anticoagulantes na saliva; a hirudina da sanguessuga, por exemplo, já é usada na medicina.\n\n**Analisando os outros hábitos:**\n- Fitófagos comem plantas.\n- Saprófagos comem matéria orgânica em decomposição.\n- Carnívoros comem carne, mas não precisam manter sangue fluindo.\n- Frugívoros comem frutos.\n\nNenhum deles precisa evitar a coagulação do sangue de uma presa viva.\n\n**Para questões parecidas:** ligue a substância procurada à necessidade biológica do animal: quem suga sangue precisa de anticoagulante.",
+  "alternativas": [
+   "Errada. Moluscos fitófagos se alimentam de plantas; não há pressão evolutiva para produzir anticoagulantes.",
+   "Errada. Moscas saprófagas comem matéria em decomposição; não precisam manter sangue líquido.",
+   "Errada. Pássaros carnívoros comem carne já abatida; não dependem de sangue fluindo de um animal vivo.",
+   "Errada. Morcegos frugívoros comem frutos. O distrator explora a lembrança do morcego-vampiro, que é hematófago, não frugívoro.",
+   "Correta. Mosquitos hematófagos sugam sangue e têm na saliva substâncias anticoagulantes, adaptação ao seu hábito alimentar."
+  ],
+  "dica": "Quem se alimenta de sangue (hematófago) precisa de anticoagulante."
+ },
+ "enem-2016-74": {
+  "resumo": "Em engrenagens acopladas, f · N (frequência vezes número de dentes) se conserva; de A para B: 18 · 24 / 72 = 6 rpm; C gira junto com B (6 rpm); de C para D: 6 · 36 / 108 = 2 rpm.",
+  "detalhada": "**Conceito: transmissão de movimento circular.**\n- **Engrenagens acopladas pelos dentes (ou correia)**: as velocidades lineares nas bordas são iguais. Como o raio é proporcional ao número de dentes, vale f1 · N1 = f2 · N2.\n- **Engrenagens no mesmo eixo**: giram juntas, com a mesma frequência (mesma velocidade angular).\n\n**Passo a passo:**\n- A (24 dentes) gira a 18 rpm, presa ao motor.\n- A → B (acopladas): 18 · 24 = fB · 72 → fB = 432 / 72 = 6 rpm.\n- B e C estão no mesmo eixo: fC = 6 rpm.\n- C → D (acopladas): 6 · 36 = fD · 108 → fD = 216 / 108 = 2 rpm.\n- O ponteiro está no eixo de D: **2 rpm**.\n\n**Atalho:** cada redução multiplica por (dentes da motora / dentes da movida): 18 · (24/72) · (36/108) = 18 · (1/3) · (1/3) = 2 rpm.\n\n**Para questões parecidas:** engrenagem maior acoplada a uma menor gira mais devagar. Acoplamento pela borda: mesma velocidade linear; mesmo eixo: mesma frequência.",
+  "alternativas": [
+   "Errada. 1 rpm é metade do valor correto; aparece quando se aplica uma redução a mais ou se erra uma das divisões (por exemplo, 1/6 em vez de 1/3 numa etapa).",
+   "Correta. fB = 18 · 24 / 72 = 6 rpm; fC = 6 rpm (mesmo eixo); fD = 6 · 36 / 108 = 2 rpm.",
+   "Errada. 4 rpm vem de acoplar A diretamente a D (18 · 24 / 108 = 4), ignorando o par intermediário B e C.",
+   "Errada. 81 rpm vem de inverter uma das razões (multiplicar pela engrenagem maior sobre a menor), como se o ponteiro girasse mais rápido que o motor.",
+   "Errada. 162 rpm vem de inverter as razões (18 · 3 · 3 = 162): engrenagem maior movida pela menor gira mais devagar, não mais rápido."
+  ],
+  "dica": "Engrenagens acopladas: f · N = constante; no mesmo eixo, mesma frequência."
+ },
+ "enem-2016-76": {
+  "resumo": "O fitoplâncton é o produtor da cadeia: pela fotossíntese, transforma CO2 (carbono inorgânico) em glicose e outras moléculas orgânicas.",
+  "detalhada": "**Conceito: o carbono na cadeia alimentar.** O carbono entra na matéria viva quase sempre pela **fotossíntese** (ou, mais raramente, pela quimiossíntese). Nesse processo, o CO2 do ambiente (forma inorgânica) é incorporado em moléculas orgânicas como a glicose: 6 CO2 + 6 H2O → C6H12O6 + 6 O2, usando luz.\n\n**Raciocínio:** na cadeia citada, apenas o **fitoplâncton** (algas microscópicas e cianobactérias) é fotossintetizante, ou seja, produtor. Zooplâncton, moluscos, crustáceos e peixes são consumidores: obtêm carbono já na forma orgânica, comendo outros organismos.\n\nO caminho inverso (orgânico → inorgânico) ocorre na respiração celular e na decomposição, em todos os níveis da cadeia.\n\n**Para questões parecidas:** \"carbono inorgânico vira orgânico\" = fotossíntese = produtores. \"Orgânico vira inorgânico\" = respiração e decomposição.",
+  "alternativas": [
+   "Correta. O fitoplâncton é o produtor fotossintetizante: fixa o CO2 e o transforma em matéria orgânica.",
+   "Errada. O zooplâncton é consumidor primário: já recebe o carbono na forma orgânica ao comer o fitoplâncton.",
+   "Errada. Moluscos são consumidores; obtêm carbono orgânico da alimentação e não fazem fotossíntese.",
+   "Errada. Crustáceos são consumidores e também não fixam carbono inorgânico.",
+   "Errada. Peixes são consumidores; devolvem carbono à forma inorgânica pela respiração, mas não fazem a passagem inorgânico → orgânico."
+  ],
+  "dica": "Inorgânico para orgânico é fotossíntese: procure o produtor da cadeia."
+ },
+ "enem-2016-78": {
+  "resumo": "O ciclo de Krebs ocorre na matriz da mitocôndria; para bloqueá-lo, a proteína precisa de um peptídeo sinal que a direcione para essa organela.",
+  "detalhada": "**Conceito: endereçamento de proteínas e localização da respiração celular.** Proteínas produzidas no citoplasma levam \"etiquetas\" (peptídeos sinais) que indicam para onde devem ir. Uma proteína só age sobre um processo se chegar ao compartimento onde ele acontece.\n\n**Etapas da respiração celular aeróbica:**\n- Glicólise: no citosol.\n- Ciclo de Krebs: na **matriz mitocondrial**.\n- Cadeia respiratória (fosforilação oxidativa): nas cristas da membrana interna da mitocôndria.\n\n**Raciocínio:** o pesquisador quer bloquear o ciclo de Krebs para cortar a produção de energia da célula cancerosa. Como esse ciclo ocorre dentro da mitocôndria, a proteína bloqueadora precisa de um peptídeo sinal de endereçamento **mitocondrial**. Sem ele, ficaria no citoplasma ou iria para outra organela e não teria efeito.\n\n**Para questões parecidas:** memorize onde ocorre cada processo: glicólise no citosol; Krebs e cadeia respiratória na mitocôndria; fotossíntese no cloroplasto; síntese de proteínas nos ribossomos; modificação e empacotamento no complexo golgiense.",
+  "alternativas": [
+   "Errada. O núcleo guarda o DNA e é sede da transcrição; o ciclo de Krebs não ocorre lá.",
+   "Correta. O ciclo de Krebs ocorre na matriz mitocondrial, então a proteína precisa ser endereçada à mitocôndria.",
+   "Errada. O peroxissomo faz a oxidação de ácidos graxos de cadeia longa e degrada peróxido de hidrogênio, mas não abriga o ciclo de Krebs.",
+   "Errada. O complexo golgiense modifica, empacota e secreta substâncias; não participa do ciclo de Krebs.",
+   "Errada. O retículo endoplasmático sintetiza e transporta proteínas e lipídios; não é o local do ciclo de Krebs."
+  ],
+  "dica": "Ciclo de Krebs = matriz da mitocôndria."
+ },
+ "enem-2016-79": {
+  "resumo": "Com a mariposa se afastando, o eco volta mais fraco (maior distância), demora mais (caminho mais longo) e, pelo efeito Doppler de fonte que se afasta, com frequência percebida menor.",
+  "detalhada": "**Conceito: ecolocalização e efeito Doppler.** O morcego compara o pulso emitido com o eco recebido. Três características mudam conforme a posição e o movimento da presa.\n\n**Analisando cada uma, com a mariposa se afastando em MRU:**\n- **Intensidade**: a energia da onda se espalha e é parcialmente absorvida ao longo do caminho. Quanto mais longe a mariposa, mais fraco o eco → intensidade **diminuída**.\n- **Tempo de retorno**: o som vai e volta, percorrendo 2d. Como a distância d aumenta, t = 2d / v aumenta → tempo **aumentado**.\n- **Frequência percebida (efeito Doppler)**: quando a fonte (aqui, a mariposa refletindo o som) e o observador se afastam, as frentes de onda chegam mais espaçadas e a frequência percebida é **menor** que a emitida. Na aproximação, seria maior.\n\n**Resultado:** intensidade diminuída, tempo de retorno aumentado e frequência diminuída.\n\n**Para questões parecidas:** Doppler: aproximação → frequência maior (som mais agudo); afastamento → frequência menor (som mais grave), como a sirene de uma ambulância que passa.",
+  "alternativas": [
+   "Correta. Mais longe: eco mais fraco e mais demorado; afastamento: frequência percebida menor (Doppler).",
+   "Errada. Intensidade aumentada e tempo diminuído descreveriam uma presa se aproximando, o que contradiz a frequência diminuída da mesma alternativa.",
+   "Errada. Tempo diminuído e frequência aumentada correspondem a uma presa se aproximando, não se afastando.",
+   "Errada. A intensidade e o tempo estão certos, mas o efeito Doppler está invertido: no afastamento a frequência diminui.",
+   "Errada. Intensidade aumentada e frequência aumentada indicariam aproximação; só o tempo aumentado é compatível com o afastamento."
+  ],
+  "dica": "Afastamento: eco mais fraco, mais demorado e mais grave (frequência menor)."
+ },
+ "enem-2013-ppl-67": {
+  "resumo": "Letra B. Pelo critério do enunciado, quanto mais ligações duplas C=C, maior o índice de iodo e melhor o óleo; os mais insaturados são o linolênico (3 duplas) e o linoleico (2 duplas).",
+  "detalhada": "O **índice de iodo** mede quanto iodo (I2) uma amostra de gordura consegue absorver: é a massa de I2, em gramas, que reage com 100 g do óleo. O iodo reage por **adição** às ligações duplas entre carbonos (cada C=C recebe dois átomos de iodo). Por isso, quanto mais duplas C=C a molécula tem, mais iodo ela consome e maior é o índice.\n\nO enunciado dá a regra: maior insaturação significa maior índice de iodo e **melhor qualidade**. Basta então contar as duplas de cada ácido graxo:\n- palmítico (16 C): 0 duplas, saturado;\n- esteárico (18 C): 0 duplas, saturado;\n- oleico (18 C): 1 dupla, monoinsaturado;\n- linoleico (18 C): 2 duplas, poli-insaturado;\n- linolênico (18 C): 3 duplas, poli-insaturado.\n\nOs dois com mais insaturações são o **linolênico (3)** e o **linoleico (2)**.\n\nRepare que o tamanho da cadeia (16 ou 18 carbonos) não entra no critério: o que conta é o número de ligações duplas.\n\nPara questões parecidas: **saturado** = só ligações simples entre carbonos; **insaturado** = tem C=C. Reagentes que se adicionam à dupla (I2, Br2, H2) servem para medir ou eliminar insaturações; a hidrogenação, por exemplo, transforma óleo insaturado em gordura mais saturada (como na margarina).",
+  "alternativas": [
+   "Errada. O esteárico é saturado (nenhuma dupla) e o oleico tem só uma; quem escolhe essa dupla provavelmente olhou o tamanho da cadeia (18 C) e não o número de ligações duplas.",
+   "Correta. Linolênico (3 duplas C=C) e linoleico (2 duplas) são os mais insaturados, logo absorvem mais iodo e, pelo critério do enunciado, dão óleos de melhor qualidade.",
+   "Errada. Palmítico e esteárico são justamente os dois saturados (0 duplas): têm o menor índice de iodo, ou seja, seriam os de pior qualidade pelo critério dado.",
+   "Errada. O linolênico é o mais insaturado, mas o palmítico é saturado (0 duplas); a resposta exige os dois com mais duplas, e o segundo é o linoleico.",
+   "Errada. O linolênico está certo, mas o esteárico é saturado (0 duplas); confundir cadeia longa com cadeia insaturada leva a esse erro."
+  ],
+  "dica": "Índice de iodo alto = muitas ligações duplas C=C: conte as duplas e ignore o número de carbonos."
+ },
+ "enem-2013-ppl-70": {
+  "resumo": "Letra D. Ácido reagindo com carbonato (o CaCO3 do mármore) forma ácido carbônico, que se decompõe em água e dióxido de carbono (CO2), o gás das bolhas.",
+  "detalhada": "A efervescência é a liberação de gás em bolhas. O conceito cobrado é a reação de **ácido com carbonato**, um clássico.\n\nCom um ácido como o clorídrico (HCl), por exemplo:\n- CaCO3 + 2 HCl → CaCl2 + H2CO3\n- H2CO3 → H2O + CO2\n\nSomando: **CaCO3 + 2 HCl → CaCl2 + H2O + CO2**. Em forma iônica, para qualquer ácido forte: CaCO3 + 2 H+ → Ca2+ + H2O + CO2.\n\nO ácido carbônico (H2CO3) é instável e se decompõe logo em água e gás carbônico, que escapa em bolhas. É a mesma efervescência do vinagre com bicarbonato ou de um comprimido efervescente na água.\n\nConsequência prática: a solução ácida **corrói o mármore**, porque consome o carbonato de cálcio. Por isso pisos de mármore não devem ser limpos com produtos ácidos; é também o mecanismo do desgaste de estátuas e monumentos pela chuva ácida.\n\nPara questões parecidas: **ácido + carbonato (ou bicarbonato) → sal + água + CO2**. Já o gás hidrogênio aparece quando o ácido reage com **metais** reativos (zinco, ferro, magnésio), não com carbonatos.",
+  "alternativas": [
+   "Errada. O oxigênio do CaCO3 fica no CO2 e na água; nenhuma etapa da reação libera O2. Confundir \"gás que borbulha\" com oxigênio é o erro.",
+   "Errada. Ácido libera H2 ao reagir com metais reativos (como Zn ou Fe), não com carbonatos; o H+ do ácido aqui termina na molécula de água.",
+   "Errada. O cloreto do ácido clorídrico fica dissolvido como CaCl2; para formar Cl2 seria preciso um oxidante (é o que acontece ao misturar ácido com água sanitária), o que não ocorre aqui.",
+   "Correta. Ácido + carbonato forma H2CO3, que se decompõe em H2O e CO2; é esse gás que causa a efervescência.",
+   "Errada. O carbono do carbonato já está no mesmo estado de oxidação (+4) do CO2 e não é reduzido; monóxido de carbono vem de combustão incompleta, não de reação ácido-carbonato."
+  ],
+  "dica": "Ácido + carbonato = CO2 borbulhando; ácido + metal = H2."
+ },
+ "enem-2015-ppl-67": {
+  "resumo": "Letra D. Igualando a força gravitacional G·M·m/R² à resultante centrípeta m·4π²R/T², a massa do objeto cancela e sobra M = 4π²R³/(G·T²).",
+  "detalhada": "O enunciado já entrega a ideia: no movimento circular uniforme, a **força gravitacional faz o papel de resultante centrípeta**.\n\n**Passo 1, a velocidade da órbita.** Em uma volta completa o objeto percorre 2πR no tempo T: v = 2πR / T.\n\n**Passo 2, a resultante centrípeta.** Fc = m·v² / R = m·(2πR/T)² / R = m·4π²R / T².\n\n**Passo 3, a força gravitacional.** Fg = G·M·m / R², com M = massa do buraco negro e m = massa do objeto.\n\n**Passo 4, igualar.** G·M·m / R² = m·4π²R / T². A massa m do objeto cancela (por isso não é preciso conhecê-la). Isolando M:\n\nM = 4π²·R·R² / (G·T²) = **4π²R³ / (G·T²)**\n\nEssa é a **terceira lei de Kepler** escrita na forma de Newton: T² = (4π²/GM)·R³, isto é, T² é proporcional a R³.\n\n**Conferência por unidades:** G tem unidade m³/(kg·s²). Então R³/(G·T²) dá m³ / [m³/(kg·s²) · s²] = kg, que é massa. Fórmulas com R² ou R⁵ no numerador não dão kg e já podem ser descartadas.\n\nPara questões parecidas: satélite, planeta ou estrela em órbita circular → iguale G·M·m/R² a m·v²/R (ou m·ω²R). A massa que se descobre é sempre a do corpo **central**.",
+  "alternativas": [
+   "Errada. Com R² no numerador, a unidade não dá kg (dá kg/m); o erro é esquecer que a força centrípeta tem R no numerador (m·4π²R/T²): ao juntar esse R com o R² que vem da gravitação, o expoente fica 3.",
+   "Errada. A dependência R³/T² está certa, mas o coeficiente não: π²/2 é 1/8 do correto (4π²). Aparece quando se toma meia volta para a velocidade (v = πR/T) e ainda se divide por 2; o certo é v = 2πR/T, que dá (2π)² = 4π².",
+   "Errada. O coeficiente 2π² é a metade do correto; vem de elevar 2π ao quadrado de forma errada (2π² em vez de 4π²).",
+   "Correta. G·M·m/R² = m·4π²R/T² leva a M = 4π²R³/(G·T²), que é a terceira lei de Kepler; a unidade resulta em kg.",
+   "Errada. R⁵ surge de multiplicar R³ por R² em vez de usar a relação correta; além de não seguir da igualdade das forças, a unidade não dá kg."
+  ],
+  "dica": "Órbita circular: gravitação = centrípeta; a massa do satélite cancela e a do corpo central sai como 4π²R³/(GT²)."
+ },
+ "enem-2015-ppl-78": {
+  "resumo": "Letra D. A resistência do filamento é fixada pela fabricação (R = 220²/100 = 484 Ω); com 110 V a corrente cai pela metade e a potência P = V²/R cai para cerca de 1/4 (25 W), então a lâmpada brilha fraco.",
+  "detalhada": "O erro mais comum aqui é achar que a potência da lâmpada é fixa. **O que é característico da lâmpada incandescente é a resistência do filamento**, não a potência: a potência nominal (100 W) só vale na tensão nominal (220 V).\n\n**Passo 1, resistência do filamento.** P = V² / R → R = V² / P = 220² / 100 = 48 400 / 100 = 484 Ω.\n\n**Passo 2, ligada em 110 V.**\n- Corrente: i = V / R = 110 / 484 ≈ 0,23 A. Na tensão nominal seria 100 / 220 ≈ 0,45 A. A corrente **diminui** (cai à metade).\n- Potência: P = V² / R = 110² / 484 = 12 100 / 484 = **25 W**.\n\nComo P depende do **quadrado** da tensão, metade da tensão dá um quarto da potência: 100 W / 4 = 25 W. Isso é bem menos que a metade dos 100 W, e a lâmpada acende com brilho fraco.\n\n**Detalhe real:** o filamento de tungstênio fica mais frio em 110 V, e metal frio tem resistência menor que 484 Ω. Por isso a potência real fica um pouco acima de 25 W (na casa de 30 W), mas continua bem abaixo de 50 W. A conclusão da alternativa D não muda.\n\nPara questões parecidas:\n- aparelho resistivo (lâmpada incandescente, chuveiro, ferro): considere **R constante** e use P = V²/R;\n- tensão menor que a nominal: corrente e potência menores, aparelho funciona fraco;\n- tensão maior que a nominal (lâmpada de 110 V em 220 V): potência 4 vezes maior, e o filamento tende a queimar.",
+  "alternativas": [
+   "Errada. Supõe que a potência continua 100 W e que, por isso, a corrente dobra. Num resistor quem fica fixa é a resistência: com metade da tensão a corrente cai à metade (i = V/R) e a potência cai a 1/4.",
+   "Errada. A lâmpada incandescente não tem tensão mínima de funcionamento: qualquer tensão faz passar corrente e aquece o filamento. Com 110 V ela dissipa cerca de 25 W e acende, só que fraca.",
+   "Errada. Trata a potência como proporcional à tensão. Como P = V²/R, metade da tensão dá 1/4 da potência (25 W), e não metade (50 W).",
+   "Correta. Com R = 484 Ω, em 110 V a corrente cai para cerca de 0,23 A (metade de 0,45 A) e a potência para 25 W, menos da metade dos 100 W: a lâmpada brilha fracamente.",
+   "Errada. Inverte a relação: com a mesma resistência, tensão menor produz corrente menor (i = V/R), não maior. A lâmpada queimaria no caso oposto, ligada acima da tensão nominal."
+  ],
+  "dica": "Lâmpada incandescente fora da tensão nominal: mantenha R fixo e use P = V²/R; metade da tensão dá um quarto da potência."
+ },
+ "enem-2015-ppl-84": {
+  "resumo": "Letra C. O gelo flutuando desloca uma massa de água igual à sua própria massa, então o nível sobe ao colocá-lo; ao derreter, ele vira exatamente o volume de água que já deslocava, e o nível não muda.",
+  "detalhada": "Duas etapas, ambas explicadas pelo **princípio de Arquimedes**.\n\n**1) Ao colocar o gelo.** O bloquinho flutua, então o empuxo equilibra o peso: E = P. Como o empuxo é o peso da água deslocada, o gelo **desloca uma massa de água igual à sua própria massa**. Essa água deslocada vai para cima: o **nível sobe**.\n\n**2) Ao derreter.** Suponha um gelo de 100 g. Flutuando, ele desloca 100 g de água, ou seja, 100 cm³ (densidade da água = 1 g/cm³). Ao derreter, vira 100 g de água líquida, que ocupam os mesmos 100 cm³. A água do derretimento preenche exatamente o espaço que a parte submersa ocupava. Logo, **o nível não se altera**.\n\nA parte emersa não \"sobra\" para fazer o nível subir: ela existe porque o gelo é menos denso (cerca de 0,92 g/cm³), e ao derreter o volume total diminui justamente o suficiente para caber no espaço submerso.\n\n**Curiosidade, sem mudar a resposta:** no oceano o iceberg (água doce congelada) flutua em água salgada, mais densa (cerca de 1,03 g/cm³). Aí a água do derretimento ocupa um pouco mais que o volume submerso, e o nível sobe muito levemente. Na simulação do estudante, com gelo de água em água, o nível fica igual. O que eleva de forma importante o nível do mar é o derretimento do gelo que está **sobre os continentes**, como as geleiras da Groenlândia e da Antártida.\n\nPara questões parecidas: corpo flutuando → massa deslocada = massa do corpo. Gelo de água flutuando em água, ao derreter, não muda o nível.",
+  "alternativas": [
+   "Errada. Acerta a subida ao colocar o gelo, mas imagina que a parte emersa vai \"somar\" água ao derreter. A massa do gelo já estava toda compensada pela água deslocada, e a água do derretimento ocupa exatamente o volume submerso.",
+   "Errada. Acerta a subida inicial, mas esquece que a água do derretimento continua no recipiente: ela ocupa o mesmo volume que o gelo deslocava, então o nível não volta ao valor inicial.",
+   "Correta. Flutuando, o gelo desloca água de massa igual à sua e o nível sobe; ao derreter, vira exatamente esse volume de água, e o nível permanece o mesmo.",
+   "Errada. Todo corpo flutuando desloca água, então o nível sobe já na introdução. E o derretimento não aumenta o volume: gelo virando água líquida **diminui** de volume (cerca de 8%).",
+   "Errada. Confunde os cerca de 90% submersos do gelo com uma subida de 90% do nível do recipiente; a subida depende do volume do bloquinho em relação ao recipiente. Além disso, após o derretimento o nível não desce."
+  ],
+  "dica": "Gelo de água flutuando em água: o nível sobe ao colocá-lo e fica igual quando ele derrete."
+ },
+ "enem-2015-ppl-88": {
+  "resumo": "Letra C. Num tubo aberto nas duas pontas, o harmônico de ordem n tem λ = 2L/n; o primeiro, o segundo e o terceiro têm λ = 2L, L e 2L/3, e o próximo (n = 4) tem λ = 2L/4 = L/2.",
+  "detalhada": "A flauta é modelada como um **tubo aberto nas duas extremidades**. Em cada ponta aberta há um **ventre** de deslocamento do ar; entre dois ventres consecutivos a distância é meia onda (λ/2).\n\n**Lendo as figuras:**\n- 1º harmônico (A): um nó no meio. O tubo contém meia onda: L = λA/2 → λA = 2L.\n- 2º harmônico (B): dois nós. O tubo contém uma onda inteira: L = λB → λB = L.\n- 3º harmônico (C): três nós. O tubo contém uma onda e meia: L = 3λC/2 → λC = 2L/3.\n\nO padrão é: **L = n·λ/2 → λn = 2L/n**, com n = 1, 2, 3, 4... (no tubo aberto existem todos os harmônicos, pares e ímpares). O número de nós é igual a n.\n\n**Próximo harmônico (n = 4, quatro nós):** λ4 = 2L/4 = **L/2**.\n\nConferindo a sequência: 2L, L, 2L/3, L/2, 2L/5...\n\nPara questões parecidas:\n- tubo **aberto** nas duas pontas (e corda presa nas duas pontas): λ = 2L/n, todos os harmônicos;\n- tubo **fechado** em uma ponta: λ = 4L/n, só harmônicos ímpares (n = 1, 3, 5...);\n- a frequência sai de f = v/λ, então f é proporcional a n.",
+  "alternativas": [
+   "Errada. L/4 é o que se obtém usando λ = L/n (esquecendo que cada trecho entre ventres vale meia onda); pela relação correta λ = 2L/n, L/4 corresponderia ao 8º harmônico, não ao 4º.",
+   "Errada. L/5 não segue o padrão 2L, L, 2L/3...; pela relação λ = 2L/n ele seria o 10º harmônico. O 5º harmônico teria 2L/5, e o próximo depois do 3º é o 4º.",
+   "Correta. Para tubo aberto λ = 2L/n; o próximo harmônico é o 4º (quatro nós), com λ = 2L/4 = L/2.",
+   "Errada. L/8 corresponderia ao 16º harmônico (2L/16); aparece quando se divide L por 2·4 em vez de dividir 2L por 4.",
+   "Errada. 6L/8 = 3L/4 é maior que λC = 2L/3, mas os comprimentos de onda diminuem a cada harmônico; além disso 2L/n = 3L/4 daria n = 8/3, que não é inteiro."
+  ],
+  "dica": "Tubo aberto: λ = 2L/n e o número de nós é n; o 4º harmônico tem λ = L/2."
+ },
+ "enem-2016-58": {
+  "resumo": "Letra C. Pelas tabelas, o carrinho 1 vai a 15 cm/s antes do choque e o conjunto a 5 cm/s depois; pela conservação da quantidade de movimento, 150·15 = (150 + m2)·5, logo m2 = 300 g.",
+  "detalhada": "No trilho de ar o atrito é desprezível, então na colisão o sistema dos dois carrinhos é isolado na horizontal e a **quantidade de movimento (Q = m·v) se conserva**. O choque é **perfeitamente inelástico** (eles seguem juntos).\n\n**Passo 1, velocidade do carrinho 1 antes do choque** (trecho em que só ele se move, de 0 s a 1 s):\nv1 = Δs / Δt = (30 − 15) / (1 − 0) = **15 cm/s**.\n\n**Passo 2, velocidade do conjunto depois do choque** (de 8 s a 11 s, os dois têm as mesmas posições):\nv = (90 − 75) / (11 − 8) = 15 / 3 = **5 cm/s**.\n\nConferência: o carrinho 2 está parado em 45 cm; a 15 cm/s, o carrinho 1 sai de 15 cm e chega lá em t = 2 s. De 2 s a 8 s o conjunto anda 30 cm (de 45 a 75 cm) em 6 s, de novo 5 cm/s. Os dados são coerentes.\n\n**Passo 3, conservação da quantidade de movimento:**\nQ antes = Q depois\n150·15 + m2·0 = (150 + m2)·5\n2250 = 750 + 5·m2\n5·m2 = 1500 → **m2 = 300 g**.\n\nAtalho: a velocidade caiu para 1/3, então a massa total triplicou: 150 g → 450 g, e o carrinho 2 tem 450 − 150 = 300 g.\n\nObservação: a **energia cinética não se conserva** em choque inelástico; por isso a conta tem de ser feita com quantidade de movimento.\n\nPara questões parecidas: colisão com corpos que \"grudam\" → m1·v1 + m2·v2 = (m1 + m2)·v. Tire as velocidades das tabelas em trechos de movimento uniforme, antes e depois do choque.",
+  "alternativas": [
+   "Errada. 50 g sai da proporção invertida (150·5/15). Com 50 g, a massa total seria 200 g e a velocidade final seria 2250/200 = 11,25 cm/s, e não os 5 cm/s medidos.",
+   "Errada. Com 250 g, a massa total seria 400 g e a velocidade final seria 2250/400 ≈ 5,6 cm/s, diferente dos 5 cm/s da tabela (15 cm em 3 s); é erro de conta na conservação da quantidade de movimento.",
+   "Correta. 150·15 = (150 + m2)·5 dá m2 = 300 g: a velocidade caiu a 1/3, então a massa total triplicou para 450 g.",
+   "Errada. 450 g é a massa do conjunto (150 + m2), não a do carrinho 2; faltou subtrair a massa do carrinho 1.",
+   "Errada. 600 g vem de somar a massa do carrinho 1 em vez de subtrair (450 + 150). Com 600 g a massa total seria 750 g e a velocidade final, 3 cm/s, não 5 cm/s."
+  ],
+  "dica": "Choque em que os corpos seguem juntos: conserve m·v (não a energia cinética); se a velocidade cai a 1/3, a massa total triplica."
+ },
+ "enem-2016-65": {
+  "resumo": "Letra C. O vapor quente passa pelas folhas e carrega consigo os óleos essenciais voláteis (os aromas): é a extração por arraste a vapor.",
+  "detalhada": "As folhas de capim-cidreira e de eucalipto contêm **óleos essenciais**, misturas de substâncias voláteis responsáveis pelo cheiro (como o citral, no capim-cidreira, e o eucaliptol, no eucalipto). Ao passar pelas folhas, o **vapor de água** aquece o material, favorece a vaporização desses compostos e os **arrasta** junto com ele para o ambiente da sauna.\n\nEsse é o princípio da **extração por arraste a vapor**: o vapor retira do sólido os componentes voláteis e os leva consigo, em temperatura abaixo do ponto de ebulição desses óleos puros. Na indústria, o vapor com os óleos segue para um condensador e, depois de condensado, o óleo essencial (pouco solúvel em água) se separa da água. Na sauna não há essa etapa: o aroma simplesmente se espalha com o vapor.\n\nPor que não é destilação simples: na destilação simples aquece-se uma **mistura líquida** (por exemplo, um sólido dissolvido num líquido) para vaporizar um componente e **condensá-lo** em outro recipiente. Na sauna, não se ferve uma mistura nem se condensa nada para recolher: o vapor vem pronto de um gerador e atua como agente que retira o aroma de um sólido.\n\nPara questões parecidas: **extração** = retirar substâncias de um material usando um solvente ou um agente (água quente no café e no chá, vapor nos óleos essenciais). Associe \"vapor passando por folhas, flores, cascas\" a **arraste a vapor**.",
+  "alternativas": [
+   "Errada. Filtração separa um sólido não dissolvido de um líquido ou gás passando a mistura por um meio poroso; aqui nada é retido num filtro, o vapor leva substâncias das folhas.",
+   "Errada. Destilação simples aquece uma mistura líquida homogênea e condensa o componente vaporizado; na sauna não há mistura líquida sendo fervida nem condensação para recolher: o vapor apenas carrega os voláteis das folhas.",
+   "Correta. O vapor de água atravessa as folhas e arrasta os óleos essenciais voláteis, que perfumam o ambiente: é a extração por arraste a vapor.",
+   "Errada. Sublimação é a passagem direta de sólido para gás, sem fase líquida; os aromas das folhas não sublimam, são levados pelo vapor de água. \"Sublimação fracionada\" não descreve o que ocorre na sauna.",
+   "Errada. Decantação separa por diferença de densidade, deixando o sólido assentar no fundo de um líquido em repouso; nada disso ocorre na saída de vapor."
+  ],
+  "dica": "Vapor passando por folhas e levando o cheiro = extração por arraste a vapor, não destilação."
  }
 } });

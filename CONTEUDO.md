@@ -32,6 +32,14 @@ Matérias e objetivos válidos estão em `js/dados/base.js`. As regras de valida
 Questão de prova real importada pode ter `prova: { banca: 'FGV', ano: 2022, orgao: 'TJ-XX', cargo: '...' }`.
 As questões deste repositório são **inéditas**, escritas no estilo da banca, e não têm `prova`.
 
+Exceção: adaptação de obra com licença Creative Commons que permite traduzir e adaptar (ex.: problemas da IChO em
+`quimica-icho-2024.js`). Ela leva `prova: { banca: 'IChO', ano, orgao: '..., adaptada' }` e `credito`: o texto de
+atribuição exigido pela licença, mostrado junto do enunciado. O arquivo diz no cabeçalho a licença do conteúdo adaptado.
+
+Figuras (opcional): `figuras: [ { src: 'img/q/<id>-1.png', alt: 'o que a figura mostra' } ]`, com o arquivo em
+`www/img/q/`. Nas oficiais do INEP, as figuras ficam em `figuras-oficiais.js`, por id, recortadas do caderno impresso
+sem alteração.
+
 ## Aula
 
 ```js

@@ -106,9 +106,12 @@ module.exports = { itens, TERCEIROS, ASPAS, TITULO, LICENCA };
 if (require.main === module) (async () => {
   const dir = process.argv[2];
   if (!dir) { console.error('uso: node tools/enem.js <pasta-com-os-arquivos-do-inep>'); process.exit(1); }
-  const saida = [], motivos = {};
+  // O DOSVOX não traz a linha de fonte dos textos: a checagem de terceiros é refeita no caderno impresso (azul).
+  const { terceirosNoImpresso } = require('./caderno.js');
+  const saida = [], motivos = {}, excluidas = {};
   for (const p of PROVAS) {
     const gab = await lerGabarito(path.join(dir, p.gb));
+    const noImpresso = await terceirosNoImpresso(path.join(dir, 'reg_' + p.ano + '_PV_impresso_D' + p.dia + '_CD' + (p.dia === 1 ? 1 : 7) + '.pdf'), 5);
     const vistos = new Set();
     for (const arq of p.txt) {
       const texto = fs.readFileSync(path.join(dir, arq)).toString('latin1'); // os .txt do INEP vêm em Windows-1252
@@ -116,9 +119,10 @@ if (require.main === module) (async () => {
         if (vistos.has(q.n)) continue; // 1 a 5 aparecem em inglês e espanhol; vale a 1ª
         vistos.add(q.n);
         let motivo = materiaDe(q.n) ? motivoExclusao(q) : 'área sem matéria no app';
+        if (!motivo) motivo = noImpresso(q);
         if (!motivo && !(q.n in gab)) motivo = 'sem gabarito';
         if (!motivo && gab[q.n] === null) motivo = 'anulada';
-        if (motivo) { motivos[motivo] = (motivos[motivo] || 0) + 1; continue; }
+        if (motivo) { motivos[motivo] = (motivos[motivo] || 0) + 1; excluidas[`enem-${p.ano}-${q.n}`] = motivo; continue; }
         saida.push({
           id: `enem-${p.ano}-${q.n}`, materia: materiaDe(q.n), assunto: `ENEM ${p.ano}`, tipo: 'multipla', estilo: 'ENEM', dificuldade: 2,
           objetivos: ['enem', 'livre'],
@@ -129,6 +133,7 @@ if (require.main === module) (async () => {
       }
     }
   }
+  if (process.argv.includes('--excluidas')) fs.writeFileSync(process.argv[process.argv.indexOf('--excluidas') + 1], JSON.stringify(excluidas, null, 1));
   const cab = '/* Questões oficiais do ENEM 2023 a 2025. Fonte: INEP/MEC (download.inep.gov.br), texto oficial da versão ledor.\n' +
     '   Licença: Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0). Reproduzidas sem alteração e com crédito.\n' +
     '   Só itens sem material de terceiros. Gerado por tools/enem.js; não edite à mão. */\n';

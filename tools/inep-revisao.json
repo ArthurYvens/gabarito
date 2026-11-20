@@ -117,5 +117,8 @@
  "enem-2024-ppl-180": "Caractere solto no texto: \"distância percorrida pela P luz\".",
  "enem-2025-belem-126": "enunciado contraditório (dominância completa com fenótipo intermediário)",
  "enem-2026-131": "Material de terceiro: texto com título de artigo (Tipos de leite, substâncias estranhas e obtenção de plástico), sinal de reprodução de publicação externa.",
- "enem-2026-99": "Material de terceiro: texto com título de artigo (Etanol: crise e oportunidades), sinal de reprodução de publicação externa."
+ "enem-2026-99": "Material de terceiro: texto com título de artigo (Etanol: crise e oportunidades), sinal de reprodução de publicação externa.",
+ "enem-2011-62": "Texto corrompido na extração: palavra a mais (\"precisa ser o ligado\") e índices soltos (\"R e A R\" no lugar de RA e RB).",
+ "enem-2011-83": "Rodapé do caderno (\"CN - 1º dia | Caderno 3 - BRANCO - Página 27\") no meio do enunciado.",
+ "enem-2016-67": "Texto corrompido na extração: índices das correntes sumiram (\"I , I , I\") e as alternativas ficaram deslocadas."
 }

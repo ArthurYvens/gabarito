@@ -3,78 +3,6 @@
    Só itens sem material de terceiros. Gerado por tools/enem.js; não edite à mão. */
 Banco.registrar({ questoes: [
  {
-  "id": "enem-2025-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 91"
-  },
-  "enunciado": "O monstro de gila, um lagarto encontrado em um deserto dos Estados Unidos, apresenta adaptações à falta de alimento nesse ambiente. Esse lagarto possui um hormônio que controla os níveis de açúcar em seu próprio sangue. Foi observado que esse hormônio também controla os níveis de açúcar no sangue de pessoas diabéticas.\n\nConsiderando que animais de um mesmo grupo taxonômico podem apresentar características adaptativas semelhantes em ambientes similares, onde seria mais provável encontrar lagartos com essas características no território brasileiro?",
-  "alternativas": [
-   "Cerrado.",
-   "Pampas.",
-   "Caatinga.",
-   "Restinga.",
-   "Pantanal."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-93",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 93"
-  },
-  "enunciado": "Por que os olhos ficam vermelhos em algumas fotografias?\n\nEm fotos tiradas com câmeras fotográficas antigas, por vezes as pessoas aparecem com os olhos vermelhos. Isso ocorre porque a luz do flash da câmera incide diretamente no globo ocular, sendo refletida por uma região repleta de vasos sanguíneos.\n\nEsse efeito é mais comum à noite ou em lugares pouco iluminados porque, com a pupila",
-  "alternativas": [
-   "dilatada, chega mais luz à retina.",
-   "retraída, chega mais luz vermelha à retina.",
-   "retraída, chega mais luz vermelha aos bastonetes.",
-   "retraída, chegam menos luzes azul e verde aos cones.",
-   "dilatada, chegam menos luzes azul e verde aos bastonetes."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-94",
   "materia": "enem-natureza",
   "assunto": "ENEM 2025",
@@ -111,78 +39,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-95",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 95"
-  },
-  "enunciado": "A deficiência da enzima lipase ácida causa uma doença em que o portador apresenta células que não degradam colesterol esterificado nem triglicerídeos, resultando no depósito desses compostos em diversos órgãos, principalmente no fígado.\n\nEssa doença resulta da insuficiência funcional de qual estrutura celular?",
-  "alternativas": [
-   "Lisossomos.",
-   "Ribossomos.",
-   "Mitocôndrias.",
-   "Peroxissomos.",
-   "Retículo endoplasmático liso."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-98",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 98"
-  },
-  "enunciado": "Os sapinhos-ponta-de-flecha constituem um grupo de espécies encontradas na América Central e do Sul. Seus venenos são obtidos por meio do consumo de algumas formigas e cupins que se alimentam de plantas que contêm esses venenos. Esses anfíbios são usados para envenenar as flechas das zarabatanas dos caçadores nativos. Quando capturados e criados em condições artificiais, ou quando nascidos em cativeiro, não são tóxicos.\n\nA perda da capacidade de se obter a toxina nos nascidos em cativeiro é causada pela",
-  "alternativas": [
-   "diferença de umidade entre os ambientes.",
-   "ausência de alimentação natural.",
-   "adaptação ao novo ambiente.",
-   "mudança de comportamento.",
-   "variabilidade genética."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-99",
   "materia": "enem-natureza",
   "assunto": "ENEM 2025",
@@ -207,42 +63,6 @@ Banco.registrar({ questoes: [
    "mantém a quantidade de anticorpos preexistentes."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-101",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 101"
-  },
-  "enunciado": "A figura apresenta a herança genética de uma característica a partir do cruzamento de insetos de uma mesma espécie.\n\nDescrição da figura: A figura apresenta dois pares de insetos. O primeiro par representa os parentais. O segundo, a primeira geração. Nos parentais, o macho apresenta padrão de quatro bolinhas no corpo, e a fêmea, padrão de um traço vertical. Na primeira geração, macho e fêmea apresentam padrão de quatro bolinhas mais traço vertical. (Fim da descrição)\n\nQual alternativa representa a proporção fenotípica da prole resultante do cruzamento entre indivíduos da primeira geração?\nDescrição das alternativas: Em todas as alternativas, há quatro figuras com indivíduos machos e fêmeas. (Fim da descrição)",
-  "alternativas": [
-   "Descrição da figura: Quatro indivíduos com padrão de quatro bolinhas. (Fim da descrição)",
-   "Descrição da figura: Quatro indivíduos com padrão de um traço vertical. (Fim da descrição)",
-   "Descrição da figura: Quatro indivíduos com padrão de quatro bolinhas mais um traço vertical. (Fim da descrição)",
-   "Descrição da figura: Dois indivíduos com padrão de quatro bolinhas e dois com padrão de um traço vertical. (Fim da descrição)",
-   "Descrição da figura: Um indivíduo com padrão de quatro bolinhas, um com padrão de um traço vertical e dois com padrão de quatro bolinhas mais um traço vertical. (Fim da descrição)"
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -327,150 +147,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-105",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 105"
-  },
-  "enunciado": "O esquema apresenta as etapas do processo de biodigestão, uma forma de dar um destino sustentável a excrementos animais e restos de comida produzidos em áreas de criação de gado e porcos confinados.\n\nDescrição da figura: Esquematizada em etapas, a figura apresenta uma vaca e um porco, próximos do alimentador de um biodigestor. O alimentador está ligado por um tubo ao biodigestor, composto por um tanque vedado com uma saída de gases no topo, e outra saída, de sobras, na base.\nEtapa 1: Excrementos animais e restos de alimentos são misturados com água no alimentador do biodigestor.\nEtapa 2: Dentro do biodigestor, a ação das bactérias decompõe os resíduos, transformando-os em gás metano e adubo. Do biodigestor partem as etapas 3 e 4.\nEtapa 3: O gás metano pode ser encanado para alimentar um gerador ou aquecedor.\nEtapa 4: As sobras servem como fertilizante.\n(Fim da descrição)\n\nDar destino sustentável às sobras, conforme apresentado na etapa 4, ajuda a evitar a",
-  "alternativas": [
-   "bioacumulação de toxinas em plantas.",
-   "eutrofização dos corpos de água.",
-   "destruição da camada de ozônio.",
-   "ocorrência de inversão térmica.",
-   "produção de chuva ácida."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-109",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 109"
-  },
-  "enunciado": "A Figura 1 apresenta o esquema de um tubo de imagem em que um filamento, na posição A, libera elétrons por efeito termiônico. Esses elétrons formam um feixe estreito, que é acelerado por campos elétricos em direção à parte interna da tela. Nesse caminho, o feixe de elétrons passa por outro campo elétrico, na região B, atingindo, em seguida, a parte interna da tela do tubo, a qual é recoberta por um material que emite luz ao receber o impacto dos elétrons.\n\nDescrição do esquema da Figura 1: A figura apresenta um tubo de imagem na horizontal, com um filamento centralizado em sua extremidade esquerda, na posição A. Deste, parte um feixe de elétrons horizontal que passa pela região B e, em seguida, parte em direção a uma tela. A tela apresenta cinco pontos, posicionados da seguinte forma: ponto 1, acima; ponto 2, abaixo; ponto 3, à direita; ponto 4, à esquerda; e ponto 5, no centro. (Fim da descrição)\n\nNa Figura 2, a carga negativa representa o feixe de elétrons que é acelerado e, posteriormente, atinge um ponto da tela. O campo elétrico na região B apresenta a seguinte configuração:\n\nDescrição do esquema da Figura 2: A figura apresenta um esquema ampliado da região B, onde a carga elétrica negativa se movimenta perpendicularmente a um campo elétrico E vetorial, entre duas placas paralelas. Os vetores E são representados por setas igualmente espaçadas, que apontam para cima. A carga negativa está à esquerda, com o vetor v apontando para a direita. (Fim da descrição)\n\nNessa situação, qual ponto da tela será atingido pelo feixe de elétrons?",
-  "alternativas": [
-   "1",
-   "2",
-   "3",
-   "4",
-   "5"
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-111",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 111"
-  },
-  "enunciado": "Sequestro de carbono: possibilidade de aplicação em áreas de preservação permanente e reserva legal\n\nNa década de 1970, a preocupação com a poluição ambiental estava restrita a eventos locais. Entretanto, isso muda a partir dos anos 1990, principalmente em relação à poluição atmosférica, que não respeita barreiras geográficas. Surgem então os compromissos de países com as chamadas políticas de compensação, que permitem que ações de preservação possam ser desenvolvidas como contrapartida à destruição ambiental em outro local, muitas vezes distante da área impactada. Essas ações passaram a ser valoradas como uma moeda de troca, os chamados créditos de carbono, comercializáveis na bolsa de valores. Os defensores dessa política afirmam que um ecossistema não tem fronteira e o que importa é a redução da degradação ambiental global.\n\nPara um ecossistema específico, o problema associado à contrapartida mencionada é a limitação do(a)",
-  "alternativas": [
-   "cooperação entre os países.",
-   "reparação do dano causado.",
-   "desenvolvimento econômico.",
-   "ocorrência de degradação local.",
-   "comércio dos créditos de carbono."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-112",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 112"
-  },
-  "enunciado": "Manual de referência e instalação: sensor de barreira ativo\n\nA figura ilustra as informações contidas no manual de um sistema de alarme que utiliza transmissores e receptores de radiação eletromagnética para a detecção de movimento. O receptor é regulado pelo tempo de resposta, que corresponde ao intervalo de tempo necessário para o corpo do invasor atravessar completamente o feixe, de diâmetro d igual a 15 centímetros. Considere que a menor porção do corpo de um invasor é a sua posição de perfil, cuja espessura típica é 20 centímetros. São indicados cinco possíveis movimentos de um invasor e suas velocidades típicas, que devem ser observadas para a escolha do tempo de resposta.\n\nDescrição das figuras: Ilustração do transmissor e do receptor com um feixe de diâmetro d. Abaixo, uma pessoa sobe em um muro com velocidade igual a 0,5 metro por segundo. À direita, uma pessoa desce do muro com velocidade igual a 0,7 metro por segundo. Ao lado dela, uma pessoa caminha com velocidade igual a 1 metro por segundo. Em seguida, outra pessoa caminha com velocidade igual a 2 metros por segundo e, por fim, uma pessoa corre com velocidade igual a 5 metros por segundo. (Fim da descrição)\n\nNesse sistema, o menor tempo de resposta, em milissegundo, que garante a detecção de um possível invasor é mais próximo de",
-  "alternativas": [
-   "30 milissegundos.",
-   "70 milissegundos.",
-   "300 milissegundos.",
-   "400 milissegundos.",
-   "700 milissegundos."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-113",
   "materia": "enem-natureza",
   "assunto": "ENEM 2025",
@@ -531,78 +207,6 @@ Banco.registrar({ questoes: [
    "Descrição da figura: Figura do circuito no qual as resistências estão em série e Rp é igual a 0,2 Rc. (Fim da descrição)"
   ],
   "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-117",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 117"
-  },
-  "enunciado": "O Brasil é o maior produtor mundial de nióbio (massa molar igual a 93 gramas por mol), metal utilizado na fabricação de vários tipos de aço: automotivos, estruturais e inoxidáveis. O processo utilizado na produção do nióbio é a redução aluminotérmica de N b2O5 com excesso de 10 por cento de A l (massa molar igual a 27 gramas por mol), em relação à quantidade estequiométrica da reação, representada pela equação química:\n\nDescrição da equação química: Equação na qual os reagentes 3 N b2O5 (sólido) e 10 A l (sólido) formam os produtos 6 N b (sólido) e 5 A l 2O3 (sólido). (Fim da descrição)\n\nUma engenheira metalúrgica estimou a massa de alumínio necessária para produzir 9,3 quilogramas de nióbio, nas condições descritas, para a produção de um lote de peças de aço encomendado por uma indústria, considerando um rendimento de 100 por cento.\n\nA massa de alumínio, em quilograma, estimada pela engenheira é mais próxima de",
-  "alternativas": [
-   "2,7 quilogramas.",
-   "3,0 quilogramas.",
-   "4,1 quilogramas.",
-   "4,5 quilogramas.",
-   "5,0 quilogramas."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-119",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 119"
-  },
-  "enunciado": "Escurecimento e limpeza de objetos de prata: um experimento simples e de fácil execução envolvendo reações de oxidação-redução\n\nObjetos de prata escurecem em contato com compostos contendo enxofre por causa da formação de uma fina camada de sulfeto de prata. Um método simples para clarear o objeto consiste em forrar um recipiente com papel alumínio, adicionar ao recipiente uma solução aquosa de cloreto de sódio e, enfim, mergulhar o objeto de prata enegrecido. Em cerca de três minutos, a prata volta à coloração original. As seguintes semirreações e os respectivos potenciais-padrão de redução são úteis para a compreensão dos fenômenos ocorridos.\n\nDescrição das semirreações e seus respectivos potenciais-padrão de redução:\n1. Os reagentes A g2S (sólido) e 2 elétrons formam os produtos 2 A g (sólido) e S de carga dois menos (aquoso). Potencial-padrão menos 0,69 volt.\n2. Os reagentes O2 (gasoso), 4 H de carga positiva (aquoso) e 4 elétrons formam os produtos 2 H2O (líquido). Potencial-padrão mais 1,23 volt.\n3. Os reagentes A  l de carga três mais (aquoso) e 3 elétrons formam o produto A l (sólido). Potencial-padrão menos 1,68 volt. (Fim da descrição)\n\nOs valores das diferenças de potencial-padrão das reações que representam o escurecimento e o clareamento do objeto de prata são, respectivamente:",
-  "alternativas": [
-   "+0,54 volt e +2,37 volts.",
-   "+1,92 volt e +0,99 volt.",
-   "-0,15 volt e +5,43 volts.",
-   "+2,61 volts e +1,29 volt.",
-   "+0,15 volt e -1,29 volt."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -795,114 +399,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-126",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 126"
-  },
-  "enunciado": "Sensor orgânico flexível para aplicação em terapia com luz azul\n\nA icterícia é uma doença que acomete recém-nascidos e pode ser tratada com um método de fototerapia conhecido como banho de luz, que consiste na exposição do recém-nascido a uma fonte luminosa equipada com LEDs azuis. Para o monitoramento da dosagem dessa radiação, é utilizada a resposta óptica de um sensor constituído de materiais orgânicos que luminescem quando expostos à luz azul. Com o passar do tempo, essa radiação oxida os materiais do sensor, alterando sua coloração de vermelho-laranja para verde, o que indica o final do tratamento.\nO gráfico apresenta o espectro de fotoluminescência do sensor em função do comprimento de onda da luz emitida no início do tratamento, quando o sensor, colado na fralda do bebê (Figura 1), luminesce na região do vermelho-laranja (aproximadamente 600 nanômetros). A Figura 2 apresenta a evolução da coloração do sensor, mostrando que a frequência da luz emitida por ele aumenta em função do tempo de exposição à luz azul.\n\nDescrição do gráfico: Gráfico com fotoluminescência entre 0 e 1,2, em unidade arbitrária, no eixo vertical, e comprimento de onda entre 525 e 725 nanômetros, no eixo horizontal. A curva de linha contínua atinge o pico de fotoluminescência 1,0 em 600 nanômetros.\nDescrição da Figura 1: A figura apresenta um bebê em um banho de luz azul. Em sua fralda, um sensor luminesce na região do vermelho-laranja.\nDescrição da Figura 2: A figura apresenta a coloração do sensor evoluindo de vermelho-laranja para verde ao longo do tempo de exposição, à medida que a frequência aumenta. (Fim da descrição)\n\nOs espectros de fotoluminescência do sensor no início e no final do tratamento estão esboçados no gráfico:\nDescrição das alternativas: Gráficos com fotoluminescência entre 0 e 1,2, em unidade arbitrária, no eixo vertical, e comprimento de onda entre 525 e 725 nanômetros, no eixo horizontal. Cada gráfico apresenta duas curvas: uma linha contínua, que representa a luminescência no início do tratamento, e uma linha tracejada, que representa a luminescência no final do tratamento. Para todos os gráficos, a curva de linha contínua atinge o pico de fotoluminescência 1,0 em 600 nanômetros. (Fim da descrição)",
-  "alternativas": [
-   "Descrição do gráfico: A curva de linha tracejada está deslocada para a esquerda em relação à curva de linha contínua, já que seu pico de fotoluminescência ocorre em aproximadamente 550 nanômetros. (Fim da descrição)",
-   "Descrição do gráfico: A curva de linha tracejada está deslocada para a direita em relação à curva de linha contínua, já que seu pico de fotoluminescência ocorre em aproximadamente 650 nanômetros. (Fim da descrição)",
-   "Descrição do gráfico: A curva de linha tracejada está deslocada para baixo em relação à curva de linha contínua, já que seu pico de fotoluminescência é menor do que 1,0 em 600 nanômetros. (Fim da descrição)",
-   "Descrição do gráfico: A curva de linha tracejada está deslocada para cima em relação à curva de linha contínua, já que seu pico de fotoluminescência é maior do que 1,0 em 600 nanômetros. (Fim da descrição)",
-   "Descrição do gráfico: A curva de linha tracejada coincide exatamente com a curva de linha contínua, atingindo o pico de fotoluminescência 1,0 em 600 nanômetros. (Fim da descrição)"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-128",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 128"
-  },
-  "enunciado": "Environmental Impact of Estrogens on Human, Animal and Plant Life\n\nAlguns hormônios sexuais têm ganhado notável atenção nos últimos anos por suas concentrações cada vez maiores no solo e na água em todo o mundo. O motivo da preocupação é porque, em níveis poluentes, eles têm sido associados ao câncer de mama e ao câncer de próstata, além de perturbarem a fisiologia dos peixes, podendo, ainda, afetarem o desenvolvimento reprodutivo de animais domésticos e selvagens. Assim, o descarte inadequado desses hormônios representa uma séria ameaça ao solo, plantas, recursos hídricos e humanos. De baixa polaridade, eles apresentam uma solubilidade pequena e variável em água, dependendo dos grupos presentes em suas estruturas, representando um grande risco para os ambientes aquáticos. As figuras a seguir apresentam as estruturas de alguns desses hormônios.\n\nDescrição das estruturas:\nEstradiol: um anel aromático, dois ciclo-hexanos e um ciclopentano conjugados. Um grupo O H ligado ao anel aromático, um grupo C H3 e um grupo O H ligados a diferentes carbonos do ciclopentano.\nEstriol: um anel aromático, dois ciclo-hexanos e um ciclopentano conjugados. Um grupo O H ligado ao anel aromático, um grupo C H3 e dois grupos O H ligados a diferentes carbonos do ciclopentano.\nEstrona: um anel aromático, dois ciclo-hexanos e um ciclopentano conjugados. Um grupo O H ligado ao anel aromático, um grupo C H3 ligado a um dos carbonos do ciclopentano. Em outro carbono do ciclopentano, uma ligação dupla O.\nNovestrol: um anel aromático, dois ciclo-hexanos e um ciclopentano conjugados. Um grupo O H ligado ao anel aromático, um grupo C H3 ligado a um dos carbonos do ciclopentano. Em outro carbono do ciclopentano, estão ligados um grupo O H e um grupo C tripla CH.\nNoretindrona: um ciclo-hexeno, dois ciclo-hexanos e um ciclopentano conjugados. Uma ligação dupla entre um O e o ciclo-hexeno, um grupo CH3 ligado a um dos carbonos do ciclopentano. Em outro carbono do ciclopentano, estão ligados um grupo O H e um grupo C tripla C H. (Fim da descrição)\n\nDo ponto de vista das interações químicas, qual desses hormônios apresenta maior solubilidade em ambientes aquáticos?",
-  "alternativas": [
-   "Estradiol.",
-   "Estriol.",
-   "Estrona.",
-   "Novestrol.",
-   "Noretindrona."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-129",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 129"
-  },
-  "enunciado": "Cosmetologia: ciência e técnica\n\nA filtração em carvão é uma das mais antigas formas de purificação de água. O carvão ativado, diferentemente do carvão comum, é útil para ser empregado na remoção de material orgânico, cloro e outros contaminantes. Essa capacidade decorre de suas propriedades de adsorção. A origem do material utilizado para produzir o carvão ativado pode influenciar sua porosidade e, consequentemente, interferir na capacidade do material de remover impurezas. Na figura, é ilustrada esquematicamente a diferença entre as estruturas físicas do carvão comum e do carvão ativado.\n\nDescrição da figura: A figura ilustra o carvão comum e o carvão ativado. O carvão comum é representado por um círculo de borda regular, com furos espaçados, identificados como mesoporos. O carvão ativado é representado por um círculo de borda irregular, com rachaduras e furos de tamanhos diferentes, identificados como microporos, mesoporos e macroporos. Nas irregularidades, rachaduras e macroporos existem impurezas adsorvidas. (Fim da descrição)\n\nQual característica do carvão ativado explica a sua maior eficiência nesse processo?",
-  "alternativas": [
-   "Massa.",
-   "Dureza.",
-   "Densidade.",
-   "Superfície.",
-   "Condutividade."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-131",
   "materia": "enem-natureza",
   "assunto": "ENEM 2025",
@@ -927,42 +423,6 @@ Banco.registrar({ questoes: [
    "largura das cavidades de ossos pneumáticos."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-132",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 132"
-  },
-  "enunciado": "Réguas elétricas são dispositivos que permitem a ligação segura e simultânea de dois ou mais aparelhos eletroeletrônicos à rede elétrica. Uma estudante comprou uma régua com seis tomadas, conforme a figura. Essa régua suporta uma intensidade máxima de corrente elétrica igual a 20 amperes. Acima desse valor, o fusível de segurança da régua se rompe, inutilizando-a até que um novo fusível seja instalado. Considere as potências nominais de alguns aparelhos eletroeletrônicos apresentadas no quadro.\n\nDescrição da figura: A figura apresenta uma régua elétrica com seis tomadas, dispostas lado a lado.\nDescrição do quadro: Quadro indicando diferentes aparelhos e suas respectivas potências, em watt.\nLuminária de LED: 5;\nComputador: 250;\nImpressora a laser: 660;\nSecador de cabelos: 750;\nCafeteira: 900;\nCondicionador de ar portátil: 1100.\n(Fim da descrição)\n\nEm um dia quente, a estudante mantém o computador e o condicionador de ar portátil ligados à régua permanentemente. Nessa situação, ela tenta realizar algumas atividades, uma de cada vez, utilizando a mesma régua, na seguinte ordem:\nPrimeiro: imprimir um trabalho escolar;\nSegundo: fazer um café com a cafeteira;\nTerceiro: ligar a luminária;\nQuarto: secar os cabelos.\nSabe-se que a régua foi ligada à tensão elétrica de 110 volts, adequada para o funcionamento desses aparelhos.\n\nConsiderando a ordem das tentativas, quantas atividades a estudante conseguiu realizar sem queimar o fusível?",
-  "alternativas": [
-   "4",
-   "3",
-   "2",
-   "1",
-   "0"
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -1083,42 +543,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-138",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 138"
-  },
-  "enunciado": "Pesquisas na área de neurobiologia confirmam que a prática meditativa é responsável por diminuir consideravelmente a frequência respiratória para praticantes avançados, que, após iniciarem a meditação, têm suas frequências respiratórias reduzidas até se estabilizarem em um nível mais baixo. O gráfico apresenta a relação da frequência respiratória, em incursões de respirações por minuto (rpm), em relação ao tempo, em minuto, de um praticante avançado, em que (f índice 1) representa a frequência no instante t índice 1, no qual se inicia a prática meditativa; e (f índice 2), a frequência no instante t índice 2, a partir do qual esta se estabiliza durante a meditação.\n\nDescrição do gráfico: O gráfico cartesiano, com eixo horizontal representando o tempo, em minuto, e eixo vertical representando a frequência respiratória, em respiração por minuto, apresenta a curva em três partes:\nPrimeira parte: segmento de reta horizontal, ligando o ponto de abscissa 0 e ordenada f índice 1 ao ponto de abscissa t índice 1 e ordenada f índice 1, em que a abscissa t índice 1 é indicada como início da prática meditativa;\nSegunda parte: curva decrescente, unindo o ponto de abscissa t índice 1 e ordenada f índice 1 ao ponto de abscissa t índice 2 e ordenada f índice 2;\nTerceira parte: semirreta horizontal, que se inicia no ponto de abscissa t índice 2 e ordenada f índice 2.\n(Fim da descrição)\n\nA partir do instante t índice 1, em que se inicia a prática meditativa, o comportamento da frequência respiratória, em relação ao tempo,",
-  "alternativas": [
-   "mantém-se constante.",
-   "é diretamente proporcional ao tempo.",
-   "é inversamente proporcional ao tempo.",
-   "diminui até o instante t índice 2, a partir do qual se torna constante.",
-   "diminui de forma proporcional ao tempo, tanto entre t índice 1 e t índice 2 quanto após t índice 2."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-139",
   "materia": "matematica",
   "assunto": "ENEM 2025",
@@ -1179,42 +603,6 @@ Banco.registrar({ questoes: [
    "25"
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-142",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 142"
-  },
-  "enunciado": "Ao planejar uma viagem, um motorista consultou em um aplicativo as possíveis rotas e suas respectivas velocidades médias. Para cada uma das cinco rotas possíveis, ele anotou a distância a ser percorrida, conforme o quadro.\n\nDescrição do quadro: Quadro que apresenta as distâncias, em quilômetro, e as velocidades médias, em quilômetro por hora, para cinco rotas:\nRota 1: distância 680 e velocidade média 40;\nRota 2: distância 840 e velocidade média 60;\nRota 3: distância 650 e velocidade média 50;\nRota 4: distância 840 e velocidade média 48;\nRota 5: distância 660 e velocidade média 55.\n(Fim da descrição)\n\nSabendo que a velocidade média é dada pela razão da distância percorrida pelo tempo gasto na rota, ele escolherá aquela que apresentar o menor tempo de viagem.\n\nA rota que permite realizar a viagem no menor tempo é a",
-  "alternativas": [
-   "1.",
-   "2.",
-   "3.",
-   "4.",
-   "5."
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -1479,42 +867,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-152",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 152"
-  },
-  "enunciado": "O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada na exibição de cada deslocamento. A tela apresenta a imagem do deslocamento, a escala utilizada na geração dessa imagem e o comprimento desse deslocamento, em centímetro, em conformidade com a escala empregada. As figuras representam a tela do controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho.\n\nDescrição das figuras: Cada figura apresenta um segmento de reta unindo dois pontos, informa o comprimento desse segmento, em centímetro, e indica uma escala, na seguinte configuração:\nFigura 1: O segmento de reta do ponto A ao ponto B mede 9 centímetros numa escala de 1 para 100;\nFigura 2: O segmento de reta do ponto B ao ponto C mede 5 centímetros numa escala de 1 para 300;\nFigura 3: O segmento de reta do ponto C ao ponto D mede 5 centímetros numa escala de 1 para 600;\nFigura 4: O segmento de reta do ponto D ao ponto E mede 3 centímetros numa escala de 1 para 700;\nFigura 5: O segmento de reta do ponto E ao ponto F mede 2 centímetros numa escala de 1 para 1000.\n(fim da descrição)\n\nA opção que indica o deslocamento de maior comprimento realizado pelo carrinho de brinquedo é",
-  "alternativas": [
-   "1.",
-   "2.",
-   "3.",
-   "4.",
-   "5."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-155",
   "materia": "matematica",
   "assunto": "ENEM 2025",
@@ -1659,42 +1011,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-162",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 162"
-  },
-  "enunciado": "Estresse em enfermeiros: o uso do cortisol salivar no dia de trabalho e de folga\n\nO cortisol é um hormônio produzido pelas glândulas adrenais e pode ser considerado um importante marcador do estresse fisiológico. Em um estudo desenvolvido com enfermeiros, foi verificado que a concentração de cortisol salivar em um dia de trabalho, denotada por T, era, em média, 1,59 vezes a concentração de cortisol salivar em um dia de folga, denotada por F.\n\nNesse estudo, a relação obtida entre T e F foi",
-  "alternativas": [
-   "T é igual a 1,59 mais F",
-   "F é igual a 1,59 mais T",
-   "fração de numerador T e denominador F é igual a 1,59",
-   "fração de numerador F e denominador T é igual a 1,59",
-   "F vezes T é igual a 1,59"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-163",
   "materia": "matematica",
   "assunto": "ENEM 2025",
@@ -1791,42 +1107,6 @@ Banco.registrar({ questoes: [
    "240"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-166",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 166"
-  },
-  "enunciado": "O polvilho, ou fécula de mandioca, é utilizado na produção de biscoito de polvilho.\nNa receita dessa iguaria, é recomendado que, para a obtenção de 8 unidades de biscoito de polvilho de certo tamanho sejam utilizados, dentre outros ingredientes:\n\n4 xícaras de polvilho;\n2 ovos;\n1 colher de chá de fermento.\n\nPara a obtenção de 20 unidades desse biscoito, recomenda-se que sejam utilizados:\n\n10 xícaras de polvilho;\n5 ovos;\n2 colheres de chá de fermento.\n\nComparando os mesmos ingredientes nas duas receitas, pretende-se identificar se há alguma proporcionalidade entre essas quantidades e as respectivas quantidades de biscoito de polvilho produzidas.\n\nDe acordo com essa comparação, em relação às proporcionalidades, identificou-se que",
-  "alternativas": [
-   "as quantidades de polvilho e de ovos são diretamente proporcionais à quantidade de unidades de biscoito de polvilho obtida.",
-   "as quantidades de polvilho e ovos são inversamente proporcionais à quantidade de unidades de biscoito de polvilho obtida.",
-   "todas as quantidades de ingredientes são diretamente proporcionais à quantidade de unidades de biscoito de polvilho obtida.",
-   "todas as quantidades de ingredientes são inversamente proporcionais à quantidade de unidades de biscoito de polvilho obtida.",
-   "a quantidade de fermento é diretamente proporcional à quantidade de unidades de biscoito de polvilho, e as quantidades dos outros ingredientes são inversamente proporcionais à quantidade de unidades de biscoito de polvilho obtida."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -1947,42 +1227,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2025-170",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 170"
-  },
-  "enunciado": "A produtividade de soja em uma área cultivada é a média da quantidade de sacas de 50 quilogramas que são produzidas por hectare. O quadro apresenta a área cultivada e a produtividade de soja em certa propriedade, ao longo de cinco safras, com períodos de um ano, de 2011 a 2016.\n\nDescrição do quadro: O quadro apresenta a área cultivada, em hectare, e a produtividade, em sacas de 50 quilogramas por hectare, de algumas safras.\nSafra 2011 - 2012: área cultivada igual a 200, produtividade igual a 40;\nSafra 2012 - 2013: área cultivada igual a 220, produtividade igual a 30;\nSafra 2013 - 2014: área cultivada igual a 250, produtividade igual a 45;\nSafra 2014 - 2015: área cultivada igual a 250, produtividade igual a 45;\nSafra 2015 - 2016: área cultivada igual a 200, produtividade igual a 50.\n(Fim da descrição)\n\nO gráfico de linhas que representa a produção de soja dessa propriedade, em tonelada, nessas cinco safras é",
-  "alternativas": [
-   "Descrição do gráfico: Gráfico de linha que relaciona safra e produção: safra 2011 - 2012 e produção 400 toneladas; safra 2012 - 2013 e produção 330 toneladas; safra 2013 - 2014 e produção 562,5 toneladas; safra 2014 - 2015 e produção 562,5 toneladas; safra 2015 - 2016 e produção 500 toneladas. (Fim da descrição) ",
-   "Descrição do gráfico: Gráfico de linha que relaciona safra e produção: safra 2011 - 2012 e produção 40 toneladas; safra 2012 - 2013 e produção 30 toneladas; safra 2013 - 2014 e produção 45 toneladas; safra 2014 - 2015 e produção 45 toneladas; safra 2015 - 2016 e produção 50 toneladas. (Fim da descrição) ",
-   "Descrição do gráfico: Gráfico de linha que relaciona safra e produção: safra 2011 - 2012 e produção 200 toneladas; safra 2012 - 2013 e produção 220 toneladas; safra 2013 - 2014 e produção 250 toneladas; safra 2014 - 2015 e produção 250 toneladas; safra 2015 - 2016 e produção 200 toneladas. (Fim da descrição) ",
-   "Descrição do gráfico: Gráfico de linha que relaciona safra e produção: safra 2011 - 2012 e produção 240 toneladas; safra 2012 - 2013 e produção 250 toneladas; safra 2013 - 2014 e produção 295 toneladas; safra 2014 - 2015 e produção 295 toneladas; safra 2015 - 2016 e produção 250 toneladas. (Fim da descrição) ",
-   "Descrição do gráfico: Gráfico de linha que relaciona safra e produção:\nsafra 2011 - 2012 e produção 8 toneladas;\nsafra 2012 - 2013 e produção 6,6 toneladas;\nsafra 2013 - 2014 e produção 11,25 toneladas;\nsafra 2014 - 2015 e produção 11,25 toneladas;\nsafra 2015 - 2016 e produção 10 toneladas.\n(Fim da descrição)"
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2025-173",
   "materia": "matematica",
   "assunto": "ENEM 2025",
@@ -2005,42 +1249,6 @@ Banco.registrar({ questoes: [
    "300",
    "360",
    "560"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2025, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2025-174",
-  "materia": "matematica",
-  "assunto": "ENEM 2025",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2025,
-   "orgao": "ENEM, 2º dia, questão 174"
-  },
-  "enunciado": "A final de um campeonato de futebol foi disputada em 2 tempos regulamentares, de 45 minutos cada, sem acréscimos, com uma prorrogação de 30 minutos, também sem acréscimos. Um jogador entrou no início do segundo tempo, com um equipamento para medir a distância percorrida durante sua participação no jogo. Ao final do segundo tempo regulamentar, esse jogador havia percorrido 4,5 quilômetros. Ele manteve na prorrogação a mesma velocidade média que havia mantido no segundo tempo regulamentar.\n\nA distância percorrida por esse jogador durante sua participação na partida, em quilômetro, foi",
-  "alternativas": [
-   "4,5.",
-   "6,0.",
-   "7,5.",
-   "9,0.",
-   "12,0."
   ],
   "resposta": 2,
   "fontes": [
@@ -2235,42 +1443,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-91",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 91"
-  },
-  "enunciado": "Serpentes corais em ambientes campestres, savânicos e florestais da América do Sul\n\nO Cerrado e a Amazônia abrigam grande número de serpentes popularmente conhecidas como cobras-corais. Na Amazônia predominam as corais-verdadeiras, que são peçonhentas, enquanto no Cerrado prevalecem as falsas-corais, que não possuem peçonha. Essas espécies apresentam um padrão de coloração muito semelhante. Essa similaridade traz uma vantagem tanto para as corais falsas como para as verdadeiras.\nNas fotografias, são apresentados exemplos dessas serpentes: uma coral-verdadeira e uma falsa-coral.\n\nDescrição das fotografias: Coral-verdadeira e falsa-coral. A coloração do corpo dessas serpentes alterna anéis vermelhos, pretos e brancos. A largura e a sequência dos anéis diferem a coral-verdadeira da falsa-coral. (Fim da descrição)\n\nQual é a vantagem dessa similaridade para as falsas-corais?",
-  "alternativas": [
-   "Facilita a captura de presas.",
-   "Diminui a competição por recursos.",
-   "Possibilita a geração de indivíduos híbridos.",
-   "Reduz a possibilidade de sofrerem predação.",
-   "Otimiza o encontro de parceiros reprodutivos."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-92",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024",
@@ -2379,114 +1551,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-97",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 97"
-  },
-  "enunciado": "Sistemas agroflorestais (SAFs)\n\nOs sistemas agroflorestais alinham os interesses econômicos aos ecológicos. Esses sistemas podem ser usados na recuperação ambiental de áreas degradadas que se tornaram pouco produtivas, como as utilizadas por muito tempo para pastagem. Para isso, num primeiro momento, as árvores nativas são plantadas em conjunto com culturas agrícolas anuais, como feijão, mandioca, milho e abóbora, que geram renda para os proprietários da terra e incentivam a manutenção do sistema. Em um segundo momento, são introduzidas outras espécies, como trepadeiras e arbustos, de acordo com um arranjo espacial e temporal preestabelecido. Nesse processo, ocorrerão mudanças graduais na estrutura e composição das comunidades vegetais ao longo do tempo, que culminarão no aumento da diversidade do ambiente.\n\nO conjunto dessas mudanças graduais é análogo ao processo natural denominado",
-  "alternativas": [
-   "rotação de culturas.",
-   "sucessão ecológica.",
-   "coevolução específica.",
-   "adaptação por seleção.",
-   "convergência adaptativa."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-98",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 98"
-  },
-  "enunciado": "Vida: a ciência da biologia\n\nAs fibras musculares esqueléticas não são todas iguais. As fibras lentas, também conhecidas como fibras vermelhas, apresentam muitas mitocôndrias e são bem supridas por vasos sanguíneos. Já as fibras rápidas, ou fibras brancas, apresentam poucas mitocôndrias e recebem menor suprimento sanguíneo. Dessa forma, a distribuição das fibras nos músculos esqueléticos do corpo auxilia de forma diferenciada no desempenho físico de um atleta.\n\nUm atleta que sonha em disputar os Jogos Olímpicos e tem uma maior proporção de fibras brancas que fibras vermelhas teria mais vantagens na realização da prova de:",
-  "alternativas": [
-   "Triatlo.",
-   "Salto em altura.",
-   "Marcha atlética.",
-   "Maratona aquática.",
-   "Ciclismo em estrada."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-99",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 99"
-  },
-  "enunciado": "A saúde do professor: acústica arquitetônica\n\nDentre os parâmetros acústicos que afetam a inteligibilidade dos sons emitidos em ambientes fechados, destacam-se o ruído de fundo do ambiente e o decréscimo do nível sonoro com a distância da fonte emissora. Assim, sentar-se no fundo da sala de aula pode prejudicar a aprendizagem dos estudantes, por impedir que eles distingam, com precisão, os sons emitidos, diminuindo a inteligibilidade da fala de seus professores. Considere a situação exemplificada pelo infográfico: à distância de 1 metro, o nível sonoro da fala de um professor é de 60 decibéis e diminui com a distância. Considere, ainda, que o ruído de fundo nessa sala de aula pode chegar a 45 decibéis e que, para ser compreendida, o nível sonoro da fala do professor deve estar 5 decibéis acima desse ruído.\n\nDescrição do infográfico: Ilustração de uma sala de aula com professor à frente e cinco estudantes sentados em suas carteiras enfileiradas. No eixo horizontal, a distância entre o professor e os estudantes, em metro. No eixo vertical, o nível sonoro, em decibel. A curva do gráfico passa pelos seguintes pares de pontos:\n1 metro: 60 decibéis;\n2 metros: 55 decibéis;\n3 metros: 50 decibéis;\n4 metros: 48 decibéis;\n5 metros: 47 decibéis;\n6 metros: 45 decibéis;\n7 metros: 43 decibéis;\n8 metros: 41 decibéis;\n9 metros: 40 decibéis;\n10 metros: 38 decibéis.\n(Fim da descrição)\n\nPara um valor máximo do ruído de fundo, a maior distância que um estudante pode estar do professor para que ainda consiga compreender sua fala é mais próxima de",
-  "alternativas": [
-   "3,0 metros.",
-   "4,5 metros.",
-   "6,5 metros.",
-   "8,0 metros.",
-   "9,5 metros."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-100",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024",
@@ -2523,150 +1587,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-102",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 102"
-  },
-  "enunciado": "Saneamento, arboviroses e determinantes ambientais: impactos na saúde urbana\n\nAs autoridades sanitárias brasileiras têm se preocupado muito nos últimos anos com o aumento da ocorrência de doenças transmitidas por mosquitos, principalmente arboviroses como chikungunya e zika, que se tornaram epidêmicas ou endêmicas em áreas urbanas. Parte de uma análise da relação entre a urbanização e a incidência dessas doenças está representada no fluxograma.\n\nDescrição do fluxograma: Cinco retângulos em sequência. Do primeiro, Urbanização parte uma seta para Ausência de saneamento básico; deste parte uma seta para Contaminação da água; deste parte uma seta para Redução da biodiversidade aquática, e deste, uma seta para o último retângulo denominado Riscos para a saúde humana. (Fim da descrição)\n\nNesse contexto, como a urbanização está causando riscos à saúde humana?",
-  "alternativas": [
-   "Disseminando verminoses.",
-   "Causando a eutrofização de lagoas.",
-   "Aumentando a chance de contato com coliformes.",
-   "Diminuindo a população de predadores aquáticos.",
-   "Aproximando as pessoas das áreas de ocorrência de mosquitos."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-104",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 104"
-  },
-  "enunciado": "Impacto dos catalisadores automotivos no controle da qualidade do ar\n\nUm dos agentes que mais contribui para a poluição do ar é o automóvel a combustão interna. Em áreas urbanas, isso é demonstrado dramaticamente pela fumaça fotoquímica, resultante da interação entre óxidos de nitrogênio, hidrocarbonetos e luz solar, para formar produtos de oxidação, que causam irritação aos olhos, ao aparelho respiratório e danos às plantas. As condições de operação de motores a combustão, como a razão da mistura ar/combustível no cilindro, influenciam na composição dos gases lançados pelo escapamento na atmosfera. O gráfico ilustra a variação nas composições dos principais gases, dióxido de carbono (C O2), hidrocarbonetos (HC), monóxido de carbono (C O), monóxido de nitrogênio (N O) e oxigênio molecular (O2), emitidos por um motor a gasolina, em diferentes razões ar/combustível, em massa.\n\nDescrição do gráfico: Gráfico com um eixo horizontal e dois verticais. O eixo horizontal apresenta a razão ar/combustível (em massa/massa), variando de 10 a 20. A razão estequiométrica ar/combustível está próxima a 15. O deslocamento dos valores da razão estequiométrica para a esquerda evidencia uma deficiência da relação ar/combustível e, para a direita, um excesso da relação ar/combustível. No eixo vertical esquerdo, têm-se os valores de O2, C O e C O2, em percentual de volume. No eixo vertical direito, têm-se os valores de N O, em 10 elevado a 3 partes por milhão em volume, e de HC como C6, em 10 elevado a 2 partes por milhão em volume. A curva de O2 inicia em zero por cento na razão 10 e aumenta até 5 por cento na razão 20. A curva de C O inicia em 12 por cento na razão 10 e diminui a zero por cento a partir da razão 17. A curva de C O2 inicia em 7 por cento na razão 10, aumenta até a razão 15 e depois diminui até 11 por cento na razão 20. A curva de N O inicia na concentração zero na razão 10, aumenta até 3,5 na razão 16 e depois diminui até 0,5 na razão 20. A curva de HC inicia na concentração 7 na razão 10 e diminui até 2 na razão 20. (Fim da descrição)\n\nNa condição de razão ar/combustível igual a 18, haverá uma emissão",
-  "alternativas": [
-   "baixa de O2 e alta de N O.",
-   "baixa de N O e alta de HC.",
-   "baixa de C O e alta de C O2.",
-   "baixa de HC e alta de C O.",
-   "baixa de C O2 e alta de HC."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-106",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 106"
-  },
-  "enunciado": "Biobaterias geram eletricidade a partir de esgoto sanitário e efluentes agroindustriais\n\nCélulas a combustível microbianas (CCM) são capazes de gerar eletricidade a partir de águas residuárias urbanas e agroindustriais. As CCM são compostas de duas câmaras. Numa delas, onde ocorre o tratamento da matéria orgânica, as bactérias eletrogênicas crescem formando um biofilme e se alimentam dos poluentes presentes no efluente. Ao se alimentarem, essas bactérias geram uma corrente elétrica que percorre o material sobre o qual elas formaram o biofilme. Um fio condutor externo possibilita a migração dessa corrente para uma segunda câmara, promovendo uma reação química. A figura esquematiza uma CCM e as reações envolvidas.\n\nDescrição da figura: Duas câmaras separadas por uma membrana. A câmara da esquerda tem um ânodo, e a da direita, um cátodo. Um fio ligado ao ânodo sai da câmara da esquerda e entra na câmara da direita, ligando-se ao cátodo. Pelo fio passa uma corrente elétrica do ânodo para o cátodo. Na câmara esquerda, há entrada de matéria orgânica (CH3C O O com carga negativa) e saída de C O2. Na câmara direita, há entrada de O2 e saída de H2O. Íons H de carga positiva passam da esquerda para a direita através da membrana. (Fim da descrição)\n\nDescrição de duas equações químicas:\nPrimeira equação: CH3C O O com carga negativa aquoso reage com 2 H2O líquido resultando em 2 C O2 gasoso, 7 H com carga positiva aquoso e 8 elétrons.\nSegunda equação: 4 H com carga positiva aquoso reage com O2 gasoso e 4 elétrons resultando em 2 H2O líquido.\n(Fim da descrição)\n\nQual das equações representa a reação global que ocorre durante o funcionamento dessa CCM?",
-  "alternativas": [
-   "Descrição da equação química: CH3C O O com carga negativa aquoso reage com O2 gasoso resultando em 2 C O2 gasoso e 3 H com carga positiva aquoso. (Fim da descrição)",
-   "Descrição da equação química: C O2 gasoso reage com O2 gasoso e H com carga positiva aquoso resultando em H2O líquido e CH3COO com carga negativa aquoso. (Fim da descrição)",
-   "Descrição da equação química: CH3C O O com carga negativa aquoso reage com H com carga positiva aquoso e 2 O2 gasoso resultando em 2 C O2 gasoso e 2 H2O líquido. (Fim da descrição)",
-   "Descrição da equação química: CH3C O O com carga negativa aquoso reage com 6 H2O líquido resultando em 2 C O2 gasoso, 2 O2 gasoso e 15 H com carga positiva aquoso. (Fim da descrição)",
-   "Descrição da equação química: 2 C O2 gasoso reage com 11 H com carga positiva aquoso e O2 gasoso resultando em CH3C O O com carga negativa aquoso e 4 H2O líquido. (Fim da descrição)"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-108",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 108"
-  },
-  "enunciado": "Mammalian Sexuality: The Act of Mating and the Evolution of Reproduction\n\nApesar de os animais representados no cladograma compartilharem um mesmo ancestral, eles se caracterizam por distintos padrões de reprodução ou de nutrição dos embriões e descendentes.\n\nDescrição do cladograma: O ancestral comum mammalia está na base do cladograma. Ele se divide em dois ramos: Prototheria e theria. O ramo prototheria origina monotremata, representado por um ornitorrinco. O ramo theria se divide em dois novos ramos: Metatheria e eutheria. O ramo metatheria origina marsupialia, representado por um canguru. O ramo eutheria origina placentalia, representado por um elefante. (Fim da descrição)\n\nAo longo do processo evolutivo, percebem-se, entre esses animais, perdas e ganhos nos padrões citados que envolvem o(a)",
-  "alternativas": [
-   "aumento no número de descendentes por ninhada.",
-   "mudança no tipo de fecundação de externa para interna.",
-   "redução da versatilidade de reprodução, que se torna unicamente sexuada.",
-   "desenvolvimento embrionário, que passa do meio aquático para o terrestre.",
-   "diminuição da vesícula vitelínica, associada ao desenvolvimento da lactação."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-109",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024",
@@ -2691,78 +1611,6 @@ Banco.registrar({ questoes: [
    "Mais grave do que o som emitido e fr maior que f zero."
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-110",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 110"
-  },
-  "enunciado": "Mirascópio 3D: produtor de ilusão instantânea\n\nO equipamento ilustrado na figura, de dimensões apresentadas no esquema, é composto por dois espelhos côncavos E1 e E2, apoiados um sobre o outro por suas bordas, de tal forma que o vértice de E1 coincide com o foco de E2 e vice-versa. Na abertura circular de E2, é formada uma imagem tridimensional de um objeto posicionado sobre o vértice de E1. Essa imagem é formada a partir dos raios procedentes do objeto, refletidos por E2 e E1, respectivamente, conforme o esquema. Os observadores julgam visualizar o objeto quando estão, de fato, visualizando sua imagem. O efeito só é possível porque as superfícies de ambos os espelhos são de extrema qualidade.\n\nDescrição da figura: Ilustração de um mirascópio. Destaca-se a abertura circular superior do equipamento com a imagem de um lobo-guará com o focinho voltado para a esquerda. (Fim da descrição)\n\nDescrição do esquema: Vista lateral de dois espelhos côncavos de 23 centímetros de diâmetro, apoiados um sobre o outro por suas bordas. Para cada espelho, a distância entre a borda e a base é de 3,8 centímetros. O espelho superior (E2) tem uma abertura circular de 5 centímetros no centro. Um boneco de lobo-guará está posicionado, com o focinho voltado para a direita, na concavidade do espelho inferior (E1). Raios de luz partem de um ponto no centro da base do boneco em direção ao espelho superior, refletem e voltam paralelos em direção ao espelho inferior e novamente são refletidos em direção ao espelho superior, cruzando-se em um ponto no centro da sua abertura. (Fim da descrição)\n\nA natureza da imagem formada e a distância vertical entre cada ponto objeto e seu correspondente ponto imagem são",
-  "alternativas": [
-   "real e 5 centímetros.",
-   "real e 3,8 centímetros.",
-   "real e 7,6 centímetros.",
-   "virtual e 7,6 centímetros.",
-   "virtual e 3,8 centímetros."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-111",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 111"
-  },
-  "enunciado": "Contextualizando reações ácido-base de acordo com a teoria protônica de Brönsted-Lowry usando comprimidos de propranolol e nimesulida\n\nA nimesulida é um fármaco pouco solúvel em água, utilizado como anti-inflamatório, analgésico e antitérmico. Essa substância pode ser convertida em uma espécie eletricamente carregada, de maior solubilidade em água, mediante o tratamento com uma base de Brönsted-Lowry, isto é, uma espécie química capaz de capturar um próton (H de carga positiva). Na figura são apresentados os grupamentos presentes na estrutura química da nimesulida.\n\nDescrição da figura: Estrutura química da nimesulida que apresenta os seguintes grupamentos em destaque:\nÉter: O ligado a dois anéis aromáticos.\nFenila: Anel aromático ligado ao O do éter.\nNitro: N com carga positiva ligado por ligação dupla com O e por ligação simples com O de carga negativa, ligado ao carbono 4 do outro anel aromático.\nSulfonamida: S ligado por ligações duplas com dois O e por ligação simples com NH, que se liga ao carbono 1 desse outro anel aromático.\nMetila: CH3 ligado ao S do grupo sulfonamida.\n(Fim da descrição)\n\nNa estrutura desse fármaco, o grupamento capaz de reagir com a base de Brönsted-Lowry é o grupo",
-  "alternativas": [
-   "sulfonamida.",
-   "metila.",
-   "fenila.",
-   "nitro.",
-   "éter."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -2883,42 +1731,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-115",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 115"
-  },
-  "enunciado": "A tuberculose é uma doença infecciosa causada pela bactéria Mycobacterium tuberculosis. O principal reservatório é o homem, e a sua transmissão ocorre principalmente pela inalação de aerossóis. No Brasil, a doença representa um sério problema de saúde pública e, muitas vezes, está ligada às precárias condições socioeconômicas e sanitárias. Para prevenir a doença, é essencial a adoção de medidas dirigidas ao homem e ao ambiente.\n\nQue práticas são eficazes para evitar essa doença?",
-  "alternativas": [
-   "Utilizar seringas descartáveis e realizar a coleta de lixo com frequência.",
-   "Tratar pessoas doentes e melhorar a ventilação nos ambientes fechados.",
-   "Proteger a boca ao tossir e usar telas em portas e janelas nas moradias.",
-   "Vacinar crianças recém-nascidas e dar destino adequado ao esgoto domiciliar.",
-   "Monitorar os contatos que convivem com o doente e melhorar a qualidade da água."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-117",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024",
@@ -2943,78 +1755,6 @@ Banco.registrar({ questoes: [
    "720 gramas."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-118",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 118"
-  },
-  "enunciado": "Avaliação dos métodos de fitorremediação na remoção de chumbo, cobre e zinco\n\nA fitorremediação é uma técnica que utiliza plantas para a remediação de ambientes contaminados. A descontaminação de solos pode ocorrer por descarte, absorção e metabolização, imobilização, extração ou volatilização do poluente, conforme representado na figura.\n\nDescrição da figura: Ilustração de uma árvore indicando se os processos ocorrem nas folhas ou nas raízes da planta, ou em ambas.\nFitoestabilização: Raízes. Imobilização dos contaminantes através de sorção por raízes, precipitação, complexação ou redução de valência.\nFitovolatilização: Folhas. Retirada de poluentes pelas plantas e transferência para uma forma volátil.\nFitodegradação: Folhas e raízes. Degradação dos contaminantes orgânicos por ação enzimática.\nFitoestimulação: Raízes. Estimulação dos microrganismos degradadores de contaminantes orgânicos.\nFitoextração: Folhas e raízes. Remoção de poluentes pelas raízes e sua transferência e acúmulo na parte aérea das plantas.\n(Fim da descrição)\n\nO método que retira o mercúrio de uma área contaminada, impedindo sua entrada na cadeia alimentar, é a",
-  "alternativas": [
-   "fitoestabilização, ficando o mercúrio disponível sob a superfície das raízes das plantas.",
-   "fitovolatilização, permitindo a retirada do mercúrio por plantas e a sua transferência para uma forma volátil.",
-   "fitodegradação, com a degradação do mercúrio promovida por enzimas, contidas nas raízes, formando espécies menos tóxicas.",
-   "fitoestimulação, com a remoção do mercúrio pela ação de microrganismos presentes nas raízes que absorvem e imobilizam o metal.",
-   "fitoextração, em que as plantas que acumulam o mercúrio são cultivadas nesses locais, e a biomassa rica no metal é retirada após o crescimento."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-119",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 119"
-  },
-  "enunciado": "Brasil fecha 2020 entre os maiores recicladores de latas de alumínio\n\nA bauxita contém alumina (Al 2 O3), que é a matéria-prima para produção do alumínio (A l). De forma geral, são necessários 50 quilogramas de bauxita para produzir 10 quilogramas de alumínio. O Brasil fechou 2020 como um dos principais líderes mundiais em reciclagem de latas de alumínio. De acordo com levantamento da Associação Brasileira dos Fabricantes de Latas de Alumínio (Abralatas), o país obteve um índice de reciclagem de 97,4 por cento, de um total de 4,0 vezes 10 elevado a 5 toneladas de latas vendidas. Considere que a lata é constituída de alumínio puro.\n\nLevando em conta apenas a reciclagem de latas, qual é o valor mais próximo da massa de bauxita, em tonelada, que deixou de ser extraída da natureza em 2020 no Brasil?",
-  "alternativas": [
-   "1,0 vezes 10 elevado a 4 toneladas.",
-   "3,9 vezes 10 elevado a 5 toneladas.",
-   "5,0 vezes 10 elevado a 5 toneladas.",
-   "1,9 vezes 10 elevado a 6 toneladas.",
-   "2,0 vezes 10 elevado a 7 toneladas."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -3063,150 +1803,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-121",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 121"
-  },
-  "enunciado": "O vírus linfotrópico de células T humanas tipo 1 (HTLV-1): quando suspeitar da infecção?\n\nO vírus linfotrópico de células T humanas tipo 1 (HTLV-1) é um retrovírus do mesmo grupo do vírus da imunodeficiência humana (H I V). Ambos são transmitidos da mesma forma e infectam as mesmas células de defesa do organismo, os linfócitos T. A diferença entre eles é que o HTLV-1 estimula o aumento da produção desses linfócitos, enquanto o HIV causa destruição dessas células.\n\nUma possível consequência da infecção por HTLV-1 é o desenvolvimento de",
-  "alternativas": [
-   "aids.",
-   "câncer.",
-   "diabetes.",
-   "hepatite B.",
-   "hemorragia."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-123",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 123"
-  },
-  "enunciado": "A Solar Cell that is Triggered by Sun and Rain\n\nPlacas solares comuns dependem de dias ensolarados para gerar energia. Mas podemos gerar eletricidade com a ajuda de gotas de chuva, revestindo placas solares com uma fina camada de grafeno. Os íons dissociados a partir da água da chuva (A de carga positiva e B de carga negativa) tornam a combinação grafeno e água da chuva um par perfeito para geração de energia. O processo requer apenas uma camada de grafeno para que grande quantidade de elétrons (e de carga negativa) se movimente ao longo da superfície.\n\nDescrição da figura: Nuvem projetando chuva sobre uma placa solar. É destacada uma região da superfície da placa, com uma camada fina da borda de uma gota de água sobre uma camada fina de grafeno. A camada fina de água contém íons B de carga negativa afastados de íons A de carga positiva. Esses íons A de carga positiva estão alinhados na interface com elétrons (e de carga negativa) localizados na camada fina de grafeno. A camada fina de água indica alto potencial elétrico e a camada fina de grafeno indica baixo potencial elétrico. (Fim da descrição)\n\nAo produzir eletricidade em dias chuvosos, o grafeno",
-  "alternativas": [
-   "oxida os cátions dissolvidos na água da chuva.",
-   "impede a difusão da água através das placas solares.",
-   "diminui a energia de ativação da reação no pseudocapacitor.",
-   "forma um compósito não metálico com os íons na água da chuva.",
-   "gera uma diferença de potencial pela interação dos elétrons com os cátions."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-125",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 125"
-  },
-  "enunciado": "O diagrama P-V a seguir representa o ciclo de Otto para um motor de combustão interna, como os motores a gasolina ou a etanol, utilizados nos automóveis.\n\nDescrição do diagrama: O diagrama PV representa um ciclo termodinâmico composto por duas isotermas e duas linhas isovolumétricas com P na vertical e V na horizontal. São indicados 5 pontos, de zero a 4. Há uma linha tracejada horizontal entre os pontos zero e 1, na porção inferior. Há uma área sombreada (W) delimitada pelos pontos de 1 a 4. Uma linha isoterma parte do ponto 1, segue para a esquerda e termina no ponto 2, localizado acima do ponto zero. Uma linha vertical sobe do ponto 2 até o ponto 3. Do ponto 3 parte uma linha isoterma descendente para a direita que termina no ponto 4, localizado ligeiramente acima do ponto 1. A delimitação da área W termina com uma linha vertical para baixo, ligando o ponto 4 ao ponto 1. (Fim da descrição)\n\nAs etapas representadas no diagrama estão descritas no quadro.\n\nDescrição do quadro: Quadro com as etapas representadas no diagrama e seus respectivos processo e descrição.\nEtapa 1: zero a 1 - Admissão isobárica da mistura ar-combustível no cilindro do motor.\nEtapa 2: 1 a 2 - Compressão adiabática da mistura.\nEtapa 3: 2 a 3 - Introdução de energia na forma de calor da combustão.\nEtapa 4: 3 a 4 - Expansão adiabática.\nEtapa 5: 4 a 1 - Liberação de energia na forma de calor.\nEtapa 6: 1 a zero - Liberação dos gases resultantes da combustão.\n(Fim da descrição)\n\nA transformação da energia térmica em energia útil ocorre na etapa",
-  "alternativas": [
-   "2.",
-   "3.",
-   "4.",
-   "5.",
-   "6."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 130"
-  },
-  "enunciado": "A química na agricultura: perspectivas para o desenvolvimento de tecnologias sustentáveis\n\nOs pesticidas naturais vêm sendo utilizados no controle de pragas e doenças agrícolas como substituintes de pesticidas sintéticos tradicionais, por serem menos nocivos ao ambiente, biodegradáveis e minimizarem custos e riscos relativos à lavoura. Por exemplo, os compostos 1 e 2 estão envolvidos nas respostas de defesa das plantas. Os grupos funcionais presentes nesses compostos são importantes para suas propriedades no controle de pragas.\n\nDescrição das estruturas químicas:\nComposto 1: Anel aromático com dois grupos: C O O H na posição 1 e O H na posição 2.\nComposto 2: Ciclo saturado com cinco átomos de carbono no qual estão ligados três grupos: na posição 1, há um átomo de oxigênio ligado diretamente ao carbono por uma ligação dupla; na posição 2, há uma cadeia normal de cinco átomos de carbono com uma ligação dupla entre o segundo e o terceiro átomo; na posição 3, há um átomo de carbono ligado a um C O O H.\n(Fim da descrição)\n\nQual é a função orgânica correspondente ao grupo funcional comum presente nesses dois compostos?",
-  "alternativas": [
-   "Ácido carboxílico.",
-   "Cetona.",
-   "Alceno.",
-   "Álcool.",
-   "Fenol."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-131",
   "materia": "enem-natureza",
   "assunto": "ENEM 2024",
@@ -3229,78 +1825,6 @@ Banco.registrar({ questoes: [
    "aeróbio estrito, anaeróbio estrito e anaeróbio facultativo.",
    "anaeróbio estrito, aeróbio estrito e anaeróbio facultativo.",
    "aeróbio estrito, anaeróbio facultativo e anaeróbio estrito."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-132",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 132"
-  },
-  "enunciado": "Vida: a ciência da biologia\n\nO esquema representa um experimento feito com células do protozoário Amoeba proteus. Nele, um grupo de células foi tratado com a droga citocalasina B, enquanto outro grupo não foi tratado, servindo como controle. O formato e o movimento das células tratadas foram comprometidos.\n\nDescrição do esquema: Representação do experimento com uma ameba do grupo controle e outra do grupo tratado com citocalasina B. No grupo controle, sem tratamento, a ameba mantém seu formato característico, com muitos prolongamentos citoplasmáticos. No grupo tratado com citocalasina B, a ameba, após tratamento, adquire formato arredondado, sem prolongamentos. (Fim da descrição)\n\nQual componente celular foi afetado pela droga utilizada no experimento?",
-  "alternativas": [
-   "Vacúolos.",
-   "Mitocôndrias.",
-   "Microfilamentos.",
-   "Material genético.",
-   "Membrana plasmática."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-136",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 136"
-  },
-  "enunciado": "Contratos de vários serviços disponíveis na internet apresentam uma quantidade excessiva de informações. Isso faz com que o tempo necessário para a leitura desses contratos possa ser longo.\nO quadro apresenta uma amostra do tempo considerado necessário para a leitura completa do contrato de alguns serviços digitais.\n\nDescrição do quadro: Quadro com duas colunas que apresentam seis tipos de serviço e o tempo necessário para a leitura completa do respectivo contrato, em minuto, mostra os seguintes dados:\nServiço A: 36.\nServiço B: 17.\nServiço C: 27.\nServiço D: 13.\nServiço E: 13.\nServiço F: 13.\n(Fim da descrição)\n\nO tempo médio, em minuto, necessário para a leitura completa de um contrato de serviço dentre os listados no quadro é, com uma casa decimal, aproximadamente,",
-  "alternativas": [
-   "13,0.",
-   "15,0.",
-   "19,8.",
-   "20,0.",
-   "23,3."
   ],
   "resposta": 2,
   "fontes": [
@@ -3375,78 +1899,6 @@ Banco.registrar({ questoes: [
    "F mais T mais D"
   ],
   "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-140",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 140"
-  },
-  "enunciado": "O arquiteto Renzo Piano exibiu a maquete da nova sede do Museu Whitney de Arte Americana, um prédio assimétrico que tem um vão aberto para a galeria principal, cuja medida da área é 1672 metros quadrados.\nConsidere que a escala da maquete exibida é 1 para 200.\n\nA medida da área do vão aberto nessa maquete, em centímetro quadrado, é",
-  "alternativas": [
-   "4,18.",
-   "8,36.",
-   "41,80.",
-   "83,60.",
-   "418,00."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-141",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 141"
-  },
-  "enunciado": "O gráfico apresenta o valor total de exportações e o valor total de importações, ao longo de um período, em bilhão de dólares. O saldo da balança comercial brasileira é dado pelo valor total de exportações menos o valor total de importações num mesmo período.\n\nDescrição do gráfico: Gráfico de linha intitulado Valor Total de Exportações e Importações, em bilhão de dólares, destacando os valores de importação e exportação: junho de 2009, janeiro de 2010 e junho de 2010, apresentando os seguintes dados:\nEm junho de 2009: importação de 10 bilhões e exportação de 14,5 bilhões;\nEm janeiro de 2010: importação de 11,5 bilhões e exportação de 11,2 bilhões;\nEm junho de 2010: importação de 14,8 bilhões e exportação de 17,1 bilhões.\n(Fim da descrição)\n\nConsidere que os saldos da balança comercial brasileira, nos três meses destacados no gráfico, sejam representados por:\nS índice 1: saldo em junho de 2009;\nS índice 2: saldo em janeiro de 2010;\nS índice 3: saldo em junho de 2010.\n\nA ordenação dos saldos S índice 1, S índice 2 e S índice 3, do maior para o menor, é",
-  "alternativas": [
-   "S índice 1, S índice 3 e S índice 2.",
-   "S índice 2, S índice 1 e S índice 3.",
-   "S índice 2, S índice 3 e S índice 1.",
-   "S índice 3, S índice 1 e S índice 2.",
-   "S índice 3, S índice 2 e S índice 1."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -3661,42 +2113,6 @@ Banco.registrar({ questoes: [
    "pirâmide.",
    "tronco de cone.",
    "tronco de pirâmide."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-150",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 150"
-  },
-  "enunciado": "O estádio do Maracanã passou por algumas modificações estruturais para a realização da Copa do Mundo de 2014, como, por exemplo, as dimensões do campo retangular. Para se adaptar aos padrões da Fifa, as dimensões do campo foram reduzidas de 110 metros por 75 metros para 105 metros por 68 metros.\n\nEm quantos metros quadrados a área do campo do Maracanã foi reduzida?",
-  "alternativas": [
-   "24",
-   "35",
-   "555",
-   "1110",
-   "1145"
   ],
   "resposta": 3,
   "fontes": [
@@ -4287,78 +2703,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-168",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 168"
-  },
-  "enunciado": "Na construção de uma varanda retangular, com 5 metros de largura e 6 metros de comprimento, decidiu-se usar dois tipos de pedras para revestir o piso. Uma das pedras é quadrada, com 1 metro de lado, e a outra é retangular, com 0,25 metro de largura e 0,50 metro de comprimento. Serão utilizadas 10 pedras quadradas para decorar parte do piso, e o restante da área será revestida com pedras retangulares. A pedra do tipo retangular é vendida somente em caixas de 30 unidades.\n\nQuantas caixas da pedra retangular deverão ser compradas?",
-  "alternativas": [
-   "4",
-   "5",
-   "6",
-   "8",
-   "11"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-171",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 171"
-  },
-  "enunciado": "A criptografia refere-se à construção e análise de protocolos que impedem terceiros de lerem mensagens privadas. Júlio César, imperador romano, utilizava um código para proteger as mensagens enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Nesse código, cada letra do alfabeto era substituída pela letra três posições à frente, ou seja, o A era substituído pelo D, o B pelo E, o C pelo F, e assim sucessivamente.\n\nDescrição da figura: Figura que mostra uma possível relação entre letras do alfabeto para realizar a criptografia usando a Cifra de César: a letra A é substituída pela letra D, a letra B é substituída pela letra E, a letra C é substituída pela letra F, e assim sucessivamente, até que a letra W é substituída pela letra Z, a letra X é substituída pela letra A, a letra Y é substituída pela letra B e a letra Z é substituída pela letra C. (Fim da descrição)\n\nQualquer código que tenha um padrão de substituição de letras como o descrito é considerado uma Cifra de César ou um Código de César. Note que, para decifrar uma Cifra de César, basta descobrir por qual letra o A foi substituído, pois isso define todas as demais substituições a serem feitas.\nUma mensagem, em um alfabeto de 26 letras, foi codificada usando uma Cifra de César. Considere a probabilidade de se descobrir, aleatoriamente, o padrão utilizado nessa codificação, e que uma tentativa frustrada deverá ser eliminada nas tentativas seguintes.\n\nA probabilidade de se descobrir o padrão dessa Cifra de César apenas na terceira tentativa é dada por",
-  "alternativas": [
-   "um vinte e cinco avos mais um vinte e cinco avos mais um vinte e cinco avos.",
-   "vinte e quatro vinte e cinco avos mais vinte e três vinte e quatro avos mais um vinte e três avos.",
-   "um vinte e cinco avos vezes um vinte e quatro avos vezes um vinte e três avos.",
-   "vinte e quatro vinte e cinco avos vezes vinte e três vinte e cinco avos vezes um vinte e cinco avos.",
-   "vinte e quatro vinte e cinco avos vezes vinte e três vinte e quatro avos vezes um vinte e três avos."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-172",
   "materia": "matematica",
   "assunto": "ENEM 2024",
@@ -4383,42 +2727,6 @@ Banco.registrar({ questoes: [
    "8,4."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2024-173",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 173"
-  },
-  "enunciado": "Um comprador assinou um contrato com uma construtora adquirindo um imóvel, ainda na fase de lançamento da construção, cujo valor total, em reais, era de 420000 reais, pagando o equivalente a 35 por cento desse valor, sem quaisquer outros ônus até a data de entrega das chaves. Nesse contrato existia uma cláusula prévia que, no caso de desistência da compra, quando da entrega das chaves, o comprador poderia cancelar o contrato e a construtora pagaria a ele 75 por cento do valor que ele já havia pago inicialmente, a título de devolução. Suponha que em função de problemas inesperados, o comprador desistiu da aquisição do imóvel, cancelando o contrato de compra no momento da entrega das chaves.\n\nQual o valor, em real, que o comprador recebeu da construtora como devolução?",
-  "alternativas": [
-   "110250.",
-   "147000.",
-   "168000.",
-   "257250.",
-   "315000."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -4503,42 +2811,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-176",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 176"
-  },
-  "enunciado": "Atualmente, há telefones celulares com telas de diversos tamanhos e em formatos retangulares. Alguns deles apresentam telas medindo três inteiros e um meio polegadas, com determinadas especificações técnicas. Além disso, em muitos modelos, com a inclusão de novas funções no celular, suas telas ficaram maiores, sendo muito comum encontrarmos atualmente telas medindo quatro inteiros e cinco sextos polegadas, conforme a figura.\n\nDescrição da figura: Figura apresenta dois celulares: a tela do celular 1 tem uma diagonal que mede 3 inteiros e um meio polegadas; a tela do celular 2 mede 4 inteiros e cinco sextos polegadas. (Fim da descrição)\n\nA diferença de tamanho, em valor absoluto, entre as medidas, em polegada, das telas do celular 2 e do celular 1, representada apenas com uma casa decimal, é",
-  "alternativas": [
-   "0,1.",
-   "0,5.",
-   "1,0.",
-   "1,3.",
-   "1,8."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2024-177",
   "materia": "matematica",
   "assunto": "ENEM 2024",
@@ -4611,114 +2883,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2024-180",
-  "materia": "matematica",
-  "assunto": "ENEM 2024",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2024,
-   "orgao": "ENEM, 2º dia, questão 180"
-  },
-  "enunciado": "Um tanque, em formato de paralelepípedo reto retângulo, tem em seu interior dois anteparos verticais, fixados na sua base e em duas paredes opostas, sendo perpendiculares a elas, conforme a figura.\n\nDescrição da figura: Figura de um tanque de comprimento L e altura H, com um orifício de entrada para abastecimento no tampo superior do lado direito, está dividido em três seções, correspondentes a um terço do comprimento L do tanque, cada uma. Da direita para a esquerda, a primeira seção é limitada por um anteparo vertical de altura um meio de H e, a segunda sessão é também limitada, por outro anteparo vertical de altura um quarto de H. (Fim da descrição).\n\nEsses anteparos, de espessuras desprezíveis, estão instalados de maneira a dividir a base do tanque em três retângulos congruentes, tendo suas alturas iguais à metade e a um quarto da altura do tanque. O tanque é abastecido por uma entrada situada no teto, através de um duto que despeja água a uma vazão constante, sendo necessárias 12 horas para finalizar o seu enchimento.\n\nO gráfico que descreve, em cada instante, a maior altura de coluna de água, dentre aquelas que vão sendo formadas ao longo do enchimento do tanque, é\n\nDescrição das alternativas: As alternativas são gráficos. Em cada uma, há a representação de um plano cartesiano sobre uma malha quadriculada; o eixo das abscissas representa o tempo, em hora, de zero a 12, graduados de 2 em 2; o eixo das ordenadas representa a maior altura da coluna de água, em metro. (Fim da descrição)",
-  "alternativas": [
-   "Descrição do gráfico: O gráfico é formado por quatro segmentos de reta: o primeiro liga o ponto (0 ; 0) ao ponto (2 ; 3); o segundo liga o ponto (2 ; 3) ao ponto (4 ; 3); o terceiro liga o ponto (4 ; 3) ao ponto (6 ; 4); o quarto liga o ponto (6 ; 4) ao ponto (12 ; 6). (Fim da descrição)",
-   "Descrição do gráfico: O gráfico é formado por três segmentos de reta: o primeiro liga o ponto (0 ; 0) ao ponto (2 ; 3); o segundo liga o ponto (2 ; 3) ao ponto (6 ; 3); o terceiro liga o ponto (6 ; 3) ao ponto (12 ; 6). (Fim da descrição)",
-   "Descrição do gráfico: O gráfico é formado por três segmentos de reta: o primeiro liga o ponto (0 ; 0) ao ponto (2 ; 3); o segundo liga o ponto (2 ; 3) ao ponto (10 ; 3); o terceiro liga o ponto (10 ; 3) ao ponto (12 ; 6). (Fim da descrição)",
-   "Descrição do gráfico: O gráfico é formado por quatro segmentos de reta horizontais: o primeiro liga o ponto (0 ; 3) ao ponto (2 ; 3); o segundo liga o ponto (2 ; 1) ao ponto (4 ; 1); o terceiro liga o ponto (4 ; 3) ao ponto (6 ; 3); o quarto liga o ponto (6 ; 6) ao ponto (12 ; 6). (Fim da descrição)",
-   "Descrição do gráfico: O gráfico é formado por sete segmentos de reta, sendo quatro horizontais e três verticais; o primeiro liga o ponto (0 ; 3) ao ponto (2 ; 3); o segundo liga o ponto (2 ; 3) ao ponto (2 ; 1); o terceiro liga o ponto (2 ; 1) ao ponto (4 ; 1); o quarto liga o ponto (4 ; 1) ao ponto (4 ; 3); o quinto liga o ponto (4 ; 3) ao ponto (6 ; 3); o sexto liga o ponto (6 ; 3) ao ponto (6 ; 6); o sétimo liga o ponto (6 ; 6) ao ponto (12 ; 6). (Fim da descrição)"
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2024, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_Dia_2_P1_CN_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-12",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 1º dia, questão 12"
-  },
-  "enunciado": "O acesso às Práticas Corporais/Atividades Físicas (PC/AF) é desigual no Brasil, à semelhança de outros indicadores sociais e de saúde. Em geral, PC/AF prazerosas, diversificadas, mais afeitas ao período de lazer estão concentradas nas populações mais abastadas. As atividades físicas de deslocamento, trajetos a pé ou de bicicleta para estudar ou trabalhar, por exemplo, são mais frequentes na classe social menos favorecida. Aqui, há uma relação inversa e perversa entre variáveis socioeconômicas de acesso às PC/AF. As maiores prevalências de inatividade física foram em mulheres, pessoas com 60 anos ou mais, negros, pessoas com autoavaliação de saúde ruim ou muito ruim, com renda familiar de até quatro salários mínimos por pessoa, pessoas que desconhecem programas públicos de PC/AF e residentes em áreas sem locais públicos para a prática.\n\nO fator central que impacta a realização de práticas corporais/atividades físicas no tempo de lazer no Brasil é a",
-  "alternativas": [
-   "diferença entre homens e mulheres.",
-   "inexistência de políticas públicas.",
-   "diversidade de faixa etária.",
-   "variação de condição étnica.",
-   "desigualdade entre classes sociais."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 1º dia, caderno 9 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_1_P1_LC_Caderno_09_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-14",
-  "materia": "enem-linguagens",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 1º dia, questão 14"
-  },
-  "enunciado": "O Marabaixo é uma expressão artístico-cultural formada nas tradições e na identificação cultural entre as comunidades negras do Amapá. O nome remonta às mortes de escravizados em navios negreiros que eram jogados na água. Em sua homenagem, hinos de lamento eram cantados mar abaixo, mar acima. Posteriormente, o Marabaixo se integrou à vivência das comunidades negras em um ciclo de danças, cantorias com tambores e festas religiosas, recebendo, em 2018, o título de Patrimônio Cultural do Brasil.\n\nA manifestação do Marabaixo se constituiu em expressão de arte e cultura, exercendo função de",
-  "alternativas": [
-   "ressignificar episódios dramáticos em novas práticas culturais.",
-   "adaptar coreografias como imitação dos movimentos do mar.",
-   "lembrar dos mortos no passado escravista como forma de lamento.",
-   "perpetuar uma narrativa de apagamento dos fatos históricos traumáticos.",
-   "ritualizar a passagem de atos fúnebres nas produções coletivas com espírito festivo."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 1º dia, caderno 9 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_1_P1_LC_Caderno_09_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-91",
   "materia": "enem-natureza",
   "assunto": "ENEM 2023",
@@ -4743,114 +2907,6 @@ Banco.registrar({ questoes: [
    "propagarem-se com velocidades diferentes."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-92",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 92"
-  },
-  "enunciado": "Terpenos com atividade inseticida: uma alternativa para o controle químico de insetos\n\nO Aldrin é um inseticida agrícola organoclorado sintético de baixa polaridade, cuja estrutura molecular simétrica, de fórmula C12H8Cl6, está ilustrada na figura. Introduzido na agricultura a partir da década de 1950, esse composto apresenta alta persistência no meio ambiente e acumulação nos organismos, sendo danoso para a saúde.\n\nDescrição da ilustração: Estrutura química da molécula de Aldrin. Essa ilustração não foi descrita, pois suas informações não foram solicitadas para a resolução da questão. (Fim da descrição)\n\nUm pesquisador coletou fluidos biológicos de indivíduos de uma população contaminada por esse inseticida agrícola. Ele analisou amostras de saliva, sangue, lágrima, urina e leite quanto à presença dessa substância.\n\nEm qual dos fluidos o pesquisador provavelmente encontrou a maior concentração dessa substância?",
-  "alternativas": [
-   "Saliva, por consequência da atividade de enzimas.",
-   "Sangue, em função das hemácias e leucócitos.",
-   "Lágrima, em razão da concentração de sais.",
-   "Urina, pela presença de moléculas de ureia.",
-   "Leite, por causa do alto teor de gorduras."
-  ],
-  "resposta": 4,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-93",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 93"
-  },
-  "enunciado": "Cafeteria adota copo reutilizável feito com casca de café\n\nUma cafeteria adotou copos fabricados a partir de uma composição de 50 por cento de plástico reciclado não biodegradável e 50 por cento de casca de café. O copo é reutilizável e retornável, pois o material, semelhante a uma cerâmica, suporta a lavagem. Embora ele seja comercializado por um preço considerado alto quando comparado ao de um copo de plástico descartável, essa cafeteria possibilita aos clientes retornarem o copo sujo e levarem o café quente servido em outro copo já limpo e higienizado. O material desse copo oferece também o conforto de não esquentar na parte externa.\n\nQuais duas vantagens esse copo apresenta em comparação ao copo descartável?",
-  "alternativas": [
-   "Ter a durabilidade de uma cerâmica e ser totalmente biodegradável.",
-   "Ser tão durável quanto uma cerâmica e ter alta condutividade térmica.",
-   "Ser um mau condutor térmico e aumentar o resíduo biodegradável na natureza.",
-   "Ter baixa condutividade térmica e reduzir o resíduo não biodegradável na natureza.",
-   "Ter alta condutividade térmica e possibilitar a degradação do material no meio ambiente."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-94",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 94"
-  },
-  "enunciado": "Um método simples para avaliar o teor de sacarose e C O2 em refrigerantes\n\nO consumo exagerado de refrigerantes é preocupante, pois contribui para o aumento de casos de obesidade e diabetes. Considere dois refrigerantes enlatados, um comum e um diet, e que ambos possuam a mesma quantidade de aditivos, exceto pela presença de açúcar. O refrigerante comum contém basicamente água carbonatada e grande quantidade de açúcar; já o refrigerante diet tem água carbonatada e adoçantes, cujas massas são muito pequenas.\n\nEntre as duas versões apresentadas, o refrigerante comum possui",
-  "alternativas": [
-   "maior densidade.",
-   "menor viscosidade.",
-   "maior volume de gás dissolvido.",
-   "menor massa de solutos dissolvidos.",
-   "maior temperatura de congelamento."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -4995,42 +3051,6 @@ Banco.registrar({ questoes: [
    "estado de oxidação."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-102",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 102"
-  },
-  "enunciado": "Os cientistas conseguem determinar a idade de um fóssil com menos de 40.000 anos de idade utilizando o método do carbono-14 ou carbono radioativo. Isso é feito a partir da relação existente entre a quantidade de carbono-14 restante no fóssil e a quantidade de carbono-14 em uma espécie semelhante atual. Apesar de sofrer decaimento radioativo, a quantidade de carbono-14 na atmosfera, em particular em moléculas de C O2, é praticamente constante, devido à incidência dos raios cósmicos que atingem a Terra a todo instante. Assim, por fazerem parte do ciclo do carbono, animais e vegetais mantêm uma quantidade praticamente constante de carbono-14 em sua constituição enquanto estão vivos. Porém, quando morrem, cessa a entrada de carbono no organismo e esse número vai diminuindo à medida que o carbono-14 vai decaindo radioativamente. A meia-vida do carbono-14, isto é, o tempo necessário para que metade dos átomos radioativos de uma amostra decaia, é constante e de aproximadamente 5730 anos.\n\nPara descobrir a idade de um fóssil que não poderia ter mais de 40.000 anos, é relevante determinar",
-  "alternativas": [
-   "a meia-vida do carbono-14.",
-   "se o fóssil é animal ou vegetal.",
-   "se o fóssil tem mais de 5730 anos.",
-   "a quantidade de carbono-14 presente no fóssil.",
-   "a relação entre as quantidades de carbono-14 em uma parte do fóssil e no fóssil todo."
-  ],
-  "resposta": 3,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -5331,42 +3351,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-117",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 117"
-  },
-  "enunciado": "A tecnologia de vacinas de R N A mensageiro (R N A m) é investigada há anos. Avanços científicos em genética molecular permitiram desenvolver uma vacina para controle da pandemia da covid-19 causada pelo vírus de R N A SARS-CoV-2. A vacina de R N A m tem sequências de genes do vírus. Entretanto, por ser muito instável, o R N A m deve ser recoberto por uma capa de lipídios que evita sua degradação e favorece sua ação. Dessa forma, o R N A m desempenhará sua função específica atuando no mesmo compartimento celular de sempre.\n\nA imunização produzida por esse tipo de vacina é alcançada por meio da",
-  "alternativas": [
-   "estimulação de leucócitos induzida pela capa lipídica contendo R N A m.",
-   "atuação do R N A m como sequestrador do vírus para o meio extracelular.",
-   "tradução do R N A m em proteína viral, desencadeando a resposta antigênica.",
-   "competição entre o R N A m vacinal e o R N A viral pelos sítios dos ribossomos.",
-   "incorporação do R N A m viral ao genoma do hospedeiro, gerando novo fenótipo."
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-118",
   "materia": "enem-natureza",
   "assunto": "ENEM 2023",
@@ -5427,42 +3411,6 @@ Banco.registrar({ questoes: [
    "4"
   ],
   "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-121",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 121"
-  },
-  "enunciado": "Efficacy of Selective Serotonin-Reuptake Inhibitors in Premenstrual Syndrome\n\nMuitas mulheres sofrem com desconfortos nos dias que antecedem a menstruação, a chamada tensão pré-menstrual. Entre outros sintomas, podem ocorrer alterações de humor. Atualmente, acredita-se que os sintomas são resultado da queda na concentração do neurotransmissor serotonina, que, por sua vez, está relacionado com a diminuição na produção dos hormônios ovarianos estrógeno e progesterona, observada nessa fase do ciclo feminino.\n\nA redução da produção desses hormônios nessa fase está relacionada com o(a)",
-  "alternativas": [
-   "regressão do corpo lúteo ovariano.",
-   "diminuição na produção de ocitocina.",
-   "liberação do gameta feminino na ovulação.",
-   "aumento nos níveis dos hormônios LH e FSH.",
-   "elevação nos níveis sorológicos de adrenalina."
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -5547,42 +3495,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-124",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 124"
-  },
-  "enunciado": "Atualização da recomendação da Sociedade Portuguesa de Neonatologia\n\nO vidro contendo alumínio em sua composição é um excelente material para acondicionar medicamentos e suplementos, porque pode ser esterilizado por aquecimento. No entanto, quando o medicamento ou suplemento contém substâncias que se ligam fortemente ao íon desse metal, a dissolução do alumínio é promovida em função do deslocamento do equilíbrio químico estabelecido entre a espécie imobilizada no vidro e a espécie em solução. Por essa razão, recomenda-se que suplementos de nutrição de recém-nascidos contendo gluconato de cálcio sejam acondicionados em embalagens plásticas, e não nesse tipo de vidro.\n\nCaso esse suplemento seja acondicionado em embalagem desse tipo de vidro, o risco de contaminação por alumínio será maior se o(a)",
-  "alternativas": [
-   "vidro do frasco for translúcido.",
-   "concentração de gluconato de cálcio for alta.",
-   "frasco de vidro apresentar uma maior espessura.",
-   "vidro for previamente esterilizado em altas temperaturas.",
-   "reação do alumínio com gluconato de cálcio for endotérmica."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-125",
   "materia": "enem-natureza",
   "assunto": "ENEM 2023",
@@ -5619,42 +3531,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-127",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 127"
-  },
-  "enunciado": "Há muito tempo são conhecidas espécies de lesmas-do-mar com uma capacidade ímpar: guardar parte da maquinaria das células das algas que consomem - os cloroplastos - e mantê-los funcionais dentro das suas próprias células, obtendo assim parte do seu alimento. Investigadores portugueses descobriram que essas lesmas-do-mar podem ser mais eficientes nesse processo do que as próprias algas que consomem.\n\nEssa adaptação confere a esse organismo a capacidade de obter primariamente",
-  "alternativas": [
-   "ácidos nucleicos.",
-   "carboidratos.",
-   "proteínas.",
-   "vitaminas.",
-   "lipídios."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-128",
   "materia": "enem-natureza",
   "assunto": "ENEM 2023",
@@ -5677,42 +3553,6 @@ Banco.registrar({ questoes: [
    "Fezes.",
    "Sangue.",
    "Secreção ocular."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_CN_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-130",
-  "materia": "enem-natureza",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 130"
-  },
-  "enunciado": "O número de abelhas encontra-se em declínio em várias regiões do mundo, inclusive no Brasil, sendo que vários fatores contribuem para o colapso de suas colmeias. Nos Estados Unidos, bombas de sementes de espécies vegetais nativas têm sido utilizadas para combater o desaparecimento desses insetos. Elas são pequenas bolinhas recheadas com sementes, adubo e argila. Quando são arremessadas e ficam expostas ao sol e à chuva, germinam até mesmo em solo pouco fértil.\n\nEsse método contribui para a preservação das abelhas porque",
-  "alternativas": [
-   "reduz sua predação.",
-   "reduz o uso de pesticidas.",
-   "reduz a competição por abrigo.",
-   "aumenta a oferta de alimento.",
-   "aumenta os locais de reprodução."
   ],
   "resposta": 3,
   "fontes": [
@@ -6195,42 +4035,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-146",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 146"
-  },
-  "enunciado": "Lucas precisa estacionar o carro pelo período de 40 minutos, e sua irmã Clara também precisa estacionar o carro pelo período de 6 horas. O estacionamento Verde cobra 5 reais por hora de permanência. O estacionamento Amarelo cobra 6 reais por 4 horas de permanência e mais 2,50 reais por hora ou fração de hora ultrapassada. O estacionamento Preto cobra 7 reais por 3 horas de permanência e mais 1 real por hora ou fração de hora ultrapassada.\n\nOs estacionamentos mais econômicos para Lucas e Clara, respectivamente, são",
-  "alternativas": [
-   "Verde e Preto.",
-   "Verde e Amarelo.",
-   "Amarelo e Amarelo.",
-   "Preto e Preto.",
-   "Verde e Verde."
-  ],
-  "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-149",
   "materia": "matematica",
   "assunto": "ENEM 2023",
@@ -6363,42 +4167,6 @@ Banco.registrar({ questoes: [
    "80"
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-153",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 153"
-  },
-  "enunciado": "Dirigir após ingerir bebidas alcoólicas é uma atitude extremamente perigosa, uma vez que, a partir da primeira dose, a pessoa já começa a ter perda de sensibilidade de movimentos e de reflexos. Apesar de a eliminação e absorção do álcool depender de cada pessoa e de como o organismo consegue metabolizar a substância, ao final da primeira hora após a ingestão, a concentração de álcool (C) no sangue corresponde a aproximadamente 90 por cento da quantidade (q) de álcool ingerida, e a eliminação total dessa concentração pode demorar até 12 horas.\n\nNessas condições, ao final da primeira hora após a ingestão da quantidade q de álcool, a concentração C dessa substância no sangue é expressa algebricamente por",
-  "alternativas": [
-   "C é igual a 0,9 vezes q",
-   "C é igual a 0,1 vezes q",
-   "C é igual a 1 menos 0,1 vezes q",
-   "C é igual a 1 menos 0,9 vezes q",
-   "C é igual a q menos 10"
-  ],
-  "resposta": 0,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -6723,42 +4491,6 @@ Banco.registrar({ questoes: [
    "tipo 3, pois tem maior quantidade de caracteres."
   ],
   "resposta": 0,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-163",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 163"
-  },
-  "enunciado": "Em primeiro de junho, um canil que cria 98 cães tem, em estoque, a quantidade exata de ração para fornecer, diariamente, 1000 gramas para cada animal durante 30 dias. No início do décimo primeiro dia o canil recebeu dois novos cães. Com isso, a quantidade de ração diária por animal teve que ser recalculada para que o restante de ração em estoque fosse suficiente para alimentar a todos até o fim do mês, garantindo, para cada cão, uma mesma porção diária da ração.\n\nQual a quantidade de ração, em grama, que deverá ser dada diariamente para cada cão, do dia 11 de junho até o final desse mês?",
-  "alternativas": [
-   "306",
-   "500",
-   "510",
-   "653",
-   "980"
-  ],
-  "resposta": 4,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
@@ -7131,42 +4863,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-175",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 175"
-  },
-  "enunciado": "Alguns estudos comprovam que os carboidratos fornecem energia ao corpo, preservam as proteínas estruturais dos músculos durante a prática de atividade física e ainda dão força para o cérebro coordenar os movimentos, o que de fato tem impacto positivo no desenvolvimento do praticante. O ideal é consumir 1 grama de carboidrato para cada minuto de caminhada.\nUm casal realizará diariamente 30 minutos de caminhada, ingerindo, antes dessa atividade, a quantidade ideal de carboidratos recomendada. Para ter o consumo ideal apenas por meio do consumo de pão de fôrma integral, o casal planeja garantir o suprimento de pães para um período de 30 dias ininterruptos. Sabe-se que cada pacote desse pão vem com 18 fatias, e que cada uma delas tem 15 gramas de carboidratos.\n\nA quantidade mínima de pacotes de pão de fôrma necessários para prover o suprimento a esse casal é",
-  "alternativas": [
-   "1.",
-   "4.",
-   "6.",
-   "7.",
-   "8."
-  ],
-  "resposta": 3,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-176",
   "materia": "matematica",
   "assunto": "ENEM 2023",
@@ -7239,42 +4935,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-178",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 178"
-  },
-  "enunciado": "O calendário maia apresenta duas contagens simultâneas de anos, o chamado ano Tzolkim, composto por 260 dias e que determinava o calendário religioso, e o ano Haab, composto por 365 dias e que determinava o calendário agrícola. Um historiador encontrou evidências de que gerações de uma mesma família governaram certa comunidade maia pelo período de 20 ciclos, sendo cada ciclo formado por 52 anos Haab.\n\nDe acordo com as informações fornecidas, durante quantos anos Tzolkim aquela comunidade maia foi governada por tal família?",
-  "alternativas": [
-   "741",
-   "1040",
-   "1460",
-   "2100",
-   "5200"
-  ],
-  "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-179",
   "materia": "matematica",
   "assunto": "ENEM 2023",
@@ -7299,42 +4959,6 @@ Banco.registrar({ questoes: [
    "180 graus menor que alfa menor que 360 graus."
   ],
   "resposta": 2,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
-  "id": "enem-2023-180",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 180"
-  },
-  "enunciado": "Entre maratonistas, um parâmetro utilizado é o de economia de corrida (EC). O valor desse parâmetro é calculado pela razão entre o consumo de oxigênio, em mililitro (mL) por minuto (min), e a massa, em quilograma (kg), do atleta correndo a uma velocidade constante.\nUm maratonista, visando melhorar sua performance, auxiliado por um médico, mensura o seu consumo de oxigênio por minuto a velocidade constante. Com base nesse consumo e na massa do atleta, o médico calcula o EC do atleta.\n\nA unidade de medida da grandeza descrita pelo parâmetro EC é",
-  "alternativas": [
-   "fração com numerador min e denominador abre parêntese mL vezes kg fecha parêntese.",
-   "fração com numerador mL e denominador abre parêntese min vezes kg fecha parêntese.",
-   "fração com numerador abre parêntese min vezes mL e denominador kg.",
-   "fração com numerador min vezes kg fecha parêntese e denominador mL.",
-   "fração com numerador abre parêntese mL vezes kg fecha parêntese e denominador min."
-  ],
-  "resposta": 1,
   "fontes": [
    {
     "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",

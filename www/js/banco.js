@@ -23,14 +23,18 @@
       if (pacote.explicacoes) Object.keys(pacote.explicacoes).forEach(function (id) { Banco.explicacoes[id] = pacote.explicacoes[id]; });
       // Do mesmo jeito, a matéria e o assunto das questões oficiais de Ciências da Natureza (Química, Física, Biologia).
       if (pacote.classificacao) Object.keys(pacote.classificacao).forEach(function (id) { Banco.classificacao[id] = pacote.classificacao[id]; });
+      // E as figuras recortadas do caderno oficial (a mesma imagem do INEP, sem alteração).
+      if (pacote.figuras) Object.keys(pacote.figuras).forEach(function (id) { Banco.figuras[id] = pacote.figuras[id]; });
       Banco.questoes.forEach(function (q) {
-        var x = Banco.explicacoes[q.id], c = Banco.classificacao[q.id];
+        var x = Banco.explicacoes[q.id], c = Banco.classificacao[q.id], f = Banco.figuras[q.id];
         if (x && !q.explicacao) { q.explicacao = x; q.comentarioApp = true; }
         if (c && q.materia !== c.materia) { q.materia = c.materia; q.assunto = c.assunto; }
+        if (f && !q.figuras) q.figuras = f;
       });
     },
     explicacoes: {},
     classificacao: {},
+    figuras: {},
 
     /* Matéria criada pelo aluno (ex.: Contabilidade). Id sempre com prefixo "x-" para não colidir com as do app. */
     validarMateria: function (m) {
@@ -105,6 +109,11 @@
       });
       if (q.prova !== undefined && (typeof q.prova !== 'object' || !txt(q.prova.banca) || !Number.isInteger(q.prova.ano)))
         e.push('prova deve ter banca e ano');
+      if (q.credito !== undefined && !txt(q.credito)) e.push('credito deve ser texto');
+      // Figura: arquivo do próprio app em img/q/ e texto alternativo (leitor de tela e quem não carrega a imagem).
+      if (q.figuras !== undefined && (!Array.isArray(q.figuras) || !q.figuras.length || !q.figuras.every(function (f) {
+        return f && /^img\/q\/[a-z0-9._-]+\.(png|webp|jpg|svg)$/.test(f.src || '') && txt(f.alt);
+      }))) e.push('figuras: cada uma precisa de src em img/q/ e alt');
       return e;
     },
 

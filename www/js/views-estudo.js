@@ -55,8 +55,11 @@
     var meta = '<div class="q-meta">' + (o.numero ? '<span class="q-num">' + o.numero + '</span>' : '') +
       '<span class="tag">' + esc(m ? m.nome : q.materia) + '</span><span>' + esc(q.assunto) + '</span><span aria-hidden="true">·</span><span>' + origem + '</span>' + UI.dots(q.dificuldade) + '</div>';
     var corpo = (q.textoBase ? '<div class="q-base">' + esc(q.textoBase) + '</div>' : '') + '<div class="q-text">' + esc(q.enunciado) + '</div>' +
+      (q.figuras || []).map(function (f) { return '<figure class="q-fig"><img src="' + esc(f.src) + '" alt="' + esc(f.alt) + '" loading="lazy"></figure>'; }).join('') +
       // Crédito exigido pela licença do INEP: visível desde antes de responder.
-      (q.prova && q.prova.banca === 'INEP' ? '<p class="credito">Questão oficial do ' + (/^ENCCEJA/.test(q.prova.orgao || '') ? 'ENCCEJA ' : 'ENEM ') + esc(q.prova.ano) + ', do INEP/MEC, reproduzida sem alterações sob licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR" target="_blank" rel="noopener noreferrer">Creative Commons BY-ND 3.0</a>.</p>' : '');
+      // Adaptação de obra com licença CC (ex.: olimpíadas): o crédito vem na própria questão.
+      (q.credito ? '<p class="credito">' + esc(q.credito) + '</p>' :
+      q.prova && q.prova.banca === 'INEP' ? '<p class="credito">Questão oficial do ' + (/^ENCCEJA/.test(q.prova.orgao || '') ? 'ENCCEJA ' : 'ENEM ') + esc(q.prova.ano) + ', do INEP/MEC, reproduzida sem alterações sob licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR" target="_blank" rel="noopener noreferrer">Creative Commons BY-ND 3.0</a>.</p>' : '');
     var mostrar = o.confirmada;
     var notas = mostrar && (o.profunda || o.expandida) && q.explicacao && q.explicacao.alternativas;
     var alts;

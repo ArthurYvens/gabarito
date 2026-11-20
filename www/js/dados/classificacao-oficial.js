@@ -1340,5 +1340,245 @@ Banco.registrar({ classificacao: {
  "enem-2026-97": {
   "materia": "quimica",
   "assunto": "Soluções"
+ },
+ "enem-2011-50": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2011-72": {
+  "materia": "biologia",
+  "assunto": "Microbiologia e saúde"
+ },
+ "enem-2011-90": {
+  "materia": "biologia",
+  "assunto": "Microbiologia e saúde"
+ },
+ "enem-2012-46": {
+  "materia": "fisica",
+  "assunto": "Energia"
+ },
+ "enem-2012-47": {
+  "materia": "biologia",
+  "assunto": "Biotecnologia"
+ },
+ "enem-2012-51": {
+  "materia": "fisica",
+  "assunto": "Hidrostática"
+ },
+ "enem-2012-56": {
+  "materia": "biologia",
+  "assunto": "Citologia"
+ },
+ "enem-2012-57": {
+  "materia": "fisica",
+  "assunto": "Óptica"
+ },
+ "enem-2012-58": {
+  "materia": "biologia",
+  "assunto": "Genética"
+ },
+ "enem-2012-60": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2012-65": {
+  "materia": "quimica",
+  "assunto": "Funções orgânicas"
+ },
+ "enem-2012-68": {
+  "materia": "biologia",
+  "assunto": "Botânica"
+ },
+ "enem-2012-71": {
+  "materia": "fisica",
+  "assunto": "Energia"
+ },
+ "enem-2012-74": {
+  "materia": "biologia",
+  "assunto": "Microbiologia e saúde"
+ },
+ "enem-2012-75": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2012-79": {
+  "materia": "biologia",
+  "assunto": "Evolução"
+ },
+ "enem-2012-80": {
+  "materia": "quimica",
+  "assunto": "Funções inorgânicas"
+ },
+ "enem-2012-87": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2013-ppl-51": {
+  "materia": "fisica",
+  "assunto": "Eletricidade"
+ },
+ "enem-2013-ppl-52": {
+  "materia": "fisica",
+  "assunto": "Cinemática"
+ },
+ "enem-2013-ppl-57": {
+  "materia": "fisica",
+  "assunto": "Óptica"
+ },
+ "enem-2013-ppl-59": {
+  "materia": "biologia",
+  "assunto": "Genética"
+ },
+ "enem-2013-ppl-60": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2013-ppl-62": {
+  "materia": "quimica",
+  "assunto": "Bioquímica"
+ },
+ "enem-2013-ppl-63": {
+  "materia": "biologia",
+  "assunto": "Fisiologia humana"
+ },
+ "enem-2013-ppl-66": {
+  "materia": "fisica",
+  "assunto": "Dinâmica"
+ },
+ "enem-2013-ppl-72": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2013-ppl-73": {
+  "materia": "fisica",
+  "assunto": "Cinemática"
+ },
+ "enem-2013-ppl-78": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2013-ppl-81": {
+  "materia": "fisica",
+  "assunto": "Cinemática"
+ },
+ "enem-2013-ppl-85": {
+  "materia": "fisica",
+  "assunto": "Cinemática"
+ },
+ "enem-2013-ppl-88": {
+  "materia": "biologia",
+  "assunto": "Evolução"
+ },
+ "enem-2013-ppl-89": {
+  "materia": "fisica",
+  "assunto": "Física moderna"
+ },
+ "enem-2013-ppl-90": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2015-ppl-46": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2015-ppl-48": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2015-ppl-54": {
+  "materia": "biologia",
+  "assunto": "Biotecnologia"
+ },
+ "enem-2015-ppl-55": {
+  "materia": "quimica",
+  "assunto": "Polímeros"
+ },
+ "enem-2015-ppl-62": {
+  "materia": "biologia",
+  "assunto": "Microbiologia e saúde"
+ },
+ "enem-2015-ppl-66": {
+  "materia": "biologia",
+  "assunto": "Fisiologia humana"
+ },
+ "enem-2015-ppl-71": {
+  "materia": "biologia",
+  "assunto": "Genética"
+ },
+ "enem-2015-ppl-73": {
+  "materia": "quimica",
+  "assunto": "Funções inorgânicas"
+ },
+ "enem-2015-ppl-80": {
+  "materia": "biologia",
+  "assunto": "Botânica"
+ },
+ "enem-2016-47": {
+  "materia": "fisica",
+  "assunto": "Magnetismo"
+ },
+ "enem-2016-49": {
+  "materia": "biologia",
+  "assunto": "Evolução"
+ },
+ "enem-2016-55": {
+  "materia": "fisica",
+  "assunto": "Termologia"
+ },
+ "enem-2016-69": {
+  "materia": "quimica",
+  "assunto": "Ligações químicas"
+ },
+ "enem-2016-73": {
+  "materia": "biologia",
+  "assunto": "Zoologia"
+ },
+ "enem-2016-74": {
+  "materia": "fisica",
+  "assunto": "Cinemática"
+ },
+ "enem-2016-76": {
+  "materia": "biologia",
+  "assunto": "Ecologia"
+ },
+ "enem-2016-78": {
+  "materia": "biologia",
+  "assunto": "Citologia"
+ },
+ "enem-2016-79": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2013-ppl-67": {
+  "materia": "quimica",
+  "assunto": "Bioquímica"
+ },
+ "enem-2013-ppl-70": {
+  "materia": "quimica",
+  "assunto": "Funções inorgânicas"
+ },
+ "enem-2015-ppl-67": {
+  "materia": "fisica",
+  "assunto": "Dinâmica"
+ },
+ "enem-2015-ppl-78": {
+  "materia": "fisica",
+  "assunto": "Eletricidade"
+ },
+ "enem-2015-ppl-84": {
+  "materia": "fisica",
+  "assunto": "Hidrostática"
+ },
+ "enem-2015-ppl-88": {
+  "materia": "fisica",
+  "assunto": "Ondulatória"
+ },
+ "enem-2016-58": {
+  "materia": "fisica",
+  "assunto": "Dinâmica"
+ },
+ "enem-2016-65": {
+  "materia": "quimica",
+  "assunto": "Soluções"
  }
 } });
