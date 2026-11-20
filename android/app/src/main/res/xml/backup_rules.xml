@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 e anteriores: livros, textos e bancos (IndexedDB do WebView) não vão para o backup do Google. O progresso (localStorage) continua indo. -->
+<full-backup-content>
+    <exclude domain="root" path="app_webview/Default/IndexedDB" />
+</full-backup-content>

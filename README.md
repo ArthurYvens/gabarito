@@ -2,30 +2,43 @@
 
 Plataforma de estudos para ENEM, vestibulares, concursos (administrativos, tribunais, policiais, bancários, estatais) e OAB.
 Roda como **site** (instalável no celular e funciona sem internet), **programa para Windows** e **app Android**, todos a
-partir do mesmo código em `www/`. Não tem servidor nem conta: o progresso fica no aparelho do aluno.
+partir do mesmo código em `www/`. Não tem servidor, conta, anúncio nem IA: tudo roda no aparelho do aluno, sem custo.
+
+**Projeto pessoal e gratuito, sem fins comerciais**, feito para estudar com amigos. Site: https://arthuryvens.github.io/gabarito/
 
 ## Como usar
 
 - **Windows:** `dist/Helma-Instalador-1.0.0.exe`.
 - **Android:** `dist/Helma-Android-1.0.0.apk` (instalar com "fontes desconhecidas" permitidas).
-- **Navegador:** abra `www/index.html`, ou sirva a pasta: `python -m http.server 5321 -d www`.
+- **Site:** https://arthuryvens.github.io/gabarito/ (no celular, use "Adicionar à tela inicial" para instalar e usar sem internet).
+- **Navegador, localmente:** sirva a pasta: `python -m http.server 5321 -d www`.
 
 ## O que tem
 
 - **Onboarding por objetivo**: o objetivo define o peso de cada matéria nos simulados e o tipo de redação.
 - **Simulados** em modo prova (cronômetro no ritmo da banca, gabarito no final) ou modo estudo (correção a cada questão), com
   filtros por matéria, assunto, dificuldade, banca, tipo e situação; prioriza questões nunca vistas, erradas e assuntos fracos.
-- **Explicação profunda** (liga e desliga): resolução, comentário por alternativa, pegadinha, fontes e aula relacionada.
+- **Explicação de todas as questões** (liga e desliga): resumo, resolução passo a passo, comentário de **cada alternativa**
+  (por que a certa está certa e qual erro leva a cada errada), pegadinha, fontes e aula relacionada. Nas questões oficiais
+  do INEP o comentário aparece como "Comentário do Helma", separado do texto oficial.
 - **Minhas anotações** em qualquer questão e **"Por que você errou?"** (motivo do erro, com painel em Revisão).
 - **Minhas questões**: o aluno alimenta o próprio banco com **PDF** (inclusive em duas colunas), **texto colado**,
   **planilha CSV** (Excel ou Google Planilhas) ou **questão escrita à mão**, com gabarito em vários formatos e uma tela de
   revisão antes de salvar. Pode criar matérias próprias (Contabilidade, Atualidades...). Os bancos ficam no IndexedDB.
+- **Livros**: estante pessoal no aparelho (IndexedDB, nada é enviado). Adiciona PDF, EPUB, DOCX, TXT, MD e HTML (vários de uma vez),
+  lê em modo leitura (PDF em canvas com zoom e página lembrada; os outros em capítulos) e guarda a posição. MOBI/AZW: converta para EPUB.
+- **Contexto**: o aluno junta documentos e o app monta, **por regras, no próprio aparelho e sem internet**, questões de lacuna, certo ou errado e
+  cartões a partir do texto (`js/gerador.js`). As questões vão para a mesma tela de revisão de Minhas questões antes de salvar.
 - **Revisão espaçada** (1, 3, 7, 15, 30 e 60 dias), caderno de erros, **aulas**, **redação** (competências, repertório,
   conectivos, modelo comentado, temas e editor com checagem), **plano de estudos** e **Onde estudar**.
 - Backup completo (progresso e bancos) e sincronização entre abas abertas.
 
 ## Conteúdo e direitos
 
+- **1.253 questões** no total, todas com explicação.
+- **120 questões inéditas de informática** (`livros-*.js`): Linux, segurança da informação, redes e IPv6, hardware e
+  informática para concursos. Os temas seguem os livros de estudo do usuário, mas nenhum texto deles foi usado: as
+  questões são escritas do zero e citam só documentação aberta (man pages, RFCs, NIST, CERT.br, Microsoft).
 - **314 questões inéditas** escritas para o app, no estilo das bancas (CEBRASPE, FGV, FCC, Cesgranrio, Vunesp, OAB/FGV e
   ENEM), com explicação, e 21 aulas. Nenhuma copia questão real: as provas dessas bancas não têm licença aberta. As 168
   dos arquivos `bancas-*.js` foram resolvidas por um conferente independente e conferidas com o texto vigente da lei.
@@ -41,16 +54,25 @@ partir do mesmo código em `www/`. Não tem servidor nem conta: o progresso fica
   Exército, FAB, Marinha, Pedro II, IFs, ITA, OBMEP e OBA não publicam licença).
 - Provas da OAB/FGV, CEBRASPE, FCC, Vunesp, Cesgranrio e vestibulares **não têm licença aberta** e não são distribuídas: o
   aluno baixa nos sites oficiais e importa em Minhas questões para estudo pessoal.
-- Antes de vender o app, confirme esta análise com um advogado de propriedade intelectual (não é parecer jurídico).
+- **Comentários das questões oficiais** (`js/dados/explicacoes-oficiais.js`): escritos para o app, à parte do texto do INEP
+  (a licença não permite alterar a questão). Cada questão foi resolvida de forma independente antes de comparar com o
+  gabarito oficial, e uma checagem automática confere que o comentário "Correta" é o da letra do gabarito.
+- **Livros do aluno** ficam só no aparelho dele e nunca são enviados nem publicados. Não coloque livros protegidos por
+  direito autoral neste repositório: ele é público.
+- O projeto não é comercializado. Mesmo assim, as licenças acima valem (crédito ao INEP, sem alterar o texto oficial).
+  Isto não é parecer jurídico.
 
 ## Estrutura
 
 ```
 www/                 o app (site, Windows e Android usam esta pasta)
   js/banco.js        registro e validação de questões, aulas e matérias
-  js/dados/          conteúdo (base.js tem matérias, objetivos e pesos; enem-oficial.js e inep-oficial.js são gerados)
+  js/dados/          conteúdo (base.js tem matérias, objetivos e pesos; enem-oficial.js e inep-oficial.js são gerados;
+                     explicacoes-oficiais.js tem os comentários das questões oficiais)
   js/motor.js        simulado, correção, desempenho, revisão espaçada, plano
   js/importador.js   PDF/texto/planilha -> questões (sem DOM, testado no Node)
+  js/extracao.js     PDF/EPUB/DOCX/HTML/TXT/MD -> seções de texto (ZIP com limites; testado no Node)
+  js/gerador.js      texto -> questões de lacuna, certo/errado e cartões, por regras (testado no Node)
   js/armazem.js      bancos do aluno no IndexedDB
   js/store.js        progresso no localStorage, com normalização de entrada não confiável
   js/views-*.js      telas
@@ -67,8 +89,8 @@ tests/               testes (abaixo)
 ```
 npm install
 npm run build:web        fontes, pdf.js e service worker em www/
-npm test                 conteúdo, motor e importador
-npm run test:navegador   e2e, segurança e Minhas questões (servidor na 5321 e Playwright)
+npm test                 conteúdo, motor, importador, extração e gerador
+npm run test:navegador   e2e, segurança, Minhas questões, recursos e Livros/Contexto (servidor na 5321 e Playwright)
 node tests/desktop.js    programa Windows (Electron do projeto)
 node tests/android.js    app Android num emulador ou celular conectado por adb
 npm run dist:win         instalador do Windows em dist/
@@ -77,10 +99,10 @@ npm run android:apk      APK de teste do Android
 
 ## Publicar na nuvem (grátis)
 
-O app é estático, então qualquer hospedagem de site estático serve, sem custo:
+O app é estático, então não precisa de servidor:
 
-- **GitHub Pages**: crie um repositório no GitHub, envie este projeto e ative Pages com "GitHub Actions" como origem.
-  O fluxo `.github/workflows/site.yml` testa e publica `www/` a cada envio na branch `main`.
+- **GitHub Pages** (em uso): o fluxo `.github/workflows/site.yml` testa e publica `www/` a cada envio na branch `main`,
+  em https://arthuryvens.github.io/gabarito/.
 - **Cloudflare Pages** ou **Netlify**: aponte para o repositório com diretório de publicação `www` e comando
   `npm ci && npm run build:web`.
 - Criar uma tag `v1.0.1` gera o instalador do Windows e o APK pelo `.github/workflows/versao.yml` e anexa à página de versões.

@@ -24,6 +24,8 @@
     { href: '#/cartoes', id: 'cartoes', nome: 'Cartões', ico: 'cartao' },
     { href: '#/desempenho', id: 'desempenho', nome: 'Desempenho', ico: 'grafico' },
     { href: '#/minhas-questoes', id: 'minhas', nome: 'Minhas questões', ico: 'upload' },
+    { href: '#/livros', id: 'livros', nome: 'Livros', ico: 'livro' },
+    { href: '#/contexto', id: 'contexto', nome: 'Criar questões de um texto', ico: 'arquivo' },
     { href: '#/aulas', id: 'aulas', nome: 'Aulas', ico: 'aulas' },
     { href: '#/redacao', id: 'redacao', nome: 'Redação', ico: 'redacao' },
     { href: '#/plano', id: 'plano', nome: 'Plano de estudos', ico: 'plano' },
@@ -84,7 +86,7 @@
         var r = App.rotas[i].view(m.slice(1).map(function (x) { try { return decodeURIComponent(x); } catch (e) { return x; } }), params);
         if (r === null) return; // a view redirecionou
         if (r.cheia) raiz.innerHTML = r.html;
-        else raiz.innerHTML = layout(App.rotas[i].nav, r.html, entrada(caminho));
+        else raiz.innerHTML = layout(r.nav || App.rotas[i].nav, r.html, entrada(caminho));
         if (r.titulo) document.title = r.titulo + ' · Helma';
         if (r.montar) App.saida = r.montar() || null;
         var main = document.getElementById('main');
@@ -446,7 +448,7 @@
         '<section class="card"><h2>Minhas questões</h2><p>Provas em PDF, texto colado, planilhas e questões que você escreve ficam em <a href="#/minhas-questoes">Minhas questões</a>.</p>' +
           '<p class="small muted" id="aj-espaco">' + UI.plural(imp.length, 'banco seu', 'bancos seus') + ' neste aparelho.</p>' +
           '<a class="btn btn-secondary mt" href="#/minhas-questoes">' + ico('upload') + ' Abrir Minhas questões</a></section>' +
-        '<section class="card"><h2>Seus dados</h2><p>Backup com respostas, simulados, redações, revisão e plano.</p>' +
+        '<section class="card"><h2>Seus dados</h2><p>Backup com respostas, simulados, redações, revisão e plano. Os livros e textos da estante ficam só neste aparelho e não entram no backup.</p>' +
           '<div class="row mt"><button class="btn btn-secondary" data-act="aj-exportar">' + ico('download') + ' Exportar backup</button>' +
           '<label class="btn btn-secondary">' + ico('upload') + ' Restaurar backup<input type="file" accept=".json,application/json" id="aj-backup" class="sr-only"></label></div>' +
           '<div class="row mt-lg"><button class="btn btn-danger" data-act="aj-apagar">' + ico('lixo') + ' Apagar todo o progresso</button></div></section>' +
@@ -486,8 +488,16 @@
     UI.baixar('helma-backup-' + Motor.hoje() + '.json', JSON.stringify(Object.assign({}, S(), { importados: App.bancos }), null, 1));
   });
   App.acao('aj-apagar', function () {
-    UI.confirmar('Apagar todo o progresso?', 'Respostas, simulados, redações, plano e bancos importados serão removidos deste navegador. Não dá para desfazer; exporte um backup antes se quiser guardar.', 'Apagar tudo', { perigo: true })
-      .then(function (ok) { if (ok) { Store.apagarTudo(); location.hash = '#/'; location.reload(); } });
+    UI.confirmar('Apagar todo o progresso?', 'Respostas, simulados, redações, plano, bancos importados, livros e textos guardados serão removidos deste aparelho. Não dá para desfazer; exporte um backup antes se quiser guardar.', 'Apagar tudo', { perigo: true })
+      .then(function (ok) {
+        if (!ok) return;
+        // IndexedDB (livros, textos, bancos) e rascunhos do localStorage também saem; só depois a página recomeça.
+        Armazem.limparTudo().then(function () {
+          Store.apagarTudo();
+          try { Object.keys(localStorage).filter(function (k) { return k.indexOf('gabarito.') === 0; }).forEach(function (k) { localStorage.removeItem(k); }); } catch (e) { /* sem armazenamento */ }
+          location.hash = '#/'; location.reload();
+        });
+      });
   });
   App.acao('aj-modelo', function () {
     UI.baixar('modelo-banco-helma.json', JSON.stringify({

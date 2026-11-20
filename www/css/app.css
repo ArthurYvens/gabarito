@@ -727,3 +727,28 @@ h1[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 520px) {
   .hero .row > .btn-primary { flex: 1 1 100%; white-space: nowrap; }
 }
+/* ---------- Livros e Contexto ---------- */
+.lv-solta { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 28px 18px; margin-bottom: 8px; border: 2px dashed var(--line-input); border-radius: var(--r-lg); background: var(--surface); color: var(--ink-2); cursor: pointer; }
+.lv-solta .ico { width: 30px; height: 30px; color: var(--pen); }
+.lv-solta:hover, .lv-solta.sobre, .lv-solta:focus-within { border-color: var(--pen); background: var(--pen-soft); }
+.lv-leitor { padding: 14px; }
+.lv-barra { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 6px 0 12px; }
+.lv-barra.base { padding: 14px 0 0; justify-content: center; }
+.lv-barra select.input { min-width: 0; width: 100%; }
+.lv-pg { width: 84px; min-height: 40px; padding: 6px 10px; text-align: center; }
+.lv-palco { overflow: auto; max-height: calc(100vh - 230px); min-height: 320px; text-align: center; background: var(--surface-3); border-radius: var(--r); padding: 8px; }
+.lv-palco canvas { display: inline-block; max-width: none; background: #fff; box-shadow: var(--shadow); border-radius: 2px; }
+.lv-texto { max-width: 68ch; margin: 0 auto; padding: 8px 4px 4px; font: 18px/1.75 var(--f-display); color: var(--ink-2); outline: none; }
+.lv-texto h2 { margin-bottom: 18px; }
+.lv-texto p { margin: 0 0 1.1em; white-space: pre-line; overflow-wrap: anywhere; }
+.cx-doc + .cx-doc { border-top: 1px solid var(--line); }
+.cx-doc .list-item { border-bottom: 0; }
+.cx-faixa { padding: 0 4px 14px 34px; }
+.cx-faixa select.input { min-height: 40px; max-width: 260px; }
+.cx-faixa label > span { min-width: 3.4em; }
+.cx-cartao { cursor: pointer; padding: 12px 14px; }
+@media (max-width: 880px) { .lv-palco { max-height: none; } .lv-texto { font-size: 17px; } .cx-faixa { padding-left: 4px; } .cx-faixa label { flex: 1 1 100%; } .cx-faixa select.input { max-width: none; flex: 1; } }
+.lv-item { flex-wrap: wrap; }
+.lv-item .lv-abrir { flex: 1 1 220px; min-width: 0; text-decoration: none; color: inherit; overflow-wrap: anywhere; }
+.lv-acoes { flex: 0 1 auto; gap: 4px; justify-content: flex-end; }
+@media (max-width: 640px) { .lv-acoes { flex: 1 1 100%; justify-content: flex-start; } .lv-acoes .btn-sm { min-height: 44px; } }

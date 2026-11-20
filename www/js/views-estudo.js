@@ -91,7 +91,7 @@
       // Questão oficial: crédito e licença sempre visíveis (exigência da licença do INEP).
       if (q.fontes && q.fontes.length) h += '<h4>Fonte e licença</h4>' + UI.fontes(q.fontes);
     } else {
-      h += '<h4>Resposta comentada</h4><p class="exp-resumo">' + esc(x.resumo) + '</p>';
+      h += '<h4>Resposta comentada</h4>' + (q.comentarioApp ? '<p class="small muted">Comentário do Helma, não faz parte da prova oficial.</p>' : '') + '<p class="exp-resumo">' + esc(x.resumo) + '</p>';
       if (completa) {
         if (x.detalhada) h += '<h4>Explicação profunda</h4><div class="prose">' + UI.md(x.detalhada) + '</div>';
         if (x.dica) h += '<div class="tip">' + ico('ideia') + '<div><b>Fique de olho:</b> ' + esc(x.dica) + '</div></div>';

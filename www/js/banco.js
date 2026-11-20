@@ -18,7 +18,15 @@
       if (pacote.objetivos) Banco.objetivos.push.apply(Banco.objetivos, pacote.objetivos);
       if (pacote.questoes) Banco.questoes.push.apply(Banco.questoes, pacote.questoes);
       if (pacote.aulas) Banco.aulas.push.apply(Banco.aulas, pacote.aulas);
+      // Comentário do app para questões oficiais (o texto do INEP não pode ser alterado): fica à parte, por id,
+      // e vale para questões registradas antes ou depois.
+      if (pacote.explicacoes) Object.keys(pacote.explicacoes).forEach(function (id) { Banco.explicacoes[id] = pacote.explicacoes[id]; });
+      Banco.questoes.forEach(function (q) {
+        var x = Banco.explicacoes[q.id];
+        if (x && !q.explicacao) { q.explicacao = x; q.comentarioApp = true; }
+      });
     },
+    explicacoes: {},
 
     /* Matéria criada pelo aluno (ex.: Contabilidade). Id sempre com prefixo "x-" para não colidir com as do app. */
     validarMateria: function (m) {

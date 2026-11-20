@@ -143,13 +143,17 @@
   App.acao('cart-novo', function () { form = { id: '' }; App.render(); });
   App.acao('cart-editar', function (el) { var id = el.getAttribute('data-id'); if (S().cartoes[id]) { form = { id: id }; App.render(); } });
   App.acao('cart-cancelar', function () { form = null; App.render(); });
+  // Cartão livre (sem questão), usado também por Contexto. Quem chama salva com Store.salvar().
+  Cartoes.criar = function (frente, verso) {
+    S().cartoes[novoId()] = { frente: String(frente).slice(0, 4000), verso: String(verso).slice(0, 4000), qid: '', caixa: 0, proxima: Motor.hoje(), criadoEm: Date.now() };
+  };
   App.acao('cart-salvar', function () {
     var f = document.getElementById('cf-frente'), v = document.getElementById('cf-verso');
     var frente = f.value.trim().slice(0, 4000), verso = v.value.trim().slice(0, 4000);
     if (!frente || !verso) { UI.toast('Preencha a frente e o verso.'); (frente ? v : f).focus(); return; }
     var c = form.id && S().cartoes[form.id];
     if (c) { c.frente = frente; c.verso = verso; }
-    else S().cartoes[novoId()] = { frente: frente, verso: verso, qid: '', caixa: 0, proxima: Motor.hoje(), criadoEm: Date.now() };
+    else Cartoes.criar(frente, verso);
     form = null; Store.salvar(); UI.toast('Cartão salvo.'); App.render();
   });
   App.acao('cart-excluir', function (el) {

@@ -36,14 +36,17 @@
   }
   /* Extrai o texto do PDF reconstruindo as linhas. Provas costumam ter duas colunas: quando muitas linhas
      começam na metade da página, lê a coluna da esquerda inteira e depois a da direita. */
-  function textoDoPdf(buffer, progresso) {
+  function abrirPdf(buffer) {
     return carregarScript('vendor/pdfjs/pdf.min.js').then(function () {
       var lib = window.pdfjsLib;
       lib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
       // isEvalSupported:false fecha a execução de código por fonte maliciosa (CVE-2024-4367).
       return lib.getDocument({ data: buffer, isEvalSupported: false, disableFontFace: true, useSystemFonts: false }).promise;
-    }).then(function (pdf) {
-      var paginas = Math.min(pdf.numPages, 300), feitas = 0, textos = [];
+    });
+  }
+  function textoDoPdf(buffer, progresso, maximo) {
+    return abrirPdf(buffer).then(function (pdf) {
+      var paginas = Math.min(pdf.numPages, maximo || 300), feitas = 0, textos = [];
       var cadeia = Promise.resolve();
       for (var n = 1; n <= paginas; n++) (function (n) {
         cadeia = cadeia.then(function () { return pdf.getPage(n); }).then(function (pg) {
@@ -65,7 +68,7 @@
           });
         });
       })(n);
-      return cadeia.then(function () { return { texto: textos.join('\n\n'), paginas: pdf.numPages, lidas: paginas, cortado: pdf.numPages > paginas }; });
+      return cadeia.then(function () { return { texto: textos.join('\n\n'), porPagina: textos, paginas: pdf.numPages, lidas: paginas, cortado: pdf.numPages > paginas }; });
     });
   }
   function agrupar(itens) {
@@ -77,6 +80,8 @@
     });
     return linhas.map(function (l) { return { x: l.x, t: l.t.replace(/\s+/g, ' ').trim() }; });
   }
+
+  App.pdf = { abrir: abrirPdf, texto: textoDoPdf }; // também usado por Livros e Contexto
 
   // ---------- Página ----------
   App.rota('/minhas-questoes/revisao', function () {
@@ -219,6 +224,11 @@
   });
 
   // ---------- Revisão ----------
+  /* Outras telas (Contexto) mandam rascunhos para a mesma revisão. meta: matéria, estilo e dificuldade já escolhidos. */
+  App.revisar = function (qs, nome, origem, meta) {
+    M.nome = String(nome || '').slice(0, 80); M.origem = origem; M.meta = Object.assign({ materia: 'portugues', novaMateria: '', assunto: '', banca: '', ano: '', estilo: 'Outra', dificuldade: 2 }, meta);
+    abrirRevisao(qs);
+  };
   function abrirRevisao(qs) {
     var p = S().perfil;
     M.rascunhos = qs.map(function (q) { return Object.assign({ incluir: true, comentario: '' }, q); });
@@ -246,6 +256,8 @@
       q.incluir = c.querySelector('[data-campo="incluir"]').checked;
       q.enunciado = c.querySelector('[data-campo="enunciado"]').value.trim();
       q.comentario = c.querySelector('[data-campo="comentario"]').value.trim();
+      var tb = c.querySelector('[data-campo="textoBase"]');
+      if (tb) q.textoBase = tb.value.trim();
       if (q.tipo === 'multipla') q.alternativas = Array.prototype.map.call(c.querySelectorAll('[data-campo="alt"]'), function (el) { return el.value.trim(); });
       var marcada = c.querySelector('input[type="radio"]:checked');
       q.resposta = marcada ? (q.tipo === 'multipla' ? Number(marcada.value) : marcada.value === 'true') : null;
@@ -265,19 +277,20 @@
         }).join('') + '</div><p class="small muted">Clique na letra da alternativa certa.</p>'
         : '<div class="row"><label class="chip"><input type="radio" name="' + nome + '" value="true"' + (q.resposta === true ? ' checked' : '') + '> Certo</label><label class="chip"><input type="radio" name="' + nome + '" value="false"' + (q.resposta === false ? ' checked' : '') + '> Errado</label></div>';
       return '<section class="card rv-card' + (q.incluir ? '' : ' rv-off') + '" data-rv="' + i + '"><div class="row-between"><label class="row" style="gap:8px"><input type="checkbox" data-campo="incluir"' + (q.incluir ? ' checked' : '') + '> <b>Questão ' + q.numero + '</b></label>' +
-        '<div class="row">' + (q.resposta === null ? '<span class="tag tag-warn">Sem resposta</span>' : '<span class="tag tag-ok">' + ico('check') + (q.tipo === 'multipla' ? LETRAS[q.resposta] : q.resposta ? 'Certo' : 'Errado') + '</span>') +
+        '<div class="row">' + (q.resposta === null ? '<span class="tag tag-warn">Sem resposta</span>' : '<span class="tag tag-ok">' + ico('check') + 'Resposta: ' + (q.tipo === 'multipla' ? LETRAS[q.resposta] : q.resposta ? 'Certo' : 'Errado') + '</span>') +
         '<button class="btn btn-ghost btn-sm" data-act="rv-tipo" data-i="' + i + '">' + (q.tipo === 'multipla' ? 'Mudar para certo ou errado' : 'Mudar para múltipla escolha') + '</button></div></div>' +
         (q.avisos && q.avisos.length ? '<div class="callout callout-marker small mt">' + ico('alerta') + '<div>' + q.avisos.map(esc).join('<br>') + '</div></div>' : '') +
         (q.materiaNome ? '<p class="small muted mt">Matéria na planilha: <b>' + esc(q.materiaNome) + '</b>' + (q.assunto ? ' · assunto: ' + esc(q.assunto) : '') + '</p>' : '') +
+        (typeof q.textoBase === 'string' ? '<label class="field mt"><span>Texto de apoio</span><textarea class="input" rows="3" data-campo="textoBase">' + esc(q.textoBase) + '</textarea></label>' : '') +
         '<label class="field mt"><span>Enunciado</span><textarea class="input" rows="4" data-campo="enunciado">' + esc(q.enunciado) + '</textarea></label>' +
         '<div class="field mt"><span class="label">' + (q.tipo === 'multipla' ? 'Alternativas' : 'Gabarito do item') + '</span>' + alts + '</div>' +
         '<label class="field mt"><span>Comentário <span class="muted small">(opcional: resolução, macete, fonte)</span></span><textarea class="input" rows="2" data-campo="comentario">' + esc(q.comentario || '') + '</textarea></label></section>';
     };
     var mats = Banco.materias.map(function (m) { return '<option value="' + esc(m.id) + '"' + (meta.materia === m.id ? ' selected' : '') + '>' + esc(m.nome) + '</option>'; }).join('');
     return {
-      titulo: 'Revisar questões', manterScroll: true,
-      html: '<div class="page-head"><div><h1>Confira antes de salvar</h1><p>' + UI.plural(r.length, 'questão reconhecida', 'questões reconhecidas') + '. Corrija o que o app separou errado, marque a resposta certa e desmarque o que não quiser guardar.</p></div>' +
-        '<button class="btn btn-ghost" data-act="rv-cancelar">' + ico('x') + ' Descartar</button></div>' +
+      titulo: 'Revisar questões', manterScroll: true, nav: M.origem === 'contexto' ? 'contexto' : undefined,
+      html: '<div class="page-head"><div><h1>Confira antes de salvar</h1><p>' + (M.origem === 'contexto' ? UI.plural(r.length, 'pergunta criada', 'perguntas criadas') + ' a partir do seu texto. Confira cada uma: corrija o que estiver errado, veja se a resposta marcada é a certa e desmarque o que não quiser guardar.' : UI.plural(r.length, 'questão reconhecida', 'questões reconhecidas') + '. Corrija o que o app separou errado, marque a resposta certa e desmarque o que não quiser guardar.') + '</p></div>' +
+        '<div class="row">' + (M.origem === 'contexto' ? '<a class="btn btn-ghost" href="#/contexto">' + ico('voltar') + ' Voltar</a>' : '') + '<button class="btn btn-ghost" data-act="rv-cancelar">' + ico('x') + ' Descartar</button></div></div>' +
         '<section class="card"><h2>Sobre este material</h2><div class="grid g2 mt">' +
         '<label class="field"><span>Nome do banco</span><input class="input" id="rv-nome" maxlength="80" value="' + esc(M.nome) + '"></label>' +
         (porLinha ? '<div class="field"><span class="label">Matéria</span><small>Cada questão usa a matéria da sua linha na planilha. Matérias que não existem no app são criadas como suas.</small><input type="hidden" id="rv-materia" value="' + esc(meta.materia) + '"></div>'
@@ -323,7 +336,8 @@
   App.acao('rv-cancelar', function () {
     UI.confirmar('Descartar a revisão?', 'As questões reconhecidas não serão salvas.', 'Descartar', { perigo: true }).then(function (ok) {
       if (!ok) return;
-      esquecer(); App.ir('#/minhas-questoes', true); App.render();
+      var volta = M.origem === 'contexto' ? '#/contexto' : '#/minhas-questoes';
+      esquecer(); App.ir(volta, true); App.render();
     });
   });
 
@@ -379,7 +393,12 @@
       if (q.tipo === 'multipla') out.alternativas = alts.slice(0, 5);
       var linhaProva = prova || (q.banca && Number(q.ano) >= 1950 && Number(q.ano) <= 2100 ? { banca: String(q.banca).slice(0, 40), ano: Number(q.ano) } : undefined);
       if (linhaProva) out.prova = linhaProva;
-      if (q.comentario) out.explicacao = { resumo: q.comentario.slice(0, 5000) };
+      if (q.textoBase) out.textoBase = q.textoBase.slice(0, 20000);
+      if (q.explicacao && typeof q.explicacao === 'object') {
+        // Explicação montada pelo gerador: o parágrafo de contexto fica; o comentário editado vira o resumo.
+        out.explicacao = { resumo: (q.comentario || String(q.explicacao.resumo || '')).slice(0, 5000) };
+        if (typeof q.explicacao.detalhada === 'string' && q.explicacao.detalhada.trim()) out.explicacao.detalhada = q.explicacao.detalhada.slice(0, 10000);
+      } else if (q.comentario) out.explicacao = { resumo: q.comentario.slice(0, 5000) };
       return out;
     });
     salvando = true;
