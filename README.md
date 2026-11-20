@@ -40,7 +40,14 @@ partir do mesmo código em `www/`. Não tem servidor, conta, anúncio nem IA: tu
 
 ## Conteúdo e direitos
 
-- **1.253 questões** no total, todas com explicação.
+- **1.363 questões** no total, todas com explicação, e 28 aulas.
+- **Química, com foco em orgânica** (`quimica-*.js`): 7 aulas de química orgânica (funções, nomenclatura, isomeria,
+  reações, polímeros, petróleo e combustíveis, bioquímica) e 110 questões inéditas (70 de orgânica e 40 de química
+  geral). Cada questão foi resolvida às cegas por um conferente que só via enunciado e alternativas, e as explicações,
+  fórmulas, nomes IUPAC e contas foram revisados à parte (PubChem para fórmulas e nomes). Os nomes seguem a IUPAC; nas
+  questões só entram compostos em que a regra de 2013 e a tradicional dão o mesmo nome.
+- **Questões oficiais de Ciências da Natureza** do INEP ficam em Química, Física e Biologia, por assunto
+  (`classificacao-oficial.js`), sem mudar o texto oficial: 92 de química, 90 de física e 153 de biologia.
 - **120 questões inéditas de informática** (`livros-*.js`): Linux, segurança da informação, redes e IPv6, hardware e
   informática para concursos. Os temas seguem os livros de estudo do usuário, mas nenhum texto deles foi usado: as
   questões são escritas do zero e citam só documentação aberta (man pages, RFCs, NIST, CERT.br, Microsoft).

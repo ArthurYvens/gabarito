@@ -48,7 +48,9 @@
   /* o: { numero, resposta, confirmada, riscadas[], profunda, expandida, travada, conf, dicas } */
   function questao(q, o) {
     var m = Banco.materia(q.materia);
-    var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(String(q.prova.orgao || '').replace(/^(ENEM|ENCCEJA),? /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
+    // Questões oficiais classificadas por assunto (Química, Física, Biologia) não trazem a prova no assunto: mostra aqui.
+    var exame = q.prova && String(q.assunto).indexOf(q.prova.ano) < 0 ? (/^ENCCEJA/.test(q.prova.orgao || '') ? 'ENCCEJA ' : 'ENEM ') + q.prova.ano + ' · ' : '';
+    var origem = q.prova ? (q.prova.banca === 'INEP' ? 'Oficial · ' + esc(exame + String(q.prova.orgao || '').replace(/^(ENEM|ENCCEJA),? /, '')) : esc(q.prova.banca + ' ' + q.prova.ano + (q.prova.orgao ? ' · ' + q.prova.orgao : ''))) + (q.autoria === 'aluno' ? ' · sua questão' : '')
       : q.autoria === 'aluno' ? 'Sua questão' : 'Inédita · estilo ' + esc(q.estilo);
     var meta = '<div class="q-meta">' + (o.numero ? '<span class="q-num">' + o.numero + '</span>' : '') +
       '<span class="tag">' + esc(m ? m.nome : q.materia) + '</span><span>' + esc(q.assunto) + '</span><span aria-hidden="true">·</span><span>' + origem + '</span>' + UI.dots(q.dificuldade) + '</div>';

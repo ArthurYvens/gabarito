@@ -48,7 +48,9 @@
     out.perfil = p ? {
       nome: txt(p.nome, 40),
       objetivo: root.Banco && Banco.objetivo(p.objetivo) ? p.objetivo : 'livre',
-      materias: lista(p.materias).filter(function (m) { return !root.Banco || Banco.materia(m); }),
+      // A área "Ciências da Natureza (provas oficiais)" virou Química, Física e Biologia (versão 1.2).
+      materias: lista(p.materias).concat(lista(p.materias).indexOf('enem-natureza') >= 0 ? ['fisica', 'quimica', 'biologia'] : [])
+        .filter(function (m, i, l) { return l.indexOf(m) === i && (!root.Banco || Banco.materia(m)); }),
       metaDiaria: Math.round(num(p.metaDiaria, 5, 300, 20)),
       metaSemanal: Math.round(num(p.metaSemanal, 10, 2000, Math.round(num(p.metaDiaria, 5, 300, 20) * 5))),
       explicacaoProfunda: p.explicacaoProfunda !== false,

@@ -30,7 +30,8 @@ const ok = (c, m) => { if (!c) throw new Error('[' + passo + '] ' + m); };
   await page.click('[data-act="diagnostico-iniciar"]');
   await page.waitForSelector('#r-area .q');
   const total = await page.locator('#r-map button').count();
-  ok(total === 6, 'diagnóstico com 2 assuntos por matéria (6), veio ' + total);
+  // Perfil antigo com 'enem-natureza': vira Física, Química e Biologia, então são 5 matérias.
+  ok(total === 10, 'diagnóstico com 2 assuntos por matéria (10), veio ' + total);
   for (let i = 0; i < total; i++) { await page.keyboard.press((await page.locator('#r-area .ce').count()) ? 'c' : 'a'); await page.keyboard.press('ArrowRight'); }
   await page.click('[data-act="r-finalizar"] >> nth=0');
   if (await page.locator('dialog[open]').count()) await page.click('dialog button[value="sim"]');

@@ -21,12 +21,16 @@
       // Comentário do app para questões oficiais (o texto do INEP não pode ser alterado): fica à parte, por id,
       // e vale para questões registradas antes ou depois.
       if (pacote.explicacoes) Object.keys(pacote.explicacoes).forEach(function (id) { Banco.explicacoes[id] = pacote.explicacoes[id]; });
+      // Do mesmo jeito, a matéria e o assunto das questões oficiais de Ciências da Natureza (Química, Física, Biologia).
+      if (pacote.classificacao) Object.keys(pacote.classificacao).forEach(function (id) { Banco.classificacao[id] = pacote.classificacao[id]; });
       Banco.questoes.forEach(function (q) {
-        var x = Banco.explicacoes[q.id];
+        var x = Banco.explicacoes[q.id], c = Banco.classificacao[q.id];
         if (x && !q.explicacao) { q.explicacao = x; q.comentarioApp = true; }
+        if (c && q.materia !== c.materia) { q.materia = c.materia; q.assunto = c.assunto; }
       });
     },
     explicacoes: {},
+    classificacao: {},
 
     /* Matéria criada pelo aluno (ex.: Contabilidade). Id sempre com prefixo "x-" para não colidir com as do app. */
     validarMateria: function (m) {
