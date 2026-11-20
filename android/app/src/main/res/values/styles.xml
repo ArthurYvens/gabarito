@@ -16,7 +16,11 @@
     </style>
 
 
+    <!-- Abertura: a Helma no fundo marfim (Android 12+ usa o ícone; antes disso, a imagem splash.png inteira). -->
     <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
         <item name="android:background">@drawable/splash</item>
+        <item name="windowSplashScreenBackground">#FAF6ED</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_helma</item>
+        <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
     </style>
 </resources>

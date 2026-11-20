@@ -700,6 +700,9 @@
         st.perfil.aprendizadoOk = true; Store.salvar();
       }
       App.render();
+      // Tela de abertura com a Helma: fica um instante (mínimo de ~0,8 s desde o início) e some, sem animação.
+      var ab = document.getElementById("abertura");
+      if (ab) setTimeout(function () { ab.remove(); }, Math.max(0, 800 - (window.performance ? performance.now() : 0)));
       if (Store.corrompido) UI.confirmar('Seu progresso salvo estava danificado', 'Não foi possível ler os dados guardados neste navegador, então o app recomeçou do zero. Uma cópia do conteúdo danificado foi guardada; se você tem um backup exportado, restaure em Ajustes.', 'Entendi', { cancelar: 'Fechar' });
     });
   });

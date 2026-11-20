@@ -87,7 +87,7 @@ www/                 o app (site, Windows e Android usam esta pasta)
   sw.js              service worker (gerado por tools/pwa.js)
 desktop/main.js      programa para Windows (Electron)
 android/             app Android (Capacitor)
-tools/               validar.js, enem.js, inep.js, modelo.js (modelo inicial de palavras), fontes.js (fontes e pdf.js locais), pwa.js, icones.js
+tools/               validar.js, enem.js, inep.js, abertura.js (tela de abertura do Android), modelo.js (modelo inicial de palavras), fontes.js (fontes e pdf.js locais), pwa.js, icones.js
 tests/               testes (abaixo)
 .github/workflows/   testes, publicação do site e geração dos instaladores
 ```
