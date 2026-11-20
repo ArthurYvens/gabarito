@@ -4215,42 +4215,6 @@ Banco.registrar({ questoes: [
   ]
  },
  {
-  "id": "enem-2023-155",
-  "materia": "matematica",
-  "assunto": "ENEM 2023",
-  "tipo": "multipla",
-  "estilo": "ENEM",
-  "dificuldade": 2,
-  "objetivos": [
-   "enem",
-   "livre"
-  ],
-  "prova": {
-   "banca": "INEP",
-   "ano": 2023,
-   "orgao": "ENEM, 2º dia, questão 155"
-  },
-  "enunciado": "A exposição a alguns níveis sonoros pode causar lesões auditivas. Por isso, em uma indústria, são adotadas medidas preventivas de acordo com a máquina que o funcionário opera e o nível N de intensidade do som, medido em decibel (dB), a que o operário é exposto, sendo N igual a log na base 10 de I elevado a 10 menos log na base 10 de I índice 0 elevado a 10, I a intensidade do som e I índice 0 igual a 10 elevado a menos 12, watts por metro quadrado.\nQuando o som é considerado baixo, ou seja, N é igual a 48 decibéis ou menos, deve ser utilizada a medida preventiva 1. No caso de o som ser moderado, quando N está no intervalo (48 decibéis, 55 decibéis), deve ser utilizada a medida preventiva 2. Quando o som é moderado alto, que equivale a N no intervalo (55 decibéis, 80 decibéis), a medida preventiva a ser usada é a 3. Se N estiver no intervalo (80 decibéis, 115 decibéis), quando o som é considerado alto, deve ser utilizada a medida preventiva 4. E se o som é considerado muito alto, com N maior que 115 decibéis, deve-se utilizar a medida preventiva 5.\nUma nova máquina, com I igual a 8 vezes 10 elevado a menos 8, watts por metro quadrado, foi adquirida e será classificada de acordo com o nível de ruído que produz.\nConsidere 0,3 como aproximação para log na base 10 de 2.\n\nO funcionário que operará a nova máquina deverá adotar a medida preventiva",
-  "alternativas": [
-   "1.",
-   "2.",
-   "3.",
-   "4.",
-   "5."
-  ],
-  "resposta": 1,
-  "fontes": [
-   {
-    "titulo": "INEP/MEC: ENEM 2023, 2º dia, caderno 11 (texto oficial em versão acessível)",
-    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_Dia_2_P1_MT_Caderno_11_Laranja_DOSVOX.txt"
-   },
-   {
-    "titulo": "Licença Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)",
-    "url": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR"
-   }
-  ]
- },
- {
   "id": "enem-2023-156",
   "materia": "matematica",
   "assunto": "ENEM 2023",

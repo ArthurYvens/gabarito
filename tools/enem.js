@@ -109,6 +109,7 @@ if (require.main === module) (async () => {
   // O DOSVOX não traz a linha de fonte dos textos: a checagem de terceiros é refeita no caderno impresso (azul).
   const { terceirosNoImpresso } = require('./caderno.js');
   const saida = [], motivos = {}, excluidas = {};
+  const revisao = JSON.parse(fs.readFileSync(path.join(__dirname, 'inep-revisao.json'), 'utf8')); // reprovadas na conferência humana
   for (const p of PROVAS) {
     const gab = await lerGabarito(path.join(dir, p.gb));
     const noImpresso = await terceirosNoImpresso(path.join(dir, 'reg_' + p.ano + '_PV_impresso_D' + p.dia + '_CD' + (p.dia === 1 ? 1 : 7) + '.pdf'), 5);
@@ -120,6 +121,7 @@ if (require.main === module) (async () => {
         vistos.add(q.n);
         let motivo = materiaDe(q.n) ? motivoExclusao(q) : 'área sem matéria no app';
         if (!motivo) motivo = noImpresso(q);
+        if (!motivo && revisao[`enem-${p.ano}-${q.n}`]) motivo = 'reprovada na conferência (inep-revisao.json)';
         if (!motivo && !(q.n in gab)) motivo = 'sem gabarito';
         if (!motivo && gab[q.n] === null) motivo = 'anulada';
         if (motivo) { motivos[motivo] = (motivos[motivo] || 0) + 1; excluidas[`enem-${p.ano}-${q.n}`] = motivo; continue; }

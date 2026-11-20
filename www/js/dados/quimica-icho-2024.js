@@ -1647,5 +1647,1613 @@ Banco.registrar({ questoes: [
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
       }
     ]
+  },
+  {
+    "id": "qui-1131",
+    "materia": "quimica",
+    "assunto": "Isomeria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 1, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 1. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Um ácido dicarboxílico C, que contém só C, H e O, tem massa molar de 150 g/mol (determinada por titulação). Ele não desvia o plano da luz polarizada, embora tenha dois centros quirais (estereogênicos). Qual é o ácido C?",
+    "alternativas": [
+      "Ácido L-(+)-tartárico, (2R,3R)-2,3-di-hidroxibutanodioico.",
+      "Ácido D-(−)-tartárico, (2S,3S)-2,3-di-hidroxibutanodioico.",
+      "Ácido málico, HOOC–CH(OH)–CH2–COOH.",
+      "Ácido ftálico, C6H4(COOH)2.",
+      "Ácido meso-tartárico, (2R,3S)-2,3-di-hidroxibutanodioico."
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "M = 150 g/mol corresponde a C4H6O6, o ácido tartárico. Ser opticamente inativo com dois centros quirais exige a forma meso, (2R,3S).",
+      "detalhada": "A resolução segue a solução oficial do problema 1 (item 1.10).\n\n**1) Fórmula:** um ácido dicarboxílico alifático de 150 g/mol com dois centros quirais é o ácido 2,3-di-hidroxibutanodioico (tartárico), C4H6O6: 4 × 12,011 + 6 × 1,008 + 6 × 15,999 = 150,09 g/mol.\n\n**2) Atividade óptica:** dos três estereoisômeros do tartárico, (2R,3R) e (2S,3S) são enantiômeros e desviam a luz; o (2R,3S) tem um plano de simetria interno, é o composto **meso** e é opticamente inativo.",
+      "alternativas": [
+        "Errada. Tem a massa certa, mas é um enantiômero puro, que desvia a luz polarizada.",
+        "Errada. Também tem massa 150 g/mol, mas é o enantiômero do anterior e desvia a luz polarizada.",
+        "Errada. O málico tem massa 134 g/mol e só um centro quiral (é ativo).",
+        "Errada. O ftálico é aromático, tem 166 g/mol e nenhum centro quiral.",
+        "Correta. Meso: dois centros quirais com plano de simetria interno; 150 g/mol; opticamente inativo."
+      ],
+      "dica": "Dois centros quirais + inatividade óptica + molécula simétrica = composto meso."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 1",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Tartaric acid",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Tartaric-acid"
+      }
+    ]
+  },
+  {
+    "id": "qui-1132",
+    "materia": "quimica",
+    "assunto": "Reações orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 2, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 2. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na fabricação do vinagre de maçã, o ácido málico, C4H6O5, é fermentado a etanol e CO2; em seguida, o oxigênio do ar oxida o etanol a ácido acético (CH3COOH) e água. Qual é a equação química global balanceada da conversão do ácido málico em ácido acético?",
+    "alternativas": [
+      "C4H6O5 + O2 → CH3COOH + 2 CO2 + H2O",
+      "C4H6O5 → CH3COOH + 2 CO2",
+      "C4H6O5 + 2 O2 → CH3COOH + 2 CO2 + 2 H2O",
+      "2 C4H6O5 + O2 → 2 CH3COOH + 4 CO2",
+      "C4H6O5 + O2 → CH3COOH + CO2 + H2O"
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "Somando C4H6O5 → C2H5OH + 2 CO2 e C2H5OH + O2 → CH3COOH + H2O, o etanol se cancela e resulta C4H6O5 + O2 → CH3COOH + 2 CO2 + H2O.",
+      "detalhada": "A resolução segue a solução oficial do problema 2 (item 2.3).\n\n**Fermentação do ácido málico:** C4H6O5 → C2H5OH + 2 CO2.\n\n**Oxidação do etanol:** C2H5OH + O2 → CH3COOH + H2O.\n\n**Soma (o etanol aparece dos dois lados e se cancela):** C4H6O5 + O2 → CH3COOH + 2 CO2 + H2O.\n\n**Conferência:** C: 4 = 2 + 2; H: 6 = 4 + 2; O: 5 + 2 = 7 = 2 + 4 + 1.",
+      "alternativas": [
+        "Correta. Balanceada: 4 C, 6 H e 7 O de cada lado.",
+        "Errada. Não balanceia: H (6 contra 4) e O (5 contra 6); falta o O2 e a água.",
+        "Errada. O oxigênio e a água estão em excesso: do lado direito há 8 H, e do esquerdo só 6.",
+        "Errada. Os átomos de C e O fecham, mas o H não: 12 H contra 8.",
+        "Errada. Perde carbono: 4 C à esquerda e só 3 C à direita."
+      ],
+      "dica": "Equação global = soma das etapas; cancele o intermediário (aqui, o etanol) e confira C, H e O."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 2",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Malic acid",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Malic-acid"
+      }
+    ]
+  },
+  {
+    "id": "qui-1133",
+    "materia": "quimica",
+    "assunto": "Termoquímica",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 4, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 4. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A magnésia calcinada cáustica (MgO com um pouco de CaO e SiO2) é dissolvida em ácido clorídrico. Dados de entalpia padrão de formação (kJ/mol): MgO(s) = −602; CaO(s) = −636; Mg²⁺(aq) = −462; Ca²⁺(aq) = −543; H2O(l) = −286; H⁺(aq) = 0. Qual é a variação de entalpia padrão da reação MgO(s) + 2 H⁺(aq) → Mg²⁺(aq) + H2O(l)?",
+    "alternativas": [
+      "−193 kJ/mol",
+      "−146 kJ/mol",
+      "+140 kJ/mol",
+      "+146 kJ/mol"
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "ΔH = ΔfH(Mg²⁺) + ΔfH(H2O) − ΔfH(MgO) = −462 − 286 + 602 = −146 kJ/mol.",
+      "detalhada": "A resolução segue a solução oficial do problema 4 (item 4.2).\n\nPela lei de Hess, ΔH = Σ ΔfH(produtos) − Σ ΔfH(reagentes):\n\nΔH = [(−462) + (−286)] − [(−602) + 2 × 0] = −748 + 602 = **−146 kJ/mol**.\n\nPara o CaO a mesma conta dá −543 − 286 + 636 = −193 kJ/mol.",
+      "alternativas": [
+        "Errada. É o valor da dissolução do CaO (−543 − 286 + 636), não do MgO.",
+        "Correta. (−462 − 286) − (−602) = −146 kJ/mol.",
+        "Errada. Esquece a água entre os produtos: ΔH = (−462) − (−602) = +140 kJ/mol, sem a contribuição de −286 kJ/mol da água.",
+        "Errada. Inverte o sinal: usa reagentes − produtos."
+      ],
+      "dica": "ΔH = produtos − reagentes, e não esqueça nenhum produto (como a água)."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 4",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1134",
+    "materia": "quimica",
+    "assunto": "Polímeros",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 6, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 6. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Modelo simples de nanopartículas: o monômero M1 (massa molar W) forma partículas Mi (com i unidades) em equilíbrios Mi + M1 ⇌ Mi+1, todos com a mesma constante K = [Mi+1]/([Mi][M1]). A concentração total de monômero (em unidades incorporadas) é T = 1 mol/dm³ e K = 10 dm³/mol. A massa molar média é a massa total dividida pela quantidade total de partículas, Σ[Mi]. Use Σ xⁿ = 1/(1 − x) e Σ (n + 1) xⁿ = 1/(1 − x)² (para |x| < 1, com x = K[M1]). Qual é a massa molar média das nanopartículas?",
+    "alternativas": [
+      "1,37 W",
+      "3,70 W",
+      "10 W",
+      "11 W"
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "Com x = K[M1]: T = [M1]/(1 − x)² e Σ[Mi] = [M1]/(1 − x), logo M_média = W/(1 − x). A condição x/(1 − x)² = KT = 10 dá x = 0,730 e M_média ≈ 3,70 W.",
+      "detalhada": "A resolução segue a solução oficial do problema 6 (item 6.1).\n\n**1) Concentrações:** para i ≥ 0, [M(i+1)] = K^i [M1]^(i+1), isto é, [M(i+1)] = [M1] x^i, com x = K[M1].\n\n**2) Partículas:** Σ[Mi] = [M1] Σ xⁱ = [M1]/(1 − x).\n\n**3) Monômero total:** T = Σ(i ≥ 0) (i + 1)[M(i+1)] = [M1] Σ(i ≥ 0) (i + 1) xⁱ = [M1]/(1 − x)².\n\n**4) Média:** M_média = W·T/Σ[Mi] = W/(1 − x).\n\n**5) Valor de x:** KT = x/(1 − x)², isto é, 10x² − 21x + 10 = 0, com raízes 0,730 e 1,370. Só vale x < 1, então x = 0,730 e M_média = W/0,270 ≈ **3,70 W**.",
+      "alternativas": [
+        "Errada. É o resultado da raiz x = 1,37 da equação do segundo grau, que não serve, pois a soma geométrica só converge para x < 1.",
+        "Correta. x = 0,730 → M_média = W/(1 − 0,730) ≈ 3,70 W.",
+        "Errada. É KT: confunde o produto K·T com a massa molar média.",
+        "Errada. É 1 + KT, obtido ao supor [M1] ≈ T (sem consumo de monômero) e truncar 1/(1 − x) ≈ 1 + x; essa aproximação não vale aqui, pois x = 0,73 não é pequeno."
+      ],
+      "dica": "Em somas geométricas, só serve a raiz com |x| < 1; confira a condição de convergência."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 6",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1135",
+    "materia": "quimica",
+    "assunto": "Termoquímica",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 7, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 7. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Num reator adiabático de volume constante (1,00 m³), 50,0 mol de CO e 50,0 mol de O2 são colocados a 298 K e reagem: 2 CO + O2 → 2 CO2, com ΔH° = −566,0 kJ (por mol de reação), ou seja, ΔU° = −563,5 kJ. Gases ideais; Cp (J mol⁻¹ K⁻¹): CO 29,1; O2 29,4; CO2 37,1 (constantes); Cv = Cp − R com R = 8,314 J mol⁻¹ K⁻¹. Como o sistema é isolado, a energia interna total não varia. Qual é a temperatura quando 1,00 mol de CO2 já se formou?",
+    "alternativas": [
+      "135 K",
+      "395 K",
+      "433 K",
+      "567 K"
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "A energia liberada (0,5 × 563,5 kJ) aquece os gases: ΔT = 281 750 J / (Cv total) ≈ 135 K, e T ≈ 298 + 135 = 433 K.",
+      "detalhada": "A resolução segue a solução oficial do problema 7.\n\n**1) Energia liberada por 1 mol de CO2:** como 2 CO2 se formam por reação, 1 mol de CO2 libera 563,5/2 = 281,75 kJ, que fica no sistema (isolado).\n\n**2) Mols presentes:** 1 CO2, 49 CO e 49,5 O2.\n\n**3) Capacidade calorífica a volume constante:** Cv(CO2) = 37,1 − 8,314 = 28,79; Cv(CO) = 29,1 − 8,314 = 20,79; Cv(O2) = 29,4 − 8,314 = 21,09. C = 1 × 28,79 + 49 × 20,79 + 49,5 × 21,09 ≈ 2091 J/K.\n\n**4) Temperatura:** ΔT = 281 750/2091 ≈ 134,7 K, logo T ≈ **433 K**.",
+      "alternativas": [
+        "Errada. É só o aumento de temperatura (ΔT ≈ 135 K); a pergunta pede a temperatura final.",
+        "Errada. Usa Cp no lugar de Cv; em volume constante a capacidade calorífica correta é Cv = Cp − R.",
+        "Correta. 298 K + 134,7 K ≈ 433 K.",
+        "Errada. Usa o calor total de 1 reação por mol de CO2 (563,5 kJ), esquecendo que 1 mol de CO2 corresponde a meia reação."
+      ],
+      "dica": "Reator de volume constante e isolado: ΔU = 0; o calor da reação vai para a energia térmica (use Cv)."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 7",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1136",
+    "materia": "quimica",
+    "assunto": "Termoquímica",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 8, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 8. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O dímero N2O4 tem ΔfH° = +9,16 kJ/mol no estado gasoso. A vaporização N2O4(l) → N2O4(g) tem ΔH = +22,96 kJ/mol. Qual é a entalpia padrão de formação do N2O4 líquido?",
+    "alternativas": [
+      "−32,1 kJ/mol",
+      "−13,8 kJ/mol",
+      "+9,2 kJ/mol",
+      "+13,8 kJ/mol",
+      "+32,1 kJ/mol"
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "ΔfH(g) = ΔfH(l) + ΔvapH, logo ΔfH(l) = 9,16 − 22,96 = −13,8 kJ/mol.",
+      "detalhada": "A resolução segue a solução oficial do problema 8 (item 8.5).\n\nFormar o líquido e depois vaporizar leva ao gás: N2 + 2 O2 → N2O4(l) → N2O4(g). Assim, ΔfH(g) = ΔfH(l) + ΔvapH.\n\nΔfH(l) = 9,16 − 22,96 = **−13,8 kJ/mol**. O líquido é mais estável (entalpia mais baixa) que o gás, como se espera.",
+      "alternativas": [
+        "Errada. É −9,16 − 22,96: sinais trocados.",
+        "Correta. 9,16 − 22,96 = −13,8 kJ/mol.",
+        "Errada. É o valor do gás, sem a correção da vaporização.",
+        "Errada. É o valor correto com o sinal invertido (22,96 − 9,16).",
+        "Errada. Soma 9,16 + 22,96, como se o líquido fosse mais energético que o gás."
+      ],
+      "dica": "O líquido tem entalpia menor que o gás: ΔfH(l) = ΔfH(g) − ΔvapH."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 8",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Dinitrogen tetroxide",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Dinitrogen-tetroxide"
+      }
+    ]
+  },
+  {
+    "id": "qui-1137",
+    "materia": "quimica",
+    "assunto": "Equilíbrio químico",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 9, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 9. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A atorvastatina inibe a enzima HMG-CoA redutase: a constante de dissociação do complexo enzima–inibidor, KI = [E][I]/[EI], vale 14 nM a 37 °C, e a entalpia padrão da associação E + I ⇌ EI vale −18,1 kJ/mol (independente da temperatura). Considere a constante de associação, K = 1/KI, e a equação de van't Hoff, ln(K2/K1) = −(ΔH/R)(1/T2 − 1/T1), com ΔH a entalpia da associação e R = 8,314 J mol⁻¹ K⁻¹. Qual é a constante de associação a 25 °C?",
+    "alternativas": [
+      "5,4×10⁻² nM⁻¹",
+      "7,1×10⁻² nM⁻¹",
+      "9,5×10⁻² nM⁻¹",
+      "1,4×10¹ nM⁻¹",
+      "9,5×10⁷ nM⁻¹"
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "K(37 °C) = 1/14 = 0,0714 nM⁻¹. Como a ligação é exotérmica, K aumenta ao esfriar: K(25 °C) = 0,0714 × exp(0,2825) ≈ 0,0947 nM⁻¹.",
+      "detalhada": "A resolução segue a solução oficial do problema 9 (item 9.4).\n\n**1) A 37 °C:** K = 1/KI = 1/(14 nM) = 0,0714 nM⁻¹.\n\n**2) Van't Hoff:** ln(K25/K37) = −(ΔH/R)(1/298,15 − 1/310,15) = (18 100/8,314)(1,298×10⁻⁴) = 0,2825.\n\n**3) Resultado:** K25 = 0,0714 × e^0,2825 ≈ **0,0947 nM⁻¹**.\n\nPara um processo exotérmico (ΔH < 0), o equilíbrio de associação é mais favorável a temperaturas menores.",
+      "alternativas": [
+        "Errada. Resulta do sinal trocado no expoente: K diminuiria ao esfriar, o que contraria o fato de a ligação ser exotérmica.",
+        "Errada. É o valor a 37 °C, sem a correção de temperatura.",
+        "Correta. K(25 °C) ≈ 0,0947 nM⁻¹.",
+        "Errada. É o próprio KI (14 nM) tomado como constante de associação; a constante de associação é o inverso, 1/KI.",
+        "Errada. Erro de unidade: 0,0947 nM⁻¹ = 9,5×10⁷ M⁻¹, não nM⁻¹."
+      ],
+      "dica": "Exotérmico: K sobe quando T cai. K de associação = 1/K de dissociação."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 9",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1138",
+    "materia": "quimica",
+    "assunto": "Cinética química",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 10, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 10. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "No preparo de um suco, a berrina é oxidada pela moxona (2 berrina + moxona → diberrina). A velocidade da reação é v = −½·d[berrina]/dt = −d[moxona]/dt = k[berrina][moxona], com k = 4,61 dm³ mol⁻¹ h⁻¹ a 108 °C. O suco fica intragável quando 75% da berrina é consumida. A energia de ativação é 58,60 kJ/mol (R = 8,314 J mol⁻¹ K⁻¹). Num lote cozido a 120 °C, com moxona em grande excesso a 0,22 mol/dm³, após quanto tempo o suco fica intragável?",
+    "alternativas": [
+      "23 min",
+      "41 min",
+      "47 min",
+      "72 min",
+      "90 min"
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "Arrhenius dá k(120 °C) ≈ 8,11 dm³ mol⁻¹ h⁻¹; a berrina cai com 2k[moxona] = 3,57 h⁻¹, e t = ln 4/3,57 ≈ 0,39 h ≈ 23 min.",
+      "detalhada": "A resolução segue a solução oficial do problema 10 (item 10.5).\n\n**1) k a 120 °C:** ln(k2/k1) = (Ea/R)(1/T1 − 1/T2) = (58 600/8,314)(1/381,15 − 1/393,15) = 0,5646, logo k2 = 4,61 × 1,759 ≈ 8,11 dm³ mol⁻¹ h⁻¹.\n\n**2) Constante de consumo da berrina:** 2 × 8,11 × 0,22 = 3,57 h⁻¹ (o fator 2 vem da estequiometria).\n\n**3) Tempo:** ln 4 / 3,57 = 0,389 h ≈ **23 min**.",
+      "alternativas": [
+        "Correta. ≈ 23 min.",
+        "Errada. É o tempo calculado com k a 108 °C (4,61), sem corrigir para 120 °C.",
+        "Errada. Esquece o fator 2 da estequiometria (usa k[moxona] no lugar de 2k[moxona]).",
+        "Errada. Resulta de inverter o sinal da correção de temperatura (k diminuiria ao aquecer).",
+        "Errada. É o tempo a 108 °C com 0,100 mol/dm³ de moxona, e não o caso do enunciado."
+      ],
+      "dica": "Temperatura maior, k maior, tempo menor. Corrija k por Arrhenius antes de calcular o tempo."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 10",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1139",
+    "materia": "quimica",
+    "assunto": "Cinética química",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 12, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 12. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O cristal violeta (CV⁺) reage com hidróxido formando um carbinol incolor: CV⁺ + OH⁻ → CVOH, com v = k[CV⁺][OH⁻] e k = 7,77 dm³ mol⁻¹ min⁻¹ a 30 °C. Misturam-se 5 cm³ de CV 1,82×10⁻⁵ mol/dm³ com 5 cm³ de NaOH 0,16 mol/dm³ (volumes aditivos). Qual é, aproximadamente, a concentração de CV⁺ depois de 6 min?",
+    "alternativas": [
+      "5,2×10⁻⁹ mol/dm³",
+      "2,2×10⁻⁷ mol/dm³",
+      "4,4×10⁻⁷ mol/dm³",
+      "8,6×10⁻⁶ mol/dm³"
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "Na mistura, [CV⁺]0 = 9,10×10⁻⁶ e [OH⁻] = 0,080 mol/dm³ (excesso enorme); a reação é de pseudoprimeira ordem com kobs = 0,622 min⁻¹ e [CV⁺] = 9,10×10⁻⁶ e^(−0,622 × 6) ≈ 2,2×10⁻⁷ mol/dm³.",
+      "detalhada": "A resolução segue a solução oficial do problema 12 (itens 12.1 a 12.4).\n\n**1) Concentrações após a mistura (volume dobra):** [CV⁺]0 = 9,10×10⁻⁶ mol/dm³; [OH⁻] = 0,080 mol/dm³ (excesso de cerca de 8800 vezes).\n\n**2) Pseudoprimeira ordem:** kobs = k[OH⁻] = 7,77 × 0,080 = 0,622 min⁻¹.\n\n**3) Concentração em 6 min:** [CV⁺] = 9,10×10⁻⁶ × e^(−0,622 × 6) = 9,10×10⁻⁶ × 0,0240 ≈ **2,2×10⁻⁷ mol/dm³**.",
+      "alternativas": [
+        "Errada. Usa a concentração de NaOH antes da mistura (0,16 mol/dm³) em vez de 0,080 mol/dm³.",
+        "Correta. e^(−3,73) = 0,024; 9,10×10⁻⁶ × 0,024 ≈ 2,2×10⁻⁷ mol/dm³.",
+        "Errada. Parte de [CV⁺]0 = 1,82×10⁻⁵, sem considerar que a diluição pela mistura divide a concentração por 2.",
+        "Errada. Usa 6 s no lugar de 6 min no expoente."
+      ],
+      "dica": "Depois da mistura, divida as concentrações pela razão dos volumes antes de calcular kobs."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 12",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1140",
+    "materia": "quimica",
+    "assunto": "Cinética química",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 12, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 12. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A constante de velocidade da reação CV⁺ + OH⁻ → CVOH vale 7,77 dm³ mol⁻¹ min⁻¹ a 30 °C e 22,78 dm³ mol⁻¹ min⁻¹ a 45 °C. Admitindo a lei de Arrhenius, qual é a energia de ativação? (R = 8,314 J mol⁻¹ K⁻¹)",
+    "alternativas": [
+      "0,8 kJ/mol",
+      "6,9 kJ/mol",
+      "25,0 kJ/mol",
+      "57,5 kJ/mol",
+      "132 kJ/mol"
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "ln(22,78/7,77) = (Ea/R)(1/303,15 − 1/318,15) dá Ea/R ≈ 6916 K e Ea ≈ 57,5 kJ/mol.",
+      "detalhada": "A resolução segue a solução oficial do problema 12 (item 12.5).\n\nln(k2/k1) = (Ea/R)(1/T1 − 1/T2), com T1 = 303,15 K e T2 = 318,15 K.\n\nln(22,78/7,77) = 1,0756 e (1/303,15 − 1/318,15) = 1,555×10⁻⁴ K⁻¹. Logo Ea/R = 6916 K e Ea = 6916 × 8,314 ≈ 57 500 J/mol = **57,5 kJ/mol**.",
+      "alternativas": [
+        "Errada. Resulta de usar as temperaturas em °C no lugar de K.",
+        "Errada. É Ea/R = 6916 K dividido por 1000, esquecendo de multiplicar por R.",
+        "Errada. Usa log10 no lugar do logaritmo natural.",
+        "Correta. Ea ≈ 57,5 kJ/mol.",
+        "Errada. Multiplica o resultado correto por ln 10 sem necessidade."
+      ],
+      "dica": "Temperaturas sempre em kelvin; ln(k2/k1) = (Ea/R)(1/T1 − 1/T2)."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 12",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1141",
+    "materia": "quimica",
+    "assunto": "Estequiometria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 13, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 13. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O alumínio metálico forma uma rede cúbica de faces centradas (CFC, 4 átomos por célula unitária). A 213 GPa, a aresta da célula é 324,6 pm. Dados: M(Al) = 26,98 g/mol; NA = 6,022×10²³ mol⁻¹. Qual é a densidade do alumínio nessa pressão?",
+    "alternativas": [
+      "2,62 g/cm³",
+      "2,71 g/cm³",
+      "5,24 g/cm³",
+      "5,70 g/cm³",
+      "10,5 g/cm³"
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "ρ = (4 × 26,98 g/mol)/(6,022×10²³ mol⁻¹ × (3,246×10⁻⁸ cm)³) ≈ 5,24 g/cm³.",
+      "detalhada": "A resolução segue a solução oficial do problema 13 (item 13.1).\n\nMassa da célula: 4 × 26,98/6,022×10²³ = 1,792×10⁻²² g.\n\nVolume: (324,6 pm)³ = (3,246×10⁻⁸ cm)³ = 3,420×10⁻²³ cm³.\n\nρ = 1,792×10⁻²²/3,420×10⁻²³ ≈ **5,24 g/cm³** (o dobro da densidade ambiente, 2,71 g/cm³, o que é coerente com a alta pressão).",
+      "alternativas": [
+        "Errada. Resulta de contar só 2 átomos por célula (como na CCC).",
+        "Errada. É a densidade do alumínio sob pressão ambiente (2,710 g/cm³).",
+        "Correta. 4 átomos/célula e aresta de 324,6 pm dão 5,24 g/cm³.",
+        "Errada. É a densidade da forma CCC (2 átomos por célula, aresta 250,5 pm), que surge acima de 310 GPa: outra fase.",
+        "Errada. Resulta de contar 8 átomos por célula."
+      ],
+      "dica": "ρ = (Z·M)/(NA·a³); CFC tem Z = 4, CCC tem Z = 2."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 13",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1142",
+    "materia": "quimica",
+    "assunto": "Estequiometria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 14, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 14. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na calcopirita (CuFeS2), o ferro pode ser substituído por outro metal X, gerando minerais CuXS2. Dois deles têm 32,5% (A) e 26,5% (B) de enxofre em massa. Dados (g/mol): Cu 63,55; S 32,06; Al 26,98; Ga 69,72; In 114,8; Tl 204,4. Quais são A e B?",
+    "alternativas": [
+      "A = CuAlS2 e B = CuGaS2",
+      "A = CuInS2 e B = CuGaS2",
+      "A = CuAlS2 e B = CuInS2",
+      "A = CuGaS2 e B = CuInS2",
+      "A = CuGaS2 e B = CuTlS2"
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "M(CuXS2) = 2 × 32,06/w(S): 197,3 g/mol (32,5%) e ≈ 242 g/mol (26,5%), o que dá M(X) ≈ 69,6 (Ga, tabelado 69,72) e ≈ 114,3 (In, tabelado 114,8).",
+      "detalhada": "A resolução segue a solução oficial do problema 14 (item 14.1).\n\n**A:** M(CuXS2) = 2 × 32,06/0,325 = 197,3 g/mol; M(X) = 197,3 − 63,55 − 64,12 = 69,6 g/mol, que é o gálio (69,72): **CuGaS2**.\n\n**B:** M = 64,12/0,265 ≈ 242 g/mol; M(X) = 242 − 63,55 − 64,12 ≈ 114,3 g/mol, o índio (114,8): **CuInS2**.\n\nTeores de S dos candidatos: Al 41,5%; Ga 32,5%; In 26,4%; Tl 19,3%.",
+      "alternativas": [
+        "Errada. CuAlS2 teria 41,5% de S, e não 32,5%.",
+        "Errada. Troca A e B: o menor teor de S corresponde ao metal mais pesado (In).",
+        "Errada. CuAlS2 teria 41,5% de S, e não 32,5%.",
+        "Correta. CuGaS2 (32,5% de S) e CuInS2 (26,4% ≈ 26,5%).",
+        "Errada. CuTlS2 teria só 19,3% de S."
+      ],
+      "dica": "w(S) = 2·M(S)/M(composto). Quanto mais pesado X, menor o teor de enxofre."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 14",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1143",
+    "materia": "quimica",
+    "assunto": "Estequiometria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 15, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 15. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O berilo puro é incolor e contém só Si, O, Al e Be, formando um silicato eletricamente neutro (Be²⁺, Al³⁺, Si⁴⁺, O²⁻). Uma amostra de 0,2024 g contém 0,0635 g de Si e 0,0102 g de Be. Dados (g/mol): Be 9,01; Al 26,98; Si 28,09; O 16,00. Qual é a fórmula do berilo?",
+    "alternativas": [
+      "Be3Si6O21",
+      "Be3Al2Si6O12",
+      "BeAl2Si2O8",
+      "Be3Al2Si4O13",
+      "Be3Al2Si6O18"
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "n(Be):n(Si) = 1:2; a neutralidade elétrica e o balanço de massa (O + Al = 0,1287 g) dão Be:Si:O:Al = 3:6:18:2, isto é, Be3Al2Si6O18.",
+      "detalhada": "A resolução segue a solução oficial do problema 15 (item 15.3).\n\n**1) Mols:** n(Be) = 0,0102/9,01 = 1,13×10⁻³ mol; n(Si) = 0,0635/28,09 = 2,26×10⁻³ mol (razão 1:2). A massa restante, de O + Al, é 0,2024 − 0,0635 − 0,0102 = 0,1287 g.\n\n**2) Neutralidade:** 2n(Be) + 4n(Si) + 3n(Al) = 2n(O). Com m(O) + m(Al) = 0,1287 g, resolvem-se m(O) ≈ 0,1086 g e m(Al) ≈ 0,0201 g, isto é, 6,79×10⁻³ mol de O e 7,4×10⁻⁴ mol de Al.\n\n**3) Razão:** Be:Si:O:Al = 1,13 : 2,26 : 6,79 : 0,74 (×10⁻³) ≈ 3 : 6 : 18 : 2. Berilo = **Be3Al2Si6O18**.",
+      "alternativas": [
+        "Errada. Considera que toda a massa restante é oxigênio (sem Al); a razão Be:Si fecha, mas falta o alumínio.",
+        "Errada. Não equilibra as cargas: 3 × 2 + 2 × 3 + 6 × 4 = +36, e 12 O dariam só −24.",
+        "Errada. A razão Be:Si fecha e as cargas se equilibram, mas o teor de Si seria 22,7%, e não os 31,4% medidos (0,0635/0,2024).",
+        "Errada. A razão Be:Si seria 3:4, e não 1:2 como nos dados.",
+        "Correta. Be3Al2Si6O18 fecha massa, razão Be:Si e cargas."
+      ],
+      "dica": "Use a razão dos mols conhecidos (Be, Si) e a neutralidade elétrica para achar O e Al."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 15",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1144",
+    "materia": "quimica",
+    "assunto": "Cinética química",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 15, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 15. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A oxidação parcial do silano (SiH4) por N2O ocorre por um mecanismo em cadeia: (1) N2O → N2 + O (iniciação, lenta); (2) O + SiH4 → SiH3 + OH; (3) OH + SiH4 → SiH3 + H2O; (4) SiH3 + N2O → SiH3O + N2; (5) SiH3O + SiH4 → SiH3OH + SiH3; (6) SiH3 + SiH3O → H3SiOSiH3 (terminação, lenta). Com N2O em grande excesso e usando o estado estacionário (iniciação = terminação, e propagação 4 = propagação 5 = v), qual é a lei de velocidade e qual dos gráficos ln[SiH4], log[SiH4], 1/[SiH4] ou 1/[SiH4]² contra t seria linear?",
+    "alternativas": [
+      "v = k′[SiH4]^(1/2); nenhum deles é linear.",
+      "v = k′[SiH4]; o de ln[SiH4] contra t.",
+      "v = k′[SiH4]²; o de 1/[SiH4] contra t.",
+      "v = k′[SiH4]^(3/2); o de 1/[SiH4]² contra t.",
+      "v = k′ (ordem zero); o de log[SiH4] contra t."
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "k₁[N2O] = k₆[SiH3][SiH3O] e k₄[SiH3][N2O] = k₅[SiH3O][SiH4] dão v = (k₁k₄k₅/k₆)^(1/2)[N2O][SiH4]^(1/2); com N2O em excesso, v = k′[SiH4]^(1/2), e nenhum dos quatro gráficos é reta.",
+      "detalhada": "A resolução segue a solução oficial do problema 15 (itens 15.10 e 15.11).\n\n**1) Estado estacionário:** iniciação = terminação: k₁[N2O] = k₆[SiH3][SiH3O]. Propagação: v = k₄[SiH3][N2O] = k₅[SiH3O][SiH4].\n\n**2) De k₄[SiH3][N2O] = k₅[SiH3O][SiH4]:** [SiH3] = k₅[SiH3O][SiH4]/(k₄[N2O]).\n\n**3) Substituindo na iniciação = terminação:** [SiH3O] = [N2O](k₁k₄/(k₅k₆[SiH4]))^(1/2).\n\n**4) Velocidade:** v = k₅[SiH3O][SiH4] = (k₁k₄k₅/k₆)^(1/2)[N2O][SiH4]^(1/2). Com N2O em excesso, v = k′[SiH4]^(1/2): ordem 1/2 em SiH4.\n\nOrdem 1/2 não é linear em ln[SiH4], log[SiH4], 1/[SiH4] ou 1/[SiH4]² (seria linear [SiH4]^(1/2) contra t).",
+      "alternativas": [
+        "Correta. Ordem 1/2 em SiH4, e nenhuma das coordenadas listadas dá reta.",
+        "Errada. A ordem 1 daria ln[SiH4] linear, mas a ordem obtida é 1/2.",
+        "Errada. A ordem 2 daria 1/[SiH4] linear, mas a ordem é 1/2.",
+        "Errada. A ordem 3/2 daria 1/[SiH4]^(1/2) linear, não 1/[SiH4]², e a ordem obtida é 1/2.",
+        "Errada. A ordem zero daria [SiH4] linear contra t, e a ordem real é 1/2."
+      ],
+      "dica": "Cadeia não ramificada: iniciação = terminação e propagações iguais à velocidade; raiz quadrada da razão k₁/k₆ aparece."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 15",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1145",
+    "materia": "quimica",
+    "assunto": "Estequiometria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 16, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 16. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O aquecimento de Na[B3H8] em diglima com B2H6 produz um sal B que contém um ânion cluster com carga 2−, razão B:H = 1:1 e 24,5% de sódio em massa. Dados (g/mol): Na 22,99; B 10,81; H 1,008. Qual é a fórmula de B?",
+    "alternativas": [
+      "Na2[B6H6]",
+      "Na2[B8H8]",
+      "Na2[B10H10]",
+      "Na2[B12H12]",
+      "Na2[B14H14]"
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "Com Na2[BxHx], 2 × 22,99/(2 × 22,99 + x × 11,818) = 0,245 dá x = 12: Na2[B12H12].",
+      "detalhada": "A resolução segue a solução oficial do problema 16 (item 16.1).\n\nO ânion é BxHx²⁻, então o sal é Na2BxHx. A massa de BH é 10,81 + 1,008 = 11,818 g/mol.\n\n45,98/(45,98 + 11,818x) = 0,245 ⇒ 11,818x = 141,7 ⇒ x ≈ 12. B = **Na2[B12H12]**.\n\nTeor de Na em cada candidato: x = 6: 39,3%; x = 8: 32,7%; x = 10: 28,0%; x = 12: 24,5%; x = 14: 21,7%.",
+      "alternativas": [
+        "Errada. Daria 39,3% de Na.",
+        "Errada. Daria 32,7% de Na.",
+        "Errada. Daria 28,0% de Na.",
+        "Correta. 24,5% de Na.",
+        "Errada. Daria 21,7% de Na."
+      ],
+      "dica": "Escreva o teor percentual em função de x e resolva; confira os candidatos no final."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 16",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1146",
+    "materia": "quimica",
+    "assunto": "Isomeria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 17, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 17. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O ligante B de uma rede metal–orgânica é uma molécula simétrica com só C, H e O, massa molar 172 g/mol e centro de inversão. Não descolora água de bromo. Titulando 0,500 g de B (solução bem ácida), gastam-se 11,6 mL de NaOH 0,500 mol/dm³. Seu espectro de ¹³C tem 3 sinais. Qual é B?",
+    "alternativas": [
+      "Ácido cis-ciclo-hexano-1,4-dicarboxílico",
+      "Ácido trans-ciclo-hexano-1,2-dicarboxílico",
+      "Ácido (E)-oct-4-enodioico, HOOC–(CH2)2–CH=CH–(CH2)2–COOH",
+      "Ácido benzeno-1,4-dicarboxílico (tereftálico)",
+      "Ácido trans-ciclo-hexano-1,4-dicarboxílico"
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "n(NaOH)/n(B) = 5,8×10⁻³/2,91×10⁻³ = 2 (dois COOH); sobra C6H10 (saturado, sem C=C), 3 sinais de ¹³C e centro de inversão levam ao trans-1,4-dicarboxílico, C8H12O4.",
+      "detalhada": "A resolução segue a solução oficial do problema 17 (item 17.2).\n\n**1) Grupos ácidos:** n(NaOH) = 0,500 × 0,0116 = 5,80×10⁻³ mol; n(B) = 0,500/172 = 2,91×10⁻³ mol; razão = 2: dois grupos –COOH.\n\n**2) Fórmula:** 172 − 90 (2 COOH) = 82 g/mol = C6H10: **C8H12O4**.\n\n**3) Estrutura:** não descolora Br2 (sem C=C) e tem 1 ciclo (grau de insaturação 3 = 2 C=O + 1 anel). Três sinais de ¹³C (C=O, CH, CH2) e centro de inversão indicam o **trans-1,4** (conformação cadeira diequatorial).\n\nO isômero cis também existe, mas não tem centro de inversão.",
+      "alternativas": [
+        "Errada. O isômero cis não tem centro de inversão (um grupo axial e um equatorial).",
+        "Errada. Não é simétrico por inversão e daria 4 sinais de ¹³C (C=O, C1/C2, C3/C6, C4/C5).",
+        "Errada. Tem 172 g/mol, mas descoloriria a água de bromo, pois tem uma ligação C=C.",
+        "Errada. É aromático e tem 166 g/mol (C8H6O4), e não 172 g/mol.",
+        "Correta. C8H12O4, 3 sinais de ¹³C, centro de inversão e sem C=C."
+      ],
+      "dica": "Titulação dá o número de COOH; grau de insaturação e RMN de ¹³C dão o resto."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 17",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: 1,4-Cyclohexanedicarboxylic acid",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1_4-Cyclohexanedicarboxylic-acid"
+      }
+    ]
+  },
+  {
+    "id": "qui-1147",
+    "materia": "quimica",
+    "assunto": "Estequiometria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 17, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 17. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Para estimar a área superficial de um material poroso (MOF), a adsorção de nitrogênio estabiliza em 5,0×10⁻³ mol/g quando se forma uma monocamada. Cada molécula de N2 ocupa 0,162 nm² (1 nm² = 10⁻¹⁸ m²). Dado: NA = 6,022×10²³ mol⁻¹. Qual é a área superficial específica do material?",
+    "alternativas": [
+      "49 m²/g",
+      "245 m²/g",
+      "490 m²/g",
+      "980 m²/g",
+      "4900 m²/g"
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "S = 5,0×10⁻³ mol/g × 6,022×10²³ mol⁻¹ × 0,162×10⁻¹⁸ m² ≈ 490 m²/g.",
+      "detalhada": "A resolução segue a solução oficial do problema 17 (item 17.3).\n\nNúmero de moléculas por grama: 5,0×10⁻³ × 6,022×10²³ = 3,01×10²¹.\n\nÁrea: 3,01×10²¹ × 0,162×10⁻¹⁸ m² = 488 m²/g ≈ **490 m²/g**.",
+      "alternativas": [
+        "Errada. Erro de potência de dez na conversão de nm² em m².",
+        "Errada. É a metade: toma a área de um átomo de N em vez da molécula N2.",
+        "Correta. ≈ 490 m²/g.",
+        "Errada. É o dobro: conta cada molécula como dois átomos de N ocupando área.",
+        "Errada. Erro de potência de dez na conversão de nm² em m²."
+      ],
+      "dica": "Converta nm² para m² (10⁻¹⁸) e some número de moléculas × área de cada uma."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 17",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1148",
+    "materia": "quimica",
+    "assunto": "Atomística",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 19, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 19. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "O molibdênio (grupo 6, 6 elétrons de valência) forma a sequência MoCl5 → MoCl4(OEt2)2 → MoCl3(THF)3, em que OEt2 (éter dietílico) e THF são ligantes neutros e Cl é Cl⁻. Quais são o estado de oxidação do Mo e o número de elétrons d, nessa ordem?",
+    "alternativas": [
+      "+5, d¹; +4, d²; +3, d³",
+      "+5, d⁵; +4, d⁴; +3, d³",
+      "+5, d²; +4, d³; +3, d⁴",
+      "+5, d⁰; +4, d¹; +3, d²",
+      "+3, d³; +4, d²; +5, d¹"
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "O número de oxidação é dado pelos Cl⁻ (5, 4 e 3), e o número de elétrons d é 6 menos o estado de oxidação: d¹, d² e d³.",
+      "detalhada": "A resolução segue a solução oficial do problema 19 (item 19.2).\n\nLigantes neutros (éteres) não contribuem para a carga. Em MoCl5 há 5 Cl⁻, logo Mo(+5); em MoCl4(OEt2)2, Mo(+4); em MoCl3(THF)3, Mo(+3).\n\nElétrons d = 6 − estado de oxidação: Mo(+5) é d¹, Mo(+4) é d², Mo(+3) é d³.",
+      "alternativas": [
+        "Correta. +5/d¹, +4/d², +3/d³.",
+        "Errada. Confunde o estado de oxidação com o número de elétrons d.",
+        "Errada. Usa 7 elétrons de valência em vez de 6 (somou 1 em cada d).",
+        "Errada. Usa 5 elétrons de valência em vez de 6.",
+        "Errada. Os estados de oxidação estão invertidos em relação aos compostos."
+      ],
+      "dica": "d = (grupo) − (estado de oxidação). Mo está no grupo 6."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 19",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1149",
+    "materia": "quimica",
+    "assunto": "Isomeria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 20, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 20. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A bromação de um alqueno ocorre por um íon bromônio, com adição anti. Considere a adição de Br2 ao oct-1-eno, CH2=CH–(CH2)5–CH3. Que estereoisômeros do 1,2-dibromo-octano se formam?",
+    "alternativas": [
+      "Só um estereoisômero, um composto meso.",
+      "Os dois enantiômeros possíveis, em proporção igual (racemato).",
+      "Dois diastereoisômeros.",
+      "Um composto sem estereoisômeros, pois não há centro estereogênico.",
+      "Quatro estereoisômeros."
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "O produto CH2Br–CHBr–(CH2)5–CH3 tem um único centro estereogênico (C2), e o ataque do Br⁻ ao íon bromônio pode ocorrer nos dois lados: formam-se os dois enantiômeros.",
+      "detalhada": "A resolução segue a solução oficial do problema 20 (item 20.1, c).\n\nO C2 do produto tem quatro grupos diferentes (H, Br, CH2Br e C6H13): é um centro estereogênico. Com um único centro, só há dois estereoisômeros, que são enantiômeros. O íon bromônio do alqueno terminal pode se formar nas duas faces, então ambos se formam em quantidades iguais: **racemato**.",
+      "alternativas": [
+        "Errada. Meso exige pelo menos dois centros estereogênicos; aqui há um só.",
+        "Correta. Um centro estereogênico; os dois enantiômeros se formam em quantidades iguais.",
+        "Errada. Diastereoisômeros precisam de pelo menos dois centros estereogênicos.",
+        "Errada. O C2 do produto tem quatro grupos diferentes, então é estereogênico.",
+        "Errada. Quatro estereoisômeros exigiriam dois centros estereogênicos sem simetria; aqui há só um."
+      ],
+      "dica": "Conte os centros estereogênicos do produto: n centros dão até 2ⁿ estereoisômeros."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 20",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1150",
+    "materia": "quimica",
+    "assunto": "Isomeria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 20, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 20. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Considere a adição de Br2 ao 2-propilpent-1-eno, CH2=C(CH2CH2CH3)2 (C8H16), que forma o 1,2-dibromo-2-propilpentano. Que estereoisômeros se formam?",
+    "alternativas": [
+      "Dois enantiômeros (racemato), pois o C2 é estereogênico.",
+      "Um composto meso.",
+      "Dois diastereoisômeros.",
+      "Três estereoisômeros.",
+      "Um composto só, sem estereoisômeros, pois o C2 tem dois grupos propila idênticos."
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "No produto, o C2 liga Br, CH2Br e dois grupos propila iguais; não é estereogênico, e o produto não tem estereoisômeros.",
+      "detalhada": "A resolução segue a solução oficial do problema 20 (item 20.1, e).\n\nO produto é CH2Br–CBr(CH2CH2CH3)2. O C2 tem Br, CH2Br e dois grupos propila idênticos: só três grupos diferentes. Sem centro estereogênico (e sem outro elemento de estereoisomeria), o produto é um único composto, **sem estereoisômeros**.",
+      "alternativas": [
+        "Errada. O C2 não é estereogênico: tem dois grupos propila iguais.",
+        "Errada. Composto meso exige dois ou mais centros estereogênicos.",
+        "Errada. Diastereoisômeros exigem dois ou mais centros estereogênicos.",
+        "Errada. Não há centro estereogênico.",
+        "Correta. Sem centro estereogênico, o produto não tem estereoisômeros."
+      ],
+      "dica": "Dois substituintes iguais no carbono eliminam a estereogenia."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 20",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1151",
+    "materia": "quimica",
+    "assunto": "Reações orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 21, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 21. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Numa aminação redutiva, as aminas disponíveis eram 4-iodoanilina, 4-metoxianilina e 4-metilanilina, e os aldeídos eram benzaldeído, 2-bromobenzaldeído e 4-fluorobenzaldeído. Numa tentativa sem o redutor, formou-se um composto colorido D, com RMN de ¹H (δ, ppm): 2,35 (3H, s); 7,14 (2H, d); 7,23 (2H, d); 7,45 (3H, m); 7,88 (2H, d); 8,44 (1H, s). Qual é D?",
+    "alternativas": [
+      "4-CH3–C6H4–N=CH–C6H5 (N-benzilideno-4-metilanilina, uma imina)",
+      "4-CH3–C6H4–NH–CH2–C6H5 (N-benzil-4-metilanilina, uma amina)",
+      "4-CH3–C6H4–N=CH–C6H4–4-F (imina do 4-fluorobenzaldeído)",
+      "4-CH3–C6H4–N=CH–C6H4–2-Br (imina do 2-bromobenzaldeído)",
+      "4-CH3O–C6H4–N=CH–C6H5 (imina da 4-metoxianilina)"
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "O CH3 aromático (2,35, 3H), o anel monossubstituído (7,45, 3H e 7,88, 2H) e o singleto de 1H em 8,44 (N=CH) indicam a imina de 4-metilanilina e benzaldeído.",
+      "detalhada": "A resolução segue a solução oficial do problema 21 (item 21.3).\n\n- **δ 8,44 (1H, s):** H de N=CH (imina); a amina reduzida mostraria um CH2 (~4,3, 2H) e um NH.\n- **δ 2,35 (3H, s):** CH3 ligado a anel aromático (4-metilanilina; a 4-metoxianilina daria OCH3 em ~3,7).\n- **δ 7,14 e 7,23 (2H, 2H, d):** anel p-dissubstituído do tolil.\n- **δ 7,45 (3H, m) e 7,88 (2H, d):** anel monossubstituído (5 H), do benzaldeído.\n\nSem o redutor (por exemplo, NaBH4 esquecido), a reação para na imina: **D = N-benzilideno-4-metilanilina**.",
+      "alternativas": [
+        "Correta. Imina de 4-metilanilina com benzaldeído; encaixa em todos os sinais.",
+        "Errada. A amina teria um CH2 (~4,3, 2H) e um NH, mas o espectro tem um singleto de 1H em 8,44 e nenhum CH2.",
+        "Errada. O 4-fluorobenzaldeído daria um anel p-dissubstituído (4H) e não o padrão de 5 H (3H + 2H) em 7,45 e 7,88.",
+        "Errada. O 2-bromobenzaldeído daria um anel o-dissubstituído (4H), e não 5 H.",
+        "Errada. A metoxila daria um singleto de 3H em torno de 3,7, e não 2,35."
+      ],
+      "dica": "Singleto em 8 a 8,5 ppm com 1H, sem CH2 benzílico = imina (N=CH)."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 21",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1152",
+    "materia": "quimica",
+    "assunto": "Funções orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 22, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 22. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "A finasterida, medicamento contra a queda de cabelo, é um esteroide em que o anel A contém o grupo –NH–C(=O)–CH=CH– (nitrogênio dentro do anel) e, no carbono 17, há o substituinte –C(=O)–NH–C(CH3)3. Quais são as duas funções nitrogenadas da finasterida?",
+    "alternativas": [
+      "Amina secundária e nitrila.",
+      "Imina e éster.",
+      "Lactama (amida cíclica) e amida (secundária).",
+      "Nitrocomposto e amina primária.",
+      "Carbamato e ureia."
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "O N dentro do anel, ligado a C=O, forma uma lactama (amida cíclica); o –C(=O)–NH–C(CH3)3 é uma amida secundária (N-terc-butil).",
+      "detalhada": "A resolução segue a solução oficial do problema 22 (item 22.6).\n\n- No anel A, o N está ligado a um C=O: é uma amida cíclica, chamada **lactama**.\n\n- No C17, o C(=O) ligado a N–H e a um grupo terc-butila é uma **amida** (secundária).\n\nPortanto, as duas funções nitrogenadas são uma lactama e uma amida secundária.",
+      "alternativas": [
+        "Errada. Não há nitrila (C≡N) nem amina livre: os dois N estão ligados a C=O.",
+        "Errada. Não há C=N nem éster (C(=O)–O–).",
+        "Correta. Lactama no anel e amida secundária na cadeia lateral.",
+        "Errada. Não há grupo NO2 e nenhum N é de amina primária.",
+        "Errada. Não há carbamato nem ureia: os N não estão ligados a O ou a outro N."
+      ],
+      "dica": "N ligado a C=O = amida; se estiver dentro de um anel, é uma lactama."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 22",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Finasteride",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Finasteride"
+      }
+    ]
+  },
+  {
+    "id": "qui-1153",
+    "materia": "quimica",
+    "assunto": "Reações orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 24, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 24. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Numa etapa da síntese em fase sólida de um análogo da anandamida, um alcino L é tratado com H2 na presença do catalisador de Lindlar, formando o composto M (como a anandamida natural, M tem ligações duplas cis). Qual é o papel do catalisador de Lindlar?",
+    "alternativas": [
+      "Hidrogena totalmente o alcino a alcano.",
+      "Reduz o alcino a alceno trans (E) por adição anti.",
+      "Hidrata o alcino, formando uma cetona.",
+      "Quebra o alcino, formando dois ácidos carboxílicos.",
+      "Hidrogena parcialmente o alcino a alceno cis (Z), por adição sin de H2."
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "O catalisador de Lindlar (Pd envenenado) para a hidrogenação no alceno: os dois H entram do mesmo lado e o produto é o alceno cis (Z).",
+      "detalhada": "A resolução segue a solução oficial do problema 24 (item 24.5).\n\nO catalisador de Lindlar é paládio \"envenenado\" (com Pb e quinolina) e perde a atividade para hidrogenar alcenos. O H2 adiciona-se de modo sin à tripla ligação, formando o **alceno cis (Z)**, e a redução não vai até o alcano. É o que a síntese precisa, já que a anandamida tem duplas cis.",
+      "alternativas": [
+        "Errada. O catalisador é envenenado exatamente para evitar a hidrogenação total ao alcano.",
+        "Errada. O alceno trans vem da redução com Na/NH3 líquida, não de H2/Lindlar.",
+        "Errada. A hidratação de alcinos exige H2O e um ácido (e sais de Hg), e não H2.",
+        "Errada. A clivagem oxidativa exige oxidantes (O3, KMnO4), e não H2.",
+        "Correta. Hidrogenação parcial e sin: alceno Z."
+      ],
+      "dica": "Lindlar → cis (Z); Na/NH3 → trans (E)."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 24",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1154",
+    "materia": "quimica",
+    "assunto": "Reações orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 24, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 24. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na última etapa da síntese da epinefrina (adrenalina), o composto C, 4-[2-(N-benzil-N-metilamino)-1-hidroxietil]benzeno-1,2-diol, é tratado com H2 e Pd (cat.), formando a epinefrina e também tolueno (C6H5CH3). Qual ligação é clivada nessa reação?",
+    "alternativas": [
+      "A ligação C=C do anel aromático do catecol (hidrogenação do anel).",
+      "A ligação C–OH benzílica, que vira CH2.",
+      "A ligação N–CH3.",
+      "A ligação N–CH2 do grupo benzila (hidrogenólise), liberando tolueno.",
+      "As ligações O–H do catecol."
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "A hidrogenólise rompe a ligação N–CH2(C6H5) do grupo benzila: o N ganha H (amina secundária) e o benzila sai como tolueno.",
+      "detalhada": "A resolução segue a solução oficial do problema 24 (item 24.1).\n\nO grupo benzila (C6H5–CH2–) em N pode ser removido com H2 e Pd por hidrogenólise: a ligação N–CH2 é quebrada, e o N recebe um H (formando N–H, como na epinefrina), enquanto o CH2 recebe outro H, formando CH3. O fragmento sai como **tolueno**, C6H5CH3.\n\nOs outros grupos (OH do álcool, N–CH3, anel do catecol) permanecem na epinefrina.",
+      "alternativas": [
+        "Errada. O anel do catecol é preservado na epinefrina, e a hidrogenólise suave não o reduz.",
+        "Errada. O grupo OH do álcool secundário permanece na epinefrina.",
+        "Errada. O N–CH3 permanece (a epinefrina é N-metilada).",
+        "Correta. Hidrogenólise da ligação N–benzila: forma o tolueno.",
+        "Errada. As ligações O–H dos fenóis permanecem; não há remoção de nada ali."
+      ],
+      "dica": "Benzila (Bn) em N ou O sai por H2/Pd, formando tolueno."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 24",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Epinephrine",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Epinephrine"
+      }
+    ]
+  },
+  {
+    "id": "qui-1155",
+    "materia": "quimica",
+    "assunto": "Isomeria",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 27, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 27. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na síntese do (±)-przewalskin B, um intermediário bicíclico D, que já tem centros estereogênicos definidos, passa por uma etapa que cria um novo centro estereogênico e dá uma mistura inseparável de dois estereoisômeros, E e F, que diferem apenas na configuração desse novo centro. Qual é a relação entre E e F?",
+    "alternativas": [
+      "Diastereoisômeros.",
+      "Enantiômeros.",
+      "Isômeros constitucionais.",
+      "Tautômeros.",
+      "Conformações do mesmo composto."
+    ],
+    "resposta": 0,
+    "explicacao": {
+      "resumo": "Estereoisômeros que não são imagens especulares entre si, por terem diferido só em um dos vários centros, são diastereoisômeros.",
+      "detalhada": "A resolução segue a solução oficial do problema 27 (item 27.2).\n\nSe os demais centros estereogênicos são os mesmos e só o novo centro tem configuração oposta, E e F não são imagens especulares (para isso todos os centros precisariam estar invertidos). Estereoisômeros que não são enantiômeros são **diastereoisômeros**, com propriedades físicas diferentes (embora, aqui, a mistura seja inseparável).",
+      "alternativas": [
+        "Correta. Diferem em apenas um dos vários centros: diastereoisômeros.",
+        "Errada. Enantiômeros exigiriam a inversão de todos os centros estereogênicos.",
+        "Errada. Têm a mesma conectividade, só diferem na disposição espacial.",
+        "Errada. Tautômeros trocam a posição de um H e de uma ligação dupla, o que não ocorre aqui.",
+        "Errada. Conformações se interconvertem por rotação de ligações; estereoisômeros de configuração, não."
+      ],
+      "dica": "Inverteu um centro entre vários = diastereoisômeros; inverteu todos = enantiômeros."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 27",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1156",
+    "materia": "quimica",
+    "assunto": "Reações orgânicas",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 27, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 27. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na síntese do (±)-przewalskin B, o produto da condensação aldólica contém um grupo protegido como éter de terc-butildimetilsilila (–O–TBS). Depois do tratamento com TBAF (fluoreto de tetrabutilamônio), obtém-se o composto D, que tem o grupo –OH livre. Qual é o papel do TBAF?",
+    "alternativas": [
+      "Oxida o álcool a aldeído.",
+      "Remove o grupo protetor TBS (o fluoreto ataca o silício), regenerando o –OH.",
+      "Reduz a carbonila a álcool.",
+      "Introduz um átomo de flúor no carbono ligado ao oxigênio.",
+      "Catalisa uma reação de Diels–Alder."
+    ],
+    "resposta": 1,
+    "explicacao": {
+      "resumo": "O fluoreto ataca o Si (formando a ligação Si–F, muito forte) e libera o álcool: o TBAF desprotege o éter de silila.",
+      "detalhada": "A resolução segue a solução oficial do problema 27.\n\nÉteres de silila (como TBS) protegem álcoois durante outras etapas. O íon F⁻ tem grande afinidade pelo silício (a ligação Si–F é muito forte): ele ataca o Si, rompe a ligação Si–O e, após protonação, libera o **álcool livre**. É a etapa de **desproteção**.",
+      "alternativas": [
+        "Errada. O F⁻ não é um oxidante.",
+        "Correta. Desproteção do éter de silila: remove o TBS e libera o –OH.",
+        "Errada. O TBAF não é fonte de hidreto.",
+        "Errada. O F⁻ ataca o silício, e não substitui o O por F no carbono.",
+        "Errada. O TBAF não participa de cicloadições."
+      ],
+      "dica": "F⁻ + Si–O → Si–F + O⁻: o fluoreto desprotege éteres de silila."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 27",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      },
+      {
+        "titulo": "PubChem: Tetrabutylammonium fluoride",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Tetrabutylammonium-fluoride"
+      }
+    ]
+  },
+  {
+    "id": "qui-1157",
+    "materia": "quimica",
+    "assunto": "Polímeros",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 28, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 28. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Numa polimerização por metátese com abertura de anel (ROMP), usa-se o catalisador de Grubbs (um carbeno de Ru). Primeiro se adicionam 100 equivalentes de um norborneno com dois grupos benzila (CH2C6H5); quando esse monômero acaba, adicionam-se 100 equivalentes de outro norborneno com dois grupos CH3. Que polímero se forma e como se classifica a polimerização?",
+    "alternativas": [
+      "Copolímero aleatório, por crescimento em etapas.",
+      "Uma mistura de dois homopolímeros, por crescimento em cadeia.",
+      "Copolímero alternado, por polimerização radicalar.",
+      "Polímero reticulado, por crescimento em etapas.",
+      "Copolímero em bloco (100 + 100 unidades), por polimerização viva."
+    ],
+    "resposta": 4,
+    "explicacao": {
+      "resumo": "Como as extremidades da cadeia continuam ativas depois do primeiro monômero (sem terminação), o segundo monômero cresce a partir da mesma cadeia: copolímero em bloco, em polimerização viva.",
+      "detalhada": "A resolução segue a solução oficial do problema 28 (item 28.1, f).\n\nNa ROMP com Grubbs, a extremidade da cadeia é um carbeno de Ru que permanece ativo enquanto houver monômero e não há terminação nem transferência: é uma **polimerização viva**. Ao esgotar o primeiro monômero, a adição do segundo continua na mesma cadeia, formando um bloco depois do outro: **copolímero em bloco** com 100 + 100 unidades (a massa molar e a composição são controladas pela razão monômero/catalisador).",
+      "alternativas": [
+        "Errada. A adição sequencial a extremidades ativas dá blocos, não uma distribuição aleatória, e não é policondensação.",
+        "Errada. As cadeias continuam ativas e crescem com o segundo monômero; não ficam como dois homopolímeros separados.",
+        "Errada. Alternado exigiria os dois monômeros juntos e com reatividade cruzada; o iniciador aqui é o Ru, e não radical.",
+        "Errada. Os monômeros têm só uma ligação dupla polimerizável, então a cadeia é linear.",
+        "Correta. Polimerização viva e adição sequencial dão copolímero em bloco."
+      ],
+      "dica": "Polimerização viva: sem terminação. Adição sequencial de monômeros produz copolímeros em bloco."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 28",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1158",
+    "materia": "quimica",
+    "assunto": "Polímeros",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 2,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 29, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 29. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na GPC (cromatografia de permeação em gel), as moléculas maiores eluem primeiro. Considere três amostras: o PVC parcialmente azidado (Mn = 70 800 g/mol), o produto purificado P2 (PVC com cadeias laterais de PDMS, Mn = 192 400 g/mol) e o PDMS propargílico (Mn = 640 g/mol). Qual é a ordem de eluição, do primeiro para o último?",
+    "alternativas": [
+      "PDMS, PVC azidado, P2.",
+      "PVC azidado, P2, PDMS.",
+      "P2, PVC azidado, PDMS.",
+      "PDMS, P2, PVC azidado.",
+      "P2, PDMS, PVC azidado."
+    ],
+    "resposta": 2,
+    "explicacao": {
+      "resumo": "Quanto maior a massa (e o tamanho), mais cedo elui: P2 (192 400), depois o PVC azidado (70 800) e por último o PDMS (640).",
+      "detalhada": "A resolução segue a solução oficial do problema 29 (item 29.2).\n\nNa GPC, as moléculas maiores não entram nos poros e saem primeiro; as menores percorrem mais poros e saem depois. A ordem de tamanho segue a de massa molar: P2 (192 400) > PVC azidado (70 800) > PDMS (640). Logo, a ordem de eluição é **P2, PVC azidado, PDMS**.",
+      "alternativas": [
+        "Errada. É a ordem inversa (da menor para a maior massa).",
+        "Errada. O P2 é maior que o PVC azidado e elui antes dele.",
+        "Correta. Em ordem decrescente de massa.",
+        "Errada. Coloca o PDMS, a menor molécula, em primeiro lugar.",
+        "Errada. O PDMS (640 g/mol) é o menor e elui por último."
+      ],
+      "dica": "GPC: maior sai primeiro, menor sai por último."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 29",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1159",
+    "materia": "quimica",
+    "assunto": "Polímeros",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 30, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 30. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Numa mistura de HDI, poli(etilenoglicol) e poliol, há inicialmente 0,01918 mol de moléculas e 0,0200 mol de grupos –NCO (e de –OH). Cada ligação uretana formada junta duas moléculas e reduz em um o número de moléculas. Um modelo simples diz que o ponto de gel ocorre quando Mn se torna infinita, isto é, quando o número total de moléculas tende a zero. Qual é a conversão (fração de –NCO que reagiu) no ponto de gel?",
+    "alternativas": [
+      "4,1%",
+      "50%",
+      "66,8%",
+      "95,9%",
+      "100%"
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "O número de moléculas é 0,01918 − p × 0,0200; ele chega a zero quando p = 0,01918/0,0200 ≈ 0,959, ou seja, 95,9%.",
+      "detalhada": "A resolução segue a solução oficial do problema 30 (item 30.4).\n\nSeja p a conversão de –NCO. Cada ligação formada reduz em 1 o número de moléculas: n(p) = 0,01918 − p × 0,0200.\n\nMn infinita significa n → 0: p = 0,01918/0,0200 = 0,9590. Com o valor exato (0,0191765 mol = 0,0100 de HDI + 0,0080 de PEG + 0,0011765 de poliol), p = 0,9588. Nos dois casos, **95,9%**.",
+      "alternativas": [
+        "Errada. É 100% − 95,9%: a fração que ainda resta de grupos –NCO.",
+        "Errada. Nenhum dado do enunciado leva a esse valor.",
+        "Errada. Com 66,8% de conversão ainda restam cerca de 0,0058 mol de moléculas (0,01918 − 0,668 × 0,0200); o gel só ocorre quando o número de moléculas chega a zero.",
+        "Correta. p = 0,01918/0,0200 ≈ 95,9%.",
+        "Errada. A 100% o número de moléculas seria negativo (0,01918 − 0,0200); o gel ocorre antes disso."
+      ],
+      "dica": "Gel: Mn → ∞ quando o número de moléculas → 0."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 30",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
+  },
+  {
+    "id": "qui-1160",
+    "materia": "quimica",
+    "assunto": "Polímeros",
+    "tipo": "multipla",
+    "estilo": "Outra",
+    "dificuldade": 3,
+    "objetivos": [
+      "enem",
+      "livre"
+    ],
+    "prova": {
+      "banca": "IChO",
+      "ano": 2024,
+      "orgao": "problemas preparatórios (Riade), problema 30, adaptada"
+    },
+    "credito": "Adaptada e traduzida de Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 30. Licença CC BY-NC-SA 4.0; esta adaptação usa a mesma licença.",
+    "enunciado": "Na formação de um poliuretano, os grupos –NCO e –OH têm a mesma concentração e a reação é de segunda ordem: −d[NCO]/dt = k[NCO]², o que dá 1/[NCO] = 1/[NCO]0 + kt. Depois de 3 h, a conversão é 66,8%; o ponto de gel, nesse modelo, ocorre a 95,88% de conversão. Em que instante (em horas) a reação atinge o ponto de gel?",
+    "alternativas": [
+      "4,3 h",
+      "8,6 h",
+      "24 h",
+      "34,7 h"
+    ],
+    "resposta": 3,
+    "explicacao": {
+      "resumo": "Com 1/(1 − p) = 1 + k[NCO]0 t: k[NCO]0 = (1/0,332 − 1)/3 = 0,670 h⁻¹ e t = (1/0,0412 − 1)/0,670 ≈ 34,7 h.",
+      "detalhada": "A resolução segue a solução oficial do problema 30 (item 30.5).\n\nComo [NCO] = [NCO]0(1 − p), a lei integrada vira 1/(1 − p) = 1 + k[NCO]0·t.\n\n**1) Constante a partir dos 3 h:** 1/(1 − 0,668) = 3,01, logo k[NCO]0 = (3,01 − 1)/3 = 0,670 h⁻¹.\n\n**2) No gel (p = 0,9588):** 1/(1 − 0,9588) = 24,28, logo t = (24,28 − 1)/0,670 ≈ **34,7 h**.",
+      "alternativas": [
+        "Errada. Trata a conversão como linear no tempo (ordem zero).",
+        "Errada. Usa uma lei de primeira ordem, ln(1 − p) = −k′t, que não é a do enunciado.",
+        "Errada. Esquece de subtrair 1 em 1/(1 − p), tanto no cálculo de k (3,01/3) quanto no tempo (24,28).",
+        "Correta. t ≈ 34,7 h, o que é bem mais lento que a primeira ordem porque a taxa cai com o quadrado da concentração."
+      ],
+      "dica": "Segunda ordem com concentrações iguais: 1/(1 − p) = 1 + k[NCO]0·t."
+    },
+    "fontes": [
+      {
+        "titulo": "Preparatory Problems for the 56th International Chemistry Olympiad (Riade, 2024), problema 30",
+        "url": "https://scheikundeolympiade.science.ru.nl/internationaal/2024/IChO56_Preparatory_Problems_20240310_public.pdf"
+      },
+      {
+        "titulo": "Preparatory Problems for the 56th IChO (Riade, 2024), versão com soluções",
+        "url": "https://www.pianetachimica.it/olimpiadi/56icho/56_IChO_2024_Preparatory_Problems.pdf"
+      },
+      {
+        "titulo": "Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+      }
+    ]
   }
 ] });
